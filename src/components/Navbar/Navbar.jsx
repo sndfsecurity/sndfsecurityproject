@@ -19,75 +19,74 @@ const Navbar = () => {
       </div>
 
       {/* Menu */}
-      <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
+      <div className="nav-container">
+  
+  <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
 
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-
-        {/* Services Dropdown */}
-        <li className="dropdown">
-          Services
-          <ul className="dropdown-menu">
-             <li><a href="#">Security Guard</a></li>
-            <li><a href="#">Event Security</a></li>
-            <li><a href="#">Personal Security</a></li>
-            <li><a href="#">Corporate Security</a></li>
-            <li><a href="#">Industrial Security</a></li>
-          </ul>
-        </li>
-
-        {/* Media */}
-        <li className="dropdown">
-          Media
-          <ul className="dropdown-menu">
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Press</a></li>
-          </ul>
-        </li>
-
-        {/* Branches */}
-        <li className="dropdown">
-          Branches
-          <ul className="dropdown-menu">
-            <li><a href="#">Delhi</a></li>
-            <li><a href="#">Mumbai</a></li>
-            <li><a href="#">Pune</a></li>
-            <li><a href="#">Bangalore</a></li>
-            <li><a href="#">Hyderabad</a></li>
-          </ul>
-        </li>
-
-        <li><a href="/courses">Courses</a></li>
-
-        {/* Cases */}
-        <li className="dropdown">
-          Cases
-          <ul className="dropdown-menu">
-            <li><a href="#">Case 1</a></li>
-            <li><a href="#">Case 2</a></li>
-            <li><a href="#">Case 3</a></li>
-            <li><a href="#">Case 4</a></li>
-          </ul>
-        </li>
-
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/team">Team</a></li>
-        <li><a href="/career">Career</a></li>
-        <li><a href="/contact">Contact</a></li>
-
-        {/* Language */}
-        <li className="language">
-          <FaGlobe /> EN
-        </li>
-
-        {/* Enquiry Button */}
-        <li>
-          <button className="enquiry-btn">Enquiry</button>
-        </li>
-
+    <li className="dropdown">
+      Services
+      <ul className="dropdown-menu">
+        <li><a href="#">Security Guard</a></li>
+        <li><a href="#">Event Security</a></li>
+        <li><a href="#">Personal Security</a></li>
+        <li><a href="#">Corporate Security</a></li>
+        <li><a href="#">Industrial Security</a></li>
       </ul>
+    </li>
+
+    <li className="dropdown">
+      Media
+      <ul className="dropdown-menu">
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </li>
+
+    <li className="dropdown">
+      Branches
+      <ul className="dropdown-menu">
+        <li><a href="#">Delhi</a></li>
+        <li><a href="#">Mumbai</a></li>
+        <li><a href="#">Pune</a></li>
+        <li><a href="#">Bangalore</a></li>
+        <li><a href="#">Hyderabad</a></li>
+      </ul>
+    </li>
+
+    <li><a href="/courses">Courses</a></li>
+
+    <li className="dropdown">
+      Cases
+      <ul className="dropdown-menu">
+        <li><a href="#">Case 1</a></li>
+        <li><a href="#">Case 2</a></li>
+        <li><a href="#">Case 3</a></li>
+        <li><a href="#">Case 4</a></li>
+      </ul>
+    </li>
+
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/team">Team</a></li>
+    <li><a href="/career">Career</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+
+  {/* RIGHT SIDE */}
+  <div className="nav-right">
+    <select className="language-select">
+      <option>English</option>
+      <option>Hindi</option>
+    </select>
+
+    <button className="enquiry-btn">Enquiry</button>
+  </div>
+
+</div>
+     
     </nav>
   );
 };

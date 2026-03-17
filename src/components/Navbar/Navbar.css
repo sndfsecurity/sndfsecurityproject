@@ -9,6 +9,12 @@
   z-index: 1000;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 .nav-logo img {
   height: 70px;
   width: 70px;
@@ -21,13 +27,18 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 20px;
+  gap: 16px;
+  flex-wrap: wrap; /* 👈 prevents overflow */
 }
 
+
+
 .nav-menu li {
-  position: relative;
+ position: relative;
   color: white;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .nav-menu a {
@@ -53,8 +64,8 @@
 /* Dropdown menu */
 .dropdown-menu {
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 100%; /* base */
+  margin-top: 8px; /* 👈 controls gap */
   background: white;
   display: none;
   flex-direction: column;
@@ -62,6 +73,8 @@
   padding: 5px 0;
   border-radius: 5px;
   z-index: 999;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Each item */
@@ -94,6 +107,33 @@
   display: flex;
 }
 
+/* Language Select Box */
+.language-dropdown {
+  display: flex;
+  align-items: center;
+   
+}
+
+/* Style like reference */
+.language-select {
+  background: white;
+  color: black;
+  border: none;
+  padding: 4px 8px;   /* smaller padding */
+  font-size: 13px;    /* slightly smaller text */
+  height: 32px;       /* control height */
+  width: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.language-select option:checked {
+  background: #2563eb;
+  color: white;
+}
+
+
 
 
 /* Button */
@@ -104,6 +144,8 @@
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
+    margin-left: 10px;
+  white-space: nowrap;
 }
 
 /* Hamburger */
