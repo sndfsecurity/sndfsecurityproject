@@ -1,0 +1,139 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   background: linear-gradient(90deg, #0A192F, #1E3A8A);
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo img {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 50%; /* makes it circle */
+  border: 1px solid white; /* optional border */
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-menu li {
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+/* 🔴 TEXT HOVER EFFECT (DARK RED) */
+.nav-menu li:hover > a,
+.nav-menu a:hover {
+  color: #b91c1c; /* dark red */
+  transition: color 0.3s ease;
+}
+
+/* Dropdown parent */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 5px 0;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+/* Each item */
+.dropdown-menu li {
+  width: 100%;
+  list-style: none;
+}
+
+/* Links inside dropdown */
+.dropdown-menu li a {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* 🔴 HOVER EFFECT (FINAL WORKING) */
+.dropdown-menu li:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-menu li:hover a {
+  color: #b91c1c;
+}
+
+/* Show dropdown */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+
+
+/* Button */
+.enquiry-btn {
+  background: #DC2626;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  color: white;
+  font-size: 24px;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    width: 100%;
+    background: #0B2C4A;
+    transition: 0.3s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+}
