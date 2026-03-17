@@ -79,7 +79,7 @@ const Navbar = () => {
   <div className="nav-right">
     <select className="language-select">
       <option>English</option>
-      <option>Hindi</option>
+      <option>हिंदी</option>
     </select>
 
     <button className="enquiry-btn">Enquiry</button>
