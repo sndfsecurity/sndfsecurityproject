@@ -1,10 +1,13 @@
-import Navbar from "./components/Navbar/Navbar"; 
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer"; // 👈 ADD THIS
+
 function App() {
   return (
     <>
-        <Navbar />
+      <Navbar />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App; // 👈 FIXED

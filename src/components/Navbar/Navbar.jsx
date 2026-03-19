@@ -1,94 +1,169 @@
-import React, { useState } from "react";
-import "./Navbar.css";
-import { FaBars, FaTimes, FaGlobe } from "react-icons/fa";
 import logo from "../../assets/images/LOGO.png";
+import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import "./Navbar.css";
 
-const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
+function Navbar() {
   return (
-    <nav className="navbar">
-      {/* Logo */}
-      <div className="nav-logo">
-        <img src={logo} alt="SNDF Logo" />
+    <>
+      {/* 🔴 TOP BAR */}
+      <div className="py-2 px-3 d-flex justify-content-between align-items-center">
+
+        {/* 🔵 LEFT - SOCIAL ICONS */}
+        <div className="d-flex gap-3 fs-5">
+          <FaFacebookF style={{ color: "#1877F2", cursor: "pointer" }} />
+          <FaInstagram style={{ color: "#E4405F", cursor: "pointer" }} />
+          <FaTwitter style={{ color: "#1DA1F2", cursor: "pointer" }} />
+          <FaWhatsapp style={{ color: "#25D366", cursor: "pointer" }} />
+          <FaYoutube style={{ color: "#FF0000", cursor: "pointer" }} />
+        </div>
+
+        {/* 🟡 CENTER - SCROLL TEXT */}
+        <div className="scroll-container">
+          <div className="scroll-text">
+            “SNDF वेबसाइट पर आपका स्वागत है, यहाँ आने के लिए आपका धन्यवाद।” &nbsp;&nbsp;&nbsp; “SNDF वेबसाइट पर आपका स्वागत है, यहाँ आने के लिए आपका धन्यवाद।” &nbsp;&nbsp;&nbsp; “SNDF वेबसाइट पर आपका स्वागत है, यहाँ आने के लिए आपका धन्यवाद।”
+          </div>
+        </div>
+
+        {/* 🔴 RIGHT - LANGUAGE + ENQUIRY */}
+        <div className="d-flex align-items-center gap-2">
+          <select className="form-select form-select-sm w-auto">
+            <option>ENGLISH</option>
+            <option>हिंदी</option>
+            <option>मराठी</option>
+
+          </select>
+
+          <button className="btn btn-danger btn-sm">Enquiry</button>
+        </div>
+
       </div>
 
-      {/* Hamburger */}
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <FaTimes /> : <FaBars />}
-      </div>
+      {/* 🔵 MAIN NAVBAR */}
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
 
-      {/* Menu */}
-      <div className="nav-container">
-  
-  <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
+        {/* Logo */}
+        <a className="navbar-brand" href="/">
+          <img 
+            src={logo} 
+            alt="logo" 
+            width="90" 
+            style={{ borderRadius: "50%" }}
+          />
+        </a>
 
-    <li className="dropdown">
-      Services
-      <ul className="dropdown-menu">
-        <li><a href="#">Security Guard</a></li>
-        <li><a href="#">Event Security</a></li>
-        <li><a href="#">Personal Security</a></li>
-        <li><a href="#">Corporate Security</a></li>
-        <li><a href="#">Industrial Security</a></li>
-      </ul>
-    </li>
+        {/* Toggle */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-    <li className="dropdown">
-      Media
-      <ul className="dropdown-menu">
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Press</a></li>
-      </ul>
-    </li>
+        {/* Menu */}
+        <div className="collapse navbar-collapse" id="navbarContent">
 
-    <li className="dropdown">
-      Branches
-      <ul className="dropdown-menu">
-        <li><a href="#">Delhi</a></li>
-        <li><a href="#">Mumbai</a></li>
-        <li><a href="#">Pune</a></li>
-        <li><a href="#">Bangalore</a></li>
-        <li><a href="#">Hyderabad</a></li>
-      </ul>
-    </li>
+          <ul className="navbar-nav ms-auto" style={{ gap: "10px" }}>
 
-    <li><a href="/courses">Courses</a></li>
+            {/* HOME */}
+            <li className="nav-item">
+              <a className="nav-link" href="/">Home</a>
+            </li>
 
-    <li className="dropdown">
-      Cases
-      <ul className="dropdown-menu">
-        <li><a href="#">Case 1</a></li>
-        <li><a href="#">Case 2</a></li>
-        <li><a href="#">Case 3</a></li>
-        <li><a href="#">Case 4</a></li>
-      </ul>
-    </li>
+            {/* ABOUT */}
+            <li className="nav-item">
+              <a className="nav-link" href="/about">About</a>
+            </li>
 
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/team">Team</a></li>
-    <li><a href="/career">Career</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul>
+            {/* SERVICES */}
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Services
+              </a>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item">Security Guard</a></li>
+                <li><a className="dropdown-item">Event Security</a></li>
+                <li><a className="dropdown-item">Personal Security</a></li>
+                <li><a className="dropdown-item">Corporate Security</a></li>
+                <li><a className="dropdown-item">Industrial Security</a></li>
+              </ul>
+            </li>
 
-  {/* RIGHT SIDE */}
-  <div className="nav-right">
-    <select className="language-select">
-      <option>English</option>
-      <option>हिंदी</option>
-    </select>
+            {/* MEDIA */}
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Media
+              </a>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item">Gallery</a></li>
+                <li><a className="dropdown-item">Videos</a></li>
+                <li><a className="dropdown-item">News</a></li>
+                <li><a className="dropdown-item">Press</a></li>
+                <li><a className="dropdown-item">Events</a></li>
+              </ul>
+            </li>
 
-    <button className="enquiry-btn">Enquiry</button>
-  </div>
+            {/* BRANCHES */}
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Branches
+              </a>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item">Delhi</a></li>
+                <li><a className="dropdown-item">Mumbai</a></li>
+                <li><a className="dropdown-item">Pune</a></li>
+                <li><a className="dropdown-item">Bangalore</a></li>
+                <li><a className="dropdown-item">Hyderabad</a></li>
+              </ul>
+            </li>
 
-</div>
-     
-    </nav>
+            {/* COURSES */}
+            <li className="nav-item">
+              <a className="nav-link">Courses</a>
+            </li>
+
+            {/* CASES */}
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Cases
+              </a>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item">Case 1</a></li>
+                <li><a className="dropdown-item">Case 2</a></li>
+                <li><a className="dropdown-item">Case 3</a></li>
+                <li><a className="dropdown-item">Case 4</a></li>
+                <li><a className="dropdown-item">Case 5</a></li>
+              </ul>
+            </li>
+
+            {/* BLOG */}
+            <li className="nav-item">
+              <a className="nav-link">Blog</a>
+            </li>
+
+            {/* TEAM */}
+            <li className="nav-item">
+              <a className="nav-link">Team</a>
+            </li>
+
+            {/* CAREER */}
+            <li className="nav-item">
+              <a className="nav-link">Career</a>
+            </li>
+
+            {/* CONTACT */}
+            <li className="nav-item">
+              <a className="nav-link">Contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </nav>
+    </>
   );
-};
+}
 
 export default Navbar;
