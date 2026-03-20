@@ -90,6 +90,8 @@ html {
   width: 100%;
 }
 
+
+
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
@@ -142,6 +144,7 @@ html {
   color: red;
   font-weight: bold;
   animation: scroll-left 20s linear infinite; /* ✅ speed slow keli */
+  padding: 5px 0;;
 }
 
 /* 🔥 ANIMATION */
