@@ -20,7 +20,9 @@ function Navbar() {
         {/* 🟡 CENTER - SCROLL TEXT */}
         <div className="scroll-container">
           <div className="scroll-text">
-            “SNDF वेबसाइट पर आपका स्वागत है, यहाँ आने के लिए आपका धन्यवाद।” &nbsp;&nbsp;&nbsp; “SNDF वेबसाइट पर आपका स्वागत है, यहाँ आने के लिए आपका धन्यवाद।” &nbsp;&nbsp;&nbsp; “SNDF वेबसाइट पर आपका स्वागत है, यहाँ आने के लिए आपका धन्यवाद।”
+            Welcome to SNDF – Thank you for visiting our website. &nbsp;&nbsp;&nbsp;
+            SNDF वेबसाइट पर आपका स्वागत है – यहाँ आने के लिए आपका धन्यवाद। &nbsp;&nbsp;&nbsp;
+            SNDF वेबसाइटवर आपले स्वागत आहे – येथे भेट दिल्याबद्दल धन्यवाद।
           </div>
         </div>
 

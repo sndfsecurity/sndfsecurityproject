@@ -226,6 +226,7 @@
 
 
 /* ================= SERVICES SECTION ================= */
+/* ================= SERVICES SECTION ================= */
 .services {
   padding: 100px 0;
   background: linear-gradient(to bottom, #f8fafc, #eef2ff);
@@ -292,10 +293,26 @@
   opacity: 1;
 }
 
-/* HOVER EFFECT */
+/* 🔥 HOVER EFFECT */
 .service-card:hover {
   transform: translateY(-12px) scale(1.03);
   box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+/* ✅ NEW: MULTI-COLOR HOVER BACKGROUND */
+.service-card:nth-child(1):hover,
+.service-card:nth-child(4):hover {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+}
+
+.service-card:nth-child(2):hover,
+.service-card:nth-child(5):hover {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+}
+
+.service-card:nth-child(3):hover,
+.service-card:nth-child(6):hover {
+  background: linear-gradient(135deg, #ef4444, #f43f5e);
 }
 
 /* ICON */
@@ -309,7 +326,7 @@
 /* ICON ANIMATION */
 .service-card:hover .icon {
   transform: rotate(10deg) scale(1.3);
-  color: #ef4444;
+  color: #ffffff;
 }
 
 /* TITLE */
@@ -318,6 +335,7 @@
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 10px;
+  transition: 0.3s;
 }
 
 /* TEXT */
@@ -325,6 +343,13 @@
   font-size: 14px;
   color: #475569;
   line-height: 1.6;
+  transition: 0.3s;
+}
+
+/* ✅ TEXT COLOR CHANGE ON HOVER */
+.service-card:hover h3,
+.service-card:hover p {
+  color: #ffffff;
 }
 
 /* 🔥 LIGHT SHINE EFFECT */
