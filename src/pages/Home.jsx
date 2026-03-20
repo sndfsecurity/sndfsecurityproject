@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import {
   FaUserShield,
   FaUserSecret,
-  FaCrosshairs,
+  FaSearch,
   FaUserCheck,     // ✅ for Owl Security
   FaShieldAlt,
   FaUserLock       // ✅ for Spy Defence
@@ -93,7 +93,7 @@ const Home = () => {
 
       {/* 3 */}
       <div className="service-card" data-aos="fade-up" data-aos-delay="200">
-        <div className="icon"><FaCrosshairs /></div>
+        <div className="icon"><FaSearch /></div>
         <h3>Surveillance & Monitoring</h3>
         <p>
           Advanced surveillance solutions including tracking, monitoring,
