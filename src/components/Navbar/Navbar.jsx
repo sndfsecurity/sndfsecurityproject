@@ -1,36 +1,41 @@
 import logo from "../../assets/images/LOGO.png";
-import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <>
       {/* 🔴 TOP BAR */}
-      <div className="py-2 px-3 d-flex justify-content-between align-items-center">
+      <div className="top-bar">
 
-        {/* 🔵 LEFT - SOCIAL ICONS */}
-        <div className="d-flex gap-3 fs-5">
-          <FaFacebookF style={{ color: "#1877F2", cursor: "pointer" }} />
-          <FaInstagram style={{ color: "#E4405F", cursor: "pointer" }} />
-          <FaTwitter style={{ color: "#1DA1F2", cursor: "pointer" }} />
-          <FaWhatsapp style={{ color: "#25D366", cursor: "pointer" }} />
-          <FaYoutube style={{ color: "#FF0000", cursor: "pointer" }} />
+        {/* LEFT */}
+        <div className="top-left">
+          <FaFacebookF style={{ color: "#1877F2" }} />
+          <FaInstagram style={{ color: "#E4405F" }} />
+          <FaTwitter style={{ color: "#1DA1F2" }} />
+          <FaWhatsapp style={{ color: "#25D366" }} />
+          <FaYoutube style={{ color: "#FF0000" }} />
         </div>
 
-        {/* 🟡 CENTER - SCROLL TEXT */}
-        <div className="scroll-container">
+        {/* CENTER */}
+        <div className="top-center">
           <div className="scroll-text">
-            “SNDF वेबसाइट पर आपका स्वागत है, यहाँ आने के लिए आपका धन्यवाद।” &nbsp;&nbsp;&nbsp; “SNDF वेबसाइट पर आपका स्वागत है, यहाँ आने के लिए आपका धन्यवाद।” &nbsp;&nbsp;&nbsp; “SNDF वेबसाइट पर आपका स्वागत है, यहाँ आने के लिए आपका धन्यवाद।”
+            SNDF वेबसाइट पर आपका स्वागत है, यहाँ आने के लिए आपका धन्यवाद।
           </div>
         </div>
 
-        {/* 🔴 RIGHT - LANGUAGE + ENQUIRY */}
-        <div className="d-flex align-items-center gap-2">
-          <select className="form-select form-select-sm w-auto">
+        {/* RIGHT */}
+        <div className="top-right">
+          <select className="form-select form-select-sm">
             <option>ENGLISH</option>
             <option>हिंदी</option>
             <option>मराठी</option>
-
           </select>
 
           <button className="btn btn-danger btn-sm">Enquiry</button>
@@ -39,16 +44,11 @@ function Navbar() {
       </div>
 
       {/* 🔵 MAIN NAVBAR */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
+      <nav className="navbar navbar-expand-lg navbar-dark px-3">
 
         {/* Logo */}
         <a className="navbar-brand" href="/">
-          <img 
-            src={logo} 
-            alt="logo" 
-            width="90" 
-            style={{ borderRadius: "50%" }}
-          />
+          <img src={logo} alt="logo" />
         </a>
 
         {/* Toggle */}
@@ -63,20 +63,16 @@ function Navbar() {
 
         {/* Menu */}
         <div className="collapse navbar-collapse" id="navbarContent">
+          <ul className="navbar-nav ms-auto">
 
-          <ul className="navbar-nav ms-auto" style={{ gap: "10px" }}>
-
-            {/* HOME */}
             <li className="nav-item">
               <a className="nav-link" href="/">Home</a>
             </li>
 
-            {/* ABOUT */}
             <li className="nav-item">
               <a className="nav-link" href="/about">About</a>
             </li>
 
-            {/* SERVICES */}
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 Services
@@ -90,7 +86,6 @@ function Navbar() {
               </ul>
             </li>
 
-            {/* MEDIA */}
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 Media
@@ -104,7 +99,6 @@ function Navbar() {
               </ul>
             </li>
 
-            {/* BRANCHES */}
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 Branches
@@ -118,12 +112,8 @@ function Navbar() {
               </ul>
             </li>
 
-            {/* COURSES */}
-            <li className="nav-item">
-              <a className="nav-link">Courses</a>
-            </li>
+            <li className="nav-item"><a className="nav-link">Courses</a></li>
 
-            {/* CASES */}
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 Cases
@@ -132,35 +122,16 @@ function Navbar() {
                 <li><a className="dropdown-item">Case 1</a></li>
                 <li><a className="dropdown-item">Case 2</a></li>
                 <li><a className="dropdown-item">Case 3</a></li>
-                <li><a className="dropdown-item">Case 4</a></li>
-                <li><a className="dropdown-item">Case 5</a></li>
               </ul>
             </li>
 
-            {/* BLOG */}
-            <li className="nav-item">
-              <a className="nav-link">Blog</a>
-            </li>
-
-            {/* TEAM */}
-            <li className="nav-item">
-              <a className="nav-link">Team</a>
-            </li>
-
-            {/* CAREER */}
-            <li className="nav-item">
-              <a className="nav-link">Career</a>
-            </li>
-
-            {/* CONTACT */}
-            <li className="nav-item">
-              <a className="nav-link">Contact</a>
-            </li>
+            <li className="nav-item"><a className="nav-link">Blog</a></li>
+            <li className="nav-item"><a className="nav-link">Team</a></li>
+            <li className="nav-item"><a className="nav-link">Career</a></li>
+            <li className="nav-item"><a className="nav-link">Contact</a></li>
 
           </ul>
-
         </div>
-
       </nav>
     </>
   );

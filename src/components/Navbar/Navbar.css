@@ -1,76 +1,106 @@
-.bg-primary,
-.navbar {
-  background: linear-gradient(90deg, #0d1f3c, #2a4fa3) !important;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-/* Navbar */
-.navbar {
-  position: fixed !important;
-
-  top: 48px; /* 🔥 increase this (your top bar is taller than 48px) */
-
+/* 🔴 TOP BAR */
+.top-bar {
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-
-  z-index: 10001; /* 🔥 higher than top bar */
+  height: 48px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 15px 20px;
-  color: white;
-
-   box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-   transition: all 0.3s ease;
-   backdrop-filter: blur(10px);
+  padding: 0 20px;
+  background: #fff;
+  z-index: 10000;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-/* Logo */
+
+/* LEFT */
+.top-left {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+}
+
+/* CENTER */
+.top-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* RIGHT */
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* SCROLL TEXT */
+.scroll-text {
+  color: red;
+  font-weight: bold;
+  animation: scroll-left 20s linear infinite;
+}
+
+/* ANIMATION */
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* 🔵 NAVBAR */
+.navbar {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+  background: linear-gradient(90deg, #0d1f3c, #2a4fa3) !important;
+
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+/* LOGO */
 .navbar-brand img {
   width: 80px;
   border-radius: 50%;
 }
 
-/* Menu */
+/* MENU */
 .navbar-nav {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* Nav links */
+/* LINKS */
 .nav-link {
-  color: #ffffff !important;
+  color: #fff !important;
   font-size: 15px;
   transition: 0.3s;
-}
-
-.nav-link.active {
-  color: #ff4d4d !important;
-  font-weight: 600;
 }
 
 .nav-link:hover {
   color: #ff4d4d !important;
 }
 
-
-/* Right side (Language + Enquiry) */
-.navbar .form-select {
-  height: 32px;
-  font-size: 14px;
-}
-
-.navbar .btn-danger {
-  padding: 6px 12px;
-  font-size: 14px;
-  border-radius: 4px;
-}
-
-/* Dropdown */
+/* DROPDOWN */
 .dropdown-menu {
   background: #0d1f3c;
   border: none;
@@ -82,18 +112,23 @@ html {
 
 .dropdown-item:hover {
   background: #2a4fa3;
-  color: #fff;
 }
 
-.map iframe {
-  border-radius: 8px;
-  width: 100%;
-}
-
-
-
-/* ================= MOBILE ================= */
+/* 📱 MOBILE */
 @media (max-width: 768px) {
+
+  .top-left {
+    display: none;
+  }
+
+  .top-center {
+    font-size: 12px;
+    max-width: 60%;
+  }
+
+  .top-right {
+    gap: 5px;
+  }
 
   .navbar-collapse {
     background: #0d1f3c;
@@ -104,82 +139,4 @@ html {
     flex-direction: column;
     gap: 15px;
   }
-
-  .bg-primary.d-flex {
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-  }
-
-  .bg-primary.d-flex > div:nth-child(3) {
-    order: 1;
-    justify-content: flex-start;
-  }
-
-  .bg-primary.d-flex > div:nth-child(2) {
-    order: 2;
-    justify-content: flex-end;
-  }
-
-  .bg-primary.d-flex > div:nth-child(1) {
-    display: none;
-  }
-
-  .btn-danger {
-    width: auto;
-  }
 }
-
-/* 🔥 SCROLL TEXT CONTAINER */
-.scroll-container {
-  flex: 1;
-  overflow: hidden;
-  white-space: nowrap;
-  text-align: center;
-}
-
-/* 🔥 SCROLL TEXT */
-.scroll-text {
-  display: inline-block;
-  color: red;
-  font-weight: bold;
-  animation: scroll-left 20s linear infinite; /* ✅ speed slow keli */
-  padding: 5px 0;;
-}
-
-/* 🔥 ANIMATION */
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-/* Cursor pointer */
-.nav-link,
-.dropdown-item,
-.navbar-brand,
-button,
-select,
-svg {
-  cursor: pointer !important;
-}
-
-/* 🔥 STICKY NAVBAR (Desktop + Mobile) */
-
-
-/* 🔴 TOP BAR */
-.py-2.px-3.d-flex {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10000;
-  background: #fff;
-   height: 48px;
-   border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-
