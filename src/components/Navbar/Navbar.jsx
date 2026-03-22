@@ -1,6 +1,7 @@
 import logo from "../../assets/images/LOGO.png";
 import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -74,8 +75,12 @@ function Navbar() {
             </li>
 
             {/* ABOUT */}
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="/about">About</a>
+            </li> */}
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">About</Link>
             </li>
 
             {/* SERVICES */}

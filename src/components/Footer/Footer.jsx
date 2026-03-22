@@ -89,7 +89,7 @@ const Footer = () => {
           </p>
 
           <p>
-            <FaEnvelope /> <a href="mailto:info@sndf.com">info@sndf.com</a>
+            <FaEnvelope /> <a href="mailto:ndfdetective@gmail.com">ndfdetective@gmail.com</a>
           </p>
 
           {/* Google Map */}

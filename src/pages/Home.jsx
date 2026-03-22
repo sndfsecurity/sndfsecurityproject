@@ -2,6 +2,35 @@ import "./Home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import aboutImg from "../assets/images/hero.jpeg"; // replace with your image
+
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+
+import { Autoplay } from "swiper/modules";
+
+<Swiper
+  modules={[Autoplay, Pagination]}
+  loop={true}
+  speed={800}
+  autoplay={{
+    delay: 2000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  }}
+  pagination={{ clickable: true }}
+  spaceBetween={25}
+  breakpoints={{
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  }}
+></Swiper>
 
 import {
   FaUserShield,
@@ -59,9 +88,62 @@ const Home = () => {
         </div>
       </section>
 
+
+
+      {/* about section.............................................. */}
+       <section className="about">
+      <div className="about-container">
+
+        {/* IMAGE */}
+        <div className="about-image">
+          <img src={aboutImg} alt="about" />
+        </div>
+
+        {/* CONTENT */}
+        <div className="about-content">
+          <span className="about-tag">WELCOME TO SNDF</span>
+
+          <h2>
+            Your Trusted Partner in <br />
+            <span>Security & Investigation</span>
+          </h2>
+
+          <p>
+            At SNDF, we go beyond basic security services. We deliver
+            reliable, discreet, and result-driven solutions designed
+            to protect what matters most to our clients.
+          </p>
+
+          <p>
+            Our experienced professionals combine real-world expertise
+            with modern technology to handle complex cases with
+            precision and confidentiality.
+          </p>
+
+          {/* FEATURES */}
+          <div className="about-features">
+            <div className="feature">✔ 3500+ Happy Clients</div>
+            <div className="feature">✔ Quick Response Team</div>
+            <div className="feature">✔ Verified Professionals</div>
+            <div className="feature">✔ 24/7 Support</div>
+          </div>
+
+          {/* BUTTON */}
+          <a href="/about" className="about-btn">
+            Read More →
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+     
+     
+
+
       {/* ================= SERVICES ================= */}
       
-      <section className="services">
+  <section className="services">
   <div className="container">
 
     <div className="services-header" data-aos="fade-up">
@@ -185,6 +267,92 @@ const Home = () => {
         </div>
       </section>
 
+
+      {/* testimonial sections///////////////////////////////////////////////////// */}
+
+      
+<section className="testimonial">
+  <div className="testimonial-container">
+
+    <h2 className="section-title" data-aos="fade-up">Testimonials</h2>
+    <p className="section-subtitle" data-aos="fade-up">
+      What our clients say about our trusted security services
+    </p>
+
+    <Swiper
+      modules={[Autoplay, Pagination]}
+      loop={true}
+      speed={900}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      }}
+      pagination={{
+        clickable: true,
+        el: ".custom-pagination"
+      }}
+      spaceBetween={30}
+      breakpoints={{
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      }}
+    >
+
+      {[
+        {
+          badge: "Confidential Client",
+          text: "Highly professional and discreet service. Everything handled with full confidentiality.",
+          name: "Corporate Client"
+        },
+        {
+          badge: "Verified Client",
+          text: "Quick response and very reliable security staff. Felt completely safe.",
+          name: "Event Organizer"
+        },
+        {
+          badge: "Confidential Case",
+          text: "Investigation handled carefully without any information leak.",
+          name: "Private Client"
+        },
+        {
+          badge: "Verified Client",
+          text: "Excellent coordination and professional guards. Highly recommended.",
+          name: "Business Owner"
+        },
+        {
+          badge: "Confidential Client",
+          text: "Very responsive and trustworthy investigation team with accurate results.",
+          name: "Legal Client"
+        },
+        {
+          badge: "Verified Case",
+          text: "Smooth service and strong communication. Felt secure throughout.",
+          name: "Event Manager"
+        }
+      ].map((item, index) => (
+        <SwiperSlide key={index}>
+          <div className="testimonial-card">
+            <span className="badge">{item.badge}</span>
+
+            <div className="stars">⭐⭐⭐⭐⭐</div>
+
+            <p>{item.text}</p>
+
+            <h4>{item.name}</h4>
+          </div>
+        </SwiperSlide>
+      ))}
+
+    </Swiper>
+
+    {/* OUTSIDE PAGINATION */}
+    <div className="custom-pagination"></div>
+
+  </div>
+</section>
+    
     </>
   );
 };
