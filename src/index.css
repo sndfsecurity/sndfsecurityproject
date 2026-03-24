@@ -137,3 +137,123 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+
+
+/* 🔥 FLOATING BUTTON CONTAINER */
+.floating-buttons {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 999;
+}
+
+/* 🔵 COMMON BUTTON STYLE */
+.float-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+/* 🟢 WHATSAPP (PREMIUM GREEN) */
+.float-btn.whatsapp {
+  background: linear-gradient(135deg, #25D366, #1ebe5d);
+}
+
+/* 🔵 CALL (CHANGE COLOR → PREMIUM BLUE) */
+.float-btn.call {
+  background: linear-gradient(135deg, #007bff, #004aad);
+}
+
+/* ✨ HOVER EFFECT */
+.float-btn:hover {
+  transform: translateY(-5px) scale(1.08);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+/* 🔥 PULSE ANIMATION */
+.float-btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.6;
+  z-index: -1;
+  animation: pulse 2s infinite;
+}
+
+/* DEFAULT HIDDEN */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+  transition: all 0.4s ease;
+}
+
+/* HIDDEN STATE */
+.floating-buttons.hidden {
+  opacity: 0;
+  transform: translateY(80px);
+  pointer-events: none;
+}
+
+/* VISIBLE STATE */
+.floating-buttons.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* 💬 TOOLTIP TEXT */
+.float-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: 70px;
+  background: #000;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.float-btn:hover::after {
+  opacity: 1;
+}

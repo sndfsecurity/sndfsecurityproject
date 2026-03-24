@@ -126,8 +126,12 @@ function Navbar() {
             </li>
 
             {/* COURSES */}
-            <li className="nav-item">
-              <a className="nav-link">Courses</a>
+            {/* <li className="nav-item">
+              <a className="nav-link">Course</a>
+            </li> */}
+
+             <li className="nav-item">
+              <Link className="nav-link" to="/course">Course</Link>
             </li>
 
             {/* CASES */}

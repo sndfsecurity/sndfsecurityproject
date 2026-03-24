@@ -52,6 +52,28 @@ function About() {
           </ul>
         </div>
 
+
+         <div style={{ marginTop: "40px" }}>
+          <h3>Why Choose Us?</h3>
+          <ul>
+            <li>✔ Experienced Investigators</li>
+            <li>✔ 100% Confidentiality</li>
+            <li>✔ Fast & Accurate Reports</li>
+            <li>✔ Nationwide Services</li>
+          </ul>
+        </div>
+
+         <div style={{ marginTop: "40px" }}>
+          <h3>Why Choose Us?</h3>
+          <ul>
+            <li>✔ Experienced Investigators</li>
+            <li>✔ 100% Confidentiality</li>
+            <li>✔ Fast & Accurate Reports</li>
+            <li>✔ Nationwide Services</li>
+          </ul>
+        </div>
+        
+
       </div>
     </section>
   );

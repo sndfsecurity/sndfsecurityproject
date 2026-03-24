@@ -891,3 +891,134 @@
     padding: 20px;
   }
 }
+
+
+
+/* ================= CTA SECTION PREMIUM ================= */
+
+/* ===== SECTION ===== */
+.cta-new {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #0f2a5a, #1f4c8f);
+  color: #fff;
+}
+
+/* ===== LAYOUT ===== */
+.cta-new-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* ===== LEFT ===== */
+.cta-left h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+
+  position: relative;
+  padding-left: 20px;
+}
+
+.cta-left h2 span {
+  color: #ff4b4b;
+}
+
+.cta-left p {
+  color: #dbe6ff;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.cta-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  font-size: 15px;
+}
+
+/* ===== RIGHT CARD ===== */
+.cta-right {
+ 
+  color: #0f2a5a;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+
+   background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 
+    0 20px 40px rgba(0,0,0,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.cta-right h3 {
+  margin-bottom: 25px;
+}
+
+/* ===== BUTTONS ===== */
+.cta-btn-primary {
+  display: block;
+  margin-bottom: 15px;
+  padding: 14px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+
+  background: linear-gradient(45deg, #ff3b3b, #ff6b6b);
+  box-shadow: 0 10px 25px rgba(255,75,75,0.4);
+}
+
+.cta-btn-primary:hover {
+   transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(255,75,75,0.6);
+}
+
+.cta-btn-secondary {
+  display: block;
+  padding: 14px;
+  border-radius: 8px;
+  color: #0f2a5a;
+  text-decoration: none;
+  transition: 0.3s;
+
+  border: 1px solid #0f2a5a;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-btn-secondary:hover {
+  background: #0f2a5a;
+  color: #fff;
+}
+
+/* ===== TRUST ===== */
+.cta-trust {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .cta-new-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-left {
+    text-align: center;
+  }
+
+  .cta-features {
+    grid-template-columns: 1fr;
+  }
+}

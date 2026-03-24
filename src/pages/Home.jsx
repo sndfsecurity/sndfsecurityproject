@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import aboutImg from "../assets/images/hero.jpeg"; // replace with your image
 
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -13,6 +12,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 import { Autoplay } from "swiper/modules";
+import Counter from "../components/Counter";
 
 <Swiper
   modules={[Autoplay, Pagination]}
@@ -51,6 +51,23 @@ const Home = () => {
       once: true,
     });
   }, []);
+
+
+  useEffect(() => {
+  const handleMouseMove = (e) => {
+    const card = document.querySelector(".cta-card");
+    if (!card) return;
+
+    const x = (window.innerWidth / 2 - e.clientX) / 30;
+    const y = (window.innerHeight / 2 - e.clientY) / 30;
+
+    card.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+  };
+
+  window.addEventListener("mousemove", handleMouseMove);
+
+  return () => window.removeEventListener("mousemove", handleMouseMove);
+}, []);
 
   return (
     <>
@@ -243,24 +260,25 @@ const Home = () => {
           <div className="why-right">
 
             <div className="why-card">
-              <h3>3500+</h3>
-              <p>Happy Clients</p>
-            </div>
+  <Counter target={3500} duration={2000} />
+  <p>Happy Clients</p>
+</div>
 
-            <div className="why-card">
-              <h3>5+</h3>
-              <p>Years Experience</p>
-            </div>
+<div className="why-card">
+  <Counter target={5} duration={1000} />
+  <p>Years Experience</p>
+</div>
 
-            <div className="why-card">
-              <h3>1200+</h3>
-              <p>Cases Solved</p>
-            </div>
+<div className="why-card">
+  <Counter target={1200} duration={1800} />
+  <p>Cases Solved</p>
+</div>
 
-            <div className="why-card">
-              <h3>24/7</h3>
-              <p>Support</p>
-            </div>
+<div className="why-card">
+  <h3>24/7</h3>
+  <p>Support</p>
+</div>
+
 
           </div>
 
@@ -352,7 +370,53 @@ const Home = () => {
 
   </div>
 </section>
-    
+
+
+{/* cta section..................................... */}
+<section className="cta-new">
+  <div className="container cta-new-container">
+
+    {/* LEFT SIDE */}
+    <div className="cta-left">
+      <h2>
+        Confidential <span>Investigation</span> Services
+      </h2>
+
+      <p>
+        Get professional and discreet investigation support from India's
+        trusted security network. We ensure complete privacy and accurate results.
+      </p>
+
+      <div className="cta-features">
+        <div>✔ 100% Confidential Cases</div>
+        <div>✔ Fast Response Team</div>
+        <div>✔ PAN India Network</div>
+        <div>✔ Verified Professionals</div>
+      </div>
+    </div>
+
+    {/* RIGHT SIDE */}
+    <div className="cta-right">
+      <h3>Start Your Case Today</h3>
+
+      <a href="/contact" className="cta-btn-primary">
+        Get Free Consultation
+      </a>
+
+      <a href="tel:+918007341905" className="cta-btn-secondary">
+        Call Now
+      </a>
+
+      <div className="cta-trust">
+        <span>🔒 Confidential</span>
+        <span>✔ Govt Registered</span>
+        <span>⭐ ISO Certified</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
     </>
   );
 };
