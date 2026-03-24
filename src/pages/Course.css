@@ -8,7 +8,7 @@
   justify-content: center;
   text-align: center;
 
-  background: url("src/assets/images/course-bg.jpg") center/cover no-repeat;
+  background: url("../assets/images/course-bg.jpg") center/cover no-repeat;
   margin-top: 80px;
 }
 
