@@ -4,11 +4,13 @@ import { FaShieldAlt, FaUsers, FaBuilding } from "react-icons/fa";
 import course2 from "../../assets/images/course-bg.jpg";
 
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
  
 
 const PuneHero = () => {
 
   const galleryRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
   const container = galleryRef.current;
@@ -69,7 +71,11 @@ return (
       </p>
 
       <div className="hero-buttonsb">
-        <button className="btn-outline">Contact Us</button>
+            <button 
+                className="btn-outline"
+                onClick={() => navigate("/contact")}>
+                Contact Us
+            </button>
       </div>
 
       {/* STATS */}
