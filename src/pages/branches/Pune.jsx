@@ -68,7 +68,7 @@ return (
         and security services with precision, confidentiality, and nationwide coordination.
       </p>
 
-      <div className="hero-buttons">
+      <div className="hero-buttonsb">
         <button className="btn-outline">Contact Us</button>
       </div>
 
