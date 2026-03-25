@@ -1,6 +1,6 @@
 .about-page {
   font-family: "Segoe UI", sans-serif;
-  margin-top: 130px;
+  padding-top: 130px;
 }
 
 /* ANIMATION */
@@ -18,8 +18,7 @@
 .about-page .about-split {
   display: flex;
   align-items: center;
-  min-height: 100vh;
-  padding: 60px;
+  padding: 80px 60px;
   gap: 60px;
   background: rgb(231, 236, 236);
 }
@@ -119,7 +118,7 @@
 /* CARD */
 .about-page .about-card {
   background: white;
-  padding: 90px;
+  padding: 30px;
   border-radius: 12px;
   transition: 0.3s;
   cursor: pointer;
