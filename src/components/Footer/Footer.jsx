@@ -79,12 +79,12 @@ const Footer = () => {
         <div className="footer-col">
           <h3>Head Office</h3>
 
-          <p>
+          <p className="notranslate">
             <FaMapMarkerAlt />S.N.D, F. Office,Yashshree Phase 2,Katraj
             Pune - 411046
           </p>
 
-          <p>
+          <p className="notranslate">
             <FaPhone /> <a href="tel:+919876543210">+91 9876543210</a>
           </p>
 

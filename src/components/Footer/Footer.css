@@ -144,6 +144,14 @@
   gap: 8px;
 }
 
+
+/* Fix Google Translate spacing issue */
+.notranslate span {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .footer-col a {
   color: #ccc;
   text-decoration: none;
