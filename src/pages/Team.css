@@ -1,0 +1,123 @@
+.team-page {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HERO */
+.team-hero {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("D:\SNDF_project\sndfsecurityproject\src\assets\images\hero.jpeg")
+    center/cover no-repeat;
+
+  padding: 100px 20px 40px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero-content {
+  color: white;
+  max-width: 900px;
+  margin: auto;
+}
+
+.team-hero h1 {
+  font-size: 40px;
+}
+
+.team-hero p {
+  color: #ddd;
+}
+
+/* HERO CARDS */
+.leader-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.leader-card {
+  background: white;
+  color: black;
+  padding: 15px;
+  width: 180px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.leader-card:hover {
+  transform: translateY(-8px);
+}
+
+.leader-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+/* DEPT */
+.dept {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* BACKGROUND */
+.investigation {
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color: white;
+}
+
+.technical {
+  background: linear-gradient(135deg,#1e3c72,#2a5298);
+  color: white;
+}
+
+.legal {
+  background: linear-gradient(135deg,#000,#434343);
+  color: #f1c40f;
+}
+
+/* CARD */
+.team-card {
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+.team-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+/* DESKTOP */
+.desktop-view {
+  display: block;
+}
+
+.mobile-view {
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+  }
+
+  .team-hero {
+    padding: 80px 15px 30px;
+  }
+
+  .team-hero h1 {
+    font-size: 24px;
+  }
+}

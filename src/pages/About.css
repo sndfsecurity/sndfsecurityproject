@@ -1,0 +1,271 @@
+.about-page {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ANIMATION */
+.about-page .fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.8s;
+}
+.about-page .fade-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HERO */
+.about-page .about-split {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 60px;
+  gap: 60px;
+  background: rgb(231, 236, 236);
+}
+
+.about-page .about-image {
+  width: 40%;
+  height: 500px;
+  border-radius: 20px;
+  background: url("../assets/images/hero.jpeg") center/cover no-repeat;
+}
+
+.about-page .about-content {
+  width: 60%;
+  color: rgb(75, 5, 116);
+}
+
+.about-page .about-content h2 {
+  color: #e40000;
+}
+
+.about-page .about-title {
+  font-size: 36px;
+  color: #dc2626;
+}
+
+/* TEXT */
+.about-page .common-text {
+  font-size: 25px !important;
+  line-height: 2;
+  color: #333;
+}
+
+/* VIDEO */
+.about-page .video-split {
+  display: flex;
+  padding: 80px;
+  background: #d4ced6;
+  align-items: center;
+}
+
+.about-page .video-content,
+.about-page .video-right {
+  width: 50%;
+}
+
+.about-page iframe {
+  width: 100%;
+  height: 400px !important;
+  border-radius: 12px;
+}
+
+/* DIRECTOR */
+.about-page .director {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  background: #eaf3ff;
+}
+
+.about-page .director img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* MISSION */
+.about-page .mission-vision {
+  display: flex;
+}
+
+.about-page .mv-box {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-page .mv-box:nth-child(1) {
+  background: #ffe4e6;
+}
+
+.about-page .mv-box:nth-child(2) {
+  background: #6d83be;
+  color: white;
+}
+
+/* VALUES */
+.about-page .values {
+  padding: 70px;
+  text-align: center;
+  background: #ede3e6;
+}
+
+.about-page .values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.about-page .about-card {
+  background: white;
+  padding: 90px;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* HOVER */
+.about-page .about-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(220, 11, 11, 0.2);
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+  .about-page .about-split,
+  .about-page .video-split,
+  .about-page .director,
+  .about-page .mission-vision {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about-page .about-image,
+  .about-page .about-content,
+  .about-page .video-content,
+  .about-page .video-right {
+    width: 100%;
+  }
+
+  .about-page iframe {
+    height: 220px !important;
+  }
+
+  .about-page .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:576px){
+  .about-page .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .about-title {
+    font-size: 26px;
+  }
+}
+/* ===== NEW SECTIONS ===== */
+
+/* MISSION VISION */
+.about-page .mission-vision {
+  display: flex;
+}
+
+.about-page .mv-box {
+  flex: 1;
+  padding: 50px;
+  color: #fff;
+}
+
+.about-page .mv-box.left {
+  background: linear-gradient(135deg, #c7788b, #2f1759);
+}
+
+.about-page .mv-box.right {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* VALUES */
+.about-page .values {
+  padding: 100px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.about-page .values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.about-page .about-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.about-page .about-card::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, red, blue);
+}
+
+.about-page .arrow {
+  display: inline-block;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.about-page .about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.about-page .about-card:hover .arrow {
+  transform: translateX(8px);
+  color: red;
+}
+
+/* NEED HELP */
+.about-page .need-help {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #8797ce, #1f6c96);
+  color: #fff;
+}
+
+.about-page .need-help button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+  .about-page .mission-vision {
+    flex-direction: column;
+  }
+
+  .about-page .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:576px){
+  .about-page .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
