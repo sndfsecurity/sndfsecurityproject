@@ -18,6 +18,8 @@ const About = () => {
   }, []);
 
   return (
+
+    
     <div className="about-page">
 
       {/* ABOUT / HERO */}
@@ -108,7 +110,10 @@ const About = () => {
           </div>
 
       </div>
+     
     </section>
+
+    </div>
   );
 };
 

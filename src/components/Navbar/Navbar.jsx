@@ -121,9 +121,8 @@ function Navbar() {
               </li>
 
                 <li><a className="dropdown-item">Mumbai</a></li>
-                <li><a className="dropdown-item">Pune</a></li>
-                <li><a className="dropdown-item">Bangalore</a></li>
-                <li><a className="dropdown-item">Hyderabad</a></li>
+                <li><a className="dropdown-item">Assam</a></li>
+                <li><a className="dropdown-item">Hyderabad</a></li>               
               </ul>
             </li>
 
