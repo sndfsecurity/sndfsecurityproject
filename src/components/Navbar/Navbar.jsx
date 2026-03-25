@@ -116,8 +116,14 @@ function Navbar() {
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 Branches
               </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item">Delhi</a></li>
+        <ul className="dropdown-menu">
+
+              <li>
+              <Link to="/branches/pune" className="dropdown-item">
+                📍 Head Office (Pune)
+              </Link>
+              </li>
+
                 <li><a className="dropdown-item">Mumbai</a></li>
                 <li><a className="dropdown-item">Pune</a></li>
                 <li><a className="dropdown-item">Bangalore</a></li>
@@ -125,10 +131,7 @@ function Navbar() {
               </ul>
             </li>
 
-            {/* COURSES */}
-            {/* <li className="nav-item">
-              <a className="nav-link">Course</a>
-            </li> */}
+            
 
              <li className="nav-item">
               <Link className="nav-link" to="/course">Course</Link>
@@ -164,8 +167,12 @@ function Navbar() {
             </li>
 
             {/* CONTACT */}
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link">Contact</a>
+            </li> */}
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">Contact</Link>
             </li>
 
           </ul>
