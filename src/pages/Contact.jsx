@@ -1,6 +1,9 @@
 import "./Contact.css";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { FaFacebookF, FaInstagram,FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp } from "react-icons/fa";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 
 const scrollToForm = () => {
   const form = document.getElementById("enquiry-form");
@@ -17,6 +20,24 @@ const scrollToForm = () => {
 
 const Contact = () => {
 
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+
+          // focus first input (premium UX)
+          const input = el.querySelector("input");
+          if (input) input.focus();
+
+        }, 100);
+      }
+    }
+  }, [location]);
     
   return (
     

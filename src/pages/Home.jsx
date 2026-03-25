@@ -1,6 +1,8 @@
 import "./Home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import aboutImg from "../assets/images/hero.jpeg"; // replace with your image
 
@@ -44,6 +46,8 @@ import {
 import { FaCheckCircle } from "react-icons/fa";
 
 const Home = () => {
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     AOS.init({
@@ -91,8 +95,28 @@ const Home = () => {
             </p>
 
             <div className="hero-buttons">
-              <button className="btn btn-danger">Get Protection</button>
-              <button className="btn btn-outline-light">Explore Services</button>
+
+              {/* <button className="btn btn-danger">Get Protection</button> */}
+
+              <button
+  className="btn btn-danger"
+  onClick={() => navigate("/contact#enquiry-form")}
+>
+  Get Protection
+</button>
+
+
+              <button
+                  className="btn btn-outline-light"
+                  onClick={() => {
+                    document.getElementById("services")?.scrollIntoView({
+                      behavior: "smooth"
+                    });
+                  }}
+                >
+                  Explore Services
+             </button>
+
             </div>
 
             <div className="hero-trust">
@@ -146,9 +170,9 @@ const Home = () => {
           </div>
 
           {/* BUTTON */}
-          <a href="/about" className="about-btn">
-            Read More →
-          </a>
+          <Link to="/about" className="about-btn">
+          Read More →
+        </Link>
 
         </div>
 
@@ -160,7 +184,7 @@ const Home = () => {
 
       {/* ================= SERVICES ================= */}
       
-  <section className="services">
+  <section className="services"  id="services">
   <div className="container">
 
     <div className="services-header" data-aos="fade-up">
