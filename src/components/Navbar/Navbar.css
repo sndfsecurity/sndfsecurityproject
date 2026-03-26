@@ -90,7 +90,85 @@ html {
   width: 100%;
 }
 
+/* enquiry modal */
 
+/* 🔥 FULL SCREEN OVERLAY */
+.sn-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+/* 🧊 MODAL BOX */
+.sn-modal-box {
+  background: #fff;
+  padding: 25px;
+  width: 320px;
+  border-radius: 12px;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+/* INPUT */
+.sn-modal-box input,
+.sn-modal-box textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* CLOSE BUTTON */
+.sn-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* SUBMIT */
+.sn-submit-btn {
+  width: 100%;
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* 🔴 RED BORDER */
+.input-error {
+  border: 1px solid red !important;
+}
+
+/* 🔴 ERROR TEXT */
+.error-text {
+  color: red;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {

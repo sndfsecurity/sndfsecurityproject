@@ -10,7 +10,11 @@ import Contact from "./pages/Contact";
 import Course from "./pages/Course";
 import Team from "./pages/Team";
 import Blog from "./pages/Blog";
+
 import Pune from "./pages/branches/Pune";
+import Assam from "./pages/branches/Assam";
+
+import Gallery from "./pages/Media/Gallery";
 
 
 function App() {
@@ -29,6 +33,10 @@ function App() {
 
         {/* Branch pages */}
        <Route path="/branches/pune" element={<Pune />} />
+       <Route path="/branches/assam" element={<Assam />} />
+
+       
+       <Route path="/media/gallery" element={<Gallery />} />
 
       </Routes>
 

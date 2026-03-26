@@ -80,7 +80,7 @@ const Footer = () => {
           <h3>Head Office</h3>
 
           <p className="notranslate">
-            <FaMapMarkerAlt />S.N.D, F. Office,Yashshree Phase 2,Katraj
+            <FaMapMarkerAlt />S.N.D.F. Office,Yashshree Phase 2,Katraj
             Pune - 411046
           </p>
 
