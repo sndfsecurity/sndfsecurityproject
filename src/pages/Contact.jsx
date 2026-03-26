@@ -46,7 +46,7 @@ const Contact = () => {
 
       <div className="hero-btnscn">
         <a href="tel:+919876543210" className="btn-red">Call Now</a>
-        <button onClick={scrollToForm} className="btn-outline">
+        <button onClick={scrollToForm} className="contact-btn-outline">
         Send Enquiry
         </button>      
         </div>
