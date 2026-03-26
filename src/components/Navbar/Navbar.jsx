@@ -75,10 +75,6 @@ function Navbar() {
             </li>
 
             {/* ABOUT */}
-            {/* <li className="nav-item">
-              <a className="nav-link" href="/about">About</a>
-            </li> */}
-
             <li className="nav-item">
               <Link className="nav-link" to="/about">About</Link>
             </li>
@@ -144,15 +140,14 @@ function Navbar() {
               </ul>
             </li>
 
-            {/* BLOG */}
             <li className="nav-item">
-              <a className="nav-link">Blog</a>
-            </li>
+              <Link to="/blog" className="nav-link">Blog</Link>
+</li>
 
             {/* TEAM */}
-            <li className="nav-item">
-              <a className="nav-link">Team</a>
-            </li>
+           <li className="nav-item">
+  <Link className="nav-link" to="/team">Team</Link>
+</li>
 
             {/* CAREER */}
             <li className="nav-item">

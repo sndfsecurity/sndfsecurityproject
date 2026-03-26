@@ -1,60 +1,127 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "./About.css";
 
-function About() {
+const About = () => {
+
+  useEffect(() => {
+    const elements = document.querySelectorAll(".fade-up");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    });
+
+    elements.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
-    <section style={{ padding: "60px 20px", background: "#f9f9f9" }}>
-      <div style={{ maxWidth: "1100px", margin: "auto" }}>
-        
-        {/* TITLE */}
-        <h1 style={{ textAlign: "center", marginBottom: "20px" }}>
-          About Us
-        </h1>
+    <div className="about-page">
 
-        {/* DESCRIPTION */}
-        <p style={{ textAlign: "center", marginBottom: "40px", color: "#555" }}>
-          We provide trusted security and investigation services across India.
-          Our team is committed to confidentiality, professionalism, and delivering
-          accurate results for every client.
+      {/* ABOUT / HERO */}
+      <section className="about-split">
+        <div className="about-image fade-up"></div>
+
+        <div className="about-content fade-up">
+          <h2 className="about-title">About SNDF</h2>
+          <h3>Professional Investigation Services</h3>
+
+          <p className="common-text">
+            Founded with a vision to deliver truth and transparency, our company began as a small investigation service focused on solving critical cases. Over the years, we have grown into a trusted agency handling corporate investigations, surveillance, and cyber analysis.
+
+            With continuous innovation and modern technology, we maintain integrity, confidentiality, and accuracy. Today, we are known for professionalism and reliable results with a skilled team delivering precise insights.
+          </p>
+        </div>
+      </section>
+
+      {/* VIDEO */}
+      <section className="video-split fade-up">
+        <div className="video-content">
+          <h2>See How We Work</h2>
+          <p className="common-text">
+            We combine advanced technology with field expertise to deliver fast and accurate investigation results with complete confidentiality. Our approach is built on precision, discretion, and reliability.
+
+            Our team uses modern tools such as digital forensics, GPS tracking, surveillance systems, and data analysis.
+          </p>
+        </div>
+
+        <div className="video-right">
+          <iframe
+            src="https://www.youtube.com/embed/ljPyV9mqm7o"
+            title="video"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </section>
+
+      {/* ===== ADD FROM HERE (NEW SECTIONS) ===== */}
+
+      {/* MISSION & VISION */}
+      <section className="mission-vision fade-up">
+        <div className="mv-box left">
+          <h2>Our Mission</h2>
+          <p>
+            To deliver accurate, confidential, and professional investigation
+            services using advanced tools and expert knowledge.
+          </p>
+        </div>
+
+        <div className="mv-box right">
+          <h2>Our Vision</h2>
+          <p>
+            To become a leading and trusted investigation agency known
+            for innovation and excellence.
+          </p>
+        </div>
+      </section>
+
+      {/* CORE VALUES */}
+      <section className="values fade-up">
+        <h2>Our Core Values</h2>
+
+        <div className="values-grid">
+
+          <div className="about-card">
+            <h3>Integrity</h3>
+            <p>We maintain honesty in every investigation.</p>
+            <span className="arrow">→</span>
+          </div>
+
+          <div className="about-card">
+            <h3>Confidentiality</h3>
+            <p>Your data is always secure and private.</p>
+            <span className="arrow">→</span>
+          </div>
+
+          <div className="about-card">
+            <h3>Accuracy</h3>
+            <p>We deliver precise and verified results.</p>
+            <span className="arrow">→</span>
+          </div>
+
+          <div className="about-card">
+            <h3>Commitment</h3>
+            <p>Dedicated team focused on client success.</p>
+            <span className="arrow">→</span>
+          </div>
+
+        </div>
+      </section>
+
+      {/* NEED HELP */}
+      <section className="need-help fade-up">
+        <h2>Need Professional Help?</h2>
+        <p>
+          Contact us today for confidential investigation services.
+          Our team is ready to assist you anytime.
         </p>
+        <button>Contact Us</button>
+      </section>
 
-        {/* CONTENT */}
-        <div style={{ display: "flex", gap: "30px", flexWrap: "wrap" }}>
-          
-          {/* LEFT */}
-          <div style={{ flex: "1", minWidth: "280px" }}>
-            <h3>Who We Are</h3>
-            <p>
-              SNDF is a leading detective and security agency offering services
-              like personal investigation, corporate investigation, surveillance,
-              and background verification.
-            </p>
-          </div>
-
-          {/* RIGHT */}
-          <div style={{ flex: "1", minWidth: "280px" }}>
-            <h3>Our Mission</h3>
-            <p>
-              Our mission is to deliver reliable and confidential investigation
-              services with advanced technology and experienced professionals.
-            </p>
-          </div>
-
-        </div>
-
-        {/* EXTRA SECTION */}
-        <div style={{ marginTop: "40px" }}>
-          <h3>Why Choose Us?</h3>
-          <ul>
-            <li>✔ Experienced Investigators</li>
-            <li>✔ 100% Confidentiality</li>
-            <li>✔ Fast & Accurate Reports</li>
-            <li>✔ Nationwide Services</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default About;
