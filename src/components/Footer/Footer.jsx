@@ -16,8 +16,8 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
+    <footer id="footer" className="footer">
+        <div className="footer-container">
 
         {/* Brand */}
         <div className="footer-col brand">
@@ -58,7 +58,7 @@ const Footer = () => {
             <li>Home</li>
             <li>About</li>
             <li>Services</li>
-            <li>Courses</li>
+            <li>Course</li>
             <li>Contact</li>
             <li>Career</li>
           </ul>

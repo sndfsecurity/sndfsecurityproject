@@ -107,20 +107,8 @@ const About = () => {
             <span className="arrow">→</span>
           </div>
 
-        </div>
-      </section>
-
-      {/* NEED HELP */}
-      <section className="need-help fade-up">
-        <h2>Need Professional Help?</h2>
-        <p>
-          Contact us today for confidential investigation services.
-          Our team is ready to assist you anytime.
-        </p>
-        <button>Contact Us</button>
-      </section>
-
-    </div>
+      </div>
+    </section>
   );
 };
 

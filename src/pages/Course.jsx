@@ -1,0 +1,538 @@
+import "./Course.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { FaCalendarAlt, FaTools, FaUserTie, FaCertificate } from "react-icons/fa";
+import { FaUserSecret, FaLaptopCode, FaSearch } from "react-icons/fa";
+
+import heroImg from "../assets/images/hero.jpeg";
+import course2 from "../assets/images/course-bg.jpg";
+
+
+
+const Course = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
+  return (
+    <>
+      {/* ===== HERO SECTION ===== */}
+      <section className="course-hero">
+
+        {/* Overlay */}
+        <div className="hero-overlayc"></div>
+
+        {/* Content */}
+        <div className="hero-contentc" data-aos="fade-up">
+
+          <h1>
+            Detective Investigation <span>Course (DIC)</span>
+          </h1>
+
+          <p>
+            Learn professional investigation skills with real-world training,<br></br>
+            surveillance techniques, cybercrime basics, and field exposure.
+          </p>
+
+          {/* Badges */}
+          <div className="hero-badges">
+            <span>✔ Practical Training</span>
+            <span>✔ Field Exposure</span>
+            <span>✔ Certification</span>
+          </div>
+
+          {/* Mini Overview inside Hero */}
+         
+         <div className="hero-stats">
+
+            <div className="stat-box" data-aos="zoom-in">
+                <div className="stat-icon-box calendar">
+                <FaCalendarAlt />
+                </div>
+                <h3>90+</h3>
+                <p>Days Training</p>
+            </div>
+
+            <div className="stat-box" data-aos="zoom-in" data-aos-delay="100">
+                <div className="stat-icon-box tools">
+                <FaTools />
+                </div>
+                <h3>100%</h3>
+                <p>Practical Work</p>
+            </div>
+
+            <div className="stat-box" data-aos="zoom-in" data-aos-delay="200">
+                <div className="stat-icon-box user">
+                <FaUserTie />
+                </div>
+                <h3>Offline</h3>
+                <p>Mode</p>
+            </div>
+
+            <div className="stat-box" data-aos="zoom-in" data-aos-delay="300">
+                <div className="stat-icon-box certificate">
+                <FaCertificate />
+                </div>
+                <h3>Certified</h3>
+                <p>Course</p>
+            </div>
+
+</div>
+
+ </div>
+
+</section>
+
+
+{/* ///////////////////////////////////////////////////////////// */}
+
+ <section className="dic-info">
+      <div className="container">
+
+        {/* HEADING */}
+        <div className="dic-header" data-aos="fade-up">
+          <h2>
+            What is DIC Course?
+          </h2>
+          <p>
+            The Detective Investigation Course (DIC) is designed to train individuals
+            in professional investigation techniques with real-world exposure and practical learning.
+          </p>
+        </div>
+
+        {/* CARDS */}
+        <div className="dic-grid">
+
+          <div className="dic-card" data-aos="zoom-in">
+            <FaUserSecret className="dic-icon" />
+            <h3>Field Investigation</h3>
+            <p>Learn real-world investigation and surveillance techniques.</p>
+          </div>
+
+          <div className="dic-card" data-aos="zoom-in" data-aos-delay="100">
+            <FaLaptopCode className="dic-icon" />
+            <h3>Cyber Crime</h3>
+            <p>Understand digital tracking and cybercrime basics.</p>
+          </div>
+
+          <div className="dic-card" data-aos="zoom-in" data-aos-delay="200">
+            <FaSearch className="dic-icon" />
+            <h3>Case Handling</h3>
+            <p>Develop skills to manage and solve investigation cases.</p>
+          </div>
+
+          <div className="dic-card" data-aos="zoom-in" data-aos-delay="300">
+            <FaCertificate className="dic-icon" />
+            <h3>Certification</h3>
+            <p>Get certified after successful course completion.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    {/* module////////////////////////////////////////////////////// */}
+     <section className="modules">
+  <div className="container">
+
+    <div className="modules-header" data-aos="fade-up">
+      <h2>Course Modules</h2>
+      <p>Structured training program designed to build professional investigation skills step by step.</p>
+    </div>
+
+    <div className="timeline">
+
+      <div className="timeline-item" data-aos="fade-right">
+        <div className="timeline-dot"></div>
+        <div className="timeline-content">
+          <span>01</span>
+          <h3>Investigation Ethics</h3>
+          <p>Learn professional ethics, confidentiality, and legal responsibilities required in real-world investigations.</p>
+        </div>
+      </div>
+
+      <div className="timeline-item" data-aos="fade-left">
+        <div className="timeline-dot"></div>
+        <div className="timeline-content">
+          <span>02</span>
+          <h3>Information Gathering</h3>
+          <p>Understand surveillance techniques, background checks, and intelligence collection methods.</p>
+        </div>
+      </div>
+
+      <div className="timeline-item" data-aos="fade-right">
+        <div className="timeline-dot"></div>
+        <div className="timeline-content">
+          <span>03</span>
+          <h3>Crime Investigation</h3>
+          <p>Learn investigation procedures, evidence handling, and case-solving strategies.</p>
+        </div>
+      </div>
+
+      <div className="timeline-item" data-aos="fade-left">
+        <div className="timeline-dot"></div>
+        <div className="timeline-content">
+          <span>04</span>
+          <h3>Cyber Crime</h3>
+          <p>Explore digital crimes, online fraud detection, and cyber security fundamentals.</p>
+        </div>
+      </div>
+
+      <div className="timeline-item" data-aos="fade-right">
+        <div className="timeline-dot"></div>
+        <div className="timeline-content">
+          <span>05</span>
+          <h3>Forensic Investigation</h3>
+          <p>Basics of forensic science including fingerprints, evidence analysis, and reporting.</p>
+        </div>
+      </div>
+
+      <div className="timeline-item" data-aos="fade-left">
+        <div className="timeline-dot"></div>
+        <div className="timeline-content">
+          <span>06</span>
+          <h3>Field Training</h3>
+          <p>Hands-on field experience to understand real investigation scenarios.</p>
+        </div>
+      </div>
+
+      <div className="timeline-item" data-aos="fade-right">
+        <div className="timeline-dot"></div>
+        <div className="timeline-content">
+          <span>07</span>
+          <h3>Self Defence</h3>
+          <p>Basic self-protection techniques for safety during operations.</p>
+        </div>
+      </div>
+
+      <div className="timeline-item" data-aos="fade-left">
+        <div className="timeline-dot"></div>
+        <div className="timeline-content">
+          <span>08</span>
+          <h3>Expert Lectures</h3>
+          <p>Sessions from industry professionals sharing real case experiences.</p>
+        </div>
+      </div>
+
+      <div className="timeline-item" data-aos="fade-right">
+        <div className="timeline-dot"></div>
+        <div className="timeline-content">
+          <span>09</span>
+          <h3>Spy Tools & Gadgets</h3>
+          <p>Introduction to modern surveillance tools and investigation devices.</p>
+        </div>
+      </div>
+
+      {/* NEW ADDED */}
+      <div className="timeline-item" data-aos="fade-left">
+        <div className="timeline-dot"></div>
+        <div className="timeline-content">
+          <span>10</span>
+          <h3>Case Study Analysis</h3>
+          <p>Analyze real-life cases to understand investigation planning and execution.</p>
+        </div>
+      </div>
+
+      <div className="timeline-item" data-aos="fade-right">
+        <div className="timeline-dot"></div>
+        <div className="timeline-content">
+          <span>11</span>
+          <h3>Report Writing</h3>
+          <p>Learn how to prepare professional investigation reports with proper documentation.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+{/* what you will learn/////////////////////// */}
+<section className="learn-premium">
+  <div className="container">
+
+    <div className="learn-header">
+      <h2>What You Will Learn</h2>
+      <p>
+        Build strong investigative skills with practical knowledge,
+        modern tools, and real-world exposure.
+      </p>
+    </div>
+
+    <div className="learn-wrapper">
+
+      <div className="learn-line"></div>
+
+      <div className="learn-list">
+
+        <div className="learn-item" data-aos="fade-up" data-aos-delay="100">
+          <div className="learn-dot"></div>
+          <div className="learn-card">
+            <h3>Advanced Investigation Techniques</h3>
+            <p>
+              Learn <span>professional investigation methods</span> including
+              surveillance, tracking, and intelligence gathering.
+            </p>
+          </div>
+        </div>
+
+        <div className="learn-item">
+          <div className="learn-dot"></div>
+          <div className="learn-card">
+            <h3>Surveillance & Intelligence</h3>
+            <p>
+              Master discreet monitoring and <span>background verification </span>
+              techniques used in real-world operations.
+            </p>
+          </div>
+        </div>
+
+        <div className="learn-item">
+          <div className="learn-dot"></div>
+          <div className="learn-card">
+            <h3>Cyber Crime Fundamentals</h3>
+            <p>
+              Understand <span>digital fraud detection</span>, online tracking,
+              and cyber investigation basics.
+            </p>
+          </div>
+        </div>
+
+        <div className="learn-item">
+          <div className="learn-dot"></div>
+          <div className="learn-card">
+            <h3>Legal & Ethical Practices</h3>
+            <p>
+              Learn <span>investigation laws</span>, ethical standards,
+              and confidentiality protocols.
+            </p>
+          </div>
+        </div>
+
+        <div className="learn-item">
+          <div className="learn-dot"></div>
+          <div className="learn-card">
+            <h3>Field Training</h3>
+            <p>
+              Gain hands-on experience through <span>real-life case simulations</span>.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+{/* gallary//////////////////////////////////// */}
+<section className="course-gallery">
+  <div className="container">
+
+    <div className="gallery-header">
+      <h2>Training Gallery</h2>
+      <p>Explore real training sessions, field work, and practical learning moments.</p>
+    </div>
+
+    {/* ===== PHOTOS ===== */}
+    <div className="gallery-grid">
+
+      <div className="gallery-item">
+        <img src={heroImg} alt="Training" />
+      </div>
+
+      <div className="gallery-item">
+        <img src={course2} alt="Training" />
+      </div>
+
+      <div className="gallery-item">
+        <img src={heroImg} alt="Training" />
+      </div>
+
+      <div className="gallery-item">
+        <img src={course2} alt="Training" />
+      </div>
+
+    </div>
+
+    {/* ===== VIDEOS ===== */}
+    <div className="video-section">
+      <div className="video-card">
+        <iframe
+          src="https://www.youtube.com/embed/SBZvwDqWQyE?rel=0&modestbranding=1&controls=1&showinfo=0"
+          title="Training Video 1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      <div className="video-card">
+        <iframe
+          src="https://www.youtube.com/embed/gJQ_2VIzbE4?rel=0&modestbranding=1&controls=1&showinfo=0"
+          title="Training Video 2"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+{/* career opportunities..................................... */}
+<section className="career-premium">
+  <div className="container career-container">
+
+    {/* LEFT CONTENT */}
+    <div className="career-left" data-aos="fade-right">
+      <h2>Career Opportunities</h2>
+
+      <p>
+        Build a strong career in the investigation and security industry.
+        This course prepares you with practical skills, real case exposure,
+        and industry-ready training.
+      </p>
+
+      <ul className="career-points">
+        <li>✔ Real Investigation Experience</li>
+        <li>✔ Industry Recognized Training</li>
+        <li>✔ Field & Practical Learning</li>
+        <li>✔ Career Guidance Support</li>
+      </ul>
+
+
+        <div className="eligibility-box">
+    <h4>Who Can Join?</h4>
+    <ul>
+        <li>✔ Minimum 10th / 12th Pass</li>
+        <li>✔ Students, Job Seekers & Professionals</li>
+        <li>✔ No prior experience required</li>
+    </ul>
+    </div>
+
+    </div>
+
+    {/* RIGHT CARDS */}
+    <div className="career-right" data-aos="fade-left">
+
+      <div className="career-box">
+        <h3>Private Detective</h3>
+        <p>Handle personal & corporate investigation cases.</p>
+      </div>
+
+      <div className="career-box">
+        <h3>Corporate Investigator</h3>
+        <p>Work with companies for fraud & verification cases.</p>
+      </div>
+
+      <div className="career-box">
+        <h3>Security Officer</h3>
+        <p>Manage security operations and safety systems.</p>
+      </div>
+
+      <div className="career-box">
+        <h3>Surveillance Expert</h3>
+        <p>Specialize in tracking and intelligence gathering.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+{/* student reviews..................... */}
+<section className="premium-reviews">
+  <div className="container">
+
+    <div className="section-header">
+      <h2>Student Reviews</h2>
+      <p>Real feedback from our training participants</p>
+    </div>
+
+    <div className="reviews-wrapper">
+
+      <div className="review-card">
+        <div className="stars">★★★★★</div>
+        <p>
+          Training was very practical and easy to understand. I learned real investigation methods.
+        </p>
+        <h4>Rahul Patil</h4>
+        <span>Completed Training</span>
+      </div>
+
+      <div className="review-card">
+        <div className="stars">★★★★★</div>
+        <p>
+          Good experience for beginners. Trainers explained everything step by step.
+        </p>
+        <h4>Priya Sharma</h4>
+        <span>Student</span>
+      </div>
+
+      <div className="review-card">
+        <div className="stars">★★★★☆</div>
+        <p>
+          Field training helped me gain confidence. Overall very useful course.
+        </p>
+        <h4>Amit Verma</h4>
+        <span>Completed Training</span>
+      </div>
+
+      <div className="review-card">
+        <div className="stars">★★★★★</div>
+        <p>
+          Simple and clear teaching method. Anyone can understand easily.
+        </p>
+        <h4>Sneha Joshi</h4>
+        <span>Student</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+{/* cta section....................... */}
+<section className="course-cta">
+  <div className="container">
+
+    <div className="cta-box">
+
+      <h2>Enroll for the Course Today</h2>
+
+      <p>
+        Start your journey in professional investigation with practical training,
+        real case exposure, and certification.
+      </p>
+
+      <div className="cta-buttonss">
+        <button className="btn-primary">Book Your Seat</button>
+            <a href="/brochure.pdf" download>
+        <button className="btn-outline">Download Brochure</button>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+</>
+  );
+};
+
+export default Course;
