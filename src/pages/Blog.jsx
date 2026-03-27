@@ -7,7 +7,7 @@ const blogs = [
   title: "Corporate Investigation",
   category: "Investigation",
   desc: "Protecting Your Business from Hidden Risks.",
-  image: "https://images.unsplash.com/photo-1556157382-97eda2d62296",
+  image: "src/assets/images/corporate investigation.jpg",
 
   content: `
 Corporate investigation is a crucial process that helps businesses identify fraud, misconduct, and hidden risks within an organization. In today’s fast-paced and competitive environment, companies face various internal and external threats that can impact their operations and reputation.

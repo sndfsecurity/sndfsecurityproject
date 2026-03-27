@@ -1,0 +1,82 @@
+/* PAGE */
+.pd-page {
+  padding: 60px 20px;
+  background: #f4f7fb;
+}
+
+/* BOX */
+.pd-container {
+  max-width: 1000px;
+  margin-top: 110px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* IMAGE */
+.pd-image {
+  flex: 1;
+  text-align: center;
+}
+
+.pd-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* INFO */
+.pd-info {
+  flex: 1;
+}
+
+.pd-info h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.pd-info h2 {
+  color: #004e92;
+  margin-bottom: 10px;
+}
+
+.pd-info p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.pd-info button {
+  padding: 10px 15px;
+  background: #004e92;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .pd-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* BACK BUTTON */
+.back-btn {
+  margin-bottom: 50px;
+  background: none;
+  border: none;
+  color: #d71717;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  color: #000;
+}

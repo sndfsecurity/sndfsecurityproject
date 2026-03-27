@@ -8,13 +8,13 @@ import "swiper/css";
 const Team = () => {
 
   const departments = [
-    { title: "Social Media Department", className: "investigation" },
+    { title: "NDF Department", className: "investigation" },
     { title: "Investigation Department", className: "technical" },
     { title: "QRT Department", className: "legal" },
   ];
 
   const members = [
-    { name: "Mukund sir", role: "social media deparment head", desc: "Expert in surveillance", img: "/images/mukund.jpg" },
+    { name: "mukunda kaledhon Sir", role: "social media deparment head", desc: "2 years marathi tv serial DOP and Cinematography", img: "src/assets/images/Mukund.jpeg" },
     { name: "Rohit Verma", role: "Investigator", desc: "Field operations specialist", img: "https://via.placeholder.com/150" },
     { name: "Karan Singh", role: "Agent", desc: "Undercover expert", img: "https://via.placeholder.com/150" },
     { name: "Vikas Rao", role: "Analyst", desc: "Case analysis expert", img: "https://via.placeholder.com/150" },
@@ -24,6 +24,7 @@ const Team = () => {
     { name: "Ravi Kumar", role: "Inspector", desc: "Investigation lead", img: "https://via.placeholder.com/150" },
   ];
 
+  
   return (
     <div className="team-page">
 

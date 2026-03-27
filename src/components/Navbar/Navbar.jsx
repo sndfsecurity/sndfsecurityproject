@@ -2,6 +2,7 @@ import logo from "../../assets/images/LOGO.png";
 import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa6";
 
 function Navbar() {
   return (
@@ -13,7 +14,7 @@ function Navbar() {
         <div className="d-flex gap-3 fs-5">
           <FaFacebookF style={{ color: "#1877F2", cursor: "pointer" }} />
           <FaInstagram style={{ color: "#E4405F", cursor: "pointer" }} />
-          <FaTwitter style={{ color: "#1DA1F2", cursor: "pointer" }} />
+          <FaLinkedin style={{ color: "#1DA1F2", cursor: "pointer" }} />
           <FaWhatsapp style={{ color: "#25D366", cursor: "pointer" }} />
           <FaYoutube style={{ color: "#FF0000", cursor: "pointer" }} />
         </div>
@@ -85,11 +86,11 @@ function Navbar() {
                 Services
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item">Security Guard</a></li>
-                <li><a className="dropdown-item">Event Security</a></li>
-                <li><a className="dropdown-item">Personal Security</a></li>
-                <li><a className="dropdown-item">Corporate Security</a></li>
-                <li><a className="dropdown-item">Industrial Security</a></li>
+                <li><a className="dropdown-item">SNDF Guard</a></li>
+                <li><a className="dropdown-item">NDF</a></li>
+                <li><a className="dropdown-item">OWL</a></li>
+                <li><a className="dropdown-item">SPY</a></li>
+                <li><a className="dropdown-item">DIC</a></li>
               </ul>
             </li>
 
@@ -99,11 +100,10 @@ function Navbar() {
                 Media
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item">Gallery</a></li>
+               <li><a className="dropdown-item">Gallery</a></li>
                 <li><a className="dropdown-item">Videos</a></li>
                 <li><a className="dropdown-item">News</a></li>
-                <li><a className="dropdown-item">Press</a></li>
-                <li><a className="dropdown-item">Events</a></li>
+                
               </ul>
             </li>
 
@@ -132,19 +132,9 @@ function Navbar() {
               <Link className="nav-link" to="/course">Course</Link>
             </li>
 
-            {/* CASES */}
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Cases
-              </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item">Case 1</a></li>
-                <li><a className="dropdown-item">Case 2</a></li>
-                <li><a className="dropdown-item">Case 3</a></li>
-                <li><a className="dropdown-item">Case 4</a></li>
-                <li><a className="dropdown-item">Case 5</a></li>
-              </ul>
-            </li>
+           <li className="nav-item">
+              <Link to="/shop" className="nav-link">Shop</Link>
+</li>
 
             <li className="nav-item">
               <Link to="/blog" className="nav-link">Blog</Link>
@@ -155,10 +145,9 @@ function Navbar() {
   <Link className="nav-link" to="/team">Team</Link>
 </li>
 
-            {/* CAREER */}
-            <li className="nav-item">
-              <a className="nav-link">Career</a>
-            </li>
+           <li className="nav-item">
+  <Link to="/career" className="nav-link">Career</Link>
+</li>
 
             {/* CONTACT */}
             {/* <li className="nav-item">
