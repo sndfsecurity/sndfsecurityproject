@@ -191,8 +191,6 @@
   transform: translateY(-3px);
 }
 
-/* ===== POINTS ===== */
-
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
@@ -589,14 +587,17 @@
 }
 
 .map-section h2 {
-  font-size: 32px;
+  font: size 42px;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .map-section p {
   color: #94a3b8;
   margin-bottom: 40px;
+  font-size: 19px;
+  letter-spacing: 0.5px;
 }
 
 /* MAP BOX */

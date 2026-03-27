@@ -10,17 +10,20 @@ import Contact from "./pages/Contact";
 import Course from "./pages/Course";
 import Team from "./pages/Team";
 import Blog from "./pages/Blog";
+
 import Pune from "./pages/branches/Pune";
+import Assam from "./pages/branches/Assam";
 import Career from "./pages/Career";
 
-/* ✅ NEW IMPORTS */
+import Gallery from "./pages/Media/Gallery";
+
+/* SHOP */
 import Shop from "./pages/Shop";
 import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   return (
     <Router>
-
       <Navbar />
 
       <Routes>
@@ -32,17 +35,20 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/career" element={<Career />} />
 
-        {/* ✅ NEW ROUTES */}
+        {/* SHOP */}
         <Route path="/shop" element={<Shop />} />
         <Route path="/product/:id" element={<ProductDetails />} />
 
-        {/* Branch pages */}
+        {/* BRANCHES */}
         <Route path="/branches/pune" element={<Pune />} />
+        <Route path="/branches/assam" element={<Assam />} />
+
+        {/* MEDIA */}
+        <Route path="/media/gallery" element={<Gallery />} />
       </Routes>
 
       <Footer />
       <FloatingButtons />
-
     </Router>
   );
 }

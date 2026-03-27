@@ -98,12 +98,10 @@ const Home = () => {
 
               {/* <button className="btn btn-danger">Get Protection</button> */}
 
-              <button
-  className="btn btn-danger"
-  onClick={() => navigate("/contact#enquiry-form")}
->
-  Get Protection
-</button>
+         <button className="btn btn-danger"
+            onClick={() => navigate("/contact#enquiry-form")}>
+            Get Protection
+          </button>
 
 
               <button
@@ -284,27 +282,27 @@ const Home = () => {
           <div className="why-right">
 
             <div className="why-card">
-  <Counter target={3500} duration={2000} />
-  <p>Happy Clients</p>
-</div>
+             <Counter target={3500} duration={2000} />
+              <p>Happy Clients</p>
+            </div>`
 
-<div className="why-card">
-  <Counter target={5} duration={1000} />
-  <p>Years Experience</p>
-</div>
-
-<div className="why-card">
-  <Counter target={1200} duration={1800} />
-  <p>Cases Solved</p>
-</div>
-
-<div className="why-card">
-  <h3>24/7</h3>
-  <p>Support</p>
-</div>
-
-
+          <div className="why-card">
+            <Counter target={5} duration={1000} />
+            <p>Years Experience</p>
           </div>
+
+          <div className="why-card">
+            <Counter target={1200} duration={1800} />
+            <p>Cases Solved</p>
+          </div>
+
+          <div className="why-card">
+            <h3>24/7</h3>
+            <p>Support</p>
+          </div>
+
+
+       </div>
 
         </div>
       </section>

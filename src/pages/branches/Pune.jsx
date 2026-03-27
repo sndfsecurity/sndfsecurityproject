@@ -4,11 +4,16 @@ import { FaShieldAlt, FaUsers, FaBuilding } from "react-icons/fa";
 import course2 from "../../assets/images/course-bg.jpg";
 
 import { useEffect, useRef } from "react";
- 
+import { useNavigate } from "react-router-dom";
+
+
 
 const PuneHero = () => {
 
+
+
   const galleryRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
   const container = galleryRef.current;
@@ -69,7 +74,11 @@ return (
       </p>
 
       <div className="hero-buttonsb">
-        <button className="btn-outline">Contact Us</button>
+            <button 
+                className="btn-outline"
+                onClick={() => navigate("/contact")}>
+                Contact Us
+            </button>
       </div>
 
       {/* STATS */}
@@ -191,6 +200,85 @@ return (
 </section>
 
 
+{/* branches.............................. */}
+{/* 🔥 PUNE BRANCH NETWORK */}
+<section className="pune-branches">
+  <div className="container">
+
+    <h2 className="section-titlebr">
+      Pune <span>Branch Network</span>
+    </h2>
+
+    <p className="section-subtitlebr">
+      Serving across Pune with strategically located offices for faster response
+    </p>
+
+    <div className="branch-grid">
+
+      {/* Wakad */}
+      <div className="branch-card">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Wakad" />
+        <div className="branch-info">
+          <h4>Wakad Branch</h4>
+          <p>Office 203, Prime Plaza, Near Wakad Chowk, Pune - 411057</p>
+          <p className="branch-phone">+91 80073 41905</p>
+
+          <div className="branch-actions">
+            <a href="tel:+918007341905">Call</a>
+            <a href="https://wa.me/918007341905">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      {/* Karve Road */}
+      <div className="branch-card">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Karve Road" />
+        <div className="branch-info">
+          <h4>Karve Road Branch</h4>
+          <p>2nd Floor, Shree Complex, Karve Nagar, Pune - 411052</p>
+          <p className="branch-phone">+91 80073 41905</p>
+
+          <div className="branch-actions">
+            <a href="tel:+918007341905">Call</a>
+            <a href="https://wa.me/918007341905">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      {/* Warje */}
+      <div className="branch-card">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Warje" />
+        <div className="branch-info">
+          <h4>Warje Branch</h4>
+          <p>Office 5, City Tower, Warje Malwadi, Pune - 411058</p>
+          <p className="branch-phone">+91 80073 41905</p>
+
+          <div className="branch-actions">
+            <a href="tel:+918007341905">Call</a>
+            <a href="https://wa.me/918007341905">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      {/* Pimpri */}
+      <div className="branch-card">
+        <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=800&q=80" alt="Pimpri" />
+        <div className="branch-info">
+          <h4>Pimpri-Chinchwad Branch</h4>
+          <p>3rd Floor, Metro Square, Pimpri, Pune - 411018</p>
+          <p className="branch-phone">+91 80073 41905</p>
+
+          <div className="branch-actions">
+            <a href="tel:+918007341905">Call</a>
+            <a href="https://wa.me/918007341905">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 {/* contact ............................. */}
 

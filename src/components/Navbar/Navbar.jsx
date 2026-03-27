@@ -4,10 +4,126 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa6";
 
+import { useState } from "react";
+
 function Navbar() {
+
+  const [showModal, setShowModal] = useState(false);
+ 
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [msg, setMsg] = useState("");
+
+  const [errors, setErrors] = useState({
+    name: "",
+    phone: ""
+  });
+
+  
+  const handleSubmit = () => {
+
+  let newErrors = {};
+
+  if (!name) {
+    newErrors.name = "Name is required";
+  }
+
+  if (!phone) {
+    newErrors.phone = "Mobile number is required";
+  } else if (phone.length !== 10) {
+    newErrors.phone = "Enter valid 10-digit number";
+  }
+
+  if (Object.keys(newErrors).length > 0) {
+    setErrors(newErrors);
+    return;
+  }
+
+  // ✅ WhatsApp message
+  const text = `*New Enquiry - SNDF Website*%0A Name: ${name}%0A Phone: ${phone}%0A Requirement: ${msg}`;
+
+  window.open(`https://wa.me/918007341905?text=${text}`, "_blank");
+
+  // reset
+  setName("");
+  setPhone("");
+  setMsg("");
+  setErrors({ name: "", phone: "" });
+
+  setShowModal(false);
+};
+  
+
+   
   return (
     <>
+
+{/* ✅ MODAL FIXED */}
+      
+      
+  {showModal && (
+  <div className="sn-modal-overlay" onClick={() => setShowModal(false)}>
+    
+    <div 
+      className="sn-modal-box" 
+      onClick={(e) => e.stopPropagation()}
+    >
+      <span 
+        className="sn-close-btn"
+        onClick={() => setShowModal(false)}
+      >
+        ×
+      </span>
+
+      <h3>Quick Enquiry</h3>
+
+      
+      <input 
+        type="text" 
+        placeholder="Your Name"
+        value={name}
+        onChange={(e) => {
+          setName(e.target.value);
+          setErrors({ ...errors, name: "" });
+        }}
+        className={errors.name ? "input-error" : ""}
+      />
+      {errors.name && <p className="error-text">{errors.name}</p>}
+
+
+{/* PHONE */}
+        <input 
+          type="tel" 
+          placeholder="Mobile Number"
+          value={phone}
+          maxLength="10"
+          onInput={(e) => {
+            e.target.value = e.target.value.replace(/[^0-9]/g, '');
+          }}
+          onChange={(e) => {
+            setPhone(e.target.value);
+            setErrors({ ...errors, phone: "" });
+          }}
+          className={errors.phone ? "input-error" : ""}
+        />
+        {errors.phone && <p className="error-text">{errors.phone}</p>}
+
+        <textarea 
+          placeholder="Requirement"
+          value={msg}
+          onChange={(e) => setMsg(e.target.value)} ></textarea>
+
+          <button className="sn-submit-btn" onClick={handleSubmit}>
+            Submit
+          </button>
+
+    </div>
+
+  </div>
+)}
+
       {/* 🔴 TOP BAR */}
+     
       <div className="py-2 px-3 d-flex justify-content-between align-items-center">
 
         {/* 🔵 LEFT - SOCIAL ICONS */}
@@ -30,15 +146,16 @@ function Navbar() {
 
         {/* 🔴 RIGHT - LANGUAGE + ENQUIRY */}
         <div className="d-flex align-items-center gap-2">
-          <select className="form-select form-select-sm w-auto">
+          <select  className="form-select form-select-sm w-auto" >
             <option>ENGLISH</option>
             <option>हिंदी</option>
             <option>मराठी</option>
-
           </select>
 
-          <button className="btn btn-danger btn-sm">Enquiry</button>
-        </div>
+        <button className="enquiry-btn btn btn-danger btn-sm"onClick={() => setShowModal(true)}>
+            Enquiry</button>      
+
+      </div>
 
       </div>
 
@@ -100,7 +217,13 @@ function Navbar() {
                 Media
               </a>
               <ul className="dropdown-menu">
+<<<<<<< HEAD
                <li><a className="dropdown-item">Gallery</a></li>
+=======
+
+                <Link to="/media/gallery" className="dropdown-item">Gallery</Link>
+
+>>>>>>> a5383daf4a8b65faceae0592435415c0a893271f
                 <li><a className="dropdown-item">Videos</a></li>
                 <li><a className="dropdown-item">News</a></li>
                 
@@ -121,7 +244,14 @@ function Navbar() {
               </li>
 
                 <li><a className="dropdown-item">Mumbai</a></li>
-                <li><a className="dropdown-item">Assam</a></li>
+
+
+              <li>
+              <Link to="/branches/assam" className="dropdown-item">
+                📍 Branch Office (Assam)
+              </Link>
+              </li>
+              
                 <li><a className="dropdown-item">Hyderabad</a></li>               
               </ul>
             </li>
