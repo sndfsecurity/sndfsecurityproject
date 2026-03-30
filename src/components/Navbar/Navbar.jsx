@@ -202,11 +202,21 @@ function Navbar() {
                 Services
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item">Security Guard</a></li>
-                <li><a className="dropdown-item">Event Security</a></li>
-                <li><a className="dropdown-item">Personal Security</a></li>
-                <li><a className="dropdown-item">Corporate Security</a></li>
-                <li><a className="dropdown-item">Industrial Security</a></li>
+
+              <li>
+              <Link to="/services/ndf" className="dropdown-item">
+                NDF Detective
+              </Link>
+              </li>
+
+              <li>
+              <Link to="/services/sndf" className="dropdown-item">
+                SNDF Guard
+              </Link>
+              </li>
+
+                <li><a className="dropdown-item">Owl Security</a></li>
+                <li><a className="dropdown-item">Spy Defence</a></li>
               </ul>
             </li>
 
