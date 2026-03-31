@@ -400,7 +400,7 @@
 }
 
 /* 🔥 CONNECTING LINE */
-.owl-process-steps::before {
+/* .owl-process-steps::before {
   content: "";
   position: absolute;
   top: 28px;
@@ -409,7 +409,7 @@
   height: 2px;
   background: linear-gradient(to right, transparent, #ff3b3b, transparent);
   z-index: 0;
-}
+} */
 
 /* STEP CARD */
 .owl-step {
@@ -645,8 +645,8 @@
   }
 
   .owl-cta-points {
-
-
     font-size: 15px;
   }
+
+
 }
