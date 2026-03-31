@@ -18,6 +18,8 @@ import Gallery from "./pages/Media/Gallery";
 
 import Ndf from "./pages/Services/Ndf";   
 import Sndf from "./pages/Services/Sndf"; 
+import Owl from "./pages/Services/Owl"; 
+
 
 function App() {
   return (
@@ -43,6 +45,8 @@ function App() {
 
         <Route path="/services/ndf" element={<Ndf />} />
         <Route path="/services/sndf" element={<Sndf />} />
+        <Route path="/services/owl" element={<Owl/>} />
+
 
 
       </Routes>

@@ -215,7 +215,12 @@ function Navbar() {
               </Link>
               </li>
 
-                <li><a className="dropdown-item">Owl Security</a></li>
+              <li>
+              <Link to="/services/owl" className="dropdown-item">
+               Owl Security
+              </Link>
+              </li>
+
                 <li><a className="dropdown-item">Spy Defence</a></li>
               </ul>
             </li>
@@ -284,22 +289,18 @@ function Navbar() {
 
             <li className="nav-item">
               <Link to="/blog" className="nav-link">Blog</Link>
-</li>
+            </li>
 
             {/* TEAM */}
            <li className="nav-item">
-  <Link className="nav-link" to="/team">Team</Link>
-</li>
+            <Link className="nav-link" to="/team">Team</Link>
+          </li>   
 
             {/* CAREER */}
             <li className="nav-item">
               <a className="nav-link">Career</a>
             </li>
 
-            {/* CONTACT */}
-            {/* <li className="nav-item">
-              <a className="nav-link">Contact</a>
-            </li> */}
 
             <li className="nav-item">
               <Link className="nav-link" to="/contact">Contact</Link>

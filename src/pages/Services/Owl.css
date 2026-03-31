@@ -1,0 +1,652 @@
+/* HERO */
+.owl-hero {
+  width: 100%;
+  background: linear-gradient(135deg, #0a1f44, #050f28);
+  display: flex;
+  align-items: center;
+  padding: 70px 0;
+  padding: 190px 0 70px;
+  transition: all 0.3s ease;
+
+}
+
+
+/* CONTAINER */
+.owl-hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* LEFT */
+.owl-hero-left {
+  flex: 1;
+  color: #fff;
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TAG */
+.owl-tag {
+  display: inline-block;
+  background: rgba(0, 180, 255, 0.15);
+  color: #00b4ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* HEADING */
+.owl-hero-left h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-weight: 700;
+
+}
+
+.owl-hero-left h1 span {
+  color: #ff3b3b;
+}
+
+/* TEXT */
+.owl-hero-left p {
+  margin-top: 15px;
+  color: #cfcfcf;
+  line-height: 1.6;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* BUTTONS */
+.owl-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+/* PRIMARY BUTTON */
+.owl-btn-primary {
+  background: #ff3b3b;
+  color: #ffffff;
+  padding: 14px 34px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 19px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.owl-btn-primary:hover {
+   background: #e02a2a;
+  transform: translateY(-3px);
+}
+
+/* OUTLINE BUTTON */
+.owl-btn-outline {
+  border: 1px solid #ffffff;
+  color: #0a193c;
+  padding: 14px 34px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 19px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.owl-btn-outline:hover {
+  background: #ffffff;
+  color: #0a193c;
+  transform: translateY(-3px);
+}
+
+/* POINTS */
+.owl-points {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: #ddd;
+  font-size: 16px;
+}
+
+/* RIGHT IMAGE */
+.owl-hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* 🔥 BIGGER IMAGE */
+.owl-hero-right img {
+  width: 100%;
+  max-width: 700px; /* 🔥 increased */
+  height: 400px; /* 🔥 fixed height */
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.4s ease;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* 🔥 IMAGE HOVER EFFECT */
+.owl-hero-right img:hover {
+  transform: scale(1.05);
+}
+
+/*media query*/
+/* 📱 PERFECT MOBILE FIX */
+@media (max-width: 768px) {
+  
+  .owl-hero {
+    padding-top: 190px;
+  }
+
+  .owl-hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .owl-tag{
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  /* TEXT */
+  .owl-hero-left {
+    width: 100%;
+  }
+
+  .owl-hero-left h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .owl-hero-left p {
+    font-size: 16px;
+  }
+
+  /* BUTTONS FULL WIDTH */
+  .owl-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .owl-btn-primary,
+  .owl-btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* POINTS CENTER */
+  .owl-points {
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  /* IMAGE FIX 🔥 */
+  .owl-hero-right {
+    width: 100%;
+  }
+
+  .owl-hero-right img {
+    width: 100%;
+    height: auto; /* 🔥 IMPORTANT */
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+}
+
+
+/* services......................................... */
+/* SECTION */
+.owl-services-section {
+  background: #f4f7fb;
+  padding: 80px 0;
+}
+
+/* HEADER */
+.owl-services-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 60px;
+}
+
+.owl-services-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0a1a3c;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.owl-services-header p {
+  margin-top: 12px;
+  color: #555;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* GRID */
+.owl-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.owl-service-card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+
+  /* IMPORTANT FOR EQUAL HEIGHT */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 260px;
+}
+
+/* ICON */
+/* .owl-icon {
+  font-size: 42px;
+  color: #ff3b3b; 
+  margin-bottom: 15px;
+
+   display: block;          
+  margin-left: auto;      
+  margin-right: auto; 
+  
+} */
+
+.owl-icon {
+  font-size: 18px;              /* smaller icon inside circle */
+  color: #ff3b3b;
+
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 10px;
+
+  background: rgba(255, 59, 59, 0.1); /* light red bg */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 18px; /* center + spacing */
+  transition: 0.3s ease;
+}
+
+.owl-service-card:hover .owl-icon {
+  background: #ff3b3b;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* HEADING */
+.owl-service-card h3 {
+  font-size: 21px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #0a1a3c;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.owl-service-card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* HOVER EFFECT */
+.owl-service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-top: 2px solid #ff3b3b; /* RED ACCENT */
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .owl-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .owl-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .owl-service-card {
+    min-height: auto;
+  }
+
+  .owl-services-header h2{
+    font-size: 32px;
+  }
+
+  .owl-services-header p{
+    font-size: 17px;
+  }
+
+  .owl-service-card h3{
+    font-size: 21px;
+  }
+
+  .owl-service-card p{
+    font-size: 17px;
+  }
+
+}
+
+
+/* how it works............................................ */
+/* SECTION */
+.owl-process-section {
+  background: linear-gradient(135deg, #0a1f44, #050f28);
+  padding: 90px 0;
+  color: #fff;
+}
+
+/* HEADER */
+.owl-process-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 70px;
+}
+
+.owl-process-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.owl-process-header p {
+  margin-top: 12px;
+  color: #cfcfcf;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* GRID */
+.owl-process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  position: relative;
+}
+
+/* 🔥 CONNECTING LINE */
+.owl-process-steps::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 5%;
+  width: 90%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ff3b3b, transparent);
+  z-index: 0;
+}
+
+/* STEP CARD */
+.owl-step {
+  position: relative;
+  z-index: 1;
+
+  background: rgba(255, 255, 255, 0.06);
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: 0.3s ease;
+}
+
+/* NUMBER */
+.owl-step-number {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #ff3b3b;
+  color: #fff;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 15px;
+  font-size: 18px;
+
+  box-shadow: 0 0 15px rgba(255, 59, 59, 0.6);
+  transition: 0.3s ease;
+}
+
+/* TITLE */
+.owl-step h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+}
+
+/* TEXT */
+.owl-step p {
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+/* HOVER */
+.owl-step:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(255, 59, 59, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.owl-step:hover .owl-step-number {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .owl-process-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .owl-process-steps::before {
+    display: none; /* remove line on tablet/mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  .owl-process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .owl-process-header h2{
+    font-size: 32px;
+  }
+
+    .owl-process-header p{
+    font-size: 17px;
+  }
+
+  .owl-step h3{
+    font-size: 21px;
+  }
+
+  .owl-step p{
+    font-size: 16px;
+  }
+
+}
+
+
+
+/* cta ......................................... */
+
+/* 🔥 ADD GAP BETWEEN SECTIONS */
+.owl-cta-section {
+  background: linear-gradient(135deg, #0a1f44, #050f28);
+  padding: 90px 0;
+  margin-top: 60px; /* 🔥 SPACE FROM PROCESS */
+  color: #fff;
+}
+
+/* CONTAINER */
+.owl-cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px; /* little more breathing space */
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* LEFT */
+.owl-cta-left {
+  flex: 1;
+}
+
+.owl-cta-left h2 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+
+.owl-cta-left p {
+  margin-top: 20px;
+  color: #cfcfcf;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+/* BUTTON */
+.owl-cta-buttons {
+  margin-top:30px;
+  letter-spacing: 1px;
+}
+
+/* POINTS */
+.owl-cta-points {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: #ddd;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* 🔥 FORM WIDTH CONTROL */
+.owl-cta-form {
+  flex: 0.85; /* 🔥 reduced width */
+  max-width: 420px; /* 🔥 control size */
+
+  background: rgba(255, 255, 255, 0.06);
+  padding: 28px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* FORM TITLE */
+.owl-cta-form h3 {
+  margin-bottom: 18px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+/* INPUTS */
+.owl-cta-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.owl-cta-form input,
+.owl-cta-form textarea {
+  padding: 11px 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.owl-cta-form textarea {
+  min-height: 90px;
+  resize: none;
+}
+
+/* BUTTON */
+.owl-cta-form button {
+  margin-top: 10px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .owl-cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .owl-cta-left,
+  .owl-cta-form {
+    width: 100%;
+  }
+
+  .owl-cta-form {
+    max-width: 100%; /* full width on mobile */
+  }
+
+  .owl-cta-points {
+    justify-content: center;
+  }
+
+  .owl-cta-left h2{
+    font-size: 32px;
+  }
+
+  .owl-cta-left p{
+    font-size: 17px;
+  }
+
+  .owl-cta-points {
+
+
+    font-size: 15px;
+  }
+}
