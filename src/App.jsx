@@ -19,6 +19,7 @@ import Gallery from "./pages/Media/Gallery";
 import Ndf from "./pages/Services/Ndf";   
 import Sndf from "./pages/Services/Sndf"; 
 import Owl from "./pages/Services/Owl"; 
+import Spydefence from "./pages/Services/Spydefence";
 
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
         <Route path="/services/ndf" element={<Ndf />} />
         <Route path="/services/sndf" element={<Sndf />} />
         <Route path="/services/owl" element={<Owl/>} />
+        <Route path="/services/spydefence" element={<Spydefence/>} />
+
+        
 
 
 
