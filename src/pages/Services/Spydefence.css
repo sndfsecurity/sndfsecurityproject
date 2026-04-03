@@ -1,4 +1,14 @@
 /* HERO SECTION */
+html {
+  scroll-behavior: smooth;
+}
+
+#enquiry,
+#activities {
+  scroll-margin-top: 80px; /* adjust based on navbar height */
+}
+
+
 .spy-hero {
   background: linear-gradient(135deg, #0a1f44, #050f28);
   padding: 100px 0;
@@ -279,511 +289,748 @@
 }
 
 
-/* ========== SECTION 3: SUMMER CAMP HERO BANNER ========== */
-/* ========== SECTION 3: SUMMER CAMP HERO BANNER ========== */
-.summer-camp-banner {
-  background: linear-gradient(135deg, #0d2818 0%, #1a4d2a 50%, #0a1f44 100%);
-  padding: 80px 20px;
+
+
+/* ========== SECTION 3: CAMP DETAILS ========== */
+/* ===== SECTION BASE ===== */
+.summer {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
   color: #fff;
-  text-align: center;
+  overflow: hidden;
+}
+
+.summer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* ===== LEFT CONTENT ===== */
+.summer-left {
+  flex: 1;
+}
+
+.badgespy {
+  display: inline-block;
+  background: #ef4444;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Heading */
+.summer-left h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.summer-left h2 span {
+  color: #facc15;
+}
+
+/* Text */
+.taglinespy {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #cbd5f5;
+  letter-spacing: 1px;
+}
+
+.descspy {
+  font-size: 16px;
+  color: #94a3b8;
+  margin-bottom: 30px;
+  max-width: 600px;
+  letter-spacing: 1px;
+}
+
+/* ===== INFO BOXES ===== */
+.summer-info {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.info-boxspy {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 14px 18px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.info-boxspy:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.info-boxspy svg {
+  font-size: 22px;
+  color: #facc15;
+}
+
+.info-boxspy h4 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.info-boxspy p {
+  font-size: 12px;
+  color: #cbd5f5;
+  letter-spacing: 0.2px;
+}
+
+/* ===== BUTTONS ===== */
+.summer-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btnspy {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.primary-btnspy:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+.secondary-btnspy {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.secondary-btnspy:hover {
+  background: #fff;
+  color: #0f172a;
+}
+
+/* ===== RIGHT IMAGE ===== */
+.summer-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summer-right img {
+  width: 100%;
+  max-width: 480px;
+  height: 500px;              /* 🔥 Increase height */
+  object-fit: cover;          /* keeps image properly cropped */
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.4s ease;
+}
+
+.summer-right img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .summer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+ 
+  .summer-left h2 {
+    font-size: 32px;
+  }
+
+   .taglinespy {
+    font-size: 17px;
+  }
+
+  .descspy {
+    margin: auto;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .summer-info {
+    justify-content: center;
+  }
+
+  .info-boxspy h4{
+    font-size: 14px;
+  }
+
+  .info-boxspy:hover p{
+     font-size: 13px;
+     letter-spacing: 1px;
+  }
+
+  .summer-buttons {
+    justify-content: center;
+  }
+
+  .primary-btnspy,.secondary-btnspy{
+
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .summer-right img {
+    max-width: 100%;
+    height: 350px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .summer {
+    padding: 70px 15px;
+  }
+
+  .summer-left h2 {
+    font-size: 26px;
+  }
+
+  .taglinespy {
+    font-size: 15px;
+  }
+
+  .descspy {
+    font-size: 14px;
+  }
+
+  .info-boxspy {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .summer-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .primary-btnspy,
+  .secondary-btnspy {
+    width: 100%;
+  }
+}
+
+
+/* about camp........................................................... */
+/* ===============================
+   ABOUT CAMP SECTION (UNIQUE)
+================================= */
+
+.camp-about {
+  padding: 110px 20px;
+  background: white;
+  color: #fff;
   position: relative;
   overflow: hidden;
 }
 
-/* Background pattern overlay */
-.summer-camp-banner::before {
+/* background glow */
+.camp-about::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  pointer-events: none;
+  top: -120px;
+  left: -120px;
+  width: 320px;
+  height: 320px;
+  background: rgba(239, 68, 68, 0.08);
+  filter: blur(120px);
 }
 
-.summer-banner-container {
-  max-width: 1200px;
-  margin: 0 auto;
+.camp-about::after {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  right: -120px;
+  width: 320px;
+  height: 320px;
+  background: rgba(59, 130, 246, 0.08);
+  filter: blur(120px);
+}
+
+/* container */
+.camp-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
   position: relative;
   z-index: 2;
 }
 
-/* Badge */
-.camp-badge {
-  display: inline-block;
-  background: linear-gradient(135deg, #ff9f00, #ff6b00);
-  color: #1a1a1a;
-  padding: 8px 24px;
-  border-radius: 50px;
-  font-size: 14px;
+/* ===============================
+   TITLE
+================================= */
+
+.camp-title {
+  font-size: 42px;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
-  animation: pulse 2s infinite;
+  color: #0f172a;
 }
 
-@keyframes pulse {
-  0% { box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3); }
-  50% { box-shadow: 0 4px 25px rgba(255, 107, 0, 0.6); }
-  100% { box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3); }
+.camp-title span {
+  color: #ef4444;
 }
 
-/* Main Title */
-.camp-main-title {
-  font-size: 56px;
-  font-weight: 800;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.camp-main-title span {
-  color: #ff9f00;
-  position: relative;
-  display: inline-block;
-}
-
-.camp-main-title span::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 100%;
+/* underline */
+.camp-title::after {
+  content: "";
+  width: 60px;
   height: 3px;
-  background: linear-gradient(90deg, #ff9f00, transparent);
+  background: #ef4444;
+  display: block;
+  margin: 14px auto 0;
+  transition: 0.3s;
 }
 
-/* Supported by */
-.camp-supported {
-  font-size: 18px;
-  letter-spacing: 1px;
-  margin-bottom: 25px;
-  color: #e0e0e0;
+.camp-title:hover::after {
+  width: 110px;
 }
 
-.camp-supported strong {
-  color: #ff9f00;
-  font-weight: 700;
+/* ===============================
+   SUBTITLE
+================================= */
+
+.camp-subtitle {
+  max-width: 720px;
+  margin: 20px auto 60px;
+  font-size: 17px;
+  color: #94a3b8;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
 }
 
-/* Tagline */
-.camp-tagline {
-  font-size: 24px;
-  font-style: italic;
-  max-width: 700px;
-  margin: 0 auto 40px;
-  position: relative;
-  color: #f0f0f0;
-  line-height: 1.4;
-}
+/* ===============================
+   GRID
+================================= */
 
-.quote-icon {
-  font-size: 50px;
-  color: #ff9f00;
-  opacity: 0.5;
-  margin: 0 5px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* Info Cards */
-.camp-info-cards {
-  display: flex;
-  justify-content: center;
+.camp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  margin-bottom: 45px;
+  text-align: left;
+}
+
+/* ===============================
+   CARD
+================================= */
+
+.camp-card {
+  padding: 24px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* glow effect */
+.camp-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(239, 68, 68, 0.15),
+    transparent
+  );
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.camp-card:hover::before {
+  opacity: 1;
+}
+
+.camp-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  border-color: rgba(239,68,68,0.4);
+}
+
+/* text */
+.camp-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #f1f5f9;
+}
+
+/* underline inside */
+.camp-card h3::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #ef4444;
+  display: block;
+  margin-top: 6px;
+  transition: 0.3s;
+}
+
+.camp-card:hover h3::after {
+  width: 50px;
+}
+
+.camp-card p {
+  font-size: 15px;
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+/* ===============================
+   HIGHLIGHT (IMPROVED)
+================================= */
+
+.camp-highlight {
+  margin-top: 70px;
+  padding: 22px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* animated shine */
+.camp-highlight::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  opacity: 0.15;
+  animation: shineMove 5s linear infinite;
+}
+
+@keyframes shineMove {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.camp-highlight:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(239,68,68,0.5);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .camp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .camp-title {
+    font-size: 32px;
+  }
+
+  .camp-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .camp-about {
+    padding: 70px 15px;
+  }
+
+  .camp-title {
+    font-size: 24px;
+  }
+
+  .camp-card p {
+    font-size: 13px;
+  }
+}
+
+
+/* ===========================
+   CTA SECTION
+=========================== */
+
+.spycta-split {
+  background: #0a1f44;
+  padding: 90px 20px;
+}
+
+.spycta-split-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.info-card {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
-  padding: 15px 30px;
-  border-radius: 60px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
+/* ===========================
+   LEFT SECTION
+=========================== */
+
+.spycta-left {
+  flex: 1;
+  color: #ffffff;
 }
 
-.info-card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.2);
-  border-color: #ff9f00;
-}
-
-.info-icon {
-  font-size: 36px;
-}
-
-.info-text h4 {
-  font-size: 18px;
-  margin: 0 0 5px 0;
+.spycta-left h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.info-text p {
-  font-size: 13px;
-  margin: 0;
-  opacity: 0.8;
+.spycta-left h2 span {
+  color: #ff3b3b;
 }
 
-/* CTA Buttons */
-.camp-cta-buttons {
+.spycta-left p {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  max-width: 450px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+/* FEATURES */
+
+.spycta-features {
   display: flex;
   gap: 20px;
-  justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   flex-wrap: wrap;
 }
 
-.btn-camp-primary {
-  background: linear-gradient(135deg, #ff9f00, #ff6b00);
-  color: #1a1a1a;
-  padding: 14px 36px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 5px 20px rgba(255, 107, 0, 0.3);
+.feature {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 150px;
+  transition: 0.3s;
+  margin-top: 10px;
 }
 
-.btn-camp-primary:hover {
+.feature:hover {
+  background: rgba(255,255,255,0.1);
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(255, 107, 0, 0.5);
-  background: linear-gradient(135deg, #ffb52e, #ff7f1a);
 }
 
-.btn-camp-secondary {
-  background: transparent;
-  border: 2px solid #ff9f00;
-  color: #ff9f00;
-  padding: 14px 36px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.btn-camp-secondary:hover {
-  background: rgba(255, 159, 0, 0.1);
-  transform: translateY(-3px);
-  border-color: #ffb52e;
-  color: #ffb52e;
-}
-
-/* Subtext */
-.camp-subtext {
-  font-size: 16px;
-  color: #ffd9a5;
+.feature h4 {
+  margin: 0;
+  font-size: 17px;
   letter-spacing: 1px;
-  font-style: italic;
+}
+
+.feature p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #cbd5e1;
+  letter-spacing: 1px;
+}
+
+/* STATS */
+
+.spycta-stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background: rgba(255,255,255,0.05);
+  padding: 12px 15px;
+  border-radius: 6px;
+  text-align: center;
+  min-width: 90px;
+  transition: 0.3s;
+}
+
+.stat:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.1);
+}
+
+.stat h3 {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.stat span {
+  font-size: 12px;
+  color: #94a3b8;
+  letter-spacing: 1px;
+
+}
+
+/* CONTACT ICONS */
+
+.spycta-contact {
+  display: flex;
+  gap: 12px;
+}
+
+.spycta-contact a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
   margin-top: 20px;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
-@media (max-width: 992px) {
-  .summer-camp-banner {
-    padding: 60px 20px;
-  }
+/* CALL */
 
-  .camp-main-title {
-    font-size: 42px;
-  }
-
-  .camp-tagline {
-    font-size: 20px;
-  }
-
-  .quote-icon {
-    font-size: 35px;
-  }
+.call-icon {
+  background: #ff3b3b;
 }
+
+.call-icon:hover {
+  background: #e03131;
+  transform: scale(1.1);
+}
+
+/* WHATSAPP */
+
+.whatsapp-icon {
+  background: #25D366;
+}
+
+.whatsapp-icon:hover {
+  background: #1ebe5d;
+  transform: scale(1.1);
+}
+
+/* ===========================
+   RIGHT FORM
+=========================== */
+
+.spycta-right {
+  flex: 1;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.spycta-right h3 {
+  margin-bottom: 20px;
+  color: #0a1f44;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  
+}
+
+.spycta-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.spycta-right input,
+.spycta-right select {
+  padding: 11px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.spycta-right input:focus,
+.spycta-right select:focus {
+  outline: none;
+  border-color: #0a1f44;
+}
+
+.spycta-right button {
+  margin-top: 5px;
+  background: #ff3b3b;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 1.5px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.spycta-right button:hover {
+  background: #e03131;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
 
 @media (max-width: 768px) {
-  .summer-camp-banner {
-    padding: 50px 16px;
-  }
-
-  .camp-main-title {
-    font-size: 32px;
-    letter-spacing: 1px;
-  }
-
-  .camp-supported {
-    font-size: 15px;
-  }
-
-  .camp-tagline {
-    font-size: 18px;
-    padding: 0 10px;
-  }
-
-  .quote-icon {
-    font-size: 28px;
-  }
-
-  .info-card {
-    padding: 12px 24px;
-  }
-
-  .info-icon {
-    font-size: 28px;
-  }
-
-  .info-text h4 {
-    font-size: 16px;
-  }
-
-  .info-text p {
-    font-size: 12px;
-  }
-
-  .btn-camp-primary,
-  .btn-camp-secondary {
-    padding: 12px 28px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 576px) {
-  .summer-camp-banner {
-    padding: 40px 15px;
-  }
-
-  .camp-badge {
-    font-size: 12px;
-    padding: 6px 18px;
-  }
-
-  .camp-main-title {
-    font-size: 26px;
-  }
-
-  .camp-tagline {
-    font-size: 16px;
-  }
-
-  .quote-icon {
-    font-size: 22px;
-  }
-
-  .camp-info-cards {
-    gap: 15px;
-  }
-
-  .info-card {
-    padding: 10px 20px;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .info-icon {
-    font-size: 24px;
-  }
-
-  .info-text h4 {
-    font-size: 14px;
-  }
-
-  .info-text p {
-    font-size: 11px;
-  }
-
-  .camp-cta-buttons {
-    gap: 12px;
-  }
-
-  .btn-camp-primary,
-  .btn-camp-secondary {
-    padding: 10px 22px;
-    font-size: 13px;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .camp-subtext {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 380px) {
-  .camp-main-title {
-    font-size: 22px;
-  }
-
-  .camp-tagline {
-    font-size: 14px;
-  }
-
-  .info-text h4 {
-    font-size: 12px;
-  }
-
-  .info-card {
+  .spycta-split-container {
     flex-direction: column;
     text-align: center;
-    gap: 8px;
   }
-}
 
-
-
-
-/* ========== SECTION 4: CAMP DETAILS ========== */
-.camp-details {
-  padding: 60px 20px;
-  background: #fff;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Headings */
-.camp-details h2 {
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #0a1f44;
-  margin: 40px 0 25px 0;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #ff3b3b;
-  display: inline-block;
-}
-
-.camp-details h2:first-of-type {
-  margin-top: 0;
-}
-
-/* About Section - 2 Columns */
-.about-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.about-left p,
-.about-right p {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 20px;
-  line-height: 1.5;
-  letter-spacing: 1px;
-}
-
-/* Activities Section - 2 Columns */
-.activities-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.activities-left p,
-.activities-right p {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 20px;
-  line-height: 1.5;
-  letter-spacing: 1px;
-}
-
-/* Special Visit */
-.special-visit {
-  background: #f0f2f5;
-  padding: 25px 30px;
-  margin: 40px 0;
-  border-left: 4px solid #ff3b3b;
-}
-
-.special-visit h3 {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #0a1f44;
-  margin-bottom: 15px;
-}
-
-.special-visit p {
-  font-size: 19px;
-  color: #555;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Facilities Section - 2 Columns */
-.facilities-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.facilities-left p,
-.facilities-right p {
-  font-size: 18px;
-  letter-spacing: 1px;
-  color: #333;
-  margin-bottom: 12px;
-  line-height: 1.5;
-}
-
-/* ========== RESPONSIVE ========== */
-@media (max-width: 768px) {
-  .camp-details {
-    padding: 50px 20px;
+  .spycta-stats {
+    justify-content: center;
   }
-  
-  .camp-details h2 {
-    font-size: 24px;
-  }
-  
-  .about-columns,
-  .activities-columns,
-  .facilities-columns {
-    grid-template-columns: 1fr;
-    gap: 5px;
-  }
-  
-  .special-visit {
-    padding: 20px;
-  }
-  
-  .special-visit h3 {
-    font-size: 18px;
-  }
-  
-  .special-visit p {
-    font-size: 14px;
-  }
-}
 
-@media (max-width: 576px) {
-  .camp-details {
-    padding: 40px 15px;
+  .spycta-contact {
+    justify-content: center;
   }
-  
-  .camp-details h2 {
-    font-size: 22px;
+
+  .spycta-left h2{
+    font-size: 32px;
   }
-  
-  .about-left p,
-  .about-right p,
-  .activities-left p,
-  .activities-right p,
-  .facilities-left p,
-  .facilities-right p {
-    font-size: 14px;
+
+  .spycta-left p{
+    font-size: 16px;
   }
 }

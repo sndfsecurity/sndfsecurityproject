@@ -3,6 +3,9 @@ import "./Spydefence.css";
 
 import spy from "../../assets/images/spy1.png";
 
+import { FiPhoneCall } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 import {
   GiPistolGun,
@@ -17,12 +20,17 @@ import {
 import {
   FaHiking,
   FaRunning,
-  FaLaughBeam
+  FaLaughBeam,
+  FaCampground
 } from "react-icons/fa";
 
 import {
   BsMusicNoteBeamed
 } from "react-icons/bs";
+
+import {
+  IoMdTime
+} from "react-icons/io";
 
 const Spydefence = () => {
   return (
@@ -55,7 +63,8 @@ const Spydefence = () => {
             <a href="#enquiry" className="btn-red">
               Join Program
             </a>
-            <a href="#activities" className="btn-outline">
+
+            <a  href="#activities" className="btn-outline">
               Explore Activities
             </a>
           </div>
@@ -75,7 +84,7 @@ const Spydefence = () => {
 
     {/* section................................................. */}
 
-     <section className="activities">
+     <section className="activities" id="activities">
       <div className="container">
 
         <h2 className="section-titlespy">Our Training Activities</h2>
@@ -139,138 +148,225 @@ const Spydefence = () => {
     </section>
 
 
-    {/* ========== SECTION 3: SUMMER CAMP HERO / INTRO BANNER ========== */}
-<section className="summer-camp-banner">
-  <div className="container summer-banner-container">
-    
-    {/* BADGE */}
-    <div className="camp-badge fade-up">
-      🔥 Limited Seats Available
-    </div>
+{/* cta camp........................................... */}
 
-    {/* MAIN TITLE */}
-    <h1 className="camp-main-title fade-up delay-1">
-      SPY DEFENCE <span>SUMMER CAMP</span>
-    </h1>
+      <section className="summer">
+      <div className="container summer-container">
 
-    {/* SUPPORTED BY */}
-    <p className="camp-supported fade-up delay-2">
-      Supported by <strong>Nationalist Detective Force</strong>
+        {/* LEFT CONTENT */}
+        <div className="summer-left">
+          <span className="badgespy">Limited Seats Available</span>
+
+          <h2>
+            Spy Defence <span>Summer Camp</span>
+          </h2>
+
+          <p className="taglinespy">
+            Stronger, braver and bolder — that's the spirit of adventure!
+          </p>
+
+          <p className="descspy">
+            Join our intensive training camp designed to build discipline,
+            confidence, and real-world skills through practical activities.
+          </p>
+
+          <div className="summer-info">
+            <div className="info-boxspy">
+              <FaCampground />
+              <div>
+                <h4>6 Nights - 7 Days</h4>
+                <p>Adventure Training Camp</p>
+              </div>
+            </div>
+
+            <div className="info-boxspy">
+              <MdGroups />
+              <div>
+                <h4>Age Group: 8 - 25</h4>
+                <p>Boys & Girls Welcome</p>
+              </div>
+            </div>
+
+            <div className="info-boxspy">
+              <IoMdTime />
+              <div>
+                <h4>Limited Slots</h4>
+                <p>Book Early</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="summer-buttons">
+
+            {/* <button className="primary-btnspy">Book Your Slot</button> */}
+
+            <a href="#enquiry" className="primary-btnspy">
+              Book Your Slot
+            </a>
+
+            <a href="#about" className="secondary-btnspy">
+             View Details
+            </a>
+
+            {/* <button className="secondary-btnspy">View Details</button> */}
+          </div>
+        </div>
+
+       
+        <div className="summer-right">
+          <img src={spy} alt="Summer Camp Training" />
+        </div>
+
+      </div>
+    </section>
+
+
+    {/* about camp................................................ */}
+
+  <section id="about" className="camp-about">
+  <div className="camp-container">
+
+    <h2 className="camp-title">
+      Spy Defence <span>Summer Camp</span>
+    </h2>
+
+    <p className="camp-subtitle">
+      A professional training program by Spy Defence Academy,
+      focused on discipline, confidence, teamwork, and real-world
+      experience through structured activities and adventure.
     </p>
 
-    {/* TAGLINE WITH QUOTES */}
-    <div className="camp-tagline fade-up delay-3">
-      <span className="quote-icon">"</span>
-      Stronger, braver and bolder - that's the spirit of adventure!
-      <span className="quote-icon">"</span>
-    </div>
+    <div className="camp-grid">
 
-    {/* DURATION & AGE GROUP CARDS */}
-    <div className="camp-info-cards fade-up delay-4">
-      <div className="info-card">
-        <div className="info-icon">🏕️</div>
-        <div className="info-text">
-          <h4>6 Nights - 7 Days</h4>
-          <p>Summer Adventure Camp</p>
-        </div>
+      <div className="camp-card">
+        <h3>Camp Facilities</h3>
+        <p>
+          Accommodation, Healthy & Hygienic Food, Trained Trainers,
+          Safe Environment, Participation Certificate, 24/7 Security
+        </p>
       </div>
-      <div className="info-card">
-        <div className="info-icon">👥</div>
-        <div className="info-text">
-          <h4>Age Group: 8 to 25 Years</h4>
-          <p>Girls & Boys Welcome</p>
-        </div>
+
+      <div className="camp-card">
+        <h3>Activities During Stay</h3>
+        <p>
+          Confidence Development, Social Skills, Teamwork,
+          Nature Connection, Outdoor Learning Experience
+        </p>
       </div>
+
+      <div className="camp-card">
+        <h3>Additional Benefits</h3>
+        <p>
+          Free T-Shirt Included, Trophies for Participants,
+          Engaging Camp Activities Throughout the Stay
+        </p>
+      </div>
+
+      <div className="camp-card">
+        <h3>Adventure Experience</h3>
+        <p>
+          Special visit to Pawna Lake and Lohagad Fort included
+          in the camp journey
+        </p>
+      </div>
+
     </div>
 
-    {/* CTA BUTTONS */}
-    <div className="camp-cta-buttons fade-up delay-5">
-      <a href="#camp-enquiry" className="btn-camp-primary">
-        🎯 Book Your Slot
-      </a>
-      <a href="#camp-facilities" className="btn-camp-secondary">
-        📋 View Facilities
-      </a>
+    <div className="camp-highlight">
+      🌄 Experience an unforgettable adventure with a special visit to Pawna Lake and Lohagad Fort — where nature, exploration, and real outdoor learning come together as part of your training journey.
     </div>
-
-    {/* SUBTEXT */}
-    <p className="camp-subtext fade-up delay-6">
-      "This summer don't stay at home... join the adventure!"
-    </p>
 
   </div>
 </section>
 
 
-{/* ========== SECTION 4: ABOUT CAMP + ACTIVITIES + FACILITIES ========== */}
-<section className="camp-details">
-  <div className="container">
-    
-    {/* About Summer Camp */}
-    <div className="camp-about">
-      <h2>About Summer Camp</h2>
-      <div className="about-columns">
-        <div className="about-left">
-          <p>✅ Adventure is in our spirit</p>
-          <p>✅ Perfect destination for adventure</p>
+{/* final cta............................ */}
+
+ <section className="spycta-split"  id="enquiry">
+      <div className="spycta-split-container">
+
+        {/* LEFT SECTION */}
+        <div className="spycta-left">
+
+          <h2>
+            Join the <span>Spy Defence Summer Camp</span>
+          </h2>
+
+          <p>
+            A practical training experience focused on discipline,
+            confidence, and real-world skills through guided activities.
+          </p>
+
+          {/* FEATURES */}
+          <div className="spycta-features">
+            <div className="feature">
+              <h4>Real Training</h4>
+              <p>Hands-on activities & field-based learning</p>
+            </div>
+            <div className="feature">
+              <h4>Safe Environment</h4>
+              <p>24/7 supervision with trained professionals</p>
+            </div>
+          </div>
+
+          {/* STATS */}
+          <div className="spycta-stats">
+            <div className="stat">
+              <h3>500+</h3>
+              <span>Participants</span>
+            </div>
+            <div className="stat">
+              <h3>2 Days</h3>
+              <span>Adventure Camp</span>
+            </div>
+            <div className="stat">
+              <h3>100%</h3>
+              <span>Safe</span>
+            </div>
+          </div>
+
+          {/* CONTACT ICONS */}
+          <div className="spycta-contact">
+            <a href="tel:997111904" className="call-icon">
+              <FiPhoneCall />
+            </a>
+            <a
+              href="https://wa.me/91997111904"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-icon"
+            >
+              <FaWhatsapp />
+            </a>
+          </div>
+
         </div>
-        <div className="about-right">
-          <p>✅ Experience, discipline, teamwork</p>
-          <p>✅ Learn new skills while enjoying fun</p>
+
+        {/* RIGHT FORM (UNCHANGED) */}
+        <div className="spycta-right">
+
+          <h3>Quick Registration</h3>
+
+          <form>
+            <input type="text" placeholder="Full Name" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <input type="text" placeholder="City" />
+            <input type="number" placeholder="Age" />
+
+            <select>
+              <option>Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+
+            <button type="submit">Reserve Seat</button>
+          </form>
+
         </div>
+
       </div>
-    </div>
+    </section>
 
-    {/* Camp Activities */}
-    <div className="camp-activities">
-      <h2>Camp Activities</h2>
-      <div className="activities-columns">
-        <div className="activities-left">
-          <p>Self Defence</p>
-          <p>Weapon Training</p>
-          <p>Rifle Shooting</p>
-          <p>Archery</p>
-          <p>Trekking</p>
-          <p>Fort Trekking</p>
-        </div>
-        <div className="activities-right">
-          <p>Team Building</p>
-          <p>Cultural Program</p>
-          <p>Sports Activity</p>
-          <p>Fun Activities</p>
-           <p>Martial Art</p>
-          <p>Adventure Activities</p>
-        </div>
-      </div>
-    </div>
-
-    {/* Special Visit */}
-    <div className="special-visit">
-      <h3>Special Visit to Pawna Lake!</h3>
-      <p>Camping, bonfire & lakeside adventure activities</p>
-    </div>
-
-    {/* Camp Facilities */}
-    <div className="camp-facilities">
-      <h2>Camp Facilities</h2>
-      <div className="facilities-columns">
-        <div className="facilities-left">
-          <p>✓ Accommodation</p>
-          <p>✓ Healthy Food</p>
-          <p>✓ Trained Trainers</p>
-          <p>✓ Safety Equipment</p>
-        </div>
-        <div className="facilities-right">
-          <p>✓ Safe Environment</p>
-          <p>✓ Certificate</p>
-          <p>✓ 24/7 Security</p>
-          <p>✓ Travelling</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 
     </>
   );
