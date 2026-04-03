@@ -332,15 +332,25 @@
 .service-card:hover .icon {
   transform: rotate(10deg) scale(1.3);
   color: #ffffff;
+
+ 
 }
 
 /* TITLE */
 .service-card h3 {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 10px;
   transition: 0.3s;
+  letter-spacing: 0.5px;
+}
+
+.service-card h5{
+  font-size: 25px;
+  font-weight: bold;
+  color: #ef4444;
+  letter-spacing: 1px;
 }
 
 /* TEXT */
@@ -354,6 +364,7 @@
 
 /* ✅ TEXT COLOR CHANGE ON HOVER */
 .service-card:hover h3,
+.service-card:hover h5,
 .service-card:hover p {
   color: #ffffff;
 }

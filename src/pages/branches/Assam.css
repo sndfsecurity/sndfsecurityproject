@@ -1,132 +1,1269 @@
-/* SECTION */
-.sndf-assam-hero {
-  background: #f8fafc;
-  padding: 80px 6%;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 130px;
+/* AssamBranch.css - Hero Section Fixed - No White Space */
+
+/* Remove any default body margins that cause white space */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-/* CONTAINER */
-.sndf-assam-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+/* Hero Section - Full Width Fix */
+.branch-herobr {
+  position: relative;
+  padding: 100px 0;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a1f44, #162f6b);
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding-top: 200px;
 }
 
-/* LEFT */
-.sndf-assam-left {
-  max-width: 520px;
+/* Ensure the section spans full width without gaps */
+.branch-herobr {
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
 }
 
-/* BADGE */
-.sndf-assam-badge {
-  display: inline-block;
-  background: #e2e8f0;
-  color: #1e293b;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-  margin-bottom: 20px;
+/* Subtle floating dots effect */
+.branch-herobr::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
 }
 
-/* HEADING */
-.sndf-assam-left h1 {
-  font-size: 48px;
+.hero-contentbr {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-contentbr h1 {
+  font-size: 42px;
   font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 20px;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
 }
 
-.sndf-assam-left h1 span {
-  color: #dc2626;
+.hero-contentbr p {
+  font-size: 22px;
+  color: #e0e0e0;
+  margin: 0 0 20px 0;
+  letter-spacing: 1px;
 }
 
-/* TEXT */
-.sndf-assam-left p {
-  color: #475569;
-  line-height: 1.6;
-  font-size: 15px;
-}
-
-/* BUTTONS */
-.sndf-assam-btns {
-  margin-top: 30px;
-  display: flex;
-  gap: 15px;
-}
-
-/* PRIMARY */
-.sndf-assam-btn-primary {
-  padding: 12px 26px;
-  background: #dc2626;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
+.est-badgebr {
+  display: inline-block;
+  background-color:  #ff3b3b;
+  color: #ffffff;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-size: 18px;
   font-weight: 500;
-  transition: 0.3s;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.sndf-assam-btn-primary:hover {
-  background: #b91c1c;
+.est-badgebr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(192, 57, 43, 0.3);
 }
 
-/* SECONDARY */
-.sndf-assam-btn-secondary {
-  padding: 12px 26px;
-  background: transparent;
-  border: 1px solid #cbd5e1;
-  border-radius: 30px;
-  text-decoration: none;
-  color: #0f172a;
+/* ========== RESPONSIVE FIXES - FULL WIDTH ON MOBILE ========== */
+
+/* Desktop Small (1024px) */
+@media (max-width: 1024px) {
+  .branch-herobr {
+    padding: 120px 0 80px;
+    width: 100%;
+  }
+  
+  .hero-contentbr h1 {
+    font-size: 42px;
+  }
+}
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+  .branch-herobr {
+    padding: 100px 0 70px;
+    width: 100%;
+  }
+  
+  .hero-contentbr {
+    padding: 0 16px;
+  }
+
+  .hero-contentbr h1 {
+    font-size: 32px;
+  }
+  
+  .hero-contentbr p {
+    font-size: 21px;
+  }
+  
+  .est-badgebr {
+    font-size: 17px;
+    padding: 7px 20px;
+  }
+}
+
+/* Mobile (480px) - CRITICAL FIX */
+@media (max-width: 480px) {
+  /* Remove any white space on sides */
+  .branch-herobr {
+    padding: 190px 0 60px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
+  
+  .hero-contentbr {
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .hero-contentbr h1 {
+    font-size: 32px;
+    margin: 0 0 12px 0;
+  }
+  
+  .hero-contentbr p {
+    font-size: 20px;
+    margin: 0 0 16px 0;
+  }
+  
+  .est-badgebr {
+    font-size: 17px;
+    padding: 6px 16px;
+  }
+}
+
+/* Small Mobile (375px) */
+@media (max-width: 375px) {
+  .branch-herobr {
+    padding: 80px 0 50px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
+  
+  .hero-contentbr {
+    padding: 0 14px;
+  }
+
+  .hero-contentbr h1 {
+    font-size: 24px;
+  }
+  
+  .hero-contentbr p {
+    font-size: 13px;
+  }
+  
+  .est-badgebr {
+    font-size: 11px;
+    padding: 5px 14px;
+  }
+}
+
+/* ========================
+   ASSAM HEADQUARTERS SECTION - CSS
+   ======================== */
+
+/* Base section styles */
+.assam-about-section {
+  padding: 20px 20px 60px;
+  background: #ffffff;
+  width: 100%;
+  margin: 0;
+}
+
+.assam-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Two-column split layout */
+.assam-split-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.assam-split-layout:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Left card styles */
+.assam-about-card {
+  flex: 1.2;
+  background: #ffffff;
+  padding: 40px 40px;
+  text-align: center;
+}
+
+/* Right image container */
+.assam-image-wrapper {
+  flex: 0.9;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9edf2 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  padding: 24px;
+  border-radius: 0 12px 12px 0;
+  min-height: 380px;
 }
 
-.sndf-assam-btn-secondary:hover {
-  background: #f1f5f9;
-}
-
-/* RIGHT IMAGE */
-.sndf-assam-right img {
-  width: 520px;
-  border-radius: 20px;
+.assam-office-img {
+  width: 100%;
+  height: auto;
+  min-height: 320px;
   object-fit: cover;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  display: block;
 }
 
-/* RESPONSIVE */
+.assam-office-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
 
-/* TABLET */
+/* Title styles */
+.assam-about-title {
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.assam-about-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #ff3b3b;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Description */
+.assam-about-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 700px;
+  margin: 30px auto 30px;
+  letter-spacing: 1px;
+}
+
+/* Contact button */
+.assam-contact-btn {
+  background: #ff3b3b;
+  color: #ffffff;
+  border: none;
+  padding: 12px 32px;
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.assam-contact-btn:hover {
+  background: #a93226;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(192, 57, 43, 0.3);
+}
+
+/* Stats container - horizontal row on all devices */
+.assam-stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  border-top: 1px solid #eee;
+  padding-top: 40px;
+}
+
+.assam-stat-item {
+  text-align: center;
+}
+
+.assam-stat-number {
+  display: block;
+  font-size: 34px;
+  font-weight: 700;
+  color: #ff3b3b;
+  margin-bottom: 8px;
+  letter-spacing: 1.5px;
+}
+
+.assam-stat-label {
+  font-size: 15px;
+  color: #777;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* ========== TABLET (max-width: 992px) ========== */
 @media (max-width: 992px) {
-  .sndf-assam-container {
-    flex-direction: column;
-    text-align: center;
+  .assam-split-layout {
+    gap: 24px;
   }
-
-  .sndf-assam-left {
-    max-width: 100%;
+  
+  .assam-about-card {
+    flex: 1;
+    padding: 32px 28px;
   }
-
-  .sndf-assam-btns {
-    justify-content: center;
+  
+  .assam-image-wrapper {
+    flex: 0.8;
+    padding: 20px;
+    min-height: 320px;
   }
-
-  .sndf-assam-right img {
-    width: 100%;
+  
+  .assam-office-img {
+    min-height: 280px;
+  }
+  
+  .assam-stats-container {
+    gap: 40px;
   }
 }
 
-/* MOBILE */
-@media (max-width: 576px) {
-  .sndf-assam-left h1 {
+/* ========== MOBILE (max-width: 768px) ========== */
+@media (max-width: 768px) {
+  /* Stack vertically on mobile */
+  .assam-split-layout {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .assam-about-card {
+    padding: 30px 25px;
+    order: 1;
+  }
+  
+  .assam-image-wrapper {
+    order: 2;
+    padding: 0 20px 30px 20px;
+    border-radius: 0 0 12px 12px;
+    background: #ffffff;
+    min-height: auto;
+  }
+  
+  .assam-office-img {
+    min-height: 220px;
+    border-radius: 16px;
+  }
+  
+  .assam-about-title {
+    font-size: 32px;
+  }
+  
+  .assam-about-description {
+    font-size: 16px;
+    margin: 25px auto 25px;
+  }
+  
+  /* Stats stay in ONE LINE on mobile */
+  .assam-stats-container {
+    gap: 30px;
+    padding-top: 30px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .assam-stat-number {
+    font-size: 28px;
+  }
+  
+  .assam-stat-label {
+    font-size: 13px;
+  }
+  
+  .assam-contact-btn {
+    margin-bottom: 32px;
+  }
+}
+
+/* ========== SMALL MOBILE (max-width: 540px) ========== */
+@media (max-width: 540px) {
+  .assam-about-section {
+    padding: 10px 16px 50px;
+  }
+  
+  .assam-about-card {
+    padding: 24px 20px;
+  }
+  
+  .assam-about-title {
+    font-size: 28px;
+  }
+  
+  .assam-about-description {
+    font-size: 15px;
+    margin: 20px auto 20px;
+    line-height: 1.6;
+  }
+  
+  .assam-contact-btn {
+    padding: 10px 24px;
+    font-size: 17px;
+    margin-bottom: 28px;
+    
+  }
+  
+  /* Stats remain in ONE LINE - using flex-wrap: nowrap for very small screens */
+  .assam-stats-container {
+    gap: 16px;
+    padding-top: 24px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  
+  .assam-stat-number {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  
+  .assam-stat-label {
+    font-size: 14px;
+    margin-top: 0;
+  }
+  
+  .assam-image-wrapper {
+    padding: 0 16px 24px 16px;
+  }
+  
+  .assam-office-img {
+    min-height: 180px;
+  }
+}
+
+/* ========== EXTRA SMALL (max-width: 420px) ========== */
+@media (max-width: 420px) {
+  .assam-stats-container {
+    gap: 12px;
+  }
+  
+  .assam-stat-number {
+    font-size: 22px;
+  }
+  
+  .assam-stat-label {
+    font-size: 13px;
+  }
+
+
+  
+  .assam-about-title {
     font-size: 32px;
   }
 
-  .sndf-assam-hero {
-    padding: 60px 20px;
+   .assam-about-description {
+    font-size: 17px;
+   }
+
+     .assam-contact-btn{
+      font-size: 18px;
+     }
+
+  
+  .assam-office-img {
+    min-height: 160px;
+  }
+}
+
+/* ========== DESKTOP LARGE (min-width: 1400px) ========== */
+@media (min-width: 1400px) {
+  .assam-container {
+    max-width: 1320px;
+  }
+  
+  .assam-about-title {
+    font-size: 48px;
+  }
+  
+  .assam-office-img {
+    min-height: 400px;
+  }
+}
+
+
+
+
+/* GallerySection.css */
+.gallery-section {
+  padding: 40px 20px;
+  background: #ffffff;
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gallery-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.gallery-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #ff3b3b;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.gallery-subtitle {
+  font-size: 18px;
+  color: #666;
+  max-width: 600px;
+  margin: 20px auto 0;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+/* 4 columns on desktop = single row */
+.gallery-gridas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 4/3;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+.gallery-overlay h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.gallery-overlay p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Modal Lightbox */
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.modal-close:hover {
+  color: #ff3b3b;
+}
+
+.gallery-modal img {
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.modal-caption {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+}
+
+.modal-caption h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal-caption p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ========== LAPTOP (max-width: 1024px) ========== */
+@media (max-width: 1024px) {
+  .gallery-gridas {
+    gap: 20px;
+  }
+  
+  .gallery-overlay h3 {
+    font-size: 16px;
+  }
+  
+  .gallery-overlay p {
+    font-size: 12px;
+  }
+}
+
+/* ========== TABLET (max-width: 768px) ========== */
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 60px 16px;
+  }
+  
+  .gallery-title {
+    font-size: 32px;
+  }
+  
+  .gallery-subtitle {
+    font-size: 16px;
+  }
+  
+  /* 2 columns on tablet */
+  .gallery-gridas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .gallery-overlay {
+    padding: 15px;
+  }
+  
+  .gallery-overlay h3 {
+    font-size: 14px;
+  }
+  
+  .gallery-overlay p {
+    font-size: 11px;
+  }
+  
+  .modal-close {
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+  }
+  
+  .modal-caption h3 {
+    font-size: 20px;
+  }
+  
+  .modal-caption p {
+    font-size: 14px;
+  }
+}
+
+/* ========== MOBILE (max-width: 540px) ========== */
+@media (max-width: 540px) {
+  .gallery-section {
+    padding: 50px 16px;
+  }
+  
+  .gallery-title {
+    font-size: 28px;
+  }
+  
+  .gallery-subtitle {
+    font-size: 14px;
+  }
+  
+  /* 1 column on mobile */
+  .gallery-gridas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    aspect-ratio: 16/9;
+  }
+  
+  .gallery-overlay {
+    transform: translateY(0);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: 12px;
+  }
+  
+  .gallery-overlay h3 {
+    font-size: 16px;
+  }
+  
+  .gallery-overlay p {
+    font-size: 12px;
+  }
+  
+  .gallery-modal img {
+    max-width: 95%;
+    max-height: 70%;
+  }
+  
+  .modal-caption {
+    bottom: 20px;
+  }
+  
+  .modal-caption h3 {
+    font-size: 18px;
+  }
+  
+  .modal-caption p {
+    font-size: 12px;
+  }
+}
+
+/* ========== EXTRA SMALL MOBILE (max-width: 420px) ========== */
+@media (max-width: 420px) {
+  .gallery-section {
+    padding: 40px 12px;
+  }
+  
+  .gallery-header {
+    margin-bottom: 30px;
+  }
+  
+   .gallery-title {
+    font-size: 32px !important;  /* 32px on 420px */
+  }
+  
+  .gallery-subtitle {
+    font-size: 17px !important;  /* 17px on 420px */
+  }
+  
+  .gallery-title::after {
+    width: 50px;
+    height: 2px;
+  }
+  
+  .gallery-subtitle {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 15px auto 0;
+  }
+  
+  .gallery-gridas {
+    gap: 15px;
+  }
+  
+  .gallery-item {
+    border-radius: 10px;
+    aspect-ratio: 16/9;
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-3px);
+  }
+  
+  .gallery-overlay {
+    padding: 10px;
+  }
+  
+  .gallery-overlay h3 {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+  
+  .gallery-overlay p {
+    font-size: 10px;
+  }
+  
+  /* Modal adjustments for 420px */
+  .modal-close {
+    top: 15px;
+    right: 15px;
+    font-size: 35px;
+  }
+  
+  .gallery-modal img {
+    max-width: 98%;
+    max-height: 65%;
+  }
+  
+  .modal-caption {
+    bottom: 15px;
+  }
+  
+  .modal-caption h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .modal-caption p {
+    font-size: 11px;
+  }
+}
+
+/* ========== VERY SMALL (max-width: 360px) ========== */
+@media (max-width: 360px) {
+  .gallery-section {
+    padding: 35px 10px;
+  }
+  
+  .gallery-title {
+    font-size: 22px;
+  }
+  
+  .gallery-subtitle {
+    font-size: 12px;
+  }
+  
+  .gallery-gridas {
+    gap: 12px;
+  }
+  
+  .gallery-overlay h3 {
+    font-size: 13px;
+  }
+  
+  .gallery-overlay p {
+    font-size: 9px;
+  }
+  
+  .modal-caption h3 {
+    font-size: 14px;
+  }
+  
+  .modal-caption p {
+    font-size: 10px;
+  }
+}
+
+
+
+
+/* cta section............................... */
+/* AssamContactSection.css - Modern clean design */
+.assam-contact-section {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f2f8 100%);
+  position: relative;
+}
+
+.assam-contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.assam-contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.assam-contact-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.assam-contact-title {
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.assam-contact-subtitle {
+  font-size: 17px;
+  color: #6c757d;
+  max-width: 550px;
+  margin: 0 auto;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+/* Two Column Layout */
+.assam-contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Contact Info Column */
+.assam-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.assam-contact-card {
+  background: white;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assam-contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.15);
+}
+
+.assam-contact-item {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.assam-contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.assam-icon-box {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #667eea;
+  font-size: 22px;
+}
+
+.assam-contact-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.assam-contact-item a,
+.assam-contact-item p {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.assam-contact-item a:hover {
+  color: #667eea;
+}
+
+.assam-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  color: #667eea;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 50px;
+  width: fit-content;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.assam-map-link:hover {
+  background: #667eea;
+  color: white;
+  transform: translateX(5px);
+}
+
+/* Form Column */
+.assam-contact-form {
+  display: flex;
+  align-items: center;
+}
+
+.assam-form-card {
+  background: white;
+  border-radius: 24px;
+  padding: 32px;
+  width: 100%;
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assam-form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.15);
+}
+
+.assam-form-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f2f8;
+}
+
+.assam-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.assam-form-row {
+  width: 100%;
+}
+
+.assam-input,
+.assam-textarea {
+  width: 100%;
+  padding: 14px 18px;
+  background: #f8f9ff;
+  border: 1.5px solid #e9ecef;
+  border-radius: 14px;
+  color: #1a1a2e;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.assam-input:focus,
+.assam-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+}
+
+.assam-input::placeholder,
+.assam-textarea::placeholder {
+  color: #adb5bd;
+}
+
+.assam-textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.assam-submit-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.assam-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .assam-contact-wrapper {
+    gap: 30px;
+  }
+  
+  .assam-contact-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .assam-contact-section {
+    padding: 50px 20px;
+  }
+  
+  .assam-contact-title {
+    font-size: 32px;
+  }
+  
+  .assam-contact-subtitle {
+    font-size: 16px;
+  }
+  
+  .assam-contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .assam-contact-card,
+  .assam-form-card {
+    padding: 28px;
+  }
+  
+  .assam-contact-item {
+    gap: 15px;
+  }
+  
+  .assam-icon-box {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .assam-contact-section {
+    padding: 40px 16px;
+  }
+  
+  .assam-contact-title {
+    font-size: 32px;
+  }
+  
+  .assam-contact-subtitle {
+    font-size: 16px;
+  }
+  
+  .assam-contact-badge {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  
+  .assam-contact-card,
+  .assam-form-card {
+    padding: 20px;
+  }
+  
+  .assam-form-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .assam-contact-item {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .assam-icon-box {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+  }
+  
+  .assam-contact-item h4 {
+    font-size: 14px;
+  }
+  
+  .assam-contact-item a,
+  .assam-contact-item p {
+    font-size: 13px;
+  }
+  
+  .assam-input,
+  .assam-textarea {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+  
+  .assam-submit-btn {
+    padding: 12px 24px;
+    font-size: 14px;
   }
 }
