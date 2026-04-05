@@ -1,25 +1,23 @@
 import React from "react";
-import "./Sndfprivacy.css";
+import "./Sndfterms.css";
 
 const Sndfprivacy = () => {
   return (
-    <section className="pp2-page">
+    <section className="gov-terms">
 
-      {/* HERO */}
-      <div className="pp2-hero">
-        <h1>Privacy Policy</h1>
+      {/* NAVBAR SPACE */}
+      <div className="gov-top-space"></div>
+
+      {/* HEADER */}
+      <div className="gov-header">
+        <h2>Privacy Policy</h2>
         <p>SNDF Security Services</p>
       </div>
 
-      {/* DOCUMENT BOX */}
-      <div className="pp2-doc">
+      {/* CONTENT */}
+      <div className="gov-container">
 
-        <div className="pp2-header">
-          <h2>Privacy Policy</h2>
-          <span>Last Updated: March 2026</span>
-        </div>
-
-        <p className="pp2-intro">
+        <p>
           At SNDF Security Services, we specialize in professional security,
           investigation, and training services. Protecting your personal
           information is a top priority. This Privacy Policy explains how we
@@ -27,75 +25,89 @@ const Sndfprivacy = () => {
           website or services.
         </p>
 
-        {/* SECTIONS */}
+        <p>
+          By using our services, you consent to the collection and use of
+          information in accordance with this policy.
+        </p>
 
-        <div className="pp2-block">
-          <h3>1. Information We Collect</h3>
-          <p>
-            We may collect personal details including your name, phone number,
-            email address, city, and other relevant information when you submit
-            enquiry forms or contact us. We may also collect non-personal data
-            such as browser type, device information, and usage patterns.
-          </p>
-        </div>
+        <h3>INFORMATION WE COLLECT</h3>
+        <p>
+          We may collect personal details including your name, phone number,
+          email address, city, and other relevant information when you submit
+          enquiry forms or contact us.
+        </p>
 
-        <div className="pp2-block">
-          <h3>2. Purpose of Data Collection</h3>
-          <p>
-            Your information is used to respond to enquiries, provide services,
-            improve operations, and maintain effective communication.
-          </p>
-        </div>
+        <p>
+          We may also collect non-personal information such as browser type,
+          device details, IP address, and usage data to improve website
+          performance.
+        </p>
 
-        <div className="pp2-block">
-          <h3>3. Data Security & Confidentiality</h3>
-          <p>
-            As a professional security and investigation organization, we follow
-            strict confidentiality protocols. Your data is protected using
-            appropriate security measures to prevent unauthorized access or misuse.
-          </p>
-        </div>
+        <h3>PURPOSE OF DATA COLLECTION</h3>
+        <p>
+          The information collected is used to respond to enquiries, provide
+          services, improve operations, and maintain effective communication
+          with clients.
+        </p>
 
-        <div className="pp2-block">
-          <h3>4. Sharing of Information</h3>
-          <p>
-            We do not sell or rent your personal information. Data is only shared
-            when required by law or necessary to deliver services.
-          </p>
-        </div>
+        <h3>DATA SECURITY & CONFIDENTIALITY</h3>
+        <p>
+          As a professional security and investigation organization, we follow
+          strict confidentiality protocols. Your data is protected using
+          appropriate technical and organizational measures to prevent
+          unauthorized access, misuse, or disclosure.
+        </p>
 
-        <div className="pp2-block">
-          <h3>5. Investigation & Sensitive Data Handling</h3>
-          <p>
-            All investigation-related information is handled with strict
-            confidentiality and accessed only by authorized personnel. We do not
-            disclose such data unless legally required.
-          </p>
-        </div>
+        <h3>SHARING OF INFORMATION</h3>
+        <p>
+          We do not sell, trade, or rent your personal information. Data may
+          only be shared when required by law or necessary to deliver services.
+        </p>
 
-        <div className="pp2-block">
-          <h3>6. Cookies & Website Tracking</h3>
-          <p>
-            We may use cookies to improve website functionality and user
-            experience. You can disable cookies in your browser settings.
-          </p>
-        </div>
+        <h3>INVESTIGATION & SENSITIVE DATA</h3>
+        <p>
+          All investigation-related data is handled with strict confidentiality
+          and accessed only by authorized personnel. Such information is never
+          disclosed without legal requirement.
+        </p>
 
-        <div className="pp2-block">
-          <h3>7. Your Rights</h3>
-          <p>
-            You have the right to access, update, or request deletion of your
-            personal data by contacting us.
-          </p>
-        </div>
+        <h3>COOKIES POLICY</h3>
+        <p>
+          Our website may use cookies to enhance user experience and analyze
+          traffic. Cookies help improve functionality and performance.
+        </p>
 
-        <div className="pp2-block">
-          <h3>8. Contact Information</h3>
-          <div className="pp2-contact">
-            <p>📞 +91 99711 11904</p>
-            <p>📧 sndfguard@gmail.com</p>
-          </div>
-        </div>
+        <ul>
+          <li>Analytics cookies for performance tracking</li>
+          <li>Session cookies for smooth navigation</li>
+          <li>Preference cookies for user settings</li>
+        </ul>
+
+        <h3>USER RIGHTS</h3>
+        <p>
+          You have the right to access, update, or request deletion of your
+          personal data. You may contact us for any privacy-related concerns.
+        </p>
+
+
+        <h3>POLICY UPDATES</h3>
+        <p>
+          SNDF Security Services reserves the right to update this Privacy
+          Policy at any time. Users are advised to review this page periodically.
+        </p>
+
+        <h3>GOVERNING LAW</h3>
+        <p>
+          This policy shall be governed by the laws of India. Any disputes shall
+          be subject to the jurisdiction of Indian courts.
+        </p>
+
+        
+        <h3>CONTACT INFORMATION</h3>
+        <p>
+          📞 +91 99711 11904 <br />
+          📧 sndfguard@gmail.com
+        </p>
 
       </div>
 

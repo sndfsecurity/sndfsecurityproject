@@ -1,0 +1,143 @@
+/* ===== PAGE BACKGROUND ===== */
+.gov-terms {
+  background-color: #f5f6f7;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  padding-top: 100px;
+}
+
+/* ===== NAVBAR SPACE FIX ===== */
+.gov-top-space {
+  height: 130px; /* prevents overlap */
+}
+
+/* ===== HEADER ===== */
+.gov-header {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px 10px;
+}
+
+.gov-header h2 {
+ font-size: 42px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.gov-header p {
+  font-size: 25px;
+  color: #6b7280;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+/* ===== MAIN CONTENT BOX ===== */
+.gov-container {
+  max-width: 1000px;
+  margin: 10px auto 60px;
+  background: #ffffff;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+}
+
+/* ===== PARAGRAPH TEXT ===== */
+.gov-container p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  color: #444;
+  letter-spacing: 1px;
+}
+
+/* ===== SECTION HEADINGS ===== */
+.gov-container h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+
+/* ===== LIST ===== */
+.gov-container ul {
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.gov-container li {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* ===== LINKS (if any) ===== */
+.gov-container a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.gov-container a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .gov-container {
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .gov-top-space {
+    height: 110px;
+  }
+
+  .gov-header h2 {
+    font-size: 32px;
+  }
+
+  .gov-container {
+    padding: 20px;
+    margin: 10px 15px 50px;
+  }
+
+  .gov-container p,
+  .gov-container li {
+    font-size: 13.5px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .gov-header {
+    padding: 0 15px;
+  }
+
+  .gov-container {
+    padding: 18px;
+  }
+
+  .gov-header h2 {
+    font-size: 32px;
+  }
+
+  .gov-container p,
+  .gov-container li {
+    font-size: 14px;
+  }
+}

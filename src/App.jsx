@@ -12,6 +12,8 @@ import Team from "./pages/Team";
 import Blog from "./pages/Blog";
 
 import Sndfprivacy from "./pages/Sndfprivacy";
+import Sndfterms from "./pages/Sndfterms";
+import Sndfdisclaimer from "./pages/Sndfdisclaimer";
 
 import Pune from "./pages/branches/Pune";
 import Assam from "./pages/branches/Assam";
@@ -39,6 +41,9 @@ function App() {
         <Route path="/blog" element={<Blog />} />
 
         <Route path="/privacy-policy" element={<Sndfprivacy />} />
+        <Route path="/sndfterms" element = {< Sndfterms/>}/>
+        <Route path="/sndfdisclaimer" element = {< Sndfdisclaimer/>}/>
+
 
     
         {/* Branch pages */}

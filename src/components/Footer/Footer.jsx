@@ -70,14 +70,13 @@ const Footer = () => {
         <div className="footer-col">
           <h3>Important Links</h3>
           <ul>
-            <li>Terms & Conditions</li>
 
+            <li><Link to="/sndfterms">Terms & Conditions</Link></li>
 
             <li><Link to="/privacy-policy">Privacy Policy</Link> </li>
 
-            {/* <li>Privacy Policy</li> */}
             <li>Refund Policy</li>
-            <li>Disclaimer</li>
+             <li><Link to="/sndfdisclaimer">Disclaimer</Link> </li>
           </ul>
         </div>
 
