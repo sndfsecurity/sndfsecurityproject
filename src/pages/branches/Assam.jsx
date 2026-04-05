@@ -68,7 +68,13 @@ const Assam = () => {
               and investigative services across Assam and surrounding states with precision,
               confidentiality, and regional expertise.
             </p>
-            <button className="assam-contact-btn">Contact Us</button>
+
+
+            {/* <button className="assam-contact-btn">Contact Us</button> */}
+
+              <a href="#contact-section" className="assam-contact-btn">
+                Contact Us
+              </a>
 
             <div className="assam-stats-container">
               <div className="assam-stat-item">
@@ -148,7 +154,7 @@ const Assam = () => {
 
 
     {/* cta section....................................................... */}
-      <section className="assam-contact-section">
+      <section id="contact-section" className="assam-contact-section">
       <div className="assam-contact-container">
         <div className="assam-contact-header">
           <span className="assam-contact-badge">Contact Us</span>

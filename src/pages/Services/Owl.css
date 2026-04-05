@@ -108,6 +108,8 @@
   font-size: 19px;
   transition: all 0.3s ease;
   font-weight: bold;
+  text-decoration: none;
+  background-color: white;
 }
 
 .owl-btn-outline:hover {

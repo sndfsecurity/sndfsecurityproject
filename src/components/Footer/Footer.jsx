@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../assets/images/LOGO.png";
+import { Link } from "react-router-dom";
 
 import {
   FaFacebookF,
@@ -55,12 +56,13 @@ const Footer = () => {
         <div className="footer-col">
           <h3>Quick Links</h3>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Course</li>
-            <li>Contact</li>
-            <li>Career</li>
+
+            <li><Link to="/">Home</Link> </li>
+            <li><Link to="/about">About</Link> </li>
+            <li><Link to="/services/sndf">Services</Link> </li>
+            <li><Link to="/contact">Contact</Link> </li>
+            <li><Link to="/">Career</Link> </li>
+            
           </ul>
         </div>
 
@@ -69,7 +71,11 @@ const Footer = () => {
           <h3>Important Links</h3>
           <ul>
             <li>Terms & Conditions</li>
-            <li>Privacy Policy</li>
+
+
+            <li><Link to="/privacy-policy">Privacy Policy</Link> </li>
+
+            {/* <li>Privacy Policy</li> */}
             <li>Refund Policy</li>
             <li>Disclaimer</li>
           </ul>

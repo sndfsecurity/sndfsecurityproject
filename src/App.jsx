@@ -11,6 +11,8 @@ import Course from "./pages/Course";
 import Team from "./pages/Team";
 import Blog from "./pages/Blog";
 
+import Sndfprivacy from "./pages/Sndfprivacy";
+
 import Pune from "./pages/branches/Pune";
 import Assam from "./pages/branches/Assam";
 
@@ -36,6 +38,9 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/blog" element={<Blog />} />
 
+        <Route path="/privacy-policy" element={<Sndfprivacy />} />
+
+    
         {/* Branch pages */}
        <Route path="/branches/pune" element={<Pune />} />
        <Route path="/branches/assam" element={<Assam />} />

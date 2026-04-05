@@ -192,71 +192,54 @@ const Home = () => {
 
     <div className="services-grid">
 
-      {/* 1 */}
-      <div className="service-card" data-aos="fade-up">
+        
+          <a href="/services/ndf" className="service-card" data-aos="fade-up">
         <div className="icon"><FaUserShield /></div>
         <h3>Security Services</h3>
         <h5>NDF</h5>
-        <p>
-          Highly trained security personnel providing protection for residential,
-          commercial, and event environments.
-        </p>
-      </div>
+        <p>Highly trained security personnel providing protection for residential, commercial, and event environments.</p>
+      </a>
 
-      {/* 2 */}
-      <div className="service-card" data-aos="fade-up" data-aos-delay="100">
+      {/* 2 - NDF Detective Services */}
+      <a href="/services/ndf" className="service-card" data-aos="fade-up" data-aos-delay="100">
         <div className="icon"><FaUserSecret /></div>
         <h3>Detective Investigation Services</h3>
         <h5>NDF</h5>
-        <p>
-          Professional and confidential investigation services for personal,
-          legal, and corporate cases handled discreetly.
-        </p>
-      </div>
+        <p>Professional and confidential investigation services for personal, legal, and corporate cases handled discreetly.</p>
+      </a>
 
-      {/* 3 */}
-      <div className="service-card" data-aos="fade-up" data-aos-delay="200">
+      {/* 3 - OWL Security */}
+      <a href="/services/owl" className="service-card" data-aos="fade-up" data-aos-delay="200">
         <div className="icon"><FaSearch /></div>
         <h3>CCTV Surveillance & Monitoring</h3>
         <h5>OWL Security</h5>
-        <p>
-          Advanced surveillance solutions including tracking, monitoring,
-          and intelligence gathering for enhanced security.
-        </p>
-      </div>
+        <p>Advanced surveillance solutions including tracking, monitoring, and intelligence gathering for enhanced security.</p>
+      </a>
 
-      {/* 4 */}
-      <div className="service-card" data-aos="fade-up" data-aos-delay="300">
+      {/* 4 - SNDF Detective Course */}
+      <a href="/course" className="service-card" data-aos="fade-up" data-aos-delay="300">
         <div className="icon"><FaUserCheck /></div>
-        <h3>Detective Investigation Cousre</h3>
+        <h3>Detective Investigation Course</h3>
         <h5>DIC</h5>
-        <p>
-          Night surveillance and specialized security services ensuring
-          continuous protection during high-risk hours.
-        </p>
-      </div>
+        <p>Night surveillance and specialized security services ensuring continuous protection during high-risk hours.</p>
+      </a>
 
-      {/* 5 */}
-      <div className="service-card" data-aos="fade-up" data-aos-delay="400">
+      {/* 5 - SNDF Guard Services */}
+      <a href="/services/sndf" className="service-card" data-aos="fade-up" data-aos-delay="400">
         <div className="icon"><FaShieldAlt /></div>
         <h3>Guard Services</h3>
         <h5>SNDF</h5>
-        <p>
-          Reliable and disciplined guard services for offices, industries,
-          and private properties with full safety assurance.
-        </p>
-      </div>
+        <p>Reliable and disciplined guard services for offices, industries, and private properties with full safety assurance.</p>
+      </a>
 
-      {/* 6 */}
-      <div className="service-card" data-aos="fade-up" data-aos-delay="500">
+      {/* 6 - Spydefence Summer Camp */}
+      <a href="/services/spydefence" className="service-card" data-aos="fade-up" data-aos-delay="500">
         <div className="icon"><FaUserLock /></div>
         <h3>Summer Camp</h3>
         <h5>Spy Defence</h5>
-        <p>
-          Training and counter-surveillance programs to detect threats,
-          prevent espionage, and ensure personal security awareness.
-        </p>
-      </div>
+        <p>Training and counter-surveillance programs to detect threats, prevent espionage, and ensure personal security awareness.</p>
+      </a>
+     
 
     </div>
   </div>

@@ -42,9 +42,8 @@ function Owl() {
               Call Now
             </a>
 
-            <button className="owl-btn-outline">
-              Send Enquiry
-            </button>
+            <a href="#owl" className="owl-btn-outline">Send Enquiry</a>
+            
           </div>
 
           <div className="owl-points">
@@ -188,7 +187,7 @@ function Owl() {
 
  {/* cta section.......................................... */}
 
- <section className="owl-cta-section">
+ <section id="owl" className="owl-cta-section">
   <div className="container owl-cta-container">
 
     {/* LEFT CONTENT */}

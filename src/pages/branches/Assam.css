@@ -7,6 +7,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Add to your global CSS file (index.css or App.css) */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Hero Section - Full Width Fix */
 .branch-herobr {
   position: relative;
@@ -297,6 +302,7 @@ body {
   transition: all 0.3s ease;
   margin-bottom: 40px;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .assam-contact-btn:hover {
@@ -312,7 +318,7 @@ body {
   gap: 60px;
   flex-wrap: wrap;
   border-top: 1px solid #eee;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .assam-stat-item {
