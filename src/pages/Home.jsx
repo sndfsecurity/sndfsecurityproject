@@ -47,6 +47,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const Home = () => {
 
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -72,6 +73,51 @@ const Home = () => {
 
   return () => window.removeEventListener("mousemove", handleMouseMove);
 }, []);
+
+
+const badgesData = [
+    {
+      id: 1,
+      icon: '✓',
+      title: 'ISO Certified',
+      description: 'International quality standards',
+      highlight: 'ISO 9001:2015',
+    },
+    {
+      id: 2,
+      icon: '✓',
+      title: 'Govt Registered',
+      description: 'Authorized by Indian authorities',
+      highlight: 'MSME & SSI Registered',
+    },
+    {
+      id: 3,
+      icon: '✓',
+      title: 'Licensed Agency',
+      description: 'Fully compliant & legal operations',
+      highlight: 'Private Security Agency License',
+    },
+  ];
+
+
+   const clientLogos = [
+    { id: 1, name: 'Tata Group', category: 'CONGLOMERATE', iconType: 'professional-blue' },
+    { id: 2, name: 'Reliance', category: 'ENERGY & RETAIL', iconType: 'professional-navy' },
+    { id: 3, name: 'Infosys', category: 'IT SERVICES', iconType: 'professional-slate' },
+    { id: 4, name: 'ICICI Bank', category: 'BANKING & FINANCE', iconType: 'professional-gold' },
+    { id: 5, name: 'HDFC Bank', category: 'BANKING & FINANCE', iconType: 'professional-blue' },
+    { id: 6, name: 'Mahindra', category: 'AUTOMOTIVE', iconType: 'professional-charcoal' },
+    { id: 7, name: 'Adani Group', category: 'INFRASTRUCTURE', iconType: 'professional-navy' },
+    { id: 8, name: 'Bajaj Group', category: 'ELECTRONICS', iconType: 'professional-slate' },
+    { id: 9, name: 'L&T', category: 'ENGINEERING', iconType: 'professional-blue' },
+    { id: 10, name: 'Wipro', category: 'IT SERVICES', iconType: 'professional-charcoal' }
+  ];
+
+  // Triple duplicate for seamless infinite scroll
+  const duplicatedLogos = [...clientLogos, ...clientLogos, ...clientLogos];
+
+
+ 
 
   return (
     <>
@@ -119,13 +165,35 @@ const Home = () => {
 
             <div className="hero-trust">
               <div>✔ 3500+ Clients</div>
-              <div>✔ 5+ Years</div>
+              <div>✔ 10+ Years</div>
               <div>✔ PAN India</div>
             </div>
 
           </div>
         </div>
       </section>
+
+
+    {/* trust badges........................................................... */}
+
+      <section className="sndf-trust-badges-wrapper">
+      <div className="sndf-trust-badges-container">
+        <div className="sndf-trust-badges-inner">
+          {badgesData.map((badge) => (
+            <div key={badge.id} className="sndf-trust-badge-item">
+              <div className="sndf-trust-badge-icon-wrapper">
+                <span className="sndf-trust-badge-icon">{badge.icon}</span>
+              </div>
+              <div className="sndf-trust-badge-content">
+                <h3 className="sndf-trust-badge-title">{badge.title}</h3>
+                <p className="sndf-trust-badge-description">{badge.description}</p>
+                <span className="sndf-trust-badge-highlight">{badge.highlight}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
 
 
@@ -381,6 +449,46 @@ const Home = () => {
 
   </div>
 </section>
+
+
+{/* our clients.......................................................... */}
+
+<section className="sndf-client-logos-only">
+      <div className="sndf-client-logos-only-container">
+        
+        {/* Professional Header */}
+        <div className="sndf-client-logos-only-header">
+          <span className="sndf-client-logos-only-badge">TRUSTED PARTNERS</span>
+          <h2 className="sndf-client-logos-only-title">
+            Trusted By India's <span>Leading Organizations</span>
+          </h2>
+        </div>
+
+        {/* Auto-scrolling Logos */}
+        <div className="sndf-client-logos-only-marquee">
+          <div className="sndf-client-logos-only-track">
+            {duplicatedLogos.map((logo, index) => (
+              <div 
+                key={`${logo.id}-${index}`} 
+                className="sndf-client-logos-only-card"
+              >
+                <div className="sndf-client-logos-only-card-inner">
+                  <div className={`sndf-client-logos-only-initial ${logo.iconType}`}>
+                    {logo.name.charAt(0)}
+                  </div>
+                  <div className="sndf-client-logos-only-info">
+                    <h4>{logo.name}</h4>
+                    <p>{logo.category}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </section>
+
 
 
 {/* cta section..................................... */}

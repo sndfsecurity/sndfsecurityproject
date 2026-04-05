@@ -10,7 +10,7 @@ const Sndfterms = () => {
       <div className="gov-header">
         <h2>Terms & Conditions</h2>
         <p>SNDF Security Services</p>
-      </div>
+      </div>  
 
       <div className="gov-container">
 

@@ -5,6 +5,9 @@ import { FaUserSecret, FaBalanceScale, FaSearch, FaUserCheck } from "react-icons
 
 import loyalty from "../../assets/images/course-bg.jpg";
 import prematrimonial from "../../assets/images/pre.jpg";
+import asset from "../../assets/images/assetv.png";
+import forensic from "../../assets/images/forensic.png";
+
 
 
 const services = [
@@ -639,7 +642,7 @@ const cyberServices = [
   {
     title: "Assets Verification",
     desc: "Verify financial and property details with accuracy.",
-    img: prematrimonial,
+    img: asset,
     full: (
       <>
         <p>We verify assets, properties, and financial claims with complete confidentiality.</p>
@@ -654,7 +657,7 @@ const cyberServices = [
   {
     title: "Mobile & PC Forensics",
     desc: "Analyze digital devices for hidden evidence.",
-    img: loyalty,
+    img: forensic,
     full: (
       <>
         <p>Recover and analyze data from mobile phones, laptops, and digital devices.</p>
