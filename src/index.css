@@ -260,27 +260,3 @@ code {
 
 
 
-/* Hide Google Translate banner */
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
-}
-
-body {
-  top: 0px !important;
-}
-
-/* Style the language selector */
-.goog-te-gadget-simple {
-  background-color: #1a3a6f !important;
-  border: none !important;
-  border-radius: 50px !important;
-  padding: 8px 16px !important;
-}
-
-.goog-te-gadget-simple span {
-  color: white !important;
-}
-
-.goog-te-menu-value {
-  color: white !important;
-}
