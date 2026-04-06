@@ -7,6 +7,15 @@ import loyalty from "../../assets/images/course-bg.jpg";
 import prematrimonial from "../../assets/images/pre.jpg";
 import asset from "../../assets/images/assetv.png";
 import forensic from "../../assets/images/forensic.png";
+import bgcheck from "../../assets/images/bgcheck.jpg";
+import black from "../../assets/images/black.jpg";
+import emp from "../../assets/images/emp.jpg";
+import missing from "../../assets/images/missing.png";
+
+import veri from "../../assets/images/emp.jpg";
+import divorce from "../../assets/images/divorce.png";
+import sting from "../../assets/images/emp.jpg";
+import under from "../../assets/images/emp.jpg";
 
 
 
@@ -207,7 +216,7 @@ const services = [
   {
   title: "Divorce Case Investigation",
   desc: "Professional investigation services to support divorce cases with strong evidence.",
-  img: prematrimonial, // keep image only for card
+  img: divorce, // keep image only for card
 
   full: (
     <div className="sndf-modal-details">
@@ -256,7 +265,7 @@ const services = [
  {
   title: "Missing Person Investigation",
   desc: "Professional investigation services to trace and locate missing individuals.",
-  img: loyalty, // use your image for card only
+  img: missing, // use your image for card only
 
   full: (
     <div className="sndf-modal-details">
@@ -310,7 +319,7 @@ const services = [
   {
   title: "Background Check Investigation",
   desc: "Verify personal, professional, and financial history with complete accuracy.",
-  img: prematrimonial, // use image only for card
+  img: bgcheck, // use image only for card
 
   full: (
     <div className="sndf-modal-details">
@@ -364,7 +373,7 @@ const services = [
  {
   title: "Pre & Post Employment Investigation",
   desc: "Ensure safe hiring and monitor employee integrity with professional verification.",
-  img: loyalty, // use image only for card
+  img: emp, // use image only for card
 
   full: (
     <div className="sndf-modal-details">
@@ -421,7 +430,7 @@ const services = [
  {
   title: "Blackmailing Investigation",
   desc: "Professional assistance to handle blackmail cases with confidentiality and strong evidence.",
-  img: loyalty, // use image only for card
+  img: black, // use image only for card
 
   full: (
     <div className="sndf-modal-details">
@@ -472,7 +481,7 @@ const services = [
 {
   title: "Surveillance & Sting Operation",
   desc: "Discreet monitoring and undercover operations to gather accurate evidence and expose illegal activities.",
-  img: prematrimonial, // card image only
+  img: sting, // card image only
 
   full: (
     <div className="sndf-modal-details">
@@ -526,7 +535,7 @@ const services = [
 {
   title: "Undercover Operation",
   desc: "Covert investigations where agents assume false identities to gather critical evidence and expose hidden crimes.",
-  img: prematrimonial, // only for card
+  img: under, // only for card
 
   full: (
     <div className="sndf-modal-details">
@@ -581,7 +590,7 @@ const services = [
   {
   title: "Document Verification Investigation",
   desc: "Accurate verification of documents to detect fraud and ensure authenticity with complete confidentiality.",
-  img: loyalty, // only for card
+  img: veri, // only for card
 
   full: (
     <div className="sndf-modal-details">
