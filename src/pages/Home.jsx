@@ -16,6 +16,8 @@ import { Pagination } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
 import Counter from "../components/Counter";
 
+
+
 <Swiper
   modules={[Autoplay, Pagination]}
   loop={true}

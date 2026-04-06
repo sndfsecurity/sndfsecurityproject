@@ -25,14 +25,24 @@ import Sndf from "./pages/Services/Sndf";
 import Owl from "./pages/Services/Owl"; 
 import Spydefence from "./pages/Services/Spydefence";
 
+import LanguageSwitcher from './components/LanguageSwitcher';
+
 
 function App() {
   return (
+
+    
+
     <Router>
 
+      <LanguageSwitcher /> 
+      
       <Navbar />
 
       <Routes>
+
+        
+
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/course" element={<Course />} />
