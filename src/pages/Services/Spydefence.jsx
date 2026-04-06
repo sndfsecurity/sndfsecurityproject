@@ -316,7 +316,7 @@ const Spydefence = () => {
               <span>Participants</span>
             </div>
             <div className="stat">
-              <h3>2 Days</h3>
+              <h3>7 Days</h3>
               <span>Adventure Camp</span>
             </div>
             <div className="stat">

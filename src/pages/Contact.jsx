@@ -145,12 +145,11 @@ const Contact = () => {
             <div className="location-icon">📍</div>
 
             <p>
-              SNDF Pune Head Office <br /><br />
-              SNDF Head Office, Ground Floor, <br />
-              Yashashree Phase 2, D Wing, <br />
-              Sukhsagar Nagar, Near Ekadashi Hotel, <br />
-              Katraj-Kondhwa Road, Katraj, <br />
-              Pune, Maharashtra, India - 411046
+              SNDF Head Office, Ground Floor,
+              Yashashree Phase 2, D Wing,
+              Sukhsagar Nagar, Near Ekadashi Hotel,
+              Katraj-Kondhwa Road, Katraj,
+              Pune, Maharashtra - 411046
             </p>
 
             {/* SOCIAL */}
