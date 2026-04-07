@@ -9,7 +9,7 @@ on:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    # ← THIS IS CORRECT. DO NOT CHANGE.
     steps:
       - uses: actions/checkout@v4
       
