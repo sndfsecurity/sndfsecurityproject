@@ -1,15 +1,26 @@
-project_id: '887560'
-api_token_env: CROWDIN_PERSONAL_TOKEN
+name: Sync with Crowdin
 
-base_path: .
-base_url: https://api.crowdin.com
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/locales/en/**'
+  workflow_dispatch:
 
-preserve_hierarchy: true
-
-files:
-  - source: /public/locales/en/translation.json
-    translation: /public/locales/%two_letters_code%/translation.json
-    languages_mapping:
-      two_letters_code:
-        hi: hi
-        mr: mr
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Crowdin Sync
+        uses: crowdin/github-action@v2
+        with:
+          upload_sources: true
+          download_translations: true
+          create_pull_request: true
+          pull_request_title: 'New Crowdin Translations'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
