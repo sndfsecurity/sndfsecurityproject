@@ -47,7 +47,6 @@ function Navbar() {
 
   return (
     <>
-      {/* MODAL */}
       {showModal && (
         <div className="sn-modal-overlay" onClick={() => setShowModal(false)}>
           <div className="sn-modal-box" onClick={(e) => e.stopPropagation()}>
@@ -96,10 +95,8 @@ function Navbar() {
         </div>
       )}
 
-      {/* 🔴 TOP BAR */}
       <div className="py-2 px-3 d-flex justify-content-between align-items-center">
 
-        {/* SOCIAL ICONS */}
         <div className="d-flex gap-3 fs-5">
           <FaFacebookF style={{ color: "#1877F2", cursor: "pointer" }} />
           <FaInstagram style={{ color: "#E4405F", cursor: "pointer" }} />
@@ -108,7 +105,6 @@ function Navbar() {
           <FaYoutube style={{ color: "#FF0000", cursor: "pointer" }} />
         </div>
 
-        {/* ✅ SCROLL TEXT BACK (EN + HI + MR) */}
         <div className="scroll-container">
           <div className="scroll-text">
             Welcome to SNDF – Thank you for visiting our website. &nbsp;&nbsp;&nbsp;
@@ -117,7 +113,6 @@ function Navbar() {
           </div>
         </div>
 
-        {/* RIGHT */}
         <div className="d-flex align-items-center gap-2">
           <select className="form-select form-select-sm w-auto">
             <option>ENGLISH</option>
@@ -131,7 +126,6 @@ function Navbar() {
         </div>
       </div>
 
-      {/* NAVBAR */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="logo" width="90" style={{ borderRadius: "50%" }} />
@@ -150,43 +144,13 @@ function Navbar() {
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
               <ul className="dropdown-menu">
-<<<<<<< HEAD
-                <li><a className="dropdown-item">SNDF Guard</a></li>
-                <li><a className="dropdown-item">NDF</a></li>
-                <li><a className="dropdown-item">OWL</a></li>
-                <li><a className="dropdown-item">SPY</a></li>
-                <li><a className="dropdown-item">DIC</a></li>
-=======
-
-              <li>
-              <Link to="/services/ndf" className="dropdown-item">
-                NDF Detective
-              </Link>
-              </li>
-
-              <li>
-              <Link to="/services/sndf" className="dropdown-item">
-                SNDF Guard
-              </Link>
-              </li>
-
-              <li>
-              <Link to="/services/owl" className="dropdown-item">
-               Owl Security
-              </Link>
-              </li>
-
-               <li>
-              <Link to="/services/spydefence" className="dropdown-item">
-               Spy Defence
-              </Link>
-              </li>
-
->>>>>>> f91e9ff262fb705a9a8993acee94004d88908c9c
+                <li><Link to="/services/ndf" className="dropdown-item">NDF Detective</Link></li>
+                <li><Link to="/services/sndf" className="dropdown-item">SNDF Guard</Link></li>
+                <li><Link to="/services/owl" className="dropdown-item">Owl Security</Link></li>
+                <li><Link to="/services/spydefence" className="dropdown-item">Spy Defence</Link></li>
               </ul>
             </li>
 
-            {/* MEDIA FIX */}
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Media</a>
               <ul className="dropdown-menu">
@@ -197,45 +161,7 @@ function Navbar() {
             </li>
 
             <li className="nav-item dropdown">
-<<<<<<< HEAD
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Branches</a>
-=======
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Branches
-              </a>
-            <ul className="dropdown-menu">
-
-              <li>
-              <Link to="/branches/pune" className="dropdown-item">
-                📍 Head Office (Pune)
-              </Link>
-              </li>
-
-                <li><a className="dropdown-item">Mumbai</a></li>
-
-
-              <li>
-              <Link to="/branches/assam" className="dropdown-item">
-                📍 Branch Office (Assam)
-              </Link>
-              </li>
-              
-                <li><a className="dropdown-item">Hyderabad</a></li>               
-              </ul>
-            </li>
-
-            
-
-             <li className="nav-item">
-              <Link className="nav-link" to="/course">Course</Link>
-            </li>
-
-            {/* CASES */}
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Cases
-              </a>
->>>>>>> f91e9ff262fb705a9a8993acee94004d88908c9c
               <ul className="dropdown-menu">
                 <li><Link to="/branches/pune" className="dropdown-item">📍 Head Office (Pune)</Link></li>
                 <li><a className="dropdown-item">Mumbai</a></li>
@@ -244,33 +170,12 @@ function Navbar() {
               </ul>
             </li>
 
-<<<<<<< HEAD
             <li className="nav-item"><Link to="/course" className="nav-link">Course</Link></li>
             <li className="nav-item"><Link to="/shop" className="nav-link">Shop</Link></li>
             <li className="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
             <li className="nav-item"><Link to="/team" className="nav-link">Team</Link></li>
             <li className="nav-item"><Link to="/career" className="nav-link">Career</Link></li>
             <li className="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
-=======
-            <li className="nav-item">
-              <Link to="/blog" className="nav-link">Blog</Link>
-            </li>
-
-            {/* TEAM */}
-           <li className="nav-item">
-            <Link className="nav-link" to="/team">Team</Link>
-          </li>   
-
-            {/* CAREER */}
-            <li className="nav-item">
-              <a className="nav-link">Career</a>
-            </li>
-
-
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
-            </li>
->>>>>>> f91e9ff262fb705a9a8993acee94004d88908c9c
 
           </ul>
         </div>

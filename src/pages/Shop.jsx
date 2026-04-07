@@ -22,7 +22,7 @@ const productsData = [
     name: "Ajjas Go Smart GPS Tracker",
     price: "₹7,999",
     category: "TECH",
-    img: "src/assets/images/Ajjas Go Smart GPS Tracker1.png"
+    img: "src/assets/images/aijas.png"
   },
   {
     id: 4,
