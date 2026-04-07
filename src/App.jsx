@@ -33,6 +33,8 @@ import Sndf from "./pages/Services/Sndf";
 import Owl from "./pages/Services/Owl"; 
 import Spydefence from "./pages/Services/Spydefence";
 
+import { CartContext } from "./context/CartContext";
+
 function App() {
   return (
     <>

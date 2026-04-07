@@ -47,7 +47,6 @@ function Navbar() {
 
   return (
     <>
-      {/* MODAL */}
       {showModal && (
         <div className="sn-modal-overlay" onClick={() => setShowModal(false)}>
           <div className="sn-modal-box" onClick={(e) => e.stopPropagation()}>
@@ -96,7 +95,6 @@ function Navbar() {
         </div>
       )}
 
-      {/* TOP BAR */}
       <div className="py-2 px-3 d-flex justify-content-between align-items-center">
 
         <div className="d-flex gap-3 fs-5">
@@ -110,8 +108,8 @@ function Navbar() {
         <div className="scroll-container">
           <div className="scroll-text">
             Welcome to SNDF – Thank you for visiting our website. &nbsp;&nbsp;&nbsp;
-            SNDF वेबसाइट पर आपका स्वागत है – धन्यवाद। &nbsp;&nbsp;&nbsp;
-            SNDF वेबसाइटवर आपले स्वागत आहे – धन्यवाद।
+            SNDF वेबसाइट पर आपका स्वागत है – यहाँ आने के लिए आपका धन्यवाद। &nbsp;&nbsp;&nbsp;
+            SNDF वेबसाइटवर आपले स्वागत आहे – येथे भेट दिल्याबद्दल धन्यवाद।
           </div>
         </div>
 
@@ -128,7 +126,6 @@ function Navbar() {
         </div>
       </div>
 
-      {/* NAVBAR */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="logo" width="90" style={{ borderRadius: "50%" }} />
@@ -174,10 +171,11 @@ function Navbar() {
             </li>
 
             <li className="nav-item"><Link to="/course" className="nav-link">Course</Link></li>
+            <li className="nav-item"><Link to="/shop" className="nav-link">Shop</Link></li>
             <li className="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/team">Team</Link></li>
-            <li className="nav-item"><a className="nav-link">Career</a></li>
-            <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
+            <li className="nav-item"><Link to="/team" className="nav-link">Team</Link></li>
+            <li className="nav-item"><Link to="/career" className="nav-link">Career</Link></li>
+            <li className="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
 
           </ul>
         </div>
