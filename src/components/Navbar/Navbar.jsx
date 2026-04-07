@@ -150,11 +150,39 @@ function Navbar() {
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
               <ul className="dropdown-menu">
+<<<<<<< HEAD
                 <li><a className="dropdown-item">SNDF Guard</a></li>
                 <li><a className="dropdown-item">NDF</a></li>
                 <li><a className="dropdown-item">OWL</a></li>
                 <li><a className="dropdown-item">SPY</a></li>
                 <li><a className="dropdown-item">DIC</a></li>
+=======
+
+              <li>
+              <Link to="/services/ndf" className="dropdown-item">
+                NDF Detective
+              </Link>
+              </li>
+
+              <li>
+              <Link to="/services/sndf" className="dropdown-item">
+                SNDF Guard
+              </Link>
+              </li>
+
+              <li>
+              <Link to="/services/owl" className="dropdown-item">
+               Owl Security
+              </Link>
+              </li>
+
+               <li>
+              <Link to="/services/spydefence" className="dropdown-item">
+               Spy Defence
+              </Link>
+              </li>
+
+>>>>>>> f91e9ff262fb705a9a8993acee94004d88908c9c
               </ul>
             </li>
 
@@ -169,7 +197,45 @@ function Navbar() {
             </li>
 
             <li className="nav-item dropdown">
+<<<<<<< HEAD
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Branches</a>
+=======
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Branches
+              </a>
+            <ul className="dropdown-menu">
+
+              <li>
+              <Link to="/branches/pune" className="dropdown-item">
+                📍 Head Office (Pune)
+              </Link>
+              </li>
+
+                <li><a className="dropdown-item">Mumbai</a></li>
+
+
+              <li>
+              <Link to="/branches/assam" className="dropdown-item">
+                📍 Branch Office (Assam)
+              </Link>
+              </li>
+              
+                <li><a className="dropdown-item">Hyderabad</a></li>               
+              </ul>
+            </li>
+
+            
+
+             <li className="nav-item">
+              <Link className="nav-link" to="/course">Course</Link>
+            </li>
+
+            {/* CASES */}
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Cases
+              </a>
+>>>>>>> f91e9ff262fb705a9a8993acee94004d88908c9c
               <ul className="dropdown-menu">
                 <li><Link to="/branches/pune" className="dropdown-item">📍 Head Office (Pune)</Link></li>
                 <li><a className="dropdown-item">Mumbai</a></li>
@@ -178,12 +244,33 @@ function Navbar() {
               </ul>
             </li>
 
+<<<<<<< HEAD
             <li className="nav-item"><Link to="/course" className="nav-link">Course</Link></li>
             <li className="nav-item"><Link to="/shop" className="nav-link">Shop</Link></li>
             <li className="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
             <li className="nav-item"><Link to="/team" className="nav-link">Team</Link></li>
             <li className="nav-item"><Link to="/career" className="nav-link">Career</Link></li>
             <li className="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
+=======
+            <li className="nav-item">
+              <Link to="/blog" className="nav-link">Blog</Link>
+            </li>
+
+            {/* TEAM */}
+           <li className="nav-item">
+            <Link className="nav-link" to="/team">Team</Link>
+          </li>   
+
+            {/* CAREER */}
+            <li className="nav-item">
+              <a className="nav-link">Career</a>
+            </li>
+
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">Contact</Link>
+            </li>
+>>>>>>> f91e9ff262fb705a9a8993acee94004d88908c9c
 
           </ul>
         </div>

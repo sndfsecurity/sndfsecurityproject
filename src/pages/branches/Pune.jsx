@@ -84,7 +84,7 @@ return (
       {/* STATS */}
       <div className="hero-stats">
         <div className="stat-card">
-          <h3>5+</h3>
+          <h3>10+</h3>
           <p>Years Experience</p>
         </div>
 
