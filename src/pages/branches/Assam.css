@@ -107,6 +107,7 @@ html {
   .branch-herobr {
     padding: 100px 0 70px;
     width: 100%;
+    margin-top: 100px;
   }
   
   .hero-contentbr {
@@ -766,6 +767,7 @@ html {
 @media (max-width: 540px) {
   .gallery-section {
     padding: 50px 16px;
+   
   }
   
   .gallery-title {
