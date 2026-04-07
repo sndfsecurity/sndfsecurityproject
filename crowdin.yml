@@ -1,5 +1,5 @@
 project_id: '887560'
-api_token_env: b4b835fff4386e8926257da431d9de1f26f8c79ffe4b4f669fc5d36afbc60b7e91c24cded1d1c11e
+api_token_env: edb1d9beb93ac3a6c7be25fcfcf59eeec66b508104777630a75380c8e740b7880f97cc4ed1c115ef
 
 base_path: .
 base_url: https://api.crowdin.com
