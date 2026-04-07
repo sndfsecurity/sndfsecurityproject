@@ -1,15 +1,13 @@
 import logo from "../../assets/images/LOGO.png";
-import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa6";
-
 import { useState } from "react";
 
 function Navbar() {
 
   const [showModal, setShowModal] = useState(false);
- 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [msg, setMsg] = useState("");
@@ -19,123 +17,98 @@ function Navbar() {
     phone: ""
   });
 
-  
   const handleSubmit = () => {
 
-  let newErrors = {};
+    let newErrors = {};
 
-  if (!name) {
-    newErrors.name = "Name is required";
-  }
+    if (!name) newErrors.name = "Name is required";
 
-  if (!phone) {
-    newErrors.phone = "Mobile number is required";
-  } else if (phone.length !== 10) {
-    newErrors.phone = "Enter valid 10-digit number";
-  }
+    if (!phone) {
+      newErrors.phone = "Mobile number is required";
+    } else if (phone.length !== 10) {
+      newErrors.phone = "Enter valid 10-digit number";
+    }
 
-  if (Object.keys(newErrors).length > 0) {
-    setErrors(newErrors);
-    return;
-  }
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
 
-  // ✅ WhatsApp message
-  const text = `*New Enquiry - SNDF Website*%0A Name: ${name}%0A Phone: ${phone}%0A Requirement: ${msg}`;
+    const text = `*New Enquiry - SNDF Website*%0A Name: ${name}%0A Phone: ${phone}%0A Requirement: ${msg}`;
 
-  window.open(`https://wa.me/918007341905?text=${text}`, "_blank");
+    window.open(`https://wa.me/918007341905?text=${text}`, "_blank");
 
-  // reset
-  setName("");
-  setPhone("");
-  setMsg("");
-  setErrors({ name: "", phone: "" });
+    setName("");
+    setPhone("");
+    setMsg("");
+    setErrors({ name: "", phone: "" });
+    setShowModal(false);
+  };
 
-  setShowModal(false);
-};
-  
-
-   
   return (
     <>
+      {/* MODAL */}
+      {showModal && (
+        <div className="sn-modal-overlay" onClick={() => setShowModal(false)}>
+          <div className="sn-modal-box" onClick={(e) => e.stopPropagation()}>
+            <span className="sn-close-btn" onClick={() => setShowModal(false)}>×</span>
 
-{/* ✅ MODAL FIXED */}
-      
-      
-  {showModal && (
-  <div className="sn-modal-overlay" onClick={() => setShowModal(false)}>
-    
-    <div 
-      className="sn-modal-box" 
-      onClick={(e) => e.stopPropagation()}
-    >
-      <span 
-        className="sn-close-btn"
-        onClick={() => setShowModal(false)}
-      >
-        ×
-      </span>
+            <h3>Quick Enquiry</h3>
 
-      <h3>Quick Enquiry</h3>
+            <input
+              type="text"
+              placeholder="Your Name"
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value);
+                setErrors({ ...errors, name: "" });
+              }}
+              className={errors.name ? "input-error" : ""}
+            />
+            {errors.name && <p className="error-text">{errors.name}</p>}
 
-      
-      <input 
-        type="text" 
-        placeholder="Your Name"
-        value={name}
-        onChange={(e) => {
-          setName(e.target.value);
-          setErrors({ ...errors, name: "" });
-        }}
-        className={errors.name ? "input-error" : ""}
-      />
-      {errors.name && <p className="error-text">{errors.name}</p>}
+            <input
+              type="tel"
+              placeholder="Mobile Number"
+              value={phone}
+              maxLength="10"
+              onInput={(e) => {
+                e.target.value = e.target.value.replace(/[^0-9]/g, '');
+              }}
+              onChange={(e) => {
+                setPhone(e.target.value);
+                setErrors({ ...errors, phone: "" });
+              }}
+              className={errors.phone ? "input-error" : ""}
+            />
+            {errors.phone && <p className="error-text">{errors.phone}</p>}
 
+            <textarea
+              placeholder="Requirement"
+              value={msg}
+              onChange={(e) => setMsg(e.target.value)}
+            ></textarea>
 
-{/* PHONE */}
-        <input 
-          type="tel" 
-          placeholder="Mobile Number"
-          value={phone}
-          maxLength="10"
-          onInput={(e) => {
-            e.target.value = e.target.value.replace(/[^0-9]/g, '');
-          }}
-          onChange={(e) => {
-            setPhone(e.target.value);
-            setErrors({ ...errors, phone: "" });
-          }}
-          className={errors.phone ? "input-error" : ""}
-        />
-        {errors.phone && <p className="error-text">{errors.phone}</p>}
-
-        <textarea 
-          placeholder="Requirement"
-          value={msg}
-          onChange={(e) => setMsg(e.target.value)} ></textarea>
-
-          <button className="sn-submit-btn" onClick={handleSubmit}>
-            Submit
-          </button>
-
-    </div>
-
-  </div>
-)}
+            <button className="sn-submit-btn" onClick={handleSubmit}>
+              Submit
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* 🔴 TOP BAR */}
-     
       <div className="py-2 px-3 d-flex justify-content-between align-items-center">
 
-        {/* 🔵 LEFT - SOCIAL ICONS */}
+        {/* SOCIAL ICONS */}
         <div className="d-flex gap-3 fs-5">
           <FaFacebookF style={{ color: "#1877F2", cursor: "pointer" }} />
           <FaInstagram style={{ color: "#E4405F", cursor: "pointer" }} />
-          <FaLinkedin style={{ color: "#1DA1F2", cursor: "pointer" }} />
+          <FaLinkedin style={{ color: "#0A66C2", cursor: "pointer" }} />
           <FaWhatsapp style={{ color: "#25D366", cursor: "pointer" }} />
           <FaYoutube style={{ color: "#FF0000", cursor: "pointer" }} />
         </div>
 
-        {/* 🟡 CENTER - SCROLL TEXT */}
+        {/* ✅ SCROLL TEXT BACK (EN + HI + MR) */}
         <div className="scroll-container">
           <div className="scroll-text">
             Welcome to SNDF – Thank you for visiting our website. &nbsp;&nbsp;&nbsp;
@@ -144,64 +117,38 @@ function Navbar() {
           </div>
         </div>
 
-        {/* 🔴 RIGHT - LANGUAGE + ENQUIRY */}
+        {/* RIGHT */}
         <div className="d-flex align-items-center gap-2">
-          <select  className="form-select form-select-sm w-auto" >
+          <select className="form-select form-select-sm w-auto">
             <option>ENGLISH</option>
             <option>हिंदी</option>
             <option>मराठी</option>
           </select>
 
-        <button className="enquiry-btn btn btn-danger btn-sm"onClick={() => setShowModal(true)}>
-            Enquiry</button>      
-
+          <button className="enquiry-btn btn btn-danger btn-sm" onClick={() => setShowModal(true)}>
+            Enquiry
+          </button>
+        </div>
       </div>
 
-      </div>
-
-      {/* 🔵 MAIN NAVBAR */}
+      {/* NAVBAR */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
+        <Link className="navbar-brand" to="/">
+          <img src={logo} alt="logo" width="90" style={{ borderRadius: "50%" }} />
+        </Link>
 
-        {/* Logo */}
-        <a className="navbar-brand" href="/">
-          <img 
-            src={logo} 
-            alt="logo" 
-            width="90" 
-            style={{ borderRadius: "50%" }}
-          />
-        </a>
-
-        {/* Toggle */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-        >
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Menu */}
         <div className="collapse navbar-collapse" id="navbarContent">
-
           <ul className="navbar-nav ms-auto" style={{ gap: "10px" }}>
 
-            {/* HOME */}
-            <li className="nav-item">
-              <a className="nav-link" href="/">Home</a>
-            </li>
+            <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
 
-            {/* ABOUT */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
-            </li>
-
-            {/* SERVICES */}
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Services
-              </a>
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item">SNDF Guard</a></li>
                 <li><a className="dropdown-item">NDF</a></li>
@@ -211,87 +158,35 @@ function Navbar() {
               </ul>
             </li>
 
-            {/* MEDIA */}
+            {/* MEDIA FIX */}
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Media
-              </a>
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Media</a>
               <ul className="dropdown-menu">
-<<<<<<< HEAD
-               <li><a className="dropdown-item">Gallery</a></li>
-=======
-
-                <Link to="/media/gallery" className="dropdown-item">Gallery</Link>
-
->>>>>>> a5383daf4a8b65faceae0592435415c0a893271f
+                <li><Link to="/media/gallery" className="dropdown-item">Gallery</Link></li>
                 <li><a className="dropdown-item">Videos</a></li>
                 <li><a className="dropdown-item">News</a></li>
-                
               </ul>
             </li>
 
-            {/* BRANCHES */}
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Branches
-              </a>
-        <ul className="dropdown-menu">
-
-              <li>
-              <Link to="/branches/pune" className="dropdown-item">
-                📍 Head Office (Pune)
-              </Link>
-              </li>
-
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Branches</a>
+              <ul className="dropdown-menu">
+                <li><Link to="/branches/pune" className="dropdown-item">📍 Head Office (Pune)</Link></li>
                 <li><a className="dropdown-item">Mumbai</a></li>
-
-
-              <li>
-              <Link to="/branches/assam" className="dropdown-item">
-                📍 Branch Office (Assam)
-              </Link>
-              </li>
-              
-                <li><a className="dropdown-item">Hyderabad</a></li>               
+                <li><Link to="/branches/assam" className="dropdown-item">📍 Branch Office (Assam)</Link></li>
+                <li><a className="dropdown-item">Hyderabad</a></li>
               </ul>
             </li>
 
-            
-
-             <li className="nav-item">
-              <Link className="nav-link" to="/course">Course</Link>
-            </li>
-
-           <li className="nav-item">
-              <Link to="/shop" className="nav-link">Shop</Link>
-</li>
-
-            <li className="nav-item">
-              <Link to="/blog" className="nav-link">Blog</Link>
-</li>
-
-            {/* TEAM */}
-           <li className="nav-item">
-  <Link className="nav-link" to="/team">Team</Link>
-</li>
-
-           <li className="nav-item">
-  <Link to="/career" className="nav-link">Career</Link>
-</li>
-
-            {/* CONTACT */}
-            {/* <li className="nav-item">
-              <a className="nav-link">Contact</a>
-            </li> */}
-
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
-            </li>
+            <li className="nav-item"><Link to="/course" className="nav-link">Course</Link></li>
+            <li className="nav-item"><Link to="/shop" className="nav-link">Shop</Link></li>
+            <li className="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
+            <li className="nav-item"><Link to="/team" className="nav-link">Team</Link></li>
+            <li className="nav-item"><Link to="/career" className="nav-link">Career</Link></li>
+            <li className="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
 
           </ul>
-
         </div>
-
       </nav>
     </>
   );

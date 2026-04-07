@@ -1,40 +1,198 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import products from "../data/products";
 import "./Shop.css";
 
-const Shop = () => {
+const productsData = [
+  {
+    id: 1,
+    name: "Advanced Gps dectector",
+    price: "₹2,999",
+    category: "SPY",
+    img: "src/assets/images/GPSTRACTOR.jpg"
+  },
+  {
+    id: 2,
+    name: "Mini A8 GPS Tracker",
+    price: "₹4,999",
+    category: "SECURITY",
+    img: "src/assets/images/minia82.jpg"
+  },
+  {
+    id: 3,
+    name: "Ajjas Go Smart GPS Tracker",
+    price: "₹7,999",
+    category: "TECH",
+    img: "src/assets/images/Ajjas Go Smart GPS Tracker1.png"
+  },
+  {
+    id: 4,
+    name: "Smartphone Wire Camera",
+    price: "₹3,499",
+    category: "COMM",
+    img: "src/assets/images/wirecamera2.png"
+  },
+  {
+    id: 5,
+    name: "Fleettrack GPS Vehicle Tracker",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/vehiclegps.jpg"
+  },
+{
+    id: 6,
+    name: "BOLDTRACK 4G Mini Vehicle GPS Tracker",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/4ggps.png"
+  },
+  {
+    id: 7,
+    name: "SQ11 Mini Camera",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/SQ11.png"
+  },
+  {
+    id: 8,
+    name: "USB Endoscope Camera",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/USBEndoscopeCamera.png"
+  },
+  {
+    id: 9,
+    name: "Hidden Camera Wrist Watch",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/watch.png"
+  },
+  {
+    id: 10,
+    name: "Night Vision Power Bank Camera",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/powerbank.png"
+  },
+  {
+    id: 11,
+    name: "MATLOGIX GF-07 Mini GPS Tracker Device",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/matlogix.png"
+  },
+  {
+    id: 12,
+    name: "X Tag Smart Bluetooth Tracker",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/xtag.png"
+  },
+  {
+    id: 13,
+    name: "ZASCO GPS Vehicle Tracking Device (Anti-Theft GPS Tracker)",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/zasco.png"
+  },
+  {
+    id: 14,
+    name: "Digital Voice Recorder",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/voicerecorder.png"
+  },
+  {
+    id: 15,
+    name: "HD Camera Pen",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/pencamera2.png"
+  },
+  {
+    id: 16,
+    name: "Hidden Camera Glasses ",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/glasscamera.png"
+  },{
+    id: 17,
+    name: "Digital breath alcohol tester ",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/alcoholtester.png"
+  },{
+    id: 18,
+    name: "Hidden Camera Glasses ",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/glasscamera.png"
+  },{
+    id: 19,
+    name: "Hidden Camera Glasses ",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/glasscamera.png"
+  },{
+    id: 20,
+    name: "Hidden Camera Glasses ",
+    price: "₹12,999",
+    category: "TECH",
+    img: "src/assets/images/glasscamera.png"
+  },
+
+];
+
+function Shop() {
+
   const navigate = useNavigate();
+  const [filter, setFilter] = useState("ALL");
+
+  const filteredProducts =
+    filter === "ALL"
+      ? productsData
+      : productsData.filter((p) => p.category === filter);
 
   return (
     <div className="shop-page">
 
       <div className="shop-header">
-        <h1>Our Products</h1>
-        <p>Security & Surveillance Gadgets</p>
+        <h1>Investigation Equipment Store</h1>
+        <p>Professional Tools for Surveillance & Security Operations</p>
+
+        <div className="filter-buttons">
+          <button onClick={() => setFilter("ALL")} className={filter === "ALL" ? "active" : ""}>ALL</button>
+          <button onClick={() => setFilter("SPY")} className={filter === "SPY" ? "active" : ""}>SPY</button>
+          <button onClick={() => setFilter("TECH")} className={filter === "TECH" ? "active" : ""}>TECH</button>
+          <button onClick={() => setFilter("SECURITY")} className={filter === "SECURITY" ? "active" : ""}>SECURITY</button>
+          <button onClick={() => setFilter("COMM")} className={filter === "COMM" ? "active" : ""}>COMM</button>
+        </div>
       </div>
 
-      <div className="shop-grid">
-        {products.map((p) => (
-          <div className="shop-card" key={p.id}>
-            <div className="shop-img-box">
-              <img src={p.img} alt={p.name} />
-            </div>
+      <div className="product-grid">
+        {filteredProducts.map((item) => (
+          <div className="product-card" key={item.id}>
 
-            <div className="shop-info">
-              <h3>{p.name}</h3>
-              <p className="price">{p.price}</p>
+            <img src={item.img} alt={item.name} />
 
-              <button onClick={() => navigate(`/product/${p.id}`)}>
-                View Details
+            <div className="product-info">
+              <h3>{item.name}</h3>
+              <p>{item.price}</p>
+
+              <button
+                className="buy-btn"
+                onClick={() => navigate(`/product/${item.id}`)}
+              >
+                Buy Now
               </button>
+
             </div>
+
           </div>
         ))}
       </div>
 
     </div>
   );
-};
+}
 
 export default Shop;

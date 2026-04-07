@@ -20,10 +20,13 @@ import Gallery from "./pages/Media/Gallery";
 /* SHOP */
 import Shop from "./pages/Shop";
 import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
     <Router>
+
       <Navbar />
 
       <Routes>
@@ -37,8 +40,9 @@ function App() {
 
         {/* SHOP */}
         <Route path="/shop" element={<Shop />} />
-        <Route path="/product/:id" element={<ProductDetails />} />
-
+<Route path="/product/:id" element={<ProductDetails />} />
+<Route path="/cart" element={<Cart />} />
+<Route path="/checkout" element={<Checkout />} />
         {/* BRANCHES */}
         <Route path="/branches/pune" element={<Pune />} />
         <Route path="/branches/assam" element={<Assam />} />
@@ -49,6 +53,7 @@ function App() {
 
       <Footer />
       <FloatingButtons />
+
     </Router>
   );
 }
