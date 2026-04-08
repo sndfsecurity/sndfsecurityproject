@@ -7,21 +7,21 @@ const productsData = [
     id: 1,
     name: "Advanced Gps dectector",
     price: "₹2,999",
-    category: "SPY",
+    category: "GPS",
     img: "src/assets/images/GPSTRACTOR.jpg"
   },
   {
     id: 2,
     name: "Mini A8 GPS Tracker",
     price: "₹4,999",
-    category: "SECURITY",
+    category: "GPS",
     img: "src/assets/images/minia82.jpg"
   },
   {
     id: 3,
     name: "Ajjas Go Smart GPS Tracker",
     price: "₹7,999",
-    category: "TECH",
+    category: "GPS",
     img: "src/assets/images/aijas.png"
   },
   {
@@ -35,14 +35,14 @@ const productsData = [
     id: 5,
     name: "Fleettrack GPS Vehicle Tracker",
     price: "₹12,999",
-    category: "TECH",
+    category: "GPS",
     img: "src/assets/images/vehiclegps.jpg"
   },
 {
     id: 6,
     name: "BOLDTRACK 4G Mini Vehicle GPS Tracker",
     price: "₹12,999",
-    category: "TECH",
+    category: "GPS",
     img: "src/assets/images/4ggps.png"
   },
   {
@@ -77,21 +77,21 @@ const productsData = [
     id: 11,
     name: "MATLOGIX GF-07 Mini GPS Tracker Device",
     price: "₹12,999",
-    category: "TECH",
+    category: "GPS",
     img: "src/assets/images/matlogix.png"
   },
   {
     id: 12,
     name: "X Tag Smart Bluetooth Tracker",
     price: "₹12,999",
-    category: "TECH",
+    category: "GPS",
     img: "src/assets/images/xtag.png"
   },
   {
     id: 13,
     name: "ZASCO GPS Vehicle Tracking Device (Anti-Theft GPS Tracker)",
     price: "₹12,999",
-    category: "TECH",
+    category: "GPS",
     img: "src/assets/images/zasco.png"
   },
   {
@@ -193,7 +193,7 @@ function Shop() {
 
         <div className="filter-buttons">
           <button onClick={() => setFilter("ALL")} className={filter === "ALL" ? "active" : ""}>ALL</button>
-          <button onClick={() => setFilter("SPY")} className={filter === "GPS" ? "active" : ""}>SPY</button>
+          <button onClick={() => setFilter("GPS")} className={filter === "GPS" ? "active" : ""}>GPS</button>
           <button onClick={() => setFilter("TECH")} className={filter === "TECH" ? "active" : ""}>TECH</button>
           <button onClick={() => setFilter("SECURITY")} className={filter === "SECURITY" ? "active" : ""}>SECURITY</button>
           <button onClick={() => setFilter("SPY TOY")} className={filter === "SPY TOY" ? "active" : ""}>SPY TOY</button>
