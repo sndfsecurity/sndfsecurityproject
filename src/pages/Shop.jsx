@@ -124,54 +124,56 @@ const productsData = [
     id: 18,
     name: "Spy Police Car ",
     price: "₹12,999",
-    category: "TECH",
+    category: "SPY TOY",
     img: "src/assets/images/car.png"
   },{
     id: 19,
     name: "Spy Fire Truck with Hidden Camera ",
     price: "₹12,999",
-    category: "spy toy",
+    category: "SPY TOY",
     img: "src/assets/images/truck.png"
   },{
     id: 20,
     name: "Military Spy Missile Truck with Hidden Camera ",
     price: "₹12,999",
-    category: "TECH",
+    category: "SPY TOY",
     img: "src/assets/images/armytruck.png"
   },{
     id: 21,
     name: "Recon Spy Jeep with Hidden Camera ",
     price: "₹12,999",
-    category: "TECH",
+    category: "SPY TOY",
     img: "src/assets/images/jeep.png"
   },{
     id: 22,
     name: "Hidden Surveillance Toy Truck with Micro Cameras ",
     price: "₹12,999",
-    category: "TECH",
+    category: "SPY TOY",
     img: "src/assets/images/toytruck.png"
   },{
     id: 23,
     name: "Hidden Camera Spy Truck ",
     price: "₹12,999",
-    category: "TECH",
+    category: "SPY TOY",
     img: "src/assets/images/spytruck.png"
   },{
     id: 24,
     name: "hidden spy camera plane",
     price: "₹12,999",
-    category: "TECH",
+    category: "SPY TOY",
     img: "src/assets/images/aroplane.png"
   },{
     id: 25,
     name: "hidden spy camera car ",
     price: "₹12,999",
-    category: "TECH",
+    category: "SPY TOY",
     img: "src/assets/images/greencar.png"
   },
 
 ];
 
+
+// depatmentwise products //
 function Shop() {
 
   const navigate = useNavigate();
@@ -191,10 +193,10 @@ function Shop() {
 
         <div className="filter-buttons">
           <button onClick={() => setFilter("ALL")} className={filter === "ALL" ? "active" : ""}>ALL</button>
-          <button onClick={() => setFilter("SPY")} className={filter === "SPY" ? "active" : ""}>SPY</button>
+          <button onClick={() => setFilter("SPY")} className={filter === "GPS" ? "active" : ""}>SPY</button>
           <button onClick={() => setFilter("TECH")} className={filter === "TECH" ? "active" : ""}>TECH</button>
           <button onClick={() => setFilter("SECURITY")} className={filter === "SECURITY" ? "active" : ""}>SECURITY</button>
-          <button onClick={() => setFilter("COMM")} className={filter === "COMM" ? "active" : ""}>COMM</button>
+          <button onClick={() => setFilter("COMM")} className={filter === "SPY TOY" ? "active" : ""}>COMM</button>
         </div>
       </div>
 
