@@ -28,7 +28,7 @@ const productsData = [
     id: 4,
     name: "Smartphone Wire Camera",
     price: "₹3,499",
-    category: "COMM",
+    category: "CAMERA",
     img: "src/assets/images/wirecamera2.png"
   },
   {
@@ -49,28 +49,28 @@ const productsData = [
     id: 7,
     name: "SQ11 Mini Camera",
     price: "₹12,999",
-    category: "TECH",
+    category: "CAMERA",
     img: "src/assets/images/SQ11.png"
   },
   {
     id: 8,
     name: "USB Endoscope Camera",
     price: "₹12,999",
-    category: "TECH",
+    category: "CAMREA",
     img: "src/assets/images/USBEndoscopeCamera.png"
   },
   {
     id: 9,
     name: "Hidden Camera Wrist Watch",
     price: "₹12,999",
-    category: "TECH",
+    category: "CAMERA",
     img: "src/assets/images/watch.png"
   },
   {
     id: 10,
     name: "Night Vision Power Bank Camera",
     price: "₹12,999",
-    category: "TECH",
+    category: "CAMREA",
     img: "src/assets/images/powerbank.png"
   },
   {
@@ -105,14 +105,14 @@ const productsData = [
     id: 15,
     name: "HD Camera Pen",
     price: "₹12,999",
-    category: "TECH",
+    category: "CAMERA",
     img: "src/assets/images/pencamera2.png"
   },
   {
     id: 16,
     name: "Hidden Camera Glasses ",
     price: "₹12,999",
-    category: "TECH",
+    category: "CAMERA",
     img: "src/assets/images/glasscamera.png"
   },{
     id: 17,

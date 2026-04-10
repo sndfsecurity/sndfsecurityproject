@@ -166,7 +166,7 @@ function Navbar() {
                 <li><Link to="/branches/pune" className="dropdown-item">📍 Head Office (Pune)</Link></li>
                 <li><a className="dropdown-item">Mumbai</a></li>
                 <li><Link to="/branches/assam" className="dropdown-item">📍 Branch Office (Assam)</Link></li>
-                <li><a className="dropdown-item">Hyderabad</a></li>
+                <li><a className="dropdown-item">Hydrabad</a></li>
               </ul>
             </li>
 
