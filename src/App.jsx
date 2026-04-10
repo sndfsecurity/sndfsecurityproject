@@ -17,7 +17,7 @@ import Sndfdisclaimer from "./pages/Sndfdisclaimer";
 
 import Pune from "./pages/branches/Pune";
 import Assam from "./pages/branches/Assam";
-import Assam from "./pages/branches/Hydrabad";
+import Hydrabad from "./pages/branches/Hydrabad";
 
 import Career from "./pages/Career";
 
@@ -67,7 +67,7 @@ function App() {
           {/* BRANCHES */}
           <Route path="/branches/pune" element={<Pune />} />
           <Route path="/branches/assam" element={<Assam />} />
-          <Route path="/branches/assam" element={<Hyderabad />} />
+          <Route path="/branches/hydrabad" element={<Hyderabad />} />
 
 
           {/* MEDIA */}
