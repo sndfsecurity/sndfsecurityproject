@@ -134,7 +134,7 @@ const badgesData = [
 
             <h1>
               Protecting What Matters <br />
-              <span>Across India SNDF</span>
+              <span>Across India</span>
             </h1>
 
             <p>
