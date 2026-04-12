@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import aboutImg from "../assets/images/hero.jpeg"; // replace with your image
+import aboutImg from "../assets/images/hero.webp"; // replace with your image
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

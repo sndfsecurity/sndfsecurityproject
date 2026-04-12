@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { FaCalendarAlt, FaTools, FaUserTie, FaCertificate } from "react-icons/fa";
 import { FaUserSecret, FaLaptopCode, FaSearch } from "react-icons/fa";
 
-import heroImg from "../assets/images/hero.jpeg";
+import heroImg from "../assets/images/hero.webp";
 import course2 from "../assets/images/course-bg.jpg";
 
 
