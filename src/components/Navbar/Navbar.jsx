@@ -163,10 +163,10 @@ function Navbar() {
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Branches</a>
               <ul className="dropdown-menu">
-                <li><Link to="/branches/pune" className="dropdown-item">📍 Head Office (Pune)</Link></li>
+                <li><Link to="/branches/pune" className="dropdown-item">Head Office (Pune)</Link></li>
                 <li><a className="dropdown-item">Mumbai</a></li>
-                <li><Link to="/branches/assam" className="dropdown-item">📍 Branch Office (Assam)</Link></li>
-                <li><a className="dropdown-item">Hyderabad</a></li>
+                <li><Link to="/branches/assam" className="dropdown-item">Hyderabad</Link></li>
+                <li><Link to="" className="dropdown-item">Assam</Link></li>
 
               </ul>
             </li>

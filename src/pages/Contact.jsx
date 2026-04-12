@@ -3,6 +3,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { FaFacebookF, FaInstagram,FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const scrollToForm = () => {
@@ -168,12 +169,12 @@ const Contact = () => {
             <h3>Visit Our Branches</h3>
 
             <div className="branches-grid">
-              <a href="#">Pune</a>
-              <a href="#">Mumbai</a>
-              <a href="#">Nashik</a>
-              <a href="#">Nagpur</a>
-              <a href="#">Delhi</a>
-              <a href="#">Hyderabad</a>
+              <Link to="/branches/pune">Pune</Link>
+              <Link to="/branches/mumbai">Mumbai</Link>
+              <Link to="/branches/hyderabad">Hyderabad</Link>
+              <Link to="/branches/assam">Assam</Link>             
+              <Link to="/branches/delhi">Delhi</Link>
+              <Link to="/branches/nashik">Nashik</Link>
             </div>
           </div>
 
