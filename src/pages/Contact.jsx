@@ -4,6 +4,7 @@ import { FaFacebookF, FaInstagram,FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 
 const scrollToForm = () => {
@@ -43,7 +44,12 @@ const Contact = () => {
   return (
     
    
-     <>
+<>
+
+<Helmet>
+  <title>Contact SNDF | Security Services</title>
+  <meta name="description" content="Contact SNDF for professional security services and training." />
+</Helmet>
      
  <section className="contact-hero">
 

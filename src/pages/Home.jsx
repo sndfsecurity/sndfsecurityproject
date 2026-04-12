@@ -47,6 +47,9 @@ import {
 
 import { FaCheckCircle } from "react-icons/fa";
 
+import { Helmet } from "react-helmet-async";
+
+
 const Home = () => {
 
 
@@ -123,6 +126,16 @@ const badgesData = [
 
   return (
     <>
+
+    
+    <Helmet>
+        <title>SNDF Security Services | Home</title>
+        <meta 
+          name="description" 
+          content="Professional security services and training in India." 
+        />
+      </Helmet>
+
       {/* ================= HERO SECTION ================= */}
       <section className="hero">
         <div className="hero-overlay"></div>

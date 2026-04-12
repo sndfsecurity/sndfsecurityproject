@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./About.css";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
 
@@ -18,6 +19,14 @@ const About = () => {
   }, []);
 
   return (
+
+    <>
+
+    <Helmet>
+      <title>About SNDF | Security Services</title>
+      <meta name="description" content="Learn about SNDF security services and mission." />
+    </Helmet>
+
     <div className="about-page">
 
       {/* ABOUT / HERO */}
@@ -112,6 +121,8 @@ Today, we are recognized for our professionalism and reliable results. Our skill
       </section>
 
     </div>
+
+    </>
   );
 };
 

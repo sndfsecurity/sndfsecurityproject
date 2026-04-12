@@ -165,8 +165,8 @@ function Navbar() {
               <ul className="dropdown-menu">
                 <li><Link to="/branches/pune" className="dropdown-item">Head Office (Pune)</Link></li>
                 <li><a className="dropdown-item">Mumbai</a></li>
-                <li><Link to="/branches/assam" className="dropdown-item">Hyderabad</Link></li>
-                <li><Link to="" className="dropdown-item">Assam</Link></li>
+                <li><Link to="" className="dropdown-item">Hyderabad</Link></li>
+                <li><Link to="/branches/assam" className="dropdown-item">Assam</Link></li>
 
               </ul>
             </li>
