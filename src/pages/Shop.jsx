@@ -2,172 +2,209 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Shop.css";
 
+import gps from "../assets/images/GPSTRACTOR.jpg";
+import gsm from "../assets/images/minia82.jpg";
+import go from "../assets/images/aijas.png"
+import wire from "../assets/images/wirecamera2.png"
+import vehicle from "../assets/images/vehiclegps.jpg"
+import gg from "../assets/images/4ggps.png"
+import camera from "../assets/images/SQ11.png"
+import USB from "../assets/images/USBEndoscopeCamera.png"
+import watch from "../assets/images/watch.png"
+import power from "../assets/images/powerbank.png"
+import mat from "../assets/images/matlogix.png"
+import tag from "../assets/images/xtag.png"
+import z from "../assets/images/zasco.png"
+import voice from "../assets/images/voicerecorder.png"
+import pen from "../assets/images/pencamera2.png"
+import glass from "../assets/images/glasscamera.png"
+import alcohol from "../assets/images/alcoholtester.png"
+import police from "../assets/images/car.png"
+import truck from "../assets/images/truck.png"
+import army from "../assets/images/armytruck.png"
+import Jeep from "../assets/images/jeep.png"
+import toyt from "../assets/images/toytruck.png"
+import spy from "../assets/images/spytruck.png"
+import flight from "../assets/images/aroplane.png"
+import green from "../assets/images/greencar.png"
+
+
+
+
+
+
+
+
+
+
+
+
 const productsData = [
   {
     id: 1,
     name: "Advanced Gps dectector",
     price: "₹2,999",
     category: "GPS",
-    img: "src/assets/images/GPSTRACTOR.jpg"
+    img: gps,
   },
   {
     id: 2,
     name: "Mini A8 GPS Tracker",
     price: "₹4,999",
     category: "GPS",
-    img: "src/assets/images/minia82.jpg"
+    img: gsm,
   },
   {
     id: 3,
     name: "Ajjas Go Smart GPS Tracker",
     price: "₹7,999",
     category: "GPS",
-    img: "src/assets/images/aijas.png"
+    img: go,
   },
   {
     id: 4,
     name: "Smartphone Wire Camera",
     price: "₹3,499",
     category: "CAMERA",
-    img: "src/assets/images/wirecamera2.png"
+    img: wire,
   },
   {
     id: 5,
     name: "Fleettrack GPS Vehicle Tracker",
     price: "₹12,999",
     category: "GPS",
-    img: "src/assets/images/vehiclegps.jpg"
+    img: vehicle,
   },
 {
     id: 6,
     name: "BOLDTRACK 4G Mini Vehicle GPS Tracker",
     price: "₹12,999",
     category: "GPS",
-    img: "src/assets/images/4ggps.png"
+    img: gg,
   },
   {
     id: 7,
     name: "SQ11 Mini Camera",
     price: "₹12,999",
     category: "CAMERA",
-    img: "src/assets/images/SQ11.png"
+    img: camera,
   },
   {
     id: 8,
     name: "USB Endoscope Camera",
     price: "₹12,999",
     category: "CAMREA",
-    img: "src/assets/images/USBEndoscopeCamera.png"
+    img: USB,
   },
   {
     id: 9,
     name: "Hidden Camera Wrist Watch",
     price: "₹12,999",
     category: "CAMERA",
-    img: "src/assets/images/watch.png"
+    img: watch,
   },
   {
     id: 10,
     name: "Night Vision Power Bank Camera",
     price: "₹12,999",
     category: "CAMREA",
-    img: "src/assets/images/powerbank.png"
+    img: power,
   },
   {
     id: 11,
     name: "MATLOGIX GF-07 Mini GPS Tracker Device",
     price: "₹12,999",
     category: "GPS",
-    img: "src/assets/images/matlogix.png"
+    img: mat,
   },
   {
     id: 12,
     name: "X Tag Smart Bluetooth Tracker",
     price: "₹12,999",
     category: "GPS",
-    img: "src/assets/images/xtag.png"
+    img: tag,
   },
   {
     id: 13,
     name: "ZASCO GPS Vehicle Tracking Device (Anti-Theft GPS Tracker)",
     price: "₹12,999",
     category: "GPS",
-    img: "src/assets/images/zasco.png"
+    img: z,
   },
   {
     id: 14,
     name: "Digital Voice Recorder",
     price: "₹12,999",
     category: "TECH",
-    img: "src/assets/images/voicerecorder.png"
+    img: voice,
   },
   {
     id: 15,
     name: "HD Camera Pen",
     price: "₹12,999",
     category: "CAMERA",
-    img: "src/assets/images/pencamera2.png"
+    img: pen,
   },
   {
     id: 16,
     name: "Hidden Camera Glasses ",
     price: "₹12,999",
     category: "CAMERA",
-    img: "src/assets/images/glasscamera.png"
+    img: glass,
   },{
     id: 17,
     name: "Digital breath alcohol tester ",
     price: "₹12,999",
     category: "TECH",
-    img: "src/assets/images/alcoholtester.png"
+    img: alcohol,
   },{
     id: 18,
     name: "Spy Police Car ",
     price: "₹12,999",
     category: "SPY TOY",
-    img: "src/assets/images/car.png"
+    img: police,
   },{
     id: 19,
     name: "Spy Fire Truck with Hidden Camera ",
     price: "₹12,999",
     category: "SPY TOY",
-    img: "src/assets/images/truck.png"
+    img: truck,
   },{
     id: 20,
     name: "Military Spy Missile Truck with Hidden Camera ",
     price: "₹12,999",
     category: "SPY TOY",
-    img: "src/assets/images/armytruck.png"
+    img: army,
   },{
     id: 21,
     name: "Recon Spy Jeep with Hidden Camera ",
     price: "₹12,999",
     category: "SPY TOY",
-    img: "src/assets/images/jeep.png"
+    img: Jeep,
   },{
     id: 22,
     name: "Hidden Surveillance Toy Truck with Micro Cameras ",
     price: "₹12,999",
     category: "SPY TOY",
-    img: "src/assets/images/toytruck.png"
+    img: toyt,
   },{
     id: 23,
     name: "Hidden Camera Spy Truck ",
     price: "₹12,999",
     category: "SPY TOY",
-    img: "src/assets/images/spytruck.png"
+    img: spy,
   },{
     id: 24,
     name: "hidden spy camera plane",
     price: "₹12,999",
     category: "SPY TOY",
-    img: "src/assets/images/aroplane.png"
+    img: flight,
   },{
     id: 25,
     name: "hidden spy camera car ",
     price: "₹12,999",
     category: "SPY TOY",
-    img: "src/assets/images/greencar.png"
+    img: green,
   },
 
 ];
