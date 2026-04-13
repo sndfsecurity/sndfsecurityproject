@@ -36,21 +36,32 @@ const Footer = () => {
     <li>✔ 24/7 Surveillance Support</li>
   </ul>
 
-          <div className="social-icons">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedin /></a>
+<div className="social-icons">
+  
+  <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer">
+    <FaFacebookF />
+  </a>
 
-            <a href="https://youtube.com" target="_blank">
-              <FaYoutube className="yt" />
-            </a>
+  <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer">
+    <FaInstagram />
+  </a>
 
-            <a href="https://wa.me/919876543210" target="_blank">
-              <FaWhatsapp className="wa" />
-            </a>
-          </div>
-        </div>
+  <a href="https://www.linkedin.com/in/nationalist-detective-force-034907376" target="_blank" rel="noopener noreferrer">
+    <FaLinkedin />
+  </a>
+
+  <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer">
+    <FaYoutube className="yt" />
+  </a>
+
+  <a href="https://wa.me/918007341905" target="_blank" rel="noopener noreferrer">
+    <FaWhatsapp className="wa" />
+  </a>
+
+</div>
+
+
+</div>
 
         {/* Quick Links */}
         <div className="footer-col">

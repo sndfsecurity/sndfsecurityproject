@@ -22,6 +22,9 @@ const Course = () => {
   return (
     <>
       {/* ===== HERO SECTION ===== */}
+
+      <div className="course-page">
+
       <section className="course-hero">
 
         {/* Overlay */}
@@ -531,6 +534,9 @@ const Course = () => {
 
   </div>
 </section>
+
+</div>
+
 </>
   );
 };
