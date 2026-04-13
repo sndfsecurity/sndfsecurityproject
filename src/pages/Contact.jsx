@@ -73,7 +73,7 @@ const Contact = () => {
       </p>
 
       <div className="hero-btnscn">
-        <a href="tel:+919876543210" className="btn-red">Call Now</a>
+        <a href="tel:+919970383155" className="btn-red">Call Now</a>
         <button onClick={scrollToForm} className="contact-btn-outline">
         Send Enquiry
         </button>      
@@ -95,16 +95,16 @@ const Contact = () => {
         <div className="card">
           <FaPhoneAlt className="icon" />
           <h3>Call Us</h3>
-          <p>+91 8007341905</p>
-          <a href="tel:+918007341905">Call Now</a>
+          <p>+91 9970383155</p>
+          <a href="tel:+919970383155">Call Now</a>
         </div>
 
         {/* EMAIL CARD */}
         <div className="card">
           <FaEnvelope className="icon" />
           <h3>Email Us</h3>
-          <p>detectiveenquiry@gmail.com</p>
-          <a href="mailto:detectiveenquiry@gmail.com">Send Mail</a>
+          <p>NDF.SNDF.HR@GMAIL.COM</p>
+          <a href="mailto:NDF.SNDF.HR@GMAIL.COM">Send Mail</a>
         </div>
 
         {/* WHATSAPP CARD */}
@@ -113,7 +113,7 @@ const Contact = () => {
           <h3>WhatsApp</h3>
           <p>Chat with us instantly for quick support</p>
           <a
-            href="https://wa.me/918007341905?text=Hello%20SNDF,%20I%20want%20enquiry"
+            href="https://wa.me/919970383155?text=Hello%20SNDF,%20I%20want%20enquiry"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -159,20 +159,14 @@ const Contact = () => {
               Pune, Maharashtra - 411046
             </p>
 
-            {/* SOCIAL */}
-            <div className="social-title">Follow Us</div>
 
 
-            {/* <div className="office-socials">
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaInstagram /></a>
-              <a href="#"><FaTwitter /></a>
-              <a href="#"><FaWhatsapp /></a>
-              <a href="#"><FaYoutube /></a>
-            </div> */}
+ {/* SOCIAL */}
 
 
-  <div className="office-socials">
+<div className="social-title">Follow Us</div>
+
+<div className="office-socials">
 
   <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer">
     <FaFacebookF />
@@ -183,7 +177,7 @@ const Contact = () => {
   </a>
 
 
-  <a href="https://wa.me/918007341905" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer">
     <FaWhatsapp />
   </a>
 
@@ -193,25 +187,27 @@ const Contact = () => {
 
 </div>
 
-          </div>
+</div>
 
           {/* BRANCHES CARD */}
-          <div className="branches-card">
-            <h3>Visit Our Branches</h3>
+<div className="branches-card">
+
+    <h3>Visit Our Branches</h3>
 
             <div className="branches-grid">
               <Link to="/branches/pune">Pune</Link>
               <Link to="/branches/mumbai">Mumbai</Link>
               <Link to="/branches/hyderabad">Hyderabad</Link>
               <Link to="/branches/assam">Assam</Link>             
-              <Link to="/branches/delhi">Delhi</Link>
-              <Link to="/branches/nashik">Nashik</Link>
+              {/* <Link to="/branches/delhi">Delhi</Link>
+              <Link to="/branches/nashik">Nashik</Link> */}
             </div>
           </div>
 
         </div>
-      </div>
-    </section>
+
+</div>
+</section>
 
 
     {/* map.............................................. */}
@@ -251,9 +247,8 @@ const Contact = () => {
   </div>
 </section>
    
-   
-
-     </>
+  
+</>
 
   );
 };
