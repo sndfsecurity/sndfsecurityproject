@@ -38,11 +38,11 @@ const About = () => {
           <h3>Professional Investigation Services</h3>
 
           <p className="common-text">
-Founded in 2020, SNDF Private Limited began with a strong vision to deliver truth and transparency. Our company started as a small investigation service focused on solving critical and sensitive cases with accuracy and discretion.
+          Founded in 2020, SNDF Private Limited began with a strong vision to deliver truth and transparency. Our company started as a small investigation service focused on solving critical and sensitive cases with accuracy and discretion.
 
-Over the years, SNDF Private Limited has grown into a trusted and professional agency, offering a wide range of services including corporate investigations, surveillance, and cyber analysis. With continuous innovation and the use of modern technology, we ensure every case is handled with the highest level of integrity, confidentiality, and precision.
+          Over the years, SNDF Private Limited has grown into a trusted and professional agency, offering a wide range of services including corporate investigations, surveillance, and cyber analysis. With continuous innovation and the use of modern technology, we ensure every case is handled with the highest level of integrity, confidentiality, and precision.
 
-Today, we are recognized for our professionalism and reliable results. Our skilled and experienced team is dedicated to delivering accurate insights and dependable solutions, making SNDF Private Limited a trusted name in the investigation industry.
+          Today, we are recognized for our professionalism and reliable results. Our skilled and experienced team is dedicated to delivering accurate insights and dependable solutions, making SNDF Private Limited a trusted name in the investigation industry.
           </p>
         </div>
       </section>
