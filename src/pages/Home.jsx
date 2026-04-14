@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import aboutImg from "../assets/images/hero.jpeg"; // replace with your image
+import aboutImg from "../assets/images/hero.webp"; // replace with your image
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -46,6 +46,9 @@ import {
 } from "react-icons/fa";
 
 import { FaCheckCircle } from "react-icons/fa";
+
+import { Helmet } from "react-helmet-async";
+
 
 const Home = () => {
 
@@ -123,6 +126,16 @@ const badgesData = [
 
   return (
     <>
+
+    
+    <Helmet>
+        <title>SNDF Security Services | Home</title>
+        <meta 
+          name="description" 
+          content="Professional security services and training in India." 
+        />
+      </Helmet>
+
       {/* ================= HERO SECTION ================= */}
       <section className="hero">
         <div className="hero-overlay"></div>
