@@ -20,7 +20,6 @@ import Assam from "./pages/branches/Assam";
 
 import Career from "./pages/Career";
 
-import Gallery from "./pages/Media/Gallery";
 
 /* SHOP */
 import Shop from "./pages/Shop";
@@ -69,7 +68,6 @@ function App() {
 
 
           {/* MEDIA */}
-          <Route path="/media/gallery" element={<Gallery />} />
 
           {/* SERVICES */}
           <Route path="/services/ndf" element={<Ndf />} />
