@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 
 
 
-import loyalty from "../../assets/images/course-bg.jpg";
+import loyalty from "../../assets/images/course-bg.webp";
 import prematrimonial from "../../assets/images/pre.jpg";
 import asset from "../../assets/images/assetv.png";
 import forensic from "../../assets/images/forensic.png";

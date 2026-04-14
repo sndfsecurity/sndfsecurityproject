@@ -1,7 +1,7 @@
 import "./Pune.css";
 import { FaShieldAlt, FaUsers, FaBuilding } from "react-icons/fa";
  import puneOffice from "../../assets/images/hero.webp";
-import course2 from "../../assets/images/course-bg.jpg";
+import course2 from "../../assets/images/course-bg.webp";
 
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";

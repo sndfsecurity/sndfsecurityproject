@@ -5,8 +5,10 @@ import { useEffect } from "react";
 import { FaCalendarAlt, FaTools, FaUserTie, FaCertificate } from "react-icons/fa";
 import { FaUserSecret, FaLaptopCode, FaSearch } from "react-icons/fa";
 
-import heroImg from "../assets/images/hero.webp";
-import course2 from "../assets/images/course-bg.jpg";
+import dic1 from "../assets/images/dic1.webp";
+import dic2 from "../assets/images/dic2.webp";
+import dic3 from "../assets/images/dic3.webp";
+import dic4 from "../assets/images/dic4.webp";
 import { Helmet } from "react-helmet-async";
 
 
@@ -361,19 +363,19 @@ const Course = () => {
     <div className="gallery-grid">
 
       <div className="gallery-item">
-        <img src={heroImg} alt="Training" />
+        <img src={dic1} alt="Training" />
       </div>
 
       <div className="gallery-item">
-        <img src={course2} alt="Training" />
+        <img src={dic2} alt="Training" />
       </div>
 
       <div className="gallery-item">
-        <img src={heroImg} alt="Training" />
+        <img src={dic3} alt="Training" />
       </div>
 
       <div className="gallery-item">
-        <img src={course2} alt="Training" />
+        <img src={dic4} alt="Training" />
       </div>
 
     </div>
