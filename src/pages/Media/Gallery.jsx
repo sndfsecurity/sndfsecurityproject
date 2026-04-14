@@ -5,10 +5,9 @@ import { useState } from "react";
 const baseImages = [
   { url: "https://images.unsplash.com/photo-1581090700227-4c4f50d1b5a3?auto=format&fit=crop&w=800&q=80", type: "NDF" },
   { url: "https://images.unsplash.com/photo-1603415526960-f7e0328e9b8d?auto=format&fit=crop&w=800&q=80", type: "SNDF GUARD" },
-  { url: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=800&q=80", type: "OWLS" },
+  { url: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=800&q=80", type: "OWL" },
   { url: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=800&q=80", type: "SPY" },
   { url: "https://images.unsplash.com/photo-1581091870627-3a3d2c7b9f42?auto=format&fit=crop&w=800&q=80", type: "DIC" },
-  { url: "https://images.unsplash.com/photo-1581093588401-16c8b0b6e2c5?auto=format&fit=crop&w=800&q=80", type: "dept" },
 ];
 
 /* 🔁 FILL GRID */
@@ -48,7 +47,7 @@ function Gallery() {
 
       {/* FILTER */}
       <div className="filter-bar">
-        {["all", "NDF", "SNDF GUARD", "OWL","SPY" ,"DIC"].map((f) => (
+        {["all", "NDF", "SNDF GUARD", "OWL", "SPY", "DIC"].map((f) => (
           <button
             key={f}
             className={filter === f ? "active" : ""}
