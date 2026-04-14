@@ -1,19 +1,38 @@
 import "./Gallery.css";
 import { useState } from "react";
 
-/* 🔥 IMAGES */
-const baseImages = [
-  { url: "https://images.unsplash.com/photo-1581090700227-4c4f50d1b5a3?auto=format&fit=crop&w=800&q=80", type: "NDF" },
-  { url: "https://images.unsplash.com/photo-1603415526960-f7e0328e9b8d?auto=format&fit=crop&w=800&q=80", type: "SNDF GUARD" },
-  { url: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=800&q=80", type: "OWL" },
-  { url: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=800&q=80", type: "SPY" },
-  { url: "https://images.unsplash.com/photo-1581091870627-3a3d2c7b9f42?auto=format&fit=crop&w=800&q=80", type: "DIC" },
-];
+/* 🔥 IMAGES (50 TOTAL) */
+const galleryData = [
+  // 🔴 NDF (10)
+  ...Array.from({ length: 10 }).map((_, i) => ({
+    url: `https://source.unsplash.com/800x600/?security,guard&sig=ndf${i}`,
+    type: "NDF",
+  })),
 
-/* 🔁 FILL GRID */
-const galleryData = Array.from({ length: 24 }).map((_, i) => ({
-  ...baseImages[i % baseImages.length],
-}));
+  // 🔵 SNDF GUARD (10)
+  ...Array.from({ length: 10 }).map((_, i) => ({
+    url: `https://source.unsplash.com/800x600/?security,personnel&sig=sndf${i}`,
+    type: "SNDF GUARD",
+  })),
+
+  // 🟢 OWL (10)
+  ...Array.from({ length: 10 }).map((_, i) => ({
+    url: `https://source.unsplash.com/800x600/?cctv,monitoring&sig=owl${i}`,
+    type: "OWL",
+  })),
+
+  // 🟡 SPY (10)
+  ...Array.from({ length: 10 }).map((_, i) => ({
+    url: `https://source.unsplash.com/800x600/?spy,detective&sig=spy${i}`,
+    type: "SPY",
+  })),
+
+  // 🟣 DIC (10)
+  ...Array.from({ length: 10 }).map((_, i) => ({
+    url: `https://source.unsplash.com/800x600/?investigation,crime&sig=dic${i}`,
+    type: "DIC",
+  })),
+];
 
 function Gallery() {
   const [filter, setFilter] = useState("all");
