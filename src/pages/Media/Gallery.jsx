@@ -48,7 +48,7 @@ function Gallery() {
 
       {/* FILTER */}
       <div className="filter-bar">
-        {["all", "training", "event", "dept"].map((f) => (
+        {["all", "NDF", "SNDF GUARD", "OWL","SPY"].map((f) => (
           <button
             key={f}
             className={filter === f ? "active" : ""}

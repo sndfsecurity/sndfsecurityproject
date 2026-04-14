@@ -30,15 +30,6 @@ import green from "../assets/images/greencar.png"
 
 
 
-
-
-
-
-
-
-
-
-
 const productsData = [
   {
     id: 1,
