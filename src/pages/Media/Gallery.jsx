@@ -81,7 +81,7 @@ export default function Gallery() {
 
   return (
     <div className="gallery-container">
-      <h2>Our Gallery</h2>
+      <h2>Our Gallery sndf</h2>
 
       {/* 🔘 Buttons */}
       <div className="filters">
