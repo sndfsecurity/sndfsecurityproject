@@ -161,13 +161,38 @@ const Contact = () => {
 
             {/* SOCIAL */}
             <div className="social-title">Follow Us</div>
-            <div className="office-socials">
+
+
+            {/* <div className="office-socials">
               <a href="#"><FaFacebookF /></a>
               <a href="#"><FaInstagram /></a>
               <a href="#"><FaTwitter /></a>
               <a href="#"><FaWhatsapp /></a>
               <a href="#"><FaYoutube /></a>
-            </div>
+            </div> */}
+
+
+  <div className="office-socials">
+
+  <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer">
+    <FaFacebookF />
+  </a>
+
+  <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer">
+    <FaInstagram />
+  </a>
+
+
+  <a href="https://wa.me/918007341905" target="_blank" rel="noopener noreferrer">
+    <FaWhatsapp />
+  </a>
+
+  <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer">
+    <FaYoutube />
+  </a>
+
+</div>
+
           </div>
 
           {/* BRANCHES CARD */}
