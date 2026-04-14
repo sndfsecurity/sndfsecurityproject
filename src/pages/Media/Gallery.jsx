@@ -6,6 +6,16 @@ const galleryData = [
   // 🔴 NDF (10)
   ...Array.from({ length: 10 }).map((_, i) => ({
     url: `https://source.unsplash.com/800x600/?security,guard&sig=ndf${i}`,
+        url: `https://source.unsplash.com/800x600/?security,guard&sig=ndf${i}`,
+    url: `https://source.unsplash.com/800x600/?security,guard&sig=ndf${i}`,
+    url: `https://source.unsplash.com/800x600/?security,guard&sig=ndf${i}`,
+    url: `https://source.unsplash.com/800x600/?security,guard&sig=ndf${i}`,
+    url: `https://source.unsplash.com/800x600/?security,guard&sig=ndf${i}`,
+    url: `https://source.unsplash.com/800x600/?security,guard&sig=ndf${i}`,
+    url: `https://source.unsplash.com/800x600/?security,guard&sig=ndf${i}`,
+    url: `https://source.unsplash.com/800x600/?security,guard&sig=ndf${i}`,
+    url: `https://source.unsplash.com/800x600/?security,guard&sig=ndf${i}`,
+
     type: "NDF",
   })),
 
