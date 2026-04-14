@@ -23,8 +23,8 @@ const About = () => {
     <>
 
     <Helmet>
-      <title>About SNDF | Security Services</title>
-      <meta name="description" content="Learn about SNDF security services and mission." />
+      <title>About SNDF | Expert Security & Investigation Team</title>
+      <meta name="description" content="Learn about SNDF’s experienced team delivering trusted security and private investigation services across India." />
     </Helmet>
 
     <div className="about-page">

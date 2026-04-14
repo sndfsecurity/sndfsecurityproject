@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Blog.css";
+import { Helmet } from "react-helmet-async";
 
 const blogs = [
   {
@@ -88,6 +89,15 @@ function Blog() {
   const [selected, setSelected] = useState(null);
 
   return (
+
+    <>
+
+    <Helmet>
+      <title>Security & Investigation Insights | SNDF Blog</title>
+      <meta name="description" content="Explore latest insights, tips, and updates on security, surveillance, and investigation from SNDF experts." />
+    </Helmet>
+
+
     <div className="blog-container">
 
       {/* HERO */}
@@ -128,6 +138,8 @@ function Blog() {
         </div>
       )}
     </div>
+
+    </>
   );
 }
 

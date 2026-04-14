@@ -4,6 +4,7 @@ import "./Team.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { Helmet } from "react-helmet-async";
 
 const Team = () => {
 
@@ -26,9 +27,17 @@ const Team = () => {
 
   
   return (
+
+    <>
+
+    <Helmet>
+      <title>Our Expert Team | SNDF Security Professionals</title>
+      <meta name="description" content="Meet SNDF’s skilled team of investigators and security experts delivering trusted protection and surveillance services." />
+    </Helmet>
+
     <div className="team-page">
 
-      <section className="team-hero">
+  <section className="team-hero">
   <div className="hero-content">
     <h1>Meet Our Team</h1>
     <p>
@@ -114,6 +123,8 @@ const Team = () => {
       ))}
 
     </div>
+
+    </>
   );
 };
 

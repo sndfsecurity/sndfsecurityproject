@@ -1,8 +1,17 @@
 import React from "react";
 import "./Sndfterms.css";
+import { Helmet } from "react-helmet-async";
 
 const Sndfprivacy = () => {
   return (
+
+    <>
+
+    <Helmet>
+      <title>Privacy Policy | SNDF Security Services</title>
+      <meta name="description" content="Read SNDF’s privacy policy to understand how we protect and manage your personal information securely." />
+    </Helmet>
+
     <section className="gov-terms">
 
       <div className="gov-top-space"></div>
@@ -140,6 +149,8 @@ const Sndfprivacy = () => {
       </div>
 
     </section>
+
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Shop.css";
+import { Helmet } from "react-helmet-async";
 
 import gps from "../assets/images/GPSTRACTOR.jpg";
 import gsm from "../assets/images/minia82.jpg";
@@ -213,6 +214,15 @@ function Shop() {
       : productsData.filter((p) => p.category === filter);
 
   return (
+
+    <>
+
+    <Helmet>
+      <title>Security Products | SNDF Shop</title>
+      <meta name="description" content="Browse security tools and products from SNDF. Reliable solutions for surveillance, safety, and protection needs." />
+    </Helmet>
+
+
     <div className="shop-page">
 
       <div className="shop-header">
@@ -252,6 +262,8 @@ function Shop() {
       </div>
 
     </div>
+
+    </>
   );
 }
 

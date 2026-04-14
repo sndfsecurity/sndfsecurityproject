@@ -1,8 +1,18 @@
 import React from "react";
 import "./Sndfterms.css";
+import { Helmet } from "react-helmet-async";
 
 const Sndfdisclaimer = () => {
   return (
+
+    <>
+
+    <Helmet>
+      <title>Disclaimer | SNDF Security Services</title>
+      <meta name="description" content="Read SNDF disclaimer regarding service limitations, legal responsibilities, and information accuracy." />
+    </Helmet>
+
+
     <section className="gov-terms">
 
       <div className="gov-top-space"></div>
@@ -90,6 +100,7 @@ const Sndfdisclaimer = () => {
       </div>
 
     </section>
+    </>
   );
 };
 

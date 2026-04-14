@@ -7,6 +7,7 @@ import { FaUserSecret, FaLaptopCode, FaSearch } from "react-icons/fa";
 
 import heroImg from "../assets/images/hero.webp";
 import course2 from "../assets/images/course-bg.jpg";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -21,6 +22,15 @@ const Course = () => {
 
   return (
     <>
+
+    <Helmet>
+      <title>Detective Investigation Course | Become a Professional Investigator</title>
+      <meta 
+        name="description" 
+        content="Enroll in SNDF Detective Investigation Course and learn surveillance, case analysis, and field investigation from experts." 
+      />
+    </Helmet>
+
       {/* ===== HERO SECTION ===== */}
 
       <div className="course-page">

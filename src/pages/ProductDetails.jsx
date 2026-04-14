@@ -3,6 +3,9 @@ import { useParams, useNavigate } from "react-router-dom";
 import "./ProductDetails.css";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import { Helmet } from "react-helmet-async";
+
+
 import gps from "../assets/images/gps.png";
 import gsm from "../assets/images/minia83.png";
 import go from "../assets/images/gosmart.png"
@@ -663,6 +666,14 @@ function ProductDetails() {
   };
 
   return (
+
+    <>
+
+    <Helmet>
+      <title>Product Details | SNDF Security Store</title>
+      <meta name="description" content="View detailed information about security and surveillance products offered by SNDF for reliable protection." />
+    </Helmet>
+
     <div className="details-page">
 
       <button className="back-btn" onClick={() => navigate(-1)}>
@@ -731,6 +742,8 @@ function ProductDetails() {
 
       </div>
     </div>
+
+    </>
   );
 }
 

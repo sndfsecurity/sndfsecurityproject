@@ -22,7 +22,7 @@ const Footer = () => {
 
         {/* Brand */}
         <div className="footer-col brand">
-          <img src={logo} alt="logo" className="footer-logo" />
+          <img src={logo} alt="SNDF Security Services Logo" className="footer-logo" />
 
           <p>
     SNDF is a professional security and detective organization providing
@@ -72,7 +72,7 @@ const Footer = () => {
             <li><Link to="/about">About</Link> </li>
             <li><Link to="/services/sndf">Services</Link> </li>
             <li><Link to="/contact">Contact</Link> </li>
-            <li><Link to="/">Career</Link> </li>
+            <li><Link to="/career">Career</Link></li>
             
           </ul>
         </div>
@@ -129,10 +129,10 @@ const Footer = () => {
         <div className="footer-col">
           <h3>Our Branches</h3>
           <ul>
-            <li>Pune Branch</li>
-            <li>Mumbai Branch</li>
-            <li>Hyderabad Branch</li>
-            <li>Assam Branch</li>
+            <li><Link to="/branches/pune">Pune Branch</Link></li>
+            <li><Link to="/branches/mumbai">Mumbai Branch</Link></li>
+            <li><Link to="/branches/hyderabad">Hyderabad Branch</Link></li>
+            <li><Link to="/branches/assam">Assam Branch</Link></li>
           </ul>
         </div>
 

@@ -1,6 +1,8 @@
 import React from "react";
 import "./Owl.css";
 import owlImg from "../../assets/images/owl.jpg";
+import { Helmet } from "react-helmet-async";
+
 
 import {
   FaVideo,
@@ -19,6 +21,11 @@ function Owl() {
   return (
 
     <>
+
+    <Helmet>
+      <title>OWL Surveillance Services | Advanced Monitoring</title>
+      <meta name="description" content="OWL offers advanced surveillance and monitoring solutions ensuring safety and real-time protection." />
+    </Helmet>
 
     <section className="owl-hero">
       <div className="owl-hero-container">

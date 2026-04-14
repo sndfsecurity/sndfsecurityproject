@@ -1,8 +1,17 @@
 import React from "react";
 import "./Sndfterms.css";
+import { Helmet } from "react-helmet-async";
 
 const Sndfterms = () => {
   return (
+
+    <>
+
+    <Helmet>
+      <title>Terms & Conditions | SNDF Services</title>
+      <meta name="description" content="Review SNDF terms and conditions for using our security, investigation, and surveillance services." />
+    </Helmet>
+
     <section className="gov-terms">
 
       <div className="gov-top-space"></div>
@@ -160,6 +169,8 @@ const Sndfterms = () => {
       </div>
 
     </section>
+
+    </>
   );
 };
 

@@ -5,6 +5,8 @@ import course2 from "../../assets/images/course-bg.jpg";
 
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+
 
 
 
@@ -56,6 +58,12 @@ const PuneHero = () => {
 
 return (
 <>
+
+<Helmet>
+  <title>SNDF Pune Branch | Head Office & Operations</title>
+  <meta name="description" content="Visit SNDF Pune head office for professional security and investigation services with expert support." />
+</Helmet>
+
 
 <section className="pune-hero">
   <div className="container hero-wrapper">

@@ -1,5 +1,7 @@
 import {React, useState} from 'react';
 import "./Assam.css";
+import { Helmet } from "react-helmet-async";
+
 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaArrowRight } from "react-icons/fa";
 
@@ -42,6 +44,11 @@ const Assam = () => {
 
   return (
     <>
+
+    <Helmet>
+      <title>SNDF Assam Branch | Regional Security Services</title>
+      <meta name="description" content="SNDF Assam branch offers trusted surveillance, investigation, and protection services in the region." />
+    </Helmet>
 
       {/* Hero Section */}
       <section className="assam-hero-section">

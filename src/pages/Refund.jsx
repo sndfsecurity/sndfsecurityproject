@@ -1,8 +1,17 @@
 import React from "react";
 import "./Sndfterms.css";
+import { Helmet } from "react-helmet-async";
 
 const Refund = () => {
   return (
+
+    <>
+
+    <Helmet>
+          <title>Refund Policy | SNDF Services</title>
+          <meta name="description" content="Understand SNDF refund policy for services and products, ensuring transparency and customer satisfaction." />
+        </Helmet>
+
     <section className="gov-terms">
 
       <div className="gov-top-space"></div>
@@ -90,6 +99,8 @@ const Refund = () => {
       </div>
 
     </section>
+
+    </>
   );
 };
 

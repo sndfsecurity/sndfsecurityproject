@@ -1,6 +1,8 @@
 import React, { useRef } from "react";import "./Sndf.css";
 
 import sndf from "../../assets/images/img1.webp";
+import { Helmet } from "react-helmet-async";
+
 
 import {
   FaUserShield,
@@ -29,6 +31,11 @@ const scrollToForm = () => {
   return (
 
     <>
+
+    <Helmet>
+      <title>SNDF Guard Services | Trusted Protection Solutions</title>
+      <meta name="description" content="SNDF provides expert security services including trained guards, surveillance, and risk management." />
+    </Helmet>
     <section className="sndfSplitHero">
 
       <div className="sndfSplitHero-container container">

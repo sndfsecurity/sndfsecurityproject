@@ -5,6 +5,8 @@ import spy from "../../assets/images/spy1.png";
 
 import { FiPhoneCall } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
+
 
 
 import {
@@ -36,6 +38,11 @@ const Spydefence = () => {
   return (
    
     <>
+
+    <Helmet>
+      <title>Spy Defence Services | Protection Against Threats</title>
+      <meta name="description" content="SNDF Spy Defence services protect against spying, threats, and unauthorized surveillance with expert solutions." />
+    </Helmet>
     
       <section className="spy-hero">
       <div className="container spy-hero-container">

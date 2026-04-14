@@ -129,11 +129,8 @@ const badgesData = [
 
     
     <Helmet>
-        <title>SNDF Security Services | Home</title>
-        <meta 
-          name="description" 
-          content="Professional security services and training in India." 
-        />
+       <title>SNDF Security Services | Trusted Detective Agency India</title>
+        <meta name="description" content="SNDF provides professional investigation, surveillance, and security services across India with trained experts." />
       </Helmet>
 
       {/* ================= HERO SECTION ================= */}

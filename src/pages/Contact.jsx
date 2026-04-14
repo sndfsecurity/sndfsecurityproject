@@ -47,8 +47,8 @@ const Contact = () => {
 <>
 
 <Helmet>
-  <title>Contact SNDF | Security Services</title>
-  <meta name="description" content="Contact SNDF for professional security services and training." />
+ <title>Contact SNDF | Get Security & Investigation Support</title>
+ <meta name="description" content="Contact SNDF for professional security, surveillance, and investigation services. Available 24/7 across India." />
 </Helmet>
      
  <section className="contact-hero">

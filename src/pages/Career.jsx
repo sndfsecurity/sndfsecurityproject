@@ -1,10 +1,20 @@
 import React, { useState } from "react";
 import "./Career.css";
+import { Helmet } from "react-helmet-async";
 
 const Career = () => {
   const [step, setStep] = useState(1);
 
   return (
+
+    <>
+
+
+   <Helmet>
+      <title>Careers at SNDF | Join Security & Investigation Team</title>
+      <meta name="description" content="Start your career with SNDF. Explore opportunities in security services, investigation, and surveillance across India." />
+    </Helmet>
+
     <div className="career-page">
 
       {/* STEP 1 - JOB CARD */}
@@ -87,6 +97,8 @@ const Career = () => {
       )}
 
     </div>
+
+    </>
   );
 };
 

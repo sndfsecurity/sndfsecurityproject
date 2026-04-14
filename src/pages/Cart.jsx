@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 function Cart() {
 
@@ -8,6 +9,14 @@ function Cart() {
   const navigate = useNavigate();
 
   return (
+
+    <>
+
+    <Helmet>
+      <title>Your Cart | SNDF Store</title>
+      <meta name="description" content="Review selected security products in your cart and proceed with secure checkout at SNDF store." />
+    </Helmet>
+
     <div style={{ padding: "120px", color: "white", background: "#141250" }}>
 
       <h1>Your Cart</h1>
@@ -35,6 +44,8 @@ function Cart() {
         </>
       )}
     </div>
+
+    </>
   );
 }
 
