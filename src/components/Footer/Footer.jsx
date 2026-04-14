@@ -54,7 +54,7 @@ const Footer = () => {
     <FaYoutube className="yt" />
   </a>
 
-  <a href="https://wa.me/918007341905" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer">
     <FaWhatsapp className="wa" />
   </a>
 
@@ -86,8 +86,9 @@ const Footer = () => {
 
             <li><Link to="/privacy-policy">Privacy Policy</Link> </li>
 
-            <li>Refund Policy</li>
-             <li><Link to="/sndfdisclaimer">Disclaimer</Link> </li>
+            <li><Link to="/refund">Refund Policy</Link> </li>
+           
+             <li><Link to="/Sndfdisclaimer">Disclaimer</Link> </li>
           </ul>
         </div>
 
@@ -101,15 +102,16 @@ const Footer = () => {
           </p>
 
           <p className="notranslate">
-            <FaPhone /> <a href="tel:+919876543210">+91 9876543210</a>
+            <FaPhone /> <a href="tel:+919970383155">+91 9970383155</a>
           </p>
 
           <p>
-            <FaEnvelope /> <a href="mailto:ndfdetective@gmail.com">ndfdetective@gmail.com</a>
+            <FaEnvelope /> <a href="mailto:NDF.SNDF.HR@GMAIL.COM">NDF.SNDF.HR@GMAIL.COM</a>
           </p>
 
           {/* Google Map */}
-          <div className="map">
+  <div className="map">
+
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15138.751197603708!2d73.871484!3d18.452479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29583f03b9aff%3A0xf083a5f416201118!2sNDF%20-%20Nationalist%20detective%20force!5e0!3m2!1sen!2sin!4v1773960981494!5m2!1sen!2sin"
     width="100%"
@@ -129,9 +131,8 @@ const Footer = () => {
           <ul>
             <li>Pune Branch</li>
             <li>Mumbai Branch</li>
-            <li>Delhi Branch</li>
-            <li>Bangalore Branch</li>
             <li>Hyderabad Branch</li>
+            <li>Assam Branch</li>
           </ul>
         </div>
 

@@ -123,7 +123,7 @@ const closeNavbar = () => {
         <FaLinkedin style={{ color: "#0A66C2", cursor: "pointer" }} />
       </a>
 
-      <a href="https://wa.me/918007341905" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer">
         <FaWhatsapp style={{ color: "#25D366", cursor: "pointer" }} />
       </a>
 

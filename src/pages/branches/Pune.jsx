@@ -110,8 +110,7 @@ return (
 
 
 {/* about sndf ...........................................*/}
-
-    <section className="office-info-alt">
+ <section className="office-info-alt">
   <div className="container">
 
     <h2>
@@ -220,12 +219,15 @@ return (
         <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Wakad" />
         <div className="branch-info">
           <h4>Wakad Branch</h4>
-          <p>Office 203, Prime Plaza, Near Wakad Chowk, Pune - 411057</p>
-          <p className="branch-phone">+91 80073 41905</p>
+   <p>
+  Shop No. 2, 1st Floor, Shivganga Arcade, Bhumkar Chowk Rd<br />
+  Shankar Kalat Nagar, Wakad, Pune, Maharashtra 411057
+</p>
+          <p className="branch-phone">+91 8007942309</p>
 
           <div className="branch-actions">
-            <a href="tel:+918007341905">Call</a>
-            <a href="https://wa.me/918007341905">WhatsApp</a>
+            <a href="tel:+91 8007942309">Call</a>
+            <a href="https://wa.me/918007942309">WhatsApp</a>
           </div>
         </div>
       </div>
@@ -235,12 +237,12 @@ return (
         <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Karve Road" />
         <div className="branch-info">
           <h4>Karve Road Branch</h4>
-          <p>2nd Floor, Shree Complex, Karve Nagar, Pune - 411052</p>
-          <p className="branch-phone">+91 80073 41905</p>
+          <p>Office No. 25, Basement, Gensh Chamber, 17A/3, Karve Rd, Khilarewadi, Erandwane, Pune, Maharashtra 411004</p>
+          <p className="branch-phone">+91 9156936100</p>
 
           <div className="branch-actions">
-            <a href="tel:+918007341905">Call</a>
-            <a href="https://wa.me/918007341905">WhatsApp</a>
+            <a href="tel:+919156936100">Call</a>
+            <a href="https://wa.me/919156936100">WhatsApp</a>
           </div>
         </div>
       </div>
@@ -261,7 +263,7 @@ return (
       </div>
 
       {/* Pimpri */}
-      <div className="branch-card">
+      {/* <div className="branch-card">
         <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=800&q=80" alt="Pimpri" />
         <div className="branch-info">
           <h4>Pimpri-Chinchwad Branch</h4>
@@ -273,7 +275,7 @@ return (
             <a href="https://wa.me/918007341905">WhatsApp</a>
           </div>
         </div>
-      </div>
+      </div> */}
 
     </div>
 
@@ -309,12 +311,12 @@ return (
 
         <div className="info-line">
           <h4>📞 Call Us</h4>
-          <p>+91 8007341905</p>
+          <p>+91 9970383155</p>
         </div>
 
         <div className="info-line">
           <h4>✉️ Email</h4>
-          <p>detectiveenquiry@gmail.com</p>
+          <p>NDF.SNDF.HR@GMAIL.COM</p>
         </div>
 
         <div className="info-line">
@@ -323,8 +325,8 @@ return (
         </div>
 
         <div className="contact-buttons">
-          <a href="tel:+918007341905" className="call-btn">Call Now</a>
-          <a href="https://wa.me/918007341905" target="_blank" className="whatsapp-btn">WhatsApp</a>
+          <a href="tel:+919970383155" className="call-btn">Call Now</a>
+          <a href="https://wa.me/919970383155" target="_blank" className="whatsapp-btn">WhatsApp</a>
         </div>
 
       </div>
@@ -347,7 +349,7 @@ return (
 <section className="quick-strip">
   <div className="container">
     <p>Need immediate assistance? Our team is available 24/7 for urgent cases.</p>
-    <a href="tel:+918007341905">Call Now →</a>
+    <a href="tel:+919970383155">Call Now →</a>
   </div>
 </section>
 

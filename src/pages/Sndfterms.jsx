@@ -9,133 +9,153 @@ const Sndfterms = () => {
 
       <div className="gov-header">
         <h2>Terms & Conditions</h2>
-        <p>SNDF Security Services</p>
+        <p>SNDF Support Services Private Limited</p>
       </div>  
 
       <div className="gov-container">
 
         <p>
-          These Terms & Conditions describe your rights and responsibilities as a user
-          of SNDF Security Services. By accessing or using our website and services,
-          you agree to comply with these terms.
+          Welcome to SNDF Support Services Private Limited. By accessing or using
+          our website, you agree to comply with and be bound by the following
+          terms and conditions.
         </p>
 
+        <h3>SERVICES OFFERED</h3>
         <p>
-          SNDF Security Services reserves the right to update or modify these terms
-          at any time without prior notice. Continued use of our services constitutes
-          acceptance of the updated terms.
+          SNDF Support Services Private Limited provides a wide range of
+          professional services, including investigative services, security
+          services such as VIP protection and guarding, technical services like
+          CCTV installation and surveillance, professional detective training
+          programs and recreational activities including camping and picnics.
         </p>
 
-        <h3>ABOUT OUR SERVICES</h3>
-        <p>
-          SNDF provides professional security solutions including VIP protection,
-          event security, investigation services, armed guards, surveillance, and
-          rapid response teams. All services are delivered with strict discipline,
-          confidentiality, and adherence to legal standards.
-        </p>
-
-        <h3>LIMITATION ON USE</h3>
-        <p>
-          The content and services provided are for lawful purposes only. Users are
-          prohibited from copying, modifying, distributing, reverse engineering, or
-          misusing any part of the website or services.
-        </p>
-
-        <p>
-          Unauthorized use including data scraping, automated access (bots), or
-          attempting to breach security systems is strictly prohibited.
-        </p>
-
-        <h3>USER RESPONSIBILITY</h3>
+        <h3>ETHICAL & LEGAL USE</h3>
         <ul>
-          <li>Provide accurate and complete information</li>
-          <li>Use services only for legal purposes</li>
-          <li>Maintain confidentiality of communication</li>
-          <li>Not engage in unlawful or harmful activities</li>
-          <li>Respect security protocols and guidelines</li>
+          <li>
+            All services are conducted strictly within the legal framework of India.
+            Clients must not use our services for illegal or unethical activities.
+          </li>
+          <li>
+            Any spy gadgets or training provided are for lawful use only. The
+            company is not responsible for misuse by clients.
+          </li>
         </ul>
 
-        <p>
-          Any misuse of services may result in immediate termination and legal action.
-        </p>
+        <h3>PROFESSIONAL TRAINING & COURSES</h3>
+        <ul>
+          <li>
+            Enrollment in detective courses or training programs is subject to
+            background verification.
+          </li>
+          <li>
+            Certification upon completion does not guarantee employment but
+            provides professional recognition.
+          </li>
+        </ul>
 
-        <h3>CONFIDENTIALITY & DATA SECURITY</h3>
+        <h3>CONFIDENTIALITY</h3>
         <p>
-          SNDF maintains strict confidentiality of all client data and operational
-          details. Information shared with us is protected against unauthorized
-          access, misuse, or disclosure.
-        </p>
-
-        <p>
-          However, in cases required by law or government authorities, information
-          may be disclosed as per legal obligations.
-        </p>
-
-        <h3>CLIENT CONTENT & SUBMISSIONS</h3>
-        <p>
-          Any information, documents, or materials submitted to SNDF for service
-          purposes grant us the necessary rights to process, analyze, and use such
-          content solely for delivering services.
-        </p>
-
-        <h3>LIABILITY DISCLAIMER</h3>
-        <p>
-          SNDF Security Services shall not be liable for any indirect, incidental,
-          or consequential damages arising from the use or inability to use our
+          We maintain strict confidentiality of all client information and
+          investigation data. Clients also agree not to disclose any proprietary
+          materials, training content or internal procedures shared during
           services.
         </p>
 
+        <h3>PAYMENT & CANCELLATIONS</h3>
+        <ul>
+          <li>
+            All service payments must be made as per agreed schedules.
+          </li>
+          <li>
+            Refund policies for training, camping or events are subject to
+            specific timelines communicated during booking.
+          </li>
+        </ul>
+
+        <h3>LIMITATION OF LIABILITY</h3>
         <p>
-          While we strive to provide accurate and reliable services, we do not
-          guarantee absolute prevention of risks or incidents.
+          SNDF Support Services Private Limited shall not be liable for any
+          indirect or consequential damages arising from the use of services,
+          third-party failures or outdoor activities.
         </p>
 
-        <h3>EXTERNAL LINKS</h3>
+        <h3>INTELLECTUAL PROPERTY</h3>
         <p>
-          Our website may contain links to third-party websites. SNDF is not
-          responsible for the content or reliability of such external sites.
+          All website content, including logos, text and training materials is
+          the property of SNDF Support Services Private Limited. Unauthorized use
+          is strictly prohibited.
+        </p>
+
+        <h3>JURISDICTION</h3>
+        <p>
+          Any disputes shall be subject to the jurisdiction of courts in Pune,
+          Maharashtra, India.
+        </p>
+
+        <h3>CLIENT RESPONSIBILITIES & VERIFICATIONS</h3>
+        <ul>
+          <li>
+            Clients must provide accurate and truthful information.
+          </li>
+          <li>
+            Providing false information may result in termination without refund.
+          </li>
+          <li>
+            Background checks may be conducted for certain services.
+          </li>
+        </ul>
+
+        <h3>TECHNOLOGY & SPY GADGETS</h3>
+        <ul>
+          <li>
+            All gadgets and training must be used legally and responsibly.
+          </li>
+          <li>
+            The company is not responsible for misuse or violation of privacy laws.
+          </li>
+          <li>
+            Warranty for equipment is provided by respective manufacturers.
+          </li>
+        </ul>
+
+        <h3>SAFETY FOR OUTDOOR ACTIVITIES</h3>
+        <ul>
+          <li>
+            Participants acknowledge risks associated with camping and outdoor events.
+          </li>
+          <li>
+            Misconduct may result in removal from events without refund.
+          </li>
+        </ul>
+
+        <h3>FORCE MAJEURE</h3>
+        <p>
+          The company shall not be held responsible for delays or failures caused
+          by events beyond control such as natural disasters, war or government
+          restrictions.
         </p>
 
         <h3>PRIVACY POLICY</h3>
         <p>
-          We do not collect personal information unless voluntarily provided.
-          Information collected is used solely for service delivery and customer
-          communication.
+          Your use of this website is also governed by our Privacy Policy which
+          explains how we handle personal and sensitive information.
         </p>
 
+        <h3>MODIFICATIONS TO TERMS</h3>
         <p>
-          We do not sell or share personal data with third parties except when
-          required by law or for operational purposes.
+          We reserve the right to update these terms at any time without prior
+          notice. Continued use of services constitutes acceptance of updated terms.
         </p>
 
-        <h3>COOKIES POLICY</h3>
+        <h3>CONTACT INFORMATION</h3>
         <p>
-          Our website may use cookies to enhance user experience. Cookies help us
-          analyze website traffic and improve functionality.
+          For any queries regarding these Terms & Conditions, please contact us:
         </p>
-
         <ul>
-          <li>Analytics cookies for performance tracking</li>
-          <li>Session cookies for smooth navigation</li>
-          <li>Preference cookies for user settings</li>
+          <li>Email: NDF.SNDF.HR@GMAIL.COM</li>
+          <li>Phone: 9970383155</li>
+          <li>Office: SNDF Support Services Private Limited, Pune</li>
         </ul>
-
-        <h3>INTELLECTUAL PROPERTY</h3>
-        <p>
-          All content, branding, logos, and materials on this website are the
-          property of SNDF Security Services and are protected under applicable
-          copyright laws.
-        </p>
-
-        <h3>GOVERNING LAW</h3>
-        <p>
-          These Terms & Conditions shall be governed by and interpreted in
-          accordance with the laws of India.
-        </p>
-
-        <p>
-          Any disputes arising shall fall under the jurisdiction of Indian courts.
-        </p>
 
       </div>
 
