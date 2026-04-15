@@ -949,6 +949,36 @@ html {
   transform: scale(1.1);
 }
 
+/* FACEBOOK */
+.facebook-icon {
+  background: #1877F2;
+}
+
+.facebook-icon:hover {
+  background: #166fe5;
+  transform: scale(1.1);
+}
+
+/* INSTAGRAM */
+.instagram-icon {
+  background: #E4405F;
+}
+
+.instagram-icon:hover {
+  background: #d73754;
+  transform: scale(1.1);
+}
+
+/* YOUTUBE */
+.youtube-icon {
+  background: #FF0000;
+}
+
+.youtube-icon:hover {
+  background: #e60000;
+  transform: scale(1.1);
+}
+
 /* ===========================
    RIGHT FORM
 =========================== */

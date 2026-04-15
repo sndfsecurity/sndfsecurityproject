@@ -121,13 +121,10 @@ const badgesData = [
   // Triple duplicate for seamless infinite scroll
   const duplicatedLogos = [...clientLogos, ...clientLogos, ...clientLogos];
 
-
- 
-
   return (
     <>
 
-    
+  
     <Helmet>
        <title>SNDF Security Services | Trusted Detective Agency India</title>
         <meta name="description" content="SNDF provides professional investigation, surveillance, and security services across India with trained experts." />
@@ -273,27 +270,27 @@ const badgesData = [
     <div className="services-grid">
 
         
-          <a href="/services/ndf" className="service-card" data-aos="fade-up">
-        <div className="icon"><FaUserShield /></div>
-        <h3>Security Services</h3>
+      <a href="/services/ndf" className="service-card" data-aos="fade-up" data-aos-delay="100">
+        <div className="icon"><FaUserSecret /></div>
+        <h3>Detective Investigation Services</h3>
         <h5>NDF</h5>
-        <p>Highly trained security personnel providing protection for residential, commercial, and event environments.</p>
+        <p>Professional and confidential investigation services for personal, legal and corporate cases handled discreetly.</p>
       </a>
 
       {/* 2 - NDF Detective Services */}
       <a href="/services/ndf" className="service-card" data-aos="fade-up" data-aos-delay="100">
         <div className="icon"><FaUserSecret /></div>
-        <h3>Detective Investigation Services</h3>
+        <h3>Cyber Crime Investigation</h3>
         <h5>NDF</h5>
-        <p>Professional and confidential investigation services for personal, legal, and corporate cases handled discreetly.</p>
-      </a>
+<p>Cyber crime investigation services for digital fraud, data breaches, online scams and threats handled securely.</p>      
+</a>
 
       {/* 3 - OWL Security */}
       <a href="/services/owl" className="service-card" data-aos="fade-up" data-aos-delay="200">
         <div className="icon"><FaSearch /></div>
         <h3>CCTV Surveillance & Monitoring</h3>
         <h5>OWL Security</h5>
-        <p>Advanced surveillance solutions including tracking, monitoring, and intelligence gathering for enhanced security.</p>
+        <p>Advanced surveillance solutions including tracking, monitoring and intelligence gathering for enhanced security.</p>
       </a>
 
       {/* 4 - SNDF Detective Course */}
@@ -309,7 +306,7 @@ const badgesData = [
         <div className="icon"><FaShieldAlt /></div>
         <h3>Guard Services</h3>
         <h5>SNDF</h5>
-        <p>Reliable and disciplined guard services for offices, industries, and private properties with full safety assurance.</p>
+        <p>Reliable and disciplined guard services for offices, industries and private properties with full safety assurance.</p>
       </a>
 
       {/* 6 - Spydefence Summer Camp */}
@@ -317,7 +314,7 @@ const badgesData = [
         <div className="icon"><FaUserLock /></div>
         <h3>Summer Camp</h3>
         <h5>Spy Defence</h5>
-        <p>Training and counter-surveillance programs to detect threats, prevent espionage, and ensure personal security awareness.</p>
+        <p>Training and counter-surveillance programs to detect threats and ensure personal security awareness.</p>
       </a>
      
 

@@ -3,7 +3,8 @@ import "./Ndf.css";
 import { FaUserSecret, FaBalanceScale, FaSearch, FaUserCheck } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
 
-
+import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaFacebookF,FaYoutube} from "react-icons/fa";
 
 import loyalty from "../../assets/images/course-bg.webp";
 import prematrimonial from "../../assets/images/pre.jpg";
@@ -1030,6 +1031,53 @@ const Ndf = () => {
         <li>✔ Trusted Professionals</li>
         <li>✔ Fast Response</li>
       </ul>
+
+      {/* ===== SNDF CONTACT (UNIQUE) ===== */}
+<div className="sndf-ndf-contact-block">
+
+  <p className="sndf-ndf-contact-title">Quick Contact</p>
+
+  {/* Mobile Number */}
+  <a href="tel:+918007341905" className="sndf-ndf-contact-item">
+    <FaPhoneAlt className="sndf-ndf-icon phone" />
+    +91 8007341905
+  </a>
+
+  {/* Email */}
+  <a href="mailto:ndfdetective@gmail.com" className="sndf-ndf-contact-item">
+    <FaEnvelope className="sndf-ndf-icon email" />
+    ndfdetective@gmail.com
+  </a>
+
+</div>
+
+{/* ===== SNDF SOCIAL LINKS ===== */}
+<div className="sndf-ndf-social-wrap">
+
+  <a
+    href="https://wa.me/918007341905"
+    target="_blank"
+    rel="noreferrer"
+    className="sndf-ndf-social whatsapp"
+  >
+    <FaWhatsapp />
+  </a>
+
+  <a href="#" target="_blank" rel="noreferrer" className="sndf-ndf-social facebook">
+    <FaFacebookF />
+  </a>
+
+  <a href="#" target="_blank" rel="noreferrer" className="sndf-ndf-social instagram">
+    <FaInstagram />
+  </a>
+
+  <a href="#" target="_blank" rel="noreferrer" className="sndf-ndf-social youtube">
+    <FaYoutube />
+  </a>
+
+</div>
+
+
     </div>
 
     {/* RIGHT FORM */}

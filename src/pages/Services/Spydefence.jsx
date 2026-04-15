@@ -7,6 +7,8 @@ import { FiPhoneCall } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
 
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+
 
 
 import {
@@ -345,6 +347,19 @@ const Spydefence = () => {
             >
               <FaWhatsapp />
             </a>
+
+          <a href="#" className="facebook-icon">
+            <FaFacebookF />
+          </a>
+
+          <a href="#" className="instagram-icon">
+            <FaInstagram />
+          </a>
+
+          <a href="#" className="youtube-icon">
+            <FaYoutube />
+          </a>
+
           </div>
 
         </div>

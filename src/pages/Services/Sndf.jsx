@@ -3,6 +3,9 @@ import React, { useRef } from "react";import "./Sndf.css";
 import sndf from "../../assets/images/img1.webp";
 import { Helmet } from "react-helmet-async";
 
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+
 
 import {
   FaUserShield,
@@ -195,7 +198,7 @@ const scrollToForm = () => {
         <div className="sndfguard-cta-actions">
 
           <a
-            href="tel:+918007341905"
+            href="tel:+918956159486"
             className="sndfguard-cta-btn sndfguard-cta-call"
           >
             📞 Call Now
@@ -210,12 +213,50 @@ const scrollToForm = () => {
 
         </div>
 
+       
+       {/* ===== EXTRA CONTACT (CTA CLEAN) ===== */}
+<div className="sndfguard-extra-contact">
+
+  {/* EMAIL ONLY */}
+  <div className="sndfguard-extra-contact-info">
+
+    <a href="mailto:info@sndf.com" className="sndfguard-extra-item">
+      <FaEnvelope className="sndfguard-extra-icon email" />
+      sndfguard@gmail.com
+    </a>
+
+  </div>
+
+  {/* SOCIAL */}
+  <div className="sndfguard-extra-social">
+
+    <a href="https://wa.me/918956159486" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon whatsapp">
+      <FaWhatsapp />
+    </a>
+
+    <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon facebook">
+      <FaFacebookF />
+    </a>
+
+    <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon instagram">
+      <FaInstagram />
+    </a>
+
+    <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon youtube">
+      <FaYoutube />
+    </a>
+
+  </div>
+
+</div>
+        
+
       </div>
     </section>
 
 
     {/* form */}
-    <section ref={formRef} className="sndfguard-form-section">
+  <section ref={formRef} className="sndfguard-form-section">
   <div className="sndfguard-form-wrapper">
 
     <h2 className="sndfguard-form-heading">

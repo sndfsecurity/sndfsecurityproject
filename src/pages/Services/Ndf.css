@@ -938,3 +938,142 @@ html {
     padding: 20px;
   }
 }
+
+
+
+/* ===== CONTACT BLOCK ===== */
+.sndf-ndf-contact-block {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sndf-ndf-contact-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+/* CONTACT ITEM */
+.sndf-ndf-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #e2e8f0;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  
+}
+
+.sndf-ndf-contact-item:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+/* ICON BASE */
+.sndf-ndf-icon {
+  font-size: 16px;
+  min-width: 18px;
+}
+
+/* ICON COLORS */
+.sndf-ndf-icon.phone {
+  color: #22c55e; /* green */
+}
+
+.sndf-ndf-icon.email {
+  color: #f97316; /* orange */
+}
+
+/* ===== SOCIAL WRAP ===== */
+.sndf-ndf-social-wrap {
+  margin-top: 18px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* BASE SOCIAL ICON */
+.sndf-ndf-social {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+
+  /* 🔥 MAIN FIX */
+  background: #ffffff;
+
+  /* premium shadow */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+/* BRAND COLORS */
+.sndf-ndf-social.whatsapp {
+  color: #25D366;
+}
+
+.sndf-ndf-social.facebook {
+  color: #1877F2;
+}
+
+.sndf-ndf-social.instagram {
+  color: #E4405F;
+}
+
+.sndf-ndf-social.youtube {
+  color: #FF0000;
+}
+
+/* HOVER EFFECT */
+.sndf-ndf-social:hover {
+  transform: translateY(-5px) scale(1.05);
+
+  /* glow effect based on white */
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .sndf-ndf-contact-item {
+    font-size: 14px;
+  }
+
+  .sndf-ndf-social {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sndf-ndf-contact-block {
+    gap: 12px;
+  }
+
+  .sndf-ndf-contact-title {
+    font-size: 15px;
+  }
+
+  .sndf-ndf-contact-item {
+    font-size: 13px;
+  }
+
+  .sndf-ndf-social {
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+    border-radius: 12px;
+  }
+}

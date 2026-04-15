@@ -652,3 +652,116 @@
 
 
 }
+
+
+
+
+/* ===== EXTRA CONTACT WRAPPER ===== */
+.owl-extra-contact {
+  margin-top: 25px;
+}
+
+/* ===== EMAIL ===== */
+.owl-extra-email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #cfd8ff;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.owl-extra-email:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* EMAIL ICON */
+.owl-extra-email-icon {
+  color: #f97316;
+  font-size: 16px;
+}
+
+/* ===== SOCIAL ===== */
+.owl-extra-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+/* ICON BOX */
+.owl-extra-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 16px;
+  background: #ffffff; /* 🔥 visible on dark */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+/* BRAND COLORS */
+.owl-extra-icon.whatsapp {
+  color: #25D366;
+}
+
+.owl-extra-icon.facebook {
+  color: #1877F2;
+}
+
+.owl-extra-icon.instagram {
+  color: #E4405F;
+}
+
+.owl-extra-icon.youtube {
+  color: #FF0000;
+}
+
+/* HOVER */
+.owl-extra-icon:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(255,255,255,0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .owl-extra-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .owl-extra-email {
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .owl-extra-social {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+.owl-extra-contact{
+  margin-top: 0px;
+}
+  .owl-extra-email {
+    font-size: 13px;
+  }
+
+  .owl-extra-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+  }
+}

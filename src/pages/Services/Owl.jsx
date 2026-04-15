@@ -3,6 +3,9 @@ import "./Owl.css";
 import owlImg from "../../assets/images/owl.jpg";
 import { Helmet } from "react-helmet-async";
 
+import { FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+
 
 import {
   FaVideo,
@@ -45,7 +48,7 @@ function Owl() {
           </p>
 
           <div className="owl-buttons">
-            <a href="tel:+918007341905" className="owl-btn-primary">
+            <a href="tel:+918956159489" className="owl-btn-primary">
               Call Now
             </a>
 
@@ -196,7 +199,6 @@ function Owl() {
 
  <section id="owl" className="owl-cta-section">
   <div className="container owl-cta-container">
-
     {/* LEFT CONTENT */}
     <div className="owl-cta-left">
       <h2>Need Immediate Security Support?</h2>
@@ -206,7 +208,7 @@ function Owl() {
       </p>
 
       <div className="owl-cta-buttons">
-        <a href="tel:+918007341905" className="owl-btn-primary">
+        <a href="tel:+918956159489" className="owl-btn-primary">
           Call Now
         </a>
       </div>
@@ -216,6 +218,40 @@ function Owl() {
         <span>✔ Fast Response</span>
         <span>✔ Trusted Service</span>
       </div>
+
+
+      {/* ===== OWL EXTRA CONTACT ===== */}
+<div className="owl-extra-contact">
+
+  {/* EMAIL */}
+  <a href="mailto:owls.surveillance@gmail.com" className="owl-extra-email">
+    <FaEnvelope className="owl-extra-email-icon" />
+     owls.surveillance@gmail.com
+  </a>
+
+  {/* SOCIAL ICONS */}
+  <div className="owl-extra-social">
+
+    <a href="https://wa.me/918956159489" target="_blank" rel="noreferrer" className="owl-extra-icon whatsapp">
+      <FaWhatsapp />
+    </a>
+
+    <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon facebook">
+      <FaFacebookF />
+    </a>
+
+    <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon instagram">
+      <FaInstagram />
+    </a>
+
+    <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon youtube">
+      <FaYoutube />
+    </a>
+
+  </div>
+
+</div>
+
     </div>
 
     {/* RIGHT FORM */}

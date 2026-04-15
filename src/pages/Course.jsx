@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import { FaCalendarAlt, FaTools, FaUserTie, FaCertificate } from "react-icons/fa";
 import { FaUserSecret, FaLaptopCode, FaSearch } from "react-icons/fa";
 
+import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaFacebookF,FaYoutube} from "react-icons/fa";
+
 import dic1 from "../assets/images/dic1.webp";
 import dic2 from "../assets/images/dic2.webp";
 import dic3 from "../assets/images/dic3.webp";
@@ -541,6 +544,47 @@ const Course = () => {
         <button className="btn-outline">Download Brochure</button>
         </a>
       </div>
+
+      <div className="sndfguard-extra-contact">
+      
+        {/* EMAIL ONLY */}
+        <div className="sndfguard-extra-contact-infodic">
+      
+          <a href="tel:+918484834570" className="sndfguard-extra-itemdic">
+              <FaPhoneAlt className="sndf-ndf-icon phone" />
+              +91 8484834570
+            </a>
+
+          <a href="mailto:ndfdiclectures@gmail.com" className="sndfguard-extra-itemdic">
+            <FaEnvelope className="sndfguard-extra-icon email" />
+            ndfdiclectures@gmail.com
+          </a>
+      
+        </div>
+      
+        {/* SOCIAL */}
+        <div className="sndfguard-extra-social">
+      
+          <a href="https://wa.me/918484834570" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon whatsapp">
+            <FaWhatsapp />
+          </a>
+      
+          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon facebook">
+            <FaFacebookF />
+          </a>
+      
+          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon instagram">
+            <FaInstagram />
+          </a>
+      
+          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon youtube">
+            <FaYoutube />
+          </a>
+      
+        </div>
+      
+      </div>
+      
 
     </div>
 
