@@ -71,7 +71,10 @@ const closeNavbar = () => {
           onClick={() => setShowModal(false)}>
 
           <div className="sn-modal-box" onClick={(e) => e.stopPropagation()}>
-            <span type="button" className="sn-close-btn" aria-label="Close enquiry form" onClick={() => setShowModal(false)}>×</span>
+            {/* <span type="button" className="sn-close-btn" aria-label="Close enquiry form" onClick={() => setShowModal(false)}>×</span> */}
+
+            <button type="button" className="sn-close-btn" aria-label="Close enquiry form"
+            onClick={() => setShowModal(false)}> × </button>
 
             <h3 id="enquiry-title">Quick Enquiry</h3>
 
@@ -227,20 +230,22 @@ const closeNavbar = () => {
               </ul>
             </li>
 
-            <li className="nav-item dropdown">
+        <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Media</a>
               <ul className="dropdown-menu">
-                <li><Link to="/media/gallery" className="dropdown-item" onClick={closeNavbar}>Gallery</Link></li>
-                <li><a className="dropdown-item" onClick={closeNavbar}>Videos</a></li>
+              <li><Link to="/media/gallery" className="dropdown-item" onClick={closeNavbar}>Gallery</Link></li>
+              <li><Link to="/media/videos" className="dropdown-item" onClick={closeNavbar}>Videos</Link></li>
+
               </ul>
             </li>
 
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle"   role="button" data-bs-toggle="dropdown"  aria-expanded="false">Branches</a>
               <ul className="dropdown-menu">
+                
                 <li><Link to="/branches/pune" className="dropdown-item" onClick={closeNavbar}>Head Office (Pune)</Link></li>
-                <li><a className="dropdown-item">Mumbai</a></li>
-                <li><Link to="" className="dropdown-item" onClick={closeNavbar}>Hyderabad</Link></li>
+                <li><Link to="/branches/mumbai" className="dropdown-item" onClick={closeNavbar}>Mumbai</Link></li>
+                <li><Link to="/branches/hyderabad" className="dropdown-item" onClick={closeNavbar}>Hyderabad</Link></li>
                 <li><Link to="/branches/assam" className="dropdown-item" onClick={closeNavbar}>Assam</Link></li>
 
               </ul>
