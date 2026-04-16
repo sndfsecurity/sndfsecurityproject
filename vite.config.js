@@ -8,33 +8,26 @@ export default defineConfig({
     sitemap({
       hostname: 'https://www.sndfndf.com',
 
+      // ✅ 🔥 ADD THIS LINE (MOST IMPORTANT FIX)
+      generateRobotsTxt: false,
+
       dynamicRoutes: [
-        '/',               
+        '/',
         '/about',
         '/course',
         '/contact',
         '/team',
         '/blog',
         '/career',
-
-        // SHOP (IMPORTANT NOTE BELOW)
         '/shop',
         '/cart',
         '/checkout',
-
-        // LEGAL
         '/privacy-policy',
         '/sndfterms',
         '/sndfdisclaimer',
-
-        // BRANCHES
         '/branches/pune',
         '/branches/assam',
-
-        // MEDIA
         '/media/gallery',
-
-        // SERVICES
         '/services/ndf',
         '/services/sndf',
         '/services/owl',
