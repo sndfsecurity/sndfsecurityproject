@@ -21,7 +21,6 @@ import Assam from "./pages/branches/Assam";
 
 import Career from "./pages/Career";
 
-
 /* SHOP */
 import Shop from "./pages/Shop";
 import ProductDetails from "./pages/ProductDetails";
@@ -33,6 +32,12 @@ import Ndf from "./pages/Services/Ndf";
 import Sndf from "./pages/Services/Sndf"; 
 import Owl from "./pages/Services/Owl"; 
 import Spydefence from "./pages/Services/Spydefence";
+
+
+// MEDIA
+
+
+
 
 
 function App() {
@@ -77,6 +82,10 @@ function App() {
           <Route path="/services/owl" element={<Owl />} />
           <Route path="/services/spydefence" element={<Spydefence />} />
 
+
+
+<Route path="/course" element={<Course />} />
+<Route path="/course/dic" element={<Course />} />
         </Routes>
 
         <Footer />

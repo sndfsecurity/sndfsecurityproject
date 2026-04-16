@@ -1,6 +1,6 @@
 import React from "react";
 import "./Owl.css";
-import owlImg from "../../assets/images/owl.jpg";
+import owl from "../../assets/images/monitoring.jpeg";
 
 import {
   FaVideo,
@@ -55,7 +55,7 @@ function Owl() {
 
         {/* RIGHT IMAGE */}
         <div className="owl-hero-right">
-          <img src={owlImg} alt="security" />
+          <img src={owl} alt="security" />
         </div>
 
       </div>
