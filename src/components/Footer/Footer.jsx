@@ -17,14 +17,15 @@ import {
 
 const Footer = () => {
   return (
-    <footer id="footer" className="footer">
+    <footer id="footer" className="footer" role="contentinfo">
         <div className="footer-container">
 
         {/* Brand */}
-        <div className="footer-col brand">
-          <img src={logo} alt="SNDF Security Services Logo" className="footer-logo" />
+  <div className="footer-col brand">
 
-          <p>
+  <img src={logo} alt="SNDF Security Services Logo" className="footer-logo" loading="lazy"/>
+
+  <p>
     SNDF is a professional security and detective organization providing
     reliable surveillance, investigation, and protection services across India.
   </p>
@@ -38,23 +39,24 @@ const Footer = () => {
 
 <div className="social-icons">
   
-  <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer"  aria-label="Facebook">
     <FaFacebookF />
   </a>
 
-  <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
     <FaInstagram />
   </a>
 
-  <a href="https://www.linkedin.com/in/nationalist-detective-force-034907376" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/nationalist-detective-force-034907376" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
     <FaLinkedin />
   </a>
 
-  <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer">
+  <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
+>
     <FaYoutube className="yt" />
   </a>
 
-  <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
     <FaWhatsapp className="wa" />
   </a>
 
@@ -97,16 +99,16 @@ const Footer = () => {
           <h3>Head Office</h3>
 
           <p className="notranslate">
-            <FaMapMarkerAlt />S.N.D.F. Office,Yashshree Phase 2,Katraj
+            <FaMapMarkerAlt  aria-hidden="true"/>S.N.D.F. Office,Yashshree Phase 2,Katraj
             Pune - 411046
           </p>
 
           <p className="notranslate">
-            <FaPhone /> <a href="tel:+919970383155">+91 9970383155</a>
+            <FaPhone aria-hidden="true"/> <a href="tel:+919970383155" aria-label="Call SNDF +91 9970383155">+91 9970383155</a>
           </p>
 
           <p>
-            <FaEnvelope /> <a href="mailto:info@sndfndf.com">info@sndfndf.com</a>
+            <FaEnvelope  aria-hidden="true"/> <a href="mailto:info@sndfndf.com"  aria-label="Email SNDF">info@sndfndf.com</a>
           </p>
 
           {/* Google Map */}
@@ -120,10 +122,10 @@ const Footer = () => {
     allowFullScreen=""
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
-    title="map"
-  ></iframe>
+    title="SNDF Office Location Map" > 
+</iframe>
 </div>
-        </div>
+</div>
 
         {/* Branches */}
         <div className="footer-col">
