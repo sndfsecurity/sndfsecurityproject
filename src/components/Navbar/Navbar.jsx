@@ -67,11 +67,13 @@ const closeNavbar = () => {
   return (
     <>
       {showModal && (
-        <div className="sn-modal-overlay" onClick={() => setShowModal(false)}>
-          <div className="sn-modal-box" onClick={(e) => e.stopPropagation()}>
-            <span className="sn-close-btn" onClick={() => setShowModal(false)}>×</span>
+        <div className="sn-modal-overlay"  role="dialog" aria-modal="true"  aria-labelledby="enquiry-title" 
+          onClick={() => setShowModal(false)}>
 
-            <h3>Quick Enquiry</h3>
+          <div className="sn-modal-box" onClick={(e) => e.stopPropagation()}>
+            <span type="button" className="sn-close-btn" aria-label="Close enquiry form" onClick={() => setShowModal(false)}>×</span>
+
+            <h3 id="enquiry-title">Quick Enquiry</h3>
 
             <input
               type="text"
@@ -148,12 +150,17 @@ const closeNavbar = () => {
           </div>
         </div>
 
-        <div className="d-flex align-items-center gap-2">
-          <select className="form-select form-select-sm w-auto">
-            <option>ENGLISH</option>
-            <option>हिंदी</option>
-            <option>मराठी</option>
-          </select>
+   <div className="d-flex align-items-center gap-2">
+
+      <label htmlFor="language-select" className="visually-hidden">
+        Select Language
+      </label>
+
+        <select id="language-select" className="form-select form-select-sm w-auto">
+          <option>ENGLISH</option>
+          <option>हिंदी</option>
+          <option>मराठी</option>
+        </select>
 
           <button  type="button" className="enquiry-btn btn btn-danger btn-sm" onClick={() => setShowModal(true)}>
             Enquiry
