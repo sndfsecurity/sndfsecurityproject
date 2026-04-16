@@ -240,7 +240,7 @@ function Owl() {
       <FaFacebookF />
     </a>
 
-    <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon instagram">
+    <a href="https://www.instagram.com/owl_security_surveillance_?igsh=MnpwczJkc2RnZGtl&utm_source=qr" target="_blank" rel="noreferrer" className="owl-extra-icon instagram">
       <FaInstagram />
     </a>
 

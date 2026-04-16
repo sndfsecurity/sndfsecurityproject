@@ -44,11 +44,16 @@ const Contact = () => {
   return (
     
    
-<>
+<main>
 
 <Helmet>
- <title>Contact SNDF | Get Security & Investigation Support</title>
- <meta name="description" content="Contact SNDF for professional security, surveillance, and investigation services. Available 24/7 across India." />
+  <title>Contact SNDF Detective Agency | Call & Enquiry</title>
+
+  <meta 
+    name="description" 
+    content="Contact SNDF detective agency for investigation, surveillance and security services. Call now or send enquiry for quick response." />
+
+  <link rel="canonical" href="https://www.sndfndf.com/contact" />
 </Helmet>
      
  <section className="contact-hero">
@@ -73,8 +78,8 @@ const Contact = () => {
       </p>
 
       <div className="hero-btnscn">
-        <a href="tel:+919970383155" className="btn-red">Call Now</a>
-        <button onClick={scrollToForm} className="contact-btn-outline">
+        <a href="tel:+919970383155" className="btn-red"  aria-label="Call SNDF support">Call Now</a>
+        <button onClick={scrollToForm} className="contact-btn-outline" aria-label="Send enquiry form">
         Send Enquiry
         </button>      
         </div>
@@ -93,29 +98,30 @@ const Contact = () => {
 
         {/* CALL CARD */}
         <div className="card">
-          <FaPhoneAlt className="icon" />
+          <FaPhoneAlt className="icon" aria-hidden="true"/>
           <h3>Call Us</h3>
           <p>+91 9970383155</p>
-          <a href="tel:+919970383155">Call Now</a>
+          <a href="tel:+919970383155" aria-label="Call SNDF now">Call Now</a>
         </div>
 
         {/* EMAIL CARD */}
         <div className="card">
-          <FaEnvelope className="icon" />
+          <FaEnvelope className="icon" aria-hidden="true"/>
           <h3>Email Us</h3>
           <p>NDF.SNDF.HR@GMAIL.COM</p>
-          <a href="mailto:NDF.SNDF.HR@GMAIL.COM">Send Mail</a>
+          <a href="mailto:NDF.SNDF.HR@GMAIL.COM" aria-label="Send email to SNDF">Send Mail</a>
         </div>
 
         {/* WHATSAPP CARD */}
         <div className="card whatsapp-card">
-          <FaWhatsapp className="icon" />
+          <FaWhatsapp className="icon" aria-hidden="true"/>
           <h3>WhatsApp</h3>
           <p>Chat with us instantly for quick support</p>
           <a
             href="https://wa.me/919970383155?text=Hello%20SNDF,%20I%20want%20enquiry"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Chat with SNDF on WhatsApp"
           >
             Start Chat
           </a>
@@ -134,12 +140,14 @@ const Contact = () => {
           <h2>Enquiry Form</h2>
           <p>Fill the form and our team will contact you shortly.</p>
 
-          <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Mobile Number" />
-          <input type="text" placeholder="Address" />
-          <textarea rows="4" placeholder="Your Requirement"></textarea>
+          <label htmlFor="name">Your Name</label> <input id="name" type="text" />
+          <label htmlFor="phone">Mobile Number</label> <input id="phone" type="tel" />
+          <label htmlFor="address">Address</label> <input id="address" type="text" />
+          <label htmlFor="requirement">Your Requirement</label> <textarea id="requirement" rows="4"></textarea>
 
-          <button>Submit Enquiry</button>
+          
+
+          <button type="submit" aria-label="Submit enquiry form">Submit Enquiry</button>
         </div>
 
         {/* RIGHT SIDE */}
@@ -149,7 +157,7 @@ const Contact = () => {
 
           {/* ADDRESS CARD */}
           <div className="office-card">
-            <div className="location-icon">📍</div>
+            <div className="location-icon" aria-hidden="true">📍</div>
 
             <p>
               SNDF Head Office, Ground Floor,
@@ -168,20 +176,20 @@ const Contact = () => {
 
 <div className="office-socials">
 
-  <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Facebook page">
     <FaFacebookF />
   </a>
 
-  <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Instagram page">
     <FaInstagram />
   </a>
 
 
-  <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Whatsapp">
     <FaWhatsapp />
   </a>
 
-  <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer">
+  <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Youtube Channel">
     <FaYoutube />
   </a>
 
@@ -195,10 +203,10 @@ const Contact = () => {
     <h3>Visit Our Branches</h3>
 
             <div className="branches-grid">
-              <Link to="/branches/pune">Pune</Link>
-              <Link to="/branches/mumbai">Mumbai</Link>
-              <Link to="/branches/hyderabad">Hyderabad</Link>
-              <Link to="/branches/assam">Assam</Link>             
+              <Link to="/branches/pune"  aria-label="Visit Pune branch">Pune</Link>
+              <Link to="/branches/mumbai"  aria-label="Visit Mumbai branch">Mumbai</Link>
+              <Link to="/branches/hyderabad"  aria-label="Visit Hyderabad branch">Hyderabad</Link>
+              <Link to="/branches/assam"  aria-label="Visit Assam branch">Assam</Link>             
               {/* <Link to="/branches/delhi">Delhi</Link>
               <Link to="/branches/nashik">Nashik</Link> */}
             </div>
@@ -211,7 +219,7 @@ const Contact = () => {
 
 
     {/* map.............................................. */}
-<section className="map-section">
+<section className="map-section" aria-label="SNDF office location map">
   <div className="map-container">
 
     <h2>Our Location</h2>
@@ -248,7 +256,7 @@ const Contact = () => {
 </section>
    
   
-</>
+</main>
 
   );
 };

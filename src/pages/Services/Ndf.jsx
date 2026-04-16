@@ -1063,15 +1063,15 @@ const Ndf = () => {
     <FaWhatsapp />
   </a>
 
-  <a href="#" target="_blank" rel="noreferrer" className="sndf-ndf-social facebook">
+  <a href="https://www.facebook.com/share/178mfq6Hf6/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="sndf-ndf-social facebook">
     <FaFacebookF />
   </a>
 
-  <a href="#" target="_blank" rel="noreferrer" className="sndf-ndf-social instagram">
+  <a href="https://www.instagram.com/nationalist_detective_force?igsh=Y3F5cXNjMG55a2J3&utm_source=qr" target="_blank" rel="noreferrer" className="sndf-ndf-social instagram">
     <FaInstagram />
   </a>
 
-  <a href="#" target="_blank" rel="noreferrer" className="sndf-ndf-social youtube">
+  <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noreferrer" className="sndf-ndf-social youtube">
     <FaYoutube />
   </a>
 
