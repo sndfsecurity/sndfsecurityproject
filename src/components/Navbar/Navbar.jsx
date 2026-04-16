@@ -1,4 +1,11 @@
 import logo from "../../assets/images/LOGO.png";
+import logo1 from "../../assets/images/ndflogo.PNG";
+import logo2 from "../../assets/images/guardlogo.PNG";
+import logo3 from "../../assets/images/owllogo.PNG";
+import logo4 from "../../assets/images/spylogo.PNG";
+import logo5 from "../../assets/images/diclogo.PNG";
+
+
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
@@ -156,7 +163,37 @@ const closeNavbar = () => {
 
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="logo" width="90" style={{ borderRadius: "50%" }} />
+          <div className="logo-container">
+  {/* 🔥 BIG LOGO */}
+  <img src={logo} alt="main-logo" className="main-logo" />
+
+  {/* 🔥 SMALL LOGOS */}
+  {/* 🔥 SMALL LOGOS */}
+<Link to="/services/ndf">
+  <img src={logo1} alt="ndf" className="sub-logo" />
+</Link>
+
+<Link to="/services/sndf">
+  <img src={logo2} alt="sndf" className="sub-logo" />
+</Link>
+
+<Link to="/services/owl">
+  <img src={logo3} alt="owl" className="sub-logo" />
+</Link>
+
+<Link to="/services/spydefence">
+  <img src={logo4} alt="spy" className="sub-logo" />
+</Link>
+
+<Link to="/course/dic">
+  <img 
+    src={logo5} 
+    alt="dic" 
+    className="sub-logo" 
+    title="Click here for more info" /> 
+</Link>
+</div>
+
         </Link>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -184,7 +221,6 @@ const closeNavbar = () => {
               <ul className="dropdown-menu">
                 <li><Link to="/media/gallery" className="dropdown-item" onClick={closeNavbar}>Gallery</Link></li>
                 <li><a className="dropdown-item" onClick={closeNavbar}>Videos</a></li>
-                <li><a className="dropdown-item" onClick={closeNavbar}>News</a></li>
               </ul>
             </li>
 

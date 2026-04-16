@@ -1,6 +1,6 @@
 .bg-primary,
 .navbar {
-  background: linear-gradient(90deg, #0d1f3c, #2a4fa3) !important;
+  background: linear-gradient(90deg, #3794b3, #2a4fa3) !important;
 }
 
 html {
@@ -29,10 +29,61 @@ html {
    backdrop-filter: blur(10px);
 }
 /* Logo */
-.navbar-brand img {
-  width: 80px;
+/* .navbar-brand img {
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+ */
+ 
+ /* logo  */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing */
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* desktop spacing */
+}
+
+/* 🔥 MAIN LOGO (Desktop) */
+.main-logo {
+  width: 90px;
   border-radius: 50%;
 }
+
+/* 🔥 SMALL LOGOS */
+.sub-logo {
+  width: 60px;
+  border-radius: 70%;
+  transition: 0.3s;
+}
+
+.sub-logo:hover {
+  transform: scale(1.1);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .logo-container {
+    gap: 9px; /* 🔥 spacing reduce */
+  }
+
+  .main-logo {
+    width: 65px; 
+  }
+
+  .sub-logo {
+    width: 35px; 
+  }
+
+}
+
+
+
 
 /* Menu */
 .navbar-nav {
