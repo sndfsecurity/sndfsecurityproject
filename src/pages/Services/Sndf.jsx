@@ -33,12 +33,15 @@ const scrollToForm = () => {
 
   return (
 
-    <>
+    <main>
 
     <Helmet>
       <title>SNDF Guard Services | Trusted Protection Solutions</title>
       <meta name="description" content="SNDF provides expert security services including trained guards, surveillance, and risk management." />
+      <link rel="canonical" href="https://www.sndfndf.com/services/sndf" />
+
     </Helmet>
+
     <section className="sndfSplitHero">
 
       <div className="sndfSplitHero-container container">
@@ -69,7 +72,10 @@ const scrollToForm = () => {
 
         {/* RIGHT IMAGE */}
         <div className="sndfSplitHero-right">
-          <img src={sndf} alt="Security Guards" />
+          <img
+            src={sndf}
+            alt="Professional security guards from SNDF team"
+            loading="lazy"/>
         </div>
 
       </div>
@@ -207,7 +213,7 @@ const scrollToForm = () => {
           <button
             className="sndfguard-cta-btn sndfguard-cta-enquiry"
             onClick={scrollToForm}
-          >
+            aria-label="Scroll to enquiry form">
             Get Free Consultation
           </button>
 
@@ -230,23 +236,24 @@ const scrollToForm = () => {
   {/* SOCIAL */}
   <div className="sndfguard-extra-social">
 
-    <a href="https://wa.me/918956159486" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon whatsapp">
+    <a href="https://wa.me/918956159486" target="_blank" rel="noreferrer"  aria-label="Whatsapp" className="sndfguard-extra-social-icon whatsapp">
       <FaWhatsapp />
     </a>
 
-    <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon facebook">
+    <a href="#" target="_blank" rel="noreferrer"  aria-label="Facebook" className="sndfguard-extra-social-icon facebook">
       <FaFacebookF />
     </a>
 
-    <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon instagram">
+    <a href="https://www.instagram.com/sndf_guards?igsh=bHAxcTY3OWtmcXUy&utm_source=qr" target="_blank" rel="noreferrer"  aria-label="Instagram" className="sndfguard-extra-social-icon instagram">
       <FaInstagram />
     </a>
 
-    <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon youtube">
+    <a href="#" target="_blank" rel="noreferrer"  aria-label="Youtube" className="sndfguard-extra-social-icon youtube">
       <FaYoutube />
     </a>
 
   </div>
+  
 
 </div>
         
@@ -270,32 +277,32 @@ const scrollToForm = () => {
     <form className="sndfguard-form-box">
 
       <div className="sndfguard-form-group">
-        <input type="text" required />
-        <label>Your Name</label>
+        <input id="name" name="name" type="text" required />
+        <label htmlFor="name">Your Name</label>
       </div>
 
-      <div className="sndfguard-form-group">
-        <input type="tel" required />
-        <label>Mobile Number</label>
-      </div>
+    <div className="sndfguard-form-group">
+      <input id="mobile" name="mobile" type="tel" required />
+      <label htmlFor="mobile">Mobile Number</label>
+    </div>
 
-      <div className="sndfguard-form-group">
-        <select required>
-          <option value="" disabled defaultValue=""></option>          
-          <option>VIP Protection</option>
-          <option>Armed Security</option>
-          <option>Event Security</option>
-          <option>Residential Security</option>
-          <option>Commercial Security</option>
-          <option>Industrial Security</option>
-        </select>
-        <label>Select Service</label>
-      </div>
+    <div className="sndfguard-form-group">
+      <select id="service" name="service" required>
+        <option value="" disabled selected>Select Service</option>
+        <option>VIP Protection</option>
+        <option>Armed Security</option>
+        <option>Event Security</option>
+        <option>Residential Security</option>
+        <option>Commercial Security</option>
+        <option>Industrial Security</option>
+      </select>
+      <label htmlFor="service">Select Service</label>
+    </div>
 
-      <div className="sndfguard-form-group">
-        <textarea required></textarea>
-        <label>Your Message</label>
-      </div>
+    <div className="sndfguard-form-group">
+      <textarea id="message" name="message" required></textarea>
+      <label htmlFor="message">Your Message</label>
+    </div>
 
       <button type="submit" className="sndfguard-form-submit">
         Submit Enquiry
@@ -310,7 +317,7 @@ const scrollToForm = () => {
 
 
 
-</>
+</main>
 
   );
 };

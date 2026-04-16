@@ -122,16 +122,19 @@ const badgesData = [
   const duplicatedLogos = [...clientLogos, ...clientLogos, ...clientLogos];
 
   return (
-    <>
+    <main>
 
   
     <Helmet>
-       <title>SNDF Security Services | Trusted Detective Agency India</title>
-        <meta name="description" content="SNDF provides professional investigation, surveillance, and security services across India with trained experts." />
-      </Helmet>
+        <title>Detective Agency in India | SNDF Security & Investigation Services</title>
+        <meta name="description" content="Looking for a trusted detective agency in India?
+        SNDF offers professional investigation, surveillance, and security services with complete confidentiality." />      
+
+        <meta name="keywords" content="detective agency India, investigation services, surveillance services, security services India" />
+    </Helmet>
 
       {/* ================= HERO SECTION ================= */}
-      <section className="hero">
+      <section className="hero" role="banner" aria-label="SNDF Security Services Introduction">
         <div className="hero-overlay"></div>
 
         <div className="container hero-content">
@@ -154,6 +157,7 @@ const badgesData = [
               {/* <button className="btn btn-danger">Get Protection</button> */}
 
          <button className="btn btn-danger"
+            aria-label="Get protection services"
             onClick={() => navigate("/contact#enquiry-form")}>
             Get Protection
           </button>
@@ -161,6 +165,7 @@ const badgesData = [
 
               <button
                   className="btn btn-outline-light"
+                  aria-label="Explore our services"
                   onClick={() => {
                     document.getElementById("services")?.scrollIntoView({
                       behavior: "smooth"
@@ -185,13 +190,13 @@ const badgesData = [
 
     {/* trust badges........................................................... */}
 
-      <section className="sndf-trust-badges-wrapper">
+    <section className="sndf-trust-badges-wrapper">
       <div className="sndf-trust-badges-container">
         <div className="sndf-trust-badges-inner">
           {badgesData.map((badge) => (
             <div key={badge.id} className="sndf-trust-badge-item">
               <div className="sndf-trust-badge-icon-wrapper">
-                <span className="sndf-trust-badge-icon">{badge.icon}</span>
+                <span className="sndf-trust-badge-icon"  aria-hidden="true">{badge.icon}</span>
               </div>
               <div className="sndf-trust-badge-content">
                 <h3 className="sndf-trust-badge-title">{badge.title}</h3>
@@ -212,7 +217,12 @@ const badgesData = [
 
         {/* IMAGE */}
         <div className="about-image">
-          <img src={aboutImg} alt="about" />
+          <img src={aboutImg} 
+          alt="Professional security and investigation team"
+          loading="lazy"
+          width="500"
+          height="400"
+          />
         </div>
 
         {/* CONTENT */}
@@ -245,7 +255,7 @@ const badgesData = [
           </div>
 
           {/* BUTTON */}
-          <Link to="/about" className="about-btn">
+          <Link to="/about" className="about-btn" aria-label="Read more about SNDF security services">
           Read More →
         </Link>
 
@@ -270,7 +280,7 @@ const badgesData = [
     <div className="services-grid">
 
         
-      <a href="/services/ndf" className="service-card" data-aos="fade-up" data-aos-delay="100">
+      <a href="/services/ndf" className="service-card" aria-label="Detective Investigation Services" data-aos="fade-up" data-aos-delay="100">
         <div className="icon"><FaUserSecret /></div>
         <h3>Detective Investigation Services</h3>
         <h5>NDF</h5>
@@ -278,7 +288,7 @@ const badgesData = [
       </a>
 
       {/* 2 - NDF Detective Services */}
-      <a href="/services/ndf" className="service-card" data-aos="fade-up" data-aos-delay="100">
+      <a href="/services/ndf" className="service-card"  aria-label="Cyber Crime Investigation Services" data-aos="fade-up" data-aos-delay="100">
         <div className="icon"><FaUserSecret /></div>
         <h3>Cyber Crime Investigation</h3>
         <h5>NDF</h5>
@@ -286,7 +296,7 @@ const badgesData = [
 </a>
 
       {/* 3 - OWL Security */}
-      <a href="/services/owl" className="service-card" data-aos="fade-up" data-aos-delay="200">
+      <a href="/services/owl" className="service-card"  aria-label="CCTV Surveillance and Monitoring Services" data-aos="fade-up" data-aos-delay="200">
         <div className="icon"><FaSearch /></div>
         <h3>CCTV Surveillance & Monitoring</h3>
         <h5>OWL Security</h5>
@@ -294,7 +304,7 @@ const badgesData = [
       </a>
 
       {/* 4 - SNDF Detective Course */}
-      <a href="/course" className="service-card" data-aos="fade-up" data-aos-delay="300">
+      <a href="/course" className="service-card" aria-label="Detective Investigation Course" data-aos="fade-up" data-aos-delay="300">
         <div className="icon"><FaUserCheck /></div>
         <h3>Detective Investigation Course</h3>
         <h5>DIC</h5>
@@ -302,7 +312,8 @@ const badgesData = [
       </a>
 
       {/* 5 - SNDF Guard Services */}
-      <a href="/services/sndf" className="service-card" data-aos="fade-up" data-aos-delay="400">
+      <a href="/services/sndf" className="service-card"aria-label="Security Guard Services"
+                                      data-aos="fade-up" data-aos-delay="400">
         <div className="icon"><FaShieldAlt /></div>
         <h3>Guard Services</h3>
         <h5>SNDF</h5>
@@ -310,7 +321,7 @@ const badgesData = [
       </a>
 
       {/* 6 - Spydefence Summer Camp */}
-      <a href="/services/spydefence" className="service-card" data-aos="fade-up" data-aos-delay="500">
+      <a href="/services/spydefence" className="service-card"  aria-label="Spy Defence Training and Summer Camp" data-aos="fade-up" data-aos-delay="500">
         <div className="icon"><FaUserLock /></div>
         <h3>Summer Camp</h3>
         <h5>Spy Defence</h5>
@@ -336,33 +347,33 @@ const badgesData = [
             </p>
 
             <div className="why-points">
-              <div><FaCheckCircle /> Experienced & Verified Team</div>
-              <div><FaCheckCircle /> 100% Confidential Investigations</div>
-              <div><FaCheckCircle /> Live Monitoring</div>
-              <div><FaCheckCircle /> Fast Response & Support</div>
-              <div><FaCheckCircle /> Advanced Surveillance Technology</div>
+              <div><FaCheckCircle aria-hidden="true"/> Experienced & Verified Team</div>
+              <div><FaCheckCircle aria-hidden="true"/> 100% Confidential Investigations</div>
+              <div><FaCheckCircle aria-hidden="true"/> Live Monitoring</div>
+              <div><FaCheckCircle aria-hidden="true"/> Fast Response & Support</div>
+              <div><FaCheckCircle aria-hidden="true"/> Advanced Surveillance Technology</div>
             </div>
           </div>
 
           {/* RIGHT */}
           <div className="why-right">
 
-            <div className="why-card">
+            <div className="why-card" aria-label="3500 plus happy clients">
              <Counter target={3500} duration={2000} />
               <p>Happy Clients</p>
             </div>`
 
-          <div className="why-card">
+          <div className="why-card" aria-label="3500 plus happy clients">
             <Counter target={5} duration={1000} />
             <p>Years Experience</p>
           </div>
 
-          <div className="why-card">
+          <div className="why-card" aria-label="3500 plus happy clients">
             <Counter target={1200} duration={1800} />
             <p>Cases Solved</p>
           </div>
 
-          <div className="why-card">
+          <div className="why-card" aria-label="3500 plus happy clients">
             <h3>24/7</h3>
             <p>Support</p>
           </div>
@@ -377,7 +388,7 @@ const badgesData = [
       {/* testimonial sections///////////////////////////////////////////////////// */}
 
       
-<section className="testimonial">
+<section className="testimonial"  aria-label="Client testimonials">
   <div className="testimonial-container">
 
     <h2 className="section-title" data-aos="fade-up">Testimonials</h2>
@@ -442,7 +453,7 @@ const badgesData = [
           <div className="testimonial-card">
             <span className="badge">{item.badge}</span>
 
-            <div className="stars">⭐⭐⭐⭐⭐</div>
+            <div className="stars" aria-label="5 star rating">⭐⭐⭐⭐⭐</div>
 
             <p>{item.text}</p>
 
@@ -462,7 +473,7 @@ const badgesData = [
 
 {/* our clients.......................................................... */}
 
-<section className="sndf-client-logos-only">
+<section className="sndf-client-logos-only"  aria-label="Trusted client organizations">
       <div className="sndf-client-logos-only-container">
         
         {/* Professional Header */}
@@ -527,11 +538,11 @@ const badgesData = [
     <div className="cta-right">
       <h3>Start Your Case Today</h3>
 
-      <a href="/contact" className="cta-btn-primary">
+      <a href="/contact" className="cta-btn-primary"  aria-label="Get free consultation for investigation services">
         Get Free Consultation
       </a>
 
-      <a href="tel:+918007341905" className="cta-btn-secondary">
+      <a href="tel:+918007341905" className="cta-btn-secondary" aria-label="Call SNDF now">
         Call Now
       </a>
 
@@ -545,7 +556,7 @@ const badgesData = [
   </div>
 </section>
 
-    </>
+</main>
   );
 };
 

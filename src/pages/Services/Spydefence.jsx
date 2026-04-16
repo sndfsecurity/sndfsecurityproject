@@ -352,7 +352,7 @@ const Spydefence = () => {
             <FaFacebookF />
           </a>
 
-          <a href="#" className="instagram-icon">
+          <a href="https://www.instagram.com/spy_defence_academy?igsh=YzR5NnpjazE3d3F5&utm_source=qr" className="instagram-icon">
             <FaInstagram />
           </a>
 

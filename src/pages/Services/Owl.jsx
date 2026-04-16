@@ -20,13 +20,14 @@ import {
 
 function Owl() {
   return (
-    <>
+    <main>
       <Helmet>
-        <title>OWL Surveillance Services | Advanced Monitoring</title>
-        <meta
+        <title>Owl Surveillance Services in India | 24/7 CCTV & Security Monitoring</title>
+       <meta
           name="description"
-          content="OWL offers advanced surveillance and monitoring solutions ensuring safety and real-time protection."
+          content="Professional Owl Surveillance Services in India with 24/7 CCTV monitoring, mobile patrol, night surveillance, and quick response teams. Secure your property today."
         />
+        <link rel="canonical" href="https://www.sndfndf.com/services/owl" />
       </Helmet>
 
       {/* HERO */}
@@ -45,13 +46,13 @@ function Owl() {
               Advanced night surveillance and intelligent monitoring solutions
               designed to protect your property and assets 24/7 with complete reliability.
             </p>
-
+            
             <div className="owl-buttons">
-              <a href="tel:+918956159489" className="owl-btn-primary">
+              <a href="tel:+918956159489" className="owl-btn-primary"  aria-label="Call us for Owl security services">
                 Call Now
               </a>
 
-              <a href="#owl" className="owl-btn-outline">
+              <a href="#owl" className="owl-btn-outline"  aria-label="Send enquiry for Owl security services">
                 Send Enquiry
               </a>
             </div>
@@ -65,7 +66,7 @@ function Owl() {
 
           {/* RIGHT IMAGE */}
           <div className="owl-hero-right">
-            <img src={owl} alt="security" />
+            <img src={owl} alt="Owl surveillance security monitoring service in India" loading="lazy" />
           </div>
 
         </div>
@@ -192,18 +193,36 @@ function Owl() {
 
             <div className="owl-extra-contact">
 
-              <a href="mailto:owls.surveillance@gmail.com" className="owl-extra-email">
-                <FaEnvelope /> owls.surveillance@gmail.com
+              <a href="mailto:owls.surveillance@gmail.com" className="owl-extra-email"  aria-label="Send email to Owl surveillance team">
+                <FaEnvelope className="owl-extra-email-icon"/> owls.surveillance@gmail.com
               </a>
 
-              <div className="owl-extra-social">
-                <a href="https://wa.me/918956159489" target="_blank" rel="noreferrer">
-                  <FaWhatsapp />
-                </a>
-                <a href="#"><FaFacebookF /></a>
-                <a href="#"><FaInstagram /></a>
-                <a href="#"><FaYoutube /></a>
-              </div>
+  {/* SOCIAL ICONS */}
+  <div className="owl-extra-social">
+
+    <a href="https://wa.me/918956159489" target="_blank" rel="noreferrer" className="owl-extra-icon whatsapp"  aria-label="Chat with us on WhatsApp">
+      <FaWhatsapp aria-hidden="true"/>
+    </a>
+
+    <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon facebook" aria-label="Visit our Facebook page">
+      <FaFacebookF aria-hidden="true"/>
+    </a>
+
+    <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon instagram" aria-label="Visit our Instagram page">
+      <FaInstagram aria-hidden="true"/>
+    </a>
+
+    <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon youtube"  aria-label="Visit our YouTube channel">
+      <FaYoutube aria-hidden="true"/>
+    </a>
+
+
+  </div>
+
+  <p className="social-proof">
+  Follow us for latest updates and security insights.
+</p>
+
 
             </div>
           </div>
@@ -212,9 +231,10 @@ function Owl() {
             <h3>Send Enquiry</h3>
 
             <form>
-              <input type="text" placeholder="Your Name" required />
-              <input type="tel" placeholder="Mobile Number" required />
-              <textarea placeholder="Your Message"></textarea>
+
+             <input type="text" placeholder="Your Name" required aria-label="Your Name" />
+              <input type="tel" placeholder="Mobile Number" required aria-label="Mobile Number" />
+              <textarea placeholder="Your Message" aria-label="Your Message"></textarea>
 
               <button type="submit" className="owl-btn-primary">
                 Submit
@@ -225,8 +245,13 @@ function Owl() {
         </div>
       </section>
 
-    </>
+<p style={{display: "none"}}>
+  owl surveillance services, cctv monitoring india, night security service, mobile patrol security, quick response team security india
+</p>
+
+    </main>
   );
 }
+
 
 export default Owl;

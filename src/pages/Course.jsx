@@ -20,21 +20,29 @@ const Course = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       once: true,
     });
   }, []);
 
   return (
-    <>
+    <main>
 
-    <Helmet>
-      <title>Detective Investigation Course | Become a Professional Investigator</title>
-      <meta 
-        name="description" 
-        content="Enroll in SNDF Detective Investigation Course and learn surveillance, case analysis, and field investigation from experts." 
-      />
-    </Helmet>
+    
+<Helmet>
+  <title>Detective Investigation Course (DIC) | SNDF Training Program</title>
+
+  <meta
+    name="description"
+    content="Join SNDF Detective Investigation Course (DIC) and learn surveillance, field investigation, cybercrime basics, and real case handling with practical training."
+  />
+
+  <meta name="keywords" content="detective course india, investigation training, private detective course, surveillance training, SNDF course" />
+
+  <link rel="canonical" href="https://www.sndfndf.com/course" />
+</Helmet>
+
+
 
       {/* ===== HERO SECTION ===== */}
 
@@ -70,7 +78,7 @@ const Course = () => {
 
             <div className="stat-box" data-aos="zoom-in">
                 <div className="stat-icon-box calendar">
-                <FaCalendarAlt />
+                <FaCalendarAlt aria-hidden="true"/>
                 </div>
                 <h3>90+</h3>
                 <p>Days Training</p>
@@ -78,7 +86,7 @@ const Course = () => {
 
             <div className="stat-box" data-aos="zoom-in" data-aos-delay="100">
                 <div className="stat-icon-box tools">
-                <FaTools />
+                <FaTools aria-hidden="true"/>
                 </div>
                 <h3>100%</h3>
                 <p>Practical Work</p>
@@ -86,7 +94,7 @@ const Course = () => {
 
             <div className="stat-box" data-aos="zoom-in" data-aos-delay="200">
                 <div className="stat-icon-box user">
-                <FaUserTie />
+                <FaUserTie aria-hidden="true"/>
                 </div>
                 <h3>Offline</h3>
                 <p>Mode</p>
@@ -94,7 +102,7 @@ const Course = () => {
 
             <div className="stat-box" data-aos="zoom-in" data-aos-delay="300">
                 <div className="stat-icon-box certificate">
-                <FaCertificate />
+                <FaCertificate aria-hidden="true"/>
                 </div>
                 <h3>Certified</h3>
                 <p>Course</p>
@@ -109,12 +117,12 @@ const Course = () => {
 
 {/* ///////////////////////////////////////////////////////////// */}
 
- <section className="dic-info">
+ <section className="dic-info" aria-labelledby="dic-heading">
       <div className="container">
 
         {/* HEADING */}
         <div className="dic-header" data-aos="fade-up">
-          <h2>
+          <h2 id="dic-heading">
             What is DIC Course?
           </h2>
           <p>
@@ -127,25 +135,25 @@ const Course = () => {
         <div className="dic-grid">
 
           <div className="dic-card" data-aos="zoom-in">
-            <FaUserSecret className="dic-icon" />
+            <FaUserSecret className="dic-icon" aria-hidden="true"/>
             <h3>Field Investigation</h3>
             <p>Learn real-world investigation and surveillance techniques.</p>
           </div>
 
           <div className="dic-card" data-aos="zoom-in" data-aos-delay="100">
-            <FaLaptopCode className="dic-icon" />
+            <FaLaptopCode className="dic-icon" aria-hidden="true"/>
             <h3>Cyber Crime</h3>
             <p>Understand digital tracking and cybercrime basics.</p>
           </div>
 
           <div className="dic-card" data-aos="zoom-in" data-aos-delay="200">
-            <FaSearch className="dic-icon" />
+            <FaSearch className="dic-icon" aria-hidden="true"/>
             <h3>Case Handling</h3>
             <p>Develop skills to manage and solve investigation cases.</p>
           </div>
 
           <div className="dic-card" data-aos="zoom-in" data-aos-delay="300">
-            <FaCertificate className="dic-icon" />
+            <FaCertificate className="dic-icon" aria-hidden="true"/>
             <h3>Certification</h3>
             <p>Get certified after successful course completion.</p>
           </div>
@@ -366,19 +374,19 @@ const Course = () => {
     <div className="gallery-grid">
 
       <div className="gallery-item">
-        <img src={dic1} alt="Training" />
+        <img src={dic1} alt="Detective training session at SNDF" loading="lazy" />
       </div>
 
       <div className="gallery-item">
-        <img src={dic2} alt="Training" />
+        <img src={dic2} alt="Detective training session at SNDF" loading="lazy"/>
       </div>
 
       <div className="gallery-item">
-        <img src={dic3} alt="Training" />
+        <img src={dic3} alt="Detective training session at SNDF" loading="lazy" />
       </div>
 
       <div className="gallery-item">
-        <img src={dic4} alt="Training" />
+        <img src={dic4} alt="Detective training session at SNDF" loading="lazy" />
       </div>
 
     </div>
@@ -388,7 +396,8 @@ const Course = () => {
       <div className="video-card">
         <iframe
           src="https://www.youtube.com/embed/SBZvwDqWQyE?rel=0&modestbranding=1&controls=1&showinfo=0"
-          title="Training Video 1"
+          title="SNDF detective training video"
+          loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
@@ -397,7 +406,8 @@ const Course = () => {
       <div className="video-card">
         <iframe
           src="https://www.youtube.com/embed/gJQ_2VIzbE4?rel=0&modestbranding=1&controls=1&showinfo=0"
-          title="Training Video 2"
+          title="SNDF detective training video2"
+          loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
@@ -431,7 +441,7 @@ const Course = () => {
       </ul>
 
 
-        <div className="eligibility-box">
+    <div className="eligibility-box">
     <h4>Who Can Join?</h4>
     <ul>
         <li>✔ Minimum 10th / 12th Pass</li>
@@ -539,10 +549,12 @@ const Course = () => {
       </p>
 
       <div className="cta-buttonss">
-        <button className="btn-primary">Book Your Seat</button>
-            <a href="/brochure.pdf" download>
-        <button className="btn-outline">Download Brochure</button>
+        <button className="btn-primary" aria-label="Book your seat for detective course">Book Your Seat</button>
+        
+        <a href="/brochure.pdf" download className="btn-outline" aria-label="Download course brochure">
+         Download Brochure
         </a>
+
       </div>
 
       <div className="sndfguard-extra-contact">
@@ -550,13 +562,13 @@ const Course = () => {
         {/* EMAIL ONLY */}
         <div className="sndfguard-extra-contact-infodic">
       
-          <a href="tel:+918484834570" className="sndfguard-extra-itemdic">
-              <FaPhoneAlt className="sndf-ndf-icon phone" />
+          <a href="tel:+918484834570" className="sndfguard-extra-itemdic" aria-label="Call SNDF course support">
+              <FaPhoneAlt className="sndf-ndf-icon phone" aria-hidden="true"/>
               +91 8484834570
             </a>
 
-          <a href="mailto:ndfdiclectures@gmail.com" className="sndfguard-extra-itemdic">
-            <FaEnvelope className="sndfguard-extra-icon email" />
+          <a href="mailto:ndfdiclectures@gmail.com" className="sndfguard-extra-itemdic" aria-label="Send email to SNDF course team">
+            <FaEnvelope className="sndfguard-extra-icon email" aria-hidden="true"/>
             ndfdiclectures@gmail.com
           </a>
       
@@ -565,20 +577,20 @@ const Course = () => {
         {/* SOCIAL */}
         <div className="sndfguard-extra-social">
       
-          <a href="https://wa.me/918484834570" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon whatsapp">
-            <FaWhatsapp />
+          <a href="https://wa.me/918484834570" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon whatsapp" aria-label="Visit Whatsapp">
+            <FaWhatsapp aria-hidden="true"/>
           </a>
       
-          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon facebook">
-            <FaFacebookF />
+          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon facebook" aria-label="Visit Facebook page">
+            <FaFacebookF aria-hidden="true"/>
           </a>
       
-          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon instagram">
-            <FaInstagram />
+          <a href="https://www.instagram.com/detective_investigation_coures?igsh=azkyc3F1bDhxMWRx&utm_source=qr" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon instagram" aria-label="Visit Instagram page">
+            <FaInstagram aria-hidden="true"/>
           </a>
       
-          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon youtube">
-            <FaYoutube />
+          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon youtube" aria-label="Visit Youtube page">
+            <FaYoutube aria-hidden="true"/>
           </a>
       
         </div>
@@ -593,7 +605,7 @@ const Course = () => {
 
 </div>
 
-</>
+</main>
   );
 };
 
