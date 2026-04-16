@@ -118,24 +118,24 @@ const closeNavbar = () => {
 
   <div className="d-flex gap-3 fs-5">
 
-      <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer">
-        <FaFacebookF style={{ color: "#1877F2", cursor: "pointer" }} />
+      <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+        <FaFacebookF  aria-hidden="true" style={{ color: "#1877F2", cursor: "pointer" }} />
       </a>
 
-      <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer">
-        <FaInstagram style={{ color: "#E4405F", cursor: "pointer" }} />
+      <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
+        <FaInstagram  aria-hidden="true" style={{ color: "#E4405F", cursor: "pointer" }} />
       </a>
 
-      <a href="https://www.linkedin.com/in/nationalist-detective-force-034907376" target="_blank" rel="noopener noreferrer">
-        <FaLinkedin style={{ color: "#0A66C2", cursor: "pointer" }} />
+      <a href="https://www.linkedin.com/in/nationalist-detective-force-034907376" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
+        <FaLinkedin  aria-hidden="true" style={{ color: "#0A66C2", cursor: "pointer" }} />
       </a>
 
-      <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer">
-        <FaWhatsapp style={{ color: "#25D366", cursor: "pointer" }} />
+      <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <FaWhatsapp  aria-hidden="true" style={{ color: "#25D366", cursor: "pointer" }} />
       </a>
 
-      <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer">
-        <FaYoutube style={{ color: "#FF0000", cursor: "pointer" }} />
+      <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel">
+        <FaYoutube  aria-hidden="true" style={{ color: "#FF0000", cursor: "pointer" }} />
       </a>
 
 </div>
@@ -155,40 +155,43 @@ const closeNavbar = () => {
             <option>मराठी</option>
           </select>
 
-          <button className="enquiry-btn btn btn-danger btn-sm" onClick={() => setShowModal(true)}>
+          <button  type="button" className="enquiry-btn btn btn-danger btn-sm" onClick={() => setShowModal(true)}>
             Enquiry
           </button>
         </div>
       </div>
 
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
-        <Link className="navbar-brand" to="/">
-          <div className="logo-container">
+<nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
+  <Link className="navbar-brand" to="/">
+
+  <div className="logo-container">
+
   {/* 🔥 BIG LOGO */}
-  <img src={logo} alt="main-logo" className="main-logo" />
+  <img src={logo} alt="SNDF Security Services Logo" loading="lazy" className="main-logo" />
 
   {/* 🔥 SMALL LOGOS */}
   {/* 🔥 SMALL LOGOS */}
 <Link to="/services/ndf">
-  <img src={logo1} alt="ndf" className="sub-logo" />
+  <img src={logo1}  alt="NDF Detective Services Logo" loading="lazy" className="sub-logo" />
 </Link>
 
 <Link to="/services/sndf">
-  <img src={logo2} alt="sndf" className="sub-logo" />
+  <img src={logo2} alt="SNDF Guard Services Logo" loading="lazy" className="sub-logo" />
 </Link>
 
 <Link to="/services/owl">
-  <img src={logo3} alt="owl" className="sub-logo" />
+  <img src={logo3}  alt="Owl Security Services Logo" loading="lazy" className="sub-logo" />
 </Link>
 
 <Link to="/services/spydefence">
-  <img src={logo4} alt="spy" className="sub-logo" />
+  <img src={logo4} alt="Spy Defence Services Logo" loading="lazy" className="sub-logo" />
 </Link>
 
 <Link to="/course/dic">
   <img 
     src={logo5} 
-    alt="dic" 
+    alt="Detective Investigation Course Logo" 
+    loading="lazy"
     className="sub-logo" 
     title="Click here for more info" /> 
 </Link>
@@ -196,7 +199,8 @@ const closeNavbar = () => {
 
         </Link>
 
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+         aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
 
@@ -207,7 +211,7 @@ const closeNavbar = () => {
             <li className="nav-item"><Link className="nav-link" to="/about" onClick={closeNavbar}>About</Link></li>
 
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+              <a className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
               <ul className="dropdown-menu">
                 <li><Link to="/services/ndf" className="dropdown-item" onClick={closeNavbar}>NDF Detective</Link></li>
                 <li><Link to="/services/sndf" className="dropdown-item" onClick={closeNavbar}>SNDF Guard</Link></li>
@@ -217,7 +221,7 @@ const closeNavbar = () => {
             </li>
 
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Media</a>
+          <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Media</a>
               <ul className="dropdown-menu">
                 <li><Link to="/media/gallery" className="dropdown-item" onClick={closeNavbar}>Gallery</Link></li>
                 <li><a className="dropdown-item" onClick={closeNavbar}>Videos</a></li>
@@ -225,7 +229,7 @@ const closeNavbar = () => {
             </li>
 
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Branches</a>
+              <a className="nav-link dropdown-toggle"   role="button" data-bs-toggle="dropdown"  aria-expanded="false">Branches</a>
               <ul className="dropdown-menu">
                 <li><Link to="/branches/pune" className="dropdown-item" onClick={closeNavbar}>Head Office (Pune)</Link></li>
                 <li><a className="dropdown-item">Mumbai</a></li>

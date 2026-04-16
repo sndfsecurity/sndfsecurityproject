@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -39,12 +40,36 @@ import ScrollToTop from "./components/ScrollToTop";
 // MEDIA
 
 
-
-
-
 function App() {
   return (
     <>
+
+    <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SecurityService",
+            "name": "SNDF Security Services",
+            "url": "https://www.sndfndf.com",
+            "logo": "https://www.sndfndf.com/logo.png",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+919970383155",
+              "contactType": "customer service",
+              "areaServed": "IN"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Pune",
+              "addressRegion": "Maharashtra",
+              "postalCode": "411046",
+              "addressCountry": "IN"
+            }
+          })}
+        </script>
+      </Helmet>
+
+      
       <Router>
 
         <Navbar />
@@ -54,7 +79,7 @@ function App() {
 
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/course" element={<Course />} />
+          {/* <Route path="/course" element={<Course />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
           <Route path="/blog" element={<Blog />} />
@@ -86,9 +111,9 @@ function App() {
           <Route path="/services/spydefence" element={<Spydefence />} />
 
 
+            <Route path="/course" element={<Course />} />
+            <Route path="/course/dic" element={<Course />} />
 
-<Route path="/course" element={<Course />} />
-<Route path="/course/dic" element={<Course />} />
         </Routes>
 
         <Footer />

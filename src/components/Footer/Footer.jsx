@@ -3,6 +3,7 @@ import "./Footer.css";
 import logo from "../../assets/images/LOGO.png";
 import { Link } from "react-router-dom";
 
+
 import {
   FaFacebookF,
   FaTwitter,
@@ -17,6 +18,10 @@ import {
 
 const Footer = () => {
   return (
+
+
+    <main>
+
     <footer id="footer" className="footer" role="contentinfo">
         <div className="footer-container">
 
@@ -40,24 +45,24 @@ const Footer = () => {
 <div className="social-icons">
   
   <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer"  aria-label="Facebook">
-    <FaFacebookF />
+    <FaFacebookF aria-hidden="true"/>
   </a>
 
   <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-    <FaInstagram />
+    <FaInstagram aria-hidden="true"/>
   </a>
 
   <a href="https://www.linkedin.com/in/nationalist-detective-force-034907376" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-    <FaLinkedin />
+    <FaLinkedin aria-hidden="true"/>
   </a>
 
   <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
 >
-    <FaYoutube className="yt" />
+    <FaYoutube className="yt" aria-hidden="true"/>
   </a>
 
   <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-    <FaWhatsapp className="wa" />
+    <FaWhatsapp className="wa" aria-hidden="true"/>
   </a>
 
 </div>
@@ -145,7 +150,11 @@ const Footer = () => {
         © {new Date().getFullYear()} SNDF. All rights reserved.
       </div>
     </footer>
+
+    </main>
   );
 };
 
 export default Footer;
+
+
