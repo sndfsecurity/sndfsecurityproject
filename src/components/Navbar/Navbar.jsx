@@ -167,7 +167,7 @@ const closeNavbar = () => {
   {/* 🔥 BIG LOGO */}
   <img src={logo} alt="main-logo" className="main-logo" />
 
-  🔥 SMALL LOGOS
+  {/* 🔥 SMALL LOGOS */}
   {/* 🔥 SMALL LOGOS */}
 <Link to="/services/ndf">
   <img src={logo1} alt="ndf" className="sub-logo" />
