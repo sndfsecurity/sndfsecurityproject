@@ -208,8 +208,8 @@ function Owl() {
       <FaFacebookF aria-hidden="true"/>
     </a>
 
-    <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon instagram" aria-label="Visit our Instagram page">
-      <FaInstagram aria-hidden="true"/>
+    <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon instagram">
+      <FaInstagram />
     </a>
 
     <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon youtube"  aria-label="Visit our YouTube channel">

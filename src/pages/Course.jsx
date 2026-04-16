@@ -585,8 +585,8 @@ const Course = () => {
             <FaFacebookF aria-hidden="true"/>
           </a>
       
-          <a href="https://www.instagram.com/detective_investigation_coures?igsh=azkyc3F1bDhxMWRx&utm_source=qr" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon instagram" aria-label="Visit Instagram page">
-            <FaInstagram aria-hidden="true"/>
+          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon instagram">
+            <FaInstagram />
           </a>
       
           <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon youtube" aria-label="Visit Youtube page">
