@@ -160,6 +160,7 @@ const closeNavbar = () => {
           </button>
         </div>
       </div>
+      
 
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
         <Link className="navbar-brand" to="/">
@@ -169,9 +170,11 @@ const closeNavbar = () => {
 
   {/* 🔥 SMALL LOGOS */}
   {/* 🔥 SMALL LOGOS */}
-<Link to="/services/ndf">
-  <img src={logo1} alt="ndf" className="sub-logo" />
-</Link>
+<div className="ndf-logo-wrapper">
+  <Link to="/services/ndf">
+    <img src={logo1} alt="ndf" className="sub-logo" />
+  </Link>
+</div>
 
 <Link to="/services/sndf">
   <img src={logo2} alt="sndf" className="sub-logo" />
@@ -186,13 +189,16 @@ const closeNavbar = () => {
 </Link>
 
 <Link to="/course/dic">
-  <img 
-    src={logo5} 
-    alt="dic" 
-    className="sub-logo" 
-    title="Click here for more info" /> 
+<img src={logo5} alt="dic" className="sub-logo" />
 </Link>
+<div className="logo-text">
+  🢀 CLICK LOGO FOR MORE INFO
+  </div>
+
 </div>
+
+
+
 
         </Link>
 

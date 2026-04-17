@@ -37,7 +37,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 
 // MEDIA
-
+import Gallery from "./pages/Media/Gallery";
 
 
 
@@ -78,6 +78,7 @@ function App() {
 
 
           {/* MEDIA */}
+          <Route path="/media/gallery" element={<Gallery />} />
 
           {/* SERVICES */}
           <Route path="/services/ndf" element={<Ndf />} />
