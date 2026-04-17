@@ -461,6 +461,7 @@
   position: relative;
   width: 50%;
   padding: 20px 40px;
+   contain: content;
 }
 
 /* LEFT SIDE */

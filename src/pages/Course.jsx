@@ -6,7 +6,9 @@ import { FaCalendarAlt, FaTools, FaUserTie, FaCertificate } from "react-icons/fa
 import { FaUserSecret, FaLaptopCode, FaSearch } from "react-icons/fa";
 
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
-import { FaInstagram, FaFacebookF,FaYoutube} from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 import dic1 from "../assets/images/dic1.webp";
 import dic2 from "../assets/images/dic2.webp";
@@ -18,12 +20,26 @@ import { Helmet } from "react-helmet-async";
 
 const Course = () => {
 
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 800,
+  //     once: true,
+  //   });
+  // }, []);
+
   useEffect(() => {
+  const loadAOS = async () => {
+    const AOS = (await import("aos")).default;
+    await import("aos/dist/aos.css");
+
     AOS.init({
       duration: 800,
       once: true,
     });
-  }, []);
+  };
+
+  loadAOS();
+}, []);
 
   return (
     <main>
@@ -374,7 +390,7 @@ const Course = () => {
     <div className="gallery-grid">
 
       <div className="gallery-item">
-        <img src={dic1} alt="Detective training session at SNDF" loading="lazy" />
+        <img src={dic1} alt="Detective training session at SNDF"  loading="lazy" />
       </div>
 
       <div className="gallery-item">
@@ -395,9 +411,13 @@ const Course = () => {
     <div className="video-section">
       <div className="video-card">
         <iframe
-          src="https://www.youtube.com/embed/SBZvwDqWQyE?rel=0&modestbranding=1&controls=1&showinfo=0"
+          src="https://www.youtube.com/embed/SBZvwDqWQyE?rel=0"
           title="SNDF detective training video"
           loading="lazy"
+          width="560"
+          height="315"
+          style={{ border: "none" }}
+
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
@@ -405,9 +425,13 @@ const Course = () => {
 
       <div className="video-card">
         <iframe
-          src="https://www.youtube.com/embed/gJQ_2VIzbE4?rel=0&modestbranding=1&controls=1&showinfo=0"
+          src="https://www.youtube.com/embed/gJQ_2VIzbE4?rel=0"
           title="SNDF detective training video2"
           loading="lazy"
+          width="560"
+          height="315"
+          style={{ border: "none" }}
+
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
@@ -586,7 +610,7 @@ const Course = () => {
           </a>
       
           <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon instagram">
-            <FaInstagram />
+            <FaInstagram aria-hidden="true"/>
           </a>
       
           <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon youtube" aria-label="Visit Youtube page">
