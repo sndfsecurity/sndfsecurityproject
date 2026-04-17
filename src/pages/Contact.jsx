@@ -49,11 +49,12 @@ const Contact = () => {
 <main>
 
 <Helmet>
-  <title>Contact SNDF Detective Agency | Call & Enquiry</title>
+ <title>Contact SNDF Detective Agency Pune | Call, WhatsApp & Enquiry</title>
 
   <meta 
-    name="description" 
-    content="Contact SNDF detective agency for investigation, surveillance and security services. Call now or send enquiry for quick response." />
+  name="description" 
+  content="Contact SNDF detective agency in Pune for private investigation, surveillance, and security services. Call, WhatsApp or send enquiry for fast confidential support." 
+/>
 
   <link rel="canonical" href="https://www.sndfndf.com/contact" />
 </Helmet>
@@ -72,9 +73,11 @@ const Contact = () => {
       </h1>
 
       <p>
-        Connect with India’s trusted security and investigation professionals.
-        We are available 24/7 to assist you with complete confidentiality.
-      </p>
+      Contact SNDF, a trusted <strong>detective agency in Pune</strong> for 
+      professional investigation, surveillance and 
+      <strong> security services in Pune</strong>. Our expert team is available 
+      24/7 for confidential support.
+    </p>
 
       <div className="hero-btnscn">
         <a href="tel:+919970383155" className="btn-red"  aria-label="Call SNDF support">Call Now</a>
@@ -103,8 +106,8 @@ const Contact = () => {
         <div className="card">
           <FaEnvelope className="icon" aria-hidden="true"/>
           <h3>Email Us</h3>
-          <p>NDF.SNDF.HR@GMAIL.COM</p>
-          <a href="mailto:NDF.SNDF.HR@GMAIL.COM">Send Mail</a>
+          <p>info@sndfndf.com</p>
+          <a href="mailto:info@sndfndf.com">Send Mail</a>
         </div>
 
         {/* WHATSAPP CARD */}
@@ -134,14 +137,15 @@ const Contact = () => {
       <h2>Enquiry Form</h2>
       <p>Fill the form and our team will contact you shortly.</p>
 
-          <label htmlFor="name">Your Name</label> <input id="name" type="text" />
-          <label htmlFor="phone">Mobile Number</label> <input id="phone" type="tel" />
+          <label htmlFor="name">Your Name</label> <input id="name" type="text" required/>
+          <label htmlFor="phone">Mobile Number</label> <input id="phone" type="tel" required/>
           <label htmlFor="address">Address</label> <input id="address" type="text" />
           <label htmlFor="requirement">Your Requirement</label> <textarea id="requirement" rows="4"></textarea>
 
           
 
           <button type="submit" aria-label="Submit enquiry form">Submit Enquiry</button>
+           
         </div>
 
     {/* RIGHT SIDE */}
@@ -167,20 +171,20 @@ const Contact = () => {
 <div className="office-socials">
 
   <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Facebook page">
-    <FaFacebookF />
+    <FaFacebookF aria-hidden="true"/>
   </a>
 
   <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Instagram page">
-    <FaInstagram />
+    <FaInstagram aria-hidden="true"/>
   </a>
 
 
   <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Whatsapp">
-    <FaWhatsapp />
+    <FaWhatsapp aria-hidden="true"/>
   </a>
 
   <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Youtube Channel">
-    <FaYoutube />
+    <FaYoutube aria-hidden="true"/>
   </a>
 
 </div>
@@ -196,8 +200,7 @@ const Contact = () => {
               <Link to="/branches/mumbai"  aria-label="Visit Mumbai branch">Mumbai</Link>
               <Link to="/branches/hyderabad"  aria-label="Visit Hyderabad branch">Hyderabad</Link>
               <Link to="/branches/assam"  aria-label="Visit Assam branch">Assam</Link>             
-              {/* <Link to="/branches/delhi">Delhi</Link>
-              <Link to="/branches/nashik">Nashik</Link> */}
+      
             </div>
           </div>
 

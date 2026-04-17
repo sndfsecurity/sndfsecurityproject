@@ -57,11 +57,13 @@ const PuneHero = () => {
   
 
 return (
-<>
+<main>
 
 <Helmet>
-  <title>SNDF Pune Branch | Head Office & Operations</title>
-  <meta name="description" content="Visit SNDF Pune head office for professional security and investigation services with expert support." />
+  <title>Detective Agency in Pune | SNDF Security & Investigation Services</title>
+<meta 
+  name="description" 
+  content="SNDF is a trusted detective agency in Pune offering private investigation, surveillance, and professional security services across Pune and nearby areas. Contact our expert team today." />
 </Helmet>
 
 
@@ -72,14 +74,20 @@ return (
     <div className="hero-text" data-aos="fade-up">
       <span className="hero-badge">Head Office</span>
 
-      <h1>
-        Pune <span>Headquarters</span>
-      </h1>
+     
+      <h1>Detective Agency & <span>Security Services in Pune</span></h1>
 
       <p>
+          SNDF is a leading <strong>detective agency in Pune</strong> providing 
+          professional investigation services, surveillance and 
+          <strong> security services in Pune</strong> for individuals, corporates and legal cases.
+        </p>
+      
+
+      {/* <p>
         The central command hub of SNDF, managing operations, investigations,
         and security services with precision, confidentiality, and nationwide coordination.
-      </p>
+      </p> */}
 
       <div className="hero-buttonsb">
             <button 
@@ -110,7 +118,7 @@ return (
 
     {/* RIGHT IMAGE */}
     <div className="hero-image" data-aos="fade-left">
-      <img src={puneOffice} alt="Head Office" />
+      <img src={puneOffice}alt="SNDF detective agency Pune office" />
     </div>
 
   </div>
@@ -193,10 +201,10 @@ return (
     <h2>Office Glimpse</h2>
 
     <div className="gallery-grid" ref={galleryRef}>
-      <img src={course2} alt="office" />
-      <img src={puneOffice} alt="office" />
-      <img src={course2} alt="office" />
-      <img src={puneOffice} alt="office" />
+      <img src={course2} alt="detective agency office Pune"/>
+      <img src={puneOffice}alt="detective agency office Pune" />
+      <img src={course2} alt="detective agency office Pune" />
+      <img src={puneOffice} alt="detective agency office Pune" />
     </div>
 
     <div className="gallery-btn">
@@ -270,20 +278,7 @@ return (
         </div>
       </div>
 
-      {/* Pimpri */}
-      {/* <div className="branch-card">
-        <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=800&q=80" alt="Pimpri" />
-        <div className="branch-info">
-          <h4>Pimpri-Chinchwad Branch</h4>
-          <p>3rd Floor, Metro Square, Pimpri, Pune - 411018</p>
-          <p className="branch-phone">+91 80073 41905</p>
-
-          <div className="branch-actions">
-            <a href="tel:+918007341905">Call</a>
-            <a href="https://wa.me/918007341905">WhatsApp</a>
-          </div>
-        </div>
-      </div> */}
+      
 
     </div>
 
@@ -348,8 +343,10 @@ return (
         ></iframe>
       </div>
 
-    </div>
+    </div>  
+
   </div>
+
 </section>
 
 
@@ -357,11 +354,12 @@ return (
 <section className="quick-strip">
   <div className="container">
     <p>Need immediate assistance? Our team is available 24/7 for urgent cases.</p>
-    <a href="tel:+919970383155">Call Now →</a>
+    <a href="tel:+919970383155">Talk to Expert Investigator →</a>
   </div>
 </section>
 
-    </>
+</main>
+
   );
 };
 

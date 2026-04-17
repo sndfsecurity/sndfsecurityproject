@@ -404,6 +404,11 @@
   margin-bottom: 25px;
 }
 
+.enquiry-form label{
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
 .enquiry-form input,
 .enquiry-form textarea {
   width: 100%;
