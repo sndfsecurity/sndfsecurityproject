@@ -3,6 +3,8 @@ import "./About.css";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 
+
+
 const About = () => {
 
   const navigate = useNavigate();
@@ -42,13 +44,9 @@ const About = () => {
             <h3>Professional Investigation Services</h3>
 
             <p className="common-text">
-              Established in 2020, SNDF Private Limited was founded with a commitment to integrity, transparency, and professional excellence in the field of investigative and security services. The company initially began as a focused investigation unit, dedicated to handling sensitive and complex cases with precision, confidentiality, and ethical practices.
+              SNDF Private Limited, established in 2020, is a professional investigation and security services company committed to integrity, transparency, and excellence. Starting as a focused investigation unit, it has grown into a structured organization with specialized divisions including NDF, SNDF Guard, OWL, SPY, and DIC.
 
-              Over time, SNDF Private Limited evolved into a structured organization with multiple specialized divisions, including NDF, SNDF Guard, OWL, SPY, and DIC. Each division is designed to deliver expertise-driven solutions across security operations, surveillance services, confidential investigations, and cyber intelligence.
-
-              Through continuous innovation, operational discipline, and adoption of advanced technologies, SNDF Private Limited has strengthened its capabilities to deliver accurate, reliable, and result-oriented services. The organization is driven by a commitment to maintain the highest standards of professionalism and client trust.
-
-              Today, SNDF Private Limited is recognized as a dependable name in the investigation and security industry, supported by a highly skilled team dedicated to delivering excellence with confidentiality, accuracy, and integrity.
+The company provides expert solutions in security operations, surveillance, confidential investigations, and cyber intelligence, backed by advanced technology and a skilled team. SNDF is recognized as a reliable and trusted name, delivering accurate, confidential, and result-oriented services.
             </p>
           </div>
         </section>
@@ -58,7 +56,7 @@ const About = () => {
           <div className="video-content">
             <h2>See How We Work</h2>
             <p className="common-text">
-              We combine advanced technology with expert field operations to deliver fast, accurate, and confidential investigation results. Our process includes strategic planning, modern surveillance, cyber analysis, and verified reporting—ensuring reliable outcomes with complete integrity and professionalism.
+              Our workflow is built on precision, planning, and confidentiality. From understanding client needs to execution, we ensure every step is handled with professionalism, accuracy, and a commitment to reliable results.
             </p>
           </div>
 
