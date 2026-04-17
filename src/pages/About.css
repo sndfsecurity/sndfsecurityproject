@@ -1,6 +1,6 @@
 .about-page {
   font-family: "Segoe UI", sans-serif;
-  padding-top: 130px;
+  padding-top: 150px;
 }
 
 /* ANIMATION */
@@ -33,23 +33,40 @@
 .about-page .about-content {
   width: 60%;
   color: rgb(75, 5, 116);
+  letter-spacing: 1px;
+  
 }
 
 .about-page .about-content h2 {
   color: #e40000;
+   font-size: 46px;
+   font-weight: 700;
 }
 
-.about-page .about-title {
-  font-size: 36px;
-  color: #dc2626;
+
+.about-page .about-content h3{
+  font-size: 40px;
+  font-weight: bold;
 }
+
 
 /* TEXT */
 .about-page .common-text {
-  font-size: 25px !important;
+  font-size: 23px !important;
   line-height: 2;
   color: #333;
+  letter-spacing: 1px;
+  
 }
+
+.video-content h2{
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+
 
 /* VIDEO */
 .about-page .video-split {
@@ -69,6 +86,21 @@
   height: 400px !important;
   border-radius: 12px;
 }
+
+.mv-box h2
+{
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  
+}
+
+.mv-box p{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
 
 /* DIRECTOR */
 .about-page .director {
@@ -91,6 +123,7 @@
 .about-page .mv-box {
   flex: 1;
   padding: 20px;
+  
 }
 
 .about-page .mv-box:nth-child(1) {
@@ -107,6 +140,27 @@
   padding: 70px;
   text-align: center;
   background: #ede3e6;
+}
+
+.values h2{
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.about-card h3{
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 10px;
+} 
+
+.about-card p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #555;
 }
 
 .about-page .values-grid {
@@ -189,7 +243,7 @@
 
 /* VALUES */
 .about-page .values {
-  padding: 100px;
+  padding: 60px 20px;   /* FIXED (removed 100px issue) */
   text-align: center;
   background: #f9f9f9;
 }
@@ -198,6 +252,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  justify-items: center; 
 }
 
 .about-page .about-card {
@@ -207,6 +262,8 @@
   transition: 0.3s;
   cursor: pointer;
   position: relative;
+  max-width: 500px;
+  width: 100%;
 }
 
 .about-page .about-card::before {
@@ -243,6 +300,19 @@
   color: #fff;
 }
 
+.about-page .need-help h2 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-page .need-help p {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  
+}
+
 .about-page .need-help button {
   margin-top: 20px;
   padding: 12px 30px;
@@ -251,6 +321,18 @@
   color: white;
   border-radius: 8px;
   cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 22px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;   /* smooth animation */
+}
+
+/* 🔥 HOVER EFFECT */
+.about-page .need-help button:hover {
+  background: #b30000;   /* darker red */
+  transform: translateY(-3px);  /* lift effect */
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3); /* glow shadow */
 }
 
 /* RESPONSIVE */
@@ -262,10 +344,91 @@
   .about-page .values-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  
+  .about-page .about-content h2 {
+    font-size: 36px;
+  }
+
+  .about-page .about-content h3 {
+    font-size: 32px;
+    
+  }
+
+  .about-page .common-text{
+    font-size: 20px !important;
+  }
+  .video-content h2{
+    font-size: 32px;
+  }
+
+  .mv-box h2
+  {
+    font-size: 32px;
+    letter-spacing: 1.5px;
+  }
+
+  .values h2{
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+
+  .about-card h3{
+    font-size: 28px;
+    letter-spacing: 0.5px;
+  }
+
+  .about-card p{
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .about-page .need-help h2{
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+
+   .about-page .need-help p{
+    font-size: 18px;
+   }
 }
 
 @media (max-width:576px){
   .about-page .values-grid {
     grid-template-columns: 1fr;
+  }
+
+   .about-page .about-content h2 {
+    font-size: 36px;
+  }
+
+  .about-page .about-content h3 {
+    font-size: 32px;
+    
+  }
+
+  .about-page .common-text{
+    font-size: 20px !important;
+  }
+
+  .video-content h2{
+    font-size: 32px;
+  }
+
+   .mv-box h2
+  {
+    font-size: 32px;
+    letter-spacing: 1.5px;
+  }
+
+   .values h2{
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+
+  .about-card h3{
+    font-size: 28px;
+    letter-spacing: 0.5px;
   }
 }
