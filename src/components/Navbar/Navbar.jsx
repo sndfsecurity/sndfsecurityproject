@@ -15,11 +15,12 @@ import Collapse from "bootstrap/js/dist/collapse";
 
 function Navbar() {
 
+  // ✅ ONLY FIX (dropdown + mobile close issue)
   const closeNavbar = () => {
     if (window.innerWidth < 992) {
       const nav = document.getElementById("navbarContent");
       if (nav && nav.classList.contains("show")) {
-        new Collapse(nav).hide();
+        Collapse.getOrCreateInstance(nav).hide();
       }
     }
   };
@@ -28,7 +29,6 @@ function Navbar() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [msg, setMsg] = useState("");
-
   const [errors, setErrors] = useState({ name: "", phone: "" });
 
   const handleSubmit = () => {
@@ -48,6 +48,7 @@ function Navbar() {
     }
 
     const text = `*New Enquiry - SNDF Website*%0A Name: ${name}%0A Phone: ${phone}%0A Requirement: ${msg}`;
+
     window.open(`https://wa.me/918007341905?text=${text}`, "_blank");
 
     setName("");
@@ -59,7 +60,7 @@ function Navbar() {
 
   return (
     <>
-      {/* ===== MODAL ===== */}
+      {/* ===== MODAL (UNCHANGED) ===== */}
       {showModal && (
         <div className="sn-modal-overlay" onClick={() => setShowModal(false)}>
           <div className="sn-modal-box" onClick={(e) => e.stopPropagation()}>
@@ -108,10 +109,9 @@ function Navbar() {
         </div>
       )}
 
-      {/* ===== TOP BAR ===== */}
+      {/* ===== TOP BAR (UNCHANGED EXACTLY) ===== */}
       <div className="py-2 px-3 d-flex justify-content-between align-items-center">
 
-        {/* SOCIAL */}
         <div className="d-flex gap-3 fs-5">
           <a href="#"><FaFacebookF style={{ color: "#1877F2" }} /></a>
           <a href="#"><FaInstagram style={{ color: "#E4405F" }} /></a>
@@ -120,7 +120,6 @@ function Navbar() {
           <a href="#"><FaYoutube style={{ color: "#FF0000" }} /></a>
         </div>
 
-        {/* ✅ FULL SCROLL TEXT (EN + HINDI + MARATHI) */}
         <div className="scroll-container">
           <div className="scroll-text">
             Welcome to SNDF – Thank you for visiting our website. &nbsp;&nbsp;&nbsp;
@@ -129,7 +128,6 @@ function Navbar() {
           </div>
         </div>
 
-        {/* LANGUAGE + BUTTON */}
         <div className="d-flex gap-2">
           <select className="form-select form-select-sm w-auto">
             <option>ENGLISH</option>
@@ -143,7 +141,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* ===== NAVBAR ===== */}
+      {/* ===== NAVBAR (UNCHANGED STRUCTURE) ===== */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
 
         <Link className="navbar-brand" to="/">
@@ -164,9 +162,22 @@ function Navbar() {
           </div>
         </Link>
 
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        <button
+className="navbar-toggler"
+type="button"
+onClick={()=>{
+const nav=document.getElementById("navbarContent");
+
+if(nav.classList.contains("show")){
+Collapse.getOrCreateInstance(nav).hide();
+}else{
+Collapse.getOrCreateInstance(nav).show();
+}
+
+}}
+>
+<span className="navbar-toggler-icon"></span>
+</button>
 
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav ms-auto" style={{ gap: "10px" }}>
@@ -211,7 +222,6 @@ function Navbar() {
 
           </ul>
         </div>
-
       </nav>
     </>
   );
