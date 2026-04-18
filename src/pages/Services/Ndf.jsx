@@ -6,19 +6,28 @@ import { Helmet } from "react-helmet-async";
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { FaInstagram, FaFacebookF,FaYoutube} from "react-icons/fa";
 
-import loyalty from "../../assets/images/course-bg.webp";
-import prematrimonial from "../../assets/images/pre.jpg";
-import asset from "../../assets/images/assetv.png";
-import forensic from "../../assets/images/forensic.png";
-import bgcheck from "../../assets/images/bgcheck.jpg";
-import black from "../../assets/images/black.jpg";
-import emp from "../../assets/images/emp.jpg";
-import missing from "../../assets/images/missing.png";
+import loyalty from "../../assets/images/loyalty.webp";
+import prematrimonial from "../../assets/images/pre.webp";
+import post from "../../assets/images/post.webp";
+import missing from "../../assets/images/missing.webp";
+import divorce from "../../assets/images/divorce.webp";
+import black from "../../assets/images/black.webp";
+import emp from "../../assets/images/emp.webp";
+import bgcheck from "../../assets/images/back.webp";
+import under from "../../assets/images/under.webp";
+import sting from "../../assets/images/sting.webp";
+import forensic from "../../assets/images/digital.webp";
+import honey from "../../assets/images/honey.webp";
+import fraud from "../../assets/images/fraud.webp";
+import data from "../../assets/images/data.webp";
+import cyber from "../../assets/images/cyber.webp";
+import doc from "../../assets/images/doc.webp";
+import asset from "../../assets/images/asset.webp";
+import mobile from "../../assets/images/mobile.webp";
+import extra from "../../assets/images/extra.webp";
 
-import veri from "../../assets/images/emp.jpg";
-import divorce from "../../assets/images/divorce.png";
-import sting from "../../assets/images/emp.jpg";
-import under from "../../assets/images/emp.jpg";
+
+
 
 
 
@@ -79,7 +88,7 @@ const services = [
   {
   title: "Post Matrimonial Investigation",
   desc: "Resolve doubts in married life.",
-  img: loyalty,
+  img: post,
   full: (
     <div className="sndf-modal-details">
 
@@ -122,7 +131,7 @@ const services = [
   {
   title: "Loyalty Test Investigation",
   desc: "Test partner loyalty discreetly.",
-  img: prematrimonial,
+  img: loyalty,
   full: (
     <div className="sndf-modal-details">
 
@@ -164,9 +173,9 @@ const services = [
 
 
  {
-  title: "Extramarital Affairs Investigation",
- desc: "Confidential detection of extramarital affairs and hidden relationships.",
- img: loyalty, // keep your image for card only (not modal)
+    title: "Extramarital Affairs Investigation",
+    desc: "Confidential detection of extramarital affairs and hidden relationships.",
+    img: extra, // keep your image for card only (not modal)
 
   full: (
     <div className="sndf-modal-details">
@@ -593,7 +602,7 @@ const services = [
   {
   title: "Document Verification Investigation",
   desc: "Accurate verification of documents to detect fraud and ensure authenticity with complete confidentiality.",
-  img: veri, // only for card
+  img: doc, // only for card
 
   full: (
     <div className="sndf-modal-details">
@@ -669,7 +678,7 @@ const cyberServices = [
   {
     title: "Mobile & PC Forensics",
     desc: "Analyze digital devices for hidden evidence.",
-    img: forensic,
+    img: mobile,
     full: (
       <>
         <p>Recover and analyze data from mobile phones, laptops, and digital devices.</p>
@@ -684,7 +693,7 @@ const cyberServices = [
   {
     title: "Cyber Fraud Investigation",
     desc: "Track online scams and fraud activities.",
-    img: prematrimonial,
+    img: cyber,
     full: (
       <>
         <p>We investigate cyber frauds, scams, and online financial crimes.</p>
@@ -699,7 +708,7 @@ const cyberServices = [
   {
     title: "Data Recovery",
     desc: "Recover lost or deleted data securely.",
-    img: loyalty,
+    img: data,
     full: (
       <>
         <p>We retrieve lost data from damaged or corrupted devices.</p>
@@ -714,7 +723,7 @@ const cyberServices = [
   {
     title: "Financial Fraud",
     desc: "Investigate financial crime cases.",
-    img: prematrimonial,
+    img: fraud,
     full: (
       <>
         <p>We analyze and track financial fraud cases professionally.</p>
@@ -729,7 +738,7 @@ const cyberServices = [
   {
     title: "Digital Forensics",
     desc: "Collect and preserve digital evidence.",
-    img: loyalty,
+    img: forensic,
     full: (
       <>
         <p>Professional digital forensic investigation for legal and corporate cases.</p>
@@ -744,7 +753,7 @@ const cyberServices = [
   {
     title: "Honey Trapping",
     desc: "Handle honey trap threats securely.",
-    img: prematrimonial,
+    img: honey,
     full: (
       <>
         <p>We help detect and manage honey trapping cases confidentially.</p>
@@ -987,6 +996,7 @@ const Ndf = () => {
       {cyberServices.map((service, index) => (
 
         <div className="sndf-service-card" key={index}>
+          
           <img
             src={service.img}
             alt={service.title}
