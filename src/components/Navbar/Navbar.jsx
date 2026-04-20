@@ -113,11 +113,11 @@ function Navbar() {
       <div className="py-2 px-3 d-flex justify-content-between align-items-center">
 
         <div className="d-flex gap-3 fs-5">
-          <a href="#"><FaFacebookF style={{ color: "#1877F2" }} /></a>
-          <a href="#"><FaInstagram style={{ color: "#E4405F" }} /></a>
-          <a href="#"><FaLinkedin style={{ color: "#0A66C2" }} /></a>
-          <a href="#"><FaWhatsapp style={{ color: "#25D366" }} /></a>
-          <a href="#"><FaYoutube style={{ color: "#FF0000" }} /></a>
+          <a href="#"><FaFacebookF aria-label="Facebook" style={{ color: "#1877F2" }} /></a>
+          <a href="#"><FaInstagram aria-label="Instagram" style={{ color: "#E4405F" }} /></a>
+          <a href="#"><FaLinkedin aria-label="LinkedIn" style={{ color: "#0A66C2" }} /></a>
+          <a href="#"><FaWhatsapp aria-label="WhatsApp" style={{ color: "#25D366" }} /></a>
+          <a href="#"><FaYoutube aria-label="YouTube" style={{ color: "#FF0000" }} /></a>
         </div>
 
         <div className="scroll-container">
@@ -135,7 +135,7 @@ function Navbar() {
             <option>मराठी</option>
           </select>
 
-          <button className="btn btn-danger btn-sm" onClick={() => setShowModal(true)}>
+          <button className="btn btn-danger btn-sm" aria-label="Open enquiry form" onClick={() => setShowModal(true)}>
             Enquiry
           </button>
         </div>
@@ -149,15 +149,15 @@ function Navbar() {
 
             {/* MAIN LOGO CLICKABLE */}
             <Link to="/">
-              <img src={logo} className="main-logo" alt="logo" />
+              <img src={logo} className="main-logo" alt="logo"  width="90" height="90" />
             </Link>
 
             {/* SUB LOGOS */}
-            <Link to="/services/ndf"><img src={logo1} className="sub-logo" alt="ndf" /></Link>
-            <Link to="/services/sndf"><img src={logo2} className="sub-logo" alt="sndf" /></Link>
-            <Link to="/services/owl"><img src={logo3} className="sub-logo" alt="owl" /></Link>
-            <Link to="/services/spydefence"><img src={logo4} className="sub-logo" alt="spy" /></Link>
-            <Link to="/course/dic"><img src={logo5} className="sub-logo" alt="dic" /></Link>
+            <Link to="/services/ndf"><img src={logo1} className="sub-logo" width="60" height="60" alt="ndf" /></Link>
+            <Link to="/services/sndf"><img src={logo2} className="sub-logo" alt="sndf" width="60" height="60" /></Link>
+            <Link to="/services/owl"><img src={logo3} className="sub-logo" alt="owl" width="60" height="60" /></Link>
+            <Link to="/services/spydefence"><img src={logo4} className="sub-logo" alt="spy" width="60" height="60" /></Link>
+            <Link to="/course/dic"><img src={logo5} className="sub-logo" alt="dic" width="60" height="60" /></Link>
 
             <div className="logo-text">
               🢀 CLICK LOGO FOR MORE INFO
@@ -168,9 +168,9 @@ function Navbar() {
 
 
 
-
-        <button
+<button
 className="navbar-toggler"
+aria-label="Toggle navigation"
 type="button"
 onClick={()=>{
 const nav=document.getElementById("navbarContent");
