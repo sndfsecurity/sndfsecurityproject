@@ -57,13 +57,14 @@ const FloatingButtons = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="float-btn whatsapp"
+        aria-label="Chat on WhatsApp"
         data-tooltip="Chat on WhatsApp"
       >
-        <FaWhatsapp />
+        <FaWhatsapp aria-hidden="true"/>
       </a>
 
-      <a href="tel:+919970383155" className="float-btn call"  data-tooltip="Call Us">
-        <FaPhoneAlt />
+      <a href="tel:+919970383155" className="float-btn call"  aria-label="Call Us"  data-tooltip="Call Us">
+        <FaPhoneAlt aria-hidden="true"/>
       </a>
     </div>
   );
