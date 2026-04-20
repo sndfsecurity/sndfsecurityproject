@@ -149,15 +149,15 @@ function Navbar() {
 
             {/* MAIN LOGO CLICKABLE */}
             <Link to="/">
-              <img src={logo} className="main-logo" alt="logo"  width="90" height="90" />
+              <img src={logo} className="main-logo" alt="logo" height={80} width={90}  />
             </Link>
 
             {/* SUB LOGOS */}
-            <Link to="/services/ndf"><img src={logo1} className="sub-logo" width="60" height="60" alt="ndf" /></Link>
-            <Link to="/services/sndf"><img src={logo2} className="sub-logo" alt="sndf" width="60" height="60" /></Link>
-            <Link to="/services/owl"><img src={logo3} className="sub-logo" alt="owl" width="60" height="60" /></Link>
-            <Link to="/services/spydefence"><img src={logo4} className="sub-logo" alt="spy" width="60" height="60" /></Link>
-            <Link to="/course/dic"><img src={logo5} className="sub-logo" alt="dic" width="60" height="60" /></Link>
+            <Link to="/services/ndf"><img src={logo1} className="sub-logo" height={50} width={60}  alt="ndf"/></Link>
+            <Link to="/services/sndf"><img src={logo2} className="sub-logo" alt="sndf" height={50} width={60} /></Link>
+            <Link to="/services/owl"><img src={logo3} className="sub-logo" alt="owl" height={50} width={60}/></Link>
+            <Link to="/services/spydefence"><img src={logo4} className="sub-logo" alt="spy" height={50} width={60}/></Link>
+            <Link to="/course/dic"><img src={logo5} className="sub-logo" alt="dic" height={50} width={60}/></Link>
 
             <div className="logo-text">
               🢀 CLICK LOGO FOR MORE INFO

@@ -18,15 +18,15 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  /* background: linear-gradient(
+  background: linear-gradient(
     to right,
     rgba(13, 31, 60, 0.85),
     rgba(13, 31, 60, 0.55),
     rgba(255, 255, 255, 0.08)
-  ); */
+  );
   z-index: 1;
 
-   background: rgba(0,0,0,0.5);
+  
 }
 
 /* CONTENT */
