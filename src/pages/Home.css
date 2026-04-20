@@ -678,10 +678,10 @@
 
 
 .about-btn:hover {
-  background: #ffffff;
+  background: #f1f5f9;   /* light gray instead of pure white */
   color: #0b1c39;
   transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 /* ANIMATION */

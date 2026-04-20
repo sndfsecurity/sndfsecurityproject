@@ -129,7 +129,20 @@ function Navbar() {
         </div>
 
         <div className="d-flex gap-2">
-          <select className="form-select form-select-sm w-auto">
+          {/* <select className="form-select form-select-sm w-auto">
+            <option>ENGLISH</option>
+            <option>हिंदी</option>
+            <option>मराठी</option>
+          </select> */}
+
+
+           <label htmlFor="language-select" className="visually-hidden">
+            Select Language
+          </label>
+
+          <select 
+            id="language-select"
+            className="form-select form-select-sm w-auto" >
             <option>ENGLISH</option>
             <option>हिंदी</option>
             <option>मराठी</option>
