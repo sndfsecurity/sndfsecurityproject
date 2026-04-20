@@ -144,11 +144,15 @@ function Navbar() {
       {/* ===== NAVBAR (UNCHANGED STRUCTURE) ===== */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
 
-        <Link className="navbar-brand" to="/">
+        <div className="navbar-brand">
           <div className="logo-container">
 
-            <img src={logo} className="main-logo" alt="logo" />
+            {/* MAIN LOGO CLICKABLE */}
+            <Link to="/">
+              <img src={logo} className="main-logo" alt="logo" />
+            </Link>
 
+            {/* SUB LOGOS */}
             <Link to="/services/ndf"><img src={logo1} className="sub-logo" alt="ndf" /></Link>
             <Link to="/services/sndf"><img src={logo2} className="sub-logo" alt="sndf" /></Link>
             <Link to="/services/owl"><img src={logo3} className="sub-logo" alt="owl" /></Link>
@@ -160,7 +164,10 @@ function Navbar() {
             </div>
 
           </div>
-        </Link>
+        </div>
+
+
+
 
         <button
 className="navbar-toggler"
