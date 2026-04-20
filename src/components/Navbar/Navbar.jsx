@@ -1,9 +1,9 @@
-import logo from "../../assets/images/LOGO.png";
-import logo1 from "../../assets/images/ndf-logo.png";
-import logo2 from "../../assets/images/guard-logo.png";
-import logo3 from "../../assets/images/owl-logo.png";
-import logo4 from "../../assets/images/spy-logo.png";
-import logo5 from "../../assets/images/dic-logo.png";
+import logo from "../../assets/images/LOGO.webp";
+import logo1 from "../../assets/images/ndf-logo.webp";
+import logo2 from "../../assets/images/guard-logo.webp";
+import logo3 from "../../assets/images/owl-logo.webp";
+import logo4 from "../../assets/images/spy-logo.webp";
+import logo5 from "../../assets/images/dic-logo.webp";
 
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
