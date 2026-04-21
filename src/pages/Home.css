@@ -25,6 +25,8 @@
     rgba(255, 255, 255, 0.08)
   );
   z-index: 1;
+
+  
 }
 
 /* CONTENT */
@@ -39,8 +41,8 @@
   color: #fff;
   padding: 30px;
   border-radius: 12px;
-  /* background: rgba(13, 31, 60, 0.35); */
-  /* backdrop-filter: blur(4px); */
+
+  
 }
 
 /* TAG */
@@ -673,13 +675,11 @@
 
 }
 
-
-
 .about-btn:hover {
-  background: #ffffff;
+  background: #f1f5f9;   /* light gray instead of pure white */
   color: #0b1c39;
   transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 /* ANIMATION */

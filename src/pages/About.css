@@ -319,22 +319,21 @@
   margin-top: 20px;
   padding: 12px 30px;
   border: none;
-  background: red;
-  color: white;
+  background: #d60000; /* ✅ darker red */
+  color: #ffffff;
   border-radius: 8px;
   cursor: pointer;
   letter-spacing: 1px;
   font-size: 22px;
   font-weight: 600;
-
-  transition: all 0.3s ease;   /* smooth animation */
+  transition: all 0.3s ease;
 }
 
 /* 🔥 HOVER EFFECT */
 .about-page .need-help button:hover {
-  background: #b30000;   /* darker red */
-  transform: translateY(-3px);  /* lift effect */
-  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3); /* glow shadow */
+  background: #a00000; /* slightly darker */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
 }
 
 /* RESPONSIVE */

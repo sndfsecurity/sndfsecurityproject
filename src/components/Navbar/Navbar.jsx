@@ -1,9 +1,9 @@
-import logo from "../../assets/images/LOGO.png";
-import logo1 from "../../assets/images/ndf-logo.png";
-import logo2 from "../../assets/images/guard-logo.png";
-import logo3 from "../../assets/images/owl-logo.png";
-import logo4 from "../../assets/images/spy-logo.png";
-import logo5 from "../../assets/images/dic-logo.png";
+import logo from "../../assets/images/LOGO.webp";
+import logo1 from "../../assets/images/ndf-logo.webp";
+import logo2 from "../../assets/images/guard-logo.webp";
+import logo3 from "../../assets/images/owl-logo.webp";
+import logo4 from "../../assets/images/spy-logo.webp";
+import logo5 from "../../assets/images/dic-logo.webp";
 
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
@@ -113,11 +113,11 @@ function Navbar() {
       <div className="py-2 px-3 d-flex justify-content-between align-items-center">
 
         <div className="d-flex gap-3 fs-5">
-          <a href="#"><FaFacebookF style={{ color: "#1877F2" }} /></a>
-          <a href="#"><FaInstagram style={{ color: "#E4405F" }} /></a>
-          <a href="#"><FaLinkedin style={{ color: "#0A66C2" }} /></a>
-          <a href="#"><FaWhatsapp style={{ color: "#25D366" }} /></a>
-          <a href="#"><FaYoutube style={{ color: "#FF0000" }} /></a>
+          <a href="#"><FaFacebookF aria-label="Facebook" style={{ color: "#1877F2" }} /></a>
+          <a href="#"><FaInstagram aria-label="Instagram" style={{ color: "#E4405F" }} /></a>
+          <a href="#"><FaLinkedin aria-label="LinkedIn" style={{ color: "#0A66C2" }} /></a>
+          <a href="#"><FaWhatsapp aria-label="WhatsApp" style={{ color: "#25D366" }} /></a>
+          <a href="#"><FaYoutube aria-label="YouTube" style={{ color: "#FF0000" }} /></a>
         </div>
 
         <div className="scroll-container">
@@ -129,13 +129,20 @@ function Navbar() {
         </div>
 
         <div className="d-flex gap-2">
-          <select className="form-select form-select-sm w-auto">
+          
+           <label htmlFor="language-select" className="visually-hidden">
+            Select Language
+          </label>
+
+          <select 
+            id="language-select"
+            className="form-select form-select-sm w-auto" >
             <option>ENGLISH</option>
             <option>हिंदी</option>
             <option>मराठी</option>
           </select>
 
-          <button className="btn btn-danger btn-sm" onClick={() => setShowModal(true)}>
+          <button className="btn btn-danger btn-sm" aria-label="Open enquiry form" onClick={() => setShowModal(true)}>
             Enquiry
           </button>
         </div>
@@ -144,26 +151,33 @@ function Navbar() {
       {/* ===== NAVBAR (UNCHANGED STRUCTURE) ===== */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
 
-        <Link className="navbar-brand" to="/">
+        <div className="navbar-brand">
           <div className="logo-container">
 
-            <img src={logo} className="main-logo" alt="logo" />
+            {/* MAIN LOGO CLICKABLE */}
+            <Link to="/">
+              <img src={logo} className="main-logo" alt="logo"   />
+            </Link>
 
-            <Link to="/services/ndf"><img src={logo1} className="sub-logo" alt="ndf" /></Link>
+            {/* SUB LOGOS */}
+            <Link to="/services/ndf"><img src={logo1} className="sub-logo"  alt="ndf"/></Link>
             <Link to="/services/sndf"><img src={logo2} className="sub-logo" alt="sndf" /></Link>
-            <Link to="/services/owl"><img src={logo3} className="sub-logo" alt="owl" /></Link>
+            <Link to="/services/owl"><img src={logo3} className="sub-logo" alt="owl"/></Link>
             <Link to="/services/spydefence"><img src={logo4} className="sub-logo" alt="spy" /></Link>
-            <Link to="/course/dic"><img src={logo5} className="sub-logo" alt="dic" /></Link>
+            <Link to="/course/dic"><img src={logo5} className="sub-logo" alt="dic"/></Link>
 
             <div className="logo-text">
               🢀 CLICK LOGO FOR MORE INFO
             </div>
 
           </div>
-        </Link>
+        </div>
 
-        <button
+
+
+<button
 className="navbar-toggler"
+aria-label="Toggle navigation"
 type="button"
 onClick={()=>{
 const nav=document.getElementById("navbarContent");
@@ -182,43 +196,43 @@ Collapse.getOrCreateInstance(nav).show();
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav ms-auto" style={{ gap: "10px" }}>
 
-            <li><Link className="nav-link" to="/" onClick={closeNavbar}>Home</Link></li>
-            <li><Link className="nav-link" to="/about" onClick={closeNavbar}>About</Link></li>
+            <li><Link className="nav-link" to="/" aria-label="About SNDF" onClick={closeNavbar}>Home</Link></li>
+            <li><Link className="nav-link" to="/about" aria-label="About SNDF" onClick={closeNavbar}>About</Link></li>
 
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Services</a>
               <ul className="dropdown-menu">
-                <li><Link to="/services/ndf" className="dropdown-item" onClick={closeNavbar}>NDF Detective</Link></li>
-                <li><Link to="/services/sndf" className="dropdown-item" onClick={closeNavbar}>SNDF Guard</Link></li>
-                <li><Link to="/services/owl" className="dropdown-item" onClick={closeNavbar}>Owl Security</Link></li>
-                <li><Link to="/services/spydefence" className="dropdown-item" onClick={closeNavbar}>Spy Defence</Link></li>
+                <li><Link to="/services/ndf" aria-label="NDF" className="dropdown-item" onClick={closeNavbar}>NDF Detective</Link></li>
+                <li><Link to="/services/sndf" aria-label="SNDF Guard" className="dropdown-item" onClick={closeNavbar}>SNDF Guard</Link></li>
+                <li><Link to="/services/owl" aria-label="Owl" className="dropdown-item" onClick={closeNavbar}>Owl Security</Link></li>
+                <li><Link to="/services/spydefence" aria-label="Spydefence" className="dropdown-item" onClick={closeNavbar}>Spy Defence</Link></li>
               </ul>
             </li>
 
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Media</a>
               <ul className="dropdown-menu">
-                <li><Link to="/media/gallery" className="dropdown-item" onClick={closeNavbar}>Gallery</Link></li>
-                <li><Link to="/media/videos" className="dropdown-item" onClick={closeNavbar}>Videos</Link></li>
+                <li><Link to="/media/gallery" aria-label="Gallery"  className="dropdown-item" onClick={closeNavbar}>Gallery</Link></li>
+                <li><Link to="/media/videos" aria-label="Videos" className="dropdown-item" onClick={closeNavbar}>Videos</Link></li>
               </ul>
             </li>
 
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Branches</a>
               <ul className="dropdown-menu">
-                <li><Link to="/branches/pune" className="dropdown-item" onClick={closeNavbar}>Head Office (Pune)</Link></li>
-                <li><Link to="/branches/mumbai" className="dropdown-item" onClick={closeNavbar}>Mumbai</Link></li>
-                <li><Link to="/branches/hyderabad" className="dropdown-item" onClick={closeNavbar}>Hyderabad</Link></li>
-                <li><Link to="/branches/assam" className="dropdown-item" onClick={closeNavbar}>Assam</Link></li>
+                <li><Link to="/branches/pune" aria-label="Pune Branch" className="dropdown-item" onClick={closeNavbar}>Head Office (Pune)</Link></li>
+                <li><Link to="/branches/mumbai" aria-label="Mumbai Branch" className="dropdown-item" onClick={closeNavbar}>Mumbai</Link></li>
+                <li><Link to="/branches/hyderabad" aria-label="Hyderabad Branch" className="dropdown-item" onClick={closeNavbar}>Hyderabad</Link></li>
+                <li><Link to="/branches/assam" aria-label="Assam Branch" className="dropdown-item" onClick={closeNavbar}>Assam</Link></li>
               </ul>
             </li>
 
-            <li><Link to="/course" className="nav-link" onClick={closeNavbar}>Course</Link></li>
-            <li><Link to="/shop" className="nav-link" onClick={closeNavbar}>Shop</Link></li>
-            <li><Link to="/blog" className="nav-link" onClick={closeNavbar}>Blog</Link></li>
-            <li><Link to="/team" className="nav-link" onClick={closeNavbar}>Team</Link></li>
-            <li><Link to="/career" className="nav-link" onClick={closeNavbar}>Career</Link></li>
-            <li><Link to="/contact" className="nav-link" onClick={closeNavbar}>Contact</Link></li>
+            <li><Link to="/course" className="nav-link" aria-label="Course" onClick={closeNavbar}>Course</Link></li>
+            <li><Link to="/shop" className="nav-link" aria-label="Shop" onClick={closeNavbar}>Shop</Link></li>
+            <li><Link to="/blog" className="nav-link" aria-label="Blog" onClick={closeNavbar}>Blog</Link></li>
+            <li><Link to="/team" className="nav-link" aria-label="Team" onClick={closeNavbar}>Team</Link></li>
+            <li><Link to="/career" className="nav-link" aria-label="Career" onClick={closeNavbar}>Career</Link></li>
+            <li><Link to="/contact" className="nav-link" aria-label="Contact" onClick={closeNavbar}>Contact</Link></li>
 
           </ul>
         </div>
