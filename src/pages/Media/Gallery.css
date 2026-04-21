@@ -1,230 +1,308 @@
 /* =========================
-   🌐 PAGE
+PAGE
 ========================= */
-.gallery-page {
-  background-color: #0e2c5f;
-  min-height: 100vh;
-  color: #fff;
-  font-family: Arial, sans-serif;
+
+.gallery-page{
+background:#0e2c5f;
+min-height:100vh;
+color:#fff;
+font-family:Arial,sans-serif;
 }
+
 
 /* =========================
-   🟦 HERO SECTION
+NAVBAR
 ========================= */
-.gallery-hero {
-  padding-top: 110px; /* navbar fix */
-  padding-bottom: 30px;
-  text-align: center;
+
+.top-bar,
+header,
+.navbar{
+position:fixed;
+z-index:999999;
 }
 
-.gallery-hero h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-top: 60px;
-}
-
-.gallery-hero p {
-  color: #ccc;
-  margin-top: 10px;
-  font-size: 18px;
-}
 
 /* =========================
-   🔘 TABS
+HERO
 ========================= */
-.gallery-tabs {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 0 15px;
-  margin-bottom: 30px;
+
+.gallery-hero{
+padding-top:110px;
+padding-bottom:30px;
+text-align:center;
 }
 
-.tab-btn {
-  padding: 10px 18px;
-  border: 1px solid #aaa;
-  background: transparent;
-  color: #fff;
-  border-radius: 25px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+.gallery-hero h1{
+font-size:40px;
+font-weight:700;
+margin-top:60px;
+margin-bottom:10px;
 }
 
-.tab-btn:hover {
-  background-color: #ffffff20;
+.gallery-hero p{
+font-size:18px;
+color:#d7d7d7;
 }
 
-.tab-btn.active {
-  background-color: #fff;
-  color: #000;
-  font-weight: bold;
-}
 
 /* =========================
-   🖼️ GRID
+TABS
 ========================= */
-.gallery-grid {
-  padding: 0 15px 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* mobile */
-  gap: 12px;
+
+.gallery-tabs{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px;
+padding:0 15px;
+margin-bottom:35px;
 }
+
+.tab-btn{
+padding:10px 18px;
+border:1px solid #bfc7d6;
+background:transparent;
+color:#fff;
+border-radius:30px;
+cursor:pointer;
+}
+
+.tab-btn.active{
+background:#fff;
+color:#000;
+font-weight:700;
+}
+
 
 /* =========================
-   📦 CARD
+GRID
 ========================= */
-.gallery-card {
-  overflow: hidden;
-  border-radius: 12px;
-  cursor: pointer;
-  position: relative;
+
+.gallery-grid{
+padding:0 15px 50px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
 }
 
-.gallery-card img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  transition: transform 0.4s ease;
+.gallery-card{
+overflow:hidden;
+border-radius:14px;
+cursor:pointer;
 }
 
-/* Hover Zoom */
-.gallery-card:hover img {
-  transform: scale(1.08);
+.gallery-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
 }
+
 
 /* =========================
-   📱 TABLET
+LIGHTBOX
 ========================= */
-@media (min-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-  }
 
-  .gallery-card img {
-    height: 180px;
-  }
+.lightbox{
+position:fixed;
+top:155px;
+left:0;
+width:100%;
+height:calc(100% - 155px);
 
-  .gallery-hero h1 {
-    font-size: 32px;
-  }
+background:rgba(0,0,0,.92);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:9999;
 }
+
+.lightbox img{
+max-width:85%;
+max-height:72vh;
+border-radius:12px;
+box-shadow:0 0 25px rgba(255,255,255,.15);
+}
+
 
 /* =========================
-   💻 DESKTOP
+CLOSE BUTTON
 ========================= */
-@media (min-width: 1024px) {
-  .gallery-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
 
-  .gallery-card img {
-    height: 220px;
-  }
+.close-btn{
+position:fixed;
 
-  .gallery-hero h1 {
-    font-size: 40px;
-  }
+top:175px;
+right:35px;
+
+width:55px;
+height:55px;
+
+background:red;
+color:#fff;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:32px;
+font-weight:bold;
+
+cursor:pointer;
+
+z-index:9999999;
 }
+
 
 /* =========================
-   🔍 LIGHTBOX
+ARROWS
 ========================= */
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.95);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
+
+.nav-btn{
+position:fixed;
+top:55%;
+transform:translateY(-50%);
+font-size:42px;
+cursor:pointer;
+z-index:9999999;
 }
 
-/* IMAGE */
-.lightbox img {
-  max-width: 90%;
-  max-height: 80%;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+.prev{
+left:30px;
 }
+
+.next{
+right:30px;
+}
+
+
 
 /* =========================
-   ❌ CLOSE BUTTON
+TABLET
 ========================= */
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 42px;
-  color: #fff;
-  cursor: pointer;
-  z-index: 1000;
+
+@media(max-width:991px){
+
+.gallery-grid{
+grid-template-columns:repeat(3,1fr);
+gap:15px;
 }
+
+.gallery-card img{
+height:180px;
+}
+
+.lightbox{
+top:120px;
+height:calc(100% - 120px);
+}
+
+.close-btn{
+top:135px;
+}
+
+}
+
+
 
 /* =========================
-   ⬅️➡️ NAV BUTTONS
+MOBILE
 ========================= */
-.nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 35px;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px;
-  user-select: none;
-  transition: 0.3s;
-  
+
+@media(max-width:768px){
+
+.gallery-hero{
+padding-top:85px;
+padding-bottom:20px;
 }
 
-.prev {
-  left: 20px;
+.gallery-hero h1{
+font-size:28px;
+margin-top:25px;
 }
 
-.next {
-  right: 20px;
+.gallery-hero p{
+font-size:14px;
 }
 
-.nav-btn:hover {
-  color: #ddd;
+.gallery-tabs{
+gap:8px;
 }
 
-/* =========================
-   📱 MOBILE OPTIMIZATION
-========================= */
-@media (max-width: 480px) {
-  .gallery-hero {
-    padding-top: 90px;
-  }
+.tab-btn{
+font-size:12px;
+padding:7px 12px;
+}
 
-  .gallery-hero h1 {
-    font-size: 24px;
-  }
+.gallery-grid{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
 
-  .gallery-hero p {
-    font-size: 14px;
-  }
+.gallery-card img{
+height:130px;
+}
 
-  .tab-btn {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
 
-  .gallery-card img {
-    height: 120px;
-  }
+/* mobile lightbox */
 
-  .nav-btn {
-    font-size: 35px;
-  }
+.lightbox{
+top:80px;
+height:calc(100% - 80px);
+padding:15px;
+}
 
-  .close-btn {
-    font-size: 30px;
-  }
+.lightbox img{
+max-width:95%;
+max-height:65vh;
+}
+
+
+/* MOBILE CLOSE BUTTON FIX */
+
+.close-btn{
+position:fixed;
+
+top:200px;
+right:18px;
+
+width:40px;
+height:40px;
+
+background:red;
+color:white;
+
+border-radius:100%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:26px;
+font-weight:bold;
+
+z-index:99999999;
+}
+
+
+/* MOBILE ARROWS */
+
+.nav-btn{
+font-size:18px;
+top:52%;
+z-index:99999999;
+}
+
+.prev{
+left:8px;
+}
+
+.next{
+right:8px;
+}
+
 }

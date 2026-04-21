@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import "./About.css";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
-
-
-
+import myVideo from "../assets/images/sndfvideo.mp4";
 const About = () => {
 
   const navigate = useNavigate();
@@ -22,9 +20,9 @@ const About = () => {
 
     elements.forEach((el) => observer.observe(el));
 
-        return () => {
-        elements.forEach((el) => observer.unobserve(el));
-        };
+    return () => {
+      elements.forEach((el) => observer.unobserve(el));
+    };
 
   }, []);
 
@@ -32,7 +30,7 @@ const About = () => {
     <main>
 
       <Helmet>
-       <meta name="keywords" content="SNDF, private investigation India, security services Pune, detective agency India" />
+        <meta name="keywords" content="SNDF, private investigation India, security services Pune, detective agency India" />
         <meta name="author" content="SNDF Private Limited" />
 
         <meta property="og:title" content="About SNDF | Expert Security Team" />
@@ -52,9 +50,8 @@ const About = () => {
             <h3>Professional Investigation Services</h3>
 
             <p className="common-text">
-              SNDF Private Limited, established in 2020, is a professional investigation and security services company committed to integrity, transparency and excellence. Starting as a focused investigation unit, it has grown into a structured organization with specialized divisions including NDF, SNDF Guard, OWL, SPY and DIC.
-
-              The company provides expert solutions in security operations, surveillance, confidential investigations and cyber intelligence, backed by advanced technology and a skilled team. SNDF is recognized as a reliable and trusted name, delivering accurate, confidential and result-oriented services.
+              SNDF Private Limited, established in 2020, is a professional investigation and security services company committed to integrity, transparency and excellence. Starting as a focused investigation unit, it has grown into a structured organization with specialized divisions including NDF, SNDF Guard, OWL, SPY and DIC. The company provides expert solutions in security operations, surveillance, confidential investigations and cyber intelligence, backed by advanced technology and a skilled team.
+               SNDF is recognized as a reliable and trusted name, delivering accurate, confidential and result-oriented services.
             </p>
           </div> 
         </section>
@@ -64,17 +61,16 @@ const About = () => {
           <div className="video-content">
             <h2>See How We Work</h2>
             <p className="common-text">
-              Our workflow is built on precision, planning and confidentiality.<br></br> From understanding client needs to execution, we ensure every step is handled with professionalism, accuracy and a commitment to reliable results.
+              Our workflow is built on precision, planning and confidentiality.
+From understanding client needs to execution, we ensure every step is handled with professionalism, accuracy and a commitment to reliable results
             </p>
           </div>
 
-          <div className="video-right">
-            <iframe
-              src="https://www.youtube.com/embed/ljPyV9mqm7o"
-              title="SNDF Investigation Workflow Video"
-              loading="lazy"
-              allowFullScreen
-            ></iframe>
+         <div className="video-right">
+            <video controls autoPlay muted loop playsInline>
+              <source src={myVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video >
           </div>
         </section>
 
@@ -83,14 +79,14 @@ const About = () => {
           <div className="mv-box left">
             <h2>Our Mission</h2>
             <p>
-              To deliver accurate, confidential and professional investigation services using advanced tools and expert knowledge.
+              To deliver accurate, confidential and professional investigation services.
             </p>
           </div>
 
           <div className="mv-box right">
             <h2>Our Vision</h2>
             <p>
-              To become a leading and trusted investigation agency known for innovation and excellence.
+              To become a leading and trusted investigation agency.
             </p>
           </div>
         </section>
@@ -129,7 +125,7 @@ const About = () => {
             Connect with us today for secure, professional, and confidential solutions.
           </p>
 
-          <button onClick={() => navigate("/contact#enquiry-form")} aria-label="Contact SNDF team">
+          <button onClick={() => navigate("/contact#enquiry-form")}>
             Contact Us
           </button>
         </section>

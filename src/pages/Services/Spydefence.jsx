@@ -1,7 +1,7 @@
 import React from "react";
 import "./Spydefence.css";
 
-import spy from "../../assets/images/spy1.png";
+import spy from "../../assets/images/academy1.webp";
 
 import { FiPhoneCall } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
