@@ -181,4 +181,3 @@ currentIndex===filteredImages.length-1
 } 
 
 
-export default Gallery;
