@@ -27,10 +27,6 @@ import mobile from "../../assets/images/mobile.webp";
 import extra from "../../assets/images/extra.webp";
 
 
-
-
-
-
 const services = [
   
   {
@@ -939,6 +935,7 @@ const Ndf = () => {
                 <button
                   className="sndf-view-btn"
                   onClick={() => setSelectedService(service)}
+                  aria-label={`View details of ${service.title}`}
                 >
                   View Details
                 </button>
@@ -1065,25 +1062,35 @@ const Ndf = () => {
 <div className="sndf-ndf-social-wrap">
 
   <a
-    href="https://wa.me/918007341905"
-    target="_blank"
-    rel="noreferrer"
-    className="sndf-ndf-social whatsapp"
-  >
-    <FaWhatsapp />
-  </a>
+  href="https://wa.me/918007341905"
+  target="_blank"
+  rel="noreferrer"
+  className="sndf-ndf-social whatsapp"
+  aria-label="Chat on WhatsApp"
+>
+  <FaWhatsapp />
+</a>
 
-  <a href="https://www.facebook.com/share/178mfq6Hf6/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="sndf-ndf-social facebook">
-    <FaFacebookF />
-  </a>
+<a
+  href="https://www.facebook.com/..."
+  aria-label="Visit our Facebook page"
+>
+  <FaFacebookF />
+</a>
 
-  <a href="https://www.instagram.com/nationalist_detective_force?igsh=Y3F5cXNjMG55a2J3&utm_source=qr" target="_blank" rel="noreferrer" className="sndf-ndf-social instagram">
-    <FaInstagram />
-  </a>
+<a
+  href="https://www.instagram.com/..."
+  aria-label="Visit our Instagram profile"
+>
+  <FaInstagram />
+</a>
 
-  <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noreferrer" className="sndf-ndf-social youtube">
-    <FaYoutube />
-  </a>
+<a
+  href="https://youtube.com/..."
+  aria-label="Visit our YouTube channel"
+>
+  <FaYoutube />
+</a>
 
 </div>
 
@@ -1096,7 +1103,7 @@ const Ndf = () => {
 
         <input type="text" placeholder="Your Name" required />
         <input type="tel" placeholder="Phone Number" required />
-
+         
         <select required>
           <option value="">Select Service</option>
           <option>Prematrimonial Investigation</option>

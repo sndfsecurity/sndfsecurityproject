@@ -133,7 +133,7 @@ const Footer = () => {
 </div>
 
         {/* Branches */}
-        <div className="footer-col">
+        {/* <div className="footer-col">
           <h3>Our Branches</h3>
           <ul>
             <li><Link to="/branches/pune">Pune Branch</Link></li>
@@ -141,7 +141,32 @@ const Footer = () => {
             <li><Link to="/branches/hyderabad">Hyderabad Branch</Link></li>
             <li><Link to="/branches/assam">Assam Branch</Link></li>
           </ul>
-        </div>
+        </div> */}
+
+        {/* Branches */}
+<div className="footer-col">
+  <h3>Our Branches</h3>
+  <ul>
+
+    {/* Pune Group */}
+    <li style={{ cursor: "default", color: "#fff", marginTop: "5px", letterSpacing: "1px" }}>
+      <strong>Pune Branches:</strong>
+    </li>
+    <li><Link to="/branches/pune">Karve Road</Link></li>
+    <li><Link to="/branches/pune">Warje</Link></li>
+    <li><Link to="/branches/pune">Wakad</Link></li>
+
+    {/* 🔹 Add SPACE + DIVIDER EFFECT */}
+    <li style={{ margin: "12px 0", borderBottom: "1px solid rgba(255,255,255,0.2)" }}></li>
+
+    {/* Other Cities */}
+    <li><Link to="/branches/mumbai">Mumbai Branch</Link></li>
+    <li><Link to="/branches/hyderabad">Hyderabad Branch</Link></li>
+    <li><Link to="/branches/assam">Assam Branch</Link></li>
+
+  </ul>
+</div>
+
 
       </div>
 
