@@ -50,7 +50,9 @@ html {
 }
 
 .sndf-services-hero-title span {
-  color: #ff3b3b;
+  /* color: #ff3b3b; */
+  /* color: #ff3b3b;  */
+  color: #e60023;  /* strong accessible red */
 }
 
 /* ===== DIVIDER ===== */
