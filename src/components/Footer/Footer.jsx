@@ -32,7 +32,7 @@ const Footer = () => {
 
   <p>
     SNDF is a professional security and detective organization providing
-    reliable surveillance, investigation, and protection services across India.
+    reliable surveillance, investigation and protection services across India.
   </p>
 
   {/* Professional Points */}
@@ -131,17 +131,6 @@ const Footer = () => {
 </iframe>
 </div>
 </div>
-
-        {/* Branches */}
-        {/* <div className="footer-col">
-          <h3>Our Branches</h3>
-          <ul>
-            <li><Link to="/branches/pune">Pune Branch</Link></li>
-            <li><Link to="/branches/mumbai">Mumbai Branch</Link></li>
-            <li><Link to="/branches/hyderabad">Hyderabad Branch</Link></li>
-            <li><Link to="/branches/assam">Assam Branch</Link></li>
-          </ul>
-        </div> */}
 
 {/* Branches */}
 <div className="footer-col">
