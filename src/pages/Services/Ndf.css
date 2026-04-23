@@ -71,7 +71,7 @@ html {
   color: #cfcfcf;
   font-size: 20px;
   line-height: 1.8;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 /* ===== BUTTONS ===== */
@@ -240,6 +240,7 @@ html {
 .sndf-investigation-header p {
  color: #64748b;
   font-size: 19px;
+  letter-spacing: 1px;
 }
 
 /* ===== CARDS WRAPPER ===== */
@@ -309,6 +310,7 @@ html {
   font-size: 18px;
   color: #666;
   line-height: 1.5;
+  letter-spacing: 1px;
 }
 
 /* ===== RESPONSIVE ===== */

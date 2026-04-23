@@ -83,7 +83,7 @@ const services = [
 
   {
   title: "Post Matrimonial Investigation",
-  desc: "Resolve doubts in married life.",
+  desc: "Resolve doubts in married life with clear facts and proof.",
   img: post,
   full: (
     <div className="sndf-modal-details">
@@ -126,7 +126,7 @@ const services = [
   
   {
   title: "Loyalty Test Investigation",
-  desc: "Test partner loyalty discreetly.",
+  desc: "Discreetly test partner loyalty with trusted methods and accurate results.",
   img: loyalty,
   full: (
     <div className="sndf-modal-details">
@@ -437,7 +437,7 @@ const services = [
 
  {
   title: "Blackmailing Investigation",
-  desc: "Professional assistance to handle blackmail cases with confidentiality and strong evidence.",
+  desc: "Professional assistance to handle blackmail cases with confidentiality and evidence.",
   img: black, // use image only for card
 
   full: (
@@ -596,7 +596,7 @@ const services = [
 
 
   {
-  title: "Document Verification Investigation",
+  title: "Document Verification",
   desc: "Accurate verification of documents to detect fraud and ensure authenticity with complete confidentiality.",
   img: doc, // only for card
 
@@ -658,7 +658,7 @@ const services = [
 const cyberServices = [
   {
     title: "Assets Verification",
-    desc: "Verify financial and property details with accuracy.",
+    desc: "Financial & property verification with accuracy. Trusted reports for decisions.",
     img: asset,
     full: (
       <>
@@ -673,7 +673,7 @@ const cyberServices = [
   },
   {
     title: "Mobile & PC Forensics",
-    desc: "Analyze digital devices for hidden evidence.",
+    desc: "Device analysis for hidden digital evidence. Accurate forensic reports.",
     img: mobile,
     full: (
       <>
@@ -688,7 +688,7 @@ const cyberServices = [
   },
   {
     title: "Cyber Fraud Investigation",
-    desc: "Track online scams and fraud activities.",
+    desc: "Track online scams & fraud activities. Secure digital investigation.",
     img: cyber,
     full: (
       <>
@@ -703,7 +703,7 @@ const cyberServices = [
   },
   {
     title: "Data Recovery",
-    desc: "Recover lost or deleted data securely.",
+    desc: "Recover lost or deleted data securely. Fast & reliable recovery",
     img: data,
     full: (
       <>
@@ -718,7 +718,7 @@ const cyberServices = [
   },
   {
     title: "Financial Fraud",
-    desc: "Investigate financial crime cases.",
+    desc: "Investigate financial crimes & transactions. Strong legal evidence support",
     img: fraud,
     full: (
       <>
@@ -733,7 +733,7 @@ const cyberServices = [
   },
   {
     title: "Digital Forensics",
-    desc: "Collect and preserve digital evidence.",
+    desc: "Collect & preserve digital evidence. Professional investigation support",
     img: forensic,
     full: (
       <>
@@ -748,7 +748,7 @@ const cyberServices = [
   },
   {
     title: "Honey Trapping",
-    desc: "Handle honey trap threats securely.",
+    desc: "Handle honey trap cases confidentially. Discreet protection support.",
     img: honey,
     full: (
       <>
@@ -819,9 +819,9 @@ const Ndf = () => {
           <div className="sndf-services-hero-divider"></div>
 
           <p className="sndf-services-hero-text">
-            SNDF delivers confidential, accurate, and result-driven investigation
+            SNDF delivers confidential, accurate and result-driven investigation
             solutions across India. From personal investigations to advanced cyber
-            crime analysis, we ensure complete discretion and professional execution.
+            crime analysis.s we ensure complete discretion and professional execution.
           </p>
 
           <div className="sndf-services-hero-buttons">

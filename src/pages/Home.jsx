@@ -284,7 +284,10 @@ const badgesData = [
         <div className="icon"><FaUserSecret /></div>
         <h3>Detective Investigation Services</h3>
         <h5>NDF</h5>
-        <p>Professional and confidential investigation services for personal, legal and corporate cases handled discreetly.</p>
+
+        <p> Confidential personal & corporate investigations, background checks, evidence
+              Discreet & result-driven. </p>
+
       </a>
 
       {/* 2 - NDF Detective Services */}
@@ -292,15 +295,21 @@ const badgesData = [
         <div className="icon"><FaUserSecret /></div>
         <h3>Cyber Crime Investigation</h3>
         <h5>NDF</h5>
-<p>Cyber crime investigation services for digital fraud, data breaches, online scams and threats handled securely.</p>      
-</a>
+
+        <p>Cyber fraud, hacking & data breach cases
+            Digital forensics & scam tracking
+            Secure & confidential.</p>
+        </a>
 
       {/* 3 - OWL Security */}
       <a href="/services/owl" className="service-card"  aria-label="CCTV Surveillance and Monitoring Services" data-aos="fade-up" data-aos-delay="200">
         <div className="icon"><FaSearch /></div>
         <h3>CCTV Surveillance & Monitoring</h3>
         <h5>OWL Security</h5>
-        <p>Advanced surveillance solutions including tracking, monitoring and intelligence gathering for enhanced security.</p>
+
+        <p>Smart CCTV with real-time monitoring
+            Installation, remote access, 24/7 support
+             & high-security systems.</p>
       </a>
 
       {/* 4 - SNDF Detective Course */}
@@ -308,16 +317,23 @@ const badgesData = [
         <div className="icon"><FaUserCheck /></div>
         <h3>Detective Investigation Course</h3>
         <h5>DIC</h5>
-        <p>Night surveillance and specialized security services ensuring continuous protection during high-risk hours.</p>
+
+        <p>Training in surveillance & investigation
+              Practical learning with real cases
+              Start your security career.</p>
       </a>
 
       {/* 5 - SNDF Guard Services */}
       <a href="/services/sndf" className="service-card"aria-label="Security Guard Services"
-                                      data-aos="fade-up" data-aos-delay="400">
+                                  data-aos="fade-up" data-aos-delay="400">
         <div className="icon"><FaShieldAlt /></div>
         <h3>Guard Services</h3>
-        <h5>SNDF</h5>
-        <p>Reliable and disciplined guard services for offices, industries and private properties with full safety assurance.</p>
+        <h5>SNDF Guard</h5>
+
+        <p>Security for residential & corporate needs
+              24/7 protection & access control
+              Trained & reliable guards.</p>
+
       </a>
 
       {/* 6 - Spydefence Summer Camp */}
@@ -325,7 +341,11 @@ const badgesData = [
         <div className="icon"><FaUserLock /></div>
         <h3>Summer Camp</h3>
         <h5>Spy Defence</h5>
-        <p>Training and counter-surveillance programs to detect threats and ensure personal security awareness.</p>
+
+        <p>Self-defense & threat awareness training
+              Interactive confidence-building sessions
+              Real-life safety skills.</p>
+
       </a>
      
 
