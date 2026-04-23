@@ -143,6 +143,10 @@
   gap: 8px;
 }
 
+.footer-col li {
+  margin-bottom: 8px; /* instead of 10px */
+}
+
 
 /* Fix Google Translate spacing issue */
 .notranslate span {

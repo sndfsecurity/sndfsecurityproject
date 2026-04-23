@@ -37,8 +37,8 @@ const scrollToForm = () => {
 
     <Helmet>
       <title>SNDF Guard Services | Trusted Protection Solutions</title>
-      <meta name="description" content="SNDF provides expert security services including trained guards, surveillance, and risk management." />
       <link rel="canonical" href="https://www.sndfndf.com/services/sndf" />
+      <meta name="description" content="SNDF provides expert security services including trained guards, surveillance, and risk management." />
 
     </Helmet>
 

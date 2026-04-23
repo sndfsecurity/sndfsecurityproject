@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Gallery.css";
+import { Helmet } from "react-helmet-async";
 
 /* your existing imports same */
 import inv1 from "../../assets/images/guard1.webp";
@@ -105,6 +106,16 @@ activeDept==="All"
 : allImages.filter((img)=>img.category===activeDept).slice(0,10);
 
 return(
+
+ <main>
+
+    <Helmet>
+      <title>SNDF Media Gallery | Department & Work Visuals</title>
+      <link rel="canonical" href="https://www.sndfndf.com/media/gallery" />
+      <meta name="description" content="Explore SNDF's media gallery showcasing visuals from our departments, including SNDF Guard, OWL Surveillance, Spy Defence, and DIC training." />
+    </Helmet>  
+
+    
 <div className="gallery-page">
 
 <div className="gallery-hero">
@@ -177,6 +188,8 @@ currentIndex===filteredImages.length-1
 )}
 
 </div>
+
+</main> 
 );
 } 
 

@@ -32,6 +32,7 @@ const Team = () => {
 
     <Helmet>
       <title>Our Expert Team | SNDF Security Professionals</title>
+      <link rel="canonical" href="https://www.sndfndf.com/team" />
       <meta name="description" content="Meet SNDF’s skilled team of investigators and security experts delivering trusted protection and surveillance services." />
     </Helmet>
 

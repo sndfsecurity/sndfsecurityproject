@@ -5,10 +5,11 @@ import { Helmet } from "react-helmet-async";
 const Sndfprivacy = () => {
   return (
 
-    <>
+    <main>
 
     <Helmet>
       <title>Privacy Policy | SNDF Security Services</title>
+      <link rel="canonical" href="https://www.sndfndf.com/privacy-policy" />
       <meta name="description" content="Read SNDF’s privacy policy to understand how we protect and manage your personal information securely." />
     </Helmet>
 
@@ -150,7 +151,7 @@ const Sndfprivacy = () => {
 
     </section>
 
-    </>
+    </main>
   );
 };
 

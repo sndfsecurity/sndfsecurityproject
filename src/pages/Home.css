@@ -363,6 +363,7 @@
   color: #334155;               /* darker for better contrast */
   line-height: 1.7;             /* more readable */
   transition: 0.3s;
+  letter-spacing: 0.7px;
 }
 
 /* ✅ TEXT COLOR CHANGE ON HOVER */

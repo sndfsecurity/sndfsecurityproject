@@ -1,6 +1,14 @@
 import {React, useState} from 'react';
 import "./Assam.css";
 import { Helmet } from "react-helmet-async";
+import assam from "../../assets/images/assam.webp";
+import assam1 from "../../assets/images/assam1.webp";
+import assam2 from "../../assets/images/assam2.webp";
+import assam3 from "../../assets/images/assam3.webp";
+import assam4 from "../../assets/images/assam4.webp";
+
+
+
 
 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaArrowRight } from "react-icons/fa";
@@ -9,33 +17,32 @@ const Assam = () => {
 
 
 
-  const officeImageUrl = "https://cdn.pixabay.com/photo/2016/11/29/03/53/office-1867185_1280.jpg";
-
+const officeImageUrl = assam;
 
   const [selectedImage, setSelectedImage] = useState(null);
 
     const galleryImages = [
     {
       id: 1,
-      url: "https://cdn.pixabay.com/photo/2016/11/29/03/53/office-1867185_1280.jpg",
+      url: assam1,
       title: "Main Office Building",
       description: "SNDF Assam Headquarters exterior view"
     },
     {
       id: 2,
-      url: "https://cdn.pixabay.com/photo/2015/01/20/12/51/office-605503_1280.jpg",
+      url: assam2,
       title: "Training Center",
       description: "Modern detective training facilities"
     },
     {
       id: 3,
-      url: "https://cdn.pixabay.com/photo/2017/07/31/11/46/meeting-2558746_1280.jpg",
+      url: assam3 ,
       title: "Conference Hall",
       description: "Strategic operations meeting room"
     },
     {
-      id: 4,
-      url: "https://cdn.pixabay.com/photo/2016/03/27/07/32/office-1282323_1280.jpg",
+      id: 4,        
+      url: assam4,
       title: "Command Center",
       description: "24/7 surveillance and monitoring hub"
     }
@@ -47,6 +54,7 @@ const Assam = () => {
 
     <Helmet>
       <title>SNDF Assam Branch | Regional Security Services</title>
+      <link rel="canonical" href="https://www.sndfndf.com/branches/assam" />
       <meta name="description" content="SNDF Assam branch offers trusted surveillance, investigation, and protection services in the region." />
     </Helmet>
 

@@ -61,9 +61,10 @@ return (
 
 <Helmet>
   <title>Detective Agency in Pune | SNDF Security & Investigation Services</title>
-<meta 
-  name="description" 
-  content="SNDF is a trusted detective agency in Pune offering private investigation, surveillance, and professional security services across Pune and nearby areas. Contact our expert team today." />
+  <link rel="canonical" href="https://www.sndfndf.com/branches/pune" />
+  <meta 
+    name="description" 
+    content="SNDF is a trusted detective agency in Pune offering private investigation, surveillance, and professional security services across Pune and nearby areas. Contact our expert team today." />
 </Helmet>
 
 

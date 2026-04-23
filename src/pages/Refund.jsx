@@ -5,10 +5,11 @@ import { Helmet } from "react-helmet-async";
 const Refund = () => {
   return (
 
-    <>
+    <main>
 
     <Helmet>
           <title>Refund Policy | SNDF Services</title>
+          <link rel="canonical" href="https://www.sndfndf.com/refund" />
           <meta name="description" content="Understand SNDF refund policy for services and products, ensuring transparency and customer satisfaction." />
         </Helmet>
 
@@ -100,7 +101,7 @@ const Refund = () => {
 
     </section>
 
-    </>
+    </main>
   );
 };
 

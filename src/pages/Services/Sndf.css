@@ -1,9 +1,10 @@
 /* ===== SECTION ===== */
 .sndfSplitHero {
   padding-top: 200px;
+  padding-bottom: 70px;
   background: linear-gradient(135deg, #0a1f44, #0d2b63);
   color: #fff;
-  min-height: 85vh;
+  min-height: auto;
 }
 
 /* ===== CONTAINER ===== */

@@ -27,10 +27,6 @@ import mobile from "../../assets/images/mobile.webp";
 import extra from "../../assets/images/extra.webp";
 
 
-
-
-
-
 const services = [
   
   {
@@ -87,7 +83,7 @@ const services = [
 
   {
   title: "Post Matrimonial Investigation",
-  desc: "Resolve doubts in married life.",
+  desc: "Resolve doubts in married life with clear facts and proof.",
   img: post,
   full: (
     <div className="sndf-modal-details">
@@ -130,7 +126,7 @@ const services = [
   
   {
   title: "Loyalty Test Investigation",
-  desc: "Test partner loyalty discreetly.",
+  desc: "Discreetly test partner loyalty with trusted methods and accurate results.",
   img: loyalty,
   full: (
     <div className="sndf-modal-details">
@@ -441,7 +437,7 @@ const services = [
 
  {
   title: "Blackmailing Investigation",
-  desc: "Professional assistance to handle blackmail cases with confidentiality and strong evidence.",
+  desc: "Professional assistance to handle blackmail cases with confidentiality and evidence.",
   img: black, // use image only for card
 
   full: (
@@ -600,7 +596,7 @@ const services = [
 
 
   {
-  title: "Document Verification Investigation",
+  title: "Document Verification",
   desc: "Accurate verification of documents to detect fraud and ensure authenticity with complete confidentiality.",
   img: doc, // only for card
 
@@ -662,7 +658,7 @@ const services = [
 const cyberServices = [
   {
     title: "Assets Verification",
-    desc: "Verify financial and property details with accuracy.",
+    desc: "Financial & property verification with accuracy. Trusted reports for decisions.",
     img: asset,
     full: (
       <>
@@ -677,7 +673,7 @@ const cyberServices = [
   },
   {
     title: "Mobile & PC Forensics",
-    desc: "Analyze digital devices for hidden evidence.",
+    desc: "Device analysis for hidden digital evidence. Accurate forensic reports.",
     img: mobile,
     full: (
       <>
@@ -692,7 +688,7 @@ const cyberServices = [
   },
   {
     title: "Cyber Fraud Investigation",
-    desc: "Track online scams and fraud activities.",
+    desc: "Track online scams & fraud activities. Secure digital investigation.",
     img: cyber,
     full: (
       <>
@@ -707,7 +703,7 @@ const cyberServices = [
   },
   {
     title: "Data Recovery",
-    desc: "Recover lost or deleted data securely.",
+    desc: "Recover lost or deleted data securely. Fast & reliable recovery",
     img: data,
     full: (
       <>
@@ -722,7 +718,7 @@ const cyberServices = [
   },
   {
     title: "Financial Fraud",
-    desc: "Investigate financial crime cases.",
+    desc: "Investigate financial crimes & transactions. Strong legal evidence support",
     img: fraud,
     full: (
       <>
@@ -737,7 +733,7 @@ const cyberServices = [
   },
   {
     title: "Digital Forensics",
-    desc: "Collect and preserve digital evidence.",
+    desc: "Collect & preserve digital evidence. Professional investigation support",
     img: forensic,
     full: (
       <>
@@ -752,7 +748,7 @@ const cyberServices = [
   },
   {
     title: "Honey Trapping",
-    desc: "Handle honey trap threats securely.",
+    desc: "Handle honey trap cases confidentially. Discreet protection support.",
     img: honey,
     full: (
       <>
@@ -799,10 +795,11 @@ const Ndf = () => {
 
   return (
 
-    <>
+    <main>
 
     <Helmet>
       <title>NDF Services | Professional Investigation Solutions</title>
+      <link rel="canonical" href="https://www.sndfndf.com/services/ndf" />
       <meta name="description" content="Explore NDF investigation services offering accurate, confidential, and professional solutions across India." />
     </Helmet>
     
@@ -823,9 +820,9 @@ const Ndf = () => {
           <div className="sndf-services-hero-divider"></div>
 
           <p className="sndf-services-hero-text">
-            SNDF delivers confidential, accurate, and result-driven investigation
+            SNDF delivers confidential, accurate and result-driven investigation
             solutions across India. From personal investigations to advanced cyber
-            crime analysis, we ensure complete discretion and professional execution.
+            crime analysis.s we ensure complete discretion and professional execution.
           </p>
 
           <div className="sndf-services-hero-buttons">
@@ -939,6 +936,7 @@ const Ndf = () => {
                 <button
                   className="sndf-view-btn"
                   onClick={() => setSelectedService(service)}
+                  aria-label={`View details of ${service.title}`}
                 >
                   View Details
                 </button>
@@ -1062,31 +1060,25 @@ const Ndf = () => {
 </div>
 
 {/* ===== SNDF SOCIAL LINKS ===== */}
-<div className="sndf-ndf-social-wrap">
+<div className="ndf-extra-social">
 
-  <a
-    href="https://wa.me/918007341905"
-    target="_blank"
-    rel="noreferrer"
-    className="sndf-ndf-social whatsapp"
-  >
-    <FaWhatsapp />
-  </a>
+    <a href="https://wa.me/918007341905" target="_blank" rel="noreferrer"  aria-label="Whatsapp" className="ndf-extra-social-icon whatsapp">
+      <FaWhatsapp />
+    </a>
 
-  <a href="https://www.facebook.com/share/178mfq6Hf6/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="sndf-ndf-social facebook">
-    <FaFacebookF />
-  </a>
+    <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noreferrer"  aria-label="Facebook" className="ndf-extra-social-icon facebook">
+      <FaFacebookF />
+    </a>
 
-  <a href="https://www.instagram.com/nationalist_detective_force?igsh=Y3F5cXNjMG55a2J3&utm_source=qr" target="_blank" rel="noreferrer" className="sndf-ndf-social instagram">
-    <FaInstagram />
-  </a>
+    <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noreferrer"  aria-label="Instagram" className="ndf-extra-social-icon instagram">
+      <FaInstagram />
+    </a>
 
-  <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noreferrer" className="sndf-ndf-social youtube">
-    <FaYoutube />
-  </a>
+    <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noreferrer"  aria-label="Youtube" className="ndf-extra-social-icon youtube">
+      <FaYoutube />
+    </a>
 
-</div>
-
+  </div>
 
     </div>
 
@@ -1096,7 +1088,7 @@ const Ndf = () => {
 
         <input type="text" placeholder="Your Name" required />
         <input type="tel" placeholder="Phone Number" required />
-
+         
         <select required>
           <option value="">Select Service</option>
           <option>Prematrimonial Investigation</option>
@@ -1119,7 +1111,7 @@ const Ndf = () => {
 </section>
     
 
-</>
+</main>
 
   );
 };

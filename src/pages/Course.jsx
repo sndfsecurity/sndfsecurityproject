@@ -47,15 +47,16 @@ const Course = () => {
     
 <Helmet>
   <title>Detective Investigation Course (DIC) | SNDF Training Program</title>
+  <link rel="canonical" href="https://www.sndfndf.com/course" />
+  <link rel="canonical" href="https://www.sndfndf.com/course/dic" />
 
   <meta
     name="description"
-    content="Join SNDF Detective Investigation Course (DIC) and learn surveillance, field investigation, cybercrime basics, and real case handling with practical training."
-  />
+    content="Join SNDF Detective Investigation Course (DIC) and learn surveillance, field investigation, cybercrime basics, and real case handling with practical training."/>
 
   <meta name="keywords" content="detective course india, investigation training, private detective course, surveillance training, SNDF course" />
 
-  <link rel="canonical" href="https://www.sndfndf.com/course" />
+
 </Helmet>
 
 

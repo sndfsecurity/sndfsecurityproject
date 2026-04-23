@@ -5,10 +5,11 @@ import { Helmet } from "react-helmet-async";
 const Sndfterms = () => {
   return (
 
-    <>
+    <main>
 
     <Helmet>
       <title>Terms & Conditions | SNDF Services</title>
+      <link rel="canonical" href="https://www.sndfndf.com/sndfterms" />
       <meta name="description" content="Review SNDF terms and conditions for using our security, investigation, and surveillance services." />
     </Helmet>
 
@@ -170,7 +171,7 @@ const Sndfterms = () => {
 
     </section>
 
-    </>
+    </main>
   );
 };
 
