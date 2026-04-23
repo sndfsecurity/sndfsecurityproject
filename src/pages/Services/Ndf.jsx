@@ -795,10 +795,11 @@ const Ndf = () => {
 
   return (
 
-    <>
+    <main>
 
     <Helmet>
       <title>NDF Services | Professional Investigation Solutions</title>
+      <link rel="canonical" href="https://www.sndfndf.com/services/ndf" />
       <meta name="description" content="Explore NDF investigation services offering accurate, confidential, and professional solutions across India." />
     </Helmet>
     
@@ -1110,7 +1111,7 @@ const Ndf = () => {
 </section>
     
 
-</>
+</main>
 
   );
 };

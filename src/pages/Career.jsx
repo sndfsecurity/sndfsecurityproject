@@ -12,6 +12,7 @@ const Career = () => {
 
    <Helmet>
       <title>Careers at SNDF | Join Security & Investigation Team</title>
+      <link rel="canonical" href="https://www.sndfndf.com/career" />
       <meta name="description" content="Start your career with SNDF. Explore opportunities in security services, investigation, and surveillance across India." />
     </Helmet>
 

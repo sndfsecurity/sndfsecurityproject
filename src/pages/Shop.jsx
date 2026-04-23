@@ -215,10 +215,11 @@ function Shop() {
 
   return (
 
-    <>
+    <main>
 
     <Helmet>
       <title>Security Products | SNDF Shop</title>
+      <link rel="canonical" href="https://www.sndfndf.com/shop" />
       <meta name="description" content="Browse security tools and products from SNDF. Reliable solutions for surveillance, safety, and protection needs." />
     </Helmet>
 
@@ -263,7 +264,7 @@ function Shop() {
 
     </div>
 
-    </>
+    </main>
   );
 }
 

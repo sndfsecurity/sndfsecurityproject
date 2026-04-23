@@ -88,13 +88,14 @@ const [selected,setSelected]=useState(null);
 return(
 <>
 
-<Helmet>
-<title>Security & Investigation Insights | SNDF Blog</title>
-<meta
-name="description"
-content="Explore latest insights, tips, and updates on security, surveillance, and investigation from SNDF experts."
-/>
-</Helmet>
+    <Helmet>
+    <title>Security & Investigation Insights | SNDF Blog</title>
+    <link rel="canonical" href="https://www.sndfndf.com/blog" />
+    <meta
+    name="description"
+    content="Explore latest insights, tips, and updates on security, surveillance, and investigation from SNDF experts."
+    />
+    </Helmet>
 
 <div className="blog-container">
 

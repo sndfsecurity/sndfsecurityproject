@@ -5,10 +5,11 @@ import { Helmet } from "react-helmet-async";
 const Sndfdisclaimer = () => {
   return (
 
-    <>
+    <main>
 
     <Helmet>
       <title>Disclaimer | SNDF Security Services</title>
+      <link rel="canonical" href="https://www.sndfndf.com/sndfdisclaimer" />
       <meta name="description" content="Read SNDF disclaimer regarding service limitations, legal responsibilities, and information accuracy." />
     </Helmet>
 
@@ -100,7 +101,7 @@ const Sndfdisclaimer = () => {
       </div>
 
     </section>
-    </>
+    </main>
   );
 };
 

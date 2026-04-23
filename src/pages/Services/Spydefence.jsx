@@ -43,6 +43,7 @@ const Spydefence = () => {
 
     <Helmet>
       <title>Spy Defence Services | Protection Against Threats</title>
+      <link rel="canonical" href="https://www.sndfndf.com/services/spydefence" />
       <meta name="description" content="SNDF Spy Defence services protect against spying, threats, and unauthorized surveillance with expert solutions." />
     </Helmet>
     

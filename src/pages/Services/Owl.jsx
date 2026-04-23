@@ -23,11 +23,12 @@ function Owl() {
     <main>
       <Helmet>
         <title>Owl Surveillance Services in India | 24/7 CCTV & Security Monitoring</title>
+        <link rel="canonical" href="https://www.sndfndf.com/services/owl" />
        <meta
           name="description"
           content="Professional Owl Surveillance Services in India with 24/7 CCTV monitoring, mobile patrol, night surveillance, and quick response teams. Secure your property today."
         />
-        <link rel="canonical" href="https://www.sndfndf.com/services/owl" />
+        
       </Helmet>
 
       {/* HERO */}

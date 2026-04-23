@@ -54,6 +54,7 @@ const officeImageUrl = assam;
 
     <Helmet>
       <title>SNDF Assam Branch | Regional Security Services</title>
+      <link rel="canonical" href="https://www.sndfndf.com/branches/assam" />
       <meta name="description" content="SNDF Assam branch offers trusted surveillance, investigation, and protection services in the region." />
     </Helmet>
 
