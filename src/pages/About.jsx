@@ -30,6 +30,9 @@ const About = () => {
     <main>
 
       <Helmet>
+
+         <title>About Us - SNDF</title>
+          <link rel="canonical" href="https://www.sndfndf.com/about" />
         <meta name="keywords" content="SNDF, private investigation India, security services Pune, detective agency India" />
         <meta name="author" content="SNDF Private Limited" />
 

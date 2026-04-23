@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Gallery.css";
+import { Helmet } from "react-helmet-async";
 
 /* your existing imports same */
 import inv1 from "../../assets/images/guard1.webp";
