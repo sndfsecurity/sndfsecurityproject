@@ -1,6 +1,7 @@
 import {React, useState} from 'react';
 import "./Assam.css";
 import { Helmet } from "react-helmet-async";
+import assam from "../../assets/images/assam.webp";
 import assam1 from "../../assets/images/assam1.webp";
 import assam2 from "../../assets/images/assam2.webp";
 import assam3 from "../../assets/images/assam3.webp";
@@ -16,7 +17,7 @@ const Assam = () => {
 
 
 
-const officeImageUrl = assam2;
+const officeImageUrl = assam;
 
   const [selectedImage, setSelectedImage] = useState(null);
 

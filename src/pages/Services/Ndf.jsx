@@ -1059,41 +1059,25 @@ const Ndf = () => {
 </div>
 
 {/* ===== SNDF SOCIAL LINKS ===== */}
-<div className="sndf-ndf-social-wrap">
+<div className="ndf-extra-social">
 
-  <a
-  href="https://wa.me/918007341905"
-  target="_blank"
-  rel="noreferrer"
-  className="sndf-ndf-social whatsapp"
-  aria-label="Chat on WhatsApp"
->
-  <FaWhatsapp />
-</a>
+    <a href="https://wa.me/918007341905" target="_blank" rel="noreferrer"  aria-label="Whatsapp" className="ndf-extra-social-icon whatsapp">
+      <FaWhatsapp />
+    </a>
 
-<a
-  href="https://www.facebook.com/..."
-  aria-label="Visit our Facebook page"
->
-  <FaFacebookF />
-</a>
+    <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noreferrer"  aria-label="Facebook" className="ndf-extra-social-icon facebook">
+      <FaFacebookF />
+    </a>
 
-<a
-  href="https://www.instagram.com/..."
-  aria-label="Visit our Instagram profile"
->
-  <FaInstagram />
-</a>
+    <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noreferrer"  aria-label="Instagram" className="ndf-extra-social-icon instagram">
+      <FaInstagram />
+    </a>
 
-<a
-  href="https://youtube.com/..."
-  aria-label="Visit our YouTube channel"
->
-  <FaYoutube />
-</a>
+    <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noreferrer"  aria-label="Youtube" className="ndf-extra-social-icon youtube">
+      <FaYoutube />
+    </a>
 
-</div>
-
+  </div>
 
     </div>
 

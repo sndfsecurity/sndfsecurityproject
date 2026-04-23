@@ -143,7 +143,7 @@ const Footer = () => {
           </ul>
         </div> */}
 
-        {/* Branches */}
+{/* Branches */}
 <div className="footer-col">
   <h3>Our Branches</h3>
   <ul>
