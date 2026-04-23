@@ -156,15 +156,15 @@ function Navbar() {
 
             {/* MAIN LOGO CLICKABLE */}
             <Link to="/">
-              <img src={logo} className="main-logo" alt="logo"   />
+              <img src={logo} className="main-logo" loading="lazy" alt="logo"   />
             </Link>
 
             {/* SUB LOGOS */}
-            <Link to="/services/ndf"><img src={logo1} className="sub-logo"  alt="ndf"/></Link>
-            <Link to="/services/sndf"><img src={logo2} className="sub-logo" alt="sndf" /></Link>
-            <Link to="/services/owl"><img src={logo3} className="sub-logo" alt="owl"/></Link>
-            <Link to="/services/spydefence"><img src={logo4} className="sub-logo" alt="spy" /></Link>
-            <Link to="/course/dic"><img src={logo5} className="sub-logo" alt="dic"/></Link>
+            <Link to="/services/ndf"><img src={logo1}  loading="lazy" className="sub-logo"  alt="ndf"/></Link>
+            <Link to="/services/sndf"><img src={logo2} loading="lazy" className="sub-logo" alt="sndf" /></Link>
+            <Link to="/services/owl"><img src={logo3} loading="lazy" className="sub-logo" alt="owl"/></Link>
+            <Link to="/services/spydefence"><img src={logo4} loading="lazy" className="sub-logo" alt="spy" /></Link>
+            <Link to="/course/dic"><img src={logo5}  loading="lazy"className="sub-logo" alt="dic"/></Link>
 
             <div className="logo-text">
               🢀 CLICK LOGO FOR MORE INFO
