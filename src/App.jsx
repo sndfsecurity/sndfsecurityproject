@@ -24,6 +24,8 @@ import Refund from "./pages/Refund";
 import Pune from "./pages/branches/Pune";
 import Assam from "./pages/branches/Assam";
 import Mumbai from "./pages/branches/Mumbai";
+import Hyderabad from "./pages/branches/Hyderabad";
+
 
 /* SHOP */
 import Shop from "./pages/Shop";
@@ -102,7 +104,7 @@ function App() {
           <Route path="/branches/pune" element={<Pune />} />
           <Route path="/branches/assam" element={<Assam />} />
           <Route path="/branches/mumbai" element={<Mumbai />} />
-
+          <Route path="/branches/hyderabad" element={<Hyderabad />} />
           {/* MEDIA (FIXED) */}
           <Route path="/media/gallery" element={<Gallery />} />
 
