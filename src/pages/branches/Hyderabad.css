@@ -879,7 +879,7 @@
 /* OPTIONAL DIVIDER (premium touch) */
 .sndfHydCtaPro__contactItem:not(:last-child)::after {
   content: "";
-  width: 1px;
+  width: 2px;
   height: 16px;
   background: rgba(255,255,255,0.15);
   position: absolute;

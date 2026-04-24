@@ -255,7 +255,7 @@ return (
           </div>
 
           <p className="sndfHydCtaPro__micro">
-                    Typically responds within 10 minutes • 100% Confidential
+                    Typically responds within 10 minutes  •  100% Confidential
                 </p>
 
           {/* CONTACT INFO */}
