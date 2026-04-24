@@ -1,0 +1,270 @@
+import React from 'react';
+import "./Hyderabad.css";
+
+import {
+  FaMapMarkerAlt,
+  FaClock,
+  FaShieldAlt
+} from "react-icons/fa";
+
+import {
+  FaUserSecret,
+  FaTasks,
+  FaFileAlt
+} from "react-icons/fa";
+
+
+import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+
+
+import hyd1 from "../../assets/images/assam.webp";
+
+const Hyderabad = () => {
+  return (
+
+   <main>
+
+
+    <section className="sndf-hyd-hero">
+  <div className="sndf-hyd-hero__container">
+
+    {/* LEFT */}
+    <div className="sndf-hyd-hero__content">
+
+      <span className="sndf-hyd-hero__badge">
+        SNDF • South India Regional Operations
+      </span>
+
+      <h1 className="sndf-hyd-hero__title">
+        Hyderabad <span>Branch</span>
+      </h1>
+
+      <h3 className="sndf-hyd-hero__sub">
+        A Strategic Hub for Security & Investigation Services 
+      </h3>
+
+      <p className="sndf-hyd-hero__desc">
+        As a key regional branch of SNDF Support Services Pvt. Ltd. our Hyderabad office delivers professional security, surveillance and investigation solutions across Telangana and surrounding regions.
+      </p>
+
+      <p className="sndf-hyd-hero__desc">
+        Backed by trained personnel, modern operational systems and a commitment to confidentiality, we ensure reliable protection and actionable intelligence for individuals, corporates and institutions.
+      </p>
+
+      {/* BUTTONS */}
+      <div className="sndf-hyd-hero__buttons">
+        <button className="sndf-btn sndf-btn--primary">
+          Contact Office
+        </button>
+
+        <button className="sndf-btn sndf-btn--outline">
+          View Details
+        </button>
+      </div>
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div className="sndf-hyd-hero__image-wrap">
+      <div className="sndf-hyd-hero__image-card">
+        <img src={hyd1} alt="Hyderabad Office" />
+        <span className="sndf-hyd-hero__tag">South HQ</span>
+      </div>
+    </div>
+
+  </div>
+
+  {/* ✅ CENTER TRUST STRIP */}
+  <div className="sndf-hyd-hero__trust">
+    <div>
+      <FaMapMarkerAlt />
+      <span>Hyderabad, Telangana</span>
+    </div>
+
+    <div>
+      <FaClock />
+      <span>24/7 Operational Support</span>
+    </div>
+
+    <div>
+      <FaShieldAlt />
+      <span>Confidential & Trusted Services</span>
+    </div>
+  </div>
+</section>
+
+
+{/* ✅ Inside SNDF Hyderabad.................... */}
+
+      <section className="sndf-hyd-inside-pro">
+
+      <div className="sndf-hyd-inside-pro__container">
+
+        {/* LEFT SIDE */}
+        <div className="sndf-hyd-inside-pro__left">
+
+          <span className="sndf-hyd-inside-pro__tag">
+            Behind the Operations
+          </span>
+
+          <h2>
+            Inside <span>SNDF Hyderabad</span>
+          </h2>
+
+          <p>
+            A closer look at how our Hyderabad team operates behind the scenes — where every assignment is handled with precision, coordination and controlled execution.
+          </p>
+
+          <p>
+            With trained personnel and structured workflows, we ensure every operation delivers reliable outcomes while maintaining strict confidentiality.
+          </p>
+
+        </div>
+
+        {/* RIGHT SIDE */}
+        <div className="sndf-hyd-inside-pro__right">
+
+          <div className="sndf-hyd-inside-pro__grid">
+
+            <div className="sndf-hyd-pro-card">
+              <FaUserSecret />
+              <h4>Field Coordination</h4>
+              <p>Efficient planning ensures smooth on-ground execution.</p>
+            </div>
+
+            <div className="sndf-hyd-pro-card">
+              <FaTasks />
+              <h4>Case Handling</h4>
+              <p>Assignments managed with precision and accuracy.</p>
+            </div>
+
+            <div className="sndf-hyd-pro-card full">
+              <FaFileAlt />
+              <h4>Reporting System</h4>
+              <p>Confidential, structured and timely reports for every case handled.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    {/* gallary section............................ */}
+
+     <section className="sndf-hyd-gallery-dark">
+
+      <div className="sndf-hyd-gallery-dark__container">
+
+        {/* Heading */}
+        <div className="sndf-hyd-gallery-dark__header">
+          <h2>
+            Hyderabad <span>Gallery</span>
+          </h2>
+          <p>
+            A quick look inside our Hyderabad branch operations and workspace environment.
+          </p>
+        </div>
+
+        {/* Grid (UNCHANGED STRUCTURE) */}
+        <div className="sndf-hyd-gallery-dark__grid">
+
+          <div className="sndf-hyd-gallery-dark__item large">
+            <img src={hyd1} alt="Hyderabad Office" />
+          </div>
+
+          <div className="sndf-hyd-gallery-dark__item">
+            <img src={hyd1} alt="Workspace" />
+          </div>
+
+          <div className="sndf-hyd-gallery-dark__item">
+            <img src={hyd1} alt="Operations" />
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    {/* cta section................................................ */}
+
+      <section className="sndfHydCtaPro">
+
+      <div className="sndfHydCtaPro__container">
+
+        {/* LEFT CONTENT */}
+        <div className="sndfHydCtaPro__content">
+
+          <h2>
+            Get Professional Help from <span>SNDF Hyderabad</span>
+          </h2>
+
+          <p>
+            Connect with our Hyderabad team for reliable security and investigation services.
+            Our experts ensure quick response, strict confidentiality, and professional execution.
+          </p>
+
+          {/* TRUST POINTS */}
+          <div className="sndfHydCtaPro__trust">
+            <span>✔ 24/7 Support</span>
+            <span>✔ Confidential Handling</span>
+            <span>✔ Quick Response</span>
+          </div>
+
+          {/* BUTTONS */}
+          <div className="sndfHydCtaPro__buttons">
+
+            <a href="tel:+91XXXXXXXXXX" className="sndfHydBtnPro sndfHydBtnCall">
+              <FaPhoneAlt className="sndfHydBtnPro__icon" /> Call Now
+            </a>
+
+            <a
+              href="https://wa.me/91XXXXXXXXXX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sndfHydBtnPro sndfHydBtnWhatsapp"
+            >
+              <FaWhatsapp className="sndfHydBtnPro__icon" /> WhatsApp
+            </a>
+
+            <a
+              href="mailto:support@sndfpunesecurity.in"
+              className="sndfHydBtnPro sndfHydBtnEmail"
+            >
+              <FaEnvelope className="sndfHydBtnPro__icon" /> Email
+            </a>
+
+          </div>
+
+          {/* ADDRESS */}
+          <div className="sndfHydCtaPro__address">
+            <FaMapMarkerAlt/>
+            <p>
+              Office No. F-6, Upper Side, 1st Floor, Haware Fantasia Business Park,
+              Sector 30A, Vashi, Navi Mumbai – 400703
+            </p>
+          </div>
+
+        </div>
+
+        {/* RIGHT MAP */}
+        <div className="sndfHydCtaPro__mapWrap">
+          <iframe
+            src="https://www.google.com/maps?q=Haware+Fantasia+Business+Park+Vashi+Navi+Mumbai&output=embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+      </div>
+
+    </section>
+
+ 
+   </main>
+
+  );
+};
+
+export default Hyderabad;
