@@ -213,7 +213,6 @@ Collapse.getOrCreateInstance(nav).show();
               <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Media</a>
               <ul className="dropdown-menu">
                 <li><Link to="/media/gallery" aria-label="Gallery"  className="dropdown-item" onClick={closeNavbar}>Gallery</Link></li>
-                <li><Link to="/media/videos" aria-label="Videos" className="dropdown-item" onClick={closeNavbar}>Videos</Link></li>
               </ul>
             </li>
 
