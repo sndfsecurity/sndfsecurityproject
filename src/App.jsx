@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import FloatingButtons from "./components/FloatingButtons";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -11,17 +12,18 @@ import Contact from "./pages/Contact";
 import Course from "./pages/Course";
 import Team from "./pages/Team";
 import Blog from "./pages/Blog";
+import Career from "./pages/Career";
 
+/* LEGAL */
 import Sndfprivacy from "./pages/Sndfprivacy";
 import Sndfterms from "./pages/Sndfterms";
 import Sndfdisclaimer from "./pages/Sndfdisclaimer";
 import Refund from "./pages/Refund";
 
+/* BRANCHES */
 import Pune from "./pages/branches/Pune";
 import Assam from "./pages/branches/Assam";
 import Mumbai from "./pages/branches/Mumbai";
-
-import Career from "./pages/Career";
 
 /* SHOP */
 import Shop from "./pages/Shop";
@@ -35,17 +37,13 @@ import Sndf from "./pages/Services/Sndf";
 import Owl from "./pages/Services/Owl"; 
 import Spydefence from "./pages/Services/Spydefence";
 
-import ScrollToTop from "./components/ScrollToTop";
-
-
-// MEDIA
+/* MEDIA */
 import Gallery from "./pages/Media/Gallery";
 
 function App() {
   return (
     <>
-
-    <Helmet>
+      <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -70,21 +68,23 @@ function App() {
         </script>
       </Helmet>
 
-      
       <Router>
-
         <Navbar />
-
         <ScrollToTop />
+
         <Routes>
 
+          {/* MAIN */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/course" element={<Course />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/career" element={<Career />} />
+
+          {/* COURSE */}
+          <Route path="/course" element={<Course />} />
+          <Route path="/course/dic" element={<Course />} />
 
           {/* SHOP */}
           <Route path="/shop" element={<Shop />} />
@@ -94,16 +94,16 @@ function App() {
 
           {/* LEGAL */}
           <Route path="/privacy-policy" element={<Sndfprivacy />} />
-          <Route path="/sndfterms" element={<Sndfterms />} />
+          <Route path="/terms" element={<Sndfterms />} />
           <Route path="/refund" element={<Refund />} />
-         <Route path="/sndfdisclaimer" element={<Sndfdisclaimer />} />
+          <Route path="/disclaimer" element={<Sndfdisclaimer />} />
 
           {/* BRANCHES */}
           <Route path="/branches/pune" element={<Pune />} />
           <Route path="/branches/assam" element={<Assam />} />
           <Route path="/branches/mumbai" element={<Mumbai />} />
 
-          {/* MEDIA */}
+          {/* MEDIA (FIXED) */}
           <Route path="/media/gallery" element={<Gallery />} />
 
           {/* SERVICES */}
@@ -112,15 +112,10 @@ function App() {
           <Route path="/services/owl" element={<Owl />} />
           <Route path="/services/spydefence" element={<Spydefence />} />
 
-
-            <Route path="/course" element={<Course />} />
-            <Route path="/course/dic" element={<Course />} />
-
         </Routes>
 
         <Footer />
         <FloatingButtons />
-
       </Router>
     </>
   );

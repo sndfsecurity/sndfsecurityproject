@@ -1,105 +1,96 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Career.css";
-import { Helmet } from "react-helmet-async";
 
 const Career = () => {
-  const [step, setStep] = useState(1);
-
   return (
-
-    <>
-
-
-   <Helmet>
-      <title>Careers at SNDF | Join Security & Investigation Team</title>
-      <link rel="canonical" href="https://www.sndfndf.com/career" />
-      <meta name="description" content="Start your career with SNDF. Explore opportunities in security services, investigation, and surveillance across India." />
-    </Helmet>
-
     <div className="career-page">
 
-      {/* STEP 1 - JOB CARD */}
-      {step === 1 && (
-        <div className="job-card">
-          <div className="left">
-            <img src="https://via.placeholder.com/80" alt="logo" />
-          </div>
+      <div className="notice-bar">
+        ⚠️ Latest Update: NDF Special Entry Recruitment 2025-26 is OPEN
+      </div>
 
-          <div className="center">
-            <h2>NDF Special Entry Recruitment 2025-26</h2>
-            <p>Nationalist Detective Force</p>
+      <div className="career-header">
+        <img src="/src/assets/images/ndf-logo.webp" alt="logo" />
+        <h1>Nationalist Detective Force (NDF)</h1>
+        <p>Official Recruitment Portal 2025-26</p>
+      </div>
 
-            <div className="meta">
-              <span>📍 All India</span>
-              <span>💼 Full Time</span>
-            </div>
+      <div className="notice-board">
+        <h2>📢 Notice Board</h2>
+        <ul>
+          <li className="blink">🚨 Special Entry Recruitment 2025-26 Started</li>
+          <li>Recruitment 2025-26 (615 Posts) - CLOSED</li>
+        </ul>
+      </div>
 
-            <p><b>Post Name:</b> Detective (NDF)</p>
+      <div className="table-section">
+        <h2>📄 Recruitment Details</h2>
 
-            <p className="msg">
-              Selection will be based on interview only. Vacancies not fixed.
-            </p>
-          </div>
+        {/* IMPORTANT: mobile scroll fix */}
+        <div className="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Post Name</th>
+                <th>Advertisement No.</th>
+                <th>Location</th>
+                <th>Vacancies</th>
+                <th>Last Date</th>
+                <th>Status</th>
+                <th>Apply</th>
+              </tr>
+            </thead>
 
-          <div className="right">
-            <button className="apply" onClick={() => setStep(2)}>
-              Apply Now »
-            </button>
-          </div>
+            <tbody>
+              <tr className="highlight">
+                <td>Detective (NDF)</td>
+                <td>NDF/SE/2025</td>
+                <td>All India</td>
+                <td>Not Fixed</td>
+                <td>Open</td>
+                <td><span className="open">OPEN</span></td>
+                <td>
+                  <a
+                    href="https://recruitment.ndfdetective.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="apply-btn blink-btn"
+                  >
+                    Apply
+                  </a>
+                </td>
+              </tr>
+
+              <tr className="closed-row">
+                <td>Security Guard / Officer</td>
+                <td>NDF/2025</td>
+                <td>All India</td>
+                <td>615</td>
+                <td>Closed</td>
+                <td><span className="closed">CLOSED</span></td>
+                <td>
+                  <button className="closed-btn">Closed</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      )}
+      </div>
 
-      {/* STEP 2 - FORM */}
-      {step === 2 && (
-        <div className="form-bg">
-          <div className="form-box">
-            <h2>Application Form</h2>
-
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Email ID" />
-            <input type="tel" placeholder="Mobile Number" />
-
-            <button onClick={() => setStep(3)}>Next</button>
-          </div>
+      <div className="important-links">
+        <div className="links-box">
+          <a
+            href="https://recruitment.ndfdetective.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="apply-main-btn blink-btn"
+          >
+            📝 Apply Online
+          </a>
         </div>
-      )}
-
-      {/* STEP 3 */}
-      {step === 3 && (
-        <div className="form-bg">
-          <div className="form-box">
-            <h2>Additional Details</h2>
-
-            <input type="text" placeholder="Address" />
-            <input type="date" />
-            <select>
-              <option>Gender</option>
-              <option>Male</option>
-              <option>Female</option>
-            </select>
-
-            <button onClick={() => setStep(4)}>Next</button>
-          </div>
-        </div>
-      )}
-
-      {/* STEP 4 */}
-      {step === 4 && (
-        <div className="form-bg">
-          <div className="form-box">
-            <h2>Upload Documents</h2>
-
-            <input type="file" />
-            <input type="file" />
-
-            <button className="submit">Submit</button>
-          </div>
-        </div>
-      )}
+      </div>
 
     </div>
-
-    </>
   );
 };
 
