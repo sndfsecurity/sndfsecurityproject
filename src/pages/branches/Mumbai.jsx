@@ -46,7 +46,7 @@ const Mumbai = () => {
 
      <Helmet>
        <title>Detective Agency in Mumbai | SNDF Security & Investigation Services</title>
-       <link rel="canonical" href="https://www.sndfndf.com/branches/mumbai" />
+        <link rel="canonical" href="https://www.sndfndf.com/branches/mumbai" />
        <meta 
          name="description" 
          content="SNDF is a trusted detective agency in Mumbai offering private investigation, surveillance, and professional security services across Mumbai and nearby areas. Contact our expert team today." />
