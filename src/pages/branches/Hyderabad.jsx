@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Hyderabad.css";
+import { Helmet } from "react-helmet-async";
 
 import {
   FaMapMarkerAlt,
@@ -36,7 +37,17 @@ const Hyderabad = () => {
 
 return (
 
-   <main>
+<main>
+
+<Helmet>
+        
+    <title>Detective Agency in Hyderabad | Private Investigation & Security Services</title>
+    <link rel="canonical" href="https://www.sndfndf.com/branches/hyderabad" />
+    <meta 
+    name="description" 
+    content="Looking for a reliable detective agency in Hyderabad? SNDF offers private investigation, surveillance and professional security services with complete confidentiality. Contact us today." />
+
+</Helmet>
 
 
 <section className="sndf-hyd-hero">
@@ -68,11 +79,11 @@ return (
       {/* BUTTONS */}
       <div className="sndf-hyd-hero__buttons">
 
-        <button className="sndf-btn sndf-btn--primary" onClick={() => scrollToSection("contact-section")}>
+        <button className="sndf-btn sndf-btn--primary" aria-label="Scroll to contact section" onClick={() => scrollToSection("contact-section")}>
           Contact Office
         </button>
 
-        <button className="sndf-btn sndf-btn--outline" onClick={() => scrollToSection("details-section")}>
+        <button className="sndf-btn sndf-btn--outline"  aria-label="Scroll to details section" onClick={() => scrollToSection("details-section")}>
           View Details
         </button>
 
@@ -82,7 +93,7 @@ return (
     {/* RIGHT IMAGE */}
     <div className="sndf-hyd-hero__image-wrap">
       <div className="sndf-hyd-hero__image-card">
-        <img src={hyd3} alt="Hyderabad Office" />
+        <img src={hyd3} alt="SNDF Hyderabad office interior and workspace"/>
         <span className="sndf-hyd-hero__tag">South HQ</span>
       </div>
     </div>
@@ -92,17 +103,17 @@ return (
   {/* ✅ CENTER TRUST STRIP */}
   <div className="sndf-hyd-hero__trust">
     <div>
-      <FaMapMarkerAlt />
+      <FaMapMarkerAlt aria-hidden="true" />
       <span>Hyderabad, Telangana</span>
     </div>
 
     <div>
-      <FaClock />
+      <FaClock aria-hidden="true" />
       <span>24/7 Operational Support</span>
     </div>
 
     <div>
-      <FaShieldAlt />
+      <FaShieldAlt aria-hidden="true" />
       <span>Confidential & Trusted Services</span>
     </div>
   </div>
@@ -142,19 +153,19 @@ return (
           <div className="sndf-hyd-inside-pro__grid">
 
             <div className="sndf-hyd-pro-card">
-              <FaUserSecret />
+              <FaUserSecret aria-hidden="true" />
               <h4>Field Coordination</h4>
               <p>Efficient planning ensures smooth on-ground execution.</p>
             </div>
 
             <div className="sndf-hyd-pro-card">
-              <FaTasks />
+              <FaTasks aria-hidden="true" />
               <h4>Case Handling</h4>
               <p>Assignments managed with precision and accuracy.</p>
             </div>
 
             <div className="sndf-hyd-pro-card full">
-              <FaFileAlt />
+              <FaFileAlt aria-hidden="true" />
               <h4>Reporting System</h4>
               <p>Confidential, structured and timely reports for every case handled.</p>
             </div>
@@ -187,15 +198,15 @@ return (
         <div className="sndf-hyd-gallery-dark__grid">
 
           <div className="sndf-hyd-gallery-dark__item large">
-            <img src={hyd2} alt="Hyderabad Office" />
+            <img src={hyd2} alt="SNDF Hyderabad office environment" />
           </div>
 
           <div className="sndf-hyd-gallery-dark__item">
-            <img src={hyd1} alt="Workspace" />
+            <img src={hyd1} alt="SNDF Hyderabad workspace setup"  />
           </div>
 
           <div className="sndf-hyd-gallery-dark__item">
-            <img src={hyd4} alt="Operations" />
+            <img src={hyd4} alt="SNDF Hyderabad operations team workspace" />
           </div>
 
         </div>
@@ -236,9 +247,9 @@ return (
               href="https://wa.me/919948966901"
               target="_blank"
               rel="noopener noreferrer"
-              className="sndfHydBtnPro sndfHydBtnWhatsapp"
-            >
-              <FaWhatsapp className="sndfHydBtnPro__icon" />Connect on WhatsApp
+              aria-label="Connect with SNDF Hyderabad on WhatsApp"
+              className="sndfHydBtnPro sndfHydBtnWhatsapp">
+              <FaWhatsapp className="sndfHydBtnPro__icon" aria-hidden="true" />Connect on WhatsApp
             </a>
 
           </div>
@@ -252,21 +263,21 @@ return (
 
                     {/* PHONE */}
                     <div className="sndfHydCtaPro__contactItem sndfHydCtaPro__contactItem--phone">
-                        <FaPhoneAlt className="sndfHydCtaPro__contactIcon" />
-                        <a href="tel:+919948966901">+91 9948966901</a>
+                        <FaPhoneAlt className="sndfHydCtaPro__contactIcon" aria-hidden="true" />
+                        <a href="tel:+919948966901"  aria-label="Call SNDF Hyderabad">+91 9948966901</a>
                     </div>
 
                     {/* EMAIL */}
                     <div className="sndfHydCtaPro__contactItem sndfHydCtaPro__contactItem--email">
-                        <FaEnvelope className="sndfHydCtaPro__contactIcon" />
-                        <a href="mailto:hyderabadndf@gmail.com">hyderabadndf@gmail.com</a>
+                        <FaEnvelope className="sndfHydCtaPro__contactIcon" aria-hidden="true" />
+                        <a href="mailto:hyderabadndf@gmail.com" aria-label="Email SNDF Hyderabad">hyderabadndf@gmail.com</a>
                     </div>
 
                 </div>
 
           {/* ADDRESS */}
           <div className="sndfHydCtaPro__address">
-            <FaMapMarkerAlt/>
+            <FaMapMarkerAlt aria-hidden="true" />
             <p>
                 Csk colony Sagar residency,
                 shivramplly, Near by Thalassemia & Sickle Cell Society, Blood Bank,
@@ -281,6 +292,7 @@ return (
         <iframe
             src="https://www.google.com/maps?q=Csk+Colony+Sagar+Residency+Shivramplly+Near+Thalassemia+Sickle+Cell+Society+Blood+Bank+Hyderabad+500052&output=embed"
             loading="lazy"
+            title="SNDF Hyderabad Office Location Map"
         ></iframe>
         </div>
 
