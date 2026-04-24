@@ -216,7 +216,7 @@ MOBILE
 @media(max-width:768px){
 
 .gallery-hero{
-padding-top:85px;
+padding-top:140px; /* FIXED */
 padding-bottom:20px;
 }
 
