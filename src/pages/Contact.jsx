@@ -51,7 +51,7 @@ const Contact = () => {
 <Helmet>
  <title>Contact SNDF Detective Agency Pune | Call, WhatsApp & Enquiry</title>
 
- <link rel="canonical" href="https://www.sndfndf.com/contact" />
+<link rel="canonical" href="https://www.sndfndf.com/contact" />
 
   <meta 
   name="description" 
