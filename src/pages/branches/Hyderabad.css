@@ -640,10 +640,8 @@
 /* ================= BUTTONS ================= */
 .sndfHydCtaPro__buttons {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  justify-content: flex-start;  
+  margin: 30px 0;            
 }
 
 /* COMMON BUTTON */
@@ -651,57 +649,35 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 22px;
-  border-radius: 8px;
-  font-size: 19px;
+  padding: 12px 26px;       /* slightly wider = premium feel */
+  border-radius: 10px;      /* softer look */
+  font-size: 18px;          /* 19px was too big */
   letter-spacing: 1px;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .sndfHydBtnPro__icon{
-    font-size: 26px;
-    margin-right: 4px;
+    font-size: 28px;
+    margin-right: 3px;
     
 }
 
-/* CALL BUTTON */
-.sndfHydBtnCall {
-  background: linear-gradient(135deg, #ff3b3b, #ff1f1f);
-  color: #fff;
-  box-shadow: 0 6px 20px rgba(255, 59, 59, 0.4);
-}
 
-.sndfHydBtnCall:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(255, 59, 59, 0.6);
-}
 
 /* WHATSAPP BUTTON */
 .sndfHydBtnWhatsapp {
-  background: linear-gradient(135deg, #25d366, #1ebe5d);
+ background: linear-gradient(135deg, #25D366, #1ebe5d);
   color: #fff;
-  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+  
 }
 
 .sndfHydBtnWhatsapp:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
 }
 
-/* EMAIL BUTTON (GLASS STYLE) */
-/* EMAIL BUTTON - PREMIUM AMBER */
-.sndfHydBtnEmail {
-  background: linear-gradient(135deg, #eab308, #d97706);
-  color: #1e293b;
-  box-shadow: 0 6px 18px rgba(250, 204, 21, 0.35);
-}
-
-.sndfHydBtnEmail:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(250, 204, 21, 0.5);
-}
 
 /* ================= ADDRESS ================= */
 .sndfHydCtaPro__address {
@@ -816,10 +792,9 @@
 }
 
   .sndfHydCtaPro__mapWrap {
-    border-radius: 16px;
+    border-radius: 20px;
     overflow: hidden;
-     
-    
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); 
   }
 
   .sndfHydCtaPro__mapWrap iframe {
@@ -851,4 +826,96 @@
   }
 
 }
+}
+
+
+/* CONTACT LINE WRAPPER */
+.sndfHydCtaPro__contactLine {
+  margin-top: 18px;
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* EACH ITEM */
+.sndfHydCtaPro__contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #cbd5e1;
+  position: relative;
+  letter-spacing: 0.3px;
+}
+
+.sndfHydCtaPro__micro {
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+}
+
+/* ICON */
+.sndfHydCtaPro__contactIcon {
+  color: #ff4d4d; /* premium red */
+  font-size: 18px;
+  min-width: 16px;
+}
+
+/* LINK TEXT */
+.sndfHydCtaPro__contactItem a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.sndfHydCtaPro__contactItem a:hover {
+  color: #25D366;
+}
+
+/* OPTIONAL DIVIDER (premium touch) */
+.sndfHydCtaPro__contactItem:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 16px;
+  background: rgba(255,255,255,0.15);
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sndfHydCtaPro__contactItem--phone svg {
+  color: #3b82f6; /* premium blue */
+}
+
+/* EMAIL (new color) */
+.sndfHydCtaPro__contactItem--email svg {
+  color: #facc15; /* amber/yellow */
+}
+
+
+@media (max-width: 600px) {
+
+  .sndfHydCtaPro__contactLine {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .sndfHydCtaPro__contactItem::after {
+    display: none; /* remove divider on mobile */
+  }
+
+  .sndfHydCtaPro__contactItem{
+    font-size: 16px;
+   
+  }
+
+  
+
 }

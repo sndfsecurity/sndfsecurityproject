@@ -17,15 +17,29 @@ import {
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 
-import hyd1 from "../../assets/images/assam.webp";
+import hyd1 from "../../assets/images/hyd1.webp";
+import hyd2 from "../../assets/images/hyd2.webp";
+import hyd3 from "../../assets/images/hyd3.webp";
+import hyd4 from "../../assets/images/hyd4.webp";
 
 const Hyderabad = () => {
-  return (
+
+    const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        });
+    }
+    };
+
+return (
 
    <main>
 
 
-    <section className="sndf-hyd-hero">
+<section className="sndf-hyd-hero">
   <div className="sndf-hyd-hero__container">
 
     {/* LEFT */}
@@ -53,20 +67,22 @@ const Hyderabad = () => {
 
       {/* BUTTONS */}
       <div className="sndf-hyd-hero__buttons">
-        <button className="sndf-btn sndf-btn--primary">
+
+        <button className="sndf-btn sndf-btn--primary" onClick={() => scrollToSection("contact-section")}>
           Contact Office
         </button>
 
-        <button className="sndf-btn sndf-btn--outline">
+        <button className="sndf-btn sndf-btn--outline" onClick={() => scrollToSection("details-section")}>
           View Details
         </button>
+
       </div>
     </div>
 
     {/* RIGHT IMAGE */}
     <div className="sndf-hyd-hero__image-wrap">
       <div className="sndf-hyd-hero__image-card">
-        <img src={hyd1} alt="Hyderabad Office" />
+        <img src={hyd3} alt="Hyderabad Office" />
         <span className="sndf-hyd-hero__tag">South HQ</span>
       </div>
     </div>
@@ -95,7 +111,7 @@ const Hyderabad = () => {
 
 {/* ✅ Inside SNDF Hyderabad.................... */}
 
-      <section className="sndf-hyd-inside-pro">
+      <section className="sndf-hyd-inside-pro" id="details-section">
 
       <div className="sndf-hyd-inside-pro__container">
 
@@ -171,7 +187,7 @@ const Hyderabad = () => {
         <div className="sndf-hyd-gallery-dark__grid">
 
           <div className="sndf-hyd-gallery-dark__item large">
-            <img src={hyd1} alt="Hyderabad Office" />
+            <img src={hyd2} alt="Hyderabad Office" />
           </div>
 
           <div className="sndf-hyd-gallery-dark__item">
@@ -179,7 +195,7 @@ const Hyderabad = () => {
           </div>
 
           <div className="sndf-hyd-gallery-dark__item">
-            <img src={hyd1} alt="Operations" />
+            <img src={hyd4} alt="Operations" />
           </div>
 
         </div>
@@ -190,7 +206,7 @@ const Hyderabad = () => {
 
     {/* cta section................................................ */}
 
-      <section className="sndfHydCtaPro">
+      <section className="sndfHydCtaPro" id="contact-section">
 
       <div className="sndfHydCtaPro__container">
 
@@ -216,34 +232,45 @@ const Hyderabad = () => {
           {/* BUTTONS */}
           <div className="sndfHydCtaPro__buttons">
 
-            <a href="tel:+91XXXXXXXXXX" className="sndfHydBtnPro sndfHydBtnCall">
-              <FaPhoneAlt className="sndfHydBtnPro__icon" /> Call Now
-            </a>
-
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919948966901"
               target="_blank"
               rel="noopener noreferrer"
               className="sndfHydBtnPro sndfHydBtnWhatsapp"
             >
-              <FaWhatsapp className="sndfHydBtnPro__icon" /> WhatsApp
-            </a>
-
-            <a
-              href="mailto:support@sndfpunesecurity.in"
-              className="sndfHydBtnPro sndfHydBtnEmail"
-            >
-              <FaEnvelope className="sndfHydBtnPro__icon" /> Email
+              <FaWhatsapp className="sndfHydBtnPro__icon" />Connect on WhatsApp
             </a>
 
           </div>
+
+          <p className="sndfHydCtaPro__micro">
+                    Typically responds within 10 minutes • 100% Confidential
+                </p>
+
+          {/* CONTACT INFO */}
+               <div className="sndfHydCtaPro__contactLine">
+
+                    {/* PHONE */}
+                    <div className="sndfHydCtaPro__contactItem sndfHydCtaPro__contactItem--phone">
+                        <FaPhoneAlt className="sndfHydCtaPro__contactIcon" />
+                        <a href="tel:+919948966901">+91 9948966901</a>
+                    </div>
+
+                    {/* EMAIL */}
+                    <div className="sndfHydCtaPro__contactItem sndfHydCtaPro__contactItem--email">
+                        <FaEnvelope className="sndfHydCtaPro__contactIcon" />
+                        <a href="mailto:hyderabadndf@gmail.com">hyderabadndf@gmail.com</a>
+                    </div>
+
+                </div>
 
           {/* ADDRESS */}
           <div className="sndfHydCtaPro__address">
             <FaMapMarkerAlt/>
             <p>
-              Office No. F-6, Upper Side, 1st Floor, Haware Fantasia Business Park,
-              Sector 30A, Vashi, Navi Mumbai – 400703
+                Csk colony Sagar residency,
+                shivramplly, Near by Thalassemia & Sickle Cell Society, Blood Bank,
+                <br></br>Hyderabad - 500052.
             </p>
           </div>
 
@@ -251,10 +278,10 @@ const Hyderabad = () => {
 
         {/* RIGHT MAP */}
         <div className="sndfHydCtaPro__mapWrap">
-          <iframe
-            src="https://www.google.com/maps?q=Haware+Fantasia+Business+Park+Vashi+Navi+Mumbai&output=embed"
+        <iframe
+            src="https://www.google.com/maps?q=Csk+Colony+Sagar+Residency+Shivramplly+Near+Thalassemia+Sickle+Cell+Society+Blood+Bank+Hyderabad+500052&output=embed"
             loading="lazy"
-          ></iframe>
+        ></iframe>
         </div>
 
       </div>
