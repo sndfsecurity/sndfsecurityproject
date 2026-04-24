@@ -16,7 +16,7 @@
   text-align: center;
   background: #0e2c5f;
   color: #fff;
-  padding: 30px 10px 15px; /* 🔥 top space increase */
+  padding: 30px 10px 15px; 
 }
 
 /* 🔥 LOGO FIX */
@@ -24,7 +24,7 @@
   width: 180px;
   display: block;
   margin: 0 auto;
-  transform: translateY(10px); /* 🔥 logo niche aayega */
+  transform: translateY(10px); 
 }
 
 /* heading gap fix */
@@ -46,7 +46,7 @@
 
 /* BLINK */
 .blink {
-  color: red;
+  color: rgb(255, 0, 0);
   animation: blink 1s infinite;
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Career.css";
+import logo from "../assets/images/ndf-logo.webp"; // ✅ IMPORTANT
 
 const Career = () => {
   return (
@@ -10,15 +11,17 @@ const Career = () => {
       </div>
 
       <div className="career-header">
-        <img src="/src/assets/images/ndf-logo.webp" alt="logo" />
-        <h1>Nationalist Detective Force (NDF)</h1>
+        {/* ✅ CORRECT IMAGE */}
+        <img src={logo} alt="NDF Logo" />
+
+        <h1>Start Your Career with Nationalist Detective Force (NDF)</h1>
         <p>Official Recruitment Portal 2025-26</p>
       </div>
 
       <div className="notice-board">
         <h2>📢 Notice Board</h2>
         <ul>
-          <li className="blink">🚨 Special Entry Recruitment 2025-26 Started</li>
+          <li className="blink">🚨 Special Entry Recruitment 2025-26 Started [click apply button]</li>
           <li>Recruitment 2025-26 (615 Posts) - CLOSED</li>
         </ul>
       </div>
@@ -26,7 +29,6 @@ const Career = () => {
       <div className="table-section">
         <h2>📄 Recruitment Details</h2>
 
-        {/* IMPORTANT: mobile scroll fix */}
         <div className="table-wrapper">
           <table>
             <thead>
