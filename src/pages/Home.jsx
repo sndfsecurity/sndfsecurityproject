@@ -231,7 +231,7 @@ const badgesData = [
 
           <p>
             At SNDF, we go beyond basic security services. We deliver
-            reliable, discreet, and result-driven solutions designed
+            reliable, discreet and result-driven solutions designed
             to protect what matters most to our clients.
           </p>
 
@@ -358,7 +358,7 @@ const badgesData = [
 
             <p>
               We deliver trusted security and investigation services with professionalism,
-              confidentiality, and nationwide presence.
+              confidentiality and nationwide presence.
             </p>
 
             <div className="why-points">

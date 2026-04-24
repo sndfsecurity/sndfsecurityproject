@@ -230,7 +230,7 @@ return (
 
           <p>
             Connect with our Hyderabad team for reliable security and investigation services.
-            Our experts ensure quick response, strict confidentiality, and professional execution.
+            Our experts ensure quick response, strict confidentiality and professional execution.
           </p>
 
           {/* TRUST POINTS */}

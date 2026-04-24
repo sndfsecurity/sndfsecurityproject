@@ -55,7 +55,7 @@ const officeImageUrl = assam;
     <Helmet>
       <title>SNDF Assam Branch | Regional Security Services</title>
       <link rel="canonical" href="https://www.sndfndf.com/branches/assam" />
-      <meta name="description" content="SNDF Assam branch offers trusted surveillance, investigation, and protection services in the region." />
+      <meta name="description" content="SNDF Assam branch offers trusted surveillance, investigation and protection services in the region." />
     </Helmet>
 
       {/* Hero Section */}
@@ -79,9 +79,9 @@ const officeImageUrl = assam;
           <div className="assam-about-card">
             <h2 className="assam-about-title">Assam Headquarters</h2>
             <p className="assam-about-description">
-              The North East command hub of SNDF, managing operations, detective training,
+              The North East command hub of SNDF, managing operations, detective training
               and investigative services across Assam and surrounding states with precision,
-              confidentiality, and regional expertise.
+              confidentiality and regional expertise.
             </p>
 
 

@@ -2,12 +2,12 @@
 .sndf-services-hero {
   width: 100%;
   min-height: 90vh;
-  padding-top: 170px; /* 🔥 more top & bottom space */
+  padding-top: 200px; /* 🔥 more top & bottom space */
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #0a193c, #132f63);
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 html {

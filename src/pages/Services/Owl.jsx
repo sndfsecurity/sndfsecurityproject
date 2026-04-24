@@ -123,7 +123,7 @@ function Owl() {
               <FaTools className="owl-icon" />
               <h3>CCTV Installation & Maintenance</h3>
               <p>
-                Complete CCTV setup, maintenance, and upgrades.
+                Complete CCTV setup, maintenance and upgrades.
               </p>
             </div>
 

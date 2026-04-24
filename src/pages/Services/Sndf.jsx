@@ -38,7 +38,7 @@ const scrollToForm = () => {
     <Helmet>
       <title>SNDF Guard Services | Trusted Protection Solutions</title>
       <link rel="canonical" href="https://www.sndfndf.com/services/sndf" />
-      <meta name="description" content="SNDF provides expert security services including trained guards, surveillance, and risk management." />
+      <meta name="description" content="SNDF provides expert security services including trained guards, surveillance and risk management." />
 
     </Helmet>
 
@@ -57,7 +57,7 @@ const scrollToForm = () => {
           <p className="sndfSplitHero-desc">
             SNDF provides professionally trained and highly disciplined security guards
             to protect residential societies, corporate offices, industries,
-            construction sites, and events. Our focus is on safety, vigilance,
+            construction sites and events. Our focus is on safety, vigilance
             and rapid response to ensure complete peace of mind.
           </p>
 
@@ -134,7 +134,7 @@ const scrollToForm = () => {
               <h3>Guard Services</h3>
             </div>
             <p>
-              Professional guards ensuring discipline, alertness, and
+              Professional guards ensuring discipline, alertness and
               continuous on-site protection.
             </p>
           </div>
@@ -168,7 +168,7 @@ const scrollToForm = () => {
             </div>
             <p>
               Advanced security for factories and industrial sites preventing
-              risks, theft, and damage.
+              risks, theft and damage.
             </p>
           </div>
 
@@ -198,7 +198,7 @@ const scrollToForm = () => {
 
         <p className="sndfguard-cta-text">
           Get trained and professional security personnel for your business,
-          events, and personal protection. We are available 24/7 across India.
+          events and personal protection. We are available 24/7 across India.
         </p>
 
         <div className="sndfguard-cta-actions">

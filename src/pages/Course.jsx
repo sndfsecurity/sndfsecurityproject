@@ -52,7 +52,7 @@ const Course = () => {
 
   <meta
     name="description"
-    content="Join SNDF Detective Investigation Course (DIC) and learn surveillance, field investigation, cybercrime basics, and real case handling with practical training."/>
+    content="Join SNDF Detective Investigation Course (DIC) and learn surveillance, field investigation, cybercrime basics and real case handling with practical training."/>
 
   <meta name="keywords" content="detective course india, investigation training, private detective course, surveillance training, SNDF course" />
 
@@ -79,7 +79,7 @@ const Course = () => {
 
           <p>
             Learn professional investigation skills with real-world training,<br></br>
-            surveillance techniques, cybercrime basics, and field exposure.
+            surveillance techniques, cybercrime basics and field exposure.
           </p>
 
           {/* Badges */}
@@ -197,7 +197,7 @@ const Course = () => {
         <div className="timeline-content">
           <span>01</span>
           <h3>Investigation Ethics</h3>
-          <p>Learn professional ethics, confidentiality, and legal responsibilities required in real-world investigations.</p>
+          <p>Learn professional ethics, confidentiality and legal responsibilities required in real-world investigations.</p>
         </div>
       </div>
 
@@ -206,7 +206,7 @@ const Course = () => {
         <div className="timeline-content">
           <span>02</span>
           <h3>Information Gathering</h3>
-          <p>Understand surveillance techniques, background checks, and intelligence collection methods.</p>
+          <p>Understand surveillance techniques, background checks and intelligence collection methods.</p>
         </div>
       </div>
 
@@ -215,7 +215,7 @@ const Course = () => {
         <div className="timeline-content">
           <span>03</span>
           <h3>Crime Investigation</h3>
-          <p>Learn investigation procedures, evidence handling, and case-solving strategies.</p>
+          <p>Learn investigation procedures, evidence handling and case-solving strategies.</p>
         </div>
       </div>
 
@@ -224,7 +224,7 @@ const Course = () => {
         <div className="timeline-content">
           <span>04</span>
           <h3>Cyber Crime</h3>
-          <p>Explore digital crimes, online fraud detection, and cyber security fundamentals.</p>
+          <p>Explore digital crimes, online fraud detection and cyber security fundamentals.</p>
         </div>
       </div>
 
@@ -233,7 +233,7 @@ const Course = () => {
         <div className="timeline-content">
           <span>05</span>
           <h3>Forensic Investigation</h3>
-          <p>Basics of forensic science including fingerprints, evidence analysis, and reporting.</p>
+          <p>Basics of forensic science including fingerprints, evidence analysis and reporting.</p>
         </div>
       </div>
 
@@ -306,7 +306,7 @@ const Course = () => {
       <h2>What You Will Learn</h2>
       <p>
         Build strong investigative skills with practical knowledge,
-        modern tools, and real-world exposure.
+        modern tools and real-world exposure.
       </p>
     </div>
 
@@ -322,7 +322,7 @@ const Course = () => {
             <h3>Advanced Investigation Techniques</h3>
             <p>
               Learn <span>professional investigation methods</span> including
-              surveillance, tracking, and intelligence gathering.
+              surveillance, tracking and intelligence gathering.
             </p>
           </div>
         </div>
@@ -343,7 +343,7 @@ const Course = () => {
           <div className="learn-card">
             <h3>Cyber Crime Fundamentals</h3>
             <p>
-              Understand <span>digital fraud detection</span>, online tracking,
+              Understand <span>digital fraud detection</span>, online tracking
               and cyber investigation basics.
             </p>
           </div>
@@ -354,7 +354,7 @@ const Course = () => {
           <div className="learn-card">
             <h3>Legal & Ethical Practices</h3>
             <p>
-              Learn <span>investigation laws</span>, ethical standards,
+              Learn <span>investigation laws</span>, ethical standards
               and confidentiality protocols.
             </p>
           </div>
@@ -384,7 +384,7 @@ const Course = () => {
 
     <div className="gallery-header">
       <h2>Training Gallery</h2>
-      <p>Explore real training sessions, field work, and practical learning moments.</p>
+      <p>Explore real training sessions, field work and practical learning moments.</p>
     </div>
 
     {/* ===== PHOTOS ===== */}
@@ -454,7 +454,7 @@ const Course = () => {
 
       <p>
         Build a strong career in the investigation and security industry.
-        This course prepares you with practical skills, real case exposure,
+        This course prepares you with practical skills, real case exposure
         and industry-ready training.
       </p>
 
@@ -570,7 +570,7 @@ const Course = () => {
 
       <p>
         Start your journey in professional investigation with practical training,
-        real case exposure, and certification.
+        real case exposure and certification.
       </p>
 
       <div className="cta-buttonss">

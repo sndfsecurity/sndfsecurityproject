@@ -64,7 +64,7 @@ return (
   <link rel="canonical" href="https://www.sndfndf.com/branches/pune" />
   <meta 
     name="description" 
-    content="SNDF is a trusted detective agency in Pune offering private investigation, surveillance, and professional security services across Pune and nearby areas. Contact our expert team today." />
+    content="SNDF is a trusted detective agency in Pune offering private investigation, surveillance and professional security services across Pune and nearby areas. Contact our expert team today." />
 </Helmet>
 
 
@@ -135,7 +135,7 @@ return (
     </h2>
 
     <p className="intro">
-      The Head Office is the central hub where all major operations, planning,
+      The Head Office is the central hub where all major operations, planning
       and decision-making take place. It serves as the brain of the organization,
       ensuring smooth coordination across all branches.
     </p>
@@ -147,14 +147,14 @@ return (
         <h4>Operations & Management</h4>
         <p>
           Manages all branches and departments, ensuring proper coordination,
-          execution, and monitoring of field operations.
+          execution and monitoring of field operations.
         </p>
       </div>
 
       <div className="info-item">
         <h4>Administration & Records</h4>
         <p>
-          Handles important documents, records, scheduling, and internal
+          Handles important documents, records, scheduling and internal
           processes with complete professionalism.
         </p>
       </div>
@@ -178,7 +178,7 @@ return (
       <div className="info-item">
         <h4>Decision Making</h4>
         <p>
-          Responsible for solving cases, planning strategies, and making key
+          Responsible for solving cases, planning strategies and making key
           organizational decisions.
         </p>
       </div>
@@ -186,7 +186,7 @@ return (
       <div className="info-item">
         <h4>Career Foundation</h4>
         <p>
-          Provides guidance, training, and support to help individuals grow and
+          Provides guidance, training and support to help individuals grow and
           succeed in the investigation field.
         </p>
       </div>

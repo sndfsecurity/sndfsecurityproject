@@ -49,7 +49,7 @@ const Mumbai = () => {
         <link rel="canonical" href="https://www.sndfndf.com/branches/mumbai" />
        <meta 
          name="description" 
-         content="SNDF is a trusted detective agency in Mumbai offering private investigation, surveillance, and professional security services across Mumbai and nearby areas. Contact our expert team today." />
+         content="SNDF is a trusted detective agency in Mumbai offering private investigation, surveillance and professional security services across Mumbai and nearby areas. Contact our expert team today." />
      </Helmet> 
 
     <section className="sndf-mumbai-hero">
@@ -138,20 +138,20 @@ const Mumbai = () => {
           <p>
             The SNDF Mumbai Branch operates as a regional execution unit under
             the Head Office in Pune, delivering reliable and confidential
-            security, detective, and surveillance services across Maharashtra.
-            Our Mumbai team focuses on on-ground operations, rapid response,
-            and professional case handling for individuals, corporates, and
+            security, detective and surveillance services across Maharashtra.
+            Our Mumbai team focuses on on-ground operations, rapid response
+            and professional case handling for individuals, corporates and
             legal requirements.
           </p>
 
           <p>
-            With trained personnel, advanced surveillance systems, and
+            With trained personnel, advanced surveillance systems and
             operational discipline, we ensure every assignment is handled with
-            accuracy, confidentiality, and efficiency.
+            accuracy, confidentiality and efficiency.
           </p>
 
           <p className="sndf-mum-ops-trust">
-            Trusted by individuals, corporates, and legal professionals for reliable
+            Trusted by individuals, corporates and legal professionals for reliable
             security and confidential investigation services in Mumbai.
           </p>
 
@@ -193,7 +193,7 @@ const Mumbai = () => {
           <div className="sndf-mum-ops-block">
             <h4>Regional Execution Unit</h4>
             <p>
-              Supports Pune Head Office with field operations, case execution,
+              Supports Pune Head Office with field operations, case execution
               and coordination across Mumbai and Western India.
             </p>
           </div>
@@ -201,7 +201,7 @@ const Mumbai = () => {
           <div className="sndf-mum-ops-block">
             <h4>On-Ground Operations</h4>
             <p>
-              Active teams deployed for security services, investigations, and
+              Active teams deployed for security services, investigations and
               surveillance assignments with real-time monitoring.
             </p>
           </div>
@@ -210,7 +210,7 @@ const Mumbai = () => {
             <h4>Confidential Case Handling</h4>
             <p>
               All operations are handled with strict confidentiality,
-              professionalism, and legal compliance.
+              professionalism and legal compliance.
             </p>
           </div>
 

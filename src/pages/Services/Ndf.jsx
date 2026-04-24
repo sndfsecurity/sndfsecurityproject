@@ -40,8 +40,8 @@ const services = [
       <h3>About the Service</h3>
       <p>
         Prematrimonial investigation helps individuals verify the background,
-        character, and personal details of a prospective partner before marriage.
-        It ensures that decisions are based on truth, transparency, and trust,
+        character and personal details of a prospective partner before marriage.
+        It ensures that decisions are based on truth, transparency and trust,
         reducing the risk of fraud or hidden information.
       </p>
 
@@ -54,10 +54,10 @@ const services = [
 
       <h3>What We Check</h3>
       <ul>
-        <li><strong>01 - Background Verification:</strong> Identity, past records, and personal history.</li>
-        <li><strong>02 - Job & Financial Status:</strong> Employment details, income sources, and stability.</li>
+        <li><strong>01 - Background Verification:</strong> Identity, past records and personal history.</li>
+        <li><strong>02 - Job & Financial Status:</strong> Employment details, income sources and stability.</li>
         <li><strong>03 - Family Details:</strong> Family background and social reputation.</li>
-        <li><strong>04 - Lifestyle & Habits:</strong> Daily behavior, addictions, and social activities.</li>
+        <li><strong>04 - Lifestyle & Habits:</strong> Daily behavior, addictions and social activities.</li>
         <li><strong>05 - Relationship History:</strong> Any past or current relationships if required.</li>
       </ul>
 
@@ -92,23 +92,23 @@ const services = [
       <p>
         A post-matrimonial investigation is conducted after marriage when one
         partner has doubts or concerns about the other's behavior, financial
-        activities, or loyalty. It helps uncover facts and bring clarity to the situation.
+        activities or loyalty. It helps uncover facts and bring clarity to the situation.
       </p>
 
       <h3>Key Aspects We Investigate</h3>
 
       <ul>
-        <li><strong>01 - Behavioral Changes:</strong> Unexpected shifts in habits, addiction concerns, or personality changes.</li>
+        <li><strong>01 - Behavioral Changes:</strong> Unexpected shifts in habits, addiction concerns or personality changes.</li>
 
-        <li><strong>02 - Safety & Custody Issues:</strong> Investigation related to child custody, safety, and suitability of the partner.</li>
+        <li><strong>02 - Safety & Custody Issues:</strong> Investigation related to child custody, safety and suitability of the partner.</li>
 
         <li><strong>03 - Infidelity or Affairs:</strong> Confirm or rule out extramarital relationships.</li>
 
-        <li><strong>04 - Hidden Financial Activity:</strong> Checking for undisclosed assets, debts, or secret spending.</li>
+        <li><strong>04 - Hidden Financial Activity:</strong> Checking for undisclosed assets, debts or secret spending.</li>
 
         <li><strong>05 - Legal or Criminal Issues:</strong> Unrevealed criminal records or ongoing legal matters.</li>
 
-        <li><strong>06 - Social & Reputation Checks:</strong> Verifying social behavior, reputation, and background in workplace or community.</li>
+        <li><strong>06 - Social & Reputation Checks:</strong> Verifying social behavior, reputation and background in workplace or community.</li>
       </ul>
 
       <h3>Benefits</h3>
@@ -135,14 +135,14 @@ const services = [
       <p>
         A loyalty test investigation helps determine whether a person you trust
         is honest and loyal. It is commonly used when there are doubts about a
-        partner, spouse, or even a business associate. Our team discreetly
+        partner, spouse or even a business associate. Our team discreetly
         observes behavior and interactions to uncover the truth.
       </p>
 
       <h3>Why Consider a Loyalty Test?</h3>
 
       <ul>
-        <li><strong>01 - Suspicion of Affair:</strong> Sudden behavioral changes, secrecy, or unusual routines may raise doubts.</li>
+        <li><strong>01 - Suspicion of Affair:</strong> Sudden behavioral changes, secrecy or unusual routines may raise doubts.</li>
 
         <li><strong>02 - Trust Issues:</strong> Helps confirm or clear doubts in relationships struggling with trust.</li>
 
@@ -181,7 +181,7 @@ const services = [
         Extramarital affairs occur when a married person is involved in a
         romantic or physical relationship outside their marriage. Such
         relationships are usually kept secret and can damage trust,
-        emotional stability, and family life.
+        emotional stability and family life.
       </p>
 
       <h3>Common Reasons Behind Extramarital Affairs</h3>
@@ -195,7 +195,7 @@ const services = [
 
         <li><strong>04 - Emotional Disconnect:</strong> Feeling lonely or emotionally distant can push someone away.</li>
 
-        <li><strong>05 - Feeling Unappreciated:</strong> Lack of respect, love, or attention can lead to outside involvement.</li>
+        <li><strong>05 - Feeling Unappreciated:</strong> Lack of respect, love or attention can lead to outside involvement.</li>
 
         <li><strong>06 - Revenge or Anger:</strong> Some engage in affairs due to hurt feelings or conflicts.</li>
       </ul>
@@ -234,17 +234,17 @@ const services = [
         Divorce Case Investigation involves collecting accurate and reliable
         information about a married couple who are going through or planning a
         divorce. Our investigators gather evidence related to issues such as
-        infidelity, financial fraud, abuse, or false claims to help in legal proceedings.
+        infidelity, financial fraud, abuse or false claims to help in legal proceedings.
       </p>
 
       <h3>Why Conduct a Divorce Case Investigation?</h3>
 
       <ul>
-        <li><strong>01 - To Gather Strong Proof:</strong> Collect solid evidence like photos, videos, and reports to support your case in court.</li>
+        <li><strong>01 - To Gather Strong Proof:</strong> Collect solid evidence like photos, videos and reports to support your case in court.</li>
 
-        <li><strong>02 - To Find Hidden Property:</strong> Detect undisclosed assets, money, or property to ensure fair settlement.</li>
+        <li><strong>02 - To Find Hidden Property:</strong> Detect undisclosed assets, money or property to ensure fair settlement.</li>
 
-        <li><strong>03 - To Verify Claims:</strong> Check if statements related to income, behavior, or lifestyle are true.</li>
+        <li><strong>03 - To Verify Claims:</strong> Check if statements related to income, behavior or lifestyle are true.</li>
 
         <li><strong>04 - To Protect Children:</strong> Identify harmful habits or activities that may affect child custody decisions.</li>
       </ul>
@@ -281,8 +281,8 @@ const services = [
       <h3>About the Service</h3>
       <p>
         Missing Person Investigation involves locating individuals who have
-        disappeared due to personal, financial, or unknown reasons. Our team
-        uses advanced techniques, surveillance, and network resources to trace
+        disappeared due to personal, financial or unknown reasons. Our team
+        uses advanced techniques, surveillance and network resources to trace
         and find missing persons quickly and safely.
       </p>
 
@@ -297,7 +297,7 @@ const services = [
 
         <li><strong>04 - Kidnapping or Crime:</strong> Some cases involve abduction or illegal activities.</li>
 
-        <li><strong>05 - Mental Health Concerns:</strong> Stress, depression, or trauma can result in disappearance.</li>
+        <li><strong>05 - Mental Health Concerns:</strong> Stress, depression or trauma can result in disappearance.</li>
 
         <li><strong>06 - Voluntary Disappearance:</strong> Some individuals leave intentionally for personal reasons.</li>
       </ul>
@@ -326,7 +326,7 @@ const services = [
 
   {
   title: "Background Check Investigation",
-  desc: "Verify personal, professional, and financial history with complete accuracy.",
+  desc: "Verify personal, professional and financial history with complete accuracy.",
   img: bgcheck, // use image only for card
 
   full: (
@@ -336,7 +336,7 @@ const services = [
       <p>
         A Background Check Investigation involves reviewing a person’s past
         to gather important details before making decisions related to
-        employment, marriage, business partnerships, or personal relationships.
+        employment, marriage, business partnerships or personal relationships.
         Our team verifies information from multiple reliable sources to ensure
         complete accuracy and transparency.
       </p>
@@ -344,17 +344,17 @@ const services = [
       <h3>What We Verify</h3>
 
       <ul>
-        <li><strong>01 - Identity Verification:</strong> Confirm personal details like name, address, and identity proof.</li>
+        <li><strong>01 - Identity Verification:</strong> Confirm personal details like name, address and identity proof.</li>
 
         <li><strong>02 - Employment History:</strong> Check previous jobs, roles, and work experience.</li>
 
         <li><strong>03 - Criminal Records:</strong> Identify any past legal issues or criminal background.</li>
 
-        <li><strong>04 - Financial Status:</strong> Review financial stability, debts, or liabilities.</li>
+        <li><strong>04 - Financial Status:</strong> Review financial stability, debts or liabilities.</li>
 
-        <li><strong>05 - Social & Personal Behavior:</strong> Understand lifestyle, habits, and reputation.</li>
+        <li><strong>05 - Social & Personal Behavior:</strong> Understand lifestyle, habits and reputation.</li>
 
-        <li><strong>06 - References Check:</strong> Verify information from friends, colleagues, or previous employers.</li>
+        <li><strong>06 - References Check:</strong> Verify information from friends, colleagues or previous employers.</li>
       </ul>
 
       <h3>How We Help</h3>
@@ -390,13 +390,13 @@ const services = [
       <p>
         Pre & Post Employment Investigation helps organizations verify candidates
         before hiring and monitor employee behavior after hiring. It ensures
-        transparency, reduces risk, and helps maintain a secure and trustworthy workplace.
+        transparency, reduces risk and helps maintain a secure and trustworthy workplace.
       </p>
 
       <h3>Pre-Employment Investigation (Before Hiring)</h3>
       <p>
         This investigation is conducted before hiring a candidate to verify the
-        accuracy of their resume, qualifications, and background. It helps
+        accuracy of their resume, qualifications and background. It helps
         employers make safe and informed hiring decisions.
       </p>
 
@@ -448,8 +448,8 @@ const services = [
         Blackmailing Investigation deals with cases where someone threatens
         to reveal personal or sensitive information unless their demands are met.
         These cases can happen online or offline and may cause emotional,
-        financial, and reputational damage. Our experts work discreetly to
-        identify the blackmailer, collect evidence, and stop further threats.
+        financial and reputational damage. Our experts work discreetly to
+        identify the blackmailer, collect evidence and stop further threats.
       </p>
 
       <h3>What You Should Do If You Are Being Blackmailed</h3>
@@ -457,7 +457,7 @@ const services = [
       <ul>
         <li><strong>01 - Stop Communication:</strong> Do not respond or comply with the blackmailer’s demands.</li>
 
-        <li><strong>02 - Preserve Evidence:</strong> Save messages, emails, call logs, and any proof of threats.</li>
+        <li><strong>02 - Preserve Evidence:</strong> Save messages, emails, call logs and any proof of threats.</li>
 
         <li><strong>03 - Report the Issue:</strong> Inform legal authorities or professionals immediately.</li>
 
@@ -506,7 +506,7 @@ const services = [
       <h3>Surveillance Methods</h3>
       <ul>
         <li><strong>01 - Physical Surveillance:</strong> Tracking movements and activities in person.</li>
-        <li><strong>02 - Electronic Surveillance:</strong> Use of GPS tracking, cameras, and digital tools.</li>
+        <li><strong>02 - Electronic Surveillance:</strong> Use of GPS tracking, cameras and digital tools.</li>
         <li><strong>03 - Video Monitoring:</strong> Capturing visual evidence for proof.</li>
         <li><strong>04 - Background Observation:</strong> Monitoring behavior patterns over time.</li>
       </ul>
@@ -553,7 +553,7 @@ const services = [
         An undercover operation is a specialized investigative technique where
         agents assume false identities to gather information or evidence about
         illegal or suspicious activities. This method is highly effective in
-        uncovering crimes such as fraud, theft, corruption, and organized crime
+        uncovering crimes such as fraud, theft, corruption and organized crime
         that are difficult to detect through regular investigations.
       </p>
 
@@ -562,7 +562,7 @@ const services = [
         Undercover agents blend into environments by creating believable
         identities and interacting with suspects without revealing their true
         purpose. These operations are carefully planned and executed to ensure
-        safety, legality, and effectiveness.
+        safety, legality and effectiveness.
       </p>
 
       <h3>Operation Process</h3>
@@ -607,16 +607,16 @@ const services = [
       <p>
         Document verification involves checking whether a document is genuine,
         accurate, and legally valid. This service helps individuals and businesses
-        avoid fraud, misrepresentation, and legal risks by ensuring that all
+        avoid fraud, misrepresentation and legal risks by ensuring that all
         provided documents are authentic and trustworthy.
       </p>
 
       <h3>What We Verify</h3>
       <ul>
-        <li><strong>01 - Identity Documents:</strong> Aadhaar card, PAN card, passport, and ID proofs.</li>
-        <li><strong>02 - Educational Certificates:</strong> School, college, and professional qualifications.</li>
-        <li><strong>03 - Employment Records:</strong> Job history, experience letters, and company details.</li>
-        <li><strong>04 - Property Documents:</strong> Ownership papers, agreements, and legal records.</li>
+        <li><strong>01 - Identity Documents:</strong> Aadhaar card, PAN card, passport and ID proofs.</li>
+        <li><strong>02 - Educational Certificates:</strong> School, college and professional qualifications.</li>
+        <li><strong>03 - Employment Records:</strong> Job history, experience letters and company details.</li>
+        <li><strong>04 - Property Documents:</strong> Ownership papers, agreements and legal records.</li>
       </ul>
 
       <h3>Verification Process</h3>
@@ -662,7 +662,7 @@ const cyberServices = [
     img: asset,
     full: (
       <>
-        <p>We verify assets, properties, and financial claims with complete confidentiality.</p>
+        <p>We verify assets, properties and financial claims with complete confidentiality.</p>
         <ul>
           <li>Property verification</li>
           <li>Financial background check</li>
@@ -677,7 +677,7 @@ const cyberServices = [
     img: mobile,
     full: (
       <>
-        <p>Recover and analyze data from mobile phones, laptops, and digital devices.</p>
+        <p>Recover and analyze data from mobile phones, laptops and digital devices.</p>
         <ul>
           <li>Deleted data recovery</li>
           <li>Chat & call analysis</li>
@@ -692,7 +692,7 @@ const cyberServices = [
     img: cyber,
     full: (
       <>
-        <p>We investigate cyber frauds, scams, and online financial crimes.</p>
+        <p>We investigate cyber frauds, scams and online financial crimes.</p>
         <ul>
           <li>UPI & banking fraud</li>
           <li>Online scam tracking</li>
@@ -800,7 +800,7 @@ const Ndf = () => {
     <Helmet>
       <title>NDF Services | Professional Investigation Solutions</title>
       <link rel="canonical" href="https://www.sndfndf.com/services/ndf" />
-      <meta name="description" content="Explore NDF investigation services offering accurate, confidential, and professional solutions across India." />
+      <meta name="description" content="Explore NDF investigation services offering accurate, confidential and professional solutions across India." />
     </Helmet>
     
     <section className="sndf-services-hero">
@@ -822,7 +822,7 @@ const Ndf = () => {
           <p className="sndf-services-hero-text">
             SNDF delivers confidential, accurate and result-driven investigation
             solutions across India. From personal investigations to advanced cyber
-            crime analysis.s we ensure complete discretion and professional execution.
+            crime analysis. we ensure complete discretion and professional execution.
           </p>
 
           <div className="sndf-services-hero-buttons">

@@ -44,7 +44,7 @@ const Spydefence = () => {
     <Helmet>
       <title>Spy Defence Services | Protection Against Threats</title>
       <link rel="canonical" href="https://www.sndfndf.com/services/spydefence" />
-      <meta name="description" content="SNDF Spy Defence services protect against spying, threats, and unauthorized surveillance with expert solutions." />
+      <meta name="description" content="SNDF Spy Defence services protect against spying, threats and unauthorized surveillance with expert solutions." />
     </Helmet>
     
       <section className="spy-hero">
@@ -57,7 +57,7 @@ const Spydefence = () => {
           </h2>
 
           <p className="fade-up delay-1">
-            A unique outdoor training experience combining discipline, adventure,
+            A unique outdoor training experience combining discipline, adventure
             and real-world skills to shape confident and capable individuals.
           </p>
 
@@ -177,7 +177,7 @@ const Spydefence = () => {
 
           <p className="descspy">
             Join our intensive training camp designed to build discipline,
-            confidence, and real-world skills through practical activities.
+            confidence and real-world skills through practical activities.
           </p>
 
           <div className="summer-info">
@@ -242,7 +242,7 @@ const Spydefence = () => {
 
     <p className="camp-subtitle">
       A professional training program by Spy Defence Academy,
-      focused on discipline, confidence, teamwork, and real-world
+      focused on discipline, confidence, teamwork and real-world
       experience through structured activities and adventure.
     </p>
 
@@ -283,7 +283,7 @@ const Spydefence = () => {
     </div>
 
     <div className="camp-highlight">
-      🌄 Experience an unforgettable adventure with a special visit to Pawna Lake and Lohagad Fort — where nature, exploration, and real outdoor learning come together as part of your training journey.
+      🌄 Experience an unforgettable adventure with a special visit to Pawna Lake and Lohagad Fort — where nature, exploration and real outdoor learning come together as part of your training journey.
     </div>
 
   </div>
@@ -304,7 +304,7 @@ const Spydefence = () => {
 
           <p>
             A practical training experience focused on discipline,
-            confidence, and real-world skills through guided activities.
+            confidence and real-world skills through guided activities.
           </p>
 
           {/* FEATURES */}
