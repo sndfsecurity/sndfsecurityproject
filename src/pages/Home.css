@@ -793,7 +793,7 @@
 
   .about-features {
     grid-template-columns: 1fr;
-    justify-items: center; 
+  
   }
 
   .about-tag{
@@ -816,12 +816,13 @@
 
   .feature{
     font-size: 15px;
-    max-width: 300px;
-    text-align: center;
+   
+    
   }
 
   .about-btn {
     font-size: 20px;
+   
     
   }
 
