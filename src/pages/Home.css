@@ -47,7 +47,7 @@
 
 /* TAG */
 .hero-tag {
-  font-size: 16px;              /* bigger */
+  font-size: 18px;              /* bigger */
   font-weight: 600;             /* bold */
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -72,11 +72,10 @@
 /* HEADING */
 .hero-text h1 {
   font-size: 54px;
-  font-weight: 700;
+  font-weight: 800;
   margin: 15px 0;
   line-height: 1.2;
   letter-spacing: 1px;
-
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 1s ease forwards;
@@ -86,20 +85,21 @@
 .hero-text h1 span {
   color: #ef4444;
   letter-spacing: 2px;
+  font-weight: 800;
 }
 
 /* PARAGRAPH */
 .hero-text p {
   color: #e2e8f0;
   margin-bottom: 30px;
-  font-size: 17px;
+  font-size: 22px;
   line-height: 1.6;
-
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 1s ease forwards;
   animation-delay: 0.4s;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
+  
 }
 
 /* BUTTONS */
@@ -107,7 +107,6 @@
   display: flex;
   gap: 15px;
   margin-bottom: 25px;
-
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 1s ease forwards;
@@ -117,7 +116,7 @@
 /* BUTTON BASE */
 .hero-buttons .btn {
   padding: 12px 24px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   border-radius: 6px;
   transition: all 0.3s ease;
@@ -171,9 +170,9 @@
 .hero-trust {
   display: flex;
   gap: 25px;
-  font-size: 14px;
+  font-size: 17px;
   opacity: 0.95;
-
+  letter-spacing: 1px;
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 1s ease forwards;
@@ -229,8 +228,31 @@
 }
 
 
+@media (max-width: 576px){
+  .hero-tag{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
 
-/* ================= SERVICES SECTION ================= */
+  .hero-text h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .hero-text p{
+    font-size: 24px;
+    letter-spacing: 1px; 
+  }
+
+  .hero-buttons .btn{
+    font-size: 20px;
+    
+    
+  }
+}
+
+
+
 /* ================= SERVICES SECTION ================= */
 .services {
   padding: 100px 0;
@@ -255,7 +277,7 @@
 
 .services-header p {
   color: #64748b;
-  font-size: 17px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
@@ -406,7 +428,28 @@
   }
 
   .services-header h2 {
-    font-size: 30px;
+    font-size: 38px;
+    letter-spacing: 1px;
+  }
+
+  .services-header p {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .service-card h3{
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+
+  .service-card h3{
+    font-weight: bold;
+  }
+
+  .service-card h3{
+    font-size: 17px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -434,17 +477,19 @@
 .why-left h2 {
   font-size: 42px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   background: linear-gradient(90deg, #ffffff, #00c6ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
 }
 
 .why-left p {
   color: #b0c4d4;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   line-height: 1.6;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  font-size: 23px;
 }
 
 .why-points div {
@@ -454,7 +499,8 @@
   gap: 10px;
   color: #d1dbe6;
   transition: 0.3s;
-
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .why-points div:hover {
@@ -530,7 +576,11 @@
 
   .why-left h2 {
     font-size: 32px;
+    letter-spacing: 0.5px;
   }
+
+ 
+  
 
   .why-right {
     grid-template-columns: 1fr;
@@ -548,6 +598,25 @@
     font-size: 14px;
   }
 
+}
+
+@media (max-width: 600px) {
+
+  .why-left h2 {
+    font-size: 32px;
+    letter-spacing: 0.5px;
+  }
+  
+  .why-left p {
+    font-size: 19px;
+    letter-spacing: 1px;
+   
+  }
+
+    .why-points div {
+      font-size: 17px;
+      letter-spacing: 0.4px;
+    }
 }
 
 
@@ -633,6 +702,7 @@
   line-height: 1.7;
   margin-bottom: 15px;
   letter-spacing: 1px;
+  
 }
 
 /* FEATURES */
