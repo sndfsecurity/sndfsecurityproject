@@ -97,9 +97,9 @@ function App() {
 
           {/* LEGAL */}
           <Route path="/privacy-policy" element={<Sndfprivacy />} />
-          <Route path="/terms" element={<Sndfterms />} />
+          <Route path="/sndfterms" element={<Sndfterms />} />
           <Route path="/refund" element={<Refund />} />
-          <Route path="/disclaimer" element={<Sndfdisclaimer />} />
+          <Route path="/Sndfdisclaimer" element={<Sndfdisclaimer />} />
 
           {/* BRANCHES */}
           <Route path="/branches/pune" element={<Pune />} />
