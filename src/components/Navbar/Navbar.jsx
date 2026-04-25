@@ -209,12 +209,8 @@ Collapse.getOrCreateInstance(nav).show();
               </ul>
             </li>
 
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Media</a>
-              <ul className="dropdown-menu">
-                <li><Link to="/media/gallery" aria-label="Gallery"  className="dropdown-item" onClick={closeNavbar}>Gallery</Link></li>
-              </ul>
-            </li>
+            <li><Link className="nav-link" to="/gallery" aria-label="Gallery" onClick={closeNavbar}>Gallery</Link></li>
+
 
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Branches</a>
@@ -229,7 +225,9 @@ Collapse.getOrCreateInstance(nav).show();
             <li><Link to="/course" className="nav-link" aria-label="Course" onClick={closeNavbar}>Course</Link></li>
             <li><Link to="/shop" className="nav-link" aria-label="Shop" onClick={closeNavbar}>Shop</Link></li>
             <li><Link to="/blog" className="nav-link" aria-label="Blog" onClick={closeNavbar}>Blog</Link></li>
-            <li><Link to="/team" className="nav-link" aria-label="Team" onClick={closeNavbar}>Team</Link></li>
+            
+            {/* <li><Link to="/team" className="nav-link" aria-label="Team" onClick={closeNavbar}>Team</Link></li> */}
+            
             <li><Link to="/career" className="nav-link" aria-label="Career" onClick={closeNavbar}>Career</Link></li>
             <li><Link to="/contact" className="nav-link" aria-label="Contact" onClick={closeNavbar}>Contact</Link></li>
 

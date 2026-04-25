@@ -40,7 +40,7 @@ import Owl from "./pages/Services/Owl";
 import Spydefence from "./pages/Services/Spydefence";
 
 /* MEDIA */
-import Gallery from "./pages/Media/Gallery";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
@@ -83,6 +83,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/career" element={<Career />} />
+          <Route path="/gallery" element={<Gallery />} />
 
           {/* COURSE */}
           <Route path="/course" element={<Course />} />
@@ -105,8 +106,6 @@ function App() {
           <Route path="/branches/assam" element={<Assam />} />
           <Route path="/branches/mumbai" element={<Mumbai />} />
           <Route path="/branches/hyderabad" element={<Hyderabad />} />
-          {/* MEDIA (FIXED) */}
-          <Route path="/media/gallery" element={<Gallery />} />
 
           {/* SERVICES */}
           <Route path="/services/ndf" element={<Ndf />} />
