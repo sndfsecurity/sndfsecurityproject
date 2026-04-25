@@ -150,8 +150,7 @@ const badgesData = [
             </h1>
 
             <p>
-              SNDF is a leading security and investigation organization.
-              Managing multiple units nationwide, delivering trusted protection and intelligence services.
+              SNDF is a leading security and investigation organization. Managing multiple units nationwide, delivering trusted protection and intelligence services.
             </p>
 
             <div className="hero-buttons">
