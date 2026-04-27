@@ -1,7 +1,7 @@
 import "./Contact.css";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp } from "react-icons/fa";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -42,6 +42,59 @@ const Contact = () => {
       }
     }
   }, [location]);
+
+
+  const [formData, setFormData] = useState({
+  name: "",
+  phone: "",
+  email: "",
+  address: "",
+  service: "",
+  requirement: ""
+});
+
+const handleChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.id]: e.target.value
+  });
+};
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const payload = {
+    ...formData,
+    source: "contact"
+  };
+
+  try {
+    const res = await fetch("http://localhost:8080/api/enquiry", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (res.ok) {
+      alert("Enquiry submitted successfully ✅");
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        address: "",
+        service: "",
+        requirement: ""
+      });
+    } else {
+      alert("Error submitting form ❌");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Server error ❌");
+  }
+};
 
   return (
     
@@ -139,14 +192,46 @@ const Contact = () => {
       <h2>Enquiry Form</h2>
       <p>Fill the form and our team will contact you shortly.</p>
 
-          <label htmlFor="name">Your Name</label> <input id="name" type="text" required/>
-          <label htmlFor="phone">Mobile Number</label> <input id="phone" type="tel" required/>
-          <label htmlFor="address">Address</label> <input id="address" type="text" />
-          <label htmlFor="requirement">Your Requirement</label> <textarea id="requirement" rows="4"></textarea>
+    <form onSubmit={handleSubmit}>  
+
+          <label htmlFor="name">Your Name</label>
+           {/* <input id="name" type="text" required/> */}
+           <input id="name" value={formData.name} onChange={handleChange} />
+
+
+          <label htmlFor="phone">Mobile Number</label> 
+          {/* <input id="phone" type="tel" required/> */}
+          <input id="phone" value={formData.phone} onChange={handleChange} />
+
+          
+          <label htmlFor="address">Address</label> 
+          {/* <input id="address" type="text" /> */}
+          <input id="address" value={formData.address} onChange={handleChange} />
+
+
+
+          <label htmlFor="service" >Select Service</label>
+          <select id="service" value={formData.service} onChange={handleChange}>
+              <option value="" disabled selected>-- Select Service --</option>
+              <option>Matrimonial / Personal Issue</option>
+              <option>Corporate / Employee Verification</option>
+              <option>Surveillance / Investigation</option>
+              <option>Cyber / Fraud Case</option>
+              <option>VIP Protection</option>
+              <option>Security Guards / Bouncers</option>
+              <option>CCTV Installation & Setup</option>
+              <option>CCTV Live Monitoring</option>
+              <option>Course Enquiry</option>
+              <option>Other</option>
+            </select>
+
+          <label htmlFor="requirement">Your Requirement</label> <textarea id="requirement" value={formData.requirement} onChange={handleChange} rows="3"></textarea>
 
           
 
           <button type="submit" aria-label="Submit enquiry form">Submit Enquiry</button>
+
+          </form>
            
         </div>
 

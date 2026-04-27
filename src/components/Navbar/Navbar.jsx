@@ -31,32 +31,74 @@ function Navbar() {
   const [msg, setMsg] = useState("");
   const [errors, setErrors] = useState({ name: "", phone: "" });
 
-  const handleSubmit = () => {
-    let newErrors = {};
+  // const handleSubmit = () => {
+  //   let newErrors = {};
 
-    if (!name) newErrors.name = "Name is required";
+  //   if (!name) newErrors.name = "Name is required";
 
-    if (!phone) {
-      newErrors.phone = "Mobile number is required";
-    } else if (phone.length !== 10) {
-      newErrors.phone = "Enter valid 10-digit number";
-    }
+  //   if (!phone) {
+  //     newErrors.phone = "Mobile number is required";
+  //   } else if (phone.length !== 10) {
+  //     newErrors.phone = "Enter valid 10-digit number";
+  //   }
 
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
+  //   if (Object.keys(newErrors).length > 0) {
+  //     setErrors(newErrors);
+  //     return;
+  //   }
 
-    const text = `*New Enquiry - SNDF Website*%0A Name: ${name}%0A Phone: ${phone}%0A Requirement: ${msg}`;
+  //   const text = `*New Enquiry - SNDF Website*%0A Name: ${name}%0A Phone: ${phone}%0A Requirement: ${msg}`;
 
-    window.open(`https://wa.me/918007341905?text=${text}`, "_blank");
+  //   window.open(`https://wa.me/918007341905?text=${text}`, "_blank");
 
-    setName("");
-    setPhone("");
-    setMsg("");
-    setErrors({ name: "", phone: "" });
-    setShowModal(false);
+  //   setName("");
+  //   setPhone("");
+  //   setMsg("");
+  //   setErrors({ name: "", phone: "" });
+  //   setShowModal(false);
+  // };
+
+  const handleSubmit = async () => {
+  let newErrors = {};
+
+  if (!name) newErrors.name = "Name is required";
+  if (!phone) newErrors.phone = "Mobile number is required";
+  else if (phone.length !== 10) newErrors.phone = "Enter valid number";
+
+  if (Object.keys(newErrors).length > 0) {
+    setErrors(newErrors);
+    return;
+  }
+
+  const payload = {
+    name,
+    phone,
+    requirement: msg,
+    source: "quick"
   };
+
+  try {
+    const res = await fetch("http://localhost:8080/api/enquiry", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (res.ok) {
+      alert("Enquiry submitted ✅");
+      setShowModal(false);
+      setName("");
+      setPhone("");
+      setMsg("");
+    } else {
+      alert("Error ❌");
+    }
+  } catch (err) {
+    console.error(err);
+  }
+};
 
   return (
     <>

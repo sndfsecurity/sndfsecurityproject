@@ -211,7 +211,7 @@ const badgesData = [
 
 
       {/* about section.............................................. */}
-       <section className="about">
+      <section className="about">
       <div className="about-container">
 
         {/* IMAGE */}

@@ -409,6 +409,7 @@
   letter-spacing: 0.5px;
 }
 
+
 .enquiry-form input,
 .enquiry-form textarea {
   width: 100%;
@@ -431,6 +432,41 @@
   border-color: #3b82f6;
   background: rgba(255,255,255,0.12);
   outline: none;
+}
+
+
+.enquiry-form select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font-size: 15px;
+  appearance: none; /* remove default arrow */
+  cursor: pointer;
+}
+
+/* Placeholder style */
+.enquiry-form select option {
+  background: #0f172a; /* dark dropdown background */
+  color: #fff;
+}
+
+/* Focus same as input */
+.enquiry-form select:focus {
+  border-color: #3b82f6;
+  background: rgba(255,255,255,0.12);
+  outline: none;
+}
+
+/* Custom arrow */
+.enquiry-form select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px;
 }
 
 /* BUTTON */
@@ -730,5 +766,10 @@
     right: 15px;
     bottom: 15px;
     max-width: 100%;
+  }
+
+  .enquiry-form select {
+    padding: 13px;
+    font-size: 14px;
   }
 }
