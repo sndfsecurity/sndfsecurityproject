@@ -320,7 +320,7 @@ return (
 
         <div className="info-line">
           <h4>✉️ Email</h4>
-          <p>NDF.SNDF.HR@GMAIL.COM</p>
+          <p>info@sndf.com</p>
         </div>
 
         <div className="info-line">

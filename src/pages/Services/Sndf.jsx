@@ -240,17 +240,17 @@ const scrollToForm = () => {
       <FaWhatsapp />
     </a>
 
-    <a href="#" target="_blank" rel="noreferrer"  aria-label="Facebook" className="sndfguard-extra-social-icon facebook">
+    {/* <a href="#" target="_blank" rel="noreferrer"  aria-label="Facebook" className="sndfguard-extra-social-icon facebook">
       <FaFacebookF />
-    </a>
+    </a> */}
 
     <a href="https://www.instagram.com/sndf_guards?igsh=bHAxcTY3OWtmcXUy&utm_source=qr" target="_blank" rel="noreferrer"  aria-label="Instagram" className="sndfguard-extra-social-icon instagram">
       <FaInstagram />
     </a>
 
-    <a href="#" target="_blank" rel="noreferrer"  aria-label="Youtube" className="sndfguard-extra-social-icon youtube">
+    {/* <a href="#" target="_blank" rel="noreferrer"  aria-label="Youtube" className="sndfguard-extra-social-icon youtube">
       <FaYoutube />
-    </a>
+    </a> */}
 
   </div>
   

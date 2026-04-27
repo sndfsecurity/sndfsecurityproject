@@ -205,17 +205,17 @@ function Owl() {
       <FaWhatsapp aria-hidden="true"/>
     </a>
 
-    <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon facebook" aria-label="Visit our Facebook page">
+    {/* <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon facebook" aria-label="Visit our Facebook page">
       <FaFacebookF aria-hidden="true"/>
-    </a>
+    </a> */}
 
     <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon instagram">
       <FaInstagram />
     </a>
 
-    <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon youtube"  aria-label="Visit our YouTube channel">
+    {/* <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon youtube"  aria-label="Visit our YouTube channel">
       <FaYoutube aria-hidden="true"/>
-    </a>
+    </a> */}
 
 
   </div>

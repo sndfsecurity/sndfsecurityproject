@@ -349,17 +349,17 @@ const Spydefence = () => {
               <FaWhatsapp />
             </a>
 
-          <a href="#" className="facebook-icon">
+          {/* <a href="#" className="facebook-icon">
             <FaFacebookF />
-          </a>
+          </a> */}
 
           <a href="https://www.instagram.com/spy_defence_academy?igsh=YzR5NnpjazE3d3F5&utm_source=qr" className="instagram-icon">
             <FaInstagram />
           </a>
 
-          <a href="#" className="youtube-icon">
+          {/* <a href="#" className="youtube-icon">
             <FaYoutube />
-          </a>
+          </a> */}
 
           </div>
 

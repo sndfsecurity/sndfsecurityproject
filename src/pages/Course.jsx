@@ -606,17 +606,17 @@ const Course = () => {
             <FaWhatsapp aria-hidden="true"/>
           </a>
       
-          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon facebook" aria-label="Visit Facebook page">
+          {/* <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon facebook" aria-label="Visit Facebook page">
             <FaFacebookF aria-hidden="true"/>
-          </a>
+          </a> */}
       
           <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon instagram">
             <FaInstagram aria-hidden="true"/>
           </a>
       
-          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon youtube" aria-label="Visit Youtube page">
+          {/* <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon youtube" aria-label="Visit Youtube page">
             <FaYoutube aria-hidden="true"/>
-          </a>
+          </a> */}
       
         </div>
       
