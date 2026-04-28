@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
+
 // 🔥 BUTTON SCROLL FUNCTION (Hero button)
 const scrollToForm = () => {
   const form = document.getElementById("enquiry-form");
@@ -47,25 +48,71 @@ const Contact = () => {
   const [formData, setFormData] = useState({
   name: "",
   phone: "",
-  email: "",
   address: "",
   service: "",
   requirement: ""
 });
 
+const [loading, setLoading] = useState(false);
+
+const [errors, setErrors] = useState({});
+
 const handleChange = (e) => {
+  const { id, value } = e.target;
+
+  // Name → only letters + space
+  if (id === "name") {
+    if (!/^[A-Za-z\s]*$/.test(value)) return;
+  }
+
+  // Phone → only numbers + max 10 digits
+  if (id === "phone") {
+    if (!/^[0-9]*$/.test(value)) return;
+    if (value.length > 10) return;
+  }
+
   setFormData({
     ...formData,
-    [e.target.id]: e.target.value
+    [id]: value
   });
+
+  // ✅ CLEAR ERROR WHEN USER TYPES
+  setErrors((prev) => ({
+    ...prev,
+    [id]: ""
+  }));
 };
+
 
 const handleSubmit = async (e) => {
   e.preventDefault();
 
+  // 🔒 Frontend validation (already added earlier)
+  let newErrors = {};
+
+  if (!formData.name.trim()) {
+    newErrors.name = "Name is required";
+  } else if (!/^[A-Za-z\s]+$/.test(formData.name)) {
+    newErrors.name = "Only letters allowed";
+  }
+
+  if (!formData.phone.trim()) {
+    newErrors.phone = "Phone is required";
+  } else if (!/^[0-9]{10}$/.test(formData.phone)) {
+    newErrors.phone = "Enter valid 10 digit number";
+  }
+
+  setErrors(newErrors);
+
+  if (Object.keys(newErrors).length > 0) {
+    return;
+  }
+
+  setLoading(true); // ✅ ADD THIS
+
   const payload = {
     ...formData,
-    source: "contact"
+    source: "CONTACT"
   };
 
   try {
@@ -79,20 +126,23 @@ const handleSubmit = async (e) => {
 
     if (res.ok) {
       alert("Enquiry submitted successfully ✅");
+
       setFormData({
         name: "",
         phone: "",
-        email: "",
         address: "",
         service: "",
         requirement: ""
       });
+
+      setErrors({});
     } else {
-      alert("Error submitting form ❌");
+      alert("Something went wrong ❌");
     }
   } catch (err) {
-    console.error(err);
     alert("Server error ❌");
+  } finally {
+    setLoading(false); // ✅ ADD THIS
   }
 };
 
@@ -192,46 +242,42 @@ const handleSubmit = async (e) => {
       <h2>Enquiry Form</h2>
       <p>Fill the form and our team will contact you shortly.</p>
 
-    <form onSubmit={handleSubmit}>  
+      <form onSubmit={handleSubmit} className="enquiry-form">
 
-          <label htmlFor="name">Your Name</label>
-           {/* <input id="name" type="text" required/> */}
-           <input id="name" value={formData.name} onChange={handleChange} />
+  <label htmlFor="name">Your Name</label>
+  <input id="name" value={formData.name} onChange={handleChange} />
+  {errors.name && <p className="error-text">{errors.name}</p>}
 
+  <label htmlFor="phone">Mobile Number</label>
+  <input id="phone" value={formData.phone} onChange={handleChange} />
+  {errors.phone && <p className="error-text">{errors.phone}</p>}
 
-          <label htmlFor="phone">Mobile Number</label> 
-          {/* <input id="phone" type="tel" required/> */}
-          <input id="phone" value={formData.phone} onChange={handleChange} />
+  <label htmlFor="address">Address</label>
+  <input id="address" value={formData.address} onChange={handleChange} />
 
-          
-          <label htmlFor="address">Address</label> 
-          {/* <input id="address" type="text" /> */}
-          <input id="address" value={formData.address} onChange={handleChange} />
+  <label htmlFor="service">Select Service</label>
+  <select id="service" value={formData.service} onChange={handleChange}>
+    <option value="" disabled>-- Select Service --</option>
+    <option>Matrimonial / Personal Issue</option>
+    <option>Corporate / Employee Verification</option>
+    <option>Surveillance / Investigation</option>
+    <option>Cyber / Fraud Case</option>
+    <option>VIP Protection</option>
+    <option>Security Guards / Bouncers</option>
+    <option>CCTV Installation & Setup</option>
+    <option>CCTV Live Monitoring</option>
+    <option>Course Enquiry</option>
+    <option>Other</option>
+  </select>
 
+  <label htmlFor="requirement">Your Requirement</label>
+  <textarea id="requirement" value={formData.requirement} onChange={handleChange} rows="3"></textarea>
 
+  <button type="submit" disabled={loading}>
+    {loading ? "Submitting..." : "Submit Enquiry"}
+  </button>
 
-          <label htmlFor="service" >Select Service</label>
-          <select id="service" value={formData.service} onChange={handleChange}>
-              <option value="" disabled selected>-- Select Service --</option>
-              <option>Matrimonial / Personal Issue</option>
-              <option>Corporate / Employee Verification</option>
-              <option>Surveillance / Investigation</option>
-              <option>Cyber / Fraud Case</option>
-              <option>VIP Protection</option>
-              <option>Security Guards / Bouncers</option>
-              <option>CCTV Installation & Setup</option>
-              <option>CCTV Live Monitoring</option>
-              <option>Course Enquiry</option>
-              <option>Other</option>
-            </select>
-
-          <label htmlFor="requirement">Your Requirement</label> <textarea id="requirement" value={formData.requirement} onChange={handleChange} rows="3"></textarea>
-
-          
-
-          <button type="submit" aria-label="Submit enquiry form">Submit Enquiry</button>
-
-          </form>
+</form>
            
         </div>
 

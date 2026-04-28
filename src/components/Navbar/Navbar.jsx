@@ -31,39 +31,18 @@ function Navbar() {
   const [msg, setMsg] = useState("");
   const [errors, setErrors] = useState({ name: "", phone: "" });
 
-  // const handleSubmit = () => {
-  //   let newErrors = {};
-
-  //   if (!name) newErrors.name = "Name is required";
-
-  //   if (!phone) {
-  //     newErrors.phone = "Mobile number is required";
-  //   } else if (phone.length !== 10) {
-  //     newErrors.phone = "Enter valid 10-digit number";
-  //   }
-
-  //   if (Object.keys(newErrors).length > 0) {
-  //     setErrors(newErrors);
-  //     return;
-  //   }
-
-  //   const text = `*New Enquiry - SNDF Website*%0A Name: ${name}%0A Phone: ${phone}%0A Requirement: ${msg}`;
-
-  //   window.open(`https://wa.me/918007341905?text=${text}`, "_blank");
-
-  //   setName("");
-  //   setPhone("");
-  //   setMsg("");
-  //   setErrors({ name: "", phone: "" });
-  //   setShowModal(false);
-  // };
-
+  
   const handleSubmit = async () => {
   let newErrors = {};
 
-  if (!name) newErrors.name = "Name is required";
-  if (!phone) newErrors.phone = "Mobile number is required";
-  else if (phone.length !== 10) newErrors.phone = "Enter valid number";
+if (!name.trim()) {
+  newErrors.name = "Name is required";
+} else if (!/^[A-Za-z\s]+$/.test(name)) {
+  newErrors.name = "Only letters allowed";
+}  
+
+if (!phone) newErrors.phone = "Mobile number is required";
+else if (phone.length !== 10) newErrors.phone = "Enter valid number";
 
   if (Object.keys(newErrors).length > 0) {
     setErrors(newErrors);
@@ -71,11 +50,12 @@ function Navbar() {
   }
 
   const payload = {
-    name,
-    phone,
-    requirement: msg,
-    source: "quick"
-  };
+  name,
+  phone,
+  service: "Quick Enquiry", // ✅ DEFAULT VALUE (invisible to user)
+  requirement: msg,
+  source: "QUICK"
+};
 
   try {
     const res = await fetch("http://localhost:8080/api/enquiry", {
@@ -87,7 +67,7 @@ function Navbar() {
     });
 
     if (res.ok) {
-      alert("Enquiry submitted ✅");
+      alert("✅ Thank you! Our team will contact you shortly.");
       setShowModal(false);
       setName("");
       setPhone("");
@@ -111,16 +91,21 @@ function Navbar() {
             <h3>Quick Enquiry</h3>
 
             <input
-              type="text"
-              placeholder="Your Name"
-              value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-                setErrors({ ...errors, name: "" });
-              }}
-              className={errors.name ? "input-error" : ""}
-            />
-            {errors.name && <p className="error-text">{errors.name}</p>}
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => {
+                const value = e.target.value;
+
+                  // ❌ allow only letters and spaces
+                  if (!/^[A-Za-z\s]*$/.test(value)) return;
+
+                  setName(value);
+                  setErrors({ ...errors, name: "" });
+                }}
+                className={errors.name ? "input-error" : ""}/>
+
+              {errors.name && <p className="error-text">{errors.name}</p>}
 
             <input
               type="tel"
@@ -145,7 +130,7 @@ function Navbar() {
             ></textarea>
 
             <button className="sn-submit-btn" onClick={handleSubmit}>
-              Submit
+             Send Request 🚀
             </button>
           </div>
         </div>
@@ -215,23 +200,22 @@ function Navbar() {
           </div>
         </div>
 
+              <button
+              className="navbar-toggler"
+              aria-label="Toggle navigation"
+              type="button"
+              onClick={()=>{
+              const nav=document.getElementById("navbarContent");
+
+              if(nav.classList.contains("show")){
+              Collapse.getOrCreateInstance(nav).hide();
+              }else{
+              Collapse.getOrCreateInstance(nav).show();
+              }
+
+              }}>
 
 
-<button
-className="navbar-toggler"
-aria-label="Toggle navigation"
-type="button"
-onClick={()=>{
-const nav=document.getElementById("navbarContent");
-
-if(nav.classList.contains("show")){
-Collapse.getOrCreateInstance(nav).hide();
-}else{
-Collapse.getOrCreateInstance(nav).show();
-}
-
-}}
->
 <span className="navbar-toggler-icon"></span>
 </button>
 
