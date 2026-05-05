@@ -31,6 +31,8 @@ function Navbar() {
   const [msg, setMsg] = useState("");
   const [errors, setErrors] = useState({ name: "", phone: "" });
 
+  const API = import.meta.env.VITE_API_URL;
+
   
   const handleSubmit = async () => {
   let newErrors = {};
@@ -58,7 +60,7 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
 };
 
   try {
-    const res = await fetch("http://localhost:8080/api/enquiry", {
+    const res = await fetch(`${API}/api/enquiry`,{
       method: "POST",
       headers: {
         "Content-Type": "application/json"
