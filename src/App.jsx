@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { Toaster } from "react-hot-toast";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -39,12 +40,36 @@ import Sndf from "./pages/Services/Sndf";
 import Owl from "./pages/Services/Owl"; 
 import Spydefence from "./pages/Services/Spydefence";
 
+
+import Enquiries from "./admin/pages/Enquiries";
+import ContactEnquiries from "./admin/pages/ContactEnquiries";
+import QuickEnquiries from "./admin/pages/QuickEnquiries";
+
+import AdminLayout from "./admin/AdminLayout";
+
 /* MEDIA */
 import Gallery from "./pages/Gallery";
 
+import ProtectedRoute from "./routes/ProtectedRoute";
+
 function App() {
+
+ const isAdmin = localStorage.getItem("admin");
+
   return (
     <>
+  
+     
+      <Toaster
+        position="top-right"
+        containerStyle={{
+          top: 180,
+          right: 200,
+          zIndex: 999999
+        }}
+      />
+  
+
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
@@ -112,6 +137,50 @@ function App() {
           <Route path="/services/sndf" element={<Sndf />} />
           <Route path="/services/owl" element={<Owl />} />
           <Route path="/services/spydefence" element={<Spydefence />} />
+
+          
+          <Route
+  path="/admin/enquiries"
+  element={
+    <ProtectedRoute>
+      <Enquiries />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/admin/enquiries/contact"
+  element={
+    <ProtectedRoute>
+      <ContactEnquiries />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/admin/enquiries/quick"
+  element={
+    <ProtectedRoute>
+      <QuickEnquiries />
+    </ProtectedRoute>
+  }
+/>
+
+<Route path="/admin/login" element={<AdminLayout />} />
+
+
+           {/* <Route
+          path="/admin/enquiries"
+          element={
+          isAdmin ? <Enquiries /> : <Navigate to="/admin/adminlayout" /> }/> */}
+
+          {/* <Route path="/admin/enquiries/contact" element={<ContactEnquiries />} />
+          <Route path="/admin/enquiries/quick" element={<QuickEnquiries />} /> */}
+
+          
+
+
+
 
         </Routes>
 

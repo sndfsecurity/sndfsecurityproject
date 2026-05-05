@@ -1,0 +1,455 @@
+/* ===== PAGE BACKGROUND ===== */
+.admin-wrapper {
+  background: #f4f6f9;
+  min-height: 100vh;
+  padding: 200px 20px;
+}
+
+/* ===== MAIN CARD ===== */
+.admin-container {
+  max-width: 1400px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 0 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== HEADER ===== */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-header h2 {
+  font-size: 42px;
+  color: #1f2937;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
+
+.admin-badge {
+  background: #ef4444;
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
+
+/* ===== TABLE ===== */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* table-layout: fixed;  */
+  table-layout: fixed; 
+}
+
+.admin-table th:nth-child(1) { width: 16%; } /* Name */
+.admin-table th:nth-child(2) { width: 14%; } /* Phone */
+.admin-table th:nth-child(3) { width: 24%; } /* Service */
+.admin-table th:nth-child(4) { width: 10%; } /* Source */
+.admin-table th:nth-child(5) { width: 14%; } /* Status */
+.admin-table th:nth-child(6) { width: 15%; } /* Time */
+.admin-table th:nth-child(7) { width: 13%; } /* Action */
+
+/* HEADER */
+.admin-table th {
+  text-align: left;
+  padding: 12px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+  letter-spacing: 1px;
+}
+
+.admin-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* BODY */
+.admin-table td {
+  padding: 16px 20px;
+  font-size: 17px;
+  color: #111827;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+  
+}
+
+
+.admin-table td {
+  text-align: left;
+  padding: 18px 16px;
+  
+}
+
+.admin-table th {
+  padding: 14px 16px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+/* ROW HOVER */
+.admin-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+
+/* ===== SERVICE TEXT ===== */
+.service {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ===== SOURCE TAG ===== */
+.tag {
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.tag.contact {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.tag.quick {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+/* ===== STATUS SELECT ===== */
+.status-select {
+  min-width: 130px;
+  padding: 6px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+ letter-spacing: 0.3px;
+ height: 36px;
+}
+
+
+.action-cell {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;   /* ✅ center them */
+}
+
+.admin-btn {
+  width: 80px;
+  padding: 8px;
+  background: #22c55e; /* ✅ GREEN */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.empty-row {
+  text-align: center;
+  padding: 30px;
+  font-size: 15px;
+  color: #777;
+}
+
+.admin-btn:hover {
+  background: #16a34a; /* darker green */
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* ===== LOADING ===== */
+.loading {
+  text-align: center;
+  margin-top: 50px;
+  color: #555;
+}
+
+.mobile-cards {
+  display: none;
+}
+
+.time-cell {
+  white-space: nowrap;
+  font-size: 14px;
+  color: #6b7280;   /* softer gray */
+  font-weight: 500;
+}
+
+.admin-table tbody tr {
+  transition: 0.2s ease;
+}
+
+.admin-table tbody tr:hover {
+  background: #f1f5f9;
+  transform: scale(1.002);
+}
+
+@media (max-width: 768px) {
+
+
+
+  .admin-header h2{
+    font-size: 32px;
+  }
+
+  .admin-badge{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+  }
+
+  /* Hide table */
+  .table-wrapper,
+  .admin-table {
+    display: none !important;
+  }
+
+  /* Cards */
+  .mobile-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 10px;
+  }
+
+  .enquiry-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  .enquiry-card:hover {
+    transform: translateY(-2px);
+    transition: 0.2s;
+  }
+
+  /* GRID */
+  .card-grid {
+    display: grid;
+   grid-template-columns: 1fr 1.3fr; 
+    gap: 14px;
+    margin-bottom: 12px; /* space before buttons */
+  }
+
+  /* LEFT */
+  .card-left h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #111827;
+  }
+
+  .phone {
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 6px;
+  }
+
+  .service-text {
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.4;
+  }
+
+  /* RIGHT */
+  .card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .source-label {
+    font-size: 11px;
+    color: #9ca3af;
+    font-weight: 600;
+  }
+
+  /* TAG */
+  .card-right .tag {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    width: fit-content;
+  }
+
+  
+  .card-right select {
+  width: 100%;
+  font-size: 12px;
+  padding: 8px 10px; 
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+  /* 🔥 BUTTONS FULL WIDTH CENTER */
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 6px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+
+  .actions button {
+    
+    padding: 9px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    border: none;
+    width: 42%;
+    font-weight: bold;
+    height: 38px;
+
+  }
+
+  .actions button:first-child {
+    background: #22c55e;
+    color: #fff;
+  }
+
+  .actions .delete {
+    background: #ef4444;
+    color: #fff;
+  }
+
+  .time {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 10px;
+  font-weight: 500;
+}
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}
+
+
+
+/* ===== FILTER WRAPPER ===== */
+.filter-buttonss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 25px 0;
+  flex-wrap: nowrap;
+}
+
+/* ===== BUTTON STYLE ===== */
+.filter-btns {
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #ffffff;
+  color: #374151;   /* dark text (visible) */
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+/* ===== HOVER ===== */
+.filter-btns:hover {
+  background: #f3f4f6;
+}
+
+/* ===== ACTIVE BUTTON ===== */
+.filter-btns.active {
+  background: #2563eb;   /* clean blue */
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+/* ===== MOBILE (IMPORTANT FIX) ===== */
+@media (max-width: 768px) {
+  .filter-buttonss {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .filter-buttonss::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btns {
+    flex: 0 0 auto;
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}
+
+.admin-btn:disabled {
+  opacity: 0.6;          /* slightly faded */
+  cursor: default;
+    background: #10b981;   
+}
+
+
+.done:disabled{
+
+   opacity: 0.6;          /* slightly faded */
+  cursor: default;
+    background: #10b981;   
+}
