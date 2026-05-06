@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./EnquiryTable.css";
 import toast from "react-hot-toast";
+import AdminSidebar from "./AdminSidebar";
+import AdminHeader from "./AdminHeader";
 
 
 const EnquiryTable = ({ source }) => {
@@ -183,6 +185,11 @@ const [statusFilter, setStatusFilter] = useState("ALL");
     : enquiries.filter((e) => e.status === statusFilter);
 
   return (
+
+    <>
+
+    <AdminSidebar />
+    <AdminHeader />
 
     <div className="admin-wrapper">
 
@@ -371,6 +378,8 @@ const [statusFilter, setStatusFilter] = useState("ALL");
 
       </div>
     </div>
+
+      </>
   );
 };
 

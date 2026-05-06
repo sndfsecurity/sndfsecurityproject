@@ -1,0 +1,16 @@
+.admin-header-top{
+    height:70px;
+    background:white;
+    margin-left:240px;
+    padding:0 30px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.admin-profile{
+    font-weight:600;
+}
