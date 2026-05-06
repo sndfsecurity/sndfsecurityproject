@@ -23,6 +23,8 @@ const scrollToForm = () => {
 
 const Contact = () => {
 
+  const API = import.meta.env.VITE_API_URL;
+
   const location = useLocation();
 
   // 🔥 FIXED HASH SCROLL (IMPORTANT)
@@ -116,7 +118,10 @@ const handleSubmit = async (e) => {
   };
 
   try {
-    const res = await fetch("http://localhost:8080/api/enquiry", {
+   
+    // const res = await fetch("http://localhost:8080/api/enquiry", {
+    
+    const res = await fetch(`${API}/api/enquiry`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
