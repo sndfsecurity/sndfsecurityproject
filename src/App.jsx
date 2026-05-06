@@ -137,7 +137,7 @@ function App() {
       </Routes>
 
 
-        <Navbar />
+       {!window.location.pathname.startsWith("/admin") && <Navbar />}
         <ScrollToTop />
 
       <Routes>
