@@ -96,10 +96,51 @@ function App() {
       </Helmet>
 
       <Router>
+
+
+      <Routes>
+
+        
+                  
+            <Route
+              path="/admin/enquiries"
+              element={
+                <ProtectedRoute>
+                  <Enquiries />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route
+              path="/admin/enquiries/contact"
+              element={
+                <ProtectedRoute>
+                  <ContactEnquiries />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route
+              path="/admin/enquiries/quick"
+              element={
+                <ProtectedRoute>
+                  <QuickEnquiries />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route path="/admin/login" element={<AdminLayout />} />
+
+
+
+
+      </Routes>
+
+
         <Navbar />
         <ScrollToTop />
 
-        <Routes>
+      <Routes>
 
           {/* MAIN */}
           <Route path="/" element={<Home />} />
@@ -138,36 +179,6 @@ function App() {
           <Route path="/services/owl" element={<Owl />} />
           <Route path="/services/spydefence" element={<Spydefence />} />
 
-          
-          <Route
-  path="/admin/enquiries"
-  element={
-    <ProtectedRoute>
-      <Enquiries />
-    </ProtectedRoute>
-  }
-/>
-
-<Route
-  path="/admin/enquiries/contact"
-  element={
-    <ProtectedRoute>
-      <ContactEnquiries />
-    </ProtectedRoute>
-  }
-/>
-
-<Route
-  path="/admin/enquiries/quick"
-  element={
-    <ProtectedRoute>
-      <QuickEnquiries />
-    </ProtectedRoute>
-  }
-/>
-
-<Route path="/admin/login" element={<AdminLayout />} />
-
 
            {/* <Route
           path="/admin/enquiries"
@@ -177,15 +188,15 @@ function App() {
           {/* <Route path="/admin/enquiries/contact" element={<ContactEnquiries />} />
           <Route path="/admin/enquiries/quick" element={<QuickEnquiries />} /> */}
 
-          
-
-
-
-
         </Routes>
 
-        <Footer />
-        <FloatingButtons />
+        {/* <Footer />
+        <FloatingButtons /> */}
+
+        {!window.location.pathname.startsWith("/admin") && <Footer />}
+
+        {!window.location.pathname.startsWith("/admin") && <FloatingButtons />}
+
       </Router>
     </>
   );
