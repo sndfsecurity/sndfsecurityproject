@@ -17,15 +17,11 @@ import Career from "./pages/Career";
 /* LEGAL */
 import Sndfprivacy from "./pages/Sndfprivacy";
 import Sndfterms from "./pages/Sndfterms";
-import Sndfdisclaimer from "./pages/Sndfdisclaimer";
 import Refund from "./pages/Refund";
 
 /* BRANCHES */
 import Pune from "./pages/branches/Pune";
-import Assam from "./pages/branches/Assam";
 import Mumbai from "./pages/branches/Mumbai";
-import Hyderabad from "./pages/branches/Hyderabad";
-
 
 /* SHOP */
 import Shop from "./pages/Shop";
@@ -34,10 +30,8 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 
 /* SERVICES */
-import Ndf from "./pages/Services/Ndf";   
-import Sndf from "./pages/Services/Sndf"; 
-import Owl from "./pages/Services/Owl"; 
-import Spydefence from "./pages/Services/Spydefence";
+import Ndf from "./pages/Services/Ndf";
+import Sndf from "./pages/Services/Sndf";
 
 /* MEDIA */
 import Gallery from "./pages/Gallery";
@@ -51,71 +45,49 @@ function App() {
             "@context": "https://schema.org",
             "@type": "SecurityService",
             "name": "SNDF Security Services",
-            "url": "https://www.sndfndf.com",
-            "logo": "https://www.sndfndf.com/logo.png",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+919970383155",
-              "contactType": "customer service",
-              "areaServed": "IN"
-            },
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Pune",
-              "addressRegion": "Maharashtra",
-              "postalCode": "411046",
-              "addressCountry": "IN"
-            }
+            "url": "https://www.sndfndf.com"
           })}
         </script>
       </Helmet>
 
       <Router>
-        <Navbar />
         <ScrollToTop />
 
         <Routes>
 
           {/* MAIN */}
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/" element={<><Navbar /><Home /><Footer /></>} />
+          <Route path="/about" element={<><Navbar /><About /><Footer /></>} />
+          <Route path="/contact" element={<><Navbar /><Contact /><Footer /></>} />
+          <Route path="/team" element={<><Navbar /><Team /><Footer /></>} />
+          <Route path="/blog" element={<><Navbar /><Blog /><Footer /></>} />
+          <Route path="/career" element={<><Navbar /><Career /><Footer /></>} />
+          <Route path="/gallery" element={<><Navbar /><Gallery /><Footer /></>} />
 
           {/* COURSE */}
-          <Route path="/course" element={<Course />} />
-          <Route path="/course/dic" element={<Course />} />
+          <Route path="/course" element={<><Navbar /><Course /><Footer /></>} />
 
           {/* SHOP */}
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/product/:id" element={<ProductDetails />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/shop" element={<><Navbar /><Shop /><Footer /></>} />
+          <Route path="/product/:id" element={<><Navbar /><ProductDetails /><Footer /></>} />
+          <Route path="/cart" element={<><Navbar /><Cart /><Footer /></>} />
+          <Route path="/checkout" element={<><Navbar /><Checkout /><Footer /></>} />
 
           {/* LEGAL */}
-          <Route path="/privacy-policy" element={<Sndfprivacy />} />
-          <Route path="/sndfterms" element={<Sndfterms />} />
-          <Route path="/refund" element={<Refund />} />
-          <Route path="/Sndfdisclaimer" element={<Sndfdisclaimer />} />
+          <Route path="/privacy-policy" element={<><Navbar /><Sndfprivacy /><Footer /></>} />
+          <Route path="/sndfterms" element={<><Navbar /><Sndfterms /><Footer /></>} />
+          <Route path="/refund" element={<><Navbar /><Refund /><Footer /></>} />
 
           {/* BRANCHES */}
-          <Route path="/branches/pune" element={<Pune />} />
-          <Route path="/branches/assam" element={<Assam />} />
-          <Route path="/branches/mumbai" element={<Mumbai />} />
-          <Route path="/branches/hyderabad" element={<Hyderabad />} />
+          <Route path="/branches/pune" element={<><Navbar /><Pune /><Footer /></>} />
+          <Route path="/branches/mumbai" element={<><Navbar /><Mumbai /><Footer /></>} />
 
           {/* SERVICES */}
-          <Route path="/services/ndf" element={<Ndf />} />
-          <Route path="/services/sndf" element={<Sndf />} />
-          <Route path="/services/owl" element={<Owl />} />
-          <Route path="/services/spydefence" element={<Spydefence />} />
+          <Route path="/services/ndf" element={<><Navbar /><Ndf /><Footer /></>} />
+          <Route path="/services/sndf" element={<><Navbar /><Sndf /><Footer /></>} />
 
         </Routes>
 
-        <Footer />
         <FloatingButtons />
       </Router>
     </>
