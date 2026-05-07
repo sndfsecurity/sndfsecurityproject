@@ -5,6 +5,7 @@
   padding: 50px 20px;
   margin-left:240px;
 
+
 }
 
 /* ===== MAIN CARD ===== */
@@ -61,7 +62,7 @@
 .admin-table th:nth-child(3) { width: 24%; } /* Service */
 .admin-table th:nth-child(4) { width: 10%; } /* Source */
 .admin-table th:nth-child(5) { width: 14%; } /* Status */
-.admin-table th:nth-child(6) { width: 15%; } /* Time */
+.admin-table th:nth-child(6) { width: 17%; } /* Time */
 .admin-table th:nth-child(7) { width: 13%; } /* Action */
 
 /* HEADER */
@@ -232,6 +233,14 @@ select:disabled {
 }
 
 @media (max-width: 768px) {
+
+
+  
+
+    .admin-wrapper{
+        margin-left:0;
+        padding:20px 10px;
+    }
 
 
 

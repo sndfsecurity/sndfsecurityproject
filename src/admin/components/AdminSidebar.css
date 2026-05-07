@@ -7,6 +7,7 @@
     left:0;
     top:0;
     padding:20px;
+    z-index:999;
 }
 
 .sidebar-logo{
@@ -28,4 +29,36 @@
 
 .sidebar-menu li:hover{
     background:#1e293b;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+    .admin-sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+        padding:15px;
+    }
+
+    .sidebar-logo{
+        font-size:20px;
+        margin-bottom:20px;
+    }
+
+    .sidebar-menu{
+        display:flex;
+        gap:10px;
+        overflow-x:auto;
+    }
+
+    .sidebar-menu li{
+        white-space:nowrap;
+        margin-bottom:0;
+        padding:10px 14px;
+        background:#1e293b;
+    }
+
 }

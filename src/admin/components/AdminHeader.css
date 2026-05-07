@@ -14,3 +14,23 @@
 .admin-profile{
     font-weight:600;
 }
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+    .admin-header-top{
+        margin-left:0;
+        padding:15px;
+        height:auto;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .admin-header-top h2{
+        font-size:28px;
+    }
+
+}
