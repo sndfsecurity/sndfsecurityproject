@@ -32,6 +32,8 @@ import Checkout from "./pages/Checkout";
 /* SERVICES */
 import Ndf from "./pages/Services/Ndf";
 import Sndf from "./pages/Services/Sndf";
+import Owl from "./pages/Services/Owl";
+import Spydefence from "./pages/Services/Spydefence";
 
 /* MEDIA */
 import Gallery from "./pages/Gallery";
@@ -66,6 +68,7 @@ function App() {
 
           {/* COURSE */}
           <Route path="/course" element={<><Navbar /><Course /><Footer /></>} />
+          <Route path="/course/dic" element={<><Navbar /><Course /><Footer /></>} />
 
           {/* SHOP */}
           <Route path="/shop" element={<><Navbar /><Shop /><Footer /></>} />
@@ -85,6 +88,8 @@ function App() {
           {/* SERVICES */}
           <Route path="/services/ndf" element={<><Navbar /><Ndf /><Footer /></>} />
           <Route path="/services/sndf" element={<><Navbar /><Sndf /><Footer /></>} />
+          <Route path="/services/owl" element={<><Navbar /><Owl /><Footer /></>} />
+          <Route path="/services/spydefence" element={<><Navbar /><Spydefence /><Footer /></>} />
 
         </Routes>
 
