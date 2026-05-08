@@ -4,17 +4,43 @@ export default function AdminHeader() {
 
   return (
 
-    <div className="admin-header-top">
+    <header className="admin-header-top">
 
-      <div>
+      {/* LEFT SIDE */}
+
+      <div className="header-left">
+
         <h2>Admin Dashboard</h2>
+
+        <p>
+          Manage enquiries, careers, orders and payments
+        </p>
+
       </div>
 
-      <div className="admin-profile">
-        Welcome Admin 👋
+      {/* RIGHT SIDE */}
+
+      <div className="header-right">
+
+        <div className="admin-profile">
+
+          <div className="admin-avatar">
+            A
+          </div>
+
+          <div className="admin-info">
+
+            <h4>Admin</h4>
+
+            <p>SNDF Security</p>
+
+          </div>
+
+        </div>
+
       </div>
 
-    </div>
+    </header>
 
   );
 }
