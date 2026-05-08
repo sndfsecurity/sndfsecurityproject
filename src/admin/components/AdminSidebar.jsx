@@ -11,12 +11,14 @@ import {
 import logo from "../../assets/images/LOGO.webp";
 
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import "./AdminSidebar.css";
 import { useNavigate } from "react-router-dom";
 
 
 export default function AdminSidebar() {
+  const location = useLocation();
 
   const [showSidebar, setShowSidebar] = useState(false);
   const navigate = useNavigate();
@@ -91,15 +93,33 @@ export default function AdminSidebar() {
 
         <ul className="sidebar-menu">
 
-          <li className="active">
+          {/* <li className="active">
+            <FaTachometerAlt />
+            <span>Dashboard</span>
+          </li> */}
+
+          <Link to="/admin/dashboard" className="sidebar-link">
+
+          <li className={location.pathname === "/admin/dashboard" ? "active" : ""}>
             <FaTachometerAlt />
             <span>Dashboard</span>
           </li>
 
-          <li>
+        </Link>
+
+         <Link to="/admin/enquiries" className="sidebar-link">
+
+          <li className={location.pathname === "/admin/enquiries" ? "active" : ""}>
             <FaEnvelope />
             <span>Enquiries</span>
           </li>
+
+        </Link>
+
+          {/* <li>
+            <FaEnvelope />
+            <span>Enquiries</span>
+          </li> */}
 
           <li>
             <FaBriefcase />

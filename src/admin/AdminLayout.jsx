@@ -16,7 +16,7 @@ export default function AdminLayout() {
   const token = localStorage.getItem("token");
 
   if (token) {
-    navigate("/admin/enquiries");
+    navigate("/admin/dashboard");
   }
 }, [navigate]);
 
@@ -38,7 +38,7 @@ export default function AdminLayout() {
       localStorage.setItem("token", res.data.token);
 
       // ✅ Redirect to admin page
-      navigate("/admin/enquiries");
+      navigate("/admin/dashboard");
 
     }
 

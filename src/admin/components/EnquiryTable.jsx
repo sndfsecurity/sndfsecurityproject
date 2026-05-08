@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 import axios from "axios";
 import "./EnquiryTable.css";
@@ -12,7 +13,15 @@ const EnquiryTable = ({ source }) => {
 
 const API = import.meta.env.VITE_API_URL;
 
-const [statusFilter, setStatusFilter] = useState("ALL");
+const [searchParams] = useSearchParams();
+
+const statusFromUrl = searchParams.get("status");
+
+// const [statusFilter, setStatusFilter] = useState("ALL");
+
+const [statusFilter, setStatusFilter] = useState(
+  statusFromUrl || "ALL"
+);
 
   const [enquiries, setEnquiries] = useState([]);
   const [loading, setLoading] = useState(true);
