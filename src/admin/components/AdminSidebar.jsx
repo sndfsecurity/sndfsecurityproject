@@ -10,14 +10,32 @@ import {
 
 import logo from "../../assets/images/LOGO.webp";
 
-
 import { useState } from "react";
 
 import "./AdminSidebar.css";
+import { useNavigate } from "react-router-dom";
+
 
 export default function AdminSidebar() {
 
   const [showSidebar, setShowSidebar] = useState(false);
+  const navigate = useNavigate();
+  
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    navigate("/admin/login");
+  };
+
+  const handleAuthError = (err) => {
+    if (err.response?.status === 401 || err.response?.status === 403) {
+      localStorage.removeItem("token");
+      window.location.href = "/admin/login";
+      return true;
+    }
+    return false;
+  };
+
 
   return (
     <>
@@ -102,7 +120,7 @@ export default function AdminSidebar() {
 
         {/* LOGOUT */}
 
-        <button className="logout-btn">
+        <button className="logout-btn" onClick={handleLogout}>
 
           <FaSignOutAlt />
 
@@ -116,30 +134,3 @@ export default function AdminSidebar() {
   );
 }
 
-
-// import "./AdminSidebar.css";
-
-// export default function AdminSidebar() {
-//   return (
-
-//     <div className="admin-sidebar">
-
-//       <h2 className="sidebar-logo">SNDF ADMIN</h2>
-
-//       <ul className="sidebar-menu">
-
-//         <li>Dashboard</li>
-
-//         <li>Enquiries</li>
-
-//         <li>Careers</li>
-
-//         <li>Orders</li>
-
-//         <li>Payments</li>
-
-//       </ul>
-
-//     </div>
-//   );
-// }

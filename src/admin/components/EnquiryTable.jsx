@@ -193,9 +193,9 @@ const [statusFilter, setStatusFilter] = useState("ALL");
 
     <div className="admin-wrapper">
 
-      <button className="logout-btn" onClick={handleLogout}>
+      {/* <button className="logout-btn" onClick={handleLogout}>
           Logout
-      </button>
+      </button> */}
 
 
     <div className="filter-buttonss">
