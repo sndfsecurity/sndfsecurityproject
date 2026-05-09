@@ -47,35 +47,66 @@ const handleOrder = () => {
 
   setShowPopup(true);
 
+  
   const orderItems = cart
-    .map(
-      (item) =>
-        `• ${item.name} × ${item.quantity}`
-    )
-    .join("%0A");
+  .map(
+    (item, index) =>
+`
+${index + 1}. ${item.name}
 
-  const whatsappMessage =
-`🛒 *SNDF ORDER REQUEST*
+   Qty : ${item.quantity}
+   Price : ${item.price}
+`
+  )
+  .join("\n━━━━━━━━━━━━━━━\n");
 
-👤 Name: ${formData.name}
-📞 Mobile: ${formData.mobile}
-🏙️ City: ${formData.city}
+const whatsappMessage = `
+🛒 *SNDF SECURITY ORDER REQUEST*
 
-📦 PRODUCTS:
+━━━━━━━━━━━━━━━
+
+👤 *CUSTOMER DETAILS*
+
+▪ Name : ${formData.name}
+▪ Mobile : ${formData.mobile}
+▪ City : ${formData.city}
+
+━━━━━━━━━━━━━━━
+
+📦 *ORDERED PRODUCTS*
+
 ${orderItems}
 
-💰 Total Amount: ₹${totalPrice}
+━━━━━━━━━━━━━━━
 
-📍 Address:
+💰 *TOTAL AMOUNT*
+₹${totalPrice}
+
+━━━━━━━━━━━━━━━
+
+📍 *DELIVERY ADDRESS*
+
 ${formData.address}
 
-📝 Message:
-${formData.message}`;
+━━━━━━━━━━━━━━━
+
+📝 *EXTRA MESSAGE*
+
+${formData.message || "No extra message"}
+
+━━━━━━━━━━━━━━━
+
+✅ Please confirm this order.
+
+📞 Team SNDF will contact shortly.
+
+🌐 www.sndfndf.com
+`;
 
   setTimeout(() => {
 
     window.open(
-      `https://wa.me/919370899504?text=${whatsappMessage}`,
+      `https://wa.me/919370899504?text=${encodeURIComponent(whatsappMessage)}`,
       "_blank"
     );
 
@@ -806,7 +837,10 @@ ${formData.message}`;
   );
 }
 
+
 export default Checkout;
+
+
 // import React, { useContext } from "react";
 // import { CartContext } from "../context/CartContext";
 // import { Helmet } from "react-helmet-async";
