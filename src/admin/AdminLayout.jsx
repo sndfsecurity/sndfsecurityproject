@@ -50,14 +50,11 @@ export default function AdminLayout() {
           } else if (err.response?.status === 401) {
             alert(message); // Invalid credentials
           } else {
-            alert("Something went wrong");
+           alert("Server error. Please try again.");
           }
         }
     
-    // catch (err) {
-    //   alert("Invalid credentials or too many attempts");
-    // }
-
+    
 
   };
 

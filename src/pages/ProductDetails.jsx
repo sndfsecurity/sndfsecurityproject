@@ -658,12 +658,20 @@ function ProductDetails() {
     window.open(`https://wa.me/91234678902?text=${encodeURIComponent(msg)}`);
   };
 
+  // const handleAddToCart = () => {
+  //   let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  //   cart.push(product);
+  //   localStorage.setItem("cart", JSON.stringify(cart));
+  //   alert("Product Added to Cart ✅");
+  // };
+
   const handleAddToCart = () => {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push(product);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    alert("Product Added to Cart ✅");
-  };
+
+  addToCart(product);
+
+  alert("Product Added to Cart ✅");
+
+};
 
   return (
 
