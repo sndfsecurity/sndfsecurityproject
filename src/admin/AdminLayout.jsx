@@ -16,7 +16,7 @@ export default function AdminLayout() {
   const token = localStorage.getItem("token");
 
   if (token) {
-    navigate("/admin/enquiries");
+    navigate("/admin/dashboard");
   }
 }, [navigate]);
 
@@ -38,7 +38,7 @@ export default function AdminLayout() {
       localStorage.setItem("token", res.data.token);
 
       // ✅ Redirect to admin page
-      navigate("/admin/enquiries");
+      navigate("/admin/dashboard");
 
     }
 
@@ -50,14 +50,11 @@ export default function AdminLayout() {
           } else if (err.response?.status === 401) {
             alert(message); // Invalid credentials
           } else {
-            alert("Something went wrong");
+           alert("Server error. Please try again.");
           }
         }
     
-    // catch (err) {
-    //   alert("Invalid credentials or too many attempts");
-    // }
-
+    
 
   };
 

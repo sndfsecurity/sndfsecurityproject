@@ -46,6 +46,7 @@ import ContactEnquiries from "./admin/pages/ContactEnquiries";
 import QuickEnquiries from "./admin/pages/QuickEnquiries";
 
 import AdminLayout from "./admin/AdminLayout";
+import Dashboard from "./admin/pages/Dashboard";
 
 /* MEDIA */
 import Gallery from "./pages/Gallery";
@@ -98,7 +99,7 @@ function App() {
       <Router>
 
 
-      <Routes>
+      {/* <Routes>
 
         
                   
@@ -134,7 +135,75 @@ function App() {
 
 
 
-      </Routes>
+      </Routes> */}
+
+
+      <Routes>
+
+  {/* DEFAULT ADMIN REDIRECT */}
+
+  <Route
+    path="/admin"
+    element={<Navigate to="/admin/dashboard" />}
+  />
+
+
+  {/* DASHBOARD */}
+
+  <Route
+    path="/admin/dashboard"
+    element={
+      <ProtectedRoute>
+        <Dashboard />
+      </ProtectedRoute>
+    }
+  />
+
+
+  {/* ALL ENQUIRIES */}
+
+  <Route
+    path="/admin/enquiries"
+    element={
+      <ProtectedRoute>
+        <Enquiries />
+      </ProtectedRoute>
+    }
+  />
+
+
+  {/* CONTACT ENQUIRIES */}
+
+  <Route
+    path="/admin/enquiries/contact"
+    element={
+      <ProtectedRoute>
+        <ContactEnquiries />
+      </ProtectedRoute>
+    }
+  />
+
+
+  {/* QUICK ENQUIRIES */}
+
+  <Route
+    path="/admin/enquiries/quick"
+    element={
+      <ProtectedRoute>
+        <QuickEnquiries />
+      </ProtectedRoute>
+    }
+  />
+
+
+  {/* LOGIN */}
+
+  <Route
+    path="/admin/login"
+    element={<AdminLayout />}
+  />
+
+</Routes>
 
 
        {!window.location.pathname.startsWith("/admin") && <Navbar />}

@@ -38,6 +38,10 @@
 
 /* TOP */
 
+.sidebar-link{
+    text-decoration:none;
+}
+
 .sidebar-top {
 
   text-align: center;

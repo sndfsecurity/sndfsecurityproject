@@ -461,6 +461,6 @@ select:disabled {
 .done:disabled{
 
    opacity: 0.6;          /* slightly faded */
-  cursor: default;
-    background: #10b981;   
+   cursor: default;
+   background: #10b981;   
 }
