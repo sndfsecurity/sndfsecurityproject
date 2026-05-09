@@ -4,7 +4,7 @@ import "./ProductDetails.css";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Helmet } from "react-helmet-async";
-
+import { FaShoppingCart } from "react-icons/fa";
 
 import gps from "../assets/images/gps.png";
 import gsm from "../assets/images/minia83.png";
@@ -43,7 +43,9 @@ function ProductDetails() {
 
   const { id } = useParams();
   const navigate = useNavigate();
-  const { addToCart } = useContext(CartContext);
+  // const { addToCart } = useContext(CartContext);
+
+  const { addToCart, cart } = useContext(CartContext);
 
   // ✅ FULL DYNAMIC PRODUCTS
   const productsData = [
@@ -653,11 +655,7 @@ function ProductDetails() {
     return <h2 style={{ color: "white" }}>Product not found</h2>;
   }
 
-  // const handleBuy = () => {
-  //   const msg = `Hello, I want to buy ${product.name} for ${product.price}`;
-  //   window.open(`https://wa.me/919370899504?text=${encodeURIComponent(msg)}`);
-  // };
-
+  
   const handleBuy = () => {
 
   addToCart(product);
@@ -720,13 +718,62 @@ function ProductDetails() {
               <li key={i}><ImPointRight /> {f}</li>
             ))}
           </ul>
-
-          {/* 🔥 POLICIES DYNAMIC */}
           
         </div>
 
+
         {/* RIGHT SIDE */}
         <div className="extra-section">
+
+
+              <div
+  onClick={() => navigate("/cart")}
+  style={{
+    display: "flex",
+    justifyContent: "flex-end",
+    marginBottom: "20px",
+    cursor: "pointer"
+  }}
+>
+  <div
+    style={{
+      position: "relative",
+      background: "#ffffff",
+      width: "58px",
+      height: "58px",
+      borderRadius: "50%",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      boxShadow: "0 6px 18px rgba(0,0,0,0.35)",
+      border: "3px solid red"
+    }}
+  >
+    <FaShoppingCart size={24} color="#0b0b5c" />
+
+    {cart.length > 0 && (
+      <span
+        style={{
+          position: "absolute",
+          top: "-8px",
+          right: "-8px",
+          background: "red",
+          color: "white",
+          borderRadius: "50%",
+          minWidth: "24px",
+          height: "24px",
+          fontSize: "13px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontWeight: "bold"
+        }}
+      >
+        {cart.length}
+      </span>
+    )}
+  </div>
+</div>
 
           <div className="box">
             <h3>📦 Features</h3>

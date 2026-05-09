@@ -1,12 +1,14 @@
 import React, { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 import { Helmet } from "react-helmet-async";
 
+
 function Checkout() {
 
-  // const { cart, totalPrice } = useContext(CartContext);
+  const navigate = useNavigate();
 
-  const { cart, totalPrice, setCart } = useContext(CartContext);
+  const { cart, totalPrice } = useContext(CartContext);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -105,20 +107,31 @@ ${formData.message || "No extra message"}
 🌐 www.sndfndf.com
 `;
 
-  setTimeout(() => {
+ 
+setTimeout(() => {
 
-   window.open(
-  `https://wa.me/919370899504?text=${encodeURIComponent(whatsappMessage)}`,
-  "_blank"
-);
+  // Save success state
+  localStorage.setItem(
+    "orderSuccess",
+    "true"
+  );
 
-setCart([]);
+  // Clear cart storage
+  localStorage.removeItem("cart");
 
-localStorage.removeItem("cart");
+  // Open WhatsApp
+  window.open(
+    `https://wa.me/919370899504?text=${encodeURIComponent(whatsappMessage)}`,
+    "_blank"
+  );
 
-setShowPopup(false);
+  // Hide popup
+  setShowPopup(false);
 
-  }, 2000);
+  // Redirect to cart page
+  window.location.href = "/cart";
+
+}, 2000);
 
 };
   
@@ -139,7 +152,7 @@ setShowPopup(false);
       <style>{`
 
 
-        .popup-overlay{
+  .popup-overlay{
 
   position:fixed;
 
@@ -275,11 +288,13 @@ setShowPopup(false);
 
           color:white;
 
-          font-size:36px;
+          font-size:42px;
 
-          margin-bottom:8px;
+          margin-bottom:10px;
 
-          font-weight:800;
+          font-weight:700;
+
+          letter-spacing:1px;
 
         }
 
@@ -287,7 +302,10 @@ setShowPopup(false);
 
           color:#dfe7ff;
 
-          font-size:15px;
+          font-size:18px;
+
+          letter-spacing:1px;
+          margin-bottom:5px;
 
         }
 
@@ -301,6 +319,8 @@ setShowPopup(false);
 
           margin-bottom:16px;
 
+          
+
         }
 
         .input-group label{
@@ -311,9 +331,10 @@ setShowPopup(false);
 
           color:#111;
 
-          font-size:14px;
+          font-size:16px;
 
           font-weight:700;
+          letter-spacing:0.5px;
 
         }
 
@@ -386,9 +407,11 @@ setShowPopup(false);
 
           border-radius:12px;
 
-          font-size:17px;
+          font-size:22px;
 
           font-weight:700;
+
+          letter-spacing : 1px;
 
           cursor:pointer;
 
@@ -438,7 +461,8 @@ setShowPopup(false);
 
           font-weight:800;
 
-          margin-bottom:20px;
+          margin-bottom:25px;
+          letter-spacing:1px;
 
         }
 
@@ -478,9 +502,11 @@ setShowPopup(false);
 
           color:white;
 
-          font-size:15px;
+          font-size:16px;
 
           margin-bottom:5px;
+          lettter-spacing:0.5px;
+          line-height:1.5;
 
         }
 
@@ -488,7 +514,7 @@ setShowPopup(false);
 
           color:#d7d7d7;
 
-          font-size:14px;
+          font-size:16px;
 
           margin-bottom:4px;
 
@@ -500,7 +526,7 @@ setShowPopup(false);
 
           font-weight:800;
 
-          font-size:18px !important;
+          font-size:19px !important;
 
         }
 
@@ -518,6 +544,7 @@ setShowPopup(false);
           padding:26px;
 
           text-align:center;
+        
 
         }
 
@@ -528,6 +555,7 @@ setShowPopup(false);
           font-size:20px;
 
           margin-bottom:10px;
+           letter-spacing:1px;
 
         }
 
@@ -538,6 +566,7 @@ setShowPopup(false);
           font-size:44px;
 
           font-weight:800;
+            letter-spacing:1px;
 
         }
 
@@ -557,7 +586,9 @@ setShowPopup(false);
 
           margin-bottom:18px;
 
-          font-size:30px;
+          font-size:24px;
+          letter-spacing:1px;
+          font-weight:bold;
 
         }
 
@@ -574,6 +605,8 @@ setShowPopup(false);
           margin-bottom:14px;
 
           line-height:1.5;
+          text-align:start;
+          letter-spacing:0.4px;
 
         }
 
@@ -597,7 +630,8 @@ setShowPopup(false);
 
           .checkout-page{
 
-            padding:20px 12px;
+            padding:200px 12px;
+            padding-bottom:100px;
 
           }
 
@@ -846,42 +880,3 @@ setShowPopup(false);
 
 export default Checkout;
 
-
-// import React, { useContext } from "react";
-// import { CartContext } from "../context/CartContext";
-// import { Helmet } from "react-helmet-async";
-
-// function Checkout() {
-
-//   const { totalPrice } = useContext(CartContext);
-
-//   const handlePayment = () => {
-//     const msg = `I want to pay ₹${totalPrice}`;
-//     window.open(`https://wa.me/91234678902?text=${encodeURIComponent(msg)}`);
-//   };
-
-//   return (
-
-//     <>
-
-//     <Helmet>
-//       <title>Secure Checkout | SNDF Store</title>
-//       <meta name="description" content="Complete your purchase securely with SNDF. Safe and reliable checkout for all security products." />
-//     </Helmet>
-
-
-//     <div style={{ padding: "120px", color: "white", background: "#141250" }}>
-//       <h1>Checkout</h1>
-
-//       <h2>Total: ₹{totalPrice}</h2>
-
-//       <button onClick={handlePayment}>
-//         Pay Now
-//       </button>
-//     </div>
-
-//     </>
-//   );
-// }
-
-// export default Checkout;

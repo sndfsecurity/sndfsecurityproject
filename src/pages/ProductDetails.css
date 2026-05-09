@@ -1,7 +1,7 @@
 .details-page {
   background: #141250;
   min-height: 100vh;
-  padding: 40px 20px;
+  padding: 120px 20px;
   color: white;
   margin-top: 130px;
 }
@@ -14,6 +14,9 @@
   color: white;
   cursor: pointer;
   border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
 }
 
 .details-container {
@@ -29,9 +32,10 @@
 }
 
 .action-buttons {
-  margin-top: 15px;
+  margin-top: 25px;
   display: flex;
   gap: 10px;
+  
 }
 
 .buy-now,
@@ -41,7 +45,10 @@
   color: white;
   border-radius: 25px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 15px;
 }
 
 .buy-now {
@@ -54,20 +61,27 @@
 
 .info-section h1 {
   font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .info-section h2 {
   color: #00ffcc;
+  margin-top: 15px;
 }
 
 .desc {
   margin: 15px 0;
   opacity: 0.9;
+  letter-spacing: 1px;
+  line-height: 1.6;
 }
 
 .features {
   list-style: none;
   padding: 0;
+  margin-top: 30px;
 }
 
 .features li {
@@ -93,6 +107,19 @@
   background: #1b3b6f;
   padding: 15px;
   border-radius: 10px;
+}
+
+.box h3{
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.box p{
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 
 @media (max-width: 992px) {

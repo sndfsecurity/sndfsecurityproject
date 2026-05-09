@@ -38,13 +38,6 @@ function Cart() {
 
           padding:300px 20px;
 
-        //   background:
-        //   linear-gradient(
-        //     rgba(5,10,45,0.92),
-        //     rgba(5,10,45,0.92)
-        //   ),
-        //  url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
-
           background-size:cover;
           background-position:center;
 
@@ -96,11 +89,13 @@ function Cart() {
 
           color:white;
 
-          font-size:36px;
+          font-size:38px;
 
-          font-weight:800;
+          font-weight:700;
 
-          margin-bottom:8px;
+          margin-bottom:15px;
+
+          letter-spacing:1px;
 
         }
 
@@ -108,7 +103,9 @@ function Cart() {
 
           color:#dfe7ff;
 
-          font-size:15px;
+          font-size:19px;
+          letter-spacing:1px;
+
 
         }
 
@@ -172,11 +169,13 @@ function Cart() {
 
           color:#111;
 
-          font-size:18px;
+          font-size:20px;
 
-          margin-bottom:8px;
+          margin-bottom:12px;
 
-          font-weight:700;
+          font-weight:800;
+
+          letter-spacing:1px;
 
         }
 
@@ -187,6 +186,9 @@ function Cart() {
           font-size:20px;
 
           font-weight:800;
+          
+          letter-spacing:1px;
+
 
         }
 
@@ -226,9 +228,9 @@ function Cart() {
 
         .qty-number{
 
-          font-size:18px;
+          font-size:20px;
 
-          font-weight:700;
+          font-weight:bold;
 
           color:#111;
 
@@ -246,11 +248,13 @@ function Cart() {
 
           border-radius:10px;
 
-          font-size:14px;
+          font-size:19px;
 
           cursor:pointer;
 
           font-weight:700;
+
+          letter-spacing:0.5px
 
         }
 
@@ -420,7 +424,8 @@ function Cart() {
 
           .cart-page{
 
-            padding:20px 12px;
+            padding:190px 12px;
+            padding-bottom:100px;
 
           }
 
@@ -645,57 +650,3 @@ export default Cart;
 
 
 
-
-
-// import React, { useContext } from "react";
-// import { CartContext } from "../context/CartContext";
-// import { useNavigate } from "react-router-dom";
-// import { Helmet } from "react-helmet-async";
-
-// function Cart() {
-
-//   const { cart, removeFromCart, totalPrice } = useContext(CartContext);
-//   const navigate = useNavigate();
-
-//   return (
-
-//     <>
-
-//     <Helmet>
-//       <title>Your Cart | SNDF Store</title>
-//       <meta name="description" content="Review selected security products in your cart and proceed with secure checkout at SNDF store." />
-//     </Helmet>
-
-//     <div style={{ padding: "120px", color: "white", background: "#141250" }}>
-
-//       <h1>Your Cart</h1>
-
-//       {cart.length === 0 ? (
-//         <p>Cart is empty</p>
-//       ) : (
-//         <>
-//           {cart.map((item, index) => (
-//             <div key={index} style={{ marginBottom: "10px" }}>
-//               <h3>{item.name}</h3>
-//               <p>{item.price}</p>
-
-//               <button onClick={() => removeFromCart(index)}>
-//                 Remove
-//               </button>
-//             </div>
-//           ))}
-
-//           <h2>Total: ₹{totalPrice}</h2>
-
-//           <button onClick={() => navigate("/checkout")}>
-//             Checkout
-//           </button>
-//         </>
-//       )}
-//     </div>
-
-//     </>
-//   );
-// }
-
-// export default Cart;
