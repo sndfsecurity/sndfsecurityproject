@@ -384,109 +384,160 @@
 }
 
 /* ================= FORM ================= */
+/* ================= FORM ================= */
 .enquiry-form {
-  background: rgba(255,255,255,0.06);
-  padding: 40px;
-  border-radius: 18px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  background: #ffffff;
+  padding: 30px; /* reduced */
+  border-radius: 16px;
+
+  max-width: 560px;
+  width: 100%;
+
+  box-shadow: 
+    0 25px 70px rgba(0,0,0,0.25),
+    0 10px 30px rgba(0,0,0,0.1);
+
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
 }
 
+
+
+.enquiry-form:hover {
+  transform: translateY(-3px);
+}
+
+/* ================= HEADING ================= */
 .enquiry-form h2 {
-  font-size: 28px;
+  font-size: 26px; /* reduced */
   margin-bottom: 10px;
+  font-weight: 700;
+  color: #0f172a;
   letter-spacing: 1px;
-  font-weight: 600;
+
 }
 
 .enquiry-form p {
-  color: #cbd5e1;
-  margin-bottom: 25px;
-}
-
-.enquiry-form label{
   font-size: 16px;
+  color: #64748b;
+  margin-bottom: 16px; /* reduced */
   letter-spacing: 0.5px;
 }
 
-
-.enquiry-form input,
-.enquiry-form textarea {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 18px;
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.08);
-  color: #fff;
+/* ================= LABEL ================= */
+.enquiry-form label {
   font-size: 15px;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 4px;
+  display: block;
+  letter-spacing: 0.5px;
 }
 
+/* ================= INPUTS ================= */
+.enquiry-form input,
+.enquiry-form textarea,
+.enquiry-form select {
+  width: 100%;
+  padding: 10px; /* reduced */
+  margin-bottom: 12px; /* reduced */
+
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+
+  color: #0f172a;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+
+ transition: all 0.25s ease;
+}
+
+.enquiry-form input:hover,
+.enquiry-form textarea:hover,
+.enquiry-form select:hover {
+  border-color: #94a3b8;
+}
+
+/* Placeholder */
 .enquiry-form input::placeholder,
 .enquiry-form textarea::placeholder {
   color: #94a3b8;
+  font-size: 12px;
 }
 
+/* Focus */
 .enquiry-form input:focus,
-.enquiry-form textarea:focus {
-  border-color: #3b82f6;
-  background: rgba(255,255,255,0.12);
-  outline: none;
-}
-
-
-.enquiry-form select {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 18px;
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.08);
-  color: #fff;
-  font-size: 15px;
-  appearance: none; /* remove default arrow */
-  cursor: pointer;
-}
-
-/* Placeholder style */
-.enquiry-form select option {
-  background: #0f172a; /* dark dropdown background */
-  color: #fff;
-}
-
-/* Focus same as input */
+.enquiry-form textarea:focus,
 .enquiry-form select:focus {
   border-color: #3b82f6;
-  background: rgba(255,255,255,0.12);
-  outline: none;
+  /* outline: none; */
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.15);
 }
 
-/* Custom arrow */
+/* ================= TEXTAREA ================= */
+.enquiry-form textarea {
+  resize: none;
+  height: 70px; /* fixed height to save space */
+}
+
+/* ================= SELECT ================= */
 .enquiry-form select {
-  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  appearance: none;
+  cursor: pointer;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%230f172a' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
   background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-size: 18px;
+  background-position: right 10px center;
+  background-size: 16px;
 }
 
-/* BUTTON */
+/* ================= ERROR ================= */
+.input-error {
+  border: 1px solid #ef4444 !important;
+  background: #fff5f5;
+}
+
+.error-text {
+  color: #ef4444;
+  font-size: 11px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+/* ================= BUTTON ================= */
 .enquiry-form button {
   width: 100%;
-  padding: 14px;
-  border-radius: 10px;
+  padding: 11px; /* reduced */
+  border-radius: 8px;
   border: none;
-  background: #ef4444;
+
+  background: linear-gradient(135deg, #ef4444, #dc2626);
   color: #fff;
+
   font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.enquiry-form button:active {
+  transform: scale(0.98);
 }
 
 .enquiry-form button:hover {
-   background: #dc2626;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(239,68,68,0.5);
+  box-shadow: 0 8px 20px rgba(239,68,68,0.35);
 }
 
+/* Disabled */
+.enquiry-form button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
 /* ================= RIGHT SIDE ================= */
 .office-info {
   display: flex;
