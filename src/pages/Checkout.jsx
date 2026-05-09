@@ -4,7 +4,9 @@ import { Helmet } from "react-helmet-async";
 
 function Checkout() {
 
-  const { cart, totalPrice } = useContext(CartContext);
+  // const { cart, totalPrice } = useContext(CartContext);
+
+  const { cart, totalPrice, setCart } = useContext(CartContext);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -105,12 +107,16 @@ ${formData.message || "No extra message"}
 
   setTimeout(() => {
 
-    window.open(
-      `https://wa.me/919370899504?text=${encodeURIComponent(whatsappMessage)}`,
-      "_blank"
-    );
+   window.open(
+  `https://wa.me/919370899504?text=${encodeURIComponent(whatsappMessage)}`,
+  "_blank"
+);
 
-    setShowPopup(false);
+setCart([]);
+
+localStorage.removeItem("cart");
+
+setShowPopup(false);
 
   }, 2000);
 

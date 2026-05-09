@@ -653,18 +653,21 @@ function ProductDetails() {
     return <h2 style={{ color: "white" }}>Product not found</h2>;
   }
 
-  const handleBuy = () => {
-    const msg = `Hello, I want to buy ${product.name} for ${product.price}`;
-    window.open(`https://wa.me/91234678902?text=${encodeURIComponent(msg)}`);
-  };
-
-  // const handleAddToCart = () => {
-  //   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  //   cart.push(product);
-  //   localStorage.setItem("cart", JSON.stringify(cart));
-  //   alert("Product Added to Cart ✅");
+  // const handleBuy = () => {
+  //   const msg = `Hello, I want to buy ${product.name} for ${product.price}`;
+  //   window.open(`https://wa.me/919370899504?text=${encodeURIComponent(msg)}`);
   // };
 
+  const handleBuy = () => {
+
+  addToCart(product);
+
+  navigate("/checkout");
+
+};
+
+
+  
   const handleAddToCart = () => {
 
   addToCart(product);
