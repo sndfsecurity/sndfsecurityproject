@@ -1,3 +1,4 @@
+import GoogleTranslate from "../GoogleTranslate";
 import logo from "../../assets/images/LOGO.webp";
 import logo1 from "../../assets/images/ndf-logo.webp";
 import logo2 from "../../assets/images/guard-logo.webp";
@@ -163,17 +164,19 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
             Select Language
           </label>
 
-          <select 
-            id="language-select"
-            className="form-select form-select-sm w-auto" >
-            <option>ENGLISH</option>
-            <option>हिंदी</option>
-            <option>मराठी</option>
-          </select>
+          <div className="d-flex gap-2">
 
-          <button className="btn btn-danger btn-sm" aria-label="Open enquiry form" onClick={() => setShowModal(true)}>
-            Enquiry
-          </button>
+  <GoogleTranslate />
+
+  <button
+    className="btn btn-danger btn-sm"
+    aria-label="Open enquiry form"
+    onClick={() => setShowModal(true)}
+  >
+    Enquiry
+  </button>
+
+</div>
         </div>
       </div>
 

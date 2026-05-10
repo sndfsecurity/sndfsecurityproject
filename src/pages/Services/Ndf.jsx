@@ -270,57 +270,57 @@ const services = [
 },
 
 
- {
-  title: "Missing Person Investigation",
-  desc: "Professional investigation services to trace and locate missing individuals.",
-  img: missing, // use your image for card only
+//  {
+//   title: "Missing Person Investigation",
+//   desc: "Professional investigation services to trace and locate missing individuals.",
+//   img: missing, // use your image for card only
 
-  full: (
-    <div className="sndf-modal-details">
+//   full: (
+//     <div className="sndf-modal-details">
 
-      <h3>About the Service</h3>
-      <p>
-        Missing Person Investigation involves locating individuals who have
-        disappeared due to personal, financial or unknown reasons. Our team
-        uses advanced techniques, surveillance and network resources to trace
-        and find missing persons quickly and safely.
-      </p>
+//       <h3>About the Service</h3>
+//       <p>
+//         Missing Person Investigation involves locating individuals who have
+//         disappeared due to personal, financial or unknown reasons. Our team
+//         uses advanced techniques, surveillance and network resources to trace
+//         and find missing persons quickly and safely.
+//       </p>
 
-      <h3>Reasons Why People Go Missing</h3>
+//       <h3>Reasons Why People Go Missing</h3>
 
-      <ul>
-        <li><strong>01 - Family Conflicts:</strong> Disputes or misunderstandings at home may lead someone to leave.</li>
+//       <ul>
+//         <li><strong>01 - Family Conflicts:</strong> Disputes or misunderstandings at home may lead someone to leave.</li>
 
-        <li><strong>02 - Financial Problems:</strong> Debt or financial stress can cause individuals to disappear.</li>
+//         <li><strong>02 - Financial Problems:</strong> Debt or financial stress can cause individuals to disappear.</li>
 
-        <li><strong>03 - Relationship Issues:</strong> Emotional distress or breakups may lead to sudden absence.</li>
+//         <li><strong>03 - Relationship Issues:</strong> Emotional distress or breakups may lead to sudden absence.</li>
 
-        <li><strong>04 - Kidnapping or Crime:</strong> Some cases involve abduction or illegal activities.</li>
+//         <li><strong>04 - Kidnapping or Crime:</strong> Some cases involve abduction or illegal activities.</li>
 
-        <li><strong>05 - Mental Health Concerns:</strong> Stress, depression or trauma can result in disappearance.</li>
+//         <li><strong>05 - Mental Health Concerns:</strong> Stress, depression or trauma can result in disappearance.</li>
 
-        <li><strong>06 - Voluntary Disappearance:</strong> Some individuals leave intentionally for personal reasons.</li>
-      </ul>
+//         <li><strong>06 - Voluntary Disappearance:</strong> Some individuals leave intentionally for personal reasons.</li>
+//       </ul>
 
-      <h3>How We Help</h3>
-      <ul>
-        <li>✔ Tracking and surveillance</li>
-        <li>✔ Background and location analysis</li>
-        <li>✔ Coordination with local sources</li>
-        <li>✔ Confidential and fast investigation process</li>
-      </ul>
+//       <h3>How We Help</h3>
+//       <ul>
+//         <li>✔ Tracking and surveillance</li>
+//         <li>✔ Background and location analysis</li>
+//         <li>✔ Coordination with local sources</li>
+//         <li>✔ Confidential and fast investigation process</li>
+//       </ul>
 
-      <h3>Benefits</h3>
-      <ul>
-        <li>✔ Faster location of missing individuals</li>
-        <li>✔ Reliable and verified information</li>
-        <li>✔ Peace of mind for families</li>
-        <li>✔ Professional handling of sensitive cases</li>
-      </ul>
+//       <h3>Benefits</h3>
+//       <ul>
+//         <li>✔ Faster location of missing individuals</li>
+//         <li>✔ Reliable and verified information</li>
+//         <li>✔ Peace of mind for families</li>
+//         <li>✔ Professional handling of sensitive cases</li>
+//       </ul>
 
-    </div>
-  ),
-},
+//     </div>
+//   ),
+// },
 
 
 

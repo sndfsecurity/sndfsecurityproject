@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { Helmet } from "react-helmet-async";
 import { Toaster } from "react-hot-toast";
 
+
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import FloatingButtons from "./components/FloatingButtons";
