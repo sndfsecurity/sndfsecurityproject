@@ -3,6 +3,12 @@ import { FaShieldAlt, FaUsers, FaBuilding } from "react-icons/fa";
  import puneOffice from "../../assets/images/hero.webp";
 import course2 from "../../assets/images/course-bg.webp";
 
+
+// pune branches Images
+import wakadImg from "../../assets/images/wakad.webp";
+import karveRoadImg from "../../assets/images/karve.webp";
+import warjeImg from "../../assets/images/warje.webp";
+
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -233,7 +239,7 @@ return (
 
       {/* Wakad */}
       <div className="branch-card">
-        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Wakad" />
+        <img src={wakadImg} alt="Wakad" />
         <div className="branch-info">
           <h4>Wakad Branch</h4>
    <p>
@@ -251,7 +257,7 @@ return (
 
       {/* Karve Road */}
       <div className="branch-card">
-        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Karve Road" />
+        <img src={karveRoadImg} alt="Karve Road" />
         <div className="branch-info">
           <h4>Karve Road Branch</h4>
           <p>Office No. 25, Basement, Gensh Chamber, 17A/3, Karve Rd, Khilarewadi, Erandwane, Pune, Maharashtra 411004</p>
@@ -266,7 +272,7 @@ return (
 
       {/* Warje */}
       <div className="branch-card">
-        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Warje" />
+        <img src={warjeImg} alt="Warje" />
         <div className="branch-info">
           <h4>Warje Branch</h4>
           <p>Office 5, City Tower, Warje Malwadi, Pune - 411058</p>
