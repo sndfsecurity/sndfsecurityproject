@@ -660,7 +660,7 @@ function ProductDetails() {
 
   addToCart(product);
 
-  navigate("/checkout");
+  navigate("/cart");
 
 };
 

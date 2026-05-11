@@ -142,13 +142,7 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
       {/* ===== TOP BAR (UNCHANGED EXACTLY) ===== */}
       <div className="py-2 px-3 d-flex justify-content-between align-items-center">
 
-        <div className="d-flex gap-3 fs-5">
-          <a href="#"><FaFacebookF aria-label="Facebook" style={{ color: "#1877F2" }} /></a>
-          <a href="#"><FaInstagram aria-label="Instagram" style={{ color: "#E4405F" }} /></a>
-          <a href="#"><FaLinkedin aria-label="LinkedIn" style={{ color: "#0A66C2" }} /></a>
-          <a href="#"><FaWhatsapp aria-label="WhatsApp" style={{ color: "#25D366" }} /></a>
-          <a href="#"><FaYoutube aria-label="YouTube" style={{ color: "#FF0000" }} /></a>
-        </div>
+        <div className="topbar-left-space"></div>
 
         <div className="scroll-container">
           <div className="scroll-text">

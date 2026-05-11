@@ -1,14 +1,33 @@
 import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 import { Helmet } from "react-helmet-async";
 
+import {
+  useNavigate,
+  useLocation,
+} from "react-router-dom";
 
 function Checkout() {
 
   const navigate = useNavigate();
 
-  const { cart, totalPrice } = useContext(CartContext);
+  const location = useLocation();
+
+  const { cart, setCart } = useContext(CartContext);
+
+  const checkoutItems =
+  location.state?.cartItems || cart;
+
+
+  const totalPrice = checkoutItems.reduce(
+  (total, item) =>
+    total +
+    parseInt(
+      item.price.replace(/[₹,]/g, "")
+    ) *
+      item.quantity,
+  0
+);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -52,17 +71,17 @@ const handleOrder = () => {
   setShowPopup(true);
 
   
-  const orderItems = cart
+  const orderItems = checkoutItems
   .map(
     (item, index) =>
-`
-${index + 1}. ${item.name}
+  `
+  ${index + 1}. ${item.name}
 
-   Qty : ${item.quantity}
-   Price : ${item.price}
-`
-  )
-  .join("\n━━━━━━━━━━━━━━━\n");
+    Qty : ${item.quantity}
+    Price : ${item.price}
+  `
+    )
+    .join("\n━━━━━━━━━━━━━━━\n");
 
 const whatsappMessage = `
 🛒 *SNDF SECURITY ORDER REQUEST*
@@ -117,7 +136,21 @@ setTimeout(() => {
   );
 
   // Clear cart storage
-  localStorage.removeItem("cart");
+  
+  const updatedCart = cart.filter(
+  (cartItem) =>
+    !checkoutItems.some(
+      (orderedItem) =>
+        orderedItem.id === cartItem.id
+    )
+);
+
+localStorage.setItem(
+  "cart",
+  JSON.stringify(updatedCart)
+);
+
+setCart(updatedCart);
 
   // Open WhatsApp
   window.open(
@@ -150,6 +183,40 @@ setTimeout(() => {
       </Helmet>
 
       <style>{`
+
+
+
+  
+
+   .back-cart-btn {
+
+  background: white;
+
+  border: none;
+
+  color: #10257d;
+
+  padding: 10px 18px;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+.back-cart-btn:hover {
+
+  transform: translateY(-2px);
+
+}
 
 
   .popup-overlay{
@@ -671,6 +738,8 @@ setTimeout(() => {
 
           }
 
+          
+
         }
 
       `}</style>
@@ -795,13 +864,19 @@ setTimeout(() => {
 
           <div className="checkout-right">
 
+            <button
+            className="back-cart-btn"
+            onClick={() => navigate("/cart")}>
+            ← Back To Cart
+          </button>
+
             <div className="summary-card">
 
               <h2 className="summary-title">
                 Order Summary
               </h2>
 
-              {cart.map((item, index) => (
+              {checkoutItems.map((item, index) => (
 
                 <div className="product-item" key={index}>
 

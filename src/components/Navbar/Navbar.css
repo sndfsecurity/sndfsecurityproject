@@ -26,6 +26,10 @@ height:48px;
 border-bottom:1px solid rgba(0,0,0,.1);
 }
 
+.topbar-left-space{
+ width:50px;
+}
+
 /* =========================
    NAVBAR
 ========================= */
@@ -356,6 +360,10 @@ width:100%;
 flex-direction:row!important;
 justify-content:space-between!important;
 align-items:center!important;
+}
+
+.topbar-left-space{
+display:none;
 }
 
 .bg-primary.d-flex>div:nth-child(1){

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
@@ -14,6 +14,39 @@ function Cart() {
   } = useContext(CartContext);
 
   const navigate = useNavigate();
+
+
+  const toggleSelect = (id) => {
+
+  const updatedCart = cart.map((item) =>
+    item.id === id
+      ? { ...item, selected: !item.selected }
+      : item
+  );
+
+  localStorage.setItem(
+    "cart",
+    JSON.stringify(updatedCart)
+  );
+
+  window.location.reload();
+
+};
+
+const selectedItems = cart.filter(
+  (item) => item.selected !== false
+);
+
+const selectedTotal = selectedItems.reduce(
+  (total, item) =>
+    total +
+    parseInt(
+      item.price.replace(/[₹,]/g, "")
+    ) *
+      item.quantity,
+  0
+);
+
 
   return (
 
@@ -134,6 +167,18 @@ function Cart() {
           margin-bottom:18px;
 
           border:1px solid #e6e6e6;
+
+        }
+
+        .select-box{
+
+          width:24px;
+
+          height:24px;
+
+          cursor:pointer;
+
+          accent-color:#10257d;
 
         }
 
@@ -517,10 +562,17 @@ function Cart() {
 
                     <div className="cart-product">
 
+                        <input
+                              type="checkbox"
+                              className="select-box"
+                              checked={item.selected !== false}
+                              onChange={() =>
+                                toggleSelect(item.id)
+                              }/>
+
                       <img
                         src={item.img}
-                        alt={item.name}
-                      />
+                        alt={item.name}/>
 
                       <div className="cart-info">
 
@@ -589,7 +641,7 @@ function Cart() {
 
                   <span>Total Products</span>
 
-                  <span>{cart.length}</span>
+                  <span>{selectedItems.length}</span>
 
                 </div>
 
@@ -609,16 +661,22 @@ function Cart() {
 
                   </div>
 
-                  <h1>₹{totalPrice}</h1>
+                  <h1>₹{selectedTotal}</h1>
 
                 </div>
 
                 <button
+
                   className="checkout-btn"
+
                   onClick={() =>
-                    navigate("/checkout")
-                  }
-                >
+                      navigate("/checkout", {
+                        state: {
+                          cartItems: selectedItems,
+                        },
+                      })
+                    } >
+                      
                   Proceed To Checkout
                 </button>
 
