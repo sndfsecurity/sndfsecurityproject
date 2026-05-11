@@ -78,7 +78,7 @@ function Owl() {
         <div className="container">
 
           <div className="owl-services-header">
-            <h2>Our Owl Security Services</h2>
+            <h2>Our Security Services</h2>
             <p>
               Smart surveillance, trained personnel, and rapid response solutions
               designed for complete protection and peace of mind.
