@@ -162,7 +162,7 @@ const Sndfterms = () => {
           For any queries regarding these Terms & Conditions, please contact us:
         </p>
         <ul>
-          <li>Email: NDF.SNDF.HR@GMAIL.COM</li>
+          <li>Email: info@sndfndf.com</li>
           <li>Phone: 9970383155</li>
           <li>Office: SNDF Support Services Private Limited, Pune</li>
         </ul>

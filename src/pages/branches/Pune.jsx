@@ -91,10 +91,7 @@ return (
         </p>
       
 
-      {/* <p>
-        The central command hub of SNDF, managing operations, investigations,
-        and security services with precision, confidentiality, and nationwide coordination.
-      </p> */}
+     
 
       <div className="hero-buttonsb">
             <button 
@@ -326,7 +323,7 @@ return (
 
         <div className="info-line">
           <h4>✉️ Email</h4>
-          <p>info@sndf.com</p>
+          <p>info@sndfndf.com</p>
         </div>
 
         <div className="info-line">
