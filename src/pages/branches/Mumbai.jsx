@@ -322,34 +322,46 @@ const Mumbai = () => {
 
         </div>
 
-        {/* RIGHT SIDE FORM */}
-        <div className="sndf-form">
 
-          <h3>Send Enquiry</h3>
+       {/* RIGHT SIDE INFO CARD */}
+            <div className="sndf-form">
 
-          <form>
-            <input type="text" placeholder="Full Name" required />
-            <input type="tel" placeholder="Mobile Number" required />
-            <input type="email" placeholder="Email (Optional)" />
-            <input type="text" placeholder="Location (Optional)" />
-            <textarea placeholder="Your Requirement"></textarea>
+              <h3>Why Choose SNDF Mumbai</h3>
 
-            <button type="submit">Submit Enquiry</button>
-          </form>
+              <div className="sndf-highlights">
 
-          {/* SOCIAL BELOW FORM */}
-          <div className="sndf-form-social">
-            <p>Follow Us</p>
+                <div className="sndf-highlight-box">
+                  <span>✔</span>
+                  <p>Confidential Investigations</p>
+                </div>
 
-            <div className="sndf-social-icons">
-              <a className="fb"><FaFacebookF /></a>
-              <a className="ig"><FaInstagram /></a>
-              <a className="li"><FaLinkedinIn /></a>
-              <a className="yt"><FaYoutube /></a>
+                <div className="sndf-highlight-box">
+                  <span>✔</span>
+                  <p>Experienced Field Officers</p>
+                </div>
+
+                <div className="sndf-highlight-box">
+                  <span>✔</span>
+                  <p>Corporate & Personal Cases</p>
+                </div>
+
+                <div className="sndf-highlight-box">
+                  <span>✔</span>
+                  <p>Fast Mumbai-Wide Support</p>
+                </div>
+
+                <div className="sndf-highlight-box">
+                  <span>✔</span>
+                  <p>Trusted Security Solutions</p>
+                </div>
+
+              </div>
+
+              <div className="sndf-bottom-note">
+                Serving clients across Navi Mumbai & nearby regions.
+              </div>
+
             </div>
-          </div>
-
-        </div>
 
       </div>
 
@@ -384,7 +396,7 @@ const Mumbai = () => {
 
   </div>
 
-    </section>
+</section>
 
 
 

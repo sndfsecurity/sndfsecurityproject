@@ -229,39 +229,35 @@ const officeImageUrl = assam;
               </div>
             </div>
 
-            <a 
-              href="https://maps.google.com/?q=Bolen+Barmans+Complex+Guwahati" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="assam-map-link"
-            >
-              View on Google Maps →
-            </a>
           </div>
 
-          {/* Inquiry Form Column */}
+          {/* GOOGLE MAP COLUMN */}
           <div className="assam-contact-form">
-            <div className="assam-form-card">
-              <h3 className="assam-form-heading">Send us an Inquiry</h3>
-              <form className="assam-form">
-                <div className="assam-form-row">
-                  <input type="text" placeholder="Full Name" className="assam-input" />
-                </div>
-                <div className="assam-form-row">
-                  <input type="tel" placeholder="Phone Number" className="assam-input" />
-                </div>
-                <div className="assam-form-row">
-                  <input type="email" placeholder="Email Address" className="assam-input" />
-                </div>
-                <div className="assam-form-row">
-                  <textarea rows="4" placeholder="Your Message" className="assam-textarea"></textarea>
-                </div>
-                <button type="submit" className="assam-submit-btn">
-                  Submit Inquiry <FaArrowRight />
-                </button>
-              </form>
+
+            <div className="assam-map-card">
+
+              <h3 className="assam-form-heading">
+                Our Location
+              </h3>
+
+               <p className="assam-location-tag">
+                Assam Regional Branch
+              </p>
+
+              <iframe
+                src="https://www.google.com/maps?q=Bolen+Barmans+Complex+Guwahati&output=embed"
+                width="100%"
+                height="400"
+                style={{ border: 0, borderRadius: "18px" }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="NDF Assam Branch Location"></iframe>
+
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
