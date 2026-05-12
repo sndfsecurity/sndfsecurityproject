@@ -174,91 +174,320 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
         </div>
       </div>
 
-      {/* ===== NAVBAR (UNCHANGED STRUCTURE) ===== */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
+      {/* ===== NAVBAR (FIXED BIG SCREEN ISSUE) ===== */}
 
-        <div className="navbar-brand">
-          <div className="logo-container">
+<nav className="navbar navbar-dark bg-primary px-3">
 
-            {/* MAIN LOGO CLICKABLE */}
-            <Link to="/">
-              <img src={logo} className="main-logo" loading="lazy" alt="logo"   />
+  {/* LEFT LOGOS */}
+  <div className="d-flex align-items-center flex-shrink-0">
+
+    <div className="logo-container">
+
+      {/* MAIN LOGO */}
+      <Link to="/">
+        <img
+          src={logo}
+          className="main-logo"
+          loading="lazy"
+          alt="logo"
+        />
+      </Link>
+
+      {/* SUB LOGOS */}
+      <Link to="/services/ndf">
+        <img
+          src={logo1}
+          loading="lazy"
+          className="sub-logo"
+          alt="ndf"
+        />
+      </Link>
+
+      <Link to="/services/sndf">
+        <img
+          src={logo2}
+          loading="lazy"
+          className="sub-logo"
+          alt="sndf"
+        />
+      </Link>
+
+      <Link to="/services/owl">
+        <img
+          src={logo3}
+          loading="lazy"
+          className="sub-logo"
+          alt="owl"
+        />
+      </Link>
+
+      <Link to="/services/spydefence">
+        <img
+          src={logo4}
+          loading="lazy"
+          className="sub-logo"
+          alt="spy"
+        />
+      </Link>
+
+      <Link to="/course/dic">
+        <img
+          src={logo5}
+          loading="lazy"
+          className="sub-logo"
+          alt="dic"
+        />
+      </Link>
+
+      <div className="logo-text">
+        🢀 CLICK LOGO FOR MORE INFO
+      </div>
+
+    </div>
+  </div>
+
+  {/* MOBILE TOGGLE */}
+  <button
+    className="navbar-toggler"
+    aria-label="Toggle navigation"
+    type="button"
+    onClick={() => {
+
+      const nav = document.getElementById("navbarContent");
+
+      if (nav.classList.contains("show")) {
+        Collapse.getOrCreateInstance(nav).hide();
+      } else {
+        Collapse.getOrCreateInstance(nav).show();
+      }
+
+    }}
+  >
+    <span className="navbar-toggler-icon"></span>
+  </button>
+
+  {/* MENU */}
+  <div className="navbar-collapse" id="navbarContent">
+
+    <ul
+      className="navbar-nav ms-auto flex-row flex-wrap align-items-center"
+      style={{ gap: "14px" }}
+    >
+
+      <li>
+        <Link
+          className="nav-link"
+          to="/"
+          aria-label="About SNDF"
+          onClick={closeNavbar}
+        >
+          Home
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          className="nav-link"
+          to="/about"
+          aria-label="About SNDF"
+          onClick={closeNavbar}
+        >
+          About
+        </Link>
+      </li>
+
+      {/* SERVICES */}
+      <li className="nav-item dropdown">
+
+        <a
+          className="nav-link dropdown-toggle"
+          role="button"
+          data-bs-toggle="dropdown"
+        >
+          Services
+        </a>
+
+        <ul className="dropdown-menu">
+
+          <li>
+            <Link
+              to="/services/ndf"
+              aria-label="NDF"
+              className="dropdown-item"
+              onClick={closeNavbar}
+            >
+              NDF Detective
             </Link>
+          </li>
 
-            {/* SUB LOGOS */}
-            <Link to="/services/ndf"><img src={logo1}  loading="lazy" className="sub-logo"  alt="ndf"/></Link>
-            <Link to="/services/sndf"><img src={logo2} loading="lazy" className="sub-logo" alt="sndf" /></Link>
-            <Link to="/services/owl"><img src={logo3} loading="lazy" className="sub-logo" alt="owl"/></Link>
-            <Link to="/services/spydefence"><img src={logo4} loading="lazy" className="sub-logo" alt="spy" /></Link>
-            <Link to="/course/dic"><img src={logo5}  loading="lazy"className="sub-logo" alt="dic"/></Link>
+          <li>
+            <Link
+              to="/services/sndf"
+              aria-label="SNDF Guard"
+              className="dropdown-item"
+              onClick={closeNavbar}
+            >
+              SNDF Guard
+            </Link>
+          </li>
 
-            <div className="logo-text">
-              🢀 CLICK LOGO FOR MORE INFO
-            </div>
+          <li>
+            <Link
+              to="/services/owl"
+              aria-label="Owl"
+              className="dropdown-item"
+              onClick={closeNavbar}
+            >
+              Owl Security
+            </Link>
+          </li>
 
-          </div>
-        </div>
+          <li>
+            <Link
+              to="/services/spydefence"
+              aria-label="Spydefence"
+              className="dropdown-item"
+              onClick={closeNavbar}
+            >
+              Spy Defence
+            </Link>
+          </li>
 
-              <button
-              className="navbar-toggler"
-              aria-label="Toggle navigation"
-              type="button"
-              onClick={()=>{
-              const nav=document.getElementById("navbarContent");
+        </ul>
+      </li>
 
-              if(nav.classList.contains("show")){
-              Collapse.getOrCreateInstance(nav).hide();
-              }else{
-              Collapse.getOrCreateInstance(nav).show();
-              }
+      {/* GALLERY */}
+      <li>
+        <Link
+          className="nav-link"
+          to="/gallery"
+          aria-label="Gallery"
+          onClick={closeNavbar}
+        >
+          Gallery
+        </Link>
+      </li>
 
-              }}>
+      {/* BRANCHES */}
+      <li className="nav-item dropdown">
 
+        <a
+          className="nav-link dropdown-toggle"
+          role="button"
+          data-bs-toggle="dropdown"
+        >
+          Branches
+        </a>
 
-<span className="navbar-toggler-icon"></span>
-</button>
+        <ul className="dropdown-menu">
 
-        <div className="collapse navbar-collapse" id="navbarContent">
-          <ul className="navbar-nav ms-auto" style={{ gap: "10px" }}>
+          <li>
+            <Link
+              to="/branches/pune"
+              aria-label="Pune Branch"
+              className="dropdown-item"
+              onClick={closeNavbar}
+            >
+              Head Office (Pune)
+            </Link>
+          </li>
 
-            <li><Link className="nav-link" to="/" aria-label="About SNDF" onClick={closeNavbar}>Home</Link></li>
-            <li><Link className="nav-link" to="/about" aria-label="About SNDF" onClick={closeNavbar}>About</Link></li>
+          <li>
+            <Link
+              to="/branches/mumbai"
+              aria-label="Mumbai Branch"
+              className="dropdown-item"
+              onClick={closeNavbar}
+            >
+              Mumbai
+            </Link>
+          </li>
 
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Services</a>
-              <ul className="dropdown-menu">
-                <li><Link to="/services/ndf" aria-label="NDF" className="dropdown-item" onClick={closeNavbar}>NDF Detective</Link></li>
-                <li><Link to="/services/sndf" aria-label="SNDF Guard" className="dropdown-item" onClick={closeNavbar}>SNDF Guard</Link></li>
-                <li><Link to="/services/owl" aria-label="Owl" className="dropdown-item" onClick={closeNavbar}>Owl Security</Link></li>
-                <li><Link to="/services/spydefence" aria-label="Spydefence" className="dropdown-item" onClick={closeNavbar}>Spy Defence</Link></li>
-              </ul>
-            </li>
+          <li>
+            <Link
+              to="/branches/hyderabad"
+              aria-label="Hyderabad Branch"
+              className="dropdown-item"
+              onClick={closeNavbar}
+            >
+              Hyderabad
+            </Link>
+          </li>
 
-            <li><Link className="nav-link" to="/gallery" aria-label="Gallery" onClick={closeNavbar}>Gallery</Link></li>
+          <li>
+            <Link
+              to="/branches/assam"
+              aria-label="Assam Branch"
+              className="dropdown-item"
+              onClick={closeNavbar}
+            >
+              Assam
+            </Link>
+          </li>
 
+        </ul>
+      </li>
 
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Branches</a>
-              <ul className="dropdown-menu">
-                <li><Link to="/branches/pune" aria-label="Pune Branch" className="dropdown-item" onClick={closeNavbar}>Head Office (Pune)</Link></li>
-                <li><Link to="/branches/mumbai" aria-label="Mumbai Branch" className="dropdown-item" onClick={closeNavbar}>Mumbai</Link></li>
-                <li><Link to="/branches/hyderabad" aria-label="Hyderabad Branch" className="dropdown-item" onClick={closeNavbar}>Hyderabad</Link></li>
-                <li><Link to="/branches/assam" aria-label="Assam Branch" className="dropdown-item" onClick={closeNavbar}>Assam</Link></li>
-              </ul>
-            </li>
+      {/* OTHER LINKS */}
 
-            <li><Link to="/course" className="nav-link" aria-label="Course" onClick={closeNavbar}>Course</Link></li>
-            <li><Link to="/shop" className="nav-link" aria-label="Shop" onClick={closeNavbar}>Shop</Link></li>
-            <li><Link to="/blog" className="nav-link" aria-label="Blog" onClick={closeNavbar}>Blog</Link></li>
-            
-            {/* <li><Link to="/team" className="nav-link" aria-label="Team" onClick={closeNavbar}>Team</Link></li> */}
-            
-            <li><Link to="/career" className="nav-link" aria-label="Career" onClick={closeNavbar}>Career</Link></li>
-            <li><Link to="/contact" className="nav-link" aria-label="Contact" onClick={closeNavbar}>Contact</Link></li>
+      <li>
+        <Link
+          to="/course"
+          className="nav-link"
+          aria-label="Course"
+          onClick={closeNavbar}
+        >
+          Course
+        </Link>
+      </li>
 
-          </ul>
-        </div>
-      </nav>
+      <li>
+        <Link
+          to="/shop"
+          className="nav-link"
+          aria-label="Shop"
+          onClick={closeNavbar}
+        >
+          Shop
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          to="/blog"
+          className="nav-link"
+          aria-label="Blog"
+          onClick={closeNavbar}
+        >
+          Blog
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          to="/career"
+          className="nav-link"
+          aria-label="Career"
+          onClick={closeNavbar}
+        >
+          Career
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          to="/contact"
+          className="nav-link"
+          aria-label="Contact"
+          onClick={closeNavbar}
+        >
+          Contact
+        </Link>
+      </li>
+
+    </ul>
+  </div>
+</nav>
     </>
   );
 }
