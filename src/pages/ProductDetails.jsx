@@ -663,9 +663,7 @@ function ProductDetails() {
   navigate("/cart");
 
 };
-
-
-  
+ 
   const handleAddToCart = () => {
 
   addToCart(product);
