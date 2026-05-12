@@ -349,40 +349,6 @@ width:100%;
 
 
 
-/* =========================
-   DESKTOP RESPONSIVE FIX
-========================= */
-/* 
-@media (min-width:992px) and (max-width:1400px){
-
-.logo-container{
-gap:14px;
-}
-
-.main-logo{
-width:75px;
-}
-
-.sub-logo{
-width:48px;
-}
-
-.logo-text{
-font-size:13px;
-display: none;
-}
-
-.navbar-nav{
-gap:4px;
-}
-
-.nav-link{
-font-size:13px;
-padding:6px 7px!important;
-}
-
-} */
-
 
 /* =========================
    MOBILE
