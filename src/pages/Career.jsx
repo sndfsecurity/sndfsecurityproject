@@ -7,7 +7,7 @@ const Career = () => {
     <div className="career-page">
 
       <div className="notice-bar">
-        ⚠️ Latest Update: NDF Special Entry Recruitment 2025-26 is OPEN
+        <p>⚠️ Latest Update: NDF Special Entry Recruitment 2025-26 is OPEN</p>
       </div>
 
       <div className="career-header">

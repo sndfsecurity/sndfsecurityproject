@@ -261,60 +261,6 @@ const scrollToForm = () => {
     </section>
 
 
-    {/* form */}
-  <section ref={formRef} className="sndfguard-form-section">
-  <div className="sndfguard-form-wrapper">
-
-    <h2 className="sndfguard-form-heading">
-      Request a Callback
-    </h2>
-
-    <p className="sndfguard-form-subtext">
-      Fill in your details and our team will get back to you shortly.
-    </p>
-
-    <form className="sndfguard-form-box">
-
-      <div className="sndfguard-form-group">
-        <input id="name" name="name" type="text" required />
-        <label htmlFor="name">Your Name</label>
-      </div>
-
-    <div className="sndfguard-form-group">
-      <input id="mobile" name="mobile" type="tel" required />
-      <label htmlFor="mobile">Mobile Number</label>
-    </div>
-
-    <div className="sndfguard-form-group">
-      <select id="service" name="service" required>
-        <option value="" disabled selected>Select Service</option>
-        <option>VIP Protection</option>
-        <option>Armed Security</option>
-        <option>Event Security</option>
-        <option>Residential Security</option>
-        <option>Commercial Security</option>
-        <option>Industrial Security</option>
-      </select>
-      <label htmlFor="service">Select Service</label>
-    </div>
-
-    <div className="sndfguard-form-group">
-      <textarea id="message" name="message" required></textarea>
-      <label htmlFor="message">Your Message</label>
-    </div>
-
-      <button type="submit" className="sndfguard-form-submit">
-        Submit Enquiry
-      </button>
-
-    </form>
-
-  </div>
-</section>
-
- 
-
-
 
 </main>
 

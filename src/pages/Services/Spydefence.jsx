@@ -349,43 +349,39 @@ const Spydefence = () => {
               <FaWhatsapp />
             </a>
 
-          {/* <a href="#" className="facebook-icon">
-            <FaFacebookF />
-          </a> */}
-
           <a href="https://www.instagram.com/spy_defence_academy?igsh=YzR5NnpjazE3d3F5&utm_source=qr" className="instagram-icon">
             <FaInstagram />
           </a>
 
-          {/* <a href="#" className="youtube-icon">
-            <FaYoutube />
-          </a> */}
-
+        
           </div>
 
         </div>
 
-        {/* RIGHT FORM (UNCHANGED) */}
-        <div className="spycta-right">
+        {/* RIGHT INFO CARD */}
+        
+          <div className="spycta-right spycta-info-card">
 
-          <h3>Quick Registration</h3>
+            <h3>Camp Highlights</h3>
 
-          <form>
-            <input type="text" placeholder="Full Name" required />
-            <input type="tel" placeholder="Phone Number" required />
-            <input type="text" placeholder="City" />
-            <input type="number" placeholder="Age" />
+            <div className="spycta-info-item">
+              🛡 Tactical Training
+            </div>
 
-            <select>
-              <option>Gender</option>
-              <option>Male</option>
-              <option>Female</option>
-            </select>
+            <div className="spycta-info-item">
+              ⚡ Leadership Skills
+            </div>
 
-            <button type="submit">Reserve Seat</button>
-          </form>
+            <div className="spycta-info-item">
+              🔒 Safe Environment
+            </div>
 
-        </div>
+            <a href="tel:997111904" className="spycta-info-btn">
+              Contact Now
+            </a>
+
+          </div>
+
 
       </div>
     </section>

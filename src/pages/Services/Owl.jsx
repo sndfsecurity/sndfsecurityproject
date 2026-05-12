@@ -80,7 +80,7 @@ function Owl() {
           <div className="owl-services-header">
             <h2>Our Security Services</h2>
             <p>
-              Smart surveillance, trained personnel, and rapid response solutions
+              Smart surveillance, trained personnel and rapid response solutions
               designed for complete protection and peace of mind.
             </p>
           </div>
@@ -205,17 +205,12 @@ function Owl() {
       <FaWhatsapp aria-hidden="true"/>
     </a>
 
-    {/* <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon facebook" aria-label="Visit our Facebook page">
-      <FaFacebookF aria-hidden="true"/>
-    </a> */}
 
     <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon instagram">
       <FaInstagram />
     </a>
 
-    {/* <a href="#" target="_blank" rel="noreferrer" className="owl-extra-icon youtube"  aria-label="Visit our YouTube channel">
-      <FaYoutube aria-hidden="true"/>
-    </a> */}
+   
 
 
   </div>
@@ -225,23 +220,30 @@ function Owl() {
 </p>
 
 
-            </div>
-          </div>
+  </div>
+  </div>
 
-          <div className="owl-cta-form">
-            <h3>Send Enquiry</h3>
+  <div className="owl-cta-form owl-support-card">
 
-            <form>
+  <h3>Why Choose Owl Security?</h3>
 
-             <input type="text" placeholder="Your Name" required aria-label="Your Name" />
-              <input type="tel" placeholder="Mobile Number" required aria-label="Mobile Number" />
-              <textarea placeholder="Your Message" aria-label="Your Message"></textarea>
+  <div className="owl-support-item">
+    🛡 24/7 Professional Security Monitoring
+  </div>
 
-              <button type="submit" className="owl-btn-primary">
-                Submit
-              </button>
-            </form>
-          </div>
+  <div className="owl-support-item">
+    ⚡ Fast Emergency Response Team
+  </div>
+
+  <div className="owl-support-item">
+    🔒 Trusted & Confidential Services
+  </div>
+
+  <a href="tel:+918956159489" className="owl-btn-primary owl-support-btn">
+    Contact Now
+  </a>
+
+</div>
 
         </div>
       </section>

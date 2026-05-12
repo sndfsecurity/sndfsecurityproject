@@ -1,14 +1,26 @@
 .career-page {
   font-family: Arial, sans-serif;
   background: #f4f6f9;
+  padding-top: 160px;
+ 
+  
 }
 
 /* NOTICE BAR */
 .notice-bar {
   background: #ffcc00;
-  padding: 10px;
   text-align: center;
   font-weight: bold;
+  padding: 15px;
+ 
+ 
+}
+
+.notice-bar p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+ 
 }
 
 /* HEADER */
@@ -30,6 +42,14 @@
 /* heading gap fix */
 .career-header h1 {
   margin-top: 10px;
+  letter-spacing: 1px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.career-header p{
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 /* NOTICE BOARD */
@@ -40,14 +60,23 @@
   border-left: 5px solid #0e2c5f;
 }
 
+.notice-board h2{
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-size: 34px;
+  margin-top: 5px;
+}
+
 .notice-board li {
   margin-bottom: 8px;
+  letter-spacing: 1px;
 }
 
 /* BLINK */
 .blink {
   color: rgb(255, 0, 0);
   animation: blink 1s infinite;
+  letter-spacing: 1px;
 }
 
 @keyframes blink {
@@ -62,6 +91,16 @@
   border-radius: 6px;
 }
 
+.table-section h2{
+  letter-spacing: 1px;
+  font-size: 36px;
+  font-weight: 700;
+  color: red;
+  padding: 15px;
+  
+}
+
+
 .table-wrapper {
   overflow-x: auto;
 }
@@ -75,13 +114,16 @@ table {
 th {
   background: #0e2c5f;
   color: #fff;
-  padding: 10px;
+  padding: 12px;
+  letter-spacing: 1px;
+  
 }
 
 td {
   padding: 10px;
   border: 1px solid #ddd;
-  text-align: center;
+  /* text-align: center; */
+  letter-spacing: 1px;
 }
 
 .highlight {
@@ -95,11 +137,13 @@ td {
 .open {
   color: green;
   font-weight: bold;
+ 
 }
 
 .closed {
   color: red;
   font-weight: bold;
+  
 }
 
 /* APPLY BUTTON */
@@ -109,6 +153,8 @@ td {
   color: #fff;
   border-radius: 6px;
   text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 /* MAIN APPLY */
@@ -119,6 +165,9 @@ td {
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 /* BLINK BTN */
@@ -153,6 +202,9 @@ td {
   justify-content: center;
 }
 
+
+
+
 /* MOBILE */
 @media (max-width: 600px) {
 
@@ -178,4 +230,58 @@ td {
     width: 100%;
     text-align: center;
   }
+}
+
+
+@media (max-width: 768px) {
+
+  .career-page{
+    padding-top: 130px;
+  }
+
+  .career-header img {
+    margin-top: 0px;
+  }
+
+    .career-header h1{
+      font-size: 32px;
+    }
+
+     .career-header p{
+      font-size: 18px;
+     }
+
+     .table-section h2{
+      font-size: 30px;
+      padding: 10px;
+     }
+
+     .notice-board h2{
+      font-size: 31px;
+     }
+
+
+    .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 750px;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+    padding: 10px 12px;
+    white-space: nowrap;
+  }
+
+  .apply-btn,
+  .closed-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
 }

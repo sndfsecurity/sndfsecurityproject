@@ -869,33 +869,6 @@ html {
   color: #000;
 }
 
-/* ================= FORM ================= */
-
-.sndf-enquiry-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.sndf-enquiry-form input,
-.sndf-enquiry-form select,
-.sndf-enquiry-form textarea {
-  width: 100%;
-  padding: 12px 14px;
-  border-radius: 8px;
-  border: 1px solid #cbd5f5;
-  font-size: 14px;
-  outline: none;
-  transition: 0.3s;
-  background: #fff;
-}
-
-.sndf-enquiry-form input:focus,
-.sndf-enquiry-form select:focus,
-.sndf-enquiry-form textarea:focus {
-  border-color: #0ea5e9;
-  box-shadow: 0 0 0 2px rgba(14,165,233,0.2);
-}
 
 /* ================= BUTTON ================= */
 
@@ -1054,6 +1027,8 @@ html {
     height: 38px;
     font-size: 20px;
   }
+
+
 }
 
 @media (max-width: 576px) {
@@ -1078,5 +1053,63 @@ html {
     height: 34px;
     font-size: 20px;
   }
+
+ 
+  
+}
+
+
+/* RIGHT INFO CARD */
+
+.sndf-info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sndf-info-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.sndf-info-item {
+  background: #f8fafc;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e293b;
+  border-left: 4px solid #dc2626;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+}
+
+.sndf-info-item:hover {
+  transform: translateX(5px);
+  background: #f1f5f9;
+}
+
+.sndf-call-btn {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 576px) {
+  
+  .sndf-info-title {
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+
+  .sndf-info-item{
+    font-size: 14px;
+  }
+
   
 }

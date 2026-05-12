@@ -270,17 +270,6 @@
   min-height: 260px;
 }
 
-/* ICON */
-/* .owl-icon {
-  font-size: 42px;
-  color: #ff3b3b; 
-  margin-bottom: 15px;
-
-   display: block;          
-  margin-left: auto;      
-  margin-right: auto; 
-  
-} */
 
 .owl-icon {
   font-size: 18px;              /* smaller icon inside circle */
@@ -401,17 +390,7 @@
   position: relative;
 }
 
-/* 🔥 CONNECTING LINE */
-/* .owl-process-steps::before {
-  content: "";
-  position: absolute;
-  top: 28px;
-  left: 5%;
-  width: 90%;
-  height: 2px;
-  background: linear-gradient(to right, transparent, #ff3b3b, transparent);
-  z-index: 0;
-} */
+
 
 /* STEP CARD */
 .owl-step {
@@ -515,11 +494,11 @@
 
 /* cta ......................................... */
 
-/* 🔥 ADD GAP BETWEEN SECTIONS */
+
 .owl-cta-section {
   background: linear-gradient(135deg, #0a1f44, #050f28);
   padding: 90px 0;
-  margin-top: 60px; /* 🔥 SPACE FROM PROCESS */
+  margin-top: 60px; 
   color: #fff;
 }
 
@@ -528,7 +507,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px; /* little more breathing space */
+  gap: 60px; 
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
@@ -571,44 +550,16 @@
   letter-spacing: 1px;
 }
 
-/* 🔥 FORM WIDTH CONTROL */
+
 .owl-cta-form {
-  flex: 0.85; /* 🔥 reduced width */
-  max-width: 420px; /* 🔥 control size */
+  flex: 0.85; 
+  max-width: 420px; 
 
   background: rgba(255, 255, 255, 0.06);
   padding: 28px;
   border-radius: 12px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255,255,255,0.1);
-}
-
-/* FORM TITLE */
-.owl-cta-form h3 {
-  margin-bottom: 18px;
-  font-size: 24px;
-  letter-spacing: 1px;
-}
-
-/* INPUTS */
-.owl-cta-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.owl-cta-form input,
-.owl-cta-form textarea {
-  padding: 11px 14px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  font-size: 15px;
-}
-
-.owl-cta-form textarea {
-  min-height: 90px;
-  resize: none;
 }
 
 /* BUTTON */
@@ -756,7 +707,8 @@
   margin-top: 0px;
 }
   .owl-extra-email {
-    font-size: 13px;
+    font-size: 16px;
+    padding-top: 10px;
   }
 
   .owl-extra-icon {
@@ -764,4 +716,67 @@
     height: 34px;
     font-size: 20px;
   }
+}
+
+
+
+
+/* SUPPORT CARD */
+
+.owl-support-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
+}
+
+.owl-support-card h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+
+
+.owl-support-item {
+  background: rgba(253, 252, 252, 0.08);
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #ffffff;
+  border-left: 4px solid #ff3b3b;
+  transition: 0.3s ease;
+  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+}
+
+.owl-support-item:hover {
+  transform: translateX(5px);
+  background: rgba(255,255,255,0.12);
+}
+
+.owl-support-btn {
+  margin-top: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+
+  .owl-support-card h3 {
+    font-size: 24px;
+  }
+
+  .owl-support-item {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .owl-cta-form{
+    margin-top: 0px;
+   
+  }
+
 }

@@ -1083,29 +1083,44 @@ const Ndf = () => {
     </div>
 
     {/* RIGHT FORM */}
-    <div className="sndf-enquiry-formBox">
-      <form className="sndf-enquiry-form">
+   
 
-        <input type="text" placeholder="Your Name" required />
-        <input type="tel" placeholder="Phone Number" required />
-         
-        <select required>
-          <option value="">Select Service</option>
-          <option>Prematrimonial Investigation</option>
-          <option>Corporate Investigation</option>
-          <option>Surveillance</option>
-          <option>Cyber Crime</option>
-          <option>Forensic Investigation</option>
-        </select>
+   {/* RIGHT INFO CARD */}
+<div className="sndf-enquiry-formBox">
 
-        <textarea placeholder="Your Message" rows="4"></textarea>
+  <div className="sndf-info-card">
 
-        <button type="submit" className="sndf-enquiry-btn">
-          Submit Enquiry
-        </button>
+    <h3 className="sndf-info-title">
+      Why Choose NDF Services?
+    </h3>
 
-      </form>
+    <div className="sndf-info-item">
+      🔒 Complete Privacy Protection
     </div>
+
+    <div className="sndf-info-item">
+      ⚡ Fast & Professional Response
+    </div>
+
+    <div className="sndf-info-item">
+      🛡 Trusted Investigation Experts
+    </div>
+
+    <div className="sndf-info-item">
+      🌍 Services Available Across India
+    </div>
+
+    <div className="sndf-info-item">
+      📞 24/7 Support Assistance
+    </div>
+
+    <a href="tel:+918007341905" className="sndf-enquiry-btn sndf-call-btn">
+      Call Now
+    </a>
+
+  </div>
+
+</div>
 
   </div>
 </section>
