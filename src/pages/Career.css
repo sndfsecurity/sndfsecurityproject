@@ -285,3 +285,101 @@ td {
   }
   
 }
+
+
+/* =========================
+   MOBILE RECRUITMENT CARDS
+========================= */
+
+.mobile-recruitment-cards {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  /* HIDE TABLE */
+  .table-wrapper {
+    display: none;
+  }
+
+  /* SHOW CARDS */
+  .mobile-recruitment-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 10px;
+  }
+
+  .recruitment-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left: 5px solid #0e2c5f;
+  }
+
+  .recruitment-card h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: #0e2c5f;
+    font-weight: 700;
+  }
+
+  .recruitment-card p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+
+  .card-status {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .open-status {
+    background: #e8f5e9;
+    color: green;
+  }
+
+  .closed-status {
+    background: #fdeaea;
+    color: red;
+  }
+
+  .mobile-apply-btn {
+    display: block;
+    text-align: center;
+    background: linear-gradient(135deg, #e63946, #b71c1c);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .mobile-closed-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: gray;
+    color: white;
+    font-weight: bold;
+  }
+
+  .active-card {
+    border-left-color: green;
+  }
+
+  .closed-card {
+    border-left-color: red;
+  }
+}

@@ -40,7 +40,7 @@ html {
 
 /* ===== TITLE ===== */
 .sndf-services-hero-title {
-  font-size: 42px;
+  font-size: 46px;
   font-weight: 700;
   color: #ffffff;
   line-height: 1.3;
@@ -50,9 +50,7 @@ html {
 }
 
 .sndf-services-hero-title span {
-  /* color: #ff3b3b; */
-  /* color: #ff3b3b;  */
-  color: #e60023;  /* strong accessible red */
+  color: #e60023;  
 }
 
 /* ===== DIVIDER ===== */
@@ -68,7 +66,7 @@ html {
 .sndf-services-hero-text {
   max-width: 720px;
   margin: 0 auto 40px; /* 🔥 more spacing */
-  color: #cfcfcf;
+  color: hsl(0, 8%, 95%);
   font-size: 20px;
   line-height: 1.8;
   letter-spacing: 1px;
@@ -90,9 +88,11 @@ html {
   padding: 14px 34px;
   border-radius: 30px;
   text-decoration: none;
-  font-size: 19px;
-  transition: all 0.3s ease;
+  font-size: 22px;
   font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+ 
 }
 
 .sndf-services-hero-btn-primary:hover {
@@ -107,7 +107,9 @@ html {
   padding: 14px 34px;
   border-radius: 30px;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: bold;
   transition: all 0.3s ease;
   font-weight: bold;
 }
@@ -146,13 +148,15 @@ html {
 /* STAT TEXT */
 .sndf-services-hero-stat-box h3 {
   color: #ff3b3b;
-  font-size: 28px;
-  margin-bottom: 6px;
-  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .sndf-services-hero-stat-box p {
-  font-size: 16px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
   color: #bbbbbb;
 }
 

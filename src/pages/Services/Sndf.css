@@ -34,21 +34,23 @@
 
 .sndfSplitHero-desc {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 19px;
   color: #dcdcdc;
   line-height: 1.7;
   max-width: 550px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px;
 }
 
 /* ===== POINTS ===== */
 .sndfSplitHero-points {
-  margin-top: 25px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 8px;
-  font-size: 16px;
-  text-align: center;
+  gap: 10px;
+  font-size: 17px;
+  text-align: start;
+  letter-spacing: 1px;
+
 }
 
 /* ===== RIGHT IMAGE ===== */
@@ -152,6 +154,25 @@
   }
 }
 
+
+@media (max-width: 992px) {
+
+  .sndfSplitHero-left h2{
+    font-size: 32px;
+  }
+
+  
+  .sndfSplitHero-left p{
+    font-size: 17px;
+  }
+
+  .sndfSplitHero-points{
+    text-align: center;
+  }
+
+
+}
+
 /*services..............................................*/
 /* SECTION */
 .sndf-guard-section {
@@ -177,7 +198,7 @@
 
 /* SUBTITLE */
 .sndf-guard-subtitle {
-  font-size: 18px;
+  font-size: 20px;
   color: #666;
   margin-bottom: 50px;
   letter-spacing: 1px;
@@ -234,11 +255,11 @@
 
 /* DESCRIPTION */
 .sndf-guard-card p {
-  font-size: 17px;
+  font-size: 19px;
   color: #555;
   line-height: 1.6;
   max-width: 95%;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px;
   margin-top: 20px;
 }
 
@@ -253,12 +274,16 @@
   }
 
   .sndf-guard-subtitle{
-    font-size: 17px;
+    font-size: 18px;
+  }
+
+  .sndf-guard-top h3{
+    font-size: 22px;
   }
 
   .sndf-guard-card p{
-    font-size: 16.5px;
-    letter-spacing: 0.5px;
+    font-size: 17px;
+    letter-spacing: 1px;
   }
 }
 
@@ -315,7 +340,7 @@
 
 /* TEXT */
 .sndfguard-cta-text {
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0.9;
   line-height: 1.7;
   margin-bottom: 35px;
@@ -333,8 +358,8 @@
 /* COMMON BUTTON */
 .sndfguard-cta-btn {
   padding: 14px 30px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -401,11 +426,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 15px;
+  font-size: 17px;
   color: #e3ecff;
   text-decoration: none;
   transition: all 0.3s ease;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px;
 }
 
 .sndfguard-extra-item:hover {
@@ -472,7 +497,7 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .sndfguard-extra-item {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .sndfguard-extra-social-icon {
@@ -484,7 +509,7 @@
 
 @media (max-width: 480px) {
   .sndfguard-extra-item {
-    font-size: 13px;
+    font-size: 16px;
     justify-content: center;
   }
 

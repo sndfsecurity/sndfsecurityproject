@@ -35,7 +35,7 @@ html {
 
 /* HEADING */
 .spy-hero-content h2 {
-  font-size: 42px;
+  font-size: 44px;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: 1px;
@@ -48,7 +48,7 @@ html {
 /* TEXT */
 .spy-hero-content p {
   margin: 20px 0;
-  font-size: 19px;
+  font-size: 20px;
   color: #cfcfcf;
   line-height: 1.6;
   letter-spacing: 1px;
@@ -67,11 +67,12 @@ html {
   backdrop-filter: blur(6px);
   padding: 10px 16px;
   border-radius: 25px;
-  font-size: 14px;
+  font-size: 15px;
   transition: 0.3s;
   letter-spacing: 0.5px;
   margin-bottom: 15px;
   margin-top: 10px;
+  letter-spacing: 0.5px;
 }
 
 .spy-points span:hover {
@@ -92,9 +93,10 @@ html {
   padding: 13px 26px;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight:bold;
   transition: 0.3s;
   letter-spacing: 1px;
+  font-size: 20px;
 }
 
 .btn-red:hover {
@@ -111,6 +113,8 @@ html {
   text-decoration: none;
   transition: 0.3s;
   letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .btn-outline:hover {
@@ -191,6 +195,21 @@ html {
 }
 
 
+@media (max-width: 768px) {
+
+  .spy-hero-content h2{
+    font-size: 34px;
+  }
+
+   .spy-hero-content p{
+    font-size: 18px;
+   }
+  
+   
+   
+}
+
+
 
 /* section.................................................. */
 .activities {
@@ -203,12 +222,12 @@ html {
   font-size: 42px;
   font-weight: 700;
   color: #0a193c;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   letter-spacing: 1px;
 }
 
 .section-subtitlespy {
-  font-size: 18px;
+  font-size: 20px;
   color: #64748b;
   margin-bottom: 50px;
   letter-spacing: 1px;
@@ -236,17 +255,17 @@ html {
 }
 
 .activity-card h3 {
-  font-size: 22px;
+  font-size: 23px;
   margin-bottom: 10px;
   color: #0f172a;
-  letter-spacing: 1px;
-  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-weight: 700;
 }
 
 .activity-card p {
-  font-size: 16px;
+  font-size: 18px;
   color: #64748b;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .activity-card:hover {
@@ -272,7 +291,7 @@ html {
   }
 
   .section-subtitlespy {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .activity-card .icon{
@@ -280,11 +299,11 @@ html {
   }
 
   .activity-card h3{
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .activity-card p{
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -320,8 +339,8 @@ html {
   color: #fff;
   padding: 6px 14px;
   border-radius: 20px;
-  font-size: 13px;
-  margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 20px;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -330,7 +349,7 @@ html {
 .summer-left h2 {
   font-size: 42px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   line-height: 1.2;
   letter-spacing: 1px;
 }
@@ -341,15 +360,15 @@ html {
 
 /* Text */
 .taglinespy {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
   color: #cbd5f5;
   letter-spacing: 1px;
 }
 
 .descspy {
-  font-size: 16px;
-  color: #94a3b8;
+  font-size: 18px;
+  color: #dde1e7;
   margin-bottom: 30px;
   max-width: 600px;
   letter-spacing: 1px;
@@ -380,20 +399,21 @@ html {
 }
 
 .info-boxspy svg {
-  font-size: 22px;
+  font-size: 24px;
   color: #facc15;
 }
 
 .info-boxspy h4 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
 .info-boxspy p {
-  font-size: 12px;
+  font-size: 16px;
   color: #cbd5f5;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
+
 }
 
 /* ===== BUTTONS ===== */
@@ -413,6 +433,7 @@ html {
   letter-spacing: 1px;
   transition: 0.3s;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .primary-btnspy:hover {
@@ -421,6 +442,7 @@ html {
 }
 
 .secondary-btnspy {
+  font-size: 20px;
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
@@ -519,15 +541,20 @@ html {
   }
 
   .summer-left h2 {
-    font-size: 26px;
+    font-size: 32px;
   }
 
   .taglinespy {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .descspy {
-    font-size: 14px;
+    font-size: 16px;
+    
+  }
+
+  .summer-info{
+     margin-top: 30px;
   }
 
   .info-boxspy {
@@ -536,14 +563,28 @@ html {
     text-align: center;
   }
 
+  .summer-info h4{
+    font-size: 18px;
+  }
+
+  .summer-info p{
+    font-size: 16px;
+  }
+
   .summer-buttons {
     flex-direction: column;
     gap: 10px;
+    align-items: center;
+
   }
 
   .primary-btnspy,
   .secondary-btnspy {
-    width: 100%;
+    width: auto;
+    min-width: 220px;
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 20px;
   }
 }
 
@@ -630,9 +671,9 @@ html {
 .camp-subtitle {
   max-width: 720px;
   margin: 20px auto 60px;
-  font-size: 17px;
+  font-size: 20px;
   color: #94a3b8;
-  line-height: 1.8;
+  line-height: 1.6;
   letter-spacing: 0.8px;
 }
 
@@ -688,11 +729,12 @@ html {
 
 /* text */
 .camp-card h3 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 10px;
   font-weight: 600;
   letter-spacing: 1px;
   color: #f1f5f9;
+  margin-top: 10px;
 }
 
 /* underline inside */
@@ -711,9 +753,10 @@ html {
 }
 
 .camp-card p {
-  font-size: 15px;
+  font-size: 18px;
   color: #94a3b8;
   line-height: 1.7;
+  letter-spacing: 1px;
 }
 
 /* ===============================
@@ -725,9 +768,9 @@ html {
   padding: 22px;
   border-radius: 12px;
   background: linear-gradient(135deg, #ef4444, #b91c1c);
-  font-size: 17px;
+  font-size:20px;
   line-height: 1.7;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   position: relative;
   overflow: hidden;
 }
@@ -776,11 +819,23 @@ html {
   }
 
   .camp-title {
-    font-size: 24px;
+    font-size: 32px;
   }
 
+  .camp-subtitle {
+    font-size: 17px;
+  }
+
+    .camp-card h3{
+      font-size: 19px;
+    }
+
   .camp-card p {
-    font-size: 13px;
+    font-size: 16px;
+  }
+
+  .camp-highlight{
+    font-size: 18px;
   }
 }
 
@@ -982,13 +1037,7 @@ html {
 /* ===========================
    RIGHT FORM
 =========================== */
-/* 
-.spycta-right {
-  flex: 1;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-} */
+
 
 .spycta-right {
   flex: 0.78;

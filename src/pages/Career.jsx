@@ -77,6 +77,55 @@ const Career = () => {
             </tbody>
           </table>
         </div>
+
+
+
+        {/* MOBILE RECRUITMENT CARDS */}
+            <div className="mobile-recruitment-cards">
+
+              {/* CARD 1 */}
+              <div className="recruitment-card active-card">
+                <h3>Detective (NDF)</h3>
+
+                <p><strong>Advertisement No:</strong> NDF/SE/2025</p>
+                <p><strong>Location:</strong> All India</p>
+                <p><strong>Vacancies:</strong> Not Fixed</p>
+                <p><strong>Last Date:</strong> Open</p>
+
+                <div className="card-status open-status">
+                  OPEN
+                </div>
+
+                <a
+                  href="https://recruitment.ndfdetective.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mobile-apply-btn blink-btn"
+                >
+                  Apply Now
+                </a>
+              </div>
+
+              {/* CARD 2 */}
+              <div className="recruitment-card closed-card">
+                <h3>Security Guard / Officer</h3>
+
+                <p><strong>Advertisement No:</strong> NDF/2025</p>
+                <p><strong>Location:</strong> All India</p>
+                <p><strong>Vacancies:</strong> 615</p>
+                <p><strong>Last Date:</strong> Closed</p>
+
+                <div className="card-status closed-status">
+                  CLOSED
+                </div>
+
+                <button className="mobile-closed-btn">
+                  Closed
+                </button>
+              </div>
+
+            </div>
+
       </div>
 
       <div className="important-links">
