@@ -7,6 +7,9 @@ export default defineConfig({
  ],
 
     build: {
-      sourcemap: true   // ✅ ADD HERE
+      sourcemap: false  // ✅ ADD HERE
     }
 })
+
+
+
