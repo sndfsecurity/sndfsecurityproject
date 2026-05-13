@@ -119,7 +119,7 @@ const handleSubmit = async (e) => {
 
   try {
    
-    // const res = await fetch("http://localhost:8080/api/enquiry", {
+ 
     
     const res = await fetch(`${API}/api/enquiry`, {
       method: "POST",
