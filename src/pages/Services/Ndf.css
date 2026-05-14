@@ -31,7 +31,7 @@ html {
 /* ===== TAG ===== */
 .sndf-services-hero-tag {
   display: inline-block;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 2px;
   color: #ff3b3b;
   margin-bottom: 20px;
@@ -155,9 +155,10 @@ html {
 }
 
 .sndf-services-hero-stat-box p {
-  font-size: 17px;
+  font-size: 18px;
   letter-spacing: 0.5px;
   color: #bbbbbb;
+  letter-spacing: 1px;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -168,12 +169,16 @@ html {
     padding: 130px 20px 60px;
   }
 
+   .sndf-services-hero-tag{
+    font-size: 16px;
+  }
+
   .sndf-services-hero-title {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .sndf-services-hero-text {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -183,14 +188,18 @@ html {
    padding-top: 190px;
   }
 
+  .sndf-services-hero-tag{
+    font-size: 16px;
+  }
+
   .sndf-services-hero-title {
-    font-size: 29px;
+    font-size: 32px;
     line-height: 1.4;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
   }
 
   .sndf-services-hero-text {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.7;
     margin-bottom: 30px;
     text-align: center;
@@ -205,6 +214,7 @@ html {
   .sndf-services-hero-btn-outline {
     width: 100%;
     text-align: center;
+    font-size: 20px;
   }
 
   .sndf-services-hero-stat-box {
@@ -215,7 +225,6 @@ html {
 
 
 /* our investigation services............................... */
-/* ===== SECTION ===== */
 .sndf-investigation-top {
   padding: 80px 20px;
   background: #f4f6fb;
@@ -243,7 +252,7 @@ html {
 
 .sndf-investigation-header p {
  color: #64748b;
-  font-size: 19px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
@@ -305,13 +314,13 @@ html {
   font-size: 26px;
   font-weight: 700;
   color: #0b1c3f;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   letter-spacing: 0.5px;
 
 }
 
 .sndf-investigation-card p {
-  font-size: 18px;
+  font-size: 20px;
   color: #666;
   line-height: 1.5;
   letter-spacing: 1px;
@@ -336,7 +345,7 @@ html {
   }
 
   .sndf-investigation-card p {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -387,8 +396,8 @@ html {
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid #e5e7eb;
-   transition: transform 0.25s ease, box-shadow 0.25s ease;
-    will-change: transform;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
 }
 
 .sndf-service-card:hover {
@@ -419,15 +428,15 @@ html {
   font-size: 20px;
   font-weight: 600;
   color: #111827;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   letter-spacing: 0.5px;
 }
 
 .sndf-service-content p {
-  font-size: 16px;
+  font-size: 18px;
   color: #6b7280;
   line-height: 1.5;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 
@@ -451,8 +460,16 @@ html {
   }
 
   .sndf-services-title {
-    font-size: 30px;
+    font-size: 32px;
     text-align: center;
+  }
+
+  .sndf-service-content h3 {
+    font-size: 19px;
+  }
+
+  .sndf-service-content p{
+    font-size: 16px;
   }
 
   .sndf-services-title::after {
@@ -473,7 +490,7 @@ html {
   }
 
   .sndf-service-content p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -581,20 +598,24 @@ html {
 
 /* CONTENT */
 .sndf-modal-content h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 26px;
+  margin-bottom: 25px;
   color: #111;
   border-bottom: 2px solid #eee;
   padding-bottom: 8px;
+  letter-spacing: 1px;
+  
 }
 
 .sndf-modal-content h3 {
-  margin-top: 18px;
+  margin-top: 22px;
   margin-bottom: 8px;
   font-size: 18px;
-  color: #222;
+  color: hsl(0, 89%, 49%);
   position: relative;
   padding-left: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .sndf-modal-content h3::before {
@@ -609,20 +630,28 @@ html {
 }
 
 .sndf-modal-content p {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.7;
   color: #555;
+  letter-spacing: 1px;
 }
 
 .sndf-modal-content ul {
    margin-top: 8px;
   padding-left: 18px;
+
 }
 
 .sndf-modal-content li {
   margin-bottom: 8px;
   font-size: 17px;
   color: #444;
+  letter-spacing: 1px;
+}
+
+.sndf-modal-content li strong{
+  font-size: 17px;
+  letter-spacing: 1px;
 }
 
 
@@ -661,8 +690,9 @@ html {
   margin-top: 12px;
   padding: 8px 16px;
 
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
 
   color: #da1c1c;
   background: transparent;
@@ -705,13 +735,14 @@ html {
     padding: 20px;
   }
 
- 
+   .sndf-view-btn{
+    font-size: 16px;
+   }
 
 }
 
 
 /* cyber crime and forensic investigation */
-/* ================= CYBER SECTION ================= */
 
 .cyber {
   /* light theme color background (soft blue) */
@@ -771,7 +802,7 @@ html {
   }
 
   .cyber-title {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
@@ -781,7 +812,7 @@ html {
   }
 
   .cyber-title {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .cyber-title::after {
@@ -792,17 +823,15 @@ html {
 
 
 /* enquiry */
-/* ================= ENQUIRY SECTION ================= */
 
 .sndf-enquiry {
-  position: relative; /* 🔥 IMPORTANT */
+  position: relative; 
   padding: 80px 20px;
   overflow: hidden;
-  background: linear-gradient(135deg, #0f172a, #020617); /* dark blue-black */
+  background: linear-gradient(135deg, #0f172a, #020617); 
   color: #ffffff;
 }
 
-/* OPTIONAL BACKGROUND EFFECT (SAFE) */
 .sndf-enquiry::before {
   content: "";
   position: absolute;
@@ -815,13 +844,12 @@ html {
 }
 
 #sndf-enquiry-section {
-  scroll-margin-top: 150px; /* adjust based on navbar height */
+  scroll-margin-top: 150px; 
 }
 
-/* CONTAINER ABOVE BACKGROUND */
 .sndf-enquiry-container {
-  position: relative;   /* 🔥 IMPORTANT */
-  z-index: 1;           /* 🔥 brings form above overlay */
+  position: relative;   
+  z-index: 1;          
 
   max-width: 1200px;
   margin: auto;
@@ -842,7 +870,7 @@ html {
 }
 
 .sndf-enquiry-sub {
-  font-size: 18px;
+  font-size: 20px;
   color: #cbd5f5;
   margin-bottom: 20px;
   line-height: 1.6;
@@ -858,7 +886,8 @@ html {
   margin-bottom: 10px;
   color: #e2e8f0;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  font-size: 17px;
 }
 
 /* ================= FORM BOX ================= */
@@ -902,7 +931,7 @@ html {
   }
 
   .sndf-enquiry-title {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
@@ -913,6 +942,17 @@ html {
 
   .sndf-enquiry-title {
     font-size: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .sndf-enquiry-sub{
+    font-size: 18px;
+  }
+
+  .sndf-enquiry-points li{
+    font-size: 16px;
   }
 
   .sndf-enquiry-formBox {
@@ -931,11 +971,11 @@ html {
 }
 
 .sndf-ndf-contact-title {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 600;
-  color: #ffffff;
+  color: hsl(0, 88%, 50%);
   margin-bottom: 6px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 /* CONTACT ITEM */
@@ -943,11 +983,11 @@ html {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 15px;
+  font-size: 17px;
   text-decoration: none;
   color: #e2e8f0;
   transition: all 0.3s ease;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   
 }
 
@@ -1023,13 +1063,17 @@ html {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .sndf-ndf-contact-item {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .ndf-extra-social-icon {
     width: 38px;
     height: 38px;
     font-size: 20px;
+  }
+
+  .sndf-ndf-contact-title {
+    font-size: 18px;
   }
 
 
@@ -1041,11 +1085,11 @@ html {
   }
 
   .sndf-ndf-contact-title {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .sndf-ndf-contact-item {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .ndf-extra-social {

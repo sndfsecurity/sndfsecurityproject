@@ -54,11 +54,11 @@ const services = [
 
       <h3>What We Check</h3>
       <ul>
-        <li><strong>01 - Background Verification:</strong> Identity, past records and personal history.</li>
-        <li><strong>02 - Job & Financial Status:</strong> Employment details, income sources and stability.</li>
-        <li><strong>03 - Family Details:</strong> Family background and social reputation.</li>
-        <li><strong>04 - Lifestyle & Habits:</strong> Daily behavior, addictions and social activities.</li>
-        <li><strong>05 - Relationship History:</strong> Any past or current relationships if required.</li>
+        <li><strong>Background Verification:</strong> Identity, past records and personal history.</li>
+        <li><strong>Job & Financial Status:</strong> Employment details, income sources and stability.</li>
+        <li><strong>Family Details:</strong> Family background and social reputation.</li>
+        <li><strong>Lifestyle & Habits:</strong> Daily behavior, addictions and social activities.</li>
+        <li><strong>Relationship History:</strong> Any past or current relationships if required.</li>
       </ul>
 
       <h3>How We Help</h3>
@@ -98,17 +98,17 @@ const services = [
       <h3>Key Aspects We Investigate</h3>
 
       <ul>
-        <li><strong>01 - Behavioral Changes:</strong> Unexpected shifts in habits, addiction concerns or personality changes.</li>
+        <li><strong>Behavioral Changes:</strong> Unexpected shifts in habits, addiction concerns or personality changes.</li>
 
-        <li><strong>02 - Safety & Custody Issues:</strong> Investigation related to child custody, safety and suitability of the partner.</li>
+        <li><strong>Safety & Custody Issues:</strong> Investigation related to child custody, safety and suitability of the partner.</li>
 
-        <li><strong>03 - Infidelity or Affairs:</strong> Confirm or rule out extramarital relationships.</li>
+        <li><strong>Infidelity or Affairs:</strong> Confirm or rule out extramarital relationships.</li>
 
-        <li><strong>04 - Hidden Financial Activity:</strong> Checking for undisclosed assets, debts or secret spending.</li>
+        <li><strong>Hidden Financial Activity:</strong> Checking for undisclosed assets, debts or secret spending.</li>
 
-        <li><strong>05 - Legal or Criminal Issues:</strong> Unrevealed criminal records or ongoing legal matters.</li>
+        <li><strong>Legal or Criminal Issues:</strong> Unrevealed criminal records or ongoing legal matters.</li>
 
-        <li><strong>06 - Social & Reputation Checks:</strong> Verifying social behavior, reputation and background in workplace or community.</li>
+        <li><strong>Social & Reputation Checks:</strong> Verifying social behavior, reputation and background in workplace or community.</li>
       </ul>
 
       <h3>Benefits</h3>
@@ -142,17 +142,17 @@ const services = [
       <h3>Why Consider a Loyalty Test?</h3>
 
       <ul>
-        <li><strong>01 - Suspicion of Affair:</strong> Sudden behavioral changes, secrecy or unusual routines may raise doubts.</li>
+        <li><strong>Suspicion of Affair:</strong> Sudden behavioral changes, secrecy or unusual routines may raise doubts.</li>
 
-        <li><strong>02 - Trust Issues:</strong> Helps confirm or clear doubts in relationships struggling with trust.</li>
+        <li><strong>Trust Issues:</strong> Helps confirm or clear doubts in relationships struggling with trust.</li>
 
-        <li><strong>03 - Pre-marital Assessment:</strong> Test loyalty before marriage to ensure a safe future.</li>
+        <li><strong>Pre-marital Assessment:</strong> Test loyalty before marriage to ensure a safe future.</li>
 
-        <li><strong>04 - Confirmation of Integrity:</strong> Reveal true intentions when honesty is in question.</li>
+        <li><strong>Confirmation of Integrity:</strong> Reveal true intentions when honesty is in question.</li>
 
-        <li><strong>05 - Long-distance Reassurance:</strong> Helps maintain trust in long-distance relationships.</li>
+        <li><strong>Long-distance Reassurance:</strong> Helps maintain trust in long-distance relationships.</li>
 
-        <li><strong>06 - Behavioral Inconsistencies:</strong> Identify unusual actions or hidden activities.</li>
+        <li><strong>Behavioral Inconsistencies:</strong> Identify unusual actions or hidden activities.</li>
       </ul>
 
       <h3>Benefits</h3>
@@ -187,17 +187,17 @@ const services = [
       <h3>Common Reasons Behind Extramarital Affairs</h3>
 
       <ul>
-        <li><strong>01 - Lack of Physical Intimacy:</strong> When closeness is missing, partners may feel unsatisfied.</li>
+        <li><strong>Lack of Physical Intimacy:</strong> When closeness is missing, partners may feel unsatisfied.</li>
 
-        <li><strong>02 - Boredom in Relationship:</strong> Routine or dull relationships may lead someone to seek excitement outside.</li>
+        <li><strong>Boredom in Relationship:</strong> Routine or dull relationships may lead someone to seek excitement outside.</li>
 
-        <li><strong>03 - Opportunity & Temptation:</strong> Situations like workplace connections or friendships can create chances.</li>
+        <li><strong>Opportunity & Temptation:</strong> Situations like workplace connections or friendships can create chances.</li>
 
-        <li><strong>04 - Emotional Disconnect:</strong> Feeling lonely or emotionally distant can push someone away.</li>
+        <li><strong>Emotional Disconnect:</strong> Feeling lonely or emotionally distant can push someone away.</li>
 
-        <li><strong>05 - Feeling Unappreciated:</strong> Lack of respect, love or attention can lead to outside involvement.</li>
+        <li><strong>Feeling Unappreciated:</strong> Lack of respect, love or attention can lead to outside involvement.</li>
 
-        <li><strong>06 - Revenge or Anger:</strong> Some engage in affairs due to hurt feelings or conflicts.</li>
+        <li><strong>Revenge or Anger:</strong> Some engage in affairs due to hurt feelings or conflicts.</li>
       </ul>
 
       <h3>How We Help</h3>
@@ -240,13 +240,13 @@ const services = [
       <h3>Why Conduct a Divorce Case Investigation?</h3>
 
       <ul>
-        <li><strong>01 - To Gather Strong Proof:</strong> Collect solid evidence like photos, videos and reports to support your case in court.</li>
+        <li><strong>To Gather Strong Proof:</strong> Collect solid evidence like photos, videos and reports to support your case in court.</li>
 
-        <li><strong>02 - To Find Hidden Property:</strong> Detect undisclosed assets, money or property to ensure fair settlement.</li>
+        <li><strong>To Find Hidden Property:</strong> Detect undisclosed assets, money or property to ensure fair settlement.</li>
 
-        <li><strong>03 - To Verify Claims:</strong> Check if statements related to income, behavior or lifestyle are true.</li>
+        <li><strong>To Verify Claims:</strong> Check if statements related to income, behavior or lifestyle are true.</li>
 
-        <li><strong>04 - To Protect Children:</strong> Identify harmful habits or activities that may affect child custody decisions.</li>
+        <li><strong>To Protect Children:</strong> Identify harmful habits or activities that may affect child custody decisions.</li>
       </ul>
 
       <h3>How We Help</h3>
@@ -270,59 +270,6 @@ const services = [
 },
 
 
-//  {
-//   title: "Missing Person Investigation",
-//   desc: "Professional investigation services to trace and locate missing individuals.",
-//   img: missing, // use your image for card only
-
-//   full: (
-//     <div className="sndf-modal-details">
-
-//       <h3>About the Service</h3>
-//       <p>
-//         Missing Person Investigation involves locating individuals who have
-//         disappeared due to personal, financial or unknown reasons. Our team
-//         uses advanced techniques, surveillance and network resources to trace
-//         and find missing persons quickly and safely.
-//       </p>
-
-//       <h3>Reasons Why People Go Missing</h3>
-
-//       <ul>
-//         <li><strong>01 - Family Conflicts:</strong> Disputes or misunderstandings at home may lead someone to leave.</li>
-
-//         <li><strong>02 - Financial Problems:</strong> Debt or financial stress can cause individuals to disappear.</li>
-
-//         <li><strong>03 - Relationship Issues:</strong> Emotional distress or breakups may lead to sudden absence.</li>
-
-//         <li><strong>04 - Kidnapping or Crime:</strong> Some cases involve abduction or illegal activities.</li>
-
-//         <li><strong>05 - Mental Health Concerns:</strong> Stress, depression or trauma can result in disappearance.</li>
-
-//         <li><strong>06 - Voluntary Disappearance:</strong> Some individuals leave intentionally for personal reasons.</li>
-//       </ul>
-
-//       <h3>How We Help</h3>
-//       <ul>
-//         <li>✔ Tracking and surveillance</li>
-//         <li>✔ Background and location analysis</li>
-//         <li>✔ Coordination with local sources</li>
-//         <li>✔ Confidential and fast investigation process</li>
-//       </ul>
-
-//       <h3>Benefits</h3>
-//       <ul>
-//         <li>✔ Faster location of missing individuals</li>
-//         <li>✔ Reliable and verified information</li>
-//         <li>✔ Peace of mind for families</li>
-//         <li>✔ Professional handling of sensitive cases</li>
-//       </ul>
-
-//     </div>
-//   ),
-// },
-
-
 
   {
   title: "Background Check Investigation",
@@ -344,17 +291,17 @@ const services = [
       <h3>What We Verify</h3>
 
       <ul>
-        <li><strong>01 - Identity Verification:</strong> Confirm personal details like name, address and identity proof.</li>
+        <li><strong>Identity Verification:</strong> Confirm personal details like name, address and identity proof.</li>
 
-        <li><strong>02 - Employment History:</strong> Check previous jobs, roles, and work experience.</li>
+        <li><strong>Employment History:</strong> Check previous jobs, roles, and work experience.</li>
 
-        <li><strong>03 - Criminal Records:</strong> Identify any past legal issues or criminal background.</li>
+        <li><strong>Criminal Records:</strong> Identify any past legal issues or criminal background.</li>
 
-        <li><strong>04 - Financial Status:</strong> Review financial stability, debts or liabilities.</li>
+        <li><strong>Financial Status:</strong> Review financial stability, debts or liabilities.</li>
 
-        <li><strong>05 - Social & Personal Behavior:</strong> Understand lifestyle, habits and reputation.</li>
+        <li><strong>Social & Personal Behavior:</strong> Understand lifestyle, habits and reputation.</li>
 
-        <li><strong>06 - References Check:</strong> Verify information from friends, colleagues or previous employers.</li>
+        <li><strong>References Check:</strong> Verify information from friends, colleagues or previous employers.</li>
       </ul>
 
       <h3>How We Help</h3>
@@ -455,15 +402,15 @@ const services = [
       <h3>What You Should Do If You Are Being Blackmailed</h3>
 
       <ul>
-        <li><strong>01 - Stop Communication:</strong> Do not respond or comply with the blackmailer’s demands.</li>
+        <li><strong>Stop Communication:</strong> Do not respond or comply with the blackmailer’s demands.</li>
 
-        <li><strong>02 - Preserve Evidence:</strong> Save messages, emails, call logs and any proof of threats.</li>
+        <li><strong>Preserve Evidence:</strong> Save messages, emails, call logs and any proof of threats.</li>
 
-        <li><strong>03 - Report the Issue:</strong> Inform legal authorities or professionals immediately.</li>
+        <li><strong>Report the Issue:</strong> Inform legal authorities or professionals immediately.</li>
 
-        <li><strong>04 - Conduct Investigation:</strong> Allow experts to trace and identify the culprit.</li>
+        <li><strong>Conduct Investigation:</strong> Allow experts to trace and identify the culprit.</li>
 
-        <li><strong>05 - Seek Legal Support:</strong> Take proper legal action to protect yourself.</li>
+        <li><strong>Seek Legal Support:</strong> Take proper legal action to protect yourself.</li>
       </ul>
 
       <h3>How We Help</h3>
@@ -505,18 +452,18 @@ const services = [
 
       <h3>Surveillance Methods</h3>
       <ul>
-        <li><strong>01 - Physical Surveillance:</strong> Tracking movements and activities in person.</li>
-        <li><strong>02 - Electronic Surveillance:</strong> Use of GPS tracking, cameras and digital tools.</li>
-        <li><strong>03 - Video Monitoring:</strong> Capturing visual evidence for proof.</li>
-        <li><strong>04 - Background Observation:</strong> Monitoring behavior patterns over time.</li>
+        <li><strong>Physical Surveillance:</strong> Tracking movements and activities in person.</li>
+        <li><strong>Electronic Surveillance:</strong> Use of GPS tracking, cameras and digital tools.</li>
+        <li><strong>Video Monitoring:</strong> Capturing visual evidence for proof.</li>
+        <li><strong>Background Observation:</strong> Monitoring behavior patterns over time.</li>
       </ul>
 
       <h3>Sting Operation Process</h3>
       <ul>
-        <li><strong>01 - Planning:</strong> Careful strategy to ensure legal and effective execution.</li>
-        <li><strong>02 - Undercover Setup:</strong> Agents pose as individuals to gain trust.</li>
-        <li><strong>03 - Evidence Collection:</strong> Recording illegal or suspicious activities.</li>
-        <li><strong>04 - Execution:</strong> Exposing the act with proper documentation.</li>
+        <li><strong>Planning:</strong> Careful strategy to ensure legal and effective execution.</li>
+        <li><strong>Undercover Setup:</strong> Agents pose as individuals to gain trust.</li>
+        <li><strong>Evidence Collection:</strong> Recording illegal or suspicious activities.</li>
+        <li><strong>Execution:</strong> Exposing the act with proper documentation.</li>
       </ul>
 
       <h3>How We Help</h3>
@@ -567,11 +514,11 @@ const services = [
 
       <h3>Operation Process</h3>
       <ul>
-        <li><strong>01 - Planning:</strong> Detailed strategy and risk assessment before operation.</li>
-        <li><strong>02 - Identity Creation:</strong> Developing a strong cover story and background.</li>
-        <li><strong>03 - Infiltration:</strong> Entering the target environment to gain trust.</li>
-        <li><strong>04 - Evidence Collection:</strong> Gathering proof through observation and interaction.</li>
-        <li><strong>05 - Exit Strategy:</strong> Safely concluding the operation with proper documentation.</li>
+        <li><strong>Planning:</strong> Detailed strategy and risk assessment before operation.</li>
+        <li><strong>Identity Creation:</strong> Developing a strong cover story and background.</li>
+        <li><strong>Infiltration:</strong> Entering the target environment to gain trust.</li>
+        <li><strong>Evidence Collection:</strong> Gathering proof through observation and interaction.</li>
+        <li><strong>Exit Strategy:</strong> Safely concluding the operation with proper documentation.</li>
       </ul>
 
       <h3>How We Help</h3>
@@ -613,18 +560,18 @@ const services = [
 
       <h3>What We Verify</h3>
       <ul>
-        <li><strong>01 - Identity Documents:</strong> Aadhaar card, PAN card, passport and ID proofs.</li>
-        <li><strong>02 - Educational Certificates:</strong> School, college and professional qualifications.</li>
-        <li><strong>03 - Employment Records:</strong> Job history, experience letters and company details.</li>
-        <li><strong>04 - Property Documents:</strong> Ownership papers, agreements and legal records.</li>
+        <li><strong>Identity Documents:</strong> Aadhaar card, PAN card, passport and ID proofs.</li>
+        <li><strong>Educational Certificates:</strong> School, college and professional qualifications.</li>
+        <li><strong>Employment Records:</strong> Job history, experience letters and company details.</li>
+        <li><strong>Property Documents:</strong> Ownership papers, agreements and legal records.</li>
       </ul>
 
       <h3>Verification Process</h3>
       <ul>
-        <li><strong>01 - Document Collection:</strong> Gathering documents securely.</li>
-        <li><strong>02 - Cross Verification:</strong> Checking with official databases and authorities.</li>
-        <li><strong>03 - Analysis:</strong> Identifying inconsistencies or forged details.</li>
-        <li><strong>04 - Final Report:</strong> Providing a clear and detailed verification report.</li>
+        <li><strong>Document Collection:</strong> Gathering documents securely.</li>
+        <li><strong>Cross Verification:</strong> Checking with official databases and authorities.</li>
+        <li><strong>Analysis:</strong> Identifying inconsistencies or forged details.</li>
+        <li><strong>Final Report:</strong> Providing a clear and detailed verification report.</li>
       </ul>
 
       <h3>How We Help</h3>
@@ -671,51 +618,8 @@ const cyberServices = [
       </>
     ),
   },
-  {
-    title: "Mobile & PC Forensics",
-    desc: "Device analysis for hidden digital evidence. Accurate forensic reports.",
-    img: mobile,
-    full: (
-      <>
-        <p>Recover and analyze data from mobile phones, laptops and digital devices.</p>
-        <ul>
-          <li>Deleted data recovery</li>
-          <li>Chat & call analysis</li>
-          <li>Device tracking</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "Cyber Fraud Investigation",
-    desc: "Track online scams & fraud activities. Secure digital investigation.",
-    img: cyber,
-    full: (
-      <>
-        <p>We investigate cyber frauds, scams and online financial crimes.</p>
-        <ul>
-          <li>UPI & banking fraud</li>
-          <li>Online scam tracking</li>
-          <li>Fraud identity tracing</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "Data Recovery",
-    desc: "Recover lost or deleted data securely. Fast & reliable recovery",
-    img: data,
-    full: (
-      <>
-        <p>We retrieve lost data from damaged or corrupted devices.</p>
-        <ul>
-          <li>Hard disk recovery</li>
-          <li>Pen drive recovery</li>
-          <li>Secure data restore</li>
-        </ul>
-      </>
-    ),
-  },
+  
+  
   {
     title: "Financial Fraud",
     desc: "Investigate financial crimes & transactions. Strong legal evidence support",
@@ -731,21 +635,7 @@ const cyberServices = [
       </>
     ),
   },
-  {
-    title: "Digital Forensics",
-    desc: "Collect & preserve digital evidence. Professional investigation support",
-    img: forensic,
-    full: (
-      <>
-        <p>Professional digital forensic investigation for legal and corporate cases.</p>
-        <ul>
-          <li>Data extraction</li>
-          <li>Evidence preservation</li>
-          <li>Legal reporting</li>
-        </ul>
-      </>
-    ),
-  },
+  
   {
     title: "Honey Trapping",
     desc: "Handle honey trap cases confidentially. Discreet protection support.",
@@ -952,8 +842,8 @@ const Ndf = () => {
   <div className="sndf-modal-overlay" onClick={closeModal}>
     <div
       className="sndf-modal-box"
-      onClick={(e) => e.stopPropagation()}
-    >
+      onClick={(e) => e.stopPropagation()}>
+
       <div className="sndf-modal-content">
         
         <h2>{selectedService.title}</h2>
