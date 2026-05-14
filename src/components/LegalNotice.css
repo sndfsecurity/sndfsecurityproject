@@ -1,0 +1,77 @@
+.shop-page{
+  background:#141250;
+  min-height:100vh;
+  padding:120px 20px;
+  color:white;
+  position:relative;
+}
+
+/* RIGHT SIDE HERO NOTICE */
+.legal-notice{
+  position:absolute;
+  top:185px;
+  right:95px; /* cart pasun distance */
+
+  width:380px;
+  padding:14px 18px;
+
+  background:rgba(20,10,45,.96);
+  border-left:4px solid #ff2b2b;
+  border-radius:12px;
+
+  color:#fff;
+
+  box-shadow:
+  0 0 10px rgba(255,0,0,.4),
+  0 0 25px rgba(255,0,0,.3);
+
+  animation:legalBlink 1s infinite;
+
+  z-index:10;
+}
+
+.legal-notice h3{
+  color:#ff4d4d;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.legal-notice p{
+  margin:0;
+  font-size:15px;
+  line-height:1.8;
+}
+
+/* BLINK */
+@keyframes legalBlink{
+
+0%{
+box-shadow:
+0 0 10px rgba(255,0,0,.4),
+0 0 25px rgba(255,0,0,.3);
+}
+
+50%{
+box-shadow:
+0 0 20px red,
+0 0 40px red;
+}
+
+100%{
+box-shadow:
+0 0 10px rgba(255,0,0,.4),
+0 0 25px rgba(255,0,0,.3);
+}
+}
+
+/* MOBILE */
+@media(max-width:992px){
+
+.legal-notice{
+position:relative;
+top:0;
+right:0;
+width:95%;
+margin:0 auto 25px;
+}
+}

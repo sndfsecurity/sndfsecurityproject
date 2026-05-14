@@ -5,6 +5,8 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Helmet } from "react-helmet-async";
 import { FaShoppingCart } from "react-icons/fa";
+import LegalNotice from "../components/LegalNotice";
+
 
 import gps from "../assets/images/gps.png";
 import gsm from "../assets/images/minia83.png";
@@ -683,9 +685,12 @@ function ProductDetails() {
 
     <div className="details-page">
 
-      <button className="back-btn" onClick={() => navigate(-1)}>
-        ← Back
-      </button>
+  <LegalNotice />
+
+  <button className="back-btn" onClick={() => navigate(-1)}>
+    ← Back
+  </button>
+      
 
       <div className="details-container">
 

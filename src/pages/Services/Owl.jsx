@@ -3,7 +3,7 @@ import "./Owl.css";
 import owl from "../../assets/images/monitoring.jpeg";
 import { Helmet } from "react-helmet-async";
 
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaGalacticRepublic } from "react-icons/fa";
 import { FaWhatsapp, FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 
 import {
