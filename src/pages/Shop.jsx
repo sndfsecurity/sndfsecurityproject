@@ -28,6 +28,7 @@ import toyt from "../assets/images/toytruck.png"
 import spy from "../assets/images/spytruck.png"
 import flight from "../assets/images/aroplane.png"
 import green from "../assets/images/greencar.png"
+import LegalNotice from "../components/LegalNotice";
 
 
 
@@ -225,6 +226,9 @@ function Shop() {
 
 
     <div className="shop-page">
+
+
+   <LegalNotice />
 
       <div className="shop-header">
         <h1>Investigation Equipment Store</h1>
