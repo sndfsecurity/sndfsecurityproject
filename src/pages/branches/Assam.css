@@ -74,9 +74,10 @@ html {
   color: #ffffff;
   padding: 8px 24px;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -959,11 +960,11 @@ html {
   display: inline-block;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
   padding: 6px 18px;
   border-radius: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   letter-spacing: 1px;
 }
 
@@ -979,7 +980,7 @@ html {
 }
 
 .assam-contact-subtitle {
-  font-size: 17px;
+  font-size: 19px;
   color: #6c757d;
   max-width: 550px;
   margin: 0 auto;
@@ -1038,18 +1039,20 @@ html {
 }
 
 .assam-contact-item h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #1a1a2e;
   margin-bottom: 6px;
+  letter-spacing: 1px;
 }
 
 .assam-contact-item a,
 .assam-contact-item p {
   color: #6c757d;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
+  letter-spacing: 0.5px;
 }
 
 .assam-contact-item a:hover {
@@ -1145,11 +1148,11 @@ html {
   }
   
   .assam-contact-subtitle {
-    font-size: 16px;
+    font-size: 17px;
   }
   
   .assam-contact-badge {
-    font-size: 12px;
+    font-size: 18px;
     padding: 5px 15px;
   }
   
@@ -1175,12 +1178,12 @@ html {
   }
   
   .assam-contact-item h4 {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .assam-contact-item a,
   .assam-contact-item p {
-    font-size: 13px;
+    font-size: 15px;
   }
   
   .assam-input,

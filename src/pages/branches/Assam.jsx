@@ -8,9 +8,6 @@ import assam3 from "../../assets/images/assam3.webp";
 import assam4 from "../../assets/images/assam4.webp";
 
 
-
-
-
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaArrowRight } from "react-icons/fa";
 
 const Assam = () => {
@@ -36,13 +33,13 @@ const officeImageUrl = assam;
     },
     {
       id: 3,
-      url: assam3 ,
+      url: assam4 ,
       title: "Conference Hall",
       description: "Strategic operations meeting room"
     },
     {
       id: 4,        
-      url: assam4,
+      url: assam3,
       title: "Command Center",
       description: "24/7 surveillance and monitoring hub"
     }
