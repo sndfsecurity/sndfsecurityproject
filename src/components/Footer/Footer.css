@@ -36,30 +36,35 @@
 }
 
 .brand p {
-  font-size: 14px;
+  font-size: 17px !important;
   color: #ccc;
   line-height: 1.7;
+  letter-spacing: 0.4px;
 }
 
 .brand-points {
-  margin-top: 12px;
+  margin-top: 14px;
   padding: 0;
   list-style: none;
-  font-size: 13px;
   color: #aaa;
+ 
 }
 
 .brand-points li {
   margin-bottom: 6px;
   line-height: 1.5;
+  letter-spacing: 1px !important;
+  font-size: 15px !important;
 }
 
 /* Headings */
 .footer-col h3 {
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 20px;
   position: relative;
   padding-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .footer-col h3::after {
@@ -81,11 +86,12 @@
 
 .footer-col li {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 17px;
   color: #ccc;
   transition: 0.3s;
   cursor: pointer;
   line-height: 1.8;
+  letter-spacing: 1px;
 }
 
 .footer-col li:hover {
@@ -134,13 +140,14 @@
 /* ================= CONTACT ================= */
 
 .footer-col p {
-  font-size: 14px;
+  font-size: 17px;
   color: #ccc;
   margin-bottom: 10px;
-
+  
   display: flex;
   align-items: flex-start;
   gap: 8px;
+  letter-spacing: 1px;
 }
 
 .footer-col li {
@@ -210,8 +217,9 @@
   text-align: center;
   border-top: 1px solid rgba(255,255,255,0.2);
   padding-top: 15px;
-  font-size: 14px;
+  font-size: 16px;
   color: #ccc;
+  letter-spacing: 1px;
 }
 
 /* ================= RESPONSIVE ================= */
