@@ -20,12 +20,6 @@ import { Helmet } from "react-helmet-async";
 
 const Course = () => {
 
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 800,
-  //     once: true,
-  //   });
-  // }, []);
 
   useEffect(() => {
   const loadAOS = async () => {
@@ -576,7 +570,7 @@ const Course = () => {
       <div className="cta-buttonss">
         <button className="btn-primary" aria-label="Book your seat for detective course">Book Your Seat</button>
         
-        <a href="/brochure.pdf" download className="btn-outline" aria-label="Download course brochure">
+        <a href="/brochure.pdf" download className="btn-outlines" aria-label="Download course brochure">
          Download Brochure
         </a>
 
