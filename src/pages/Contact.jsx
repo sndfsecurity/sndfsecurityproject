@@ -163,8 +163,7 @@ const handleSubmit = async (e) => {
 
   <meta 
   name="description" 
-  content="Contact SNDF detective agency in Pune for private investigation, surveillance, and security services. Call, WhatsApp or send enquiry for fast confidential support." 
-/>
+  content="Contact SNDF detective agency in Pune for private investigation, surveillance, and security services. Call, WhatsApp or send enquiry for fast confidential support." />
 
   
 </Helmet>

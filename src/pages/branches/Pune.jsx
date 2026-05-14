@@ -240,7 +240,7 @@ return (
         <div className="branch-info">
           <h4>Wakad Branch</h4>
    <p>
-  Shop No. 2, 1st Floor, Shivganga Arcade, Bhumkar Chowk Rd<br />
+  Shop No. 2, 1st Floor, Shivganga Arcade, Bhumkar Chowk Rd
   Shankar Kalat Nagar, Wakad, Pune, Maharashtra 411057
 </p>
           <p className="branch-phone">+91 8007942309</p>
