@@ -54,7 +54,7 @@ function ProductDetails() {
     {
       id: 1,
       name: "ADVANCED GPS DETECTOR",
-      price: "₹2,999",
+      price: "₹8,000",
       img: gps,
       desc: "Detect hidden GPS trackers and spy devices with high accuracy.Detect hidden GPS trackers and spy devices with high accuracy. This advanced GPS detector is designed for personal safety, anti-surveillance protection, and professional security use. It helps you locate hidden tracking devices, bugs, and wireless signals quickly and effectively.",
       features: [
@@ -79,7 +79,7 @@ function ProductDetails() {
     {
       id: 2,
       name: "Mini A8 GPS Tracker",
-      price: "₹4,999",
+      price: "₹5,999",
       img: gsm,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -103,7 +103,7 @@ function ProductDetails() {
     {
       id: 3,
       name: "Ajjas Go Smart GPS Tracker",
-      price: "₹7,999",
+      price: "₹5,999",
       img: go,
       desc: "Wireless CCTV camera with HD quality and remote mobile monitoring.",
       features: [
@@ -150,7 +150,7 @@ function ProductDetails() {
     },{
       id: 5,
       name: "Fleettrack GPS Vehicle Tracker",
-      price: "₹4,999",
+      price: "₹6,999",
       img: vehicle,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -173,7 +173,7 @@ function ProductDetails() {
     },{
       id: 6,
       name: "BOLDTRACK 4G Mini Vehicle GPS Tracker",
-      price: "₹4,999",
+      price: "₹9,999",
       img: gg,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -196,7 +196,7 @@ function ProductDetails() {
     },{
       id: 7,
       name: "Mini A8 GPS Tracker",
-      price: "₹4,999",
+      price: "₹10,999",
       img: camera,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -221,7 +221,7 @@ function ProductDetails() {
 {
       id: 8,
       name: "USB Endoscope Camera",
-      price: "₹4,999",
+      price: "₹12,999",
       img: USB,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -246,7 +246,7 @@ function ProductDetails() {
 {
       id: 9,
       name: "Hidden Camera Wrist Watch",
-      price: "₹4,999",
+      price: "₹15,999",
       img: watch,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -271,7 +271,7 @@ function ProductDetails() {
 {
       id: 10,
       name: "Night Vision Power Bank Camera",
-      price: "₹4,999",
+      price: "₹18,999",
       img: power,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -296,7 +296,7 @@ function ProductDetails() {
 {
       id: 11,
       name: "MATLOGIX GF-07 Mini GPS Tracker Device",
-      price: "₹4,999",
+      price: "₹11,999",
       img: mat,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -321,7 +321,7 @@ function ProductDetails() {
 {
       id: 12,
       name: "X Tag Smart Bluetooth Tracker",
-      price: "₹4,999",
+      price: "₹11,000",
       img: tag,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -346,7 +346,7 @@ function ProductDetails() {
 {
       id: 13,
       name: "ZASCO GPS Vehicle Tracking Device (Anti-Theft GPS Tracker)",
-      price: "₹4,999",
+      price: "₹16,999",
       img: z,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -370,7 +370,7 @@ function ProductDetails() {
 {
       id: 14,
       name: "Digital Voice Recorder",
-      price: "₹4,999",
+      price: "₹34,999",
       img: voice,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -393,7 +393,7 @@ function ProductDetails() {
     },{
       id: 15,
       name: "HD Camera Pen",
-      price: "₹4,999",
+      price: "₹12,000",
       img: pen,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -416,7 +416,7 @@ function ProductDetails() {
     },{
       id: 16,
       name: "Hidden Camera Glasses",
-      price: "₹4,999",
+      price: "₹22,999",
       img: glass,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -439,7 +439,7 @@ function ProductDetails() {
     },{
       id: 17,
       name: "Digital breath alcohol tester",
-      price: "₹4,999",
+      price: "₹23,899",
       img: alcohol,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -462,7 +462,7 @@ function ProductDetails() {
     },{
       id: 18,
       name: "Spy Police Car",
-      price: "₹4,999",
+      price: "₹13,999",
       img: police,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -485,7 +485,7 @@ function ProductDetails() {
     },{
       id: 19,
       name: "Spy Fire Truck with Hidden Camera",
-      price: "₹4,999",
+      price: "₹17,900",
       img: truck,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -508,7 +508,7 @@ function ProductDetails() {
     },{
       id: 20,
       name: "Military Spy Missile Truck with Hidden Camera",
-      price: "₹4,999",
+      price: "₹16,999",
       img: army,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -532,7 +532,7 @@ function ProductDetails() {
     {
       id: 21,
       name: "Recon Spy Jeep with Hidden Camera",
-      price: "₹4,999",
+      price: "₹9,999",
       img: Jeep,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -555,7 +555,7 @@ function ProductDetails() {
     },{
       id: 22,
       name: "Hidden Surveillance Toy Truck with Micro Cameras",
-      price: "₹4,999",
+      price: "₹17,999",
       img: toyt,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -578,7 +578,7 @@ function ProductDetails() {
     },{
       id: 23,
       name: "Hidden Camera Spy Truck ",
-      price: "₹4,999",
+      price: "₹14,999",
       img: spy,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -601,7 +601,7 @@ function ProductDetails() {
     },{
       id: 24,
       name: "hidden spy camera plane",
-      price: "₹4,999",
+      price: "₹24,999",
       img: flight,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
@@ -624,7 +624,7 @@ function ProductDetails() {
     },{
       id: 25,
       name: "hidden spy camera car",
-      price: "₹4,999",
+      price: "₹8,999",
       img: green,
       desc: "Mini A8 tracker supports live listening, SMS tracking, and sound alerts.",
       features: [
