@@ -634,3 +634,230 @@ display:none!important;
 }
 
 }
+
+/* =====================================
+   TOP SLIDER SIZE INCREASE
+===================================== */
+
+.py-2.px-3.d-flex{
+height:60px!important;
+padding:10px 20px!important;
+}
+
+.scroll-text{
+font-size:18px!important;
+font-weight:700!important;
+letter-spacing:.4px;
+padding:10px 0!important;
+animation:scroll-left 28s linear infinite;
+}
+
+/* =====================================
+   NAVBAR HEIGHT INCREASE
+===================================== */
+
+body{
+padding-top:155px!important;
+}
+
+.navbar{
+top:60px!important;
+padding:14px 22px!important;
+}
+
+/* =====================================
+   LOGO SIZE INCREASE
+===================================== */
+
+.main-logo{
+width:82px!important;
+}
+
+.sub-logo{
+width:50px!important;
+}
+
+/* =====================================
+   MENU TEXT SIZE INCREASE
+===================================== */
+
+.nav-link{
+font-size:18px!important;
+font-weight:600!important;
+padding:8px 10px!important;
+letter-spacing:.3px!important;
+}
+
+.dropdown-item{
+font-size:16px!important;
+padding:14px 20px!important;
+}
+
+/* =====================================
+   DROPDOWN WIDTH
+===================================== */
+
+.dropdown-menu{
+min-width:260px!important;
+}
+
+/* =====================================
+   ENQUIRY BUTTON
+===================================== */
+
+.navbar .btn-danger{
+font-size:16px!important;
+padding:8px 16px!important;
+}
+
+/* =====================================
+   LANGUAGE SELECT
+===================================== */
+
+.goog-te-gadget select{
+font-size:15px!important;
+padding:6px 10px!important;
+}
+
+/* =====================================
+   1200px TO 1366px
+===================================== */
+
+@media(min-width:1200px) and (max-width:1366px){
+
+.nav-link{
+font-size:15px!important;
+padding:6px 5px!important;
+}
+
+.main-logo{
+width:65px!important;
+}
+
+.sub-logo{
+width:38px!important;
+}
+
+.scroll-text{
+font-size:16px!important;
+}
+
+}
+
+/* =====================================
+   1024px TO 1199px
+===================================== */
+
+@media(min-width:1024px) and (max-width:1199px){
+
+.nav-link{
+font-size:13px!important;
+padding:5px 3px!important;
+}
+
+.main-logo{
+width:55px!important;
+}
+
+.sub-logo{
+width:32px!important;
+}
+
+.scroll-text{
+font-size:14px!important;
+}
+
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media(max-width:991px){
+
+body{
+padding-top:145px!important;
+}
+
+.py-2.px-3.d-flex{
+height:auto!important;
+padding:8px 12px!important;
+}
+
+.scroll-text{
+font-size:15px!important;
+padding:6px 0!important;
+}
+
+.navbar{
+top:60px!important;
+padding:10px!important;
+}
+
+.nav-link{
+font-size:18px!important;
+padding:10px 6px!important;
+}
+
+.dropdown-item{
+font-size:16px!important;
+}
+
+.main-logo{
+width:65px!important;
+}
+
+.sub-logo{
+width:38px!important;
+}
+
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:576px){
+
+.scroll-text{
+font-size:13px!important;
+}
+
+.nav-link{
+font-size:17px!important;
+}
+
+.main-logo{
+width:55px!important;
+}
+
+.sub-logo{
+width:30px!important;
+}
+
+}
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media(max-width:390px){
+
+.scroll-text{
+font-size:12px!important;
+}
+
+.nav-link{
+font-size:16px!important;
+}
+
+.main-logo{
+width:48px!important;
+}
+
+.sub-logo{
+width:26px!important;
+}
+
+}
+
