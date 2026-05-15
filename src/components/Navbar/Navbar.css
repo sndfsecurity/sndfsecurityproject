@@ -122,9 +122,9 @@ flex-wrap:nowrap!important;
 
 width:auto!important;
 
-padding-left:0!important;
+scroll-padding-right:0!important;
 margin-left:0!important;
-margin: right 50px!important;
+margin: right 0px!important;
 }
 
 .nav-link{
@@ -443,6 +443,122 @@ display:block!important;
 
 .navbar-toggler{
 display:none!important;
+}
+
+}
+
+/* =========================
+   1200px SCREEN FIX
+========================= */
+
+@media(max-width:1200px){
+
+/* LOGO SECTION */
+
+.logo-container{
+gap:10px!important;
+
+padding:0 12px!important;
+}
+
+/* MAIN LOGO */
+
+.main-logo{
+width:46px!important;
+}
+
+/* SUB LOGOS */
+
+.sub-logo{
+width:28px!important;
+}
+
+/* NAVBAR */
+
+.navbar{
+padding:0 10px!important;
+}
+
+/* MENU */
+
+.navbar-nav{
+gap:12px!important;
+}
+
+/* LINKS */
+
+.nav-link{
+font-size:14px!important;
+
+padding:4px 4px!important;
+
+letter-spacing:0!important;
+}
+
+/* DROPDOWN */
+
+.dropdown-menu{
+min-width:190px!important;
+}
+
+}
+
+/* =========================
+   1100px FIX
+========================= */
+
+@media(max-width:1100px){
+
+.logo-container{
+gap:8px!important;
+}
+
+.main-logo{
+width:42px!important;
+}
+
+.sub-logo{
+width:25px!important;
+}
+
+.navbar-nav{
+gap:10px!important;
+}
+
+.nav-link{
+font-size:13px!important;
+
+padding:3px 3px!important;
+}
+
+}
+
+/* =========================
+   1024px FIX
+========================= */
+
+@media(max-width:1024px){
+
+.logo-container{
+gap:6px!important;
+}
+
+.main-logo{
+width:40px!important;
+}
+
+.sub-logo{
+width:22px!important;
+}
+
+.navbar-nav{
+gap:8px!important;
+}
+
+.nav-link{
+font-size:12px!important;
+
+padding:2px 2px!important;
 }
 
 }
