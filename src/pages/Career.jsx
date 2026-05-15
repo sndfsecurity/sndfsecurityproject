@@ -7,7 +7,7 @@ const Career = () => {
     <div className="career-page">
 
       <div className="notice-bar">
-        <p>⚠️ Latest Update: NDF Special Entry Recruitment 2025-26 is OPEN</p>
+        <p>⚠️ Latest Update: NDF Special Entry Recruitment 2025-26 is Closed</p>
       </div>
 
       <div className="career-header">
@@ -21,7 +21,7 @@ const Career = () => {
       <div className="notice-board">
         <h2>📢 Notice Board</h2>
         <ul>
-          <li className="blink">🚨 Special Entry Recruitment 2025-26 Started [click apply button]</li>
+          {/* <li className="blink">🚨 Special Entry Recruitment 2025-26 Started [click apply button]</li> */}
           <li>Recruitment 2025-26 (615 Posts) - CLOSED</li>
         </ul>
       </div>
@@ -39,7 +39,8 @@ const Career = () => {
                 <th>Vacancies</th>
                 <th>Last Date</th>
                 <th>Status</th>
-                <th>Apply</th>
+
+                {/* <th>Apply</th> */}
               </tr>
             </thead>
 
@@ -49,18 +50,19 @@ const Career = () => {
                 <td>NDF/SE/2025</td>
                 <td>All India</td>
                 <td>Not Fixed</td>
-                <td>Open</td>
-                <td><span className="open">OPEN</span></td>
-                <td>
+                <td>Closed</td>
+                <td><span className="open">CLOSED</span></td>
+
+                {/* <td>
                   <a
                     href="https://recruitment.ndfdetective.in/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="apply-btn blink-btn"
-                  >
-                    Apply
+                    className="apply-btn blink-btn">
+                   Closed
                   </a>
-                </td>
+                </td> */}
+
               </tr>
 
               <tr className="closed-row">
@@ -69,10 +71,13 @@ const Career = () => {
                 <td>All India</td>
                 <td>615</td>
                 <td>Closed</td>
+
                 <td><span className="closed">CLOSED</span></td>
-                <td>
+
+                {/* <td>
                   <button className="closed-btn">Closed</button>
-                </td>
+                </td> */}
+                
               </tr>
             </tbody>
           </table>
@@ -90,20 +95,19 @@ const Career = () => {
                 <p><strong>Advertisement No:</strong> NDF/SE/2025</p>
                 <p><strong>Location:</strong> All India</p>
                 <p><strong>Vacancies:</strong> Not Fixed</p>
-                <p><strong>Last Date:</strong> Open</p>
+                <p><strong>Last Date:</strong> Closed</p>
 
                 <div className="card-status open-status">
-                  OPEN
+                  CLOSED
                 </div>
 
-                <a
+                {/* <a
                   href="https://recruitment.ndfdetective.in/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mobile-apply-btn blink-btn"
-                >
-                  Apply Now
-                </a>
+                  className="mobile-apply-btn blink-btn" >
+                   Closed
+                </a> */}
               </div>
 
               {/* CARD 2 */}
@@ -119,27 +123,26 @@ const Career = () => {
                   CLOSED
                 </div>
 
-                <button className="mobile-closed-btn">
+                {/* <button className="mobile-closed-btn">
                   Closed
-                </button>
+                </button> */}
               </div>
 
             </div>
 
       </div>
 
-      <div className="important-links">
+      {/* <div className="important-links">
         <div className="links-box">
           <a
             href="https://recruitment.ndfdetective.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="apply-main-btn blink-btn"
-          >
+            className="apply-main-btn blink-btn">
             📝 Apply Online
           </a>
         </div>
-      </div>
+      </div> */}
 
     </div>
   );
