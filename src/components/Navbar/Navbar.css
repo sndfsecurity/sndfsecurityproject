@@ -446,4 +446,59 @@ display:none!important;
 }
 
 }
+/* =========================
+   ONLY THIS SCREEN FIX
+   1200px - 1280px
+========================= */
 
+@media(min-width:1200px) and (max-width:1280px){
+
+/* LOGO SECTION */
+
+.logo-container{
+gap:8px!important;
+
+padding:0 14px!important;
+}
+
+/* MAIN LOGO */
+
+.main-logo{
+width:44px!important;
+}
+
+/* SUB LOGOS */
+
+.sub-logo{
+width:26px!important;
+}
+
+/* NAVBAR */
+
+.navbar{
+padding:0 8px!important;
+}
+
+/* MENU */
+
+.navbar-nav{
+gap:10px!important;
+}
+
+/* LINKS */
+
+.nav-link{
+font-size:13px!important;
+
+padding:3px 3px!important;
+
+letter-spacing:0!important;
+}
+
+/* DROPDOWN */
+
+.dropdown-menu{
+min-width:180px!important;
+}
+
+}
