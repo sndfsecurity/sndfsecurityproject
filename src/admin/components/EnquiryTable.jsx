@@ -42,30 +42,6 @@ const [statusFilter, setStatusFilter] = useState(
 };
 
 
-  // datetime added
-  // const formatDateTime = (dateString) => {
-  //   const date = new Date(dateString);
-  //   const now = new Date();
-
-  //   const diffMs = now - date;
-  //   const diffMin = Math.floor(diffMs / (1000 * 60));
-  //   const diffHours = Math.floor(diffMin / 60);
-
-  //   if (diffMin < 1) return "Just now";
-  //   if (diffMin < 60) return `${diffMin} min ago`;
-  //   if (diffHours < 24) return `${diffHours} hr ago`;
-
-  //   return date.toLocaleString("en-IN", {
-  //     day: "2-digit",
-  //     month: "short",
-  //     hour: "2-digit",
-  //     minute: "2-digit",
-  //     hour12: true,
-  //   });
-  // };
-
-
-
   const formatDateTime = (dateString) => {
 
   // ✅ Force IST timezone parsing

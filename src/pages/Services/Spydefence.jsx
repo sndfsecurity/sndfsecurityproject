@@ -337,11 +337,11 @@ const Spydefence = () => {
 
           {/* CONTACT ICONS */}
           <div className="spycta-contact">
-            <a href="tel:997111904" className="call-icon">
+            <a href="tel:9970111904" className="call-icon">
               <FiPhoneCall />
             </a>
             <a
-              href="https://wa.me/91997111904"
+              href="https://wa.me/+918956159488"
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-icon"
@@ -376,7 +376,7 @@ const Spydefence = () => {
               🔒 Safe Environment
             </div>
 
-            <a href="tel:997111904" className="spycta-info-btn">
+            <a href="tel:9970111904" className="spycta-info-btn">
               Contact Now
             </a>
 

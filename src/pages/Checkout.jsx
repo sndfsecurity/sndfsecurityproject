@@ -386,7 +386,6 @@ setCart(updatedCart);
 
           margin-bottom:16px;
 
-          
 
         }
 
@@ -403,6 +402,7 @@ setCart(updatedCart);
           font-weight:700;
           letter-spacing:0.5px;
 
+
         }
 
         .input-group input,
@@ -412,8 +412,8 @@ setCart(updatedCart);
 
           padding:14px;
 
-          border:none;
-
+          // border:none;
+                  
           outline:none;
 
           background:#f3f5fa;
@@ -421,6 +421,9 @@ setCart(updatedCart);
           border-radius:12px;
 
           font-size:15px;
+
+         border: 0.1px solid #1d4ed8 !important;
+
 
           transition:0.3s;
 
