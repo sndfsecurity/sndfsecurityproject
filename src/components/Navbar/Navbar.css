@@ -71,10 +71,10 @@ overflow:visible!important;
 .logo-container{
 display:flex;
 align-items:center;
-gap:14px;
+gap:8px;
 flex-wrap:nowrap;
 white-space:nowrap;
-margin-right:70px!important;
+margin-right:5px!important;
 }
 
 .main-logo{
