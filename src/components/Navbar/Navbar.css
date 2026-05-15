@@ -508,3 +508,37 @@ min-width:180px!important;
 
 
 
+@media(min-width:1200px) and (max-width:1280px){
+
+.navbar{
+padding:8px 6px!important;
+}
+
+.navbar-collapse{
+margin-left:8px!important;
+}
+
+.navbar-nav{
+gap:6px!important;
+flex-wrap:nowrap!important;
+}
+
+.nav-link{
+font-size:12px!important;
+padding:2px 2px!important;
+letter-spacing:0!important;
+}
+
+.logo-container{
+gap:4px!important;
+}
+
+.main-logo{
+width:38px!important;
+}
+
+.sub-logo{
+width:22px!important;
+}
+
+}
