@@ -102,12 +102,13 @@ transform:scale(1.1);
 display:flex!important;
 align-items:center!important;
 
-flex:none!important;
+flex:1!important;
 
 width:auto!important;
 
-margin-left:150px!important;
-max-width:max-content!important;
+margin-left:20px!important;
+
+justify-content:center!important;
 }
 
 .navbar-nav{
@@ -118,7 +119,9 @@ justify-content:flex-start!important;
 
 gap:12px!important;
 
-flex-wrap:nowrap!important;
+.navbar-nav{
+flex-wrap:wrap!important;
+}
 
 width:auto!important;
 
@@ -502,3 +505,6 @@ min-width:180px!important;
 }
 
 }
+
+
+
