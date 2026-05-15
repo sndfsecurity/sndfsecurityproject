@@ -3,14 +3,14 @@
   background: #f4f6f9;
   min-height: 100vh;
   padding: 50px 20px;
-  margin-left:240px;
+  margin-left:270px;
 
 
 }
 
 /* ===== MAIN CARD ===== */
 .admin-container {
-  max-width: 1400px;
+  max-width: 1520px;
   margin: 40px auto;
   background: #ffffff;
   border-radius: 8px;
@@ -57,13 +57,14 @@
   table-layout: fixed; 
 }
 
-.admin-table th:nth-child(1) { width: 16%; } /* Name */
-.admin-table th:nth-child(2) { width: 14%; } /* Phone */
-.admin-table th:nth-child(3) { width: 24%; } /* Service */
-.admin-table th:nth-child(4) { width: 10%; } /* Source */
-.admin-table th:nth-child(5) { width: 14%; } /* Status */
-.admin-table th:nth-child(6) { width: 17%; } /* Time */
-.admin-table th:nth-child(7) { width: 13%; } /* Action */
+.admin-table th:nth-child(1) { width: 15%; } /* Name */
+.admin-table th:nth-child(2) { width: 12%; } /* Phone */
+.admin-table th:nth-child(3) { width: 27%; } /* Service */
+.admin-table th:nth-child(4) { width: 15%; } /* address*/
+.admin-table th:nth-child(5) { width: 9%; } /* Source */
+.admin-table th:nth-child(6) { width: 13%; } /* Status */
+.admin-table th:nth-child(7) { width: 17%; } /* Time */
+.admin-table th:nth-child(8) { width: 8%; } /* Action */
 
 /* HEADER */
 .admin-table th {
@@ -182,6 +183,12 @@ select:disabled {
   padding: 30px;
   font-size: 15px;
   color: #777;
+}
+
+.address-text{
+  font-size: 13px;
+  color: #666;
+  margin: 4px 0;
 }
 
 .admin-btn:hover {

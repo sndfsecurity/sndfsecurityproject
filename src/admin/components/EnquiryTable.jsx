@@ -256,6 +256,7 @@ const [statusFilter, setStatusFilter] = useState(
               <th>Name</th>
               <th>Phone</th>
               <th>Service</th>
+              <th>Address</th>
               <th>Source</th>
               <th>Status</th>
               <th>Time</th>   
@@ -272,6 +273,10 @@ const [statusFilter, setStatusFilter] = useState(
 
                   <td data-label="Service" className="service">
                     {e.service}
+                  </td>
+
+                  <td data-label="Address">
+                    {e.address || "-"}
                   </td>
 
                   <td data-label="Source">
@@ -300,12 +305,12 @@ const [statusFilter, setStatusFilter] = useState(
 
                   <td className="action-cell">
 
-                        <button
+                        {/* <button
                             className="admin-btn"
                             onClick={() => updateStatus(e.id, "COMPLETED")}
                             disabled={e.status === "COMPLETED"}  >
                             Done
-                          </button>
+                          </button> */}
 
                         <button
                             className="delete-btn"
@@ -333,6 +338,9 @@ const [statusFilter, setStatusFilter] = useState(
       <div className="card-left">
         <h3>{e.name}</h3>
         <p className="phone">{e.phone}</p>
+        <p className="address-text">
+          {e.address || "-"}
+        </p>
         <p className="service-text">{e.service}</p>
       </div>
 
