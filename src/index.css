@@ -273,4 +273,31 @@ code {
 }
 
 
+/* GLOBAL INPUT FIX */
 
+input,
+textarea,
+select {
+  color: #000 !important;
+  background: #fff !important;
+  -webkit-text-fill-color: #000 !important;
+  caret-color: #000 !important;
+  opacity: 1 !important;
+}
+
+/* AUTOFILL FIX */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+
+  -webkit-text-fill-color: #000 !important;
+
+  box-shadow: 0 0 0px 1000px #fff inset !important;
+
+  transition: background-color 5000s ease-in-out 0s;
+
+  opacity: 1 !important;
+}
