@@ -66,7 +66,8 @@ const About = () => {
             <h2>See How We Work</h2>
             <p className="common-text">
               Our workflow is built on precision, planning and confidentiality.
-From understanding client needs to execution, we ensure every step is handled with professionalism, accuracy and a commitment to reliable results
+              From understanding client needs to execution, we ensure every step is handled with 
+              professionalism, accuracy and a commitment to reliable results
             </p>
           </div>
 

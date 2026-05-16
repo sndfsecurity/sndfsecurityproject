@@ -1,6 +1,6 @@
 import React from "react";
 import "./Career.css";
-import logo from "../assets/images/ndf-logo.webp"; // ✅ IMPORTANT
+import logo from "../assets/images/ndf-logo.webp"; 
 
 const Career = () => {
   return (
@@ -11,7 +11,6 @@ const Career = () => {
       </div>
 
       <div className="career-header">
-        {/* ✅ CORRECT IMAGE */}
         <img src={logo} alt="NDF Logo" />
 
         <h1>Start Your Career with Nationalist Detective Force (NDF)</h1>

@@ -3,8 +3,6 @@ import { FaShieldAlt, FaUsers, FaBuilding } from "react-icons/fa";
  import puneOffice from "../../assets/images/hero.webp";
 import course2 from "../../assets/images/course-bg.webp";
 
-
-// pune branches Images
 import wakadImg from "../../assets/images/wakad.webp";
 import karveRoadImg from "../../assets/images/karve.webp";
 import warjeImg from "../../assets/images/warje.webp";
@@ -16,10 +14,8 @@ import { Helmet } from "react-helmet-async";
 
 const PuneHero = () => {
 
-
   const galleryRef = useRef(null);
   const navigate = useNavigate();
-
 
   useEffect(() => {
 
@@ -86,7 +82,6 @@ const PuneHero = () => {
 }, []);
   
   
-
 return (
 <main>
 
@@ -97,7 +92,6 @@ return (
     name="description" 
     content="SNDF is a trusted detective agency in Pune offering private investigation, surveillance and professional security services across Pune and nearby areas. Contact our expert team today." />
 </Helmet>
-
 
 <section className="pune-hero">
   <div className="container hero-wrapper">
@@ -113,21 +107,19 @@ return (
           SNDF is a leading <strong>detective agency in Pune</strong> providing 
           professional investigation services, surveillance and 
           <strong> security services in Pune</strong> for individuals, corporates and legal cases.
-        </p>
-      
-
-     
+        </p>     
 
       <div className="hero-buttonsb">
             <button 
                 className="btn-outline"
                 onClick={() => navigate("/contact")}>
                 Contact Us
-            </button>
+          </button>
       </div>
 
       {/* STATS */}
       <div className="hero-stats">
+
         <div className="stat-card">
           <h3>10+</h3>
           <p>Years Experience</p>
@@ -142,6 +134,7 @@ return (
           <h3>500+</h3>
           <p>Staff</p>
         </div>
+
       </div>
     </div>
 
@@ -225,27 +218,28 @@ return (
 </section>
 
   <section className="mini-gallery">
-  <div className="container">
+      <div className="container">
 
-    <h2>Office Glimpse</h2>
+        <h2>Office Glimpse</h2>
 
-    <div className="gallery-grid" ref={galleryRef}>
-      <img src={course2} alt="detective agency office Pune"/>
-      <img src={puneOffice}alt="detective agency office Pune" />
-      <img src={course2} alt="detective agency office Pune" />
-      <img src={puneOffice} alt="detective agency office Pune" />
-    </div>
+        <div className="gallery-grid" ref={galleryRef}>
+          <img src={course2} alt="detective agency office Pune"/>
+          <img src={puneOffice}alt="detective agency office Pune" />
+          <img src={course2} alt="detective agency office Pune" />
+          <img src={puneOffice} alt="detective agency office Pune" />
+        </div>
 
-    <div className="gallery-btn">
-      <button  onClick={() => navigate("/gallery")}>View Full Gallery →</button>
-    </div>
+        <div className="gallery-btn">
+          <button  onClick={() => navigate("/gallery")}>View Full Gallery →</button>
+        </div>
 
-  </div>
-</section>
+      </div>
+      
+  </section>
 
 
 {/* branches.............................. */}
-{/* 🔥 PUNE BRANCH NETWORK */}
+
 <section className="pune-branches">
   <div className="container">
 
@@ -264,10 +258,12 @@ return (
         <img src={wakadImg} alt="Wakad" />
         <div className="branch-info">
           <h4>Wakad Branch</h4>
-   <p>
-  Shop No. 2, 1st Floor, Shivganga Arcade, Bhumkar Chowk Rd
-  Shankar Kalat Nagar, Wakad, Pune, Maharashtra 411057
-</p>
+
+          <p>
+          Shop No. 2, 1st Floor, Shivganga Arcade, Bhumkar Chowk Rd
+          Shankar Kalat Nagar, Wakad, Pune, Maharashtra 411057
+          </p>
+
           <p className="branch-phone">+91 8007942309</p>
 
           <div className="branch-actions">
@@ -330,16 +326,16 @@ return (
       {/* LEFT INFO */}
       <div className="contact-info">
 
-        <div className="info-line">
-  <h4>📍 Address</h4>
-  <p>
-    SNDF Head Office, Ground Floor,
-    Yashashree Phase 2, D Wing,<br />
-    Sukhsagar Nagar, Near Ekadashi Hotel,
-    Katraj-Kondhwa Road, Katraj,<br />
-    Pune, Maharashtra, India - 411046
-  </p>
-</div>
+      <div className="info-line">
+          <h4>📍 Address</h4>
+          <p>
+            SNDF Head Office, Ground Floor,
+            Yashashree Phase 2, D Wing,<br />
+            Sukhsagar Nagar, Near Ekadashi Hotel,
+            Katraj-Kondhwa Road, Katraj,<br />
+            Pune, Maharashtra, India - 411046
+          </p>
+      </div>
 
         <div className="info-line">
           <h4>📞 Call Us</h4>

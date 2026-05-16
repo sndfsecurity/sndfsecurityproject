@@ -123,51 +123,7 @@ const services = [
   ),
 },
 
-  
-  {
-  title: "Loyalty Test Investigation",
-  desc: "Discreetly test partner loyalty with trusted methods and accurate results.",
-  img: loyalty,
-  full: (
-    <div className="sndf-modal-details">
-
-      <h3>Why This Service?</h3>
-      <p>
-        A loyalty test investigation helps determine whether a person you trust
-        is honest and loyal. It is commonly used when there are doubts about a
-        partner, spouse or even a business associate. Our team discreetly
-        observes behavior and interactions to uncover the truth.
-      </p>
-
-      <h3>Why Consider a Loyalty Test?</h3>
-
-      <ul>
-        <li><strong>Suspicion of Affair:</strong> Sudden behavioral changes, secrecy or unusual routines may raise doubts.</li>
-
-        <li><strong>Trust Issues:</strong> Helps confirm or clear doubts in relationships struggling with trust.</li>
-
-        <li><strong>Pre-marital Assessment:</strong> Test loyalty before marriage to ensure a safe future.</li>
-
-        <li><strong>Confirmation of Integrity:</strong> Reveal true intentions when honesty is in question.</li>
-
-        <li><strong>Long-distance Reassurance:</strong> Helps maintain trust in long-distance relationships.</li>
-
-        <li><strong>Behavioral Inconsistencies:</strong> Identify unusual actions or hidden activities.</li>
-      </ul>
-
-      <h3>Benefits</h3>
-      <ul>
-        <li>✔ Get clarity in your relationship</li>
-        <li>✔ Make confident personal decisions</li>
-        <li>✔ Avoid emotional or financial risks</li>
-        <li>✔ Ensure trust and transparency</li>
-      </ul>
-
-    </div>
-  ),
-},
-
-
+ 
  {
     title: "Extramarital Affairs Investigation",
     desc: "Confidential detection of extramarital affairs and hidden relationships.",
@@ -274,8 +230,7 @@ const services = [
   {
   title: "Background Check Investigation",
   desc: "Verify personal, professional and financial history with complete accuracy.",
-  img: bgcheck, // use image only for card
-
+  img: bgcheck, 
   full: (
     <div className="sndf-modal-details">
 
@@ -328,7 +283,7 @@ const services = [
  {
   title: "Pre & Post Employment Investigation",
   desc: "Ensure safe hiring and monitor employee integrity with professional verification.",
-  img: emp, // use image only for card
+  img: emp, 
 
   full: (
     <div className="sndf-modal-details">
@@ -381,62 +336,10 @@ const services = [
 },
 
 
-
- {
-  title: "Blackmailing Investigation",
-  desc: "Professional assistance to handle blackmail cases with confidentiality and evidence.",
-  img: black, // use image only for card
-
-  full: (
-    <div className="sndf-modal-details">
-
-      <h3>About the Service</h3>
-      <p>
-        Blackmailing Investigation deals with cases where someone threatens
-        to reveal personal or sensitive information unless their demands are met.
-        These cases can happen online or offline and may cause emotional,
-        financial and reputational damage. Our experts work discreetly to
-        identify the blackmailer, collect evidence and stop further threats.
-      </p>
-
-      <h3>What You Should Do If You Are Being Blackmailed</h3>
-
-      <ul>
-        <li><strong>Stop Communication:</strong> Do not respond or comply with the blackmailer’s demands.</li>
-
-        <li><strong>Preserve Evidence:</strong> Save messages, emails, call logs and any proof of threats.</li>
-
-        <li><strong>Report the Issue:</strong> Inform legal authorities or professionals immediately.</li>
-
-        <li><strong>Conduct Investigation:</strong> Allow experts to trace and identify the culprit.</li>
-
-        <li><strong>Seek Legal Support:</strong> Take proper legal action to protect yourself.</li>
-      </ul>
-
-      <h3>How We Help</h3>
-      <ul>
-        <li>✔ Identification of blackmailer</li>
-        <li>✔ Digital and physical evidence collection</li>
-        <li>✔ Confidential investigation process</li>
-        <li>✔ Assistance with legal procedures</li>
-      </ul>
-
-      <h3>Benefits</h3>
-      <ul>
-        <li>✔ Protection from threats</li>
-        <li>✔ Strong evidence for legal action</li>
-        <li>✔ Peace of mind and security</li>
-        <li>✔ Quick and professional resolution</li>
-      </ul>
-
-    </div>
-  ),
-},
-
 {
   title: "Surveillance & Sting Operation",
   desc: "Discreet monitoring and undercover operations to gather accurate evidence and expose illegal activities.",
-  img: sting, // card image only
+  img: sting, 
 
   full: (
     <div className="sndf-modal-details">
@@ -489,8 +392,8 @@ const services = [
 
 {
   title: "Undercover Operation",
-  desc: "Covert investigations where agents assume false identities to gather critical evidence and expose hidden crimes.",
-  img: under, // only for card
+  desc: "Covert investigations where agents assume false identities to gather critical evidence & expose crimes.",
+  img: under,
 
   full: (
     <div className="sndf-modal-details">
@@ -545,7 +448,7 @@ const services = [
   {
   title: "Document Verification",
   desc: "Accurate verification of documents to detect fraud and ensure authenticity with complete confidentiality.",
-  img: doc, // only for card
+  img: doc, 
 
   full: (
     <div className="sndf-modal-details">
@@ -621,32 +524,32 @@ const cyberServices = [
   
   
   {
-    title: "Financial Fraud",
-    desc: "Investigate financial crimes & transactions. Strong legal evidence support",
-    img: fraud,
+    title: "Data Recovery",
+    desc: "Recover deleted or lost data safely from mobiles, laptops and storage devices.",
+    img: data,
     full: (
       <>
-        <p>We analyze and track financial fraud cases professionally.</p>
+        <p>Recover deleted or lost digital data professionally.</p>
         <ul>
-          <li>Transaction tracking</li>
-          <li>Fraud analysis</li>
-          <li>Evidence reporting</li>
+          <li>Deleted file recovery</li>
+          <li>Mobile & laptop recovery</li>
+          <li>Secure data restoration</li>
         </ul>
       </>
     ),
   },
   
   {
-    title: "Honey Trapping",
-    desc: "Handle honey trap cases confidentially. Discreet protection support.",
-    img: honey,
+    title: "Mobile and PC Forensic",
+    desc: "Professional forensic analysis for mobiles and computers with secure evidence reports.",
+    img: forensic,
     full: (
       <>
-        <p>We help detect and manage honey trapping cases confidentially.</p>
+        <p>Professional forensic investigation for digital devices.</p>
         <ul>
-          <li>Identity verification</li>
-          <li>Threat analysis</li>
-          <li>Safe resolution</li>
+          <li>Mobile data investigation</li>
+          <li>Computer forensic analysis</li>
+          <li>Secure evidence reporting</li>
         </ul>
       </>
     ),
@@ -655,29 +558,29 @@ const cyberServices = [
 
 
 
-const Ndf = () => {
+      const Ndf = () => {
 
-    const [selectedService, setSelectedService] = useState(null);
+        const [selectedService, setSelectedService] = useState(null);
 
-  useEffect(() => {
-    document.body.style.overflow = selectedService ? "hidden" : "auto";
-  }, [selectedService]);
+        useEffect(() => {
+          document.body.style.overflow = selectedService ? "hidden" : "auto";
+        }, [selectedService]);
 
-  const closeModal = () => {
-    setSelectedService(null);
-  };
+        const closeModal = () => {
+          setSelectedService(null);
+        };
 
 
-  const scrollToSection = (id) => {
-  const section = document.getElementById(id);
+        const scrollToSection = (id) => {
+        const section = document.getElementById(id);
 
-  if (section) {
-    section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
-};
+        if (section) {
+          section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      };
 
 
 
@@ -837,42 +740,41 @@ const Ndf = () => {
       </div>
 
       {/* ===== MODAL ===== */}
-      {/* ===== MODAL ===== */}
-{selectedService && (
-  <div className="sndf-modal-overlay" onClick={closeModal}>
-    <div
-      className="sndf-modal-box"
-      onClick={(e) => e.stopPropagation()}>
+   {selectedService && (
 
-      <div className="sndf-modal-content">
-        
-        <h2>{selectedService.title}</h2>
+        <div className="sndf-modal-overlay" onClick={closeModal}>
+          <div
+            className="sndf-modal-box"
+            onClick={(e) => e.stopPropagation()}>
 
-        {selectedService.full ? (
-          selectedService.full
-        ) : (
-          <p>
-            Detailed information for this service is currently not
-            available. Please contact us for more details.
-          </p>
-        )}
+            <div className="sndf-modal-content">
+              
+              <h2>{selectedService.title}</h2>
 
-        <button
-          className="sndf-close-btn"
-          onClick={closeModal}
-        >
-          Close
-        </button>
+              {selectedService.full ? (
+                selectedService.full
+              ) : (
+                <p>
+                  Detailed information for this service is currently not
+                  available. Please contact us for more details.
+                </p>
+              )}
 
-      </div>
-    </div>
-  </div>
-)}
+              <button
+                className="sndf-close-btn"
+                onClick={closeModal}
+              >
+                Close
+              </button>
+
+            </div>
+          </div>
+        </div>
+      )}
 </section>
 
 {/* cyber crime and forensic investigation */}
 
-   {/* cyber crime and forensic investigation */}
 
 <section className="cyber"  id="cyber-services-section">
   <div className="container">
@@ -931,7 +833,7 @@ const Ndf = () => {
       </ul>
 
       {/* ===== SNDF CONTACT (UNIQUE) ===== */}
-<div className="sndf-ndf-contact-block">
+  <div className="sndf-ndf-contact-block">
 
   <p className="sndf-ndf-contact-title">Quick Contact</p>
 
@@ -970,12 +872,12 @@ const Ndf = () => {
 
   </div>
 
-    </div>
+</div>
 
-    {/* RIGHT FORM */}
    
 
-   {/* RIGHT INFO CARD */}
+  {/* RIGHT INFO CARD */}
+
 <div className="sndf-enquiry-formBox">
 
   <div className="sndf-info-card">

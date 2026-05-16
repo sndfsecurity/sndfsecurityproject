@@ -118,71 +118,74 @@ return(
     
 <div className="gallery-page">
 
-<div className="gallery-hero">
-<h1>Media Gallery</h1>
-<p>Explore our departments and work visuals</p>
-</div>
+  <div className="gallery-hero">
+    <h1>Media Gallery</h1>
+    <p>Explore our departments and work visuals</p>
+  </div>
 
-<div className="gallery-tabs">
-{departments.map((dept)=>(
-<button
-key={dept}
-onClick={()=>setActiveDept(dept)}
-className={`tab-btn ${activeDept===dept ? "active":""}`}
->
-{dept}
-</button>
-))}
-</div>
+  <div className="gallery-tabs">
 
-<div className="gallery-grid">
-{filteredImages.map((img,index)=>(
-<div
-className="gallery-card"
-key={img.id}
-onClick={()=>setCurrentIndex(index)}
->
-<img src={img.src} alt="" />
-</div>
-))}
-</div>
+      {departments.map((dept)=>(
+      <button
+      key={dept}
+      onClick={()=>setActiveDept(dept)}
+      className={`tab-btn ${activeDept===dept ? "active":""}`}
+      >
+      {dept}
+      </button>
+      ))}
+      
+  </div>
 
-{currentIndex!==null &&(
-<div className="lightbox">
+  <div className="gallery-grid">
 
-<span
-className="close-btn"
-onClick={()=>setCurrentIndex(null)}
->
-✕
-</span>
+      {filteredImages.map((img,index)=>(
 
-<span
-className="nav-btn prev"
-onClick={()=>setCurrentIndex(
-currentIndex===0
-? filteredImages.length-1
-: currentIndex-1
-)}
->
-&#10094;
-</span>
+      <div className="gallery-card" key={img.id}
+      onClick={()=>setCurrentIndex(index)}>
 
-<img
-src={filteredImages[currentIndex].src}
-alt=""
-/>
+      <img src={img.src} alt="" />
 
-<span
-className="nav-btn next"
-onClick={()=>setCurrentIndex(
-currentIndex===filteredImages.length-1
-? 0
-: currentIndex+1
-)}
->
-&#10095;
-</span>
+      </div>
+      ))}
+      
+  </div>
+
+    {currentIndex!==null &&(
+    <div className="lightbox">
+
+    <span
+    className="close-btn"
+    onClick={()=>setCurrentIndex(null)}
+    >
+    ✕
+    </span>
+
+    <span
+    className="nav-btn prev"
+    onClick={()=>setCurrentIndex(
+    currentIndex===0
+    ? filteredImages.length-1
+    : currentIndex-1
+    )}
+    >
+    &#10094;
+    </span>
+
+    <img
+    src={filteredImages[currentIndex].src}
+    alt=""/>
+
+    <span
+    className="nav-btn next"
+    onClick={()=>setCurrentIndex(
+    currentIndex===filteredImages.length-1
+    ? 0
+    : currentIndex+1
+    )}
+    >
+    &#10095;
+    </span>
 
 </div>
 )}

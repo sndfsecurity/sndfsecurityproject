@@ -1,7 +1,7 @@
 import "./Course.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef} from "react";
 import { FaCalendarAlt, FaTools, FaUserTie, FaCertificate } from "react-icons/fa";
 import { FaUserSecret, FaLaptopCode, FaSearch } from "react-icons/fa";
 
@@ -21,19 +21,79 @@ import { Helmet } from "react-helmet-async";
 const Course = () => {
 
 
+  const galleryRef = useRef(null);
+
+    useEffect(() => {
+
+      const container = galleryRef.current;
+
+      if (!container) return;
+
+      let scrollAmount = 0;
+      let interval;
+
+      const startScroll = () => {
+
+        clearInterval(interval);
+
+        interval = setInterval(() => {
+
+          if (window.innerWidth > 768) return;
+
+          scrollAmount += container.clientWidth;
+
+          if (scrollAmount >= container.scrollWidth) {
+            scrollAmount = 0;
+          }
+
+          container.scrollTo({
+            left: scrollAmount,
+            behavior: "smooth",
+          });
+
+        }, 2500);
+      };
+
+      const stopScroll = () => {
+        clearInterval(interval);
+      };
+
+      startScroll();
+
+      /* pause when user touches image */
+      container.addEventListener("touchstart", stopScroll);
+
+      /* start again after touch removed */
+      container.addEventListener("touchend", startScroll);
+
+      return () => {
+
+        clearInterval(interval);
+
+        container.removeEventListener("touchstart", stopScroll);
+
+        container.removeEventListener("touchend", startScroll);
+      };
+
+    }, []);
+
+
+
+
   useEffect(() => {
   const loadAOS = async () => {
     const AOS = (await import("aos")).default;
     await import("aos/dist/aos.css");
 
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
-  };
+        AOS.init({
+          duration: 800,
+          once: true,
+        });
+      };
 
-  loadAOS();
-}, []);
+      loadAOS();
+
+    }, []);
 
   return (
     <main>
@@ -119,9 +179,9 @@ const Course = () => {
                 <p>Course</p>
             </div>
 
-</div>
+  </div>
 
- </div>
+  </div>
 
 </section>
 
@@ -171,12 +231,13 @@ const Course = () => {
 
         </div>
 
-      </div>
-    </section>
+    </div>
+</section>
 
 
-    {/* module////////////////////////////////////////////////////// */}
-     <section className="modules">
+{/* module////////////////////////////////////////////////////// */}
+
+<section className="modules">
   <div className="container">
 
     <div className="modules-header" data-aos="fade-up">
@@ -319,7 +380,7 @@ const Course = () => {
               surveillance, tracking and intelligence gathering.
             </p>
           </div>
-        </div>
+       </div>
 
         <div className="learn-item">
           <div className="learn-dot"></div>
@@ -372,7 +433,9 @@ const Course = () => {
 </section>
 
 
-{/* gallary//////////////////////////////////// */}
+{/* gallary */}
+
+
 <section className="course-gallery">
   <div className="container">
 
@@ -382,7 +445,7 @@ const Course = () => {
     </div>
 
     {/* ===== PHOTOS ===== */}
-    <div className="gallery-grid">
+    <div className="gallery-gridc" ref={galleryRef}>
 
       <div className="gallery-item">
         <img src={dic1} alt="Detective training session at SNDF"  loading="lazy" />
@@ -460,14 +523,14 @@ const Course = () => {
       </ul>
 
 
-    <div className="eligibility-box">
-    <h4>Who Can Join?</h4>
-    <ul>
-        <li>✔ Minimum 10th / 12th Pass</li>
-        <li>✔ Students, Job Seekers & Professionals</li>
-        <li>✔ No prior experience required</li>
-    </ul>
-    </div>
+     <div className="eligibility-box">
+        <h4>Who Can Join?</h4>
+        <ul>
+            <li>✔ Minimum 10th / 12th Pass</li>
+            <li>✔ Students, Job Seekers & Professionals</li>
+            <li>✔ No prior experience required</li>
+        </ul>
+     </div>
 
     </div>
 
@@ -591,7 +654,7 @@ const Course = () => {
             ndfdiclectures@gmail.com
           </a>
       
-        </div>
+      </div>
       
         {/* SOCIAL */}
         <div className="sndfguard-extra-social">

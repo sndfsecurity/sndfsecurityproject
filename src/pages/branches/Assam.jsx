@@ -12,8 +12,6 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaArrowRight } from "reac
 
 const Assam = () => {
 
-
-
 const officeImageUrl = assam;
 
   const [selectedImage, setSelectedImage] = useState(null);
@@ -82,7 +80,6 @@ const officeImageUrl = assam;
             </p>
 
 
-            {/* <button className="assam-contact-btn">Contact Us</button> */}
 
               <a href="#contact-section" className="assam-contact-btn">
                 Contact Us

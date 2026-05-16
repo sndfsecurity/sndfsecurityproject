@@ -184,7 +184,6 @@ return (
 
       <div className="sndf-hyd-gallery-dark__container">
 
-        {/* Heading */}
         <div className="sndf-hyd-gallery-dark__header">
           <h2>
             Hyderabad <span>Gallery</span>
@@ -194,7 +193,6 @@ return (
           </p>
         </div>
 
-        {/* Grid (UNCHANGED STRUCTURE) */}
         <div className="sndf-hyd-gallery-dark__grid">
 
           <div className="sndf-hyd-gallery-dark__item large">

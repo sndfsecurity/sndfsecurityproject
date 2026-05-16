@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import aboutImg from "../assets/images/hero.webp"; // replace with your image
+import aboutImg from "../assets/images/hero.webp"; 
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -15,8 +15,6 @@ import { Pagination } from "swiper/modules";
 
 import { Autoplay } from "swiper/modules";
 import Counter from "../components/Counter";
-
-
 
 
 <Swiper
@@ -41,9 +39,9 @@ import {
   FaUserShield,
   FaUserSecret,
   FaSearch,
-  FaUserCheck,     // ✅ for Owl Security
+  FaUserCheck,     
   FaShieldAlt,
-  FaUserLock       // ✅ for Spy Defence
+  FaUserLock       
 } from "react-icons/fa";
 
 import { FaCheckCircle } from "react-icons/fa";
@@ -153,14 +151,12 @@ const badgesData = [
               SNDF is a leading security and investigation organization. Managing multiple units nationwide, delivering trusted protection and intelligence services.
             </p>
 
-            <div className="hero-buttons">
+          <div className="hero-buttons">
 
-              {/* <button className="btn btn-danger">Get Protection</button> */}
-
-         <button className="btn btn-danger"
-            onClick={() => navigate("/contact#enquiry-form")}>
-            Get Protection
-          </button>
+            <button className="btn btn-danger"
+                onClick={() => navigate("/contact#enquiry-form")}>
+                Get Protection
+            </button>
 
 
               <button
@@ -169,12 +165,11 @@ const badgesData = [
                     document.getElementById("services")?.scrollIntoView({
                       behavior: "smooth"
                     });
-                  }}
-                >
+                  }}>
                   Explore Services
              </button>
 
-            </div>
+          </div>
 
             <div className="hero-trust">
               <div>✔ 3500+ Clients</div>
@@ -327,8 +322,7 @@ const badgesData = [
         <p>Security for residential & corporate needs
               24/7 protection & access control
               Trained & reliable guards.</p>
-
-      </a>
+       </a>
 
       {/* 6 - Spydefence Summer Camp */}
       <a href="/services/spydefence" className="service-card" data-aos="fade-up" data-aos-delay="500">
@@ -479,7 +473,7 @@ const badgesData = [
     </Swiper>
 
     {/* OUTSIDE PAGINATION */}
-    <div className="custom-pagination"></div>
+  <div className="custom-pagination"></div>
 
   </div>
 </section>

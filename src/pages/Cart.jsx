@@ -684,8 +684,8 @@ const selectedTotal = selectedItems.reduce(
                   className="continue-btn"
                   onClick={() =>
                     navigate("/shop")
-                  }
-                >
+                  }>
+                    
                   Continue Shopping
                 </button>
 

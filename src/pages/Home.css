@@ -1,9 +1,7 @@
-/* 🔥 FIX NAVBAR OVERLAP */
 .hero {
   margin-top: 110px;
 }
 
-/* HERO WITH BACKGROUND IMAGE */
 .hero {
   position: relative;
   min-height: 90vh;
@@ -14,7 +12,6 @@
   background-attachment: fixed;
 }
 
-/* 🔥 OVERLAY (BALANCED — NOT TOO DARK) */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -36,7 +33,6 @@
   max-width: 650px;
 }
 
-/* 🔥 TEXT BLOCK (LIGHT GLASS EFFECT) */
 .hero-text {
   color: #fff;
   padding: 30px;
@@ -47,22 +43,17 @@
 
 /* TAG */
 .hero-tag {
-  font-size: 18px;              /* bigger */
-  font-weight: 600;             /* bold */
+  font-size: 18px;              
+  font-weight: 600;             
   letter-spacing: 2px;
   text-transform: uppercase;
-
-  color: #38bdf8;               /* keep brand blue */
-  
-  background: rgba(0, 0, 0, 0.4);  /* 🔥 adds contrast */
+  color: #38bdf8;               
+  background: rgba(0, 0, 0, 0.4); 
   display: inline-block;
   padding: 6px 14px;
   border-radius: 4px;
-
-  border-left: 3px solid #ef4444; /* 🔥 premium accent */
-
+  border-left: 3px solid #ef4444; 
   margin-bottom: 10px;
-
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 0.6s ease forwards;
@@ -98,10 +89,7 @@
   transform: translateY(30px);
   animation: fadeUp 1s ease forwards;
   animation-delay: 0.4s;
-  letter-spacing: 1.2px;
-  
-  
-  
+  letter-spacing: 1.2px;  
 }
 
 /* BUTTONS */
@@ -125,7 +113,6 @@
   letter-spacing: 1px;
 }
 
-/* 🔥 PRIMARY BUTTON (PREMIUM) */
 .hero-buttons .btn-danger {
   background: linear-gradient(135deg, #ff4d4d, #ef4444);
   border: none;
@@ -207,7 +194,7 @@
   .hero {
     padding: 40px 20px;
     text-align: center;
-    background-attachment: scroll; /* fix mobile lag */
+    background-attachment: scroll; 
   }
 
   .hero-content {
@@ -329,7 +316,6 @@
   box-shadow: 0 25px 60px rgba(0,0,0,0.12);
 }
 
-/* ✅ NEW: MULTI-COLOR HOVER BACKGROUND */
 .service-card:nth-child(1):hover,
 .service-card:nth-child(4):hover {
   background: linear-gradient(135deg, #38bdf8, #0ea5e9);
@@ -380,15 +366,14 @@
 
 /* TEXT */
 .service-card p {
- font-size: 18px;              /* slightly bigger */
-  font-weight: 400;             /* semi-bold */
-  color: #334155;               /* darker for better contrast */
-  line-height: 1.7;             /* more readable */
+ font-size: 18px;              
+  font-weight: 400;             
+  color: #334155;              
+  line-height: 1.7;             
   transition: 0.3s;
   letter-spacing: 0.7px;
 }
 
-/* ✅ TEXT COLOR CHANGE ON HOVER */
 .service-card:hover h3,
 .service-card:hover h5,
 .service-card:hover p {
@@ -532,7 +517,6 @@
   z-index: 0;
 }
 
-/* CARD DESIGN (GLASS EFFECT) */
 .why-card {
   padding: 30px;
   border-radius: 20px;
@@ -546,13 +530,11 @@
 
 }
 
-/* HOVER EFFECT 🔥 */
 .why-card:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 15px 40px rgba(0, 198, 255, 0.2);
 }
 
-/* NUMBER STYLE */
 .why-card h3 {
   font-size: 36px;
   font-weight: 800;
@@ -578,9 +560,6 @@
     font-size: 32px;
     letter-spacing: 0.5px;
   }
-
- 
-  
 
   .why-right {
     grid-template-columns: 1fr;
@@ -621,23 +600,19 @@
 
 
 /* about section......................................... */
-/* ===== ABOUT SECTION ===== */
-.about {
- padding: 140px 6% 90px;
 
-  /* DARK PREMIUM BACKGROUND */
+.about {
+  padding: 140px 6% 90px;
   background: linear-gradient(135deg, #0b1c39 0%, #142850 100%);
-  
   color: #fff;
   position: relative;
-   border-bottom: 2px solid rgba(255,255,255,0.08);
+  border-bottom: 2px solid rgba(255,255,255,0.08);
 }
 
 .about-btn:active {
   transform: scale(0.95);
 }
 
-/* CONTAINER WIDTH REDUCED */
 .about-container {
   max-width: 1200px;
   margin: auto;
@@ -752,13 +727,12 @@
 }
 
 .about-btn:hover {
-  background: #f1f5f9;   /* light gray instead of pure white */
+  background: #f1f5f9;   
   color: #0b1c39;
   transform: translateY(-4px) scale(1.05);
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* ANIMATION */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -770,7 +744,6 @@
   }
 }
 
-/* RESPONSIVE */
 @media (max-width: 992px) {
   .about-container {
     grid-template-columns: 1fr;
@@ -831,8 +804,7 @@
 
 
 
-/* testimonial section /////////////////////////////// */
-/* ================= TESTIMONIAL SECTION ================= */
+/* testimonial section..................................... */
 
 .testimonial {
   background: linear-gradient(135deg, #f8fbff, #eef3f9);
@@ -849,9 +821,6 @@
 /* HEADING */
 
 .section-title {
-  /* font-size: 36px;
-  font-weight: 700;
-  color: #0b1c3d; */
   text-align: center;
   margin-bottom: 10px;
   position: relative;
@@ -1042,7 +1011,6 @@
 
 /* ================= CTA SECTION PREMIUM ================= */
 
-/* ===== SECTION ===== */
 .cta-new {
   padding: 100px 20px;
   background: linear-gradient(135deg, #0f2a5a, #1f4c8f);
@@ -1217,16 +1185,13 @@
 }
 
 
-
 /* TrustBadges.css */
-/* SNDF Website - Unique styles for Trust Badges Section */
-/* Classnames prefixed with 'sndf-trust-' to avoid conflicts */
 
-/* ===== MAIN WRAPPER ===== */
+
 .sndf-trust-badges-wrapper {
   width: 100%;
   position: relative;
-  background: #f0f9ff;  /* Light blue tint */
+  background: #f0f9ff;  
   padding: 2.5rem 1rem;
   margin: 0;
   border-top: 1px solid rgba(30, 58, 138, 0.1);
@@ -1356,6 +1321,7 @@
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Tablet (768px - 1024px) */
+
 @media (max-width: 1024px) {
   .sndf-trust-badges-wrapper {
     padding: 2rem 1rem;
@@ -1506,11 +1472,7 @@
 
 
 /* our clients............................... */
-/* ClientLogos.css */
-/* SNDF Website - Professional Client Logos Section */
-/* Final Polished Version - Blue + Red Theme */
 
-/* ===== MAIN SECTION ===== */
 .sndf-client-logos-only {
   width: 100%;
   background: #ffffff;

@@ -188,108 +188,108 @@ setCart(updatedCart);
 
   
 
-   .back-cart-btn {
+            .back-cart-btn {
 
-  background: white;
+            background: white;
 
-  border: none;
+            border: none;
 
-  color: #10257d;
+            color: #10257d;
 
-  padding: 10px 18px;
+            padding: 10px 18px;
 
-  border-radius: 10px;
+            border-radius: 10px;
 
-  margin-bottom: 20px;
+            margin-bottom: 20px;
 
-  font-size: 15px;
+            font-size: 15px;
 
-  font-weight: 600;
+            font-weight: 600;
 
-  cursor: pointer;
+            cursor: pointer;
 
-  transition: 0.3s;
+            transition: 0.3s;
 
-}
+          }
 
-.back-cart-btn:hover {
+          .back-cart-btn:hover {
 
-  transform: translateY(-2px);
+            transform: translateY(-2px);
 
-}
+          }
 
 
-  .popup-overlay{
+            .popup-overlay{
 
-  position:fixed;
+            position:fixed;
 
-  inset:0;
+            inset:0;
 
-  background:rgba(0,0,0,0.6);
+            background:rgba(0,0,0,0.6);
 
-  display:flex;
+            display:flex;
 
-  justify-content:center;
+            justify-content:center;
 
-  align-items:center;
+            align-items:center;
 
-  z-index:9999;
+            z-index:9999;
 
-}
+          }
 
-.success-popup{
+          .success-popup{
 
-  background:white;
+            background:white;
 
-  width:320px;
+            width:320px;
 
-  padding:35px 25px;
+            padding:35px 25px;
 
-  border-radius:18px;
+            border-radius:18px;
 
-  text-align:center;
+            text-align:center;
 
-  animation:popupShow 0.3s ease;
+            animation:popupShow 0.3s ease;
 
-}
+          }
 
-.success-popup h2{
+          .success-popup h2{
 
-  color:#10257d;
+            color:#10257d;
 
-  margin-bottom:12px;
+            margin-bottom:12px;
 
-  font-size:28px;
+            font-size:28px;
 
-}
+          }
 
-.success-popup p{
+          .success-popup p{
 
-  color:#444;
+            color:#444;
 
-  line-height:1.6;
+            line-height:1.6;
 
-}
+          }
 
-@keyframes popupShow{
+          @keyframes popupShow{
 
-  from{
+            from{
 
-    transform:scale(0.8);
+              transform:scale(0.8);
 
-    opacity:0;
+              opacity:0;
 
-  }
+            }
 
-  to{
+            to{
 
-    transform:scale(1);
+              transform:scale(1);
 
-    opacity:1;
+              opacity:1;
 
-  }
+            }
 
-}
+          }
 
         .checkout-page{
 
@@ -636,7 +636,7 @@ setCart(updatedCart);
           font-size:44px;
 
           font-weight:800;
-            letter-spacing:1px;
+          letter-spacing:1px;
 
         }
 
@@ -684,7 +684,7 @@ setCart(updatedCart);
 
           .checkout-container{
 
-            grid-template-columns:1fr;
+          grid-template-columns:1fr;
 
           }
 

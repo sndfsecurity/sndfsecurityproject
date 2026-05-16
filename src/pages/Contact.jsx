@@ -302,29 +302,30 @@ const handleSubmit = async (e) => {
           Pune, Maharashtra - 411046
         </p>
 
-        {/* SOCIAL */}
-        <div className="social-title">Follow Us</div>
+  {/* SOCIAL */}
+  
+  <div className="social-title">Follow Us</div>
 
-<div className="office-socials">
+      <div className="office-socials">
 
-  <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Facebook page">
-    <FaFacebookF aria-hidden="true"/>
-  </a>
+        <a href="https://www.facebook.com/share/1E8sd7bNqr/" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Facebook page">
+          <FaFacebookF aria-hidden="true"/>
+        </a>
 
-  <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Instagram page">
-    <FaInstagram aria-hidden="true"/>
-  </a>
+        <a href="https://www.instagram.com/nationalist_detective_force?igsh=MXZycWM1czA0ZHdneg==" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Instagram page">
+          <FaInstagram aria-hidden="true"/>
+        </a>
 
 
-  <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Whatsapp">
-    <FaWhatsapp aria-hidden="true"/>
-  </a>
+        <a href="https://wa.me/919970383155" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Whatsapp">
+          <FaWhatsapp aria-hidden="true"/>
+        </a>
 
-  <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Youtube Channel">
-    <FaYoutube aria-hidden="true"/>
-  </a>
+        <a href="https://youtube.com/@ndfdetective3968?si=fsmB5O0GL4IY3dNu" target="_blank" rel="noopener noreferrer" aria-label="Visit SNDF Youtube Channel">
+          <FaYoutube aria-hidden="true"/>
+        </a>
 
-</div>
+      </div>
 
 </div>
 

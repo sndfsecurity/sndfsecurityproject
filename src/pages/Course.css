@@ -826,7 +826,6 @@
 
 
 /* course gallery........................... */
-/* ================= GALLERY SECTION ================= */
 
 .course-gallery {
   padding: 80px 20px;
@@ -855,7 +854,7 @@
 }
 
 /* GRID */
-.gallery-grid {
+.gallery-gridc {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -896,10 +895,10 @@
 }
 
 /* ================= MOBILE ================= */
-
+/* 
 @media (max-width: 768px) {
 
-  .gallery-grid {
+  .gallery-gridc {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -922,12 +921,84 @@
   .gallery-header p{
     font-size: 18px;
   }
+} */
+
+
+
+@media (max-width: 768px) {
+
+  .gallery-header h2 {
+    font-size: 32px;
+  }
+
+  .gallery-header p{
+    font-size: 18px;
+  }
+
+  /* ===== IMAGE SLIDER ===== */
+
+  .gallery-gridc {
+
+    display: flex !important;
+
+    grid-template-columns: unset !important;
+
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+
+    scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch;
+
+    gap: 0;
+
+    scrollbar-width: none;
+  }
+
+  .gallery-gridc::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery-item {
+
+    min-width: 100%;
+
+    width: 100%;
+
+    flex-shrink: 0;
+
+    scroll-snap-align: start;
+
+    padding: 0 5px;
+  }
+
+  .gallery-item img {
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+  }
+
+  /* ===== VIDEOS ===== */
+
+  .video-section {
+    grid-template-columns: 1fr;
+  }
+
+  .video-card iframe {
+    height: 220px;
+  }
 }
 
 
 
 /* career opportunities...................................... */
-/* ===== CAREER PREMIUM SECTION ===== */
+
 .career-premium {
   padding: 80px 20px;
   background: linear-gradient(135deg, #071a3d, #0a2a5c);

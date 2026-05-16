@@ -324,7 +324,7 @@ const Mumbai = () => {
 
 
        {/* RIGHT SIDE INFO CARD */}
-            <div className="sndf-form">
+          <div className="sndf-form">
 
               <h3>Why Choose SNDF Mumbai</h3>
 
@@ -361,12 +361,12 @@ const Mumbai = () => {
                 Serving clients across Navi Mumbai & nearby regions.
               </div>
 
-            </div>
+          </div>
 
       </div>
 
       {/* GOOGLE MAP FULL WIDTH */}
-       <div className="sndf-map-container">
+  <div className="sndf-map-container">
 
     <iframe
       src="https://www.google.com/maps?q=Haware+Fantasia+Business+Park+Sector+30A+Vashi+Navi+Mumbai&output=embed"

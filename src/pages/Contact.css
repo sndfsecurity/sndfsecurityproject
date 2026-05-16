@@ -83,22 +83,17 @@
 
 /* ===== TAG ===== */
 .hero-tagcn {
-  font-size: 16px;              /* bigger */
-  font-weight: 600;             /* bold */
+  font-size: 16px;              
+  font-weight: 600;             
   letter-spacing: 2px;
   text-transform: uppercase;
-
-  color: #38bdf8;               /* keep brand blue */
-  
-  background: whitesmoke;  /* 🔥 adds contrast */
+  color: #38bdf8;              
+  background: whitesmoke;  
   display: inline-block;
   padding: 6px 14px;
   border-radius: 4px;
-
-  border-left: 3px solid #ef4444; /* 🔥 premium accent */
-
+  border-left: 3px solid #ef4444; 
   margin-bottom: 10px;
-
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 0.6s ease forwards;
@@ -204,11 +199,10 @@
   .contact-hero {
     padding: 40px 20px;
     text-align: center;
-    background-attachment: scroll; /* fix mobile lag */
+    background-attachment: scroll; 
   }
 
   .hero-contentcn {
-    /* padding: 35px 20px; */
     max-width: 100%;
   }
 
@@ -277,16 +271,13 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* ICON DEFAULT (EMAIL - RED BASE) */
 .card .icon {
   font-size: 28px;
   color: #ff2e2e;
   margin-bottom: 15px;
 }
 
-/* ========================= */
-/* 📞 CALL CARD - DARK BLUE */
-/* ========================= */
+
 .card:nth-child(1) .icon {
   color: #1e3a8a;
 }
@@ -299,9 +290,7 @@
   background: #162d6b;
 }
 
-/* ========================= */
-/* ✉️ EMAIL CARD - RED */
-/* ========================= */
+
 .card:nth-child(2) .icon {
   color: #ff2e2e;
 }
@@ -314,9 +303,7 @@
   background: #e12626;
 }
 
-/* ========================= */
-/* 💬 WHATSAPP CARD - GREEN */
-/* ========================= */
+
 .whatsapp-card .icon {
   color: #25D366;
 }
@@ -372,7 +359,7 @@
 
 
 /* form............................................... */
-/* ================= CONTACT BOTTOM ================= */
+
 .contact-bottom {
   background: linear-gradient(135deg, #0f172a, #1e3a8a);
   padding: 80px 20px;
@@ -391,10 +378,9 @@
   gap: 50px;
 }
 
-/* ================= FORM ================= */
 .enquiry-form {
   background: #ffffff;
-  padding: 30px; /* reduced */
+  padding: 30px; 
   border-radius: 16px;
 
   max-width: 560px;
@@ -414,7 +400,6 @@
   transform: translateY(-3px);
 }
 
-/* ================= HEADING ================= */
 .enquiry-form h2 {
   font-size: 26px; /* reduced */
   margin-bottom: 10px;
@@ -427,7 +412,7 @@
 .enquiry-form p {
   font-size: 16px;
   color: #64748b;
-  margin-bottom: 16px; /* reduced */
+  margin-bottom: 16px; 
   letter-spacing: 0.5px;
 }
 
@@ -446,8 +431,8 @@
 .enquiry-form textarea,
 .enquiry-form select {
   width: 100%;
-  padding: 10px; /* reduced */
-  margin-bottom: 12px; /* reduced */
+  padding: 10px; 
+  margin-bottom: 12px; 
 
   border-radius: 8px;
   border: 1px solid #cbd5e1;
@@ -477,18 +462,15 @@
 .enquiry-form input:focus,
 .enquiry-form textarea:focus,
 .enquiry-form select:focus {
-  border-color: #3b82f6;
-  /* outline: none; */
-  box-shadow: 0 0 0 2px rgba(59,130,246,0.15);
+ border-color: #3b82f6;
+ box-shadow: 0 0 0 2px rgba(59,130,246,0.15);
 }
 
-/* ================= TEXTAREA ================= */
 .enquiry-form textarea {
   resize: none;
-  height: 70px; /* fixed height to save space */
+  height: 70px; 
 }
 
-/* ================= SELECT ================= */
 .enquiry-form select {
   appearance: none;
   cursor: pointer;
@@ -499,7 +481,6 @@
   background-size: 16px;
 }
 
-/* ================= ERROR ================= */
 .input-error {
   border: 1px solid #ef4444 !important;
   background: #fff5f5;
@@ -512,20 +493,16 @@
   margin-bottom: 8px;
 }
 
-/* ================= BUTTON ================= */
 .enquiry-form button {
   width: 100%;
-  padding: 11px; /* reduced */
+  padding: 11px; 
   border-radius: 8px;
   border: none;
-
   background: linear-gradient(135deg, #ef4444, #dc2626);
   color: #fff;
-
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 1px;
-
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -545,7 +522,7 @@
   cursor: not-allowed;
   box-shadow: none;
 }
-/* ================= RIGHT SIDE ================= */
+
 .office-info {
   display: flex;
   flex-direction: column;
@@ -586,7 +563,6 @@
   margin-bottom: 20px;
   font-size: 16px;
   letter-spacing: 1px;
-  /* color: #cbd5e1; */
   color: rgb(249, 245, 245);
 }
 
@@ -677,7 +653,6 @@
 
 /* map............................................... */
 
-/* ================= GOOGLE MAP PREMIUM ================= */
 .map-section {
   background: linear-gradient(180deg, #020617, #0f172a);
   padding: 90px 20px;
@@ -699,7 +674,6 @@
 
 .map-section p {
   color: #ea340b;
-  /* color: #94a3b8; */
   margin-bottom: 40px;
   font-size: 20px;
   letter-spacing: 1px;
