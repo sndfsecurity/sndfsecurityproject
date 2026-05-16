@@ -121,15 +121,14 @@ justify-content:flex-start!important;
 
 gap:12px!important;
 
-.navbar-nav{
 flex-wrap:wrap!important;
-}
+
 
 width:auto!important;
 
 scroll-padding-right:0!important;
 margin-left:0!important;
-margin: right 0px!important;
+margin-right:0!important;
 }
 
 .nav-link{
@@ -357,7 +356,9 @@ cursor:pointer;
    MOBILE
 ========================= */
 
-@media(max-width:991px){
+/* @media(max-width:991px) */
+
+@media(max-width:1199px){
 
 body{
 padding-top:120px;
@@ -444,7 +445,9 @@ display:block!important;
 
 /* DESKTOP TOGGLER HIDE */
 
-@media(min-width:992px){
+/* @media(min-width:992px) */
+
+@media(min-width:1200px){
 
 .navbar-toggler{
 display:none!important;

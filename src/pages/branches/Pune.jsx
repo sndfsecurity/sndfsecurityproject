@@ -14,29 +14,37 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 
-
-
 const PuneHero = () => {
-
 
 
   const galleryRef = useRef(null);
   const navigate = useNavigate();
 
+
   useEffect(() => {
+
   const container = galleryRef.current;
+
   if (!container) return;
 
   let scrollAmount = 0;
+
   let interval;
 
   const startScroll = () => {
+
+    clearInterval(interval);
+
     interval = setInterval(() => {
+
       if (window.innerWidth > 768) return;
 
-      scrollAmount += container.offsetWidth;
+      scrollAmount += container.clientWidth;
 
-      if (scrollAmount >= container.scrollWidth) {
+      if (
+        scrollAmount >=
+        container.scrollWidth - container.clientWidth
+      ) {
         scrollAmount = 0;
       }
 
@@ -44,22 +52,39 @@ const PuneHero = () => {
         left: scrollAmount,
         behavior: "smooth",
       });
+
     }, 2500);
+
   };
 
-  const stopScroll = () => clearInterval(interval);
+  const stopScroll = () => {
+    clearInterval(interval);
+  };
 
   startScroll();
 
+  /* Mobile touch */
   container.addEventListener("touchstart", stopScroll);
   container.addEventListener("touchend", startScroll);
 
+  /* Desktop hover */
+  container.addEventListener("mouseenter", stopScroll);
+  container.addEventListener("mouseleave", startScroll);
+
   return () => {
+
     clearInterval(interval);
+
     container.removeEventListener("touchstart", stopScroll);
     container.removeEventListener("touchend", startScroll);
+
+    container.removeEventListener("mouseenter", stopScroll);
+    container.removeEventListener("mouseleave", startScroll);
+
   };
+
 }, []);
+  
   
 
 return (
@@ -212,7 +237,7 @@ return (
     </div>
 
     <div className="gallery-btn">
-      <button>View Full Gallery →</button>
+      <button  onClick={() => navigate("/gallery")}>View Full Gallery →</button>
     </div>
 
   </div>

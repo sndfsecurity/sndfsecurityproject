@@ -519,35 +519,60 @@
 }
 
 /* MOBILE */
+
 @media (max-width: 768px) {
 
- 
-
   .mini-gallery {
-    padding: 40px 15px; /* clean spacing */
-    margin-top: 0; /* IMPORTANT */
+    padding: 40px 15px;
+    overflow: hidden;
   }
 
-   .gallery-grid {
-    display: flex;
+  .gallery-grid {
+
+    display: flex !important;
+
+    grid-template-columns: unset !important;
+
     overflow-x: auto;
-    gap: 15px;
+
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+
     scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch;
+
+    gap: 0;
+
+    scrollbar-width: none;
+
+    /* ADD THIS */
+    animation-play-state: running;
   }
 
-  /* HIDE SCROLLBAR */
+  /* ADD THIS */
+  .gallery-grid:hover,
+  .gallery-grid:active {
+    animation-play-state: paused;
+  }
+
   .gallery-grid::-webkit-scrollbar {
     display: none;
   }
 
-  /* EACH IMAGE = FULL WIDTH */
   .gallery-grid img {
-    min-width: 90%;
+
+    min-width: 100% !important;
+
+    width: 100% !important;
+
     height: 240px;
+
     flex-shrink: 0;
-    scroll-snap-align: center;
+
+    object-fit: cover;
+
+    scroll-snap-align: start;
+
     border-radius: 15px;
   }
 
@@ -555,18 +580,17 @@
     font-size: 32px;
   }
 
-.gallery-btn button {
-
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 0px;
-}
+  .gallery-btn button {
+    font-size: 20px;
+    font-weight: bold;
+  }
 
 }
+
 
 
 /* contact.................................... */
-/* ================= CONTACT SECTION ================= */
+
 .office-contact {
   padding: 90px 20px;
   background: linear-gradient(135deg, #0a1f44, #162f6b);
