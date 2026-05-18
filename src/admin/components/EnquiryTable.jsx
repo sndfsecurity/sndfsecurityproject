@@ -177,14 +177,27 @@ const PAGE_SIZE = 5;
     }
   };
 
-  // auto refresh
-  useEffect(() => {
-    const interval = setInterval(() => {
-      fetchEnquiries();
-    }, 10000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     fetchEnquiries();
+  //   }, 10000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
+
+
+// auto refresh
+
+  useEffect(() => {
+  const interval = setInterval(() => {
+    fetchEnquiries();
+  }, 10000);
+
+  return () => clearInterval(interval);
+
+}, [page, source]);
+
+
 
   // delete
   const deleteEnquiry = async (id) => {
