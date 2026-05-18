@@ -17,14 +17,19 @@ const [searchParams] = useSearchParams();
 
 const statusFromUrl = searchParams.get("status");
 
-// const [statusFilter, setStatusFilter] = useState("ALL");
 
 const [statusFilter, setStatusFilter] = useState(
   statusFromUrl || "ALL"
 );
 
-  const [enquiries, setEnquiries] = useState([]);
-  const [loading, setLoading] = useState(true);
+const [enquiries, setEnquiries] = useState([]);
+const [loading, setLoading] = useState(true);
+
+const [page, setPage] = useState(0);
+const [totalPages, setTotalPages] = useState(0);
+const [totalElements, setTotalElements] = useState(0);
+
+const PAGE_SIZE = 5;
 
   const token = localStorage.getItem("token");
   const navigate = useNavigate();
@@ -79,33 +84,75 @@ const [statusFilter, setStatusFilter] = useState(
   };
 
   // Fetch enquiries
-  const fetchEnquiries = async () => {
-    try {
-    
-      let url = `${API}/api/enquiry`;
-      if (source) url += `?source=${source}`;
+ const fetchEnquiries = async () => {
+  try {
 
-      const res = await axios.get(url, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+    let url = `${API}/api/enquiry`;
 
-      setEnquiries(
-        res.data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-      );
-    } catch (err) {
-      if (handleAuthError(err)) return;
+    const params = {
+      page: page,
+      size: PAGE_SIZE,
+    };
 
-      console.error("Error fetching enquiries", err);
-    } finally {
-      setLoading(false);
+    if (source) {
+      params.source = source;
     }
-  };
 
-  useEffect(() => {
-    fetchEnquiries();
-  }, [source]);
+    const res = await axios.get(url, {
+      params,
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    console.log(res.data);
+
+    // ✅ if backend sends paginated response
+    if (res.data.content) {
+
+      const sortedData = res.data.content.sort(
+        (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+      );
+
+      setEnquiries(sortedData);
+
+      setTotalPages(res.data.totalPages || 0);
+      setTotalElements(res.data.totalElements || 0);
+
+    }
+
+    // ✅ fallback if backend sends normal array
+    else if (Array.isArray(res.data)) {
+
+      const sortedData = res.data.sort(
+        (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+      );
+
+      // frontend pagination fallback
+      const start = page * PAGE_SIZE;
+      const end = start + PAGE_SIZE;
+
+      setEnquiries(sortedData.slice(start, end));
+
+      setTotalPages(Math.ceil(sortedData.length / PAGE_SIZE));
+      setTotalElements(sortedData.length);
+    }
+
+      } catch (err) {
+
+        if (handleAuthError(err)) return;
+
+        console.error("Error fetching enquiries", err);
+
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    useEffect(() => {
+      fetchEnquiries();
+    }, [source, page]);
+
 
   // Update status
   const updateStatus = async (id, newStatus) => {
@@ -186,25 +233,26 @@ const [statusFilter, setStatusFilter] = useState(
     <div className="filter-buttonss">
       <button
         className={`filter-btns ${statusFilter === "ALL" ? "active" : ""}`}
-        onClick={() => setStatusFilter("ALL")}>
+        onClick={() => { setStatusFilter("ALL");  setPage(0);}}>
         ALL
       </button>
 
       <button
         className={`filter-btns ${statusFilter === "NEW" ? "active" : ""}`}
-        onClick={() => setStatusFilter("NEW")}>
+          onClick={() => { setStatusFilter("NEW"); 
+          setPage(0); }}>
         NEW
       </button>
 
       <button
         className={`filter-btns ${statusFilter === "IN_PROGRESS" ? "active" : ""}`}
-        onClick={() => setStatusFilter("IN_PROGRESS")}>
+        onClick={() => { setStatusFilter("IN_PROGRESS"); setPage(0); }}>
         IN_PROGRESS
       </button>
 
       <button
         className={`filter-btns ${statusFilter === "COMPLETED" ? "active" : ""}`}
-        onClick={() => setStatusFilter("COMPLETED")}>
+        onClick={() => { setStatusFilter("COMPLETED"); setPage(0); }}>
         COMPLETED
       </button>
       
@@ -302,6 +350,31 @@ const [statusFilter, setStatusFilter] = useState(
         </div>
 
 
+      {/* pagination................................. */}
+
+        <div className="pagination">
+  
+          <button
+            className="page-btn"
+            disabled={page === 0}
+            onClick={() => setPage(page - 1)}>
+            Previous
+          </button>
+
+          <span className="page-info">
+            Page {page + 1} of {totalPages}
+          </span>
+
+          <button
+            className="page-btn"
+            disabled={page + 1 >= totalPages}
+            onClick={() => setPage(page + 1)}>
+            Next
+          </button>
+
+        </div>
+
+
 {/* mobile cards............................... */}
 
 <div className="mobile-cards">
@@ -362,14 +435,14 @@ const [statusFilter, setStatusFilter] = useState(
             </button>
           </div>
 
-</div>
+      </div>
 
  
   ))}
 </div>
 
 
-      </div>
+    </div>
     </div>
 
       </>
