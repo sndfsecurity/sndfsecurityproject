@@ -663,7 +663,7 @@ const Course = () => {
             <FaWhatsapp aria-hidden="true"/>
           </a>
       
-          <a href="#" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon instagram">
+          <a href="https://www.instagram.com/detective_investigation_coures?igsh=Nzg5Z3I3cDZmZjBz" target="_blank" rel="noreferrer" className="sndfguard-extra-social-icon instagram">
             <FaInstagram aria-hidden="true"/>
           </a>
          
