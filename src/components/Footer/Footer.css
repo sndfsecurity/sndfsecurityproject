@@ -151,7 +151,7 @@
 }
 
 .footer-col li {
-  margin-bottom: 8px; /* instead of 10px */
+  margin-bottom: 8px; 
 }
 
 
@@ -175,7 +175,8 @@
 .footer-col p svg {
   min-width: 18px;
   font-size: 18px; /* 👈 bigger */
-  margin-top: 3px;
+  margin-top: 5px;
+  flex-shrink: 0;
 }
 
 /* ICON COLORS */
@@ -265,7 +266,7 @@
   /* ✅ SOCIAL ICON FIX (ONE LINE CENTER) */
   .social-icons {
     justify-content: center;
-    flex-wrap: nowrap;   /* 👈 NO WRAP */
-    overflow-x: auto;    /* 👈 safe on very small screens */
+    flex-wrap: nowrap;   
+    overflow-x: auto;    
   }
 }
