@@ -259,8 +259,14 @@
   }
 
   /* Center contact text */
-  .footer-col p {
+  /* .footer-col p {
     justify-content: center;
+  } */
+
+    .footer-col p {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* ✅ SOCIAL ICON FIX (ONE LINE CENTER) */
