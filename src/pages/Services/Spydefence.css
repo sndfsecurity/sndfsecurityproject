@@ -205,7 +205,24 @@ html {
     font-size: 18px;
    }
   
-   
+  
+    .spy-hero-buttons{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .btn-red,
+  .btn-outline{
+    width: 260px !important;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+
    
 }
 
