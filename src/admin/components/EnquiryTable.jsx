@@ -25,6 +25,8 @@ const [statusFilter, setStatusFilter] = useState(
 const [enquiries, setEnquiries] = useState([]);
 const [loading, setLoading] = useState(true);
 
+const [searchTerm, setSearchTerm] = useState("");
+
 const [page, setPage] = useState(0);
 const [totalPages, setTotalPages] = useState(0);
 const [totalElements, setTotalElements] = useState(0);
@@ -177,15 +179,6 @@ const PAGE_SIZE = 5;
     }
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     fetchEnquiries();
-  //   }, 10000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
-
 // auto refresh
 
   useEffect(() => {
@@ -195,8 +188,7 @@ const PAGE_SIZE = 5;
 
   return () => clearInterval(interval);
 
-}, [page, source]);
-
+  }, [page, source]);
 
 
   // delete
@@ -224,10 +216,23 @@ const PAGE_SIZE = 5;
   if (loading) return <p className="loading">Loading enquiries...</p>;
 
 
-  const filteredEnquiries =
-  statusFilter === "ALL"
-    ? enquiries
-    : enquiries.filter((e) => e.status === statusFilter);
+  // const filteredEnquiries =
+  // statusFilter === "ALL"
+  //   ? enquiries
+  //   : enquiries.filter((e) => e.status === statusFilter);
+
+  const filteredEnquiries = enquiries.filter((e) => {
+
+  const matchesStatus =
+    statusFilter === "ALL" || e.status === statusFilter;
+
+  const matchesSearch =
+    e.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    e.phone?.includes(searchTerm) ||
+    e.service?.toLowerCase().includes(searchTerm.toLowerCase());
+
+  return matchesStatus && matchesSearch;
+});
 
   return (
 
@@ -282,10 +287,17 @@ const PAGE_SIZE = 5;
           <span className="admin-badge">{source || "ALL"}</span>
         </div>
 
-       
+          <div className="search-box">
+              <input
+                type="text"
+                placeholder="Search name, phone, service..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}/>
+        </div>
 
         {/* Table */}
         <div className="table-wrapper">
+
           <table className="admin-table">
             <thead>
               <tr>

@@ -503,3 +503,19 @@ select:disabled {
   font-weight:600;
   color:#222;
 }
+
+
+.search-box{
+  display:flex;
+  justify-content:flex-end;
+  margin-bottom:20px;
+}
+
+.search-box input{
+  width:300px;
+  padding:12px 15px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  outline:none;
+  font-size:15px;
+}
