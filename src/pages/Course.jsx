@@ -624,7 +624,7 @@ const Course = () => {
     <div className="cta-box">
 
       <h2>Enroll for the Course Today</h2>
-
+ 
       <p>
         Start your journey in professional investigation with practical training,
         real case exposure and certification.
