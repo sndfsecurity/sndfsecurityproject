@@ -481,10 +481,9 @@ const badgesData = [
 
 {/* our clients.......................................................... */}
 
-<section className="sndf-client-logos-only">
+{/* <section className="sndf-client-logos-only">
       <div className="sndf-client-logos-only-container">
         
-        {/* Professional Header */}
         <div className="sndf-client-logos-only-header">
           <span className="sndf-client-logos-only-badge">TRUSTED PARTNERS</span>
           <h2 className="sndf-client-logos-only-title">
@@ -492,7 +491,6 @@ const badgesData = [
           </h2>
         </div>
 
-        {/* Auto-scrolling Logos */}
         <div className="sndf-client-logos-only-marquee">
           <div className="sndf-client-logos-only-track">
             {duplicatedLogos.map((logo, index) => (
@@ -515,7 +513,7 @@ const badgesData = [
         </div>
 
       </div>
-    </section>
+    </section> */}
 
 
 
