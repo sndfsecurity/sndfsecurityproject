@@ -547,3 +547,9 @@ width:22px!important;
 }
 
 }
+
+body {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
