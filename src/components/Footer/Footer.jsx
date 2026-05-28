@@ -123,7 +123,7 @@ const Footer = () => {
   <div className="map">
 
   <iframe
-    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15138.751197603708!2d73.871484!3d18.452479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29583f03b9aff%3A0xf083a5f416201118!2sNDF%20-%20Nationalist%20detective%20force!5e0!3m2!1sen!2sin!4v1773960981494!5m2!1sen!2sin"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.685608531841!2d73.8714615!3d18.4525784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb65534fe781%3A0x754e8aa84278a181!2sSNDF%20Security%20Services!5e0!3m2!1sen!2sin!4v1779947498070!5m2!1sen!2sin"
     width="100%"
     height="250"
     style={{ border: 0 }}

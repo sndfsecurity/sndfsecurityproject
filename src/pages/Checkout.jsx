@@ -154,7 +154,7 @@ setCart(updatedCart);
 
   // Open WhatsApp
   window.open(
-    `https://wa.me/919370899504?text=${encodeURIComponent(whatsappMessage)}`,
+    `https://wa.me/919970383155?text=${encodeURIComponent(whatsappMessage)}`,
     "_blank"
   );
 

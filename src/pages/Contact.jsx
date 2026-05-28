@@ -356,18 +356,18 @@ const handleSubmit = async (e) => {
     <p>Visit our head office in Pune</p>
 
     <div className="map-box">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15138.751197603708!2d73.871484!3d18.452479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29583f03b9aff%3A0xf083a5f416201118!2sNDF%20-%20Nationalist%20detective%20force!5e0!3m2!1sen!2sin!4v1773960981494!5m2!1sen!2sin"
-        loading="lazy"
-        title="SNDF Location"
-      ></iframe>
+     <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.685608531841!2d73.8714615!3d18.4525784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb65534fe781%3A0x754e8aa84278a181!2sSNDF%20Security%20Services!5e0!3m2!1sen!2sin!4v1779947498070!5m2!1sen!2sin"
+      loading="lazy"
+      title="SNDF Security Services Location"> 
+    </iframe>
 
       <div className="map-overlay">
         <h3>SNDF Head Office</h3>
         <p>Katraj, Pune, Maharashtra</p>
 
         <a
-          href="https://www.google.com/maps/dir/?api=1&destination=18.452479,73.871484"
+          href="https://www.google.com/maps/dir/?api=1&destination=18.4525784,73.8714615"
           target="_blank"
           rel="noopener noreferrer"
           className="direction-btn"
