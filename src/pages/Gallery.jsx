@@ -119,7 +119,7 @@ return(
 <div className="gallery-page">
 
   <div className="gallery-hero">
-    <h1>Media Gallery</h1>
+    <h1>SNDF Gallery</h1>
     <p>Explore our departments and work visuals</p>
   </div>
 
