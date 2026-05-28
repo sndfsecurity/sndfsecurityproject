@@ -1,6 +1,6 @@
 import "./Pune.css";
 import { FaShieldAlt, FaUsers, FaBuilding } from "react-icons/fa";
- import puneOffice from "../../assets/images/img2.webp";
+ import puneOffice from "../../assets/images/IMG2.webp";
  import Img3 from "../../assets/images/img3.webp";
 
 import wakadImg from "../../assets/images/wakad.webp";
