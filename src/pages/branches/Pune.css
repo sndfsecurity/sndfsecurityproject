@@ -166,8 +166,8 @@
 /* IMAGE BIG SIZE 🔥 */
 .hero-image img {
   width: 100%;
-  max-width: 600px;   /* increased size */
-  height: 430px;      /* fixed height */
+  max-width: 700px;   /* increased size */
+  height: 550px;      /* fixed height */
   object-fit: cover;  /* maintain crop properly */
   border-radius: 20px;
 
@@ -453,6 +453,26 @@
     font-size: 16px;
   }
 }
+
+@media (max-width:768px){
+
+.hero-buttonsb{
+  display:flex;
+  justify-content:center;
+  margin-top:25px;
+}
+
+.btn-outline{
+  padding:11px 20px !important;
+  font-size:16px;
+  text-align:center;
+  max-width: 200px !important;
+}
+
+}
+
+
+
 
 
 /* gallary .......................................... */

@@ -1,7 +1,7 @@
 import "./Pune.css";
 import { FaShieldAlt, FaUsers, FaBuilding } from "react-icons/fa";
- import puneOffice from "../../assets/images/hero.webp";
-import course2 from "../../assets/images/course-bg.webp";
+ import puneOffice from "../../assets/images/img2.webp";
+ import Img3 from "../../assets/images/img3.webp";
 
 import wakadImg from "../../assets/images/wakad.webp";
 import karveRoadImg from "../../assets/images/karve.webp";
@@ -223,9 +223,9 @@ return (
         <h2>Office Glimpse</h2>
 
         <div className="gallery-grid" ref={galleryRef}>
-          <img src={course2} alt="detective agency office Pune"/>
+          <img src={Img3} alt="detective agency office Pune"/>
           <img src={puneOffice}alt="detective agency office Pune" />
-          <img src={course2} alt="detective agency office Pune" />
+          <img src={Img3} alt="detective agency office Pune" />
           <img src={puneOffice} alt="detective agency office Pune" />
         </div>
 

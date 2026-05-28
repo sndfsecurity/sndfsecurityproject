@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import aboutImg from "../assets/images/hero.webp"; 
+import Img2 from "../assets/images/img2.webp"; 
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -211,7 +213,7 @@ const badgesData = [
 
         {/* IMAGE */}
         <div className="about-image">
-          <img src={aboutImg} alt="about" />
+          <img src={Img2} alt="about" />
         </div>
 
         {/* CONTENT */}
