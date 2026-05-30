@@ -105,7 +105,7 @@ html {
 }
 
 /* OUTLINE BUTTON */
-.btn-outline {
+.btn-outlines {
   border: 1px solid #fff;
   color: #fff;
   padding: 13px 26px;
@@ -117,7 +117,7 @@ html {
   font-weight: bold;
 }
 
-.btn-outline:hover {
+.btn-outlines:hover {
   background: #fff;
   color: #0a1f44;
   transform: translateY(-2px);
@@ -214,9 +214,16 @@ html {
     width: 100%;
   }
 
-  .btn-red,
-  .btn-outline{
+  .btn-red{
     width: 260px !important;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+
+  .btn-outlines{
+     width: 260px !important;
     display: block;
     text-align: center;
     font-size: 18px;

@@ -74,7 +74,7 @@ const Spydefence = () => {
               Join Program
             </a>
 
-            <a  href="#activities" className="btn-outline">
+            <a  href="#activities" className="btn-outlines">
               Explore Activities
             </a>
           </div>
