@@ -1,6 +1,6 @@
 import React from "react";
 import "./Owl.css";
-import owl from "../../assets/images/monitoring.jpeg";
+import owl from "../../assets/images/monitoring.webp";
 import { Helmet } from "react-helmet-async";
 
 import { FaEnvelope, FaGalacticRepublic } from "react-icons/fa";
