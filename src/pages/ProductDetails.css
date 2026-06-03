@@ -133,3 +133,18 @@
 }
 
 
+@media (max-width: 480px) {
+
+  .buy-now,
+  .add-cart {
+    width: 85%;
+    max-width: 270px;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 18px;
+    
+  }
+
+}

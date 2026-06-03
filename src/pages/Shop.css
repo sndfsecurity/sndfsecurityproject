@@ -59,10 +59,13 @@
 
 /* CARD */
 .product-card {
-  background: #1b3b6f;
+  /* background: #1b3b6f; */
+  background:whitesmoke;
   border-radius: 15px;
   overflow: hidden;
   transition: 0.3s;
+  margin-top: 20px;
+  margin-left:15px;
 }
 
 .product-card:hover {
@@ -86,11 +89,17 @@
 .product-info h3 {
   font-size: 18px;
   letter-spacing: 1px;
+  color:black;
+  letter-spacing: 1px;
+ 
 }
 
 .product-info p {
-  color: #00ffcc;
-  margin: 10px 0;
+  color: lab(47.62% -49.45 49.75);
+  margin:10px 0;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 /* BUTTON */
@@ -102,7 +111,6 @@
   border-radius: 20px;
   cursor: pointer;
   letter-spacing: 1px;
-  font-weight: bold;
 }
 
 /* RESPONSIVE */
