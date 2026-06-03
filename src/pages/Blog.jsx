@@ -14,7 +14,7 @@ id:1,
 title:"Corporate Investigation",
 category:"Investigation",
 desc:"Protecting Your Business from Hidden Risks.",
-image: img1, // ✅ changed
+image: img1, 
 content:`IIn today’s fast-paced business environment, organizations face increasing risks from fraud, data breaches, employee misconduct, and financial irregularities. Corporate investigation plays a crucial role in identifying these threats, protecting company assets, and maintaining trust among stakeholders.
 
 Corporate investigations involve a systematic examination of internal and external activities within a business. These investigations are often conducted to uncover issues such as financial fraud, intellectual property theft, compliance violations, or unethical behavior. By using advanced techniques like forensic accounting, digital forensics, and surveillance, investigators can gather accurate evidence and provide actionable insights.
