@@ -8,34 +8,31 @@ import { FaShoppingCart } from "react-icons/fa";
 import LegalNotice from "../components/LegalNotice";
 
 
-import gps from "../assets/images/gps.png";
-import gsm from "../assets/images/minia83.png";
-import go from "../assets/images/gosmart.png"
-import wire from "../assets/images/wirecamrea.png"
-import vehicle from "../assets/images/vehiclegps2.png"
-import gg from "../assets/images/4ggps2.png"
-import camera from "../assets/images/SQ112.png"
-import USB from "../assets/images/USBEndoscopeCamera.png"
-import watch from "../assets/images/watch2.png"
-import power from "../assets/images/powerbank.png"
-import mat from "../assets/images/matlogix.png"
-import tag from "../assets/images/xtag2.png"
-import z from "../assets/images/zasco.png"
-import voice from "../assets/images/voicerecorder2.png"
-import pen from "../assets/images/pencamera.png"
-import glass from "../assets/images/glasscamera.png"
-import alcohol from "../assets/images/alcoholtester2.png"
-import police from "../assets/images/car2.png"
-import truck from "../assets/images/truck2.png"
-import army from "../assets/images/armytruck2.png"
-import Jeep from "../assets/images/jeep.png"
-import toyt from "../assets/images/toytruck.png"
-import spy from "../assets/images/spytruck2.png"
-import flight from "../assets/images/aroplane2.png"
-import green from "../assets/images/greencar2.png"
-
-
-
+import gps from "../assets/images/gps.webp";
+import gsm from "../assets/images/minia83.webp";
+import go from "../assets/images/gosmart.webp"
+import wire from "../assets/images/wirecamrea.webp"
+import vehicle from "../assets/images/vehiclegps2.webp"
+import gg from "../assets/images/4ggps2.webp"
+import camera from "../assets/images/SQ112.webp"
+import USB from "../assets/images/USBEndoscopeCamera.webp"
+import watch from "../assets/images/watch2.webp"
+import power from "../assets/images/powerbank.webp"
+import mat from "../assets/images/matlogix.webp"
+import tag from "../assets/images/xtag2.webp"
+import z from "../assets/images/zasco.webp"
+import voice from "../assets/images/voicerecorder2.webp"
+import pen from "../assets/images/pencamera.webp"
+import glass from "../assets/images/glasscamera.webp"
+import alcohol from "../assets/images/alcoholtester2.webp"
+import police from "../assets/images/car2.webp"
+import truck from "../assets/images/truck2.webp"
+import army from "../assets/images/armytruck2.webp"
+import Jeep from "../assets/images/jeep.webp"
+import toyt from "../assets/images/toytruck.webp"
+import spy from "../assets/images/spytruck2.webp"
+import flight from "../assets/images/aroplane2.webp"
+import green from "../assets/images/greencar2.webp"
 
 
 
@@ -683,7 +680,7 @@ function ProductDetails() {
       <meta name="description" content="View detailed information about security and surveillance products offered by SNDF for reliable protection." />
     </Helmet>
 
-    <div className="details-page">
+<div className="details-page">
 
   <LegalNotice />
 
@@ -730,53 +727,52 @@ function ProductDetails() {
 
 
               <div
-  onClick={() => navigate("/cart")}
-  style={{
-    display: "flex",
-    justifyContent: "flex-end",
-    marginBottom: "20px",
-    cursor: "pointer"
-  }}
->
-  <div
-    style={{
-      position: "relative",
-      background: "#ffffff",
-      width: "58px",
-      height: "58px",
-      borderRadius: "50%",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      boxShadow: "0 6px 18px rgba(0,0,0,0.35)",
-      border: "3px solid red"
-    }}
-  >
-    <FaShoppingCart size={24} color="#0b0b5c" />
+              onClick={() => navigate("/cart")}
+              style={{
+                display: "flex",
+                justifyContent: "flex-end",
+                marginBottom: "20px",
+                cursor: "pointer"
+              }}>
 
-    {cart.length > 0 && (
-      <span
-        style={{
-          position: "absolute",
-          top: "-8px",
-          right: "-8px",
-          background: "red",
-          color: "white",
-          borderRadius: "50%",
-          minWidth: "24px",
-          height: "24px",
-          fontSize: "13px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontWeight: "bold"
-        }}
-      >
-        {cart.length}
-      </span>
-    )}
-  </div>
-</div>
+
+            <div
+              style={{
+                position: "relative",
+                background: "#ffffff",
+                width: "58px",
+                height: "58px",
+                borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: "0 6px 18px rgba(0,0,0,0.35)",
+                border: "3px solid red"
+              }}>
+              <FaShoppingCart size={24} color="#0b0b5c" />
+
+                {cart.length > 0 && (
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-8px",
+                      right: "-8px",
+                      background: "red",
+                      color: "white",
+                      borderRadius: "50%",
+                      minWidth: "24px",
+                      height: "24px",
+                      fontSize: "13px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontWeight: "bold"
+                    }}>
+                    {cart.length}
+                  </span>
+                )}
+              </div>
+            </div>
 
           <div className="box">
             <h3>📦 Features</h3>

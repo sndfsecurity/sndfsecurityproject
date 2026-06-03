@@ -103,8 +103,7 @@ const Team = () => {
               loop={true}
               autoplay={{ delay: 2000 }}
               spaceBetween={10}
-              slidesPerView={1}
-            >
+              slidesPerView={1}>
               {members.map((m, i) => (
                 <SwiperSlide key={i}>
                   <div className="card text-center team-card m-3">

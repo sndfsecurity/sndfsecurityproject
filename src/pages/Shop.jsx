@@ -3,31 +3,31 @@ import { useNavigate } from "react-router-dom";
 import "./Shop.css";
 import { Helmet } from "react-helmet-async";
 
-import gps from "../assets/images/GPSTRACTOR.jpg";
-import gsm from "../assets/images/minia82.jpg";
-import go from "../assets/images/aijas.png"
-import wire from "../assets/images/wirecamera2.png"
-import vehicle from "../assets/images/vehiclegps.jpg"
-import gg from "../assets/images/4ggps.png"
-import camera from "../assets/images/SQ11.png"
-import USB from "../assets/images/USBEndoscopeCamera.png"
-import watch from "../assets/images/watch.png"
-import power from "../assets/images/powerbank.png"
-import mat from "../assets/images/matlogix.png"
-import tag from "../assets/images/xtag.png"
-import z from "../assets/images/zasco.png"
-import voice from "../assets/images/voicerecorder.png"
-import pen from "../assets/images/pencamera2.png"
-import glass from "../assets/images/glasscamera.png"
-import alcohol from "../assets/images/alcoholtester.png"
-import police from "../assets/images/car.png"
-import truck from "../assets/images/truck.png"
-import army from "../assets/images/armytruck.png"
-import Jeep from "../assets/images/jeep.png"
-import toyt from "../assets/images/toytruck.png"
-import spy from "../assets/images/spytruck.png"
-import flight from "../assets/images/aroplane.png"
-import green from "../assets/images/greencar.png"
+import gps from "../assets/images/GPSTRACTOR.webp";
+import gsm from "../assets/images/minia82.webp";
+import go from "../assets/images/aijas.webp"
+import wire from "../assets/images/wirecamera2.webp"
+import vehicle from "../assets/images/vehiclegps.webp"
+import gg from "../assets/images/4ggps.webp"
+import camera from "../assets/images/SQ11.webp"
+import USB from "../assets/images/USBEndoscopeCamera.webp"
+import watch from "../assets/images/watch.webp"
+import power from "../assets/images/powerbank.webp"
+import mat from "../assets/images/matlogix.webp"
+import tag from "../assets/images/xtag.webp"
+import z from "../assets/images/zasco.webp"
+import voice from "../assets/images/voicerecorder.webp"
+import pen from "../assets/images/pencamera2.webp"
+import glass from "../assets/images/glasscamera.webp"
+import alcohol from "../assets/images/alcoholtester.webp"
+import police from "../assets/images/car.webp"
+import truck from "../assets/images/truck.webp"
+import army from "../assets/images/armytruck.webp"
+import Jeep from "../assets/images/jeep.webp"
+import toyt from "../assets/images/toytruck.webp"
+import spy from "../assets/images/spytruck.webp"
+import flight from "../assets/images/aroplane.webp"
+import green from "../assets/images/greencar.webp"
 import LegalNotice from "../components/LegalNotice";
 
 
