@@ -107,6 +107,9 @@
   background: #1b3b6f;
   padding: 15px;
   border-radius: 10px;
+  max-width: 400px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 .box h3{
