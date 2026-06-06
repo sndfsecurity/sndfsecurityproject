@@ -112,9 +112,9 @@ color:#111827;
 
 .blog-content p{
 font-size:18px;
-line-height:1.7;
 color:#5b6475;
 margin-bottom:25px;
+letter-spacing:1px;
 }
 
 .blog-content button{
@@ -187,8 +187,9 @@ border-radius:10px;
 .blog-details p{
 max-width:760px;
 margin:auto;
-font-size:22px;
-line-height:2.1;
+font-size:20px;
+line-height:1.9;
+letter-spacing:1px;
 color:#475569;
 white-space:pre-line;
 }
