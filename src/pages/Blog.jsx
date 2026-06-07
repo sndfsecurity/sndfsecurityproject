@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Blog.css";
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
+
 import img1 from "../assets/images/corporate.webp";
 import img2 from "../assets/images/cyber.webp";
 import img3 from "../assets/images/background.webp";
@@ -15,7 +17,21 @@ title:"Corporate Investigation",
 category:"Investigation",
 desc:"Protecting Your Business from Hidden Risks.",
 image: img1, 
-content:`IIn today’s fast-paced business environment, organizations face increasing risks from fraud, data breaches, employee misconduct, and financial irregularities. Corporate investigation plays a crucial role in identifying these threats, protecting company assets, and maintaining trust among stakeholders.
+
+date:"June 07, 2026",
+readTime:"5 Min Read",
+author:"SNDF Editorial Team",
+
+featured:true,
+
+heroTitle:"Corporate Investigation",
+heroSubtitle:"Protecting businesses from fraud, compliance risks and hidden threats through professional investigative services.",
+
+tags:["Investigation","Risk Management","Corporate Security"],
+
+related:[2,4,5],
+
+content:`In today’s fast-paced business environment, organizations face increasing risks from fraud, data breaches, employee misconduct, and financial irregularities. Corporate investigation plays a crucial role in identifying these threats, protecting company assets, and maintaining trust among stakeholders.
 
 Corporate investigations involve a systematic examination of internal and external activities within a business. These investigations are often conducted to uncover issues such as financial fraud, intellectual property theft, compliance violations, or unethical behavior. By using advanced techniques like forensic accounting, digital forensics, and surveillance, investigators can gather accurate evidence and provide actionable insights.
 
@@ -32,7 +48,21 @@ title:"Cyber Security",
 category:"Security",
 desc:"Protecting company data from cyber threats.",
 image: img2,
-content:`IIn the digital age, cyber security has become essential for businesses and individuals alike. With the rapid growth of online platforms, sensitive data is constantly at risk from hackers, malware, and cyber attacks. Cyber security focuses on protecting systems, networks, and data from unauthorized access and digital threats.
+
+date:"June 05, 2026",
+readTime:"6 Min Read",
+author:"SNDF Editorial Team",
+
+featured:false,
+
+heroTitle:"Cyber Security",
+heroSubtitle:"Safeguarding digital assets, networks, and sensitive information from evolving cyber threats.",
+
+tags:["Cyber Security","Data Protection","IT Security"],
+
+related:[1,4,5],
+
+content:`In the digital age, cyber security has become essential for businesses and individuals alike. With the rapid growth of online platforms, sensitive data is constantly at risk from hackers, malware, and cyber attacks. Cyber security focuses on protecting systems, networks, and data from unauthorized access and digital threats.
 
 Cyber threats can take many forms, including phishing attacks, ransomware, data breaches, and identity theft. These attacks can lead to financial loss, reputational damage, and disruption of operations. As businesses rely more on technology, the importance of strong cyber security measures continues to grow.
 
@@ -49,7 +79,21 @@ title:"Background Verification",
 category:"HR",
 desc:"Employee background verification process.",
 image: img3,
-content:`IIn today’s competitive and security-conscious environment, background verification has become a vital step for organizations before hiring employees or forming business partnerships. It ensures that the information provided by individuals is accurate, helping companies make informed and risk-free decisions.
+
+date:"June 03, 2026",
+readTime:"4 Min Read",
+author:"SNDF Editorial Team",
+
+featured:false,
+
+heroTitle:"Background Verification",
+heroSubtitle:"Building trustworthy organizations through accurate employee and partner verification.",
+
+tags:["HR","Verification","Employment Screening"],
+
+related:[1,2,6],
+
+content:`In today’s competitive and security-conscious environment, background verification has become a vital step for organizations before hiring employees or forming business partnerships. It ensures that the information provided by individuals is accurate, helping companies make informed and risk-free decisions.
 
 Background verification involves checking key details such as identity, education, employment history, criminal records, and address verification. This process helps detect false information, fraudulent credentials, or any hidden risks that could impact the organization.
 
@@ -66,7 +110,21 @@ title:"Surveillance Services",
 category:"Investigation",
 desc:"Modern surveillance tools and tracking systems.",
 image: img4,
-content:`IIn an increasingly complex world, surveillance services play a critical role in maintaining safety, preventing crime, and gathering crucial evidence. Whether for corporate needs, personal matters, or legal cases, surveillance helps uncover the truth through careful observation and monitoring.
+
+date:"May 30, 2026",
+readTime:"5 Min Read",
+author:"SNDF Editorial Team",
+
+featured:false,
+
+heroTitle:"Surveillance Services",
+heroSubtitle:"Advanced surveillance solutions for evidence collection, monitoring, and risk prevention.",
+
+tags:["Surveillance","Monitoring","Investigation"],
+
+related:[1,2,5],
+
+content:`In an increasingly complex world, surveillance services play a critical role in maintaining safety, preventing crime, and gathering crucial evidence. Whether for corporate needs, personal matters, or legal cases, surveillance helps uncover the truth through careful observation and monitoring.
 
 Surveillance services involve both physical and digital monitoring techniques. This includes CCTV monitoring, undercover operations, GPS tracking, and cyber surveillance. These methods are used to track suspicious activities, verify facts, and collect reliable evidence without alerting the subject.
 
@@ -83,7 +141,22 @@ title:"Fraud Detection",
 category:"Finance",
 desc:"Identify and prevent financial fraud.",
 image: img5,
-content:`IIn today’s digital and business-driven world, fraud detection has become a critical function for organizations of all sizes. With increasing cases of financial fraud, cyber scams, and internal misconduct, businesses must adopt proactive strategies to identify and prevent fraudulent activities.
+
+date:"May 27, 2026",
+readTime:"6 Min Read",
+author:"SNDF Editorial Team",
+
+featured:false,
+
+heroTitle:"Fraud Detection",
+heroSubtitle:"Detecting suspicious activities and protecting organizations from financial losses.",
+
+tags:["Fraud Detection","Finance","Risk Prevention"],
+
+related:[1,2,4],
+
+
+content:`In today’s digital and business-driven world, fraud detection has become a critical function for organizations of all sizes. With increasing cases of financial fraud, cyber scams, and internal misconduct, businesses must adopt proactive strategies to identify and prevent fraudulent activities.
 
 Fraud detection involves analyzing transactions, monitoring suspicious behavior, and identifying irregular patterns that may indicate deception. It can include financial fraud, identity theft, insurance fraud, employee embezzlement, and cyber fraud. Advanced tools such as data analytics, artificial intelligence, and forensic accounting are often used to detect anomalies and uncover hidden risks.
 
@@ -100,7 +173,21 @@ title:"Personal Investigation",
 category:"Private",
 desc:"Confidential personal investigation services.",
 image: img6,
-content:`IIn situations where clarity and truth are essential, personal investigation services provide individuals with reliable and confidential insights. Whether dealing with personal doubts, family matters, or sensitive relationships, these services help uncover facts with professionalism and discretion.
+
+date:"May 24, 2026",
+readTime:"5 Min Read",
+author:"SNDF Editorial Team",
+
+featured:false,
+
+heroTitle:"Personal Investigation",
+heroSubtitle:"Confidential investigative services that provide clarity and peace of mind.",
+
+tags:["Private Investigation","Verification","Personal Security"],
+
+related:[3,1,4],
+
+content:`In situations where clarity and truth are essential, personal investigation services provide individuals with reliable and confidential insights. Whether dealing with personal doubts, family matters, or sensitive relationships, these services help uncover facts with professionalism and discretion.
 
 Personal investigations cover a wide range of cases, including matrimonial investigations, pre- and post-marriage verification, missing person searches, loyalty checks, and background verification. Investigators use techniques such as surveillance, digital tracking, and field inquiries to gather accurate information without compromising privacy.
 
@@ -115,6 +202,8 @@ In conclusion, personal investigation services are about gaining clarity and pea
 function Blog(){
 
 const [selected,setSelected]=useState(null);
+
+const navigate = useNavigate();
 
 return(
 <>
@@ -131,37 +220,139 @@ return(
 <div className="blog-container">
 
 {/* HERO SHOW ONLY ON BLOG LIST */}
+
 {!selected && (
-<div className="blog-hero">
-<h1>SNDF Resource Hub</h1>
+<>
+
+<section className="blog-hero">
+
+<div className="hero-overlay">
+
+<span className="hero-badge">
+SNDF Resource Hub
+</span>
+
+<h1>
+Security & Investigation
+Insights
+</h1>
 
 <p>
-  Trusted insights and modern solutions for evolving security challenges.
+Stay updated with expert insights,
+investigation strategies, cyber security trends
+and professional verification practices.
 </p>
 
 </div>
-)}
 
-{/* BLOG LIST */}
-{!selected && (
+</section>
+
+<section className="featured-section">
+
+<div className="featured-image">
+
+<img
+src={blogs.find(blog => blog.featured)?.image}
+alt={blogs.find(blog => blog.featured)?.title}
+/>
+
+</div>
+
+<div className="featured-content">
+
+<span className="featured-label">
+Featured Article
+</span>
+
+<h2>
+{blogs.find(blog => blog.featured)?.title}
+</h2>
+
+<p>
+{blogs.find(blog => blog.featured)?.heroSubtitle}
+</p>
+
+<div className="featured-meta">
+
+<span>
+📅 {blogs.find(blog => blog.featured)?.date}
+</span>
+
+<span>
+⏱ {blogs.find(blog => blog.featured)?.readTime}
+</span>
+
+</div>
+
+<button
+onClick={() =>
+setSelected(
+blogs.find(blog => blog.featured)
+)
+}
+>
+Read Featured Article →
+</button>
+
+</div>
+
+</section>
+
+<section className="latest-articles">
+
+<div className="section-header">
+
+<h2>Latest Articles</h2>
+
+<p>
+Explore security, investigation and
+verification insights from our experts.
+</p>
+
+</div>
+
 <div className="blog-grid">
 
-{blogs.map((item)=>(
+{blogs.map((item) => (
 
-<div className="blog-card" key={item.id}>
+<div
+className="blog-card"
+key={item.id}
+>
 
-<img src={item.image} alt={item.title}/>
+<div className="card-image">
+
+<img
+src={item.image}
+alt={item.title}
+/>
+
+</div>
 
 <div className="blog-content">
 
-<span>{item.category}</span>
+<span className="category">
+{item.category}
+</span>
 
 <h3>{item.title}</h3>
 
 <p>{item.desc}</p>
 
-<button onClick={()=>setSelected(item)}>
-Read More →
+<div className="blog-meta">
+
+<span>{item.date}</span>
+
+<span>{item.readTime}</span>
+
+</div>
+
+<button
+onClick={() =>
+setSelected(item)
+}
+>
+Read Article →
 </button>
 
 </div>
@@ -171,28 +362,141 @@ Read More →
 ))}
 
 </div>
+
+</section>
+
+<section className="blog-cta">
+
+<h2>
+Need Professional
+Investigation Services?
+</h2>
+
+<p>
+Our experts are ready to assist with
+investigation, surveillance, cyber security,
+and verification solutions.
+</p>
+
+<button
+  onClick={() => navigate("/contact")}>
+  Contact Our Team
+</button>
+
+</section>
+
+</>
 )}
 
-{/* READ MORE DETAILS */}
+{/* blog details section.............. */}
+
 {selected && (
 
 <div className="blog-details">
 
 <button
 className="back-btn"
-onClick={()=>setSelected(null)}
+onClick={() => setSelected(null)}
 >
-← Back
+← Back to Articles
 </button>
+
+<div className="details-header">
+
+<span className="details-category">
+{selected.category}
+</span>
+
+<h1>
+{selected.heroTitle}
+</h1>
+
+<p className="details-subtitle">
+{selected.heroSubtitle}
+</p>
+
+<div className="details-meta">
+
+<span>📅 {selected.date}</span>
+
+<span>⏱ {selected.readTime}</span>
+
+<span>👤 {selected.author}</span>
+
+</div>
+
+</div>
+
+<div className="details-image">
 
 <img
 src={selected.image}
 alt={selected.title}
 />
 
-<h1>{selected.title}</h1>
+</div>
 
-<p>{selected.content}</p>
+<div className="details-tags">
+
+{selected.tags.map((tag,index)=>(
+
+<span key={index}>
+#{tag}
+</span>
+
+))}
+
+</div>
+
+<div className="details-content">
+
+{selected.content
+.split("\n\n")
+.map((paragraph,index)=>(
+<p key={index}>
+{paragraph}
+</p>
+))}
+
+</div>
+
+<div className="related-section">
+
+<h2>Related Articles</h2>
+
+<div className="related-grid">
+
+{blogs
+.filter(blog =>
+selected.related.includes(blog.id)
+)
+.map(blog => (
+
+<div
+key={blog.id}
+className="related-card"
+onClick={() => {
+window.scrollTo(0,0);
+setSelected(blog);
+}}
+>
+
+<img
+src={blog.image}
+alt={blog.title}
+/>
+
+<h4>{blog.title}</h4>
+
+<p>{blog.readTime}</p>
+
+</div>
+
+))}
+
+</div>
+
+</div>
 
 </div>
 
