@@ -129,24 +129,47 @@ const handleSubmit = async (e) => {
       body: JSON.stringify(payload)
     });
 
-    if (res.ok) {
-      alert("Enquiry submitted successfully ✅");
+    
+  if (res.ok) {
 
-      setFormData({
-        name: "",
-        phone: "",
-        address: "",
-        service: "",
-        requirement: ""
-      });
+  alert("Enquiry submitted successfully ✅");
 
-      setErrors({});
-    } else {
-      alert("Something went wrong ❌");
-    }
-  } catch (err) {
-    alert("Server error ❌");
-  } finally {
+  setFormData({
+    name: "",
+    phone: "",
+    address: "",
+    service: "",
+    requirement: ""
+  });
+
+  setErrors({});
+
+} else {
+
+  const message = await res.text();
+
+  alert(message);
+
+  setFormData({
+    name: "",
+    phone: "",
+    address: "",
+    service: "",
+    requirement: ""
+  });
+
+  setErrors({});
+
+}
+
+
+}
+
+  catch (err) {
+  alert(err.message || "Server error ❌");
+}
+  
+  finally {
     setLoading(false); // ✅ ADD THIS
   }
 };

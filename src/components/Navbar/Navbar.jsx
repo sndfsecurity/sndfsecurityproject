@@ -69,18 +69,39 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
       body: JSON.stringify(payload)
     });
 
-    if (res.ok) {
-      alert("✅ Thank you! Our team will contact you shortly.");
-      setShowModal(false);
-      setName("");
-      setPhone("");
-      setMsg("");
-    } else {
-      alert("Error ❌");
-    }
-  } catch (err) {
-    console.error(err);
-  }
+   
+  if (res.ok) {
+
+  alert("✅ Thank you! Our team will contact you shortly.");
+
+  setShowModal(false);
+  setName("");
+  setPhone("");
+  setMsg("");
+
+} else {
+
+  const message = await res.text();
+
+  alert(message);
+
+  // ✅ Clear form
+  setName("");
+  setPhone("");
+  setMsg("");
+
+  // ✅ Close popup
+  setShowModal(false);
+
+}
+
+} 
+  
+  catch (err) {
+  console.error(err);
+  alert("Server error ❌");
+}
+
 };
 
   return (
