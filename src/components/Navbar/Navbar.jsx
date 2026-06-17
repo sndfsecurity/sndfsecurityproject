@@ -31,11 +31,12 @@ function Navbar() {
   const [phone, setPhone] = useState("");
   const [msg, setMsg] = useState("");
   const [errors, setErrors] = useState({ name: "", phone: "" });
+  const [loading, setLoading] = useState(false);
 
   const API = import.meta.env.VITE_API_URL;
 
-  
-  const handleSubmit = async () => {
+const handleSubmit = async () => {
+
   let newErrors = {};
 
 if (!name.trim()) {
@@ -51,6 +52,8 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
     setErrors(newErrors);
     return;
   }
+
+  setLoading(true);
 
   const payload = {
   name,
@@ -74,6 +77,8 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
 
   alert("✅ Thank you! Our team will contact you shortly.");
 
+  setLoading(false);
+
   setShowModal(false);
   setName("");
   setPhone("");
@@ -84,6 +89,8 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
   const message = await res.text();
 
   alert(message);
+
+  setLoading(false);
 
   // ✅ Clear form
   setName("");
@@ -99,6 +106,7 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
   
   catch (err) {
   console.error(err);
+  setLoading(false);
   alert("Server error ❌");
 }
 
@@ -150,12 +158,13 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
             <textarea
               placeholder="Requirement"
               value={msg}
-              onChange={(e) => setMsg(e.target.value)}
-            ></textarea>
+              onChange={(e) => setMsg(e.target.value)}>
+              </textarea>
 
-            <button className="sn-submit-btn" onClick={handleSubmit}>
-             Send Request 🚀
+            <button className="sn-submit-btn" onClick={handleSubmit} disabled={loading}>
+              {loading ? "Sending..." : "Send Request 🚀"}
             </button>
+            
           </div>
         </div>
       )}
