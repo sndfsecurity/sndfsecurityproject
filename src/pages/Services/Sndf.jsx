@@ -6,6 +6,22 @@ import { Helmet } from "react-helmet-async";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaWhatsapp, FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+
+import guard1 from "../../assets/images/guard1.webp";
+import guard2 from "../../assets/images/guard2.webp";
+import guard3 from "../../assets/images/guard3.webp";
+import about1 from "../../assets/images/about1.webp";
+
+
+
+
+
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 import {
   FaUserShield,
@@ -70,14 +86,58 @@ const scrollToForm = () => {
 
         </div>
 
-        {/* RIGHT IMAGE */}
         <div className="sndfSplitHero-right">
-          <img
-            src={sndf}
-            alt="Professional security guards from SNDF team"
-            loading="lazy"/>
-        </div>
 
+  <Swiper
+    modules={[Autoplay, Pagination]}
+    slidesPerView={1}
+    loop={true}
+    speed={900}
+    autoplay={{
+      delay: 2500,
+      disableOnInteraction: false,
+    }}
+    pagination={{
+      clickable: true,
+    }}
+    className="sndfHeroSwiper"
+  >
+
+    <SwiperSlide>
+      <img
+        src={guard1}
+        alt="Security Guard 1"
+        loading="lazy"
+      />
+    </SwiperSlide>
+
+    <SwiperSlide>
+      <img
+        src={guard2}
+        alt="Security Guard 2"
+        loading="lazy"
+      />
+    </SwiperSlide>
+
+    <SwiperSlide>
+      <img
+        src={guard3}
+        alt="Security Guard 3"
+        loading="lazy"
+      />
+    </SwiperSlide>
+
+    <SwiperSlide>
+      <img
+        src={about1}
+        alt="Security Guard 4"
+        loading="lazy"
+      />
+    </SwiperSlide>
+
+  </Swiper>
+
+</div>
       </div>
 
     </section>
