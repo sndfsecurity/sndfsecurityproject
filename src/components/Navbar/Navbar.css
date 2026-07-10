@@ -553,3 +553,117 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+
+.logo-info-text{
+    margin-left:12px;
+    color:#FFD700;
+    font-size:15px;
+    font-weight:700;
+    white-space:nowrap;
+    text-decoration:none;
+    animation:blinkText 1s infinite;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+}
+
+.logo-info-text:hover{
+    color:#ffffff;
+    transform:scale(1.05);
+}
+
+@keyframes blinkText{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:.2;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-wrap:nowrap;
+}
+
+.logo-info-text{
+    margin-left:10px;
+    color:#FFD700;
+    font-size:15px;
+    font-weight:700;
+    white-space:nowrap;
+    animation:blinkText 1s infinite;
+    flex-shrink:0;
+}
+
+@keyframes blinkText{
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity:.2;
+    }
+}
+
+@media (max-width:991px){
+
+.logo-container{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:5px;
+    overflow-x:auto;
+    scrollbar-width:none;
+}
+
+.logo-container::-webkit-scrollbar{
+    display:none;
+}
+
+.main-logo{
+    width:55px;
+}
+
+.sub-logo{
+    width:32px;
+    height:32px;
+}
+
+.logo-info-text{
+    font-size:11px;
+    margin-left:8px;
+    min-width:max-content;
+}
+}
+
+/* Desktop */
+.logo-info-text{
+    margin-left:12px;
+    color:#FFD700;
+    font-size:15px;
+    font-weight:700;
+    white-space:nowrap;
+    animation:blinkText 1s infinite;
+}
+
+/* Blink Animation */
+@keyframes blinkText{
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity:.2;
+    }
+}
+
+/* Mobile - Hide Text */
+@media (max-width:991px){
+    .logo-info-text{
+        display:none !important;
+    }
+} 

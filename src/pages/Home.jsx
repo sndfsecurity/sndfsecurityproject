@@ -5,7 +5,12 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import aboutImg from "../assets/images/hero.webp"; 
-import Img2 from "../assets/images/IMG2.webp"; 
+import Img2 from "../assets/images/IMG2.webp";
+
+import About1 from "../assets/images/about1.webp";
+import owl1 from "../assets/images/owl1.webp";
+import spy7 from "../assets/images/spy7.webp";
+import dicc6 from "../assets/images/dicc6.webp";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,23 +24,6 @@ import { Autoplay } from "swiper/modules";
 import Counter from "../components/Counter";
 
 
-<Swiper
-  modules={[Autoplay, Pagination]}
-  loop={true}
-  speed={800}
-  autoplay={{
-    delay: 2000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  }}
-  pagination={{ clickable: true }}
-  spaceBetween={25}
-  breakpoints={{
-    0: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 },
-  }}
-></Swiper>
 
 import {
   FaUserShield,
@@ -94,7 +82,7 @@ const badgesData = [
       icon: '✓',
       title: 'Govt Registered',
       description: 'Authorized by Indian authorities',
-      highlight: 'MSME & SSI Registered',
+      highlight: 'MSME Registered',
     },
     {
       id: 3,
@@ -207,55 +195,90 @@ const badgesData = [
 
 
 
-      {/* about section.............................................. */}
-      <section className="about">
-      <div className="about-container">
+     <section className="about">
+  <div className="about-container">
 
-        {/* IMAGE */}
-        <div className="about-image">
-          <img src={Img2} alt="about" />
-        </div>
+    {/* IMAGE */}
+    <div className="about-image">
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        slidesPerView={1}
+        loop
+        speed={1000}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+      >
+        <SwiperSlide>
+          <img src={About1} alt="Security Team" />
+        </SwiperSlide>
 
-        {/* CONTENT */}
-        <div className="about-content">
-          <span className="about-tag">WELCOME TO SNDF</span>
+        <SwiperSlide>
+          <img src={owl1} alt="Security Team" />
+        </SwiperSlide>
 
-          <h2>
-            Your Trusted Partner in <br />
-            <span>Security & Investigation</span>
-          </h2>
+        <SwiperSlide>
+          <img src={spy7} alt="Security Team" />
+        </SwiperSlide>
 
-          <p>
-            At SNDF, we go beyond basic security services. We deliver
-            reliable, discreet and result-driven solutions designed
-            to protect what matters most to our clients.
-          </p>
+        <SwiperSlide>
+          <img src={dicc6} alt="Security Team" />
+        </SwiperSlide>
+      </Swiper>
+    </div>
 
-          <p>
-            Our experienced professionals combine real-world expertise
-            with modern technology to handle complex cases with
-            precision and confidentiality.
-          </p>
+    {/* CONTENT */}
+    <div className="about-content">
 
-          {/* FEATURES */}
-          <div className="about-features">
-            <div className="feature">✔ 3500+ Happy Clients</div>
-            <div className="feature">✔ Quick Response Team</div>
-            <div className="feature">✔ Verified Professionals</div>
-            <div className="feature">✔ 24/7 Support</div>
-          </div>
+      <span className="about-tag">
+        WELCOME TO SNDF
+      </span>
 
-          {/* BUTTON */}
-          <Link to="/about" className="about-btn">
-          Read More →
-        </Link>
+      <h2>
+        Your Trusted Partner in
+        <br />
+        Security,
+        <span>
+          Investigation &
+          <br />
+          Surveillance
+        </span>
+      </h2>
 
-        </div>
+      <p>
+        We provide professional Security Guard Services,
+        Detective & Investigation, CCTV Surveillance,
+        Security Consultancy and Training solutions.
+        With experienced professionals and advanced
+        technology, we ensure reliable protection,
+        confidentiality and complete customer
+        satisfaction.
+      </p>
 
+      <p>
+        Our experienced professionals combine
+        real-world expertise with modern technology
+        to handle complex cases with precision and
+        confidentiality.
+      </p>
+
+      <div className="about-features">
+        <div className="feature">✔ 3500+ Happy Clients</div>
+        <div className="feature">✔ Quick Response Team</div>
+        <div className="feature">✔ Verified Professionals</div>
+        <div className="feature">✔ 24×7 Support</div>
       </div>
-    </section>
-     
-     
+
+      <Link to="/about" className="about-btn">
+        Read More →
+      </Link>
+
+    </div>
+
+  </div>
+</section>
 
 
       {/* ================= SERVICES ================= */}
@@ -526,12 +549,11 @@ const badgesData = [
     {/* LEFT SIDE */}
     <div className="cta-left">
       <h2>
-        Confidential <span>Investigation</span> Services
+        Trusted Security, <span>Investigation</span>  & Surveillance Services
       </h2>
 
       <p>
-        Get professional and discreet investigation support from India's
-        trusted security network. We ensure complete privacy and accurate results.
+        Delivering trusted Security Guard Services, Detective Investigation, CCTV Surveillance, and Professional Training with integrity, advanced technology, and experienced professionals.
       </p>
 
       <div className="cta-features">
