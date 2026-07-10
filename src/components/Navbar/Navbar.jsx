@@ -305,7 +305,9 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
         />
       </Link>
 
-      
+     <span className="logo-info-text">
+  👈 CLICK LOGOS FOR MORE INFO
+</span>
 
     </div>
   </div>
