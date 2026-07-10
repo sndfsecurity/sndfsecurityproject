@@ -695,3 +695,43 @@ body {
     }
 
 }
+
+/* Desktop Only */
+
+.logo-info-text{
+    display:inline-block;
+    color:#FFD700; /* Golden Yellow */
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    animation:blinkGlow 1.2s infinite;
+}
+
+/* Smooth Blink + Glow */
+
+@keyframes blinkGlow{
+
+    0%,100%{
+        opacity:1;
+        color:#FFD700;
+        text-shadow:
+            0 0 5px #FFD700,
+            0 0 10px #FFD700,
+            0 0 18px #FFC107;
+    }
+
+    50%{
+        opacity:.25;
+        color:#FFD700;
+        text-shadow:none;
+    }
+}
+
+/* Hide on Tablet & Mobile */
+
+@media (max-width:991px){
+    .logo-info-text{
+        display:none;
+    }
+}

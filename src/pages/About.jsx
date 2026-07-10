@@ -54,11 +54,11 @@ const About = () => {
             <h3>Professional Investigation Services</h3>
 
             <p className="common-text">
-             NDF / SNDF officially expanded its professional operations in<strong>2022 from Pune, Maharashtra</strong>, beginning with Professional Detective Investigation Services. Over time, we diversified our services to meet the growing demand for security, surveillance, investigation, and professional training.
+             NDF/SNDF officially expanded its professional operations in <strong>2022 from Pune, Maharashtra</strong>, beginning with Professional Detective Investigation Services. Over time, we diversified our services to meet the growing demand for security, surveillance, investigation, and professional training.
 
 Today, our organization operates through specialized divisions, including <strong>SNDF Security Services,</strong> <strong>Owl Security Surveillance, and Spy Defence Academy, offering Security Guard Services, Detective Investigations, 24×7 CCTV Monitoring, Defence & Security Training, and related professional solutions.</strong>
 
-Managed under <strong>SNDF Support Services Pvt. Ltd.,</strong> our experienced team of defence personnel, security professionals, investigators, and surveillance experts is committed to delivering reliable, confidential, and technology-driven services with the highest standards of quality and customer satisfaction.
+Managed under <strong>SNDF Support Services Pvt.Ltd.,</strong> our experienced team of defence personnel, security professionals, investigators, and surveillance experts is committed to delivering reliable, confidential, and technology-driven services with the highest standards of quality and customer satisfaction.
             </p>
           </div> 
         </section>
