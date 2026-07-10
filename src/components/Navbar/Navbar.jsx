@@ -32,8 +32,9 @@ function Navbar() {
   const [msg, setMsg] = useState("");
   const [errors, setErrors] = useState({ name: "", phone: "" });
   const [loading, setLoading] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
-  const API = import.meta.env.VITE_API_URL;
+const API = import.meta.env.VITE_API_URL;
 
 const handleSubmit = async () => {
 
@@ -75,14 +76,14 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
    
   if (res.ok) {
 
-  alert("✅ Thank you! Our team will contact you shortly.");
-
   setLoading(false);
 
   setShowModal(false);
   setName("");
   setPhone("");
   setMsg("");
+
+  setShowSuccess(true);
 
 } else {
 
@@ -168,6 +169,41 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
           </div>
         </div>
       )}
+
+      {showSuccess && (
+  <div className="navbar-success-overlay">
+
+    <div className="navbar-success-popup">
+
+      <div className="navbar-success-icon">
+        ✅
+      </div>
+
+      <h2>Thank You!</h2>
+
+      <p className="navbar-success-main">
+        Your enquiry has been submitted successfully.
+      </p>
+
+      <p className="navbar-success-sub">
+        Our team will contact you shortly.
+      </p>
+
+      <p className="navbar-success-footer">
+        Thank you for connecting with <strong>S.N.D.F.</strong>
+      </p>
+
+      <button
+        className="navbar-success-btn"
+        onClick={() => setShowSuccess(false)}
+      >
+        OK
+      </button>
+
+    </div>
+
+  </div>
+)}
 
       {/* ===== TOP BAR (UNCHANGED EXACTLY) ===== */}
       <div className="py-2 px-3 d-flex justify-content-between align-items-center">

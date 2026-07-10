@@ -59,6 +59,8 @@ const [loading, setLoading] = useState(false);
 
 const [errors, setErrors] = useState({});
 
+const [showSuccess, setShowSuccess] = useState(false);
+
 const handleChange = (e) => {
   const { id, value } = e.target;
 
@@ -132,7 +134,7 @@ const handleSubmit = async (e) => {
     
   if (res.ok) {
 
-  alert("Enquiry submitted successfully ✅");
+ setShowSuccess(true);
 
   setFormData({
     name: "",
@@ -403,6 +405,41 @@ const handleSubmit = async (e) => {
 
   </div>
 </section>
+
+
+{showSuccess && (
+  <div className="success-overlay">
+
+    <div className="success-popup">
+
+      <div className="success-icon">
+        ✅
+      </div>
+
+      <h2>Thank You!</h2>
+
+      <p className="success-message">
+        Your enquiry has been submitted successfully.
+      </p>
+
+      <p className="success-subtext">
+        Our team will contact you shortly.
+      </p>
+
+      <p className="success-footer">
+        Thank you for connecting with <strong>S.N.D.F.</strong>
+      </p>
+
+      <button
+        className="success-btn"
+        onClick={() => setShowSuccess(false)}>
+        OK
+      </button>
+
+    </div>
+
+  </div>
+)}
    
   
 </main>
