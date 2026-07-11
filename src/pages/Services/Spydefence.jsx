@@ -3,6 +3,12 @@ import "./Spydefence.css";
 
 import spy from "../../assets/images/academy1.webp";
 
+import spy11 from "../../assets/images/spy11.webp";
+import spy12 from "../../assets/images/spy12.webp";
+import spy7 from "../../assets/images/spy7.webp";
+import spy8 from "../../assets/images/spy8.webp";
+
+
 import { FiPhoneCall } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
@@ -10,6 +16,11 @@ import { Helmet } from "react-helmet-async";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 import {
   GiPistolGun,
@@ -80,13 +91,39 @@ const Spydefence = () => {
           </div>
         </div>
 
-        {/* RIGHT IMAGE */}
         <div className="spy-hero-image">
-          <img
-            src={spy}
-            alt="Spy Defence Training Camp"
-          />
-        </div>
+
+  <Swiper
+    modules={[Autoplay, Pagination]}
+    slidesPerView={1}
+    loop={true}
+    autoplay={{
+      delay: 3000,
+      disableOnInteraction: false,
+    }}
+    pagination={{ clickable: true }}
+    className="heroSwiper"
+  >
+
+    <SwiperSlide>
+      <img src={spy11} alt="Spy Defence 1" />
+    </SwiperSlide>
+
+    <SwiperSlide>
+      <img src={spy12} alt="Spy Defence 2" />
+    </SwiperSlide>
+
+    <SwiperSlide>
+      <img src={spy7} alt="Spy Defence 3" />
+    </SwiperSlide>
+
+    <SwiperSlide>
+      <img src={spy8} alt="Spy Defence 4" />
+    </SwiperSlide>
+
+  </Swiper>
+
+</div>
 
       </div>
     </section>

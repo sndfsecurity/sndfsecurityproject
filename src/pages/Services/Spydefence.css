@@ -122,27 +122,37 @@ html {
   color: #0a1f44;
   transform: translateY(-2px);
 }
-
-/* IMAGE */
-.spy-hero-image {
-  flex: 1;
-  text-align: center;
-  position: relative;
-  margin-top: 100px;
+.spy-hero-image{
+    flex:1;
+    text-align:center;
+    position:relative;
+    margin-top:100px;
 }
 
-/* BIGGER IMAGE */
-.spy-hero-image img {
-  width: 100%;
-  max-width: 540px;
-  border-radius: 16px;
-  animation: float 4s ease-in-out infinite;
-  transition: 0.4s;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+.heroSwiper{
+    width:100%;
+    max-width:540px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
 }
 
-.spy-hero-image img:hover {
-  transform: scale(1.05);
+.heroSwiper img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    display:block;
+    border-radius:18px;
+}
+
+.heroSwiper .swiper-pagination-bullet{
+    background:#fff;
+    opacity:.7;
+}
+
+.heroSwiper .swiper-pagination-bullet-active{
+    background:#ff3b3b;
+    opacity:1;
 }
 
 /* FLOAT ANIMATION */
@@ -1216,5 +1226,94 @@ html {
     font-size: 16px;
     padding: 12px;
   }
+
+}
+
+/* Desktop */
+.spy-hero-image{
+    flex:1;
+    margin-top:100px;
+}
+
+.heroSwiper{
+    width:100%;
+    max-width:540px;
+    margin:0 auto;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.heroSwiper img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    display:block;
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+.spy-hero-container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.spy-hero-image{
+    width:100%;
+    margin-top:40px;
+}
+
+.heroSwiper{
+    max-width:100%;
+}
+
+.heroSwiper img{
+    height:400px;
+}
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+.spy-hero{
+    padding-top:140px;
+}
+
+.spy-hero-image{
+    width:100%;
+    margin-top:30px;
+}
+
+.heroSwiper{
+    width:100%;
+    max-width:100%;
+    border-radius:12px;
+}
+
+.heroSwiper img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.heroSwiper .swiper-pagination{
+    bottom:8px !important;
+}
+
+.heroSwiper .swiper-pagination-bullet{
+    width:8px;
+    height:8px;
+}
+
+}
+
+/* Small Mobile */
+@media (max-width:480px){
+
+.heroSwiper img{
+    height:220px;
+}
 
 }
