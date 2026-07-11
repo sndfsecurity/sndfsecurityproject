@@ -236,7 +236,7 @@ const badgesData = [
         WELCOME TO SNDF
       </span>
 
-      <h2>
+      {/* <h2>
         Your Trusted Partner in
         <br />
         Security,
@@ -245,7 +245,10 @@ const badgesData = [
           <br />
           Surveillance
         </span>
-      </h2>
+      </h2> */}
+
+
+      <h2>Your Trusted Partner in Security, <span>Investigation & Surveillance</span></h2>
 
       <p>
         We provide professional Security Guard Services,
