@@ -96,13 +96,18 @@ const Spydefence = () => {
   <Swiper
     modules={[Autoplay, Pagination]}
     slidesPerView={1}
+    spaceBetween={0}
     loop={true}
+    speed={1000} // Slide animation speed (1 second)
     autoplay={{
-      delay: 3000,
+      delay: 5000, // Image changes every 5 seconds
       disableOnInteraction: false,
+      pauseOnMouseEnter: true,
     }}
-    pagination={{ clickable: true }}
-    className="heroSwiper"
+    pagination={{
+      clickable: true,
+    }}
+    className="owl-slider"
   >
 
     <SwiperSlide>
