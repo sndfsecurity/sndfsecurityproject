@@ -6,6 +6,21 @@ import { Helmet } from "react-helmet-async";
 import { FaEnvelope, FaGalacticRepublic } from "react-icons/fa";
 import { FaWhatsapp, FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 
+
+import owl1 from "../../assets/images/owl1.webp";
+import owl2 from "../../assets/images/owl2.webp";
+import owl3 from "../../assets/images/owl3.webp";
+import owl4 from "../../assets/images/owl4.webp";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+
+
 import {
   FaVideo,
   FaUserShield,
@@ -65,10 +80,41 @@ function Owl() {
             </div>
           </div>
 
-          {/* RIGHT IMAGE */}
-          <div className="owl-hero-right">
-            <img src={owl} alt="Owl surveillance security monitoring service in India" loading="lazy" />
-          </div>
+         <div className="owl-hero-right">
+
+  <Swiper
+  modules={[Autoplay, Pagination]}
+  slidesPerView={1}
+  spaceBetween={0}
+  loop={true}
+  speed={1000} // Slide animation speed (1 second)
+  autoplay={{
+    delay: 5000, // Image changes every 5 seconds
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  }}
+  pagination={{
+    clickable: true,
+  }}
+  className="owl-slider"
+>
+  <SwiperSlide>
+    <img src={owl1} alt="Owl Security Service 1" />
+  </SwiperSlide>
+
+  <SwiperSlide>
+    <img src={owl2} alt="Owl Security Service 2" />
+  </SwiperSlide>
+
+  <SwiperSlide>
+    <img src={owl3} alt="Owl Security Service 3" />
+  </SwiperSlide>
+
+  <SwiperSlide>
+    <img src={owl4} alt="Owl Security Service 4" />
+  </SwiperSlide>
+</Swiper>
+</div>
 
         </div>
       </section>
