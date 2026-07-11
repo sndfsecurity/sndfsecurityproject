@@ -150,6 +150,139 @@
   transition: 0.4s ease;
   box-shadow: 0 15px 40px rgba(0,0,0,0.5);
 }
+/* ===========================
+   HERO
+=========================== */
+
+.owl-hero{
+    width:100%;
+    background:linear-gradient(135deg,#071b45,#08142f);
+
+    padding:200px 0 70px;
+
+    overflow:hidden;
+}
+
+.owl-hero-container{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.owl-hero-left,
+.owl-hero-right{
+    flex:1;
+    min-width:0;
+}
+
+.owl-hero-right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===========================
+   SLIDER
+=========================== */
+
+.owl-slider{
+    width:100%;
+    max-width:700px;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.owl-slider .swiper,
+.owl-slider .swiper-slide{
+    width:100%;
+}
+
+.owl-slider img{
+    width:100%;
+    display:block;
+    aspect-ratio:16/9;
+    object-fit:cover;
+}
+
+.owl-slider .swiper-button-next,
+.owl-slider .swiper-button-prev{
+    display:none !important;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:991px){
+
+    .owl-hero{
+        padding:140px 0 50px;
+    }
+
+    .owl-hero-container{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:35px;
+    }
+
+    .owl-hero-left,
+    .owl-hero-right{
+        width:100%;
+    }
+
+    .owl-slider{
+        max-width:100%;
+    }
+
+    .owl-buttons{
+        justify-content:center;
+    }
+
+    .owl-points{
+        justify-content:center;
+    }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .owl-hero{
+        padding:120px 0 40px;
+    }
+
+    .owl-hero-container{
+        padding:0 15px;
+    }
+
+    .owl-hero-left h1{
+        font-size:34px;
+    }
+
+    .owl-hero-left p{
+        font-size:16px;
+    }
+
+    .owl-buttons{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .owl-btn-primary,
+    .owl-btn-outline{
+        width:100%;
+        max-width:260px;
+    }
+}
 
 /* 🔥 IMAGE HOVER EFFECT */
 .owl-hero-right img:hover {
