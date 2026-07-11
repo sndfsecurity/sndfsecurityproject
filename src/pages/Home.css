@@ -690,8 +690,6 @@
   margin-bottom: 15px;
   letter-spacing: 1px;
   font-size: 19px;
-  text-align: justify;
-  text-justify: inter-word;
   
 }
 
@@ -832,8 +830,6 @@
 
   .about-content p{
     font-size: 18px;
-    text-align: left;
-  
      
   }
 
