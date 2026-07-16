@@ -697,17 +697,62 @@ body {
 }
 
 /* Desktop Only */
-
 .logo-info-text{
     display:inline-block;
-    color:#FFD700; /* Golden Yellow */
-    font-size:15px;
+    color:#FFD700;
+    font-size:14px;
     font-weight:700;
-    letter-spacing:1px;
+    letter-spacing:.5px;
     text-transform:uppercase;
-    animation:blinkGlow 1.2s infinite;
+    white-space:nowrap;
+
+    position:relative;
+    left:-270px;
+    top:-40px;
+
+    animation:softBlink 1.5s ease-in-out infinite;
 }
 
+.blink-arrow{
+    display:inline-block;
+    font-size:16px;
+    color:#f40404;
+    margin-right:3px;
+
+    animation:arrowHighlight 1.5s ease-in-out infinite;
+}
+
+/* Soft Blink + Highlight */
+@keyframes softBlink{
+    0%,100%{
+        opacity:1;
+        text-shadow:
+            0 0 3px #f20f0f,
+            0 0 6px #cd3d20;
+    }
+
+    50%{
+        opacity:.65;
+        text-shadow:none;
+    }
+}
+
+/* Arrow Highlight */
+@keyframes arrowHighlight{
+    0%,100%{
+        opacity:1;
+        transform:translateY(0);
+        text-shadow:
+            0 0 5px #FFD700,
+            0 0 10px #FFD700;
+    }
+
+    50%{
+        opacity:.5;
+        transform:translateY(3px);
+        text-shadow:none;
+    }
+}
 /* Smooth Blink + Glow */
 
 @keyframes blinkGlow{
@@ -735,3 +780,4 @@ body {
         display:none;
     }
 }
+
