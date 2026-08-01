@@ -54,11 +54,11 @@ const About = () => {
             <h3>Professional Investigation Services</h3>
 
             <p className="common-text">
-             NDF/SNDF officially expanded its professional operations in <strong>2022 from Pune, Maharashtra</strong>, beginning with Professional Detective Investigation Services. Over time, we diversified our services to meet the growing demand for security, surveillance, investigation, and professional training.
+             NDF/SNDF officially expanded its professional operations in <strong>2022 from Pune, Maharashtra</strong>, beginning with Professional Detective Investigation Services. Over time, we diversified our services to meet the growing demand for security, surveillance, investigation and professional training.
 
-Today, our organization operates through specialized divisions, including <strong>SNDF Security Services,</strong> <strong>Owl Security Surveillance, and Spy Defence Academy, offering Security Guard Services, Detective Investigations, 24×7 CCTV Monitoring, Defence & Security Training, and related professional solutions.</strong>
+Today, our organization operates through specialized divisions, including <strong>SNDF Security Services,</strong> <strong>Owl Security Surveillance, and Spy Defence Academy, offering Security Guard Services, Detective Investigations, 24×7 CCTV Monitoring, Defence & Security Training and related professional solutions.</strong>
 
-Managed under <strong>SNDF Support Services Pvt.Ltd.,</strong> our experienced team of defence personnel, security professionals, investigators, and surveillance experts is committed to delivering reliable, confidential, and technology-driven services with the highest standards of quality and customer satisfaction.
+Managed under <strong>SNDF Support Services Pvt.Ltd.,</strong> our experienced team of defence personnel, security professionals, investigators and surveillance experts is committed to delivering reliable, confidential and technology-driven services with the highest standards of quality and customer satisfaction.
             </p>
           </div> 
         </section>
@@ -87,14 +87,14 @@ Managed under <strong>SNDF Support Services Pvt.Ltd.,</strong> our experienced t
           <div className="mv-box left">
             <h2>Our Mission</h2>
             <p>
-              To provide reliable, technology-driven Security, Investigation, Surveillance, and Training solutions with professionalism, integrity, and excellence.
+              To provide reliable, technology-driven Security, Investigation, Surveillance and Training solutions with professionalism, integrity and excellence.
             </p>
           </div>
 
           <div className="mv-box right">
             <h2>Our Vision</h2>
             <p>
-              To become India's leading integrated security solutions company, recognized for innovation, trust, quality, and customer satisfaction.
+              To become India's leading integrated security solutions company, recognized for innovation, trust, quality and customer satisfaction.
             </p>
           </div>
         </section>
@@ -130,7 +130,7 @@ Managed under <strong>SNDF Support Services Pvt.Ltd.,</strong> our experienced t
         <section className="need-help fade-up">
           <h2>Need Professional Help?</h2>
           <p>
-            Connect with us today for secure, professional, and confidential solutions.
+            Connect with us today for secure, professional and confidential solutions.
           </p>
 
           <button onClick={() => navigate("/contact#enquiry-form")}>
