@@ -1,352 +1,365 @@
-/* =========================
+/* =========================================
    CAREER PAGE
-========================= */
+========================================= */
 
 .career-page {
   font-family: Arial, sans-serif;
   background: #f4f6f9;
-  padding-top: 148px;
-  min-height: 100vh;
-}
-
-
-/* =========================
-   NOTICE BAR
-========================= */
-
-.notice-bar {
-  background: #ffcc00;
-  text-align: center;
-  font-weight: bold;
-  padding: 14px 15px;
-}
-
-.notice-bar p {
-  margin: 0;
-  letter-spacing: 0.8px;
-  font-size: 16px;
-}
-
-
-/* =========================
-   CAREER HEADER
-========================= */
-
-.career-header {
-  text-align: center;
-  background: #0e2c5f;
-  color: #fff;
-  padding: 28px 15px 22px;
-}
-
-.career-header img {
-  width: 150px;
-  display: block;
-  margin: 0 auto 12px;
-}
-
-.career-header h1 {
-  margin: 0;
-  letter-spacing: 0.8px;
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.career-header p {
-  margin: 10px 0 0;
-  font-size: 19px;
-  letter-spacing: 0.8px;
-}
-
-
-/* =========================
-   COMING SOON SECTION
-========================= */
-
-.recruitment-coming-soon {
-  max-width: 1050px;
-  margin: 28px auto 22px;
-  padding: 34px 35px;
-  background: #ffffff;
-  border-radius: 10px;
-  border-top: 5px solid #0e2c5f;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
-  text-align: center;
-}
-
-.coming-soon-icon {
-  width: 55px;
-  height: 55px;
-  margin: 0 auto 12px;
+  min-height: calc(100vh - 140px);
+  padding: 35px 20px 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff4cc;
-  border-radius: 50%;
-  font-size: 27px;
 }
 
-.coming-soon-label {
+
+/* =========================================
+   MAIN RECRUITMENT SECTION
+========================================= */
+
+.career-coming-soon {
+  width: 100%;
+  max-width: 1050px;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 12px 40px rgba(14, 44, 95, 0.12);
+}
+
+
+/* =========================================
+   TOP ACCENT
+========================================= */
+
+.career-coming-soon::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    #0e2c5f,
+    #173f7a,
+    #e63946
+  );
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.career-content {
+  position: relative;
+  text-align: center;
+  padding: 65px 70px 55px;
+}
+
+
+/* =========================================
+   SMALL LABEL
+========================================= */
+
+.career-label {
   display: inline-block;
-  color: #0e2c5f;
-  font-size: 13px;
+  color: #e63946;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 1.5px;
-  margin-bottom: 8px;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  margin-bottom: 18px;
 }
 
-.recruitment-coming-soon h2 {
-  margin: 0 0 12px;
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.career-content h1 {
+  margin: 0;
   color: #0e2c5f;
-  font-size: 32px;
+  font-size: 52px;
   font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
 }
 
-.recruitment-coming-soon > p {
-  max-width: 850px;
-  margin: 0 auto;
-  color: #444;
-  font-size: 16px;
-  line-height: 1.7;
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.career-description {
+  max-width: 760px;
+  margin: 22px auto 0;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.75;
   letter-spacing: 0.2px;
 }
 
 
-/* =========================
-   STAY CONNECTED
-========================= */
+/* =========================================
+   DIVIDER
+========================================= */
 
-.stay-connected {
-  max-width: 720px;
-  margin: 22px auto 0;
-  padding: 16px 20px;
-  background: #eef4fb;
-  border-left: 4px solid #0e2c5f;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.stay-connected strong {
-  color: #0e2c5f;
-  font-size: 16px;
-}
-
-.stay-connected span {
-  color: #555;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-
-/* =========================
-   IMPORTANT INFORMATION
-========================= */
-
-.recruitment-info {
-  max-width: 1050px;
-  margin: 0 auto 35px;
-  padding: 25px 30px;
-  background: #ffffff;
+.career-divider {
+  width: 70px;
+  height: 3px;
+  background: #e63946;
+  margin: 30px auto;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
 
-.recruitment-info h2 {
-  margin: 0 0 18px;
+
+/* =========================================
+   UPDATE BOX
+========================================= */
+
+.career-update-box {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 22px 25px;
+  background: #f5f8fc;
+  border: 1px solid #e2e8f1;
+  border-left: 4px solid #0e2c5f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-align: left;
+}
+
+
+/* =========================================
+   UPDATE ICON
+========================================= */
+
+.update-icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 50%;
+  background: #0e2c5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(14, 44, 95, 0.18);
+}
+
+.update-icon span {
+  font-size: 23px;
+}
+
+
+/* =========================================
+   UPDATE CONTENT
+========================================= */
+
+.update-content h3 {
+  margin: 0 0 6px;
   color: #0e2c5f;
-  font-size: 27px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.info-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.info-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 11px 14px;
-  background: #f7f9fc;
-  border-radius: 6px;
-}
-
-.info-item span {
-  color: #16803a;
   font-size: 17px;
-  font-weight: bold;
-  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: 0.3px;
 }
 
-.info-item p {
+.update-content p {
   margin: 0;
-  color: #444;
+  color: #666;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* =========================================
+   STATUS
+========================================= */
 
-@media (max-width: 768px) {
+.career-status {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #0e2c5f;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================
+   STATUS DOT
+========================================= */
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  background: #e63946;
+  border-radius: 50%;
+  display: inline-block;
+  animation: careerPulse 1.8s infinite;
+}
+
+
+@keyframes careerPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.35);
+  }
+
+  70% {
+    box-shadow: 0 0 0 7px rgba(230, 57, 70, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(230, 57, 70, 0);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
 
   .career-page {
-    padding-top: 130px;
+    padding: 30px 18px 40px;
   }
 
-  .notice-bar {
-    padding: 12px 10px;
+  .career-content {
+    padding: 55px 45px 45px;
   }
 
-  .notice-bar p {
-    font-size: 14px;
+  .career-content h1 {
+    font-size: 43px;
   }
 
-  .career-header {
-    padding: 24px 15px 20px;
-  }
-
-  .career-header img {
-    width: 110px;
-    margin-bottom: 10px;
-  }
-
-  .career-header h1 {
-    font-size: 28px;
-  }
-
-  .career-header p {
+  .career-description {
     font-size: 16px;
-  }
-
-  .recruitment-coming-soon {
-    margin: 22px 18px 18px;
-    padding: 28px 22px;
-  }
-
-  .recruitment-coming-soon h2 {
-    font-size: 27px;
-  }
-
-  .recruitment-coming-soon > p {
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  .recruitment-info {
-    margin: 0 18px 25px;
-    padding: 22px 20px;
-  }
-
-  .recruitment-info h2 {
-    font-size: 24px;
   }
 }
 
 
-/* =========================
+/* =========================================
    MOBILE
-========================= */
+========================================= */
 
 @media (max-width: 600px) {
 
   .career-page {
-    padding-top: 115px;
+    min-height: calc(100vh - 115px);
+    padding: 20px 12px 30px;
   }
 
-  .notice-bar {
-    padding: 11px 8px;
+  .career-coming-soon {
+    border-radius: 13px;
   }
 
-  .notice-bar p {
-    font-size: 13px;
-    letter-spacing: 0.4px;
+  .career-coming-soon::before {
+    height: 4px;
   }
 
-  .career-header {
-    padding: 20px 12px 18px;
+  .career-content {
+    padding: 42px 18px 35px;
   }
 
-  .career-header img {
-    width: 90px;
-    margin-bottom: 10px;
-  }
-
-  .career-header h1 {
-    font-size: 21px;
-    line-height: 1.35;
-    letter-spacing: 0.4px;
-  }
-
-  .career-header p {
-    font-size: 14px;
-    margin-top: 7px;
-  }
-
-  .recruitment-coming-soon {
-    margin: 18px 12px;
-    padding: 24px 16px;
-    border-top-width: 4px;
-  }
-
-  .coming-soon-icon {
-    width: 48px;
-    height: 48px;
-    font-size: 23px;
-  }
-
-  .coming-soon-label {
+  .career-label {
     font-size: 11px;
-    letter-spacing: 1.2px;
-  }
-
-  .recruitment-coming-soon h2 {
-    font-size: 23px;
-    line-height: 1.3;
-    margin-bottom: 10px;
-  }
-
-  .recruitment-coming-soon > p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  .stay-connected {
-    margin-top: 18px;
-    padding: 14px;
-  }
-
-  .stay-connected strong {
-    font-size: 14px;
-  }
-
-  .stay-connected span {
-    font-size: 13px;
-  }
-
-  .recruitment-info {
-    margin: 0 12px 20px;
-    padding: 20px 15px;
-  }
-
-  .recruitment-info h2 {
-    font-size: 21px;
+    letter-spacing: 1.4px;
     margin-bottom: 14px;
   }
 
-  .info-item {
-    padding: 10px 11px;
+  .career-content h1 {
+    font-size: 30px;
+    line-height: 1.25;
+    letter-spacing: 0;
   }
 
-  .info-item p {
+  .career-description {
+    margin-top: 17px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .career-divider {
+    width: 55px;
+    height: 3px;
+    margin: 23px auto;
+  }
+
+  .career-update-box {
+    padding: 17px 15px;
+    gap: 13px;
+    border-left-width: 3px;
+  }
+
+  .update-icon {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
+  }
+
+  .update-icon span {
+    font-size: 19px;
+  }
+
+  .update-content h3 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .update-content p {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  .career-status {
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .status-dot {
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .career-content {
+    padding: 35px 14px 30px;
+  }
+
+  .career-content h1 {
+    font-size: 27px;
+  }
+
+  .career-description {
     font-size: 13px;
+  }
+
+  .career-update-box {
+    padding: 15px 12px;
+  }
+
+  .update-icon {
+    width: 39px;
+    height: 39px;
+    min-width: 39px;
+  }
+
+  .update-icon span {
+    font-size: 17px;
   }
 }
