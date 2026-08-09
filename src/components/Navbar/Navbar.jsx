@@ -212,10 +212,10 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
 
         <div className="scroll-container">
           <div className="scroll-text">
-            Welcome to SNDF – Thank you for visiting our website. &nbsp;&nbsp;&nbsp;
-            SNDF वेबसाइट पर आपका स्वागत है – यहाँ आने के लिए आपका धन्यवाद। &nbsp;&nbsp;&nbsp;
-            SNDF वेबसाइटवर आपले स्वागत आहे – येथे भेट दिल्याबद्दल धन्यवाद।
-          </div>
+  NDF Recruitment Date will be announced soon – Stay tuned for further updates. &nbsp;&nbsp;&nbsp;
+  NDF भर्ती की तारीख जल्द ही घोषित की जाएगी – आगे की जानकारी के लिए जुड़े रहें। &nbsp;&nbsp;&nbsp;
+  NDF भरतीची तारीख लवकरच जाहीर करण्यात येणार आहे – पुढील माहितीसाठी संपर्कात रहा।
+</div>
         </div>
 
         <div className="d-flex gap-2">
