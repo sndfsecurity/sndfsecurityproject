@@ -252,7 +252,7 @@
 
   .career-page {
     min-height: calc(100vh - 115px);
-    padding: 20px 12px 30px;
+    padding: 60 12px 30px;
   }
 
   .career-coming-soon {
@@ -338,7 +338,7 @@
 @media (max-width: 380px) {
 
   .career-content {
-    padding: 35px 14px 30px;
+    padding: 60px 14px 30px;
   }
 
   .career-content h1 {
