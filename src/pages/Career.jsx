@@ -1,147 +1,98 @@
 import React from "react";
 import "./Career.css";
-import logo from "../assets/images/ndf-logo.webp"; 
+import logo from "../assets/images/ndf-logo.webp";
 
 const Career = () => {
   return (
     <div className="career-page">
 
+      {/* TOP NOTICE */}
       <div className="notice-bar">
-        <p>⚠️ Latest Update: NDF Special Entry Recruitment 2025-26 is Closed</p>
+        <p>📢 NDF / SNDF Recruitment 2026–27 Coming Soon</p>
       </div>
 
+      {/* HEADER */}
       <div className="career-header">
-        <img src={logo} alt="NDF Logo" />
+        <img
+          src={logo}
+          alt="Nationalist Detective Force NDF Logo"
+        />
 
-        <h1>Start Your Career with Nationalist Detective Force (NDF)</h1>
-        <p>Official Recruitment Portal 2025-26</p>
+        <h1>
+          Start Your Career with Nationalist Detective Force (NDF)
+        </h1>
+
+        <p>
+          NDF / SNDF Recruitment 2026–27
+        </p>
       </div>
 
-      <div className="notice-board">
-        <h2>📢 Notice Board</h2>
-        <ul>
-          {/* <li className="blink">🚨 Special Entry Recruitment 2025-26 Started [click apply button]</li> */}
-          <li>Recruitment 2025-26 (615 Posts) - CLOSED</li>
-        </ul>
-      </div>
+      {/* RECRUITMENT UPDATE */}
+      <section className="recruitment-coming-soon">
 
-      <div className="table-section">
-        <h2>📄 Recruitment Details</h2>
-
-        <div className="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Post Name</th>
-                <th>Advertisement No.</th>
-                <th>Location</th>
-                <th>Vacancies</th>
-                <th>Last Date</th>
-                <th>Status</th>
-
-                {/* <th>Apply</th> */}
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr className="highlight">
-                <td>Detective (NDF)</td>
-                <td>NDF/SE/2025</td>
-                <td>All India</td>
-                <td>Not Fixed</td>
-                <td>Closed</td>
-                <td><span className="open">CLOSED</span></td>
-
-                {/* <td>
-                  <a
-                    href="https://recruitment.ndfdetective.in/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="apply-btn blink-btn">
-                   Closed
-                  </a>
-                </td> */}
-
-              </tr>
-
-              <tr className="closed-row">
-                <td>Security Guard / Officer</td>
-                <td>NDF/2025</td>
-                <td>All India</td>
-                <td>615</td>
-                <td>Closed</td>
-
-                <td><span className="closed">CLOSED</span></td>
-
-                {/* <td>
-                  <button className="closed-btn">Closed</button>
-                </td> */}
-                
-              </tr>
-            </tbody>
-          </table>
+        <div className="coming-soon-icon">
+          📢
         </div>
 
+        <span className="coming-soon-label">
+          RECRUITMENT UPDATE
+        </span>
 
+        <h2>
+          Recruitment 2026–27 Coming Soon
+        </h2>
 
-        {/* MOBILE RECRUITMENT CARDS */}
-            <div className="mobile-recruitment-cards">
+        <p>
+          NDF / SNDF Recruitment 2026–27 is expected to be announced soon.
+          Complete recruitment details, eligibility criteria, vacancies,
+          application dates and other important information will be shared
+          officially once the recruitment process begins.
+        </p>
 
-              {/* CARD 1 */}
-              <div className="recruitment-card active-card">
-                <h3>Detective (NDF)</h3>
+        <div className="stay-connected">
+          <strong>Stay Connected for Official Updates</strong>
 
-                <p><strong>Advertisement No:</strong> NDF/SE/2025</p>
-                <p><strong>Location:</strong> All India</p>
-                <p><strong>Vacancies:</strong> Not Fixed</p>
-                <p><strong>Last Date:</strong> Closed</p>
-
-                <div className="card-status open-status">
-                  CLOSED
-                </div>
-
-                {/* <a
-                  href="https://recruitment.ndfdetective.in/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mobile-apply-btn blink-btn" >
-                   Closed
-                </a> */}
-              </div>
-
-              {/* CARD 2 */}
-              <div className="recruitment-card closed-card">
-                <h3>Security Guard / Officer</h3>
-
-                <p><strong>Advertisement No:</strong> NDF/2025</p>
-                <p><strong>Location:</strong> All India</p>
-                <p><strong>Vacancies:</strong> 615</p>
-                <p><strong>Last Date:</strong> Closed</p>
-
-                <div className="card-status closed-status">
-                  CLOSED
-                </div>
-
-                {/* <button className="mobile-closed-btn">
-                  Closed
-                </button> */}
-              </div>
-
-            </div>
-
-      </div>
-
-      {/* <div className="important-links">
-        <div className="links-box">
-          <a
-            href="https://recruitment.ndfdetective.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="apply-main-btn blink-btn">
-            📝 Apply Online
-          </a>
+          <span>
+            Keep checking the SNDF website regularly for the latest
+            recruitment announcements and application updates.
+          </span>
         </div>
-      </div> */}
+
+      </section>
+
+      {/* IMPORTANT INFORMATION */}
+      <section className="recruitment-info">
+
+        <h2>📄 Important Information</h2>
+
+        <div className="info-list">
+
+          <div className="info-item">
+            <span>✓</span>
+            <p>
+              Recruitment details will be announced officially soon.
+            </p>
+          </div>
+
+          <div className="info-item">
+            <span>✓</span>
+            <p>
+              Application dates and vacancies will be updated after
+              the official announcement.
+            </p>
+          </div>
+
+          <div className="info-item">
+            <span>✓</span>
+            <p>
+              Candidates are advised to follow the official SNDF website
+              for the latest updates.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
 
     </div>
   );
