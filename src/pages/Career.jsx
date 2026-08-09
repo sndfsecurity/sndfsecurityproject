@@ -4,63 +4,54 @@ import "./Career.css";
 const Career = () => {
   return (
     <div className="career-page">
+
+      {/* Recruitment Announcement */}
       <section className="career-coming-soon">
-        <div className="career-bg-shape career-bg-shape-one"></div>
-        <div className="career-bg-shape career-bg-shape-two"></div>
 
         <div className="career-content">
 
-          <div className="career-label">
+          <span className="career-label">
             NDF / SNDF RECRUITMENT 2026–27
-          </div>
+          </span>
 
           <h1>
-            Something Big
-            <span> Is Coming Soon</span>
+            Recruitment Coming Soon
           </h1>
 
-          <p className="career-subtitle">
-            A new recruitment opportunity is on the way.
-          </p>
-
           <p className="career-description">
-            Get ready for the upcoming NDF / SNDF Recruitment 2026–27.
-            The official recruitment announcement and complete application
-            information will be shared soon.
+            The next NDF / SNDF recruitment opportunity will be announced
+            shortly. Complete recruitment details and application information
+            will be shared officially once the recruitment is announced.
           </p>
 
-          <div className="career-info-box">
-            <div className="career-info-icon">!</div>
+          <div className="career-divider"></div>
 
-            <div className="career-info-content">
-              <span className="career-info-label">
-                OFFICIAL ANNOUNCEMENT COMING SOON
-              </span>
+          <div className="career-update-box">
 
-              <h3>Get Ready for the Next Opportunity</h3>
+            <div className="update-icon">
+              <span>📢</span>
+            </div>
+
+            <div className="update-content">
+              <h3>Stay Connected for Official Updates</h3>
 
               <p>
-                Recruitment details, eligibility criteria, vacancies,
-                application dates and other important information will be
-                announced officially once the recruitment process begins.
+                Please keep checking the official SNDF website regularly
+                for the latest recruitment announcements and updates.
               </p>
             </div>
+
           </div>
 
           <div className="career-status">
             <span className="status-dot"></span>
-            <span>
-              Stay connected with the official SNDF website for the latest
-              recruitment announcements and updates.
-            </span>
-          </div>
-
-          <div className="career-bottom-text">
-            <span>OFFICIAL INFORMATION WILL BE UPDATED HERE</span>
+            <span>Official recruitment information will be updated here</span>
           </div>
 
         </div>
+
       </section>
+
     </div>
   );
 };
