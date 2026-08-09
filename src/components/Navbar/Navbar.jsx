@@ -212,7 +212,7 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
 
         <div className="scroll-container">
           <div className="scroll-text">
-  NDF Recruitment Date will be announced soon – Stay tuned for further updates. &nbsp;&nbsp;&nbsp;
+  📢 NDF Recruitment Date will be announced soon – Stay tuned for further updates. &nbsp;&nbsp;&nbsp;
   NDF भर्ती की तारीख जल्द ही घोषित की जाएगी – आगे की जानकारी के लिए जुड़े रहें। &nbsp;&nbsp;&nbsp;
   NDF भरतीची तारीख लवकरच जाहीर करण्यात येणार आहे – पुढील माहितीसाठी संपर्कात रहा।
 </div>
