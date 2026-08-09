@@ -6,7 +6,7 @@
   font-family: Arial, sans-serif;
   background: #f4f6f9;
   min-height: calc(100vh - 140px);
-  padding: 100px 20px 30px;
+  padding: 55px 20px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,6 +25,7 @@
   overflow: hidden;
   position: relative;
   box-shadow: 0 12px 40px rgba(14, 44, 95, 0.12);
+  margin-top:50px;
 }
 
 
