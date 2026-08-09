@@ -268,13 +268,13 @@
   }
 
   .career-label {
-    font-size: 11px;
+    font-size: 16px;
     letter-spacing: 1.4px;
     margin-bottom: 14px;
   }
 
   .career-content h1 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.25;
     letter-spacing: 0;
   }
@@ -308,25 +308,25 @@
   }
 
   .update-content h3 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.4;
   }
 
   .update-content p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.55;
   }
 
   .career-status {
     margin-top: 20px;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.5;
   }
 
   .status-dot {
-    width: 7px;
-    height: 7px;
-    min-width: 7px;
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
   }
 }
 
