@@ -64,9 +64,9 @@
 .career-label {
   display: inline-block;
   color: #e63946;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   line-height: 1.4;
   margin-bottom: 18px;
 }
@@ -94,8 +94,9 @@
   max-width: 760px;
   margin: 22px auto 0;
   color: #555;
-  font-size: 17px;
-  line-height: 1.75;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.6;
   letter-spacing: 0.2px;
 }
 
@@ -160,17 +161,17 @@
 .update-content h3 {
   margin: 0 0 6px;
   color: #0e2c5f;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
-  letter-spacing: 0.3px;
+  letter-spacing: 1px;
 }
 
 .update-content p {
   margin: 0;
   color: #666;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
-  letter-spacing: 0.2px;
+  letter-spacing: 1px;
 }
 
 
@@ -185,9 +186,9 @@
   justify-content: center;
   gap: 9px;
   color: #0e2c5f;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 600;
-  letter-spacing: 0.3px;
+  letter-spacing: 1px;
 }
 
 
