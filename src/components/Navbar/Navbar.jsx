@@ -210,13 +210,13 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
 
         <div className="topbar-left-space"></div>
 
-        <div className="scroll-container">
-          <div className="scroll-text">
-  📢 NDF Recruitment Date will be announced soon – Stay tuned for further updates. &nbsp;&nbsp;&nbsp;
-  NDF भर्ती की तारीख जल्द ही घोषित की जाएगी – आगे की जानकारी के लिए जुड़े रहें। &nbsp;&nbsp;&nbsp;
-  NDF भरतीची तारीख लवकरच जाहीर करण्यात येणार आहे – पुढील माहितीसाठी संपर्कात रहा।
+       <div className="scroll-container">
+  <div className="scroll-text">
+    📢 NDF/SNDF Recruitment Online Application Process will commence from 20th August 2026. Stay tuned for official updates. &nbsp;&nbsp;&nbsp;
+    📢 NDF/SNDF भर्ती ऑनलाइन आवेदन प्रक्रिया 20 अगस्त 2026 से शुरू होगी। आधिकारिक जानकारी के लिए जुड़े रहें। &nbsp;&nbsp;&nbsp;
+    📢 NDF/SNDF भरती ऑनलाइन अर्ज प्रक्रिया 20 ऑगस्ट 2026 पासून सुरू होणार आहे. अधिकृत माहितीसाठी संपर्कात रहा।
+  </div>
 </div>
-        </div>
 
         <div className="d-flex gap-2">
           
