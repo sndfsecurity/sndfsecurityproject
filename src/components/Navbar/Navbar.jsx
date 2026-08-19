@@ -11,7 +11,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import Collapse from "bootstrap/js/dist/collapse";
 
 function Navbar() {
@@ -34,7 +34,27 @@ function Navbar() {
   const [loading, setLoading] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
-const API = import.meta.env.VITE_API_URL;
+  const [showRecruitmentPopup, setShowRecruitmentPopup] = useState(false);
+
+  const API = import.meta.env.VITE_API_URL;
+
+
+  useEffect(() => {
+  if (showModal || showRecruitmentPopup) {
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+    document.documentElement.style.overflow = "";
+  }
+
+  return () => {
+    document.body.style.overflow = "";
+    document.documentElement.style.overflow = "";
+  };
+}, [showModal, showRecruitmentPopup]);
+
+
 
 const handleSubmit = async () => {
 
@@ -170,7 +190,7 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
         </div>
       )}
 
-      {showSuccess && (
+  {showSuccess && (
   <div className="navbar-success-overlay">
 
     <div className="navbar-success-popup">
@@ -205,18 +225,59 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
   </div>
 )}
 
+
+{showRecruitmentPopup && (
+  <div
+    className="recruitment-modal-overlay"
+    onClick={() => setShowRecruitmentPopup(false)}
+  >
+    <div
+      className="recruitment-modal"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        className="recruitment-close"
+        onClick={() => setShowRecruitmentPopup(false)}
+      >
+        ×
+      </button>
+
+      <h5>📢 Recruitment Notice</h5>
+
+      <p>
+      NDF/SNDF Recruitment 2026-27 applications are now open.
+      Click the button below to visit the official recruitment portal
+      and submit your application.
+      </p>
+
+      <button
+        className="recruitment-apply-btn"
+        onClick={() => {
+          setShowRecruitmentPopup(false);
+          window.open(
+            "https://recruitment.ndfdetective.in/",
+            "_blank"
+          );
+        }}
+      >
+        Apply Now
+      </button>
+    </div>
+  </div>
+)}
+
       {/* ===== TOP BAR (UNCHANGED EXACTLY) ===== */}
       <div className="py-2 px-3 d-flex justify-content-between align-items-center">
 
         <div className="topbar-left-space"></div>
 
-       <div className="scroll-container">
-  <div className="scroll-text">
-    📢 NDF/SNDF Recruitment Online Application Process will commence from 20th August 2026. Stay tuned for official updates. &nbsp;&nbsp;&nbsp;
-    📢 NDF/SNDF भर्ती ऑनलाइन आवेदन प्रक्रिया 20 अगस्त 2026 से शुरू होगी। आधिकारिक जानकारी के लिए जुड़े रहें। &nbsp;&nbsp;&nbsp;
-    📢 NDF/SNDF भरती ऑनलाइन अर्ज प्रक्रिया 20 ऑगस्ट 2026 पासून सुरू होणार आहे. अधिकृत माहितीसाठी संपर्कात रहा।
-  </div>
-</div>
+        <div className="scroll-container me-3">
+          <div className="scroll-text">
+            Welcome to SNDF – Thank you for visiting our website. &nbsp;&nbsp;&nbsp;
+            SNDF वेबसाइट पर आपका स्वागत है – यहाँ आने के लिए आपका धन्यवाद। &nbsp;&nbsp;&nbsp;
+            SNDF वेबसाइटवर आपले स्वागत आहे – येथे भेट दिल्याबद्दल धन्यवाद।
+          </div>
+        </div>
 
         <div className="d-flex gap-2">
           
@@ -224,19 +285,25 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
             Select Language
           </label>
 
-          <div className="d-flex gap-2">
+         <div className="d-flex align-items-center gap-2">
 
-  <GoogleTranslate />
+        <button
+          className="btn btn-primary btn-sm"
+          onClick={() => setShowRecruitmentPopup(true)}>
+          💼 Recruitment
+        </button>
 
-  <button
-    className="btn btn-danger btn-sm"
-    aria-label="Open enquiry form"
-    onClick={() => setShowModal(true)}
-  >
-    Enquiry
-  </button>
+      <GoogleTranslate />
 
-</div>
+      <button
+        className="btn btn-danger btn-sm"
+        aria-label="Open enquiry form"
+        onClick={() => setShowModal(true)} >
+        Enquiry
+      </button>
+
+  </div>
+
         </div>
       </div>
 
@@ -555,6 +622,7 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
     </ul>
   </div>
 </nav>
+
     </>
   );
 }
