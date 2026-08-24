@@ -271,13 +271,13 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
 
         <div className="topbar-left-space"></div>
 
-        <div className="scroll-container me-3">
-          <div className="scroll-text">
-            Welcome to SNDF – Thank you for visiting our website. &nbsp;&nbsp;&nbsp;
-            SNDF वेबसाइट पर आपका स्वागत है – यहाँ आने के लिए आपका धन्यवाद। &nbsp;&nbsp;&nbsp;
-            SNDF वेबसाइटवर आपले स्वागत आहे – येथे भेट दिल्याबद्दल धन्यवाद।
-          </div>
-        </div>
+      <div className="scroll-container me-3">
+  <div className="scroll-text">
+    🔔 Important Notice: NDF / SNDF Recruitment 2026 has started. Candidates are advised to complete their registration and submit the application form as soon as possible. &nbsp;&nbsp;&nbsp;
+    🔔 महत्वपूर्ण सूचना: NDF / SNDF भर्ती 2026 शुरू हो गई है। उम्मीदवार जल्द से जल्द रजिस्ट्रेशन करके आवेदन फॉर्म जमा करें। &nbsp;&nbsp;&nbsp;
+    🔔 महत्त्वाची सूचना: NDF / SNDF भरती 2026 सुरू झाली आहे. उमेदवारांनी लवकरात लवकर नोंदणी करून अर्ज सादर करावा।
+  </div>
+</div>
 
         <div className="d-flex gap-2">
           
