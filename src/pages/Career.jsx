@@ -159,7 +159,7 @@ return (
         <div className="info-card">
             <div className="info-icon"> <MdPayments /> </div>
             <h3>Salary</h3>
-            <p>₹22,000 – ₹25,000<br />Including Allowances</p>
+            <p>₹22,100 – ₹25,840<br />Including Allowances</p>
         </div>
 
         <div className="info-card">
