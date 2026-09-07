@@ -597,7 +597,7 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
         </Link>
       </li>
 
-      {/* <li>
+      <li>
         <Link
           to="/career"
           className="nav-link"
@@ -606,7 +606,7 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
         >
           Career
         </Link>
-      </li> */}
+      </li>
 
       <li>
         <Link

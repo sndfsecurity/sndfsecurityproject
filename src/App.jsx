@@ -15,7 +15,7 @@ import Course from "./pages/Course";
 import Team from "./pages/Team";
 import Blog from "./pages/Blog";
 
-// import Career from "./pages/Career";
+import Career from "./pages/Career";
 
 /* LEGAL */
 import Sndfprivacy from "./pages/Sndfprivacy";
@@ -219,7 +219,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
           <Route path="/blog" element={<Blog />} />
-          {/* <Route path="/career" element={<Career />} /> */}
+          <Route path="/career" element={<Career />} />
           <Route path="/gallery" element={<Gallery />} />
 
           {/* COURSE */}
