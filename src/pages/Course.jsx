@@ -151,7 +151,7 @@ const Course = () => {
                 <div className="stat-icon-box calendar">
                 <FaCalendarAlt aria-hidden="true"/>
                 </div>
-                <h3>90+</h3>
+                <h3>50+</h3>
                 <p>Days Training</p>
             </div>
 
@@ -633,7 +633,7 @@ const Course = () => {
       <div className="cta-buttonss">
         <button className="btn-primary" aria-label="Book your seat for detective course">Book Your Seat</button>
         
-        <a href="/brochure.pdf" download className="btn-outlines" aria-label="Download course brochure">
+        <a href="/Brochure.pdf" download className="btn-outlines" aria-label="Download course brochure">
          Download Brochure
         </a>
 
