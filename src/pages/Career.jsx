@@ -26,8 +26,7 @@ return (
 
         <meta
           name="description"
-          content="Apply online for SNDF Recruitment 2026–27. Check vacancies, salary, eligibility, age limit and selection process."
-        />
+          content="Apply online for SNDF Recruitment 2026–27. Check vacancies, salary, eligibility, age limit and selection process."/>
 
         <link
           rel="canonical"

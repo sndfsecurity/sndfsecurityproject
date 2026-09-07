@@ -304,8 +304,8 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
 
   </div>
 
-        </div>
-      </div>
+    </div>
+  </div>
 
       {/* ===== NAVBAR (FIXED BIG SCREEN ISSUE) ===== */}
 

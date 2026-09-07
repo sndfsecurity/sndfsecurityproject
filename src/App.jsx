@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { Helmet } from "react-helmet-async";
 import { Toaster } from "react-hot-toast";
 
-
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import FloatingButtons from "./components/FloatingButtons";
@@ -98,49 +97,9 @@ function App() {
         </script>
       </Helmet>
 
-      <Router>
+  <Router>
 
-
-      {/* <Routes>
-
-        
-                  
-            <Route
-              path="/admin/enquiries"
-              element={
-                <ProtectedRoute>
-                  <Enquiries />
-                </ProtectedRoute>
-              }
-            />
-
-            <Route
-              path="/admin/enquiries/contact"
-              element={
-                <ProtectedRoute>
-                  <ContactEnquiries />
-                </ProtectedRoute>
-              }
-            />
-
-            <Route
-              path="/admin/enquiries/quick"
-              element={
-                <ProtectedRoute>
-                  <QuickEnquiries />
-                </ProtectedRoute>
-              }
-            />
-
-            <Route path="/admin/login" element={<AdminLayout />} />
-
-
-
-
-      </Routes> */}
-
-
-      <Routes>
+  <Routes>
 
   {/* DEFAULT ADMIN REDIRECT */}
 
@@ -248,21 +207,9 @@ function App() {
           <Route path="/services/ndf" element={<Ndf />} />
           <Route path="/services/sndf" element={<Sndf />} />
           <Route path="/services/owl" element={<Owl />} />
-          <Route path="/services/spydefence" element={<Spydefence />} />
-
-
-           {/* <Route
-          path="/admin/enquiries"
-          element={
-          isAdmin ? <Enquiries /> : <Navigate to="/admin/adminlayout" /> }/> */}
-
-          {/* <Route path="/admin/enquiries/contact" element={<ContactEnquiries />} />
-          <Route path="/admin/enquiries/quick" element={<QuickEnquiries />} /> */}
+          <Route path="/services/spydefence" element={<Spydefence />} />  
 
         </Routes>
-
-        {/* <Footer />
-        <FloatingButtons /> */}
 
         {!window.location.pathname.startsWith("/admin") && <Footer />}
 

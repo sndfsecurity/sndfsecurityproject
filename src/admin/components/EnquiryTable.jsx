@@ -97,8 +97,12 @@ const PAGE_SIZE = 5;
     };
 
     if (source) {
-      params.source = source;
-    }
+        params.source = source;
+      }
+
+      if (statusFilter !== "ALL") {
+        params.status = statusFilter;
+      }
 
     const res = await axios.get(url, {
       params,
@@ -152,8 +156,8 @@ const PAGE_SIZE = 5;
     };
 
     useEffect(() => {
-      fetchEnquiries();
-    }, [source, page]);
+    fetchEnquiries();
+    }, [source, page, statusFilter]);
 
 
   // Update status
@@ -215,23 +219,14 @@ const PAGE_SIZE = 5;
 
   if (loading) return <p className="loading">Loading enquiries...</p>;
 
-
-  // const filteredEnquiries =
-  // statusFilter === "ALL"
-  //   ? enquiries
-  //   : enquiries.filter((e) => e.status === statusFilter);
-
   const filteredEnquiries = enquiries.filter((e) => {
-
-  const matchesStatus =
-    statusFilter === "ALL" || e.status === statusFilter;
 
   const matchesSearch =
     e.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
     e.phone?.includes(searchTerm) ||
     e.service?.toLowerCase().includes(searchTerm.toLowerCase());
 
-  return matchesStatus && matchesSearch;
+  return matchesSearch;
 });
 
   return (
