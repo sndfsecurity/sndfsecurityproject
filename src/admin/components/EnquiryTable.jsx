@@ -192,7 +192,7 @@ const PAGE_SIZE = 5;
 
   return () => clearInterval(interval);
 
-  }, [page, source]);
+  }, [page, source, statusFilter]);
 
 
   // delete
