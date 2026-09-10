@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 
@@ -26,6 +26,8 @@ const [enquiries, setEnquiries] = useState([]);
 const [loading, setLoading] = useState(true);
 
 const [searchTerm, setSearchTerm] = useState("");
+
+const [debouncedSearch, setDebouncedSearch] = useState("");
 
 const [page, setPage] = useState(0);
 const [totalPages, setTotalPages] = useState(0);
@@ -91,10 +93,14 @@ const PAGE_SIZE = 5;
 
     let url = `${API}/api/enquiry`;
 
-    const params = {
-      page: page,
-      size: PAGE_SIZE,
-    };
+   const params = {
+    page: page,
+    size: PAGE_SIZE,
+  };
+
+  if (debouncedSearch) {
+    params.search = debouncedSearch;
+  }
 
     if (source) {
         params.source = source;
@@ -103,6 +109,8 @@ const PAGE_SIZE = 5;
       if (statusFilter !== "ALL") {
         params.status = statusFilter;
       }
+
+      console.log("PARAMS =>", params);
 
     const res = await axios.get(url, {
       params,
@@ -155,9 +163,23 @@ const PAGE_SIZE = 5;
       }
     };
 
+   
+    // debounce search - 400ms ruk jaata hai typing ke baad
+
+
     useEffect(() => {
-    fetchEnquiries();
-    }, [source, page, statusFilter]);
+      const t = setTimeout(() => {
+        setDebouncedSearch(searchTerm.trim());
+        setPage(0);
+      }, 400);
+
+      return () => clearTimeout(t);
+    }, [searchTerm]);
+
+    // ab ye fetch karega
+    useEffect(() => {
+      fetchEnquiries();
+    }, [source, page, statusFilter, debouncedSearch]);
 
 
   // Update status
@@ -184,15 +206,20 @@ const PAGE_SIZE = 5;
   };
 
 // auto refresh
+// ref jo hamesha latest fetchEnquiries rakhta hai
+const fetchRef = useRef(fetchEnquiries);
 
-  useEffect(() => {
+useEffect(() => {
+  fetchRef.current = fetchEnquiries;
+});
+
+useEffect(() => {
   const interval = setInterval(() => {
-    fetchEnquiries();
+    fetchRef.current();
   }, 10000);
 
   return () => clearInterval(interval);
-
-  }, [page, source, statusFilter]);
+}, []);
 
 
   // delete
@@ -219,15 +246,7 @@ const PAGE_SIZE = 5;
 
   if (loading) return <p className="loading">Loading enquiries...</p>;
 
-  const filteredEnquiries = enquiries.filter((e) => {
-
-  const matchesSearch =
-    e.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    e.phone?.includes(searchTerm) ||
-    e.service?.toLowerCase().includes(searchTerm.toLowerCase());
-
-  return matchesSearch;
-});
+  
 
   return (
 
@@ -237,10 +256,6 @@ const PAGE_SIZE = 5;
     <AdminHeader />
 
     <div className="admin-wrapper">
-
-      {/* <button className="logout-btn" onClick={handleLogout}>
-          Logout
-      </button> */}
 
 
     <div className="filter-buttonss">
@@ -310,7 +325,7 @@ const PAGE_SIZE = 5;
             </thead>
 
             <tbody>
-              {filteredEnquiries.map((e) => (
+              {enquiries.map((e) => (
                 <tr key={e.id}>
                   <td data-label="Name">{e.name}</td>
                   <td data-label="Phone">{e.phone}</td>
@@ -398,7 +413,7 @@ const PAGE_SIZE = 5;
 {/* mobile cards............................... */}
 
 <div className="mobile-cards">
-      {filteredEnquiries.map((e) => (
+      {enquiries.map((e) => (
         <div className="enquiry-card" key={e.id}>
 
       <div className="card-grid">
