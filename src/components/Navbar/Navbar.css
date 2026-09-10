@@ -549,10 +549,35 @@ width:22px!important;
 
 }
 
-body {
+/* body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+} */
+
+
+/* =========================
+   COPY RESTRICTION
+   Public site pe only — Admin pe allow
+========================= */
+
+body:not(.admin-panel) {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body.admin-panel,
+body.admin-panel * {
+  -webkit-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  -webkit-touch-callout: default !important;
+}
+
+body.admin-panel ::selection {
+  background: #2563eb;
+  color: #fff;
 }
 
 

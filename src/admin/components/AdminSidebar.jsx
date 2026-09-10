@@ -10,7 +10,7 @@ import {
 
 import logo from "../../assets/images/LOGO.webp";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import "./AdminSidebar.css";
@@ -22,9 +22,16 @@ export default function AdminSidebar() {
 
   const [showSidebar, setShowSidebar] = useState(false);
   const navigate = useNavigate();
-  
+
+  useEffect(() => {
+    document.body.classList.add("admin-panel");
+    return () => {
+      document.body.classList.remove("admin-panel");
+    };
+  }, []);
 
   const handleLogout = () => {
+    
     localStorage.removeItem("token");
     navigate("/admin/login");
   };
