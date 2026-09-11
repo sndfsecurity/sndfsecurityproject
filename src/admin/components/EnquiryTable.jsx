@@ -114,8 +114,6 @@ const PAGE_SIZE = 5;
         params.date = selectedDate;
       }
 
-      
-
         const res = await axios.get(url, {
           params,
           headers: {
@@ -123,7 +121,7 @@ const PAGE_SIZE = 5;
           },
         });
 
-    console.log(res.data);
+    // console.log(res.data);
 
     // ✅ if backend sends paginated response
     if (res.data.content) {
