@@ -8,7 +8,6 @@ import toast from "react-hot-toast";
 import AdminSidebar from "./AdminSidebar";
 import AdminHeader from "./AdminHeader";
 
-
 const EnquiryTable = ({ source }) => {
 
 const API = import.meta.env.VITE_API_URL;
@@ -16,7 +15,6 @@ const API = import.meta.env.VITE_API_URL;
 const [searchParams] = useSearchParams();
 
 const statusFromUrl = searchParams.get("status");
-
 
 const [statusFilter, setStatusFilter] = useState(
   statusFromUrl || "ALL"
@@ -28,6 +26,8 @@ const [loading, setLoading] = useState(true);
 const [searchTerm, setSearchTerm] = useState("");
 
 const [debouncedSearch, setDebouncedSearch] = useState("");
+
+const [selectedDate, setSelectedDate] = useState("");
 
 const [page, setPage] = useState(0);
 const [totalPages, setTotalPages] = useState(0);
@@ -110,14 +110,18 @@ const PAGE_SIZE = 5;
         params.status = statusFilter;
       }
 
-      console.log("PARAMS =>", params);
+      if (selectedDate) {
+        params.date = selectedDate;
+      }
 
-    const res = await axios.get(url, {
-      params,
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+      
+
+        const res = await axios.get(url, {
+          params,
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
 
     console.log(res.data);
 
@@ -179,7 +183,7 @@ const PAGE_SIZE = 5;
     // ab ye fetch karega
     useEffect(() => {
       fetchEnquiries();
-    }, [source, page, statusFilter, debouncedSearch]);
+    }, [source, page, statusFilter, debouncedSearch, selectedDate]);
 
 
   // Update status
@@ -297,13 +301,42 @@ useEffect(() => {
           <span className="admin-badge">{source || "ALL"}</span>
         </div>
 
-          <div className="search-box">
+          <div className="filter-row">
+
+            <div className="search-box">
               <input
                 type="text"
                 placeholder="Search name, phone, service..."
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}/>
-        </div>
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+
+            <div className="date-filter">
+              <input
+                type="date"
+                value={selectedDate}
+                onChange={(e) => {
+                  setSelectedDate(e.target.value);
+                  setPage(0);
+                }}
+              />
+
+              {selectedDate && (
+                <button
+                  className="clear-date"
+                  onClick={() => {
+                    setSelectedDate("");
+                    setPage(0);
+                  }}
+                >
+                  Clear
+                </button>
+              )}
+            </div>
+
+          </div>
+          
 
         {/* Table */}
         <div className="table-wrapper">
@@ -363,13 +396,6 @@ useEffect(() => {
                   <td className="time-cell">{formatDateTime(e.createdAt)}</td>
 
                   <td className="action-cell">
-
-                        {/* <button
-                            className="admin-btn"
-                            onClick={() => updateStatus(e.id, "COMPLETED")}
-                            disabled={e.status === "COMPLETED"}  >
-                            Done
-                          </button> */}
 
                         <button
                             className="delete-btn"
@@ -480,7 +506,8 @@ useEffect(() => {
     </div>
     </div>
 
-      </>
+  </>
+
   );
 };
 

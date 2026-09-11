@@ -519,3 +519,97 @@ select:disabled {
   outline:none;
   font-size:15px;
 }
+
+
+/* ===== SEARCH + DATE FILTER ROW ===== */
+
+.filter-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Date filter comes before search box visually */
+.date-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  order: 1;
+}
+
+.search-box {
+  order: 2;
+  margin-bottom: 0;
+}
+
+/* Date input */
+.date-filter input[type="date"] {
+  width: 170px;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #374151;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.date-filter input[type="date"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+/* Clear button */
+.clear-date {
+  height: 42px;
+  padding: 0 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clear-date:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+
+@media (max-width: 768px) {
+
+  .filter-row {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .date-filter {
+    order: 1;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .search-box {
+    order: 2;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .date-filter input[type="date"] {
+    width: 170px;
+  }
+}
