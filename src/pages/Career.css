@@ -601,4 +601,218 @@ white-space:nowrap;
 border:0;
 }
 
+/* =========================================
+   PDF SECTION
+========================================= */
+
+.career-pdf-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.career-pdf-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.career-pdf-left {
+  padding-right: 20px;
+}
+
+.career-pdf-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #173b7a;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.career-pdf-left h2 {
+  margin: 0 0 18px;
+  color: #111827;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.career-pdf-left p {
+  max-width: 520px;
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.career-pdf-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.career-pdf-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.career-pdf-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.09);
+}
+
+.career-pdf-icon {
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #eef3ff;
+  color: #173b7a;
+  font-size: 24px;
+}
+
+.career-pdf-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.career-pdf-details h3 {
+  margin: 0 0 7px;
+  color: #111827;
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.career-pdf-details p {
+  margin: 0 0 15px;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.career-pdf-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pdf-view-btn,
+.pdf-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 16px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.pdf-view-btn {
+  background: #173b7a;
+  color: #ffffff;
+  border: 1px solid #173b7a;
+}
+
+.pdf-view-btn:hover {
+  background: #102d60;
+  border-color: #102d60;
+}
+
+.pdf-download-btn {
+  background: #ffffff;
+  color: #173b7a;
+  border: 1px solid #cbd5e1;
+}
+
+.pdf-download-btn:hover {
+  background: #f1f5f9;
+  border-color: #173b7a;
+}
+
+
+/* =========================================
+   PDF RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+  .career-pdf-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .career-pdf-left {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .career-pdf-left p {
+    margin: 0 auto;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .career-pdf-section {
+    padding: 60px 18px;
+  }
+
+  .career-pdf-left {
+    text-align: left;
+  }
+
+  .career-pdf-left h2 {
+    font-size: 30px;
+  }
+
+  .career-pdf-card {
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .career-pdf-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+  }
+
+  .career-pdf-details h3 {
+    font-size: 16px;
+  }
+
+  .career-pdf-details p {
+    font-size: 12px;
+  }
+
+  .career-pdf-buttons {
+    gap: 8px;
+  }
+
+  .pdf-view-btn,
+  .pdf-download-btn {
+    padding: 8px 13px;
+    font-size: 12px;
+  }
+
+}
 
