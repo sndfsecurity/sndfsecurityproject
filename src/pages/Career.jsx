@@ -6,34 +6,31 @@ import { MdNotificationsActive } from "react-icons/md";
 import { MdEventAvailable } from "react-icons/md";
 import { MdPayments } from "react-icons/md";
 
-import {
-  FaCalendarAlt,
-  FaMoneyBillWave,
-  FaClipboardList,
-  FaFileAlt
-} from "react-icons/fa";
 
-import demoPaper from "../assets/pdfs/demo-paper.pdf";
-import previousQuestionPaper from "../assets/pdfs/previous-question-paper.pdf";
+import {
+FaCalendarAlt,
+FaMoneyBillWave,
+FaClipboardList,
+FaFileAlt
+} from "react-icons/fa";
 
 const Career = () => {
 
-  return (
 
-    <main>
+return (
 
-      <Helmet>
+<main>
+  
+    <Helmet>
         <title>SNDF Recruitment 2026–27 | Apply Online</title>
 
         <meta
           name="description"
-          content="Apply online for SNDF Recruitment 2026–27. Check vacancies, salary, eligibility, age limit and selection process."
-        />
+          content="Apply online for SNDF Recruitment 2026–27. Check vacancies, salary, eligibility, age limit and selection process."/>
 
         <link
           rel="canonical"
-          href="https://sndfndf.com/career"
-        />
+          href="https://sndfndf.com/career"/>
 
         <script type="application/ld+json">
           {JSON.stringify({
@@ -41,7 +38,7 @@ const Career = () => {
             "@type": "JobPosting",
             "title": "General Duty Recruitment 2026–27",
             "description":
-              "Apply online for General Duty Recruitment 2026–27 through the official SNDF Recruitment Portal.",
+            "Apply online for General Duty Recruitment 2026–27 through the official SNDF Recruitment Portal.",
             "employmentType": "FULL_TIME",
             "hiringOrganization": {
               "@type": "Organization",
@@ -64,288 +61,154 @@ const Career = () => {
       </Helmet>
 
 
-      <div className="career-page">
+<div className="career-page">
 
-        <section id="overview" className="career-hero">
+  <section id="overview"  className="career-hero">
 
-          <span className="career-badge">
-            NDF / SNDF Recruitment 2026–27
-          </span>
+  <span className="career-badge">
+    NDF / SNDF Recruitment 2026–27
+  </span>
 
-          <h1>Applications Now Open</h1>
-
-          <p className="sr-only">
-            SNDF Recruitment 2026–27 official application page for General Duty recruitment.
-            Check eligibility, salary, vacancies and selection process before applying.
-          </p>
-
-          <p>
-            Online applications are now open for <strong>General Duty (Male Candidates)</strong>.
-            Eligible candidates from all States and Union Territories of India can apply through
-            the Official Recruitment Portal.
-          </p>
-
-          <div className="career-buttons">
-
-            <a
-              href="https://recruitment.ndfdetective.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="apply-btn"
-              aria-label="Apply Online for SNDF Recruitment 2026-27">
-              Apply Now
-            </a>
-
-            <a
-              href="https://recruitment.ndfdetective.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="outline-btn"
-              aria-label="View SNDF Recruitment Details">
-              Recruitment Details
-            </a>
-
-          </div>
-
-        </section>
-
-
-        <section id="highlights" className="career-stats">
+  <h1>Applications Now Open</h1>
 
-          <div className="stat-cardc">
-            <h2>8,710</h2>
-            <p>Total Vacancies</p>
-          </div>
+  <p className="sr-only">
+  SNDF Recruitment 2026–27 official application page for General Duty recruitment.
+  Check eligibility, salary, vacancies and selection process before applying.
+  </p>
 
-          <div className="stat-cardc">
-            <h2>All India</h2>
-            <p>Job Location</p>
-          </div>
-
-          <div className="stat-cardc">
-            <h2>10th Pass</h2>
-            <p>Minimum Qualification</p>
-          </div>
-
-          <div className="stat-cardc">
-            <h2>18–31</h2>
-            <p>Age Limit</p>
-          </div>
+  <p>
+    Online applications are now open for <strong>General Duty (Male Candidates)</strong>.
+    Eligible candidates from all States and Union Territories of India can apply through
+    the Official Recruitment Portal.
+  </p>
 
-        </section>
+  <div className="career-buttons">
 
+    <a
+      href="https://recruitment.ndfdetective.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="apply-btn"
+      aria-label="Apply Online for SNDF Recruitment 2026-27">
+      Apply Now
+    </a>
 
-        <section id="recruitment-info" className="recruitment-info">
+    <a href="https://recruitment.ndfdetective.in/"
+     target="_blank"
+     rel="noopener noreferrer"
+     className="outline-btn"
+     aria-label="View SNDF Recruitment Details">
+      Recruitment Details
+    </a>
 
-          <div className="section-heading">
+  </div>
 
-            <span>RECRUITMENT INFORMATION</span>
+</section>
 
-            <h2>Everything You Need Before Applying</h2>
 
-            <p>
-              Review the important recruitment information below.
-              Complete eligibility criteria and official instructions
-              are available on the Recruitment Portal.
-            </p>
+<section id="highlights" className="career-stats">
 
-          </div>
+  <div className="stat-cardc">
+    <h2>8,710</h2>
+    <p>Total Vacancies</p>
+  </div>
 
-          <div className="info-grid">
+  <div className="stat-cardc">
+    <h2>All India</h2>
+    <p>Job Location</p>
+  </div>
 
-            <div className="info-card">
-              <div className="info-icon">
-                <MdEventAvailable />
-              </div>
-              <h3>Schedule</h3>
-              <p>
-                Applications Open<br />
-                <strong>20 August 2026</strong>
-              </p>
-            </div>
+  <div className="stat-cardc">
+    <h2>10th Pass</h2>
+    <p>Minimum Qualification</p>
+  </div>
 
-            <div className="info-card">
-              <div className="info-icon">
-                <MdPayments />
-              </div>
-              <h3>Salary</h3>
-              <p>
-                ₹22,100 – ₹25,840<br />
-                Including Allowances
-              </p>
-            </div>
+  <div className="stat-cardc">
+    <h2>18–31</h2>
+    <p>Age Limit</p>
+  </div>
+ 
+</section>
 
-            <div className="info-card">
-              <div className="info-icon">
-                <FaUserCheck />
-              </div>
-              <h3>Selection</h3>
-              <p>
-                Physical Test →<br />
-                Medical → Written Exam
-              </p>
-            </div>
 
-            <div className="info-card">
-              <div className="info-icon">
-                <MdNotificationsActive />
-              </div>
-              <h3>Notification</h3>
-              <p>
-                Read the official notification before applying.
-              </p>
-            </div>
+<section  id="recruitment-info" className="recruitment-info">
 
-          </div>
+    <div className="section-heading">
 
-        </section>
+        <span>RECRUITMENT INFORMATION</span>
 
+        <h2>Everything You Need Before Applying</h2>
 
-        {/* ================================
-            PDF SECTION - RIGHT SIDE
-        ================================= */}
+        <p>
+           Review the important recruitment information below.
+           Complete eligibility criteria and official instructions
+           are available on the Recruitment Portal.
+        </p> 
 
-        <section className="career-pdf-section">
+    </div>
 
-          <div className="career-pdf-content">
+    <div className="info-grid">
 
-            <div className="career-pdf-left">
+        <div className="info-card">
+            <div className="info-icon"> <MdEventAvailable /> </div>
+            <h3>Schedule</h3>
+            <p>Applications Open<br /><strong>20 August 2026</strong></p>
+        </div>
 
-              <span className="career-pdf-label">
-                EXAM PREPARATION
-              </span>
+        <div className="info-card">
+            <div className="info-icon"> <MdPayments /> </div>
+            <h3>Salary</h3>
+            <p>₹22,100 – ₹25,840<br />Including Allowances</p>
+        </div>
 
-              <h2>
-                Prepare for the Recruitment Examination
-              </h2>
+        <div className="info-card">
+            <div className="info-icon"> <FaUserCheck /> </div>
+            <h3>Selection</h3>
+            <p>Physical Test →<br />Medical → Written Exam</p>
+        </div>
 
-              <p>
-                Download the sample and previous question papers
-                to understand the examination pattern and practice
-                before appearing for the recruitment examination.
-              </p>
+        <div className="info-card">
+            <div className="info-icon"><MdNotificationsActive /></div>
+            <h3>Notification</h3>
+            <p>Read the official notification before applying.</p>
+        </div>
 
-            </div>
+    </div>
 
 
-            <div className="career-pdf-right">
+</section>
 
-              {/* Demo Paper */}
 
-              <div className="career-pdf-card">
+<section id="official-portal" className="career-final-cta">
+  <div className="career-final-cta-card">
 
-                <div className="career-pdf-icon">
-                  <FaFileAlt />
-                </div>
+    <h2>Ready to Submit Your Application?</h2>
 
-                <div className="career-pdf-details">
+    <p>
+      This page provides only a quick overview of the recruitment process.
+      Before submitting your application, please visit the Official
+      Recruitment Portal to read the complete Recruitment Notification,
+      eligibility criteria, examination pattern, important instructions
+      and application guidelines.
+    </p>
 
-                  <h3>Demo Paper</h3>
+    <a
+      href="https://recruitment.ndfdetective.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="career-final-btn">
+      Visit Official Recruitment Portal
+    </a>
 
-                  <p>
-                    Sample paper for examination preparation.
-                  </p>
+  </div>
+</section>
 
-                  <div className="career-pdf-buttons">
+</div>
 
-                    <a
-                      href={demoPaper}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="pdf-view-btn">
-                      View PDF
-                    </a>
-
-                    <a
-                      href={demoPaper}
-                      download="NDF-Demo-Paper.pdf"
-                      className="pdf-download-btn">
-                      Download
-                    </a>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-
-              {/* Previous Question Paper */}
-
-              <div className="career-pdf-card">
-
-                <div className="career-pdf-icon">
-                  <FaFileAlt />
-                </div>
-
-                <div className="career-pdf-details">
-
-                  <h3>Previous Question Paper</h3>
-
-                  <p>
-                    Previous question paper for practice and preparation.
-                  </p>
-
-                  <div className="career-pdf-buttons">
-
-                    <a
-                      href={previousQuestionPaper}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="pdf-view-btn">
-                      View PDF
-                    </a>
-
-                    <a
-                      href={previousQuestionPaper}
-                      download="NDF-Previous-Question-Paper.pdf"
-                      className="pdf-download-btn">
-                      Download
-                    </a>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-
-        <section id="official-portal" className="career-final-cta">
-
-          <div className="career-final-cta-card">
-
-            <h2>Ready to Submit Your Application?</h2>
-
-            <p>
-              This page provides only a quick overview of the recruitment process.
-              Before submitting your application, please visit the Official
-              Recruitment Portal to read the complete Recruitment Notification,
-              eligibility criteria, examination pattern, important instructions
-              and application guidelines.
-            </p>
-
-            <a
-              href="https://recruitment.ndfdetective.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="career-final-btn">
-              Visit Official Recruitment Portal
-            </a>
-
-          </div>
-
-        </section>
-
-      </div>
-
-    </main>
+</main>
   );
 };
 
 export default Career;
+
+
