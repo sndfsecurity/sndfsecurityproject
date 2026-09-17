@@ -29,6 +29,7 @@ const Career = () => {
         <h2>📄 Recruitment Details</h2>
 
         <div className="table-wrapper">
+          
           <table>
             <thead>
               <tr>

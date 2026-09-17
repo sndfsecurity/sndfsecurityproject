@@ -227,7 +227,7 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
           <div className="d-flex gap-2">
 
   <GoogleTranslate />
-
+ 
   <button
     className="btn btn-danger btn-sm"
     aria-label="Open enquiry form"
