@@ -336,19 +336,48 @@ const Career = () => {
           <h3>Previous Question Paper</h3>
 
           <p>
-            Previous year question paper for practice and preparation.
+            Previous year question papers for practice and preparation.
           </p>
 
           <div className="career-pdf-buttons">
 
-            {/* <a
-              href="/2025-26.pdf"
+            {/* 2025–26 Set A */}
+
+            <a
+              href="/previous paper A_2025-26.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="pdf-set-btn"
             >
-              2025–26
-            </a> */}
+              2025–26 Set A
+            </a>
+
+
+            {/* 2025–26 Set B */}
+
+            <a
+              href="/previous paper B_2025-26.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pdf-set-btn"
+            >
+              2025–26 Set B
+            </a>
+
+
+            {/* 2025–26 Set C */}
+
+            <a
+              href="/previous paper C_2025-26.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pdf-set-btn"
+            >
+              2025–26 Set C
+            </a>
+
+
+            {/* 2024–25 */}
 
             <a
               href="/2024-25.pdf"
@@ -356,10 +385,8 @@ const Career = () => {
               rel="noopener noreferrer"
               className="pdf-set-btn"
             >
-             2024–25
+              2024–25
             </a>
-
-          
 
           </div>
 

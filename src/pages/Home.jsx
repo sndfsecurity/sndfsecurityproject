@@ -336,7 +336,7 @@ const badgesData = [
         <h5>DIC</h5>
 
         <p>Training in surveillance & investigation
-              Practical learning with real cases
+              Professional learning with real cases
               Start your security career.</p>
       </a>
 

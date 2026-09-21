@@ -132,7 +132,7 @@ const Course = () => {
           </h1>
 
           <p>
-            Learn professional investigation skills with real-world training,<br></br>
+            Learn professional investigation skills with case based training,<br></br>
             surveillance techniques, cybercrime basics and field exposure.
           </p>
 

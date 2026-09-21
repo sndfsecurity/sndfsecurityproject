@@ -601,18 +601,18 @@ white-space:nowrap;
 border:0;
 }
 
+
 /* =========================================
    PDF SECTION
 ========================================= */
 
 .career-pdf-section {
-  width: 100%;
-  padding: 80px 20px;
-  background: #f8fafc;
+  padding: 80px 30px;
+  background: #f7f9fc;
 }
 
 .career-pdf-content {
-  max-width: 1200px;
+  max-width: 1030px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -620,32 +620,37 @@ border:0;
   align-items: center;
 }
 
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
 .career-pdf-left {
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 .career-pdf-label {
   display: inline-block;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   color: #173b7a;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 1.5px;
 }
 
 .career-pdf-left h2 {
-  margin: 0 0 18px;
+  margin: 0 0 20px;
   color: #111827;
-  font-size: clamp(30px, 4vw, 44px);
+  font-size: 40px;
   line-height: 1.2;
   font-weight: 800;
 }
 
 .career-pdf-left p {
-  max-width: 520px;
+  max-width: 500px;
   margin: 0;
-  color: #6b7280;
-  font-size: 15px;
+  color: #64748b;
+  font-size: 14px;
   line-height: 1.8;
 }
 
@@ -670,13 +675,10 @@ border:0;
   align-items: center;
   gap: 20px;
   padding: 24px;
-
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 15px;
-
   box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
-
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
@@ -694,19 +696,14 @@ border:0;
 
 .career-pdf-icon {
   flex-shrink: 0;
-
   width: 54px;
   height: 54px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 13px;
-
   background: #eef3ff;
   color: #173b7a;
-
   font-size: 24px;
 }
 
@@ -722,25 +719,21 @@ border:0;
 
 .career-pdf-details h3 {
   margin: 0 0 7px;
-
   color: #111827;
-
   font-size: 18px;
   font-weight: 750;
 }
 
 .career-pdf-details p {
   margin: 0 0 15px;
-
   color: #6b7280;
-
   font-size: 13px;
   line-height: 1.5;
 }
 
 
 /* =========================================
-   PDF SET BUTTONS
+   PDF BUTTONS
 ========================================= */
 
 .career-pdf-buttons {
@@ -754,23 +747,16 @@ border:0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   min-width: 72px;
-
-  padding: 9px 16px;
-
+  padding: 9px 14px;
   border-radius: 7px;
-
   background: #173b7a;
   color: #ffffff;
-
   border: 1px solid #173b7a;
-
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-
   text-decoration: none;
-
+  white-space: nowrap;
   transition:
     background 0.2s ease,
     border-color 0.2s ease,
@@ -785,7 +771,7 @@ border:0;
 
 
 /* =========================================
-   PDF RESPONSIVE
+   TABLET / SMALL DESKTOP
 ========================================= */
 
 @media (max-width: 992px) {
@@ -883,8 +869,10 @@ border:0;
   .pdf-set-btn {
     width: 100%;
     min-width: 0;
-    padding: 9px 10px;
-    font-size: 12px;
+    padding: 9px 6px;
+    font-size: 11px;
+    white-space: normal;
+    line-height: 1.3;
   }
 
 }
@@ -920,8 +908,8 @@ border:0;
   }
 
   .pdf-set-btn {
-    padding: 8px 8px;
-    font-size: 11px;
+    padding: 8px 5px;
+    font-size: 10px;
   }
 
 }
