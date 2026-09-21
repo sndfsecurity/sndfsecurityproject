@@ -649,22 +649,37 @@ border:0;
   line-height: 1.8;
 }
 
+
+/* =========================================
+   PDF RIGHT SIDE
+========================================= */
+
 .career-pdf-right {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
+
+/* =========================================
+   PDF CARD
+========================================= */
+
 .career-pdf-card {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 24px;
+
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 15px;
+
   box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .career-pdf-card:hover {
@@ -672,18 +687,33 @@ border:0;
   box-shadow: 0 14px 32px rgba(15, 23, 42, 0.09);
 }
 
+
+/* =========================================
+   PDF ICON
+========================================= */
+
 .career-pdf-icon {
   flex-shrink: 0;
+
   width: 54px;
   height: 54px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   border-radius: 13px;
+
   background: #eef3ff;
   color: #173b7a;
+
   font-size: 24px;
 }
+
+
+/* =========================================
+   PDF DETAILS
+========================================= */
 
 .career-pdf-details {
   flex: 1;
@@ -692,17 +722,26 @@ border:0;
 
 .career-pdf-details h3 {
   margin: 0 0 7px;
+
   color: #111827;
+
   font-size: 18px;
   font-weight: 750;
 }
 
 .career-pdf-details p {
   margin: 0 0 15px;
+
   color: #6b7280;
+
   font-size: 13px;
   line-height: 1.5;
 }
+
+
+/* =========================================
+   PDF SET BUTTONS
+========================================= */
 
 .career-pdf-buttons {
   display: flex;
@@ -711,39 +750,37 @@ border:0;
   flex-wrap: wrap;
 }
 
-.pdf-view-btn,
-.pdf-download-btn {
+.pdf-set-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 9px 16px;
-  border-radius: 7px;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
 
-.pdf-view-btn {
+  min-width: 72px;
+
+  padding: 9px 16px;
+
+  border-radius: 7px;
+
   background: #173b7a;
   color: #ffffff;
+
   border: 1px solid #173b7a;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
 }
 
-.pdf-view-btn:hover {
+.pdf-set-btn:hover {
   background: #102d60;
   border-color: #102d60;
-}
-
-.pdf-download-btn {
-  background: #ffffff;
-  color: #173b7a;
-  border: 1px solid #cbd5e1;
-}
-
-.pdf-download-btn:hover {
-  background: #f1f5f9;
-  border-color: #173b7a;
+  transform: translateY(-1px);
 }
 
 
@@ -770,6 +807,31 @@ border:0;
 }
 
 
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+  .career-pdf-section {
+    padding: 70px 20px;
+  }
+
+  .career-pdf-card {
+    align-items: flex-start;
+  }
+
+  .career-pdf-buttons {
+    gap: 8px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
 @media (max-width: 600px) {
 
   .career-pdf-section {
@@ -784,6 +846,11 @@ border:0;
     font-size: 30px;
   }
 
+  .career-pdf-left p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
   .career-pdf-card {
     align-items: flex-start;
     gap: 14px;
@@ -794,6 +861,7 @@ border:0;
     width: 46px;
     height: 46px;
     font-size: 20px;
+    border-radius: 11px;
   }
 
   .career-pdf-details h3 {
@@ -802,17 +870,58 @@ border:0;
 
   .career-pdf-details p {
     font-size: 12px;
+    margin-bottom: 14px;
   }
 
   .career-pdf-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
+    width: 100%;
   }
 
-  .pdf-view-btn,
-  .pdf-download-btn {
-    padding: 8px 13px;
+  .pdf-set-btn {
+    width: 100%;
+    min-width: 0;
+    padding: 9px 10px;
     font-size: 12px;
   }
 
 }
 
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .career-pdf-section {
+    padding: 50px 14px;
+  }
+
+  .career-pdf-card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .career-pdf-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .career-pdf-details h3 {
+    font-size: 15px;
+  }
+
+  .career-pdf-details p {
+    font-size: 11px;
+  }
+
+  .pdf-set-btn {
+    padding: 8px 8px;
+    font-size: 11px;
+  }
+
+}

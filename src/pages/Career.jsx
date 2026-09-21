@@ -221,127 +221,157 @@ const Career = () => {
 
 
         {/* ================================
-            PDF SECTION - RIGHT SIDE
-        ================================= */}
+    PDF SECTION - RIGHT SIDE
+================================= */}
 
-        <section className="career-pdf-section">
+<section className="career-pdf-section">
 
-          <div className="career-pdf-content">
+  <div className="career-pdf-content">
 
-            <div className="career-pdf-left">
+    {/* =========================
+        LEFT CONTENT
+    ========================== */}
 
-              <span className="career-pdf-label">
-                EXAM PREPARATION
-              </span>
+    <div className="career-pdf-left">
 
-              <h2>
-                Prepare for the Recruitment Examination
-              </h2>
+      <span className="career-pdf-label">
+        EXAM PREPARATION
+      </span>
 
-              <p>
-                Download the sample and previous question papers
-                to understand the examination pattern and practice
-                before appearing for the recruitment examination.
-              </p>
+      <h2>
+        Prepare for the Recruitment Examination
+      </h2>
 
-            </div>
+      <p>
+        Download the sample and previous question papers
+        to understand the examination pattern and practice
+        before appearing for the recruitment examination.
+      </p>
 
-
-            <div className="career-pdf-right">
-
-
-              {/* =========================
-                  Demo Paper
-              ========================== */}
-
-              <div className="career-pdf-card">
-
-                <div className="career-pdf-icon">
-                  <FaFileAlt />
-                </div>
-
-                <div className="career-pdf-details">
-
-                  <h3>Demo Paper</h3>
-
-                  <p>
-                    Sample paper for examination preparation.
-                  </p>
-
-                  <div className="career-pdf-buttons">
-
-                    <a
-                      href="/NDF%20SNDF%20DEMO%20QUE%20PAPER%202026-27.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="pdf-view-btn"
-                    >
-                      View PDF
-                    </a>
-
-                    <a
-                      href="/NDF%20SNDF%20DEMO%20QUE%20PAPER%202026-27.pdf"
-                      download="NDF-Demo-Paper-2026-27.pdf"
-                      className="pdf-download-btn"
-                    >
-                      Download
-                    </a>
-
-                  </div>
-
-                </div>
-
-              </div>
+    </div>
 
 
-              {/* =========================
-                  Previous Question Paper
-              ========================== */}
+    {/* =========================
+        RIGHT PDF CARDS
+    ========================== */}
 
-              <div className="career-pdf-card">
+    <div className="career-pdf-right">
 
-                <div className="career-pdf-icon">
-                  <FaFileAlt />
-                </div>
 
-                <div className="career-pdf-details">
+      {/* =========================
+          Demo Paper
+      ========================== */}
 
-                  <h3>Previous Question Paper</h3>
+      <div className="career-pdf-card">
 
-                  <p>
-                    Previous question paper for practice and preparation.
-                  </p>
+        <div className="career-pdf-icon">
+          <FaFileAlt />
+        </div>
 
-                  <div className="career-pdf-buttons">
+        <div className="career-pdf-details">
 
-                    <a
-                      href="/Previous%20que%202025-26.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="pdf-view-btn"
-                    >
-                      View PDF
-                    </a>
+          <h3>Demo Paper</h3>
 
-                    <a
-                      href="/Previous%20que%202025-26.pdf"
-                      download="NDF-Previous-Question-Paper-2025-26.pdf"
-                      className="pdf-download-btn"
-                    >
-                      Download
-                    </a>
+          <p>
+            Sample paper for examination preparation.
+          </p>
 
-                  </div>
+          <div className="career-pdf-buttons">
 
-                </div>
+            <a
+              href="DEMO PAPER SET  A.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pdf-set-btn"
+            >
+              Set A
+            </a>
 
-              </div>
+            <a
+              href="DEMO PAPER SET  B.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pdf-set-btn"
+            >
+              Set B
+            </a>
 
-            </div>
+            <a
+              href="DEMO PAPER SET  C.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pdf-set-btn"
+            >
+              Set C
+            </a>
+
+            <a
+              href="DEMO PAPER SET  D.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pdf-set-btn"
+            >
+              Set D
+            </a>
 
           </div>
 
-        </section>
+        </div>
+
+      </div>
+
+
+      {/* =========================
+          Previous Question Paper
+      ========================== */}
+
+      <div className="career-pdf-card">
+
+        <div className="career-pdf-icon">
+          <FaFileAlt />
+        </div>
+
+        <div className="career-pdf-details">
+
+          <h3>Previous Question Paper</h3>
+
+          <p>
+            Previous year question paper for practice and preparation.
+          </p>
+
+          <div className="career-pdf-buttons">
+
+            {/* <a
+              href="/2025-26.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pdf-set-btn"
+            >
+              2025–26
+            </a> */}
+
+            <a
+              href="/2024-25.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pdf-set-btn"
+            >
+             2024–25
+            </a>
+
+          
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
         <section id="official-portal" className="career-final-cta">
