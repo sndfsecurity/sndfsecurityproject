@@ -248,7 +248,7 @@ return (
     </h2>
 
     <p className="section-subtitlebr">
-      Serving across Pune with strategically located offices for faster response
+      Serving across Pune with strategically located offices for faster response.
     </p>
 
     <div className="branch-grid">
@@ -353,7 +353,7 @@ return (
         </div>
 
         <div className="contact-buttons">
-          <a href="tel:+919970383155" className="call-btn">Call Now</a>
+          {/* <a href="tel:+919970383155" className="call-btn">Call Now</a> */}
           <a href="https://wa.me/919970383155" target="_blank" className="whatsapp-btn">WhatsApp</a>
         </div>
 

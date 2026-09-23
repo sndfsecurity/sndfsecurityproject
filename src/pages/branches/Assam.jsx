@@ -58,7 +58,7 @@ const officeImageUrl = assam;
       <div className="branch-herobr">
         <div className="hero-contentbr">
           <h1>Assam Branch</h1>
-          <p>Nationalist Detective Force - North East Headquarters</p>
+          <p>Nationalist Detective Force - North East Headquarter</p>
           <div className="est-badgebr">Established December 2024</div>
         </div>
       </div>
@@ -72,7 +72,7 @@ const officeImageUrl = assam;
         <div className="assam-split-layout">
           {/* LEFT SIDE: Content card */}
           <div className="assam-about-card">
-            <h2 className="assam-about-title">Assam Headquarters</h2>
+            <h2 className="assam-about-title">Assam Headquarter</h2>
             <p className="assam-about-description">
               The North East command hub of SNDF, managing operations, detective training
               and investigative services across Assam and surrounding states with precision,
@@ -127,7 +127,7 @@ const officeImageUrl = assam;
         <div className="gallery-header">
           <h2 className="gallery-title">Our Office Gallery</h2>
           <p className="gallery-subtitle">
-            Take a virtual tour of our state-of-the-art headquarters and training facilities
+            Take a virtual tour of our state-of-the-art headquarters and training facilities.
           </p>
         </div>
 
@@ -169,7 +169,7 @@ const officeImageUrl = assam;
           <span className="assam-contact-badge">Contact Us</span>
           <h2 className="assam-contact-title">Get in touch</h2>
           <p className="assam-contact-subtitle">
-            Reach out to us for any inquiries, course details or investigative services
+            Reach out to us for any inquiries, course details or investigative services.
           </p>
         </div>
 

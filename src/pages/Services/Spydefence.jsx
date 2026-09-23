@@ -294,7 +294,7 @@ const Spydefence = () => {
         <h3>Camp Facilities</h3>
         <p>
           Accommodation, Healthy & Hygienic Food, Trained Trainers,
-          Safe Environment, Participation Certificate, 24/7 Security
+          Safe Environment, Participation Certificate, 24/7 Security.
         </p>
       </div>
 
@@ -302,7 +302,7 @@ const Spydefence = () => {
         <h3>Activities During Stay</h3>
         <p>
           Confidence Development, Social Skills, Teamwork,
-          Nature Connection, Outdoor Learning Experience
+          Nature Connection, Outdoor Learning Experience.
         </p>
       </div>
 
@@ -310,7 +310,7 @@ const Spydefence = () => {
         <h3>Additional Benefits</h3>
         <p>
           Free T-Shirt Included, Trophies for Participants,
-          Engaging Camp Activities Throughout the Stay
+          Engaging Camp Activities Throughout the Stay.
         </p>
       </div>
 
@@ -318,7 +318,7 @@ const Spydefence = () => {
         <h3>Adventure Experience</h3>
         <p>
           Special visit to Pawna Lake and Lohagad Fort included
-          in the camp journey
+          in the camp journey.
         </p>
       </div>
 
@@ -353,11 +353,11 @@ const Spydefence = () => {
           <div className="spycta-features">
             <div className="feature">
               <h4>Real Training</h4>
-              <p>Hands-on activities & field-based learning</p>
+              <p>Hands-on activities & field-based learning.</p>
             </div>
             <div className="feature">
               <h4>Safe Environment</h4>
-              <p>24/7 supervision with trained professionals</p>
+              <p>24/7 supervision with trained professionals.</p>
             </div>
           </div>
 

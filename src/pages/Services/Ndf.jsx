@@ -463,7 +463,7 @@ const services = [
 
       <h3>What We Verify</h3>
       <ul>
-        <li><strong>Identity Documents:</strong> Aadhaar card, PAN card, passport and ID proofs.</li>
+        <li><strong>Identity Documents:</strong> Aadhaar card, PAN card, Passport and ID proofs.</li>
         <li><strong>Educational Certificates:</strong> School, college and professional qualifications.</li>
         <li><strong>Employment Records:</strong> Job history, experience letters and company details.</li>
         <li><strong>Property Documents:</strong> Ownership papers, agreements and legal records.</li>
@@ -615,7 +615,7 @@ const cyberServices = [
           <p className="sndf-services-hero-text">
             SNDF delivers confidential, accurate and result-driven investigation
             solutions across India. From personal investigations to advanced cyber
-            crime analysis. we ensure complete discretion and professional execution.
+            crime analysis. We ensure complete discretion and professional execution.
           </p>
 
           <div className="sndf-services-hero-buttons">
@@ -680,7 +680,7 @@ const cyberServices = [
             </div>
             <h3>Detective Services</h3>
             <p>
-              Personal and corporate investigations handled discreetly.
+              Personal and Corporate investigations handled discreetly.
             </p>
           </div>
 
@@ -698,7 +698,7 @@ const cyberServices = [
             </div>
             <h3>Cyber Crime & Forensic Investigation</h3>
             <p>
-              Cyber crime, digital forensics and legal investigation services.
+              Cyber crime, Digital forensics and Legal investigation services.
             </p>
           </div>
 

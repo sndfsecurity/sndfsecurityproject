@@ -14,12 +14,6 @@ import guard1 from "../../assets/images/guard1.webp";
 import guard2 from "../../assets/images/guard2.webp";
 import guard3 from "../../assets/images/guard3.webp";
 import about1 from "../../assets/images/about1.webp";
-
-
-
-
-
-
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -149,7 +143,7 @@ const scrollToForm = () => {
 
         <h2 className="sndf-guard-heading">Our Guard Services</h2>
         <p className="sndf-guard-subtitle">
-          Professional security solutions tailored for every requirement
+          Professional security solutions tailored for every requirement.
         </p>
 
         <div className="sndf-guard-grid">

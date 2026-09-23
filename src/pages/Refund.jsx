@@ -60,7 +60,7 @@ const Refund = () => {
           any, may be handled via service credits as per agreement, not refunds.
         </p>
 
-        <h3>TRAINING & COURSES (SPY DEFENCE ACADEMY)</h3>
+        <h3>TRAINING & COURSES</h3>
         <ul>
           <li>All course fees are non-refundable</li>
           <li>
@@ -71,8 +71,10 @@ const Refund = () => {
 
         <h3>TECHNICAL & CCTV PROJECTS</h3>
         <p>
-          Payments for CCTV installation, spy gadgets, or surveillance projects
-          are non-refundable once equipment is ordered or installation begins.
+          All Payments for CCTV installation, spy gadgets, or surveillance projects
+          are non-refundable once the installation order has been confirmed, payments has
+          been made, equipemnt has been ordered, or installation has commenced.  
+          
         </p>
 
         <h3>CAMPING & PICNICS</h3>

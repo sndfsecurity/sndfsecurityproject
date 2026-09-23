@@ -238,22 +238,22 @@ const Mumbai = () => {
 
       <div class="sndf-mum-gallery__item">
         <img src={mumbaiOffice} alt="SNDF Mumbai Branch Office Entrance" />
-        <span class="sndf-mum-gallery__label">Office Entrance</span>
+        {/* <span class="sndf-mum-gallery__label">Office Entrance</span> */}
       </div>
 
       <div class="sndf-mum-gallery__item">
         <img src={mumbaiOffice} alt="SNDF Mumbai Office Front View" />
-        <span class="sndf-mum-gallery__label">Front View</span>
+        {/* <span class="sndf-mum-gallery__label">Front View</span> */}
       </div>
 
       <div class="sndf-mum-gallery__item">
         <img src={mumbaiOffice} alt="SNDF Mumbai Branch Setup" />
-        <span class="sndf-mum-gallery__label">Operational Area</span>
+        {/* <span class="sndf-mum-gallery__label">Operational Area</span> */}
       </div>
 
       <div class="sndf-mum-gallery__item">
         <img src={mumbaiOffice} alt="SNDF Mumbai Security Operations" />
-        <span class="sndf-mum-gallery__label">Security Operations</span>
+        {/* <span class="sndf-mum-gallery__label">Security Operations</span> */}
       </div>
 
     </div>
