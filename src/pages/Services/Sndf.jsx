@@ -264,12 +264,19 @@ const scrollToForm = () => {
             📞 Call Now
           </a>
 
-          <button
+          <a
+            href="/contact"
+            className="sndfguard-cta-btn sndfguard-cta-enquiry"
+            aria-label="Go to contact page">
+            Get Free Consultation
+          </a>
+
+          {/* <button
             className="sndfguard-cta-btn sndfguard-cta-enquiry"
             onClick={scrollToForm}
             aria-label="Scroll to enquiry form">
             Get Free Consultation
-          </button>
+          </button> */}
 
         </div>
 

@@ -895,7 +895,8 @@ const cyberServices = [
     </div>
 
     <div className="sndf-info-item">
-      🛡 Trusted Investigation Experts
+        🕵️ Trusted Investigation Experts
+
     </div>
 
     <div className="sndf-info-item">

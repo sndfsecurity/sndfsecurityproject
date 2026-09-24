@@ -31,7 +31,9 @@ import {
   FaSearch,
   FaUserCheck,     
   FaShieldAlt,
-  FaUserLock       
+  FaUserLock ,
+  FaLaptopCode,
+  FaMicroscope    
 } from "react-icons/fa";
 
 import { FaCheckCircle } from "react-icons/fa";
@@ -309,7 +311,7 @@ const badgesData = [
 
       {/* 2 - NDF Detective Services */}
       <a href="/services/ndf" className="service-card" data-aos="fade-up" data-aos-delay="100">
-        <div className="icon"><FaUserSecret /></div>
+        <div className="icon"><FaLaptopCode /></div>
         <h3>Cyber Crime Investigation</h3>
         <h5>NDF</h5>
 
@@ -320,7 +322,7 @@ const badgesData = [
 
       {/* 3 - OWL Security */}
       <a href="/services/owl" className="service-card" data-aos="fade-up" data-aos-delay="200">
-        <div className="icon"><FaSearch /></div>
+        <div className="icon"><FaUserShield /></div>
         <h3>CCTV Surveillance & Monitoring</h3>
         <h5>OWL Security</h5>
 
@@ -331,7 +333,7 @@ const badgesData = [
 
       {/* 4 - SNDF Detective Course */}
       <a href="/course" className="service-card" data-aos="fade-up" data-aos-delay="300">
-        <div className="icon"><FaUserCheck /></div>
+        <div className="icon"><FaMicroscope /></div>
         <h3>Detective Investigation Course</h3>
         <h5>DIC</h5>
 

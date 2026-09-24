@@ -2,7 +2,7 @@ import "./Course.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useRef} from "react";
-import { FaCalendarAlt, FaTools, FaUserTie, FaCertificate } from "react-icons/fa";
+import { FaCalendarAlt, FaTools, FaUserTie, FaCertificate, FaClipboardCheck } from "react-icons/fa";
 import { FaUserSecret, FaLaptopCode, FaSearch } from "react-icons/fa";
 
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
@@ -157,7 +157,7 @@ const Course = () => {
 
             <div className="stat-box" data-aos="zoom-in" data-aos-delay="100">
                 <div className="stat-icon-box tools">
-                <FaTools aria-hidden="true"/>
+                <FaClipboardCheck aria-hidden="true"/>
                 </div>
                 <h3>100%</h3>
                 <p>Practical Work</p>

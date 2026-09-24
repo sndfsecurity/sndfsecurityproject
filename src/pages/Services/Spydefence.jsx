@@ -23,12 +23,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import {
-  GiPistolGun,
-  GiArcheryTarget
+ GiRifle,
+  GiArcheryTarget,
+  GiFist
 } from "react-icons/gi";
 
 import {
-  MdSelfImprovement,
   MdGroups
 } from "react-icons/md";
 
@@ -147,13 +147,13 @@ const Spydefence = () => {
         <div className="activities-grid">
 
           <div className="activity-card">
-            <GiPistolGun className="icon" />
+            <GiRifle className="icon" />
             <h3>Weapon Training</h3>
             <p>Learn safe handling and usage of weapons with expert supervision.</p>
           </div>
 
           <div className="activity-card">
-            <MdSelfImprovement className="icon" />
+            <GiFist className="icon" />
             <h3>Self Defence</h3>
             <p>Master real-life techniques to protect yourself with confidence.</p>
           </div>
