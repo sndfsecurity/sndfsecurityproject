@@ -271,13 +271,13 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
 
         <div className="topbar-left-space"></div>
 
-        <div className="scroll-container">
-          <div className="scroll-text">
-            Welcome to SNDF – Thank you for visiting our website. &nbsp;&nbsp;&nbsp;
-            SNDF वेबसाइट पर आपका स्वागत है – यहाँ आने के लिए आपका धन्यवाद। &nbsp;&nbsp;&nbsp;
-            SNDF वेबसाइटवर आपले स्वागत आहे – येथे भेट दिल्याबद्दल धन्यवाद।
-          </div>
-        </div>
+       <div className="scroll-container">
+  <div className="scroll-text">
+    📢 NDF/SNDF Recruitment 2026–27 – Application Last Date Extended to 15 October 2026. &nbsp;&nbsp;&nbsp;
+    NDF/SNDF भर्ती 2026–27 – आवेदन की अंतिम तिथि 15 अक्टूबर 2026 तक बढ़ाई गई है। &nbsp;&nbsp;&nbsp;
+    NDF/SNDF भरती 2026–27 – अर्ज करण्याची अंतिम तारीख 15 ऑक्टोबर 2026 पर्यंत वाढवण्यात आली आहे। &nbsp;&nbsp;&nbsp;
+  </div>
+</div>
 
         <div className="d-flex gap-2">
           
