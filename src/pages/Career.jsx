@@ -78,7 +78,7 @@ const Career = () => {
 
           <p>
             Online applications are now open for{" "}
-            <strong>General Duty (Male Candidates)</strong>.
+            <strong>General Duty (Only For Male Candidates)</strong>.
             Eligible candidates from all States and Union Territories of India can apply through
             the Official Recruitment Portal.
           </p>
