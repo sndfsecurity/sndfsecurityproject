@@ -164,7 +164,7 @@ const Footer = () => {
 
       {/* Bottom */}
       <div className="footer-bottom">
-        © {new Date().getFullYear()} By SNDF Support Services Pvt.Ltd.
+        © {new Date().getFullYear()} SNDF Support Services Pvt.Ltd. All Rights Reserved.
       </div>
     </footer>
 
