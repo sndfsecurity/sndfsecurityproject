@@ -11,6 +11,8 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
+import { createPortal } from "react-dom";
+
 const PuneHero = () => {
   const galleryRef = useRef(null);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -270,29 +272,26 @@ return (
     </div>
   </div>
 
-  {selectedImage && (
+  {selectedImage &&
+  createPortal(
     <div
       className="gallery-lightbox"
-      onClick={() => setSelectedImage(null)}
+      onClick={(event) => {
+        if (event.target === event.currentTarget) {
+          setSelectedImage(null);
+        }
+      }}
       role="presentation"
     >
-      <button
-        type="button"
-        className="lightbox-close"
-        onClick={() => setSelectedImage(null)}
-        aria-label="Close image"
-      >
-        &times;
-      </button>
-
       <img
         src={selectedImage}
         alt="Enlarged office view"
         className="lightbox-image"
-        onClick={(event) => event.stopPropagation()}
       />
-    </div>
+    </div>,
+    document.body
   )}
+ 
 </section>
 
 
