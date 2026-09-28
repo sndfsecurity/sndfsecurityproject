@@ -11,8 +11,6 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
-import { createPortal } from "react-dom";
-
 const PuneHero = () => {
   const galleryRef = useRef(null);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -272,26 +270,6 @@ return (
     </div>
   </div>
 
-  {selectedImage &&
-  createPortal(
-    <div
-      className="gallery-lightbox"
-      onClick={(event) => {
-        if (event.target === event.currentTarget) {
-          setSelectedImage(null);
-        }
-      }}
-      role="presentation"
-    >
-      <img
-        src={selectedImage}
-        alt="Enlarged office view"
-        className="lightbox-image"
-      />
-    </div>,
-    document.body
-  )}
- 
 </section>
 
 
@@ -468,6 +446,54 @@ return (
     <a href="tel:+919970383155">Talk to Expert Investigator →</a>
   </div>
 </section>
+
+
+ {selectedImage && (
+  <div
+    className="gallery-lightbox"
+    onPointerDown={(event) => {
+      const img = event.currentTarget.querySelector(".lightbox-image");
+
+      if (!img) {
+        setSelectedImage(null);
+        return;
+      }
+
+      const rect = img.getBoundingClientRect();
+      const imageRatio = img.naturalWidth / img.naturalHeight;
+      const boxRatio = rect.width / rect.height;
+
+      let visibleWidth = rect.width;
+      let visibleHeight = rect.height;
+
+      if (imageRatio > boxRatio) {
+        visibleHeight = rect.width / imageRatio;
+      } else {
+        visibleWidth = rect.height * imageRatio;
+      }
+
+      const left = rect.left + (rect.width - visibleWidth) / 2;
+      const top = rect.top + (rect.height - visibleHeight) / 2;
+
+      const isInsideImage =
+        event.clientX >= left &&
+        event.clientX <= left + visibleWidth &&
+        event.clientY >= top &&
+        event.clientY <= top + visibleHeight;
+
+      if (!isInsideImage) {
+        setSelectedImage(null);
+      }
+    }}
+    role="presentation"
+  >
+    <img
+      src={selectedImage}
+      alt="Enlarged office view"
+      className="lightbox-image"
+    />
+  </div>
+)}
 
 </main>
 

@@ -169,34 +169,69 @@ const officeImageUrl = assam;
     </div>
 
     {selectedImage && (
-      <div
-        className="gallery-modal"
-        onClick={() => setSelectedImage(null)}
-      >
-        <button
-          type="button"
-          className="modal-close"
-          onClick={() => setSelectedImage(null)}
-          aria-label="Close image"
-        >
-          &times;
-        </button>
+          <div
+            className="gallery-modal"
+            onPointerDown={(event) => {
+              const img = event.currentTarget.querySelector(".gallery-modal-image");
 
-        <img
-          src={selectedImage.url}
-          alt={selectedImage.title}
-          onClick={(event) => event.stopPropagation()}
-        />
+              if (!img) {
+                setSelectedImage(null);
+                return;
+              }
 
-        <div
-          className="modal-caption"
-          onClick={(event) => event.stopPropagation()}
-        >
-          <h3>{selectedImage.title}</h3>
-          <p>{selectedImage.description}</p>
-        </div>
-      </div>
-    )}
+              const rect = img.getBoundingClientRect();
+              const imageRatio = img.naturalWidth / img.naturalHeight;
+              const boxRatio = rect.width / rect.height;
+
+              let visibleWidth = rect.width;
+              let visibleHeight = rect.height;
+
+              if (imageRatio > boxRatio) {
+                visibleHeight = rect.width / imageRatio;
+              } else {
+                visibleWidth = rect.height * imageRatio;
+              }
+
+              const left = rect.left + (rect.width - visibleWidth) / 2;
+              const top = rect.top + (rect.height - visibleHeight) / 2;
+
+              const isInsideImage =
+                event.clientX >= left &&
+                event.clientX <= left + visibleWidth &&
+                event.clientY >= top &&
+                event.clientY <= top + visibleHeight;
+
+              const caption = event.target.closest(".modal-caption");
+              const closeButton = event.target.closest(".modal-close");
+
+              if (!isInsideImage && !caption && !closeButton) {
+                setSelectedImage(null);
+              }
+            }}
+            role="presentation"
+          >
+            <button
+              type="button"
+              className="modal-close"
+              onClick={() => setSelectedImage(null)}
+              aria-label="Close image"
+            >
+              &times;
+            </button>
+
+            <img
+              src={selectedImage.url}
+              alt={selectedImage.title}
+              className="gallery-modal-image"
+            />
+
+            <div className="modal-caption">
+              <h3>{selectedImage.title}</h3>
+              <p>{selectedImage.description}</p>
+            </div>
+          </div>
+        )}
+
   </div>
 </section>
 
