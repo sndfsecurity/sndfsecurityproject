@@ -7,80 +7,84 @@ import wakadImg from "../../assets/images/wakad.webp";
 import karveRoadImg from "../../assets/images/karve.webp";
 import warjeImg from "../../assets/images/warje.webp";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
-
 const PuneHero = () => {
-
   const galleryRef = useRef(null);
+  const [selectedImage, setSelectedImage] = useState(null);
   const navigate = useNavigate();
 
+  // Existing mobile auto-scroll effect
   useEffect(() => {
+    const container = galleryRef.current;
+    if (!container || selectedImage) return;
 
-  const container = galleryRef.current;
+    let scrollAmount = container.scrollLeft;
+    let interval;
 
-  if (!container) return;
+    const startScroll = () => {
+      clearInterval(interval);
 
-  let scrollAmount = 0;
+      if (window.innerWidth > 768 || selectedImage) return;
 
-  let interval;
+      interval = setInterval(() => {
+        if (window.innerWidth > 768 || selectedImage) return;
 
-  const startScroll = () => {
+        scrollAmount += container.clientWidth;
 
-    clearInterval(interval);
+        if (
+          scrollAmount >=
+          container.scrollWidth - container.clientWidth
+        ) {
+          scrollAmount = 0;
+        }
 
-    interval = setInterval(() => {
+        container.scrollTo({
+          left: scrollAmount,
+          behavior: "smooth",
+        });
+      }, 2500);
+    };
 
-      if (window.innerWidth > 768) return;
+    const stopScroll = () => {
+      clearInterval(interval);
+    };
 
-      scrollAmount += container.clientWidth;
+    startScroll();
 
-      if (
-        scrollAmount >=
-        container.scrollWidth - container.clientWidth
-      ) {
-        scrollAmount = 0;
+    container.addEventListener("touchstart", stopScroll);
+    container.addEventListener("touchend", startScroll);
+    container.addEventListener("mouseenter", stopScroll);
+    container.addEventListener("mouseleave", startScroll);
+
+    return () => {
+      clearInterval(interval);
+      container.removeEventListener("touchstart", stopScroll);
+      container.removeEventListener("touchend", startScroll);
+      container.removeEventListener("mouseenter", stopScroll);
+      container.removeEventListener("mouseleave", startScroll);
+    };
+  }, [selectedImage]);
+
+  // Escape-key support for the image lightbox
+  useEffect(() => {
+    if (!selectedImage) return;
+
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setSelectedImage(null);
       }
+    };
 
-      container.scrollTo({
-        left: scrollAmount,
-        behavior: "smooth",
-      });
+    document.addEventListener("keydown", handleKeyDown);
 
-    }, 2500);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedImage]);
 
-  };
-
-  const stopScroll = () => {
-    clearInterval(interval);
-  };
-
-  startScroll();
-
-  /* Mobile touch */
-  container.addEventListener("touchstart", stopScroll);
-  container.addEventListener("touchend", startScroll);
-
-  /* Desktop hover */
-  container.addEventListener("mouseenter", stopScroll);
-  container.addEventListener("mouseleave", startScroll);
-
-  return () => {
-
-    clearInterval(interval);
-
-    container.removeEventListener("touchstart", stopScroll);
-    container.removeEventListener("touchend", startScroll);
-
-    container.removeEventListener("mouseenter", stopScroll);
-    container.removeEventListener("mouseleave", startScroll);
-
-  };
-
-}, []);
-  
   
 return (
 <main>
@@ -217,25 +221,79 @@ return (
   </div>
 </section>
 
-  <section className="mini-gallery">
-      <div className="container">
+<section className="mini-gallery">
+  <div className="container">
+    <h2>Office Glimpse</h2>
 
-        <h2>Office Glimpse</h2>
+    <div className="gallery-grid" ref={galleryRef}>
+      <button
+        type="button"
+        className="gallery-item"
+        onClick={() => setSelectedImage(Img3)}
+        aria-label="View office image 1"
+      >
+        <img src={Img3} alt="Detective agency office Pune" />
+      </button>
 
-        <div className="gallery-grid" ref={galleryRef}>
-          <img src={Img3} alt="detective agency office Pune"/>
-          <img src={puneOffice}alt="detective agency office Pune" />
-          <img src={Img3} alt="detective agency office Pune" />
-          <img src={puneOffice} alt="detective agency office Pune" />
-        </div>
+      <button
+        type="button"
+        className="gallery-item"
+        onClick={() => setSelectedImage(puneOffice)}
+        aria-label="View office image 2"
+      >
+        <img src={puneOffice} alt="Detective agency office Pune" />
+      </button>
 
-        <div className="gallery-btn">
-          <button  onClick={() => navigate("/gallery")}>View Full Gallery →</button>
-        </div>
+      <button
+        type="button"
+        className="gallery-item"
+        onClick={() => setSelectedImage(Img3)}
+        aria-label="View office image 3"
+      >
+        <img src={Img3} alt="Detective agency office Pune" />
+      </button>
 
-      </div>
-      
-  </section>
+      <button
+        type="button"
+        className="gallery-item"
+        onClick={() => setSelectedImage(puneOffice)}
+        aria-label="View office image 4"
+      >
+        <img src={puneOffice} alt="Detective agency office Pune" />
+      </button>
+    </div>
+
+    <div className="gallery-btn">
+      <button onClick={() => navigate("/gallery")}>
+        View Full Gallery →
+      </button>
+    </div>
+  </div>
+
+  {selectedImage && (
+    <div
+      className="gallery-lightbox"
+      onClick={() => setSelectedImage(null)}
+      role="presentation"
+    >
+      <button
+        type="button"
+        className="lightbox-close"
+        onClick={() => setSelectedImage(null)}
+        aria-label="Close image"
+      >
+        &times;
+      </button>
+
+      <img
+        src={selectedImage}
+        alt="Enlarged office view"
+        className="lightbox-image"
+        onClick={(event) => event.stopPropagation()}
+      />
+    </div>
+  )}
+</section>
 
 
 {/* branches.............................. */}
@@ -255,30 +313,50 @@ return (
 
       {/* Wakad */}
       <div className="branch-card">
-        <img src={wakadImg} alt="Wakad" />
+        <button
+          type="button"
+          className="branch-image-button"
+          onClick={() => setSelectedImage(wakadImg)}
+          aria-label="View Wakad Branch image"
+        >
+          <img src={wakadImg} alt="Wakad Branch" />
+        </button>
+
         <div className="branch-info">
           <h4>Wakad Branch</h4>
 
           <p>
-          Shop No. 2, 1st Floor, Shivganga Arcade, Bhumkar Chowk Rd
-          Shankar Kalat Nagar, Wakad, Pune, Maharashtra 411057
+            Shop No. 2, 1st Floor, Shivganga Arcade, Bhumkar Chowk Rd
+            Shankar Kalat Nagar, Wakad, Pune, Maharashtra 411057
           </p>
 
           <p className="branch-phone">+91 8007942309</p>
 
           <div className="branch-actions">
-            <a href="tel:+91 8007942309">Call</a>
+            <a href="tel:+918007942309">Call</a>
             <a href="https://wa.me/918007942309">WhatsApp</a>
           </div>
         </div>
       </div>
 
       {/* Karve Road */}
+      
       <div className="branch-card">
-        <img src={karveRoadImg} alt="Karve Road" />
+        <button
+          type="button"
+          className="branch-image-button"
+          onClick={() => setSelectedImage(karveRoadImg)}
+          aria-label="View Karve Road Branch image"
+        >
+          <img src={karveRoadImg} alt="Karve Road Branch" />
+        </button>
+
         <div className="branch-info">
           <h4>Karve Road Branch</h4>
-          <p>Office No. 25, Basement, Gensh Chamber, 17A/3, Karve Rd, Khilarewadi, Erandwane, Pune, Maharashtra 411004</p>
+          <p>
+            Office No. 25, Basement, Gensh Chamber, 17A/3, Karve Rd,
+            Khilarewadi, Erandwane, Pune, Maharashtra 411004
+          </p>
           <p className="branch-phone">+91 9156936100</p>
 
           <div className="branch-actions">
@@ -288,22 +366,29 @@ return (
         </div>
       </div>
 
-      {/* Warje */}
-      <div className="branch-card">
-        <img src={warjeImg} alt="Warje" />
-        <div className="branch-info">
-          <h4>Warje Branch</h4>
-          <p>Office 5, City Tower, Warje Malwadi, Pune - 411058</p>
-          <p className="branch-phone">+91 80073 41905</p>
 
-          <div className="branch-actions">
-            <a href="tel:+918007341905">Call</a>
-            <a href="https://wa.me/918007341905">WhatsApp</a>
+      {/* Warje */}
+      
+      <div className="branch-card">
+          <button
+            type="button"
+            className="branch-image-button"
+            onClick={() => setSelectedImage(warjeImg)}
+            aria-label="View Warje Branch image">
+            <img src={warjeImg} alt="Warje Branch" />
+          </button>
+
+          <div className="branch-info">
+            <h4>Warje Branch</h4>
+            <p>Office 5, City Tower, Warje Malwadi, Pune - 411058</p>
+            <p className="branch-phone">+91 80073 41905</p>
+
+            <div className="branch-actions">
+              <a href="tel:+918007341905">Call</a>
+              <a href="https://wa.me/918007341905">WhatsApp</a>
+            </div>
           </div>
         </div>
-      </div>
-
-      
 
     </div>
 
