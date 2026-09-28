@@ -242,61 +242,66 @@ return (
       </div>
 
       {selectedImage && (
-          <div
-            className="gallery-lightbox"
-            onPointerDown={(event) => {
-              const img = event.currentTarget.querySelector(".lightbox-image");
+  <div
+    className="gallery-lightbox"
+    onClick={(event) => {
+      // Prevent click from reaching elements behind the lightbox
+      event.preventDefault();
+      event.stopPropagation();
 
-              if (!img) {
-                setSelectedImage(null);
-                return;
-              }
+      const img = event.currentTarget.querySelector(".lightbox-image");
 
-              const rect = img.getBoundingClientRect();
-              const imageRatio = img.naturalWidth / img.naturalHeight;
-              const boxRatio = rect.width / rect.height;
+      if (!img) {
+        setSelectedImage(null);
+        return;
+      }
 
-              let visibleWidth = rect.width;
-              let visibleHeight = rect.height;
+      const rect = img.getBoundingClientRect();
+      const imageRatio = img.naturalWidth / img.naturalHeight;
+      const boxRatio = rect.width / rect.height;
 
-              if (imageRatio > boxRatio) {
-                visibleHeight = rect.width / imageRatio;
-              } else {
-                visibleWidth = rect.height * imageRatio;
-              }
+      let visibleWidth = rect.width;
+      let visibleHeight = rect.height;
 
-              const left = rect.left + (rect.width - visibleWidth) / 2;
-              const top = rect.top + (rect.height - visibleHeight) / 2;
+      if (imageRatio > boxRatio) {
+        visibleHeight = rect.width / imageRatio;
+      } else {
+        visibleWidth = rect.height * imageRatio;
+      }
 
-              const isInsideImage =
-                event.clientX >= left &&
-                event.clientX <= left + visibleWidth &&
-                event.clientY >= top &&
-                event.clientY <= top + visibleHeight;
+      const left = rect.left + (rect.width - visibleWidth) / 2;
+      const top = rect.top + (rect.height - visibleHeight) / 2;
 
-              if (!isInsideImage) {
-                setSelectedImage(null);
-              }
-            }}
-            role="presentation"
-          >
-            <button
-              type="button"
-              className="lightbox-close"
-              onClick={() => setSelectedImage(null)}
-              aria-label="Close image"
-            >
-              &times;
-            </button>
+      const isInsideImage =
+        event.clientX >= left &&
+        event.clientX <= left + visibleWidth &&
+        event.clientY >= top &&
+        event.clientY <= top + visibleHeight;
 
-            <img
-              src={selectedImage}
-              alt="Expanded Hyderabad gallery"
-              className="lightbox-image"
-            />
-          </div>
-        )}
+      const closeButton = event.target.closest(".lightbox-close");
 
+      if (!isInsideImage && !closeButton) {
+        setSelectedImage(null);
+      }
+    }}
+    role="presentation"
+  >
+    <button
+      type="button"
+      className="lightbox-close"
+      onClick={() => setSelectedImage(null)}
+      aria-label="Close image"
+    >
+      &times;
+    </button>
+
+    <img
+      src={selectedImage}
+      alt="Expanded Hyderabad gallery"
+      className="lightbox-image"
+    />
+  </div>
+)}
 
     </section>
 

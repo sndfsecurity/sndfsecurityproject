@@ -447,11 +447,14 @@ return (
   </div>
 </section>
 
-
- {selectedImage && (
+{selectedImage && (
   <div
     className="gallery-lightbox"
-    onPointerDown={(event) => {
+    onClick={(event) => {
+      // Prevent click from reaching elements behind the lightbox
+      event.preventDefault();
+      event.stopPropagation();
+
       const img = event.currentTarget.querySelector(".lightbox-image");
 
       if (!img) {
@@ -494,6 +497,8 @@ return (
     />
   </div>
 )}
+
+
 
 </main>
 

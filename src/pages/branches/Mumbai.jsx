@@ -309,62 +309,70 @@ const Mumbai = () => {
     </div>
   </div>
 
-      {selectedImage && (
-      <div
-        className="gallery-lightbox"
-        onPointerDown={(event) => {
-          const img = event.currentTarget.querySelector(".lightbox-image");
 
-          if (!img) {
-            setSelectedImage(null);
-            return;
-          }
+  {selectedImage && (
+  <div
+    className="gallery-lightbox"
+    onClick={(event) => {
+      // Prevent click from reaching elements behind the lightbox
+      event.preventDefault();
+      event.stopPropagation();
 
-          const rect = img.getBoundingClientRect();
-          const imageRatio = img.naturalWidth / img.naturalHeight;
-          const boxRatio = rect.width / rect.height;
+      const img = event.currentTarget.querySelector(".lightbox-image");
 
-          let visibleWidth = rect.width;
-          let visibleHeight = rect.height;
+      if (!img) {
+        setSelectedImage(null);
+        return;
+      }
 
-          if (imageRatio > boxRatio) {
-            visibleHeight = rect.width / imageRatio;
-          } else {
-            visibleWidth = rect.height * imageRatio;
-          }
+      const rect = img.getBoundingClientRect();
+      const imageRatio = img.naturalWidth / img.naturalHeight;
+      const boxRatio = rect.width / rect.height;
 
-          const left = rect.left + (rect.width - visibleWidth) / 2;
-          const top = rect.top + (rect.height - visibleHeight) / 2;
+      let visibleWidth = rect.width;
+      let visibleHeight = rect.height;
 
-          const isInsideImage =
-            event.clientX >= left &&
-            event.clientX <= left + visibleWidth &&
-            event.clientY >= top &&
-            event.clientY <= top + visibleHeight;
+      if (imageRatio > boxRatio) {
+        visibleHeight = rect.width / imageRatio;
+      } else {
+        visibleWidth = rect.height * imageRatio;
+      }
 
-          if (!isInsideImage) {
-            setSelectedImage(null);
-          }
-        }}
-        role="presentation"
-      >
-        <button
-          type="button"
-          className="lightbox-close"
-          onClick={() => setSelectedImage(null)}
-          aria-label="Close image"
-        >
-          &times;
-        </button>
+      const left = rect.left + (rect.width - visibleWidth) / 2;
+      const top = rect.top + (rect.height - visibleHeight) / 2;
 
-        <img
-          src={selectedImage}
-          alt="Enlarged Mumbai Branch view"
-          className="lightbox-image"
-        />
-      </div>
-    )}
- 
+      const isInsideImage =
+        event.clientX >= left &&
+        event.clientX <= left + visibleWidth &&
+        event.clientY >= top &&
+        event.clientY <= top + visibleHeight;
+
+      const closeButton = event.target.closest(".lightbox-close");
+
+      if (!isInsideImage && !closeButton) {
+        setSelectedImage(null);
+      }
+    }}
+    role="presentation"
+  >
+    <button
+      type="button"
+      className="lightbox-close"
+      onClick={() => setSelectedImage(null)}
+      aria-label="Close image"
+    >
+      &times;
+    </button>
+
+    <img
+      src={selectedImage}
+      alt="Enlarged Mumbai Branch view"
+      className="lightbox-image"
+    />
+  </div>
+)}
+
+      
 </section>
 
 

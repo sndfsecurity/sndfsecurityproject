@@ -168,69 +168,77 @@ const officeImageUrl = assam;
       ))}
     </div>
 
+  
     {selectedImage && (
-          <div
-            className="gallery-modal"
-            onPointerDown={(event) => {
-              const img = event.currentTarget.querySelector(".gallery-modal-image");
+  <div
+    className="gallery-modal"
+    onClick={(event) => {
+      // Stop click from reaching elements behind the modal
+      event.preventDefault();
+      event.stopPropagation();
 
-              if (!img) {
-                setSelectedImage(null);
-                return;
-              }
+      const img = event.currentTarget.querySelector(
+        ".gallery-modal-image"
+      );
 
-              const rect = img.getBoundingClientRect();
-              const imageRatio = img.naturalWidth / img.naturalHeight;
-              const boxRatio = rect.width / rect.height;
+      if (!img) {
+        setSelectedImage(null);
+        return;
+      }
 
-              let visibleWidth = rect.width;
-              let visibleHeight = rect.height;
+      const rect = img.getBoundingClientRect();
 
-              if (imageRatio > boxRatio) {
-                visibleHeight = rect.width / imageRatio;
-              } else {
-                visibleWidth = rect.height * imageRatio;
-              }
+      const imageRatio = img.naturalWidth / img.naturalHeight;
+      const boxRatio = rect.width / rect.height;
 
-              const left = rect.left + (rect.width - visibleWidth) / 2;
-              const top = rect.top + (rect.height - visibleHeight) / 2;
+      let visibleWidth = rect.width;
+      let visibleHeight = rect.height;
 
-              const isInsideImage =
-                event.clientX >= left &&
-                event.clientX <= left + visibleWidth &&
-                event.clientY >= top &&
-                event.clientY <= top + visibleHeight;
+      if (imageRatio > boxRatio) {
+        visibleHeight = rect.width / imageRatio;
+      } else {
+        visibleWidth = rect.height * imageRatio;
+      }
 
-              const caption = event.target.closest(".modal-caption");
-              const closeButton = event.target.closest(".modal-close");
+      const left = rect.left + (rect.width - visibleWidth) / 2;
+      const top = rect.top + (rect.height - visibleHeight) / 2;
 
-              if (!isInsideImage && !caption && !closeButton) {
-                setSelectedImage(null);
-              }
-            }}
-            role="presentation"
-          >
-            <button
-              type="button"
-              className="modal-close"
-              onClick={() => setSelectedImage(null)}
-              aria-label="Close image"
-            >
-              &times;
-            </button>
+      const isInsideImage =
+        event.clientX >= left &&
+        event.clientX <= left + visibleWidth &&
+        event.clientY >= top &&
+        event.clientY <= top + visibleHeight;
 
-            <img
-              src={selectedImage.url}
-              alt={selectedImage.title}
-              className="gallery-modal-image"
-            />
+      const caption = event.target.closest(".modal-caption");
+      const closeButton = event.target.closest(".modal-close");
 
-            <div className="modal-caption">
-              <h3>{selectedImage.title}</h3>
-              <p>{selectedImage.description}</p>
-            </div>
-          </div>
-        )}
+      if (!isInsideImage && !caption && !closeButton) {
+        setSelectedImage(null);
+      }
+    }}
+    role="presentation"
+  >
+    <button
+      type="button"
+      className="modal-close"
+      onClick={() => setSelectedImage(null)}
+      aria-label="Close image"
+    >
+      &times;
+    </button>
+
+    <img
+      src={selectedImage.url}
+      alt={selectedImage.title}
+      className="gallery-modal-image"
+    />
+
+    <div className="modal-caption">
+      <h3>{selectedImage.title}</h3>
+      <p>{selectedImage.description}</p>
+    </div>
+  </div>
+)}
 
   </div>
 </section>
