@@ -435,4 +435,8 @@ const Career = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Career;
+=======
+export default Career;
+>>>>>>> 4523c811da015f126622f0a2d4ce5dfeffc0f588

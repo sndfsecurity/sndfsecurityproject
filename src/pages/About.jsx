@@ -70,7 +70,7 @@ Managed under <strong>SNDF Support Services Pvt.Ltd.,</strong> our experienced t
             <p className="common-text">
               Our workflow is built on precision, planning and confidentiality.
               From understanding client needs to execution, we ensure every step is handled with 
-              professionalism, accuracy and a commitment to reliable results
+              professionalism, accuracy and a commitment to reliable results.
             </p>
           </div>
 

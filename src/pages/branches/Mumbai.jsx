@@ -2,6 +2,8 @@ import "./Mumbai.css";
 import mumbaiOffice from "../../assets/images/mumbai.webp";
 import { Helmet } from "react-helmet-async";
 
+import { useEffect, useState } from "react";
+
 
 import {
   FaPhoneAlt,
@@ -25,6 +27,24 @@ import {
 
 
 const Mumbai = () => {
+
+  const [selectedImage, setSelectedImage] = useState(null);
+
+    useEffect(() => {
+      if (!selectedImage) return;
+
+      const handleKeyDown = (event) => {
+        if (event.key === "Escape") {
+          setSelectedImage(null);
+        }
+      };
+
+      document.addEventListener("keydown", handleKeyDown);
+
+      return () => {
+        document.removeEventListener("keydown", handleKeyDown);
+      };
+    }, [selectedImage]);
 
   const scrollToSection = (id) => {
   const element = document.getElementById(id);
@@ -220,46 +240,140 @@ const Mumbai = () => {
     </section>
 
 
-    {/* gallary............................... */}
+{/* gallary............................... */}
      
-<section class="sndf-mum-gallery">
-  <div class="sndf-mum-gallery__container">
+<section className="sndf-mum-gallery">
+  <div className="sndf-mum-gallery__container">
 
-    <div class="sndf-mum-gallery__header">
-      <h2 class="sndf-mum-gallery__title">
+    <div className="sndf-mum-gallery__header">
+      <h2 className="sndf-mum-gallery__title">
         Mumbai <span>Branch Gallery</span>
       </h2>
-      <p class="sndf-mum-gallery__subtitle">
-        Explore our Mumbai branch office environment, operational setup and professional workspace supporting security and investigation services.
+
+      <p className="sndf-mum-gallery__subtitle">
+        Explore our Mumbai branch office environment, operational setup
+        and professional workspace supporting security and investigation services.
       </p>
     </div>
 
-    <div class="sndf-mum-gallery__grid">
+    <div className="sndf-mum-gallery__grid">
 
-      <div class="sndf-mum-gallery__item">
-        <img src={mumbaiOffice} alt="SNDF Mumbai Branch Office Entrance" />
-        <span class="sndf-mum-gallery__label">Office Entrance</span>
-      </div>
+      <button
+        type="button"
+        className="sndf-mum-gallery__item"
+        onClick={() => setSelectedImage(mumbaiOffice)}
+        aria-label="View Mumbai Branch Office Entrance"
+      >
+        <img
+          src={mumbaiOffice}
+          alt="SNDF Mumbai Branch Office Entrance"
+        />
+      </button>
 
-      <div class="sndf-mum-gallery__item">
-        <img src={mumbaiOffice} alt="SNDF Mumbai Office Front View" />
-        <span class="sndf-mum-gallery__label">Front View</span>
-      </div>
+      <button
+        type="button"
+        className="sndf-mum-gallery__item"
+        onClick={() => setSelectedImage(mumbaiOffice)}
+        aria-label="View Mumbai Office Front View"
+      >
+        <img
+          src={mumbaiOffice}
+          alt="SNDF Mumbai Office Front View"
+        />
+      </button>
 
-      <div class="sndf-mum-gallery__item">
-        <img src={mumbaiOffice} alt="SNDF Mumbai Branch Setup" />
-        <span class="sndf-mum-gallery__label">Operational Area</span>
-      </div>
+      <button
+        type="button"
+        className="sndf-mum-gallery__item"
+        onClick={() => setSelectedImage(mumbaiOffice)}
+        aria-label="View Mumbai Branch Setup"
+      >
+        <img
+          src={mumbaiOffice}
+          alt="SNDF Mumbai Branch Setup"
+        />
+      </button>
 
-      <div class="sndf-mum-gallery__item">
-        <img src={mumbaiOffice} alt="SNDF Mumbai Security Operations" />
-        <span class="sndf-mum-gallery__label">Security Operations</span>
-      </div>
+      <button
+        type="button"
+        className="sndf-mum-gallery__item"
+        onClick={() => setSelectedImage(mumbaiOffice)}
+        aria-label="View Mumbai Security Operations"
+      >
+        <img
+          src={mumbaiOffice}
+          alt="SNDF Mumbai Security Operations"
+        />
+      </button>
 
     </div>
   </div>
-</section>
 
+
+  {selectedImage && (
+  <div
+    className="gallery-lightbox"
+    onClick={(event) => {
+      // Prevent click from reaching elements behind the lightbox
+      event.preventDefault();
+      event.stopPropagation();
+
+      const img = event.currentTarget.querySelector(".lightbox-image");
+
+      if (!img) {
+        setSelectedImage(null);
+        return;
+      }
+
+      const rect = img.getBoundingClientRect();
+      const imageRatio = img.naturalWidth / img.naturalHeight;
+      const boxRatio = rect.width / rect.height;
+
+      let visibleWidth = rect.width;
+      let visibleHeight = rect.height;
+
+      if (imageRatio > boxRatio) {
+        visibleHeight = rect.width / imageRatio;
+      } else {
+        visibleWidth = rect.height * imageRatio;
+      }
+
+      const left = rect.left + (rect.width - visibleWidth) / 2;
+      const top = rect.top + (rect.height - visibleHeight) / 2;
+
+      const isInsideImage =
+        event.clientX >= left &&
+        event.clientX <= left + visibleWidth &&
+        event.clientY >= top &&
+        event.clientY <= top + visibleHeight;
+
+      const closeButton = event.target.closest(".lightbox-close");
+
+      if (!isInsideImage && !closeButton) {
+        setSelectedImage(null);
+      }
+    }}
+    role="presentation"
+  >
+    <button
+      type="button"
+      className="lightbox-close"
+      onClick={() => setSelectedImage(null)}
+      aria-label="Close image"
+    >
+      &times;
+    </button>
+
+    <img
+      src={selectedImage}
+      alt="Enlarged Mumbai Branch view"
+      className="lightbox-image"
+    />
+  </div>
+)}
+
+      
+</section>
 
 
 {/* cta section....................................... */}

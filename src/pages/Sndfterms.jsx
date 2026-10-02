@@ -35,8 +35,8 @@ const Sndfterms = () => {
           SNDF Support Services Private Limited provides a wide range of
           professional services, including investigative services, security
           services such as VIP protection and guarding, technical services like
-          CCTV installation and surveillance, professional detective training
-          programs and recreational activities including camping and picnics.
+          CCTV installation and surveillance, training to become a detective
+          and recreational activities including camping and picnics.
         </p>
 
         <h3>ETHICAL & LEGAL USE</h3>
@@ -46,8 +46,8 @@ const Sndfterms = () => {
             Clients must not use our services for illegal or unethical activities.
           </li>
           <li>
-            Any spy gadgets or training provided are for lawful use only. The
-            company is not responsible for misuse by clients.
+              Any spy gadgets or training provided by the company are for lawful purposes only. 
+              The company is not responsible for any misuse.
           </li>
         </ul>
 
@@ -71,10 +71,10 @@ const Sndfterms = () => {
           services.
         </p>
 
-        <h3>PAYMENT & CANCELLATIONS</h3>
+        <h3>PAYMENTS & CANCELLATIONS</h3>
         <ul>
           <li>
-            All service payments must be made as per agreed schedules.
+           All payments for services must be made according to the agreed payment schedule.
           </li>
           <li>
             Refund policies for training, camping or events are subject to

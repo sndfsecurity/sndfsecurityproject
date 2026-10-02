@@ -209,7 +209,7 @@ const handleSubmit = async (e) => {
       <p>
       Contact SNDF, a trusted <strong>detective agency in Pune</strong> for 
       professional investigation, surveillance and 
-      <strong> security services in Pune</strong>. Our expert team is available 
+      <strong> security services</strong>. Our expert team is available 
       24/7 for confidential support.
     </p>
 

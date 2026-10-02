@@ -238,7 +238,7 @@ function Shop() {
           <button onClick={() => setFilter("ALL")} className={filter === "ALL" ? "active" : ""}>ALL</button>
           <button onClick={() => setFilter("GPS")} className={filter === "GPS" ? "active" : ""}>GPS</button>
           <button onClick={() => setFilter("CAMERA")} className={filter === "CAMERA" ? "active" : ""}>CAMERA</button>
-          <button onClick={() => setFilter("SECURITY")} className={filter === "SECURITY" ? "active" : ""}>SECURITY</button>
+          {/* <button onClick={() => setFilter("SECURITY")} className={filter === "SECURITY" ? "active" : ""}>SECURITY</button> */}
           <button onClick={() => setFilter("SPY TOY")} className={filter === "SPY TOY" ? "active" : ""}>SPY TOY</button>
         </div>
       </div>

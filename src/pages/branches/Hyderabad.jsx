@@ -1,6 +1,6 @@
-import React from 'react';
 import "./Hyderabad.css";
 import { Helmet } from "react-helmet-async";
+import React, { useEffect, useState } from 'react';
 
 import {
   FaMapMarkerAlt,
@@ -24,6 +24,24 @@ import hyd3 from "../../assets/images/hyd3.webp";
 import hyd4 from "../../assets/images/hyd4.webp";
 
 const Hyderabad = () => {
+
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    useEffect(() => {
+      if (!selectedImage) return;
+
+      const handleKeyDown = (event) => {
+        if (event.key === "Escape") {
+          setSelectedImage(null);
+        }
+      };
+
+      document.addEventListener("keydown", handleKeyDown);
+
+      return () => {
+        document.removeEventListener("keydown", handleKeyDown);
+      };
+    }, [selectedImage]);
 
     const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -195,21 +213,95 @@ return (
 
         <div className="sndf-hyd-gallery-dark__grid">
 
-          <div className="sndf-hyd-gallery-dark__item large">
+          <button
+            type="button"
+            className="sndf-hyd-gallery-dark__item large"
+            onClick={() => setSelectedImage(hyd2)}
+            aria-label="View Hyderabad office environment image">
             <img src={hyd2} alt="SNDF Hyderabad office environment" />
-          </div>
+          </button>
 
-          <div className="sndf-hyd-gallery-dark__item">
-            <img src={hyd1} alt="SNDF Hyderabad workspace setup"  />
-          </div>
+          <button
+            type="button"
+            className="sndf-hyd-gallery-dark__item"
+            onClick={() => setSelectedImage(hyd1)}
+            aria-label="View Hyderabad workspace setup image">
+            <img src={hyd1} alt="SNDF Hyderabad workspace setup" />
+          </button>
 
-          <div className="sndf-hyd-gallery-dark__item">
+          <button
+            type="button"
+            className="sndf-hyd-gallery-dark__item"
+            onClick={() => setSelectedImage(hyd4)}
+            aria-label="View Hyderabad operations team workspace image">
             <img src={hyd4} alt="SNDF Hyderabad operations team workspace" />
-          </div>
+          </button>
 
         </div>
 
       </div>
+
+      {selectedImage && (
+  <div
+    className="gallery-lightbox"
+    onClick={(event) => {
+      // Prevent click from reaching elements behind the lightbox
+      event.preventDefault();
+      event.stopPropagation();
+
+      const img = event.currentTarget.querySelector(".lightbox-image");
+
+      if (!img) {
+        setSelectedImage(null);
+        return;
+      }
+
+      const rect = img.getBoundingClientRect();
+      const imageRatio = img.naturalWidth / img.naturalHeight;
+      const boxRatio = rect.width / rect.height;
+
+      let visibleWidth = rect.width;
+      let visibleHeight = rect.height;
+
+      if (imageRatio > boxRatio) {
+        visibleHeight = rect.width / imageRatio;
+      } else {
+        visibleWidth = rect.height * imageRatio;
+      }
+
+      const left = rect.left + (rect.width - visibleWidth) / 2;
+      const top = rect.top + (rect.height - visibleHeight) / 2;
+
+      const isInsideImage =
+        event.clientX >= left &&
+        event.clientX <= left + visibleWidth &&
+        event.clientY >= top &&
+        event.clientY <= top + visibleHeight;
+
+      const closeButton = event.target.closest(".lightbox-close");
+
+      if (!isInsideImage && !closeButton) {
+        setSelectedImage(null);
+      }
+    }}
+    role="presentation"
+  >
+    <button
+      type="button"
+      className="lightbox-close"
+      onClick={() => setSelectedImage(null)}
+      aria-label="Close image"
+    >
+      &times;
+    </button>
+
+    <img
+      src={selectedImage}
+      alt="Expanded Hyderabad gallery"
+      className="lightbox-image"
+    />
+  </div>
+)}
 
     </section>
 

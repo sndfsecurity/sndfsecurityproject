@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import { React, useState, useEffect } from 'react';
 import "./Assam.css";
 import { Helmet } from "react-helmet-async";
 import assam from "../../assets/images/assam.webp";
@@ -15,6 +15,22 @@ const Assam = () => {
 const officeImageUrl = assam;
 
   const [selectedImage, setSelectedImage] = useState(null);
+
+      useEffect(() => {
+      if (!selectedImage) return;
+
+      const handleKeyDown = (event) => {
+        if (event.key === "Escape") {
+          setSelectedImage(null);
+        }
+      };
+
+      document.addEventListener("keydown", handleKeyDown);
+
+      return () => {
+        document.removeEventListener("keydown", handleKeyDown);
+      };
+    }, [selectedImage]);
 
     const galleryImages = [
     {
@@ -58,7 +74,7 @@ const officeImageUrl = assam;
       <div className="branch-herobr">
         <div className="hero-contentbr">
           <h1>Assam Branch</h1>
-          <p>Nationalist Detective Force - North East Headquarters</p>
+          <p>Nationalist Detective Force - North East Headquarter</p>
           <div className="est-badgebr">Established December 2024</div>
         </div>
       </div>
@@ -72,7 +88,7 @@ const officeImageUrl = assam;
         <div className="assam-split-layout">
           {/* LEFT SIDE: Content card */}
           <div className="assam-about-card">
-            <h2 className="assam-about-title">Assam Headquarters</h2>
+            <h2 className="assam-about-title">Assam Headquarter</h2>
             <p className="assam-about-description">
               The North East command hub of SNDF, managing operations, detective training
               and investigative services across Assam and surrounding states with precision,
@@ -122,43 +138,110 @@ const officeImageUrl = assam;
       
       {/* gallary section....................................................... */}
 
-     <section className="gallery-section">
-      <div className="gallery-container">
-        <div className="gallery-header">
-          <h2 className="gallery-title">Our Office Gallery</h2>
-          <p className="gallery-subtitle">
-            Take a virtual tour of our state-of-the-art headquarters and training facilities
-          </p>
-        </div>
+       {/* Gallery Section */}
 
-        <div className="gallery-gridas">
-          {galleryImages.map((image) => (
-            <div
-              key={image.id}
-              className="gallery-item"
-              onClick={() => setSelectedImage(image)}
-            >
-              <img src={image.url} alt={image.title} loading="lazy" />
-              <div className="gallery-overlay">
-                <h3>{image.title}</h3>
-                <p>{image.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+<section className="gallery-section">
+  <div className="gallery-container">
+    <div className="gallery-header">
+      <h2 className="gallery-title">Our Office Gallery</h2>
+      <p className="gallery-subtitle">
+        Take a virtual tour of our state-of-the-art headquarters and training facilities.
+      </p>
+    </div>
 
-        {selectedImage && (
-          <div className="gallery-modal" onClick={() => setSelectedImage(null)}>
-            <span className="modal-close">&times;</span>
-            <img src={selectedImage.url} alt={selectedImage.title} />
-            <div className="modal-caption">
-              <h3>{selectedImage.title}</h3>
-              <p>{selectedImage.description}</p>
-            </div>
+    <div className="gallery-gridas">
+      {galleryImages.map((image) => (
+        <button
+          type="button"
+          key={image.id}
+          className="gallery-item"
+          onClick={() => setSelectedImage(image)}
+          aria-label={`View ${image.title}`}
+        >
+          <img src={image.url} alt={image.title} loading="lazy" />
+
+          <div className="gallery-overlay">
+            <h3>{image.title}</h3>
+            <p>{image.description}</p>
           </div>
-        )}
-      </div>
-    </section>
+        </button>
+      ))}
+    </div>
+
+  
+    {selectedImage && (
+  <div
+    className="gallery-modal"
+    onClick={(event) => {
+      // Stop click from reaching elements behind the modal
+      event.preventDefault();
+      event.stopPropagation();
+
+      const img = event.currentTarget.querySelector(
+        ".gallery-modal-image"
+      );
+
+      if (!img) {
+        setSelectedImage(null);
+        return;
+      }
+
+      const rect = img.getBoundingClientRect();
+
+      const imageRatio = img.naturalWidth / img.naturalHeight;
+      const boxRatio = rect.width / rect.height;
+
+      let visibleWidth = rect.width;
+      let visibleHeight = rect.height;
+
+      if (imageRatio > boxRatio) {
+        visibleHeight = rect.width / imageRatio;
+      } else {
+        visibleWidth = rect.height * imageRatio;
+      }
+
+      const left = rect.left + (rect.width - visibleWidth) / 2;
+      const top = rect.top + (rect.height - visibleHeight) / 2;
+
+      const isInsideImage =
+        event.clientX >= left &&
+        event.clientX <= left + visibleWidth &&
+        event.clientY >= top &&
+        event.clientY <= top + visibleHeight;
+
+      const caption = event.target.closest(".modal-caption");
+      const closeButton = event.target.closest(".modal-close");
+
+      if (!isInsideImage && !caption && !closeButton) {
+        setSelectedImage(null);
+      }
+    }}
+    role="presentation"
+  >
+    <button
+      type="button"
+      className="modal-close"
+      onClick={() => setSelectedImage(null)}
+      aria-label="Close image"
+    >
+      &times;
+    </button>
+
+    <img
+      src={selectedImage.url}
+      alt={selectedImage.title}
+      className="gallery-modal-image"
+    />
+
+    <div className="modal-caption">
+      <h3>{selectedImage.title}</h3>
+      <p>{selectedImage.description}</p>
+    </div>
+  </div>
+)}
+
+  </div>
+</section>
 
 
 
@@ -169,7 +252,7 @@ const officeImageUrl = assam;
           <span className="assam-contact-badge">Contact Us</span>
           <h2 className="assam-contact-title">Get in touch</h2>
           <p className="assam-contact-subtitle">
-            Reach out to us for any inquiries, course details or investigative services
+            Reach out to us for any inquiries, course details or investigative services.
           </p>
         </div>
 

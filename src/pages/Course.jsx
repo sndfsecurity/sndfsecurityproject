@@ -1,8 +1,8 @@
 import "./Course.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useRef} from "react";
-import { FaCalendarAlt, FaTools, FaUserTie, FaCertificate } from "react-icons/fa";
+import { useEffect, useRef, useState } from "react";
+import { FaCalendarAlt, FaTools, FaUserTie, FaCertificate, FaClipboardCheck } from "react-icons/fa";
 import { FaUserSecret, FaLaptopCode, FaSearch } from "react-icons/fa";
 
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
@@ -20,62 +20,72 @@ import { Helmet } from "react-helmet-async";
 
 const Course = () => {
 
-
+  const [selectedImage, setSelectedImage] = useState(null);
   const galleryRef = useRef(null);
 
-    useEffect(() => {
+  useEffect(() => {
+  const container = galleryRef.current;
 
-      const container = galleryRef.current;
+  if (!container) return;
 
-      if (!container) return;
+  let scrollAmount = 0;
+  let interval;
 
-      let scrollAmount = 0;
-      let interval;
+  const startScroll = () => {
+    clearInterval(interval);
 
-      const startScroll = () => {
+    if (window.innerWidth > 768 || selectedImage) return;
 
+    interval = setInterval(() => {
+      if (window.innerWidth > 768 || selectedImage) {
         clearInterval(interval);
+        return;
+      }
 
-        interval = setInterval(() => {
+      scrollAmount += container.clientWidth;
 
-          if (window.innerWidth > 768) return;
+      if (scrollAmount >= container.scrollWidth) {
+        scrollAmount = 0;
+      }
 
-          scrollAmount += container.clientWidth;
+      container.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    }, 2500);
+  };
 
-          if (scrollAmount >= container.scrollWidth) {
-            scrollAmount = 0;
-          }
+  const stopScroll = () => {
+    clearInterval(interval);
+  };
 
-          container.scrollTo({
-            left: scrollAmount,
-            behavior: "smooth",
-          });
+  startScroll();
 
-        }, 2500);
-      };
+  container.addEventListener("touchstart", stopScroll);
+  container.addEventListener("touchend", startScroll);
 
-      const stopScroll = () => {
-        clearInterval(interval);
-      };
+  return () => {
+    clearInterval(interval);
+    container.removeEventListener("touchstart", stopScroll);
+    container.removeEventListener("touchend", startScroll);
+  };
+}, [selectedImage]);
 
-      startScroll();
+useEffect(() => {
+  if (!selectedImage) return;
 
-      /* pause when user touches image */
-      container.addEventListener("touchstart", stopScroll);
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      setSelectedImage(null);
+    }
+  };
 
-      /* start again after touch removed */
-      container.addEventListener("touchend", startScroll);
+  document.addEventListener("keydown", handleKeyDown);
 
-      return () => {
-
-        clearInterval(interval);
-
-        container.removeEventListener("touchstart", stopScroll);
-
-        container.removeEventListener("touchend", startScroll);
-      };
-
-    }, []);
+  return () => {
+    document.removeEventListener("keydown", handleKeyDown);
+  };
+}, [selectedImage]);
 
 
 
@@ -132,7 +142,7 @@ const Course = () => {
           </h1>
 
           <p>
-            Learn professional investigation skills with real-world training,<br></br>
+            Learn professional investigation skills with case based training,<br></br>
             surveillance techniques, cybercrime basics and field exposure.
           </p>
 
@@ -157,7 +167,7 @@ const Course = () => {
 
             <div className="stat-box" data-aos="zoom-in" data-aos-delay="100">
                 <div className="stat-icon-box tools">
-                <FaTools aria-hidden="true"/>
+                <FaClipboardCheck aria-hidden="true"/>
                 </div>
                 <h3>100%</h3>
                 <p>Practical Work</p>
@@ -441,29 +451,92 @@ const Course = () => {
 
     <div className="gallery-header">
       <h2>Training Gallery</h2>
-      <p>Explore real training sessions, field work and practical learning moments.</p>
+      <p>
+        Explore real training sessions, field work and practical learning moments.
+      </p>
     </div>
 
     {/* ===== PHOTOS ===== */}
     <div className="gallery-gridc" ref={galleryRef}>
 
-      <div className="gallery-item">
-        <img src={dic1} alt="Detective training session at SNDF"  loading="lazy" />
-      </div>
+      <button
+        type="button"
+        className="gallery-item"
+        onClick={() => setSelectedImage(dic1)}
+        aria-label="View detective training session photo 1"
+      >
+        <img
+          src={dic1}
+          alt="Detective training session at SNDF"
+          loading="lazy"
+        />
+      </button>
 
-      <div className="gallery-item">
-        <img src={dic2} alt="Detective training session at SNDF" loading="lazy"/>
-      </div>
+      <button
+        type="button"
+        className="gallery-item"
+        onClick={() => setSelectedImage(dic2)}
+        aria-label="View detective training session photo 2"
+      >
+        <img
+          src={dic2}
+          alt="Detective training session at SNDF"
+          loading="lazy"
+        />
+      </button>
 
-      <div className="gallery-item">
-        <img src={dic3} alt="Detective training session at SNDF" loading="lazy" />
-      </div>
+      <button
+        type="button"
+        className="gallery-item"
+        onClick={() => setSelectedImage(dic3)}
+        aria-label="View detective training session photo 3"
+      >
+        <img
+          src={dic3}
+          alt="Detective training session at SNDF"
+          loading="lazy"
+        />
+      </button>
 
-      <div className="gallery-item">
-        <img src={dic4} alt="Detective training session at SNDF" loading="lazy" />
-      </div>
+      <button
+        type="button"
+        className="gallery-item"
+        onClick={() => setSelectedImage(dic4)}
+        aria-label="View detective training session photo 4"
+      >
+        <img
+          src={dic4}
+          alt="Detective training session at SNDF"
+          loading="lazy"
+        />
+      </button>
 
     </div>
+
+    {/* ===== IMAGE LIGHTBOX ===== */}
+    {selectedImage && (
+      <div
+        className="gallery-lightbox"
+        onClick={() => setSelectedImage(null)}
+        role="presentation"
+      >
+        <button
+          type="button"
+          className="gallery-lightbox-close"
+          onClick={() => setSelectedImage(null)}
+          aria-label="Close enlarged image"
+        >
+          &times;
+        </button>
+
+        <img
+          src={selectedImage}
+          alt="Enlarged SNDF training photo"
+          className="gallery-lightbox-image"
+          onClick={(event) => event.stopPropagation()}
+        />
+      </div>
+    )}
 
     {/* ===== VIDEOS ===== */}
     <div className="video-section">
@@ -475,7 +548,6 @@ const Course = () => {
           width="560"
           height="315"
           style={{ border: "none" }}
-
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
@@ -484,21 +556,20 @@ const Course = () => {
       <div className="video-card">
         <iframe
           src="https://www.youtube.com/embed/gJQ_2VIzbE4?rel=0"
-          title="SNDF detective training video2"
+          title="SNDF detective training video 2"
           loading="lazy"
           width="560"
           height="315"
           style={{ border: "none" }}
-
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
       </div>
-
     </div>
 
   </div>
 </section>
+
 
 
 {/* career opportunities..................................... */}
