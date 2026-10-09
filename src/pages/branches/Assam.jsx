@@ -103,11 +103,11 @@ const officeImageUrl = assam;
 
             <div className="assam-stats-container">
               <div className="assam-stat-item">
-                <span className="assam-stat-number">8+</span>
+                <span className="assam-stat-number">23+</span>
                 <span className="assam-stat-label">Batches Completed</span>
               </div>
               <div className="assam-stat-item">
-                <span className="assam-stat-number">18+</span>
+                <span className="assam-stat-number">45+</span>
                 <span className="assam-stat-label">Cases Solved</span>
               </div>
               <div className="assam-stat-item">
