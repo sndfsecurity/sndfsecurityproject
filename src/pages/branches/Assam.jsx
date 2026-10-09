@@ -276,7 +276,7 @@ const officeImageUrl = assam;
                 </div>
                 <div>
                   <h4>Email</h4>
-                  <a href="mailto:info@ndfdetective.com">info@ndfdetective.com</a>
+                  <a href="mailto:info@ndfdetective.com">ndfassam@gmail.com</a>
                 </div>
               </div>
 
