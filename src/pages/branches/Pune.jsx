@@ -357,8 +357,10 @@ return (
 
           <div className="branch-info">
             <h4>Warje Branch</h4>
-            <p>Office 5, City Tower, Warje Malwadi, Pune - 411058</p>
-            <p className="branch-phone">+91 80073 41905</p>
+            <p>Survey No. 76/87, NDA Road,
+Near By House Building, above Advocate Wakchaure Office, Second Floor,
+Shop No.1 New Ahire Gaon, Warje Malwadi,Pune-411058.</p>
+            <p className="branch-phone">919552159992</p>
 
             <div className="branch-actions">
               <a href="tel:+918007341905">Call</a>
