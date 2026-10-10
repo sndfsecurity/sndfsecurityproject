@@ -364,7 +364,7 @@ Shop No.1 New Ahire Gaon, Warje Malwadi,Pune-411058.</p>
 
             <div className="branch-actions">
               <a href="tel:+918007341905">Call</a>
-              <a href="https://wa.me/918007341905">WhatsApp</a>
+              <a href="https://wa.me/919552159992">WhatsApp</a>
             </div>
           </div>
         </div>
