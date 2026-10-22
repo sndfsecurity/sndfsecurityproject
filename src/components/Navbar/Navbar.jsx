@@ -245,12 +245,11 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
       <h5>📢 Recruitment Notice</h5>
 
       <p>
-      NDF/SNDF Recruitment 2026-27 applications are now open.
-      Click the button below to visit the official recruitment portal
-      and submit your application.
+      NDF/SNDF Recruitment 2026-27 applications are now closed.
+      Stay tuned to the official website for further updates.
       </p>
 
-      <button
+      {/* <button
         className="recruitment-apply-btn"
         onClick={() => {
           setShowRecruitmentPopup(false);
@@ -261,7 +260,8 @@ else if (phone.length !== 10) newErrors.phone = "Enter valid number";
         }}
       >
         Apply Now
-      </button>
+      </button> */}
+      
     </div>
   </div>
 )}
