@@ -86,7 +86,7 @@ const Career = () => {
           <div className="career-buttons">
 
             <a
-              href="https://recruitment.ndfdetective.in/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="apply-btn"
@@ -96,7 +96,7 @@ const Career = () => {
             </a>
 
             <a
-              href="https://recruitment.ndfdetective.in/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="outline-btn"
@@ -416,7 +416,7 @@ const Career = () => {
             </p>
 
             <a
-              href="https://recruitment.ndfdetective.in/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="career-final-btn"
