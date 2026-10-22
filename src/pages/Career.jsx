@@ -69,7 +69,7 @@ const Career = () => {
             NDF / SNDF Recruitment 2026–27
           </span>
 
-          <h1>Applications Now Open</h1>
+          <h1>Applications Now Closed</h1>
 
           <p className="sr-only">
             SNDF Recruitment 2026–27 official application page for General Duty recruitment.
@@ -77,7 +77,7 @@ const Career = () => {
           </p>
 
           <p>
-            Online applications are now open for{" "}
+            Online applications are now closed for{" "}
             <strong>General Duty (Only For Male Candidates)</strong>.
             Eligible candidates from all States and Union Territories of India can apply through
             the Official Recruitment Portal.
