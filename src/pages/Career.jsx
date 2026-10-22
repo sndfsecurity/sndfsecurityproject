@@ -83,7 +83,7 @@ const Career = () => {
             the Official Recruitment Portal.
           </p>
 
-          <div className="career-buttons">
+          {/* <div className="career-buttons">
 
             <a
               href="#"
@@ -105,7 +105,7 @@ const Career = () => {
               Recruitment Details
             </a>
 
-          </div>
+          </div> */}
 
         </section>
 
@@ -415,14 +415,14 @@ const Career = () => {
               and application guidelines.
             </p>
 
-            <a
+            {/* <a
               href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="career-final-btn"
             >
               Visit Official Recruitment Portal
-            </a>
+            </a> */}
 
           </div>
 
